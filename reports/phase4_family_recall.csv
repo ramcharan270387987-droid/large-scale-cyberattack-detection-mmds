@@ -1,0 +1,793 @@
+protocol,model,training_cohort,split,level,category,binary_label,evaluated_rows,tp,fn,fp,recall,benign_false_positive_rate,seen_in_training,training_rows,support_status
+A,majority,full_train_baseline,validation,family,Benign,0,1990157,,,0,,0.0,True,9426379,reported
+A,majority,full_train_baseline,validation,family,Bot,1,40467,0,40467,,0.0,,True,205917,reported
+A,majority,full_train_baseline,validation,family,Credential brute force,1,17801,0,17801,,0.0,,True,341040,reported
+A,majority,full_train_baseline,validation,family,DDoS,1,189228,0,189228,,0.0,,True,885772,reported
+A,majority,full_train_baseline,validation,family,DoS,1,85648,0,85648,,0.0,,True,479941,reported
+A,majority,full_train_baseline,validation,family,Infiltration,1,21285,0,21285,,0.0,,True,116242,reported
+A,majority,full_train_baseline,validation,family,Web attack,1,140,0,140,,0.0,,True,634,reported
+A,majority,full_train_baseline,validation,original_label,Benign,0,1990157,,,0,,0.0,True,9426379,reported
+A,majority,full_train_baseline,validation,original_label,Bot,1,40467,0,40467,,0.0,,True,205917,reported
+A,majority,full_train_baseline,validation,original_label,Brute Force -Web,1,107,0,107,,0.0,,True,411,reported
+A,majority,full_train_baseline,validation,original_label,Brute Force -XSS,1,25,0,25,,0.0,,True,163,low
+A,majority,full_train_baseline,validation,original_label,DDOS attack-HOIC,1,102441,0,102441,,0.0,,True,480857,reported
+A,majority,full_train_baseline,validation,original_label,DDOS attack-LOIC-UDP,1,277,0,277,,0.0,,True,1215,reported
+A,majority,full_train_baseline,validation,original_label,DDoS attacks-LOIC-HTTP,1,86510,0,86510,,0.0,,True,403700,reported
+A,majority,full_train_baseline,validation,original_label,DoS attacks-GoldenEye,1,6145,0,6145,,0.0,,True,29251,reported
+A,majority,full_train_baseline,validation,original_label,DoS attacks-Hulk,1,70165,0,70165,,0.0,,True,323298,reported
+A,majority,full_train_baseline,validation,original_label,DoS attacks-SlowHTTPTest,1,7405,0,7405,,0.0,,True,119917,reported
+A,majority,full_train_baseline,validation,original_label,DoS attacks-Slowloris,1,1933,0,1933,,0.0,,True,7475,reported
+A,majority,full_train_baseline,validation,original_label,FTP-BruteForce,1,2697,0,2697,,0.0,,True,183538,reported
+A,majority,full_train_baseline,validation,original_label,Infilteration,1,21285,0,21285,,0.0,,True,116242,reported
+A,majority,full_train_baseline,validation,original_label,SQL Injection,1,8,0,8,,0.0,,True,60,low
+A,majority,full_train_baseline,validation,original_label,SSH-Bruteforce,1,15104,0,15104,,0.0,,True,157502,reported
+A,duration_rule,full_train_baseline,validation,family,Benign,0,1990157,,,979303,,0.4920732384429972,True,9426379,reported
+A,duration_rule,full_train_baseline,validation,family,Bot,1,40467,40169,298,,0.9926359749919688,,True,205917,reported
+A,duration_rule,full_train_baseline,validation,family,Credential brute force,1,17801,3774,14027,,0.2120105612044267,,True,341040,reported
+A,duration_rule,full_train_baseline,validation,family,DDoS,1,189228,101541,87687,,0.5366066332678039,,True,885772,reported
+A,duration_rule,full_train_baseline,validation,family,DoS,1,85648,58157,27491,,0.6790234447973099,,True,479941,reported
+A,duration_rule,full_train_baseline,validation,family,Infiltration,1,21285,12047,9238,,0.5659854357528776,,True,116242,reported
+A,duration_rule,full_train_baseline,validation,family,Web attack,1,140,60,80,,0.42857142857142855,,True,634,reported
+A,duration_rule,full_train_baseline,validation,original_label,Benign,0,1990157,,,979303,,0.4920732384429972,True,9426379,reported
+A,duration_rule,full_train_baseline,validation,original_label,Bot,1,40467,40169,298,,0.9926359749919688,,True,205917,reported
+A,duration_rule,full_train_baseline,validation,original_label,Brute Force -Web,1,107,42,65,,0.3925233644859813,,True,411,reported
+A,duration_rule,full_train_baseline,validation,original_label,Brute Force -XSS,1,25,14,11,,0.56,,True,163,low
+A,duration_rule,full_train_baseline,validation,original_label,DDOS attack-HOIC,1,102441,101377,1064,,0.9896135336437559,,True,480857,reported
+A,duration_rule,full_train_baseline,validation,original_label,DDOS attack-LOIC-UDP,1,277,0,277,,0.0,,True,1215,reported
+A,duration_rule,full_train_baseline,validation,original_label,DDoS attacks-LOIC-HTTP,1,86510,164,86346,,0.0018957345971563982,,True,403700,reported
+A,duration_rule,full_train_baseline,validation,original_label,DoS attacks-GoldenEye,1,6145,3,6142,,0.00048820179007323027,,True,29251,reported
+A,duration_rule,full_train_baseline,validation,original_label,DoS attacks-Hulk,1,70165,50285,19880,,0.7166678543433336,,True,323298,reported
+A,duration_rule,full_train_baseline,validation,original_label,DoS attacks-SlowHTTPTest,1,7405,7405,0,,1.0,,True,119917,reported
+A,duration_rule,full_train_baseline,validation,original_label,DoS attacks-Slowloris,1,1933,464,1469,,0.24004138644593895,,True,7475,reported
+A,duration_rule,full_train_baseline,validation,original_label,FTP-BruteForce,1,2697,2697,0,,1.0,,True,183538,reported
+A,duration_rule,full_train_baseline,validation,original_label,Infilteration,1,21285,12047,9238,,0.5659854357528776,,True,116242,reported
+A,duration_rule,full_train_baseline,validation,original_label,SQL Injection,1,8,4,4,,0.5,,True,60,low
+A,duration_rule,full_train_baseline,validation,original_label,SSH-Bruteforce,1,15104,1077,14027,,0.07130561440677965,,True,157502,reported
+A,majority,full_train_baseline,test,family,Benign,0,2068172,,,0,,0.0,True,9426379,reported
+A,majority,full_train_baseline,test,family,Bot,1,39807,0,39807,,0.0,,True,205917,reported
+A,majority,full_train_baseline,test,family,Credential brute force,1,22108,0,22108,,0.0,,True,341040,reported
+A,majority,full_train_baseline,test,family,DDoS,1,188933,0,188933,,0.0,,True,885772,reported
+A,majority,full_train_baseline,test,family,DoS,1,88711,0,88711,,0.0,,True,479941,reported
+A,majority,full_train_baseline,test,family,Infiltration,1,24407,0,24407,,0.0,,True,116242,reported
+A,majority,full_train_baseline,test,family,Web attack,1,154,0,154,,0.0,,True,634,reported
+A,majority,full_train_baseline,test,original_label,Benign,0,2068172,,,0,,0.0,True,9426379,reported
+A,majority,full_train_baseline,test,original_label,Bot,1,39807,0,39807,,0.0,,True,205917,reported
+A,majority,full_train_baseline,test,original_label,Brute Force -Web,1,93,0,93,,0.0,,True,411,low
+A,majority,full_train_baseline,test,original_label,Brute Force -XSS,1,42,0,42,,0.0,,True,163,low
+A,majority,full_train_baseline,test,original_label,DDOS attack-HOIC,1,102714,0,102714,,0.0,,True,480857,reported
+A,majority,full_train_baseline,test,original_label,DDOS attack-LOIC-UDP,1,238,0,238,,0.0,,True,1215,reported
+A,majority,full_train_baseline,test,original_label,DDoS attacks-LOIC-HTTP,1,85981,0,85981,,0.0,,True,403700,reported
+A,majority,full_train_baseline,test,original_label,DoS attacks-GoldenEye,1,6112,0,6112,,0.0,,True,29251,reported
+A,majority,full_train_baseline,test,original_label,DoS attacks-Hulk,1,68449,0,68449,,0.0,,True,323298,reported
+A,majority,full_train_baseline,test,original_label,DoS attacks-SlowHTTPTest,1,12568,0,12568,,0.0,,True,119917,reported
+A,majority,full_train_baseline,test,original_label,DoS attacks-Slowloris,1,1582,0,1582,,0.0,,True,7475,reported
+A,majority,full_train_baseline,test,original_label,FTP-BruteForce,1,7125,0,7125,,0.0,,True,183538,reported
+A,majority,full_train_baseline,test,original_label,Infilteration,1,24407,0,24407,,0.0,,True,116242,reported
+A,majority,full_train_baseline,test,original_label,SQL Injection,1,19,0,19,,0.0,,True,60,low
+A,majority,full_train_baseline,test,original_label,SSH-Bruteforce,1,14983,0,14983,,0.0,,True,157502,reported
+A,duration_rule,full_train_baseline,test,family,Benign,0,2068172,,,1057688,,0.5114120102196529,True,9426379,reported
+A,duration_rule,full_train_baseline,test,family,Bot,1,39807,39549,258,,0.9935187278619338,,True,205917,reported
+A,duration_rule,full_train_baseline,test,family,Credential brute force,1,22108,7848,14260,,0.3549846209516917,,True,341040,reported
+A,duration_rule,full_train_baseline,test,family,DDoS,1,188933,101721,87212,,0.5383972095928187,,True,885772,reported
+A,duration_rule,full_train_baseline,test,family,DoS,1,88711,61309,27402,,0.6911093325517692,,True,479941,reported
+A,duration_rule,full_train_baseline,test,family,Infiltration,1,24407,15104,9303,,0.6188388577047569,,True,116242,reported
+A,duration_rule,full_train_baseline,test,family,Web attack,1,154,61,93,,0.3961038961038961,,True,634,reported
+A,duration_rule,full_train_baseline,test,original_label,Benign,0,2068172,,,1057688,,0.5114120102196529,True,9426379,reported
+A,duration_rule,full_train_baseline,test,original_label,Bot,1,39807,39549,258,,0.9935187278619338,,True,205917,reported
+A,duration_rule,full_train_baseline,test,original_label,Brute Force -Web,1,93,32,61,,0.34408602150537637,,True,411,low
+A,duration_rule,full_train_baseline,test,original_label,Brute Force -XSS,1,42,21,21,,0.5,,True,163,low
+A,duration_rule,full_train_baseline,test,original_label,DDOS attack-HOIC,1,102714,101610,1104,,0.9892517086278404,,True,480857,reported
+A,duration_rule,full_train_baseline,test,original_label,DDOS attack-LOIC-UDP,1,238,0,238,,0.0,,True,1215,reported
+A,duration_rule,full_train_baseline,test,original_label,DDoS attacks-LOIC-HTTP,1,85981,111,85870,,0.0012909828915690677,,True,403700,reported
+A,duration_rule,full_train_baseline,test,original_label,DoS attacks-GoldenEye,1,6112,7,6105,,0.0011452879581151832,,True,29251,reported
+A,duration_rule,full_train_baseline,test,original_label,DoS attacks-Hulk,1,68449,48586,19863,,0.7098131455536238,,True,323298,reported
+A,duration_rule,full_train_baseline,test,original_label,DoS attacks-SlowHTTPTest,1,12568,12568,0,,1.0,,True,119917,reported
+A,duration_rule,full_train_baseline,test,original_label,DoS attacks-Slowloris,1,1582,148,1434,,0.09355246523388117,,True,7475,reported
+A,duration_rule,full_train_baseline,test,original_label,FTP-BruteForce,1,7125,7125,0,,1.0,,True,183538,reported
+A,duration_rule,full_train_baseline,test,original_label,Infilteration,1,24407,15104,9303,,0.6188388577047569,,True,116242,reported
+A,duration_rule,full_train_baseline,test,original_label,SQL Injection,1,19,8,11,,0.42105263157894735,,True,60,low
+A,duration_rule,full_train_baseline,test,original_label,SSH-Bruteforce,1,14983,723,14260,,0.04825468864713342,,True,157502,reported
+A,logistic_regression,group_sample,validation,family,Benign,0,1990157,,,3,,1.5074187614343993e-06,True,591111,reported
+A,logistic_regression,group_sample,validation,family,Bot,1,40467,0,40467,,0.0,,True,13940,reported
+A,logistic_regression,group_sample,validation,family,Credential brute force,1,17801,0,17801,,0.0,,True,4989,reported
+A,logistic_regression,group_sample,validation,family,DDoS,1,189228,364,188864,,0.0019236053860950811,,True,56636,reported
+A,logistic_regression,group_sample,validation,family,DoS,1,85648,0,85648,,0.0,,True,22380,reported
+A,logistic_regression,group_sample,validation,family,Infiltration,1,21285,0,21285,,0.0,,True,6207,reported
+A,logistic_regression,group_sample,validation,family,Web attack,1,140,0,140,,0.0,,True,44,reported
+A,logistic_regression,group_sample,validation,original_label,Benign,0,1990157,,,3,,1.5074187614343993e-06,True,591111,reported
+A,logistic_regression,group_sample,validation,original_label,Bot,1,40467,0,40467,,0.0,,True,13940,reported
+A,logistic_regression,group_sample,validation,original_label,Brute Force -Web,1,107,0,107,,0.0,,True,27,reported
+A,logistic_regression,group_sample,validation,original_label,Brute Force -XSS,1,25,0,25,,0.0,,True,12,low
+A,logistic_regression,group_sample,validation,original_label,DDOS attack-HOIC,1,102441,0,102441,,0.0,,True,31263,reported
+A,logistic_regression,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,277,267,10,,0.9638989169675091,,True,77,reported
+A,logistic_regression,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,86510,97,86413,,0.001121257658074211,,True,25296,reported
+A,logistic_regression,group_sample,validation,original_label,DoS attacks-GoldenEye,1,6145,0,6145,,0.0,,True,1878,reported
+A,logistic_regression,group_sample,validation,original_label,DoS attacks-Hulk,1,70165,0,70165,,0.0,,True,19884,reported
+A,logistic_regression,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,7405,0,7405,,0.0,,True,146,reported
+A,logistic_regression,group_sample,validation,original_label,DoS attacks-Slowloris,1,1933,0,1933,,0.0,,True,472,reported
+A,logistic_regression,group_sample,validation,original_label,FTP-BruteForce,1,2697,0,2697,,0.0,,True,806,reported
+A,logistic_regression,group_sample,validation,original_label,Infilteration,1,21285,0,21285,,0.0,,True,6207,reported
+A,logistic_regression,group_sample,validation,original_label,SQL Injection,1,8,0,8,,0.0,,True,5,low
+A,logistic_regression,group_sample,validation,original_label,SSH-Bruteforce,1,15104,0,15104,,0.0,,True,4183,reported
+A,logistic_regression,group_sample,test,family,Benign,0,2068172,,,5,,2.417593894511675e-06,True,591111,reported
+A,logistic_regression,group_sample,test,family,Bot,1,39807,0,39807,,0.0,,True,13940,reported
+A,logistic_regression,group_sample,test,family,Credential brute force,1,22108,0,22108,,0.0,,True,4989,reported
+A,logistic_regression,group_sample,test,family,DDoS,1,188933,324,188609,,0.001714893639544177,,True,56636,reported
+A,logistic_regression,group_sample,test,family,DoS,1,88711,0,88711,,0.0,,True,22380,reported
+A,logistic_regression,group_sample,test,family,Infiltration,1,24407,0,24407,,0.0,,True,6207,reported
+A,logistic_regression,group_sample,test,family,Web attack,1,154,0,154,,0.0,,True,44,reported
+A,logistic_regression,group_sample,test,original_label,Benign,0,2068172,,,5,,2.417593894511675e-06,True,591111,reported
+A,logistic_regression,group_sample,test,original_label,Bot,1,39807,0,39807,,0.0,,True,13940,reported
+A,logistic_regression,group_sample,test,original_label,Brute Force -Web,1,93,0,93,,0.0,,True,27,low
+A,logistic_regression,group_sample,test,original_label,Brute Force -XSS,1,42,0,42,,0.0,,True,12,low
+A,logistic_regression,group_sample,test,original_label,DDOS attack-HOIC,1,102714,0,102714,,0.0,,True,31263,reported
+A,logistic_regression,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,238,229,9,,0.9621848739495799,,True,77,reported
+A,logistic_regression,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,85981,95,85886,,0.0011048952675591119,,True,25296,reported
+A,logistic_regression,group_sample,test,original_label,DoS attacks-GoldenEye,1,6112,0,6112,,0.0,,True,1878,reported
+A,logistic_regression,group_sample,test,original_label,DoS attacks-Hulk,1,68449,0,68449,,0.0,,True,19884,reported
+A,logistic_regression,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,12568,0,12568,,0.0,,True,146,reported
+A,logistic_regression,group_sample,test,original_label,DoS attacks-Slowloris,1,1582,0,1582,,0.0,,True,472,reported
+A,logistic_regression,group_sample,test,original_label,FTP-BruteForce,1,7125,0,7125,,0.0,,True,806,reported
+A,logistic_regression,group_sample,test,original_label,Infilteration,1,24407,0,24407,,0.0,,True,6207,reported
+A,logistic_regression,group_sample,test,original_label,SQL Injection,1,19,0,19,,0.0,,True,5,low
+A,logistic_regression,group_sample,test,original_label,SSH-Bruteforce,1,14983,0,14983,,0.0,,True,4183,reported
+A,random_forest,group_sample,validation,family,Benign,0,1990157,,,22509,,0.011310162967042299,True,591111,reported
+A,random_forest,group_sample,validation,family,Bot,1,40467,40223,244,,0.993970395631008,,True,13940,reported
+A,random_forest,group_sample,validation,family,Credential brute force,1,17801,14027,3774,,0.7879894387955733,,True,4989,reported
+A,random_forest,group_sample,validation,family,DDoS,1,189228,181935,7293,,0.9614591920857378,,True,56636,reported
+A,random_forest,group_sample,validation,family,DoS,1,85648,66117,19531,,0.7719619839342425,,True,22380,reported
+A,random_forest,group_sample,validation,family,Infiltration,1,21285,318,20967,,0.014940098661028894,,True,6207,reported
+A,random_forest,group_sample,validation,family,Web attack,1,140,8,132,,0.05714285714285714,,True,44,reported
+A,random_forest,group_sample,validation,original_label,Benign,0,1990157,,,22509,,0.011310162967042299,True,591111,reported
+A,random_forest,group_sample,validation,original_label,Bot,1,40467,40223,244,,0.993970395631008,,True,13940,reported
+A,random_forest,group_sample,validation,original_label,Brute Force -Web,1,107,3,104,,0.028037383177570093,,True,27,reported
+A,random_forest,group_sample,validation,original_label,Brute Force -XSS,1,25,4,21,,0.16,,True,12,low
+A,random_forest,group_sample,validation,original_label,DDOS attack-HOIC,1,102441,102227,214,,0.9979109926689509,,True,31263,reported
+A,random_forest,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,277,274,3,,0.9891696750902527,,True,77,reported
+A,random_forest,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,86510,79434,7076,,0.9182059877470813,,True,25296,reported
+A,random_forest,group_sample,validation,original_label,DoS attacks-GoldenEye,1,6145,2258,3887,,0.367453213995118,,True,1878,reported
+A,random_forest,group_sample,validation,original_label,DoS attacks-Hulk,1,70165,62794,7371,,0.8949476234589895,,True,19884,reported
+A,random_forest,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,7405,0,7405,,0.0,,True,146,reported
+A,random_forest,group_sample,validation,original_label,DoS attacks-Slowloris,1,1933,1065,868,,0.5509570615623384,,True,472,reported
+A,random_forest,group_sample,validation,original_label,FTP-BruteForce,1,2697,0,2697,,0.0,,True,806,reported
+A,random_forest,group_sample,validation,original_label,Infilteration,1,21285,318,20967,,0.014940098661028894,,True,6207,reported
+A,random_forest,group_sample,validation,original_label,SQL Injection,1,8,1,7,,0.125,,True,5,low
+A,random_forest,group_sample,validation,original_label,SSH-Bruteforce,1,15104,14027,1077,,0.9286943855932204,,True,4183,reported
+A,random_forest,group_sample,test,family,Benign,0,2068172,,,22257,,0.01076167746202927,True,591111,reported
+A,random_forest,group_sample,test,family,Bot,1,39807,39587,220,,0.9944733338357575,,True,13940,reported
+A,random_forest,group_sample,test,family,Credential brute force,1,22108,14259,7849,,0.6449701465532839,,True,4989,reported
+A,random_forest,group_sample,test,family,DDoS,1,188933,181706,7227,,0.9617483446512785,,True,56636,reported
+A,random_forest,group_sample,test,family,DoS,1,88711,65650,23061,,0.7400435120785472,,True,22380,reported
+A,random_forest,group_sample,test,family,Infiltration,1,24407,339,24068,,0.013889457942393576,,True,6207,reported
+A,random_forest,group_sample,test,family,Web attack,1,154,12,142,,0.07792207792207792,,True,44,reported
+A,random_forest,group_sample,test,original_label,Benign,0,2068172,,,22257,,0.01076167746202927,True,591111,reported
+A,random_forest,group_sample,test,original_label,Bot,1,39807,39587,220,,0.9944733338357575,,True,13940,reported
+A,random_forest,group_sample,test,original_label,Brute Force -Web,1,93,5,88,,0.053763440860215055,,True,27,low
+A,random_forest,group_sample,test,original_label,Brute Force -XSS,1,42,7,35,,0.16666666666666666,,True,12,low
+A,random_forest,group_sample,test,original_label,DDOS attack-HOIC,1,102714,102575,139,,0.9986467278073096,,True,31263,reported
+A,random_forest,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,238,237,1,,0.9957983193277311,,True,77,reported
+A,random_forest,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,85981,78894,7087,,0.9175748130400903,,True,25296,reported
+A,random_forest,group_sample,test,original_label,DoS attacks-GoldenEye,1,6112,2249,3863,,0.3679646596858639,,True,1878,reported
+A,random_forest,group_sample,test,original_label,DoS attacks-Hulk,1,68449,62385,6064,,0.9114084939151778,,True,19884,reported
+A,random_forest,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,12568,0,12568,,0.0,,True,146,reported
+A,random_forest,group_sample,test,original_label,DoS attacks-Slowloris,1,1582,1016,566,,0.6422250316055625,,True,472,reported
+A,random_forest,group_sample,test,original_label,FTP-BruteForce,1,7125,0,7125,,0.0,,True,806,reported
+A,random_forest,group_sample,test,original_label,Infilteration,1,24407,339,24068,,0.013889457942393576,,True,6207,reported
+A,random_forest,group_sample,test,original_label,SQL Injection,1,19,0,19,,0.0,,True,5,low
+A,random_forest,group_sample,test,original_label,SSH-Bruteforce,1,14983,14259,724,,0.9516785690449175,,True,4183,reported
+A,gradient_boosted_trees,group_sample,validation,family,Benign,0,1990157,,,21671,,0.010889090659681622,True,591111,reported
+A,gradient_boosted_trees,group_sample,validation,family,Bot,1,40467,39628,839,,0.979267057108261,,True,13940,reported
+A,gradient_boosted_trees,group_sample,validation,family,Credential brute force,1,17801,15565,2236,,0.8743890792652098,,True,4989,reported
+A,gradient_boosted_trees,group_sample,validation,family,DDoS,1,189228,174804,14424,,0.9237744942608916,,True,56636,reported
+A,gradient_boosted_trees,group_sample,validation,family,DoS,1,85648,73560,12088,,0.858864188305623,,True,22380,reported
+A,gradient_boosted_trees,group_sample,validation,family,Infiltration,1,21285,494,20791,,0.023208832511158094,,True,6207,reported
+A,gradient_boosted_trees,group_sample,validation,family,Web attack,1,140,19,121,,0.1357142857142857,,True,44,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,Benign,0,1990157,,,21671,,0.010889090659681622,True,591111,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,Bot,1,40467,39628,839,,0.979267057108261,,True,13940,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,Brute Force -Web,1,107,12,95,,0.11214953271028037,,True,27,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,Brute Force -XSS,1,25,4,21,,0.16,,True,12,low
+A,gradient_boosted_trees,group_sample,validation,original_label,DDOS attack-HOIC,1,102441,102111,330,,0.9967786335549242,,True,31263,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,277,277,0,,1.0,,True,77,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,86510,72416,14094,,0.8370824182175471,,True,25296,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-GoldenEye,1,6145,2981,3164,,0.48510984540276647,,True,1878,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-Hulk,1,70165,63865,6300,,0.9102116439820424,,True,19884,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,7405,6298,1107,,0.8505064145847401,,True,146,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-Slowloris,1,1933,416,1517,,0.21520951888256595,,True,472,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,FTP-BruteForce,1,2697,1540,1157,,0.5710048201705599,,True,806,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,Infilteration,1,21285,494,20791,,0.023208832511158094,,True,6207,reported
+A,gradient_boosted_trees,group_sample,validation,original_label,SQL Injection,1,8,3,5,,0.375,,True,5,low
+A,gradient_boosted_trees,group_sample,validation,original_label,SSH-Bruteforce,1,15104,14025,1079,,0.928561970338983,,True,4183,reported
+A,gradient_boosted_trees,group_sample,test,family,Benign,0,2068172,,,23916,,0.011563835116228244,True,591111,reported
+A,gradient_boosted_trees,group_sample,test,family,Bot,1,39807,38962,845,,0.9787725776873414,,True,13940,reported
+A,gradient_boosted_trees,group_sample,test,family,Credential brute force,1,22108,20886,1222,,0.944725891080152,,True,4989,reported
+A,gradient_boosted_trees,group_sample,test,family,DDoS,1,188933,174713,14220,,0.9247352235977834,,True,56636,reported
+A,gradient_boosted_trees,group_sample,test,family,DoS,1,88711,74090,14621,,0.8351839118034967,,True,22380,reported
+A,gradient_boosted_trees,group_sample,test,family,Infiltration,1,24407,686,23721,,0.028106690703486703,,True,6207,reported
+A,gradient_boosted_trees,group_sample,test,family,Web attack,1,154,22,132,,0.14285714285714285,,True,44,reported
+A,gradient_boosted_trees,group_sample,test,original_label,Benign,0,2068172,,,23916,,0.011563835116228244,True,591111,reported
+A,gradient_boosted_trees,group_sample,test,original_label,Bot,1,39807,38962,845,,0.9787725776873414,,True,13940,reported
+A,gradient_boosted_trees,group_sample,test,original_label,Brute Force -Web,1,93,9,84,,0.0967741935483871,,True,27,low
+A,gradient_boosted_trees,group_sample,test,original_label,Brute Force -XSS,1,42,9,33,,0.21428571428571427,,True,12,low
+A,gradient_boosted_trees,group_sample,test,original_label,DDOS attack-HOIC,1,102714,102442,272,,0.9973518702416418,,True,31263,reported
+A,gradient_boosted_trees,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,238,238,0,,1.0,,True,77,reported
+A,gradient_boosted_trees,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,85981,72033,13948,,0.8377781137693211,,True,25296,reported
+A,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-GoldenEye,1,6112,2847,3265,,0.46580497382198954,,True,1878,reported
+A,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-Hulk,1,68449,63081,5368,,0.921576648307499,,True,19884,reported
+A,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,12568,7777,4791,,0.6187937619350732,,True,146,reported
+A,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-Slowloris,1,1582,385,1197,,0.24336283185840707,,True,472,reported
+A,gradient_boosted_trees,group_sample,test,original_label,FTP-BruteForce,1,7125,6627,498,,0.9301052631578948,,True,806,reported
+A,gradient_boosted_trees,group_sample,test,original_label,Infilteration,1,24407,686,23721,,0.028106690703486703,,True,6207,reported
+A,gradient_boosted_trees,group_sample,test,original_label,SQL Injection,1,19,4,15,,0.21052631578947367,,True,5,low
+A,gradient_boosted_trees,group_sample,test,original_label,SSH-Bruteforce,1,14983,14259,724,,0.9516785690449175,,True,4183,reported
+A,logistic_regression,full_train_refit,validation,family,Benign,0,1990157,,,1050,,0.0005275965665020398,True,9426379,reported
+A,logistic_regression,full_train_refit,validation,family,Bot,1,40467,4,40463,,9.884597326216423e-05,,True,205917,reported
+A,logistic_regression,full_train_refit,validation,family,Credential brute force,1,17801,1,17800,,5.617661929105106e-05,,True,341040,reported
+A,logistic_regression,full_train_refit,validation,family,DDoS,1,189228,369,188859,,0.0019500285370029806,,True,885772,reported
+A,logistic_regression,full_train_refit,validation,family,DoS,1,85648,6,85642,,7.005417522884363e-05,,True,479941,reported
+A,logistic_regression,full_train_refit,validation,family,Infiltration,1,21285,80,21205,,0.0037585153864223633,,True,116242,reported
+A,logistic_regression,full_train_refit,validation,family,Web attack,1,140,0,140,,0.0,,True,634,reported
+A,logistic_regression,full_train_refit,validation,original_label,Benign,0,1990157,,,1050,,0.0005275965665020398,True,9426379,reported
+A,logistic_regression,full_train_refit,validation,original_label,Bot,1,40467,4,40463,,9.884597326216423e-05,,True,205917,reported
+A,logistic_regression,full_train_refit,validation,original_label,Brute Force -Web,1,107,0,107,,0.0,,True,411,reported
+A,logistic_regression,full_train_refit,validation,original_label,Brute Force -XSS,1,25,0,25,,0.0,,True,163,low
+A,logistic_regression,full_train_refit,validation,original_label,DDOS attack-HOIC,1,102441,7,102434,,6.83320155016058e-05,,True,480857,reported
+A,logistic_regression,full_train_refit,validation,original_label,DDOS attack-LOIC-UDP,1,277,265,12,,0.9566787003610109,,True,1215,reported
+A,logistic_regression,full_train_refit,validation,original_label,DDoS attacks-LOIC-HTTP,1,86510,97,86413,,0.001121257658074211,,True,403700,reported
+A,logistic_regression,full_train_refit,validation,original_label,DoS attacks-GoldenEye,1,6145,0,6145,,0.0,,True,29251,reported
+A,logistic_regression,full_train_refit,validation,original_label,DoS attacks-Hulk,1,70165,6,70159,,8.551272001710254e-05,,True,323298,reported
+A,logistic_regression,full_train_refit,validation,original_label,DoS attacks-SlowHTTPTest,1,7405,0,7405,,0.0,,True,119917,reported
+A,logistic_regression,full_train_refit,validation,original_label,DoS attacks-Slowloris,1,1933,0,1933,,0.0,,True,7475,reported
+A,logistic_regression,full_train_refit,validation,original_label,FTP-BruteForce,1,2697,0,2697,,0.0,,True,183538,reported
+A,logistic_regression,full_train_refit,validation,original_label,Infilteration,1,21285,80,21205,,0.0037585153864223633,,True,116242,reported
+A,logistic_regression,full_train_refit,validation,original_label,SQL Injection,1,8,0,8,,0.0,,True,60,low
+A,logistic_regression,full_train_refit,validation,original_label,SSH-Bruteforce,1,15104,1,15103,,6.620762711864407e-05,,True,157502,reported
+A,logistic_regression,full_train_refit,test,family,Benign,0,2068172,,,85010,,0.0411039313944875,True,9426379,reported
+A,logistic_regression,full_train_refit,test,family,Bot,1,39807,6,39801,,0.00015072725902479464,,True,205917,reported
+A,logistic_regression,full_train_refit,test,family,Credential brute force,1,22108,2,22106,,9.04649900488511e-05,,True,341040,reported
+A,logistic_regression,full_train_refit,test,family,DDoS,1,188933,324,188609,,0.001714893639544177,,True,885772,reported
+A,logistic_regression,full_train_refit,test,family,DoS,1,88711,45,88666,,0.0005072651644102761,,True,479941,reported
+A,logistic_regression,full_train_refit,test,family,Infiltration,1,24407,1015,23392,,0.04158643012250584,,True,116242,reported
+A,logistic_regression,full_train_refit,test,family,Web attack,1,154,0,154,,0.0,,True,634,reported
+A,logistic_regression,full_train_refit,test,original_label,Benign,0,2068172,,,85010,,0.0411039313944875,True,9426379,reported
+A,logistic_regression,full_train_refit,test,original_label,Bot,1,39807,6,39801,,0.00015072725902479464,,True,205917,reported
+A,logistic_regression,full_train_refit,test,original_label,Brute Force -Web,1,93,0,93,,0.0,,True,411,low
+A,logistic_regression,full_train_refit,test,original_label,Brute Force -XSS,1,42,0,42,,0.0,,True,163,low
+A,logistic_regression,full_train_refit,test,original_label,DDOS attack-HOIC,1,102714,0,102714,,0.0,,True,480857,reported
+A,logistic_regression,full_train_refit,test,original_label,DDOS attack-LOIC-UDP,1,238,229,9,,0.9621848739495799,,True,1215,reported
+A,logistic_regression,full_train_refit,test,original_label,DDoS attacks-LOIC-HTTP,1,85981,95,85886,,0.0011048952675591119,,True,403700,reported
+A,logistic_regression,full_train_refit,test,original_label,DoS attacks-GoldenEye,1,6112,0,6112,,0.0,,True,29251,reported
+A,logistic_regression,full_train_refit,test,original_label,DoS attacks-Hulk,1,68449,0,68449,,0.0,,True,323298,reported
+A,logistic_regression,full_train_refit,test,original_label,DoS attacks-SlowHTTPTest,1,12568,0,12568,,0.0,,True,119917,reported
+A,logistic_regression,full_train_refit,test,original_label,DoS attacks-Slowloris,1,1582,45,1537,,0.028445006321112517,,True,7475,reported
+A,logistic_regression,full_train_refit,test,original_label,FTP-BruteForce,1,7125,0,7125,,0.0,,True,183538,reported
+A,logistic_regression,full_train_refit,test,original_label,Infilteration,1,24407,1015,23392,,0.04158643012250584,,True,116242,reported
+A,logistic_regression,full_train_refit,test,original_label,SQL Injection,1,19,0,19,,0.0,,True,60,low
+A,logistic_regression,full_train_refit,test,original_label,SSH-Bruteforce,1,14983,2,14981,,0.00013348461589801776,,True,157502,reported
+B,majority,full_train_baseline,validation,family,Benign,0,1094200,,,0,,0.0,True,10892078,reported
+B,majority,full_train_baseline,validation,family,Bot,1,0,0,0,,,,False,0,absent
+B,majority,full_train_baseline,validation,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+B,majority,full_train_baseline,validation,family,DDoS,1,0,0,0,,,,True,1263933,absent
+B,majority,full_train_baseline,validation,family,DoS,1,0,0,0,,,,True,654300,absent
+B,majority,full_train_baseline,validation,family,Infiltration,1,56633,0,56633,,0.0,,False,0,reported
+B,majority,full_train_baseline,validation,family,Web attack,1,423,0,423,,0.0,,True,362,reported
+B,majority,full_train_baseline,validation,original_label,Benign,0,1094200,,,0,,0.0,True,10892078,reported
+B,majority,full_train_baseline,validation,original_label,Bot,1,0,0,0,,,,False,0,absent
+B,majority,full_train_baseline,validation,original_label,Brute Force -Web,1,276,0,276,,0.0,,True,249,reported
+B,majority,full_train_baseline,validation,original_label,Brute Force -XSS,1,111,0,111,,0.0,,True,79,reported
+B,majority,full_train_baseline,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+B,majority,full_train_baseline,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+B,majority,full_train_baseline,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+B,majority,full_train_baseline,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+B,majority,full_train_baseline,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+B,majority,full_train_baseline,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+B,majority,full_train_baseline,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+B,majority,full_train_baseline,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+B,majority,full_train_baseline,validation,original_label,Infilteration,1,56633,0,56633,,0.0,,False,0,reported
+B,majority,full_train_baseline,validation,original_label,SQL Injection,1,36,0,36,,0.0,,True,34,low
+B,majority,full_train_baseline,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+B,duration_rule,full_train_baseline,validation,family,Benign,0,1094200,,,299186,,0.27342898921586545,True,10892078,reported
+B,duration_rule,full_train_baseline,validation,family,Bot,1,0,0,0,,,,False,0,absent
+B,duration_rule,full_train_baseline,validation,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+B,duration_rule,full_train_baseline,validation,family,DDoS,1,0,0,0,,,,True,1263933,absent
+B,duration_rule,full_train_baseline,validation,family,DoS,1,0,0,0,,,,True,654300,absent
+B,duration_rule,full_train_baseline,validation,family,Infiltration,1,56633,27543,29090,,0.48634188547313406,,False,0,reported
+B,duration_rule,full_train_baseline,validation,family,Web attack,1,423,43,380,,0.1016548463356974,,True,362,reported
+B,duration_rule,full_train_baseline,validation,original_label,Benign,0,1094200,,,299186,,0.27342898921586545,True,10892078,reported
+B,duration_rule,full_train_baseline,validation,original_label,Bot,1,0,0,0,,,,False,0,absent
+B,duration_rule,full_train_baseline,validation,original_label,Brute Force -Web,1,276,4,272,,0.014492753623188406,,True,249,reported
+B,duration_rule,full_train_baseline,validation,original_label,Brute Force -XSS,1,111,34,77,,0.3063063063063063,,True,79,reported
+B,duration_rule,full_train_baseline,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+B,duration_rule,full_train_baseline,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+B,duration_rule,full_train_baseline,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+B,duration_rule,full_train_baseline,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+B,duration_rule,full_train_baseline,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+B,duration_rule,full_train_baseline,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+B,duration_rule,full_train_baseline,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+B,duration_rule,full_train_baseline,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+B,duration_rule,full_train_baseline,validation,original_label,Infilteration,1,56633,27543,29090,,0.48634188547313406,,False,0,reported
+B,duration_rule,full_train_baseline,validation,original_label,SQL Injection,1,36,5,31,,0.1388888888888889,,True,34,low
+B,duration_rule,full_train_baseline,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+B,majority,full_train_baseline,test,family,Benign,0,771584,,,0,,0.0,True,10892078,reported
+B,majority,full_train_baseline,test,family,Bot,1,143274,0,143274,,0.0,,False,0,reported
+B,majority,full_train_baseline,test,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+B,majority,full_train_baseline,test,family,DDoS,1,0,0,0,,,,True,1263933,absent
+B,majority,full_train_baseline,test,family,DoS,1,0,0,0,,,,True,654300,absent
+B,majority,full_train_baseline,test,family,Infiltration,1,65251,0,65251,,0.0,,False,0,reported
+B,majority,full_train_baseline,test,family,Web attack,1,0,0,0,,,,True,362,absent
+B,majority,full_train_baseline,test,original_label,Benign,0,771584,,,0,,0.0,True,10892078,reported
+B,majority,full_train_baseline,test,original_label,Bot,1,143274,0,143274,,0.0,,False,0,reported
+B,majority,full_train_baseline,test,original_label,Brute Force -Web,1,0,0,0,,,,True,249,absent
+B,majority,full_train_baseline,test,original_label,Brute Force -XSS,1,0,0,0,,,,True,79,absent
+B,majority,full_train_baseline,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+B,majority,full_train_baseline,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+B,majority,full_train_baseline,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+B,majority,full_train_baseline,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+B,majority,full_train_baseline,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+B,majority,full_train_baseline,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+B,majority,full_train_baseline,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+B,majority,full_train_baseline,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+B,majority,full_train_baseline,test,original_label,Infilteration,1,65251,0,65251,,0.0,,False,0,reported
+B,majority,full_train_baseline,test,original_label,SQL Injection,1,0,0,0,,,,True,34,absent
+B,majority,full_train_baseline,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+B,duration_rule,full_train_baseline,test,family,Benign,0,771584,,,212583,,0.2755150443762442,True,10892078,reported
+B,duration_rule,full_train_baseline,test,family,Bot,1,143274,141254,2020,,0.9859011404721024,,False,0,reported
+B,duration_rule,full_train_baseline,test,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+B,duration_rule,full_train_baseline,test,family,DDoS,1,0,0,0,,,,True,1263933,absent
+B,duration_rule,full_train_baseline,test,family,DoS,1,0,0,0,,,,True,654300,absent
+B,duration_rule,full_train_baseline,test,family,Infiltration,1,65251,31317,33934,,0.47994666748402326,,False,0,reported
+B,duration_rule,full_train_baseline,test,family,Web attack,1,0,0,0,,,,True,362,absent
+B,duration_rule,full_train_baseline,test,original_label,Benign,0,771584,,,212583,,0.2755150443762442,True,10892078,reported
+B,duration_rule,full_train_baseline,test,original_label,Bot,1,143274,141254,2020,,0.9859011404721024,,False,0,reported
+B,duration_rule,full_train_baseline,test,original_label,Brute Force -Web,1,0,0,0,,,,True,249,absent
+B,duration_rule,full_train_baseline,test,original_label,Brute Force -XSS,1,0,0,0,,,,True,79,absent
+B,duration_rule,full_train_baseline,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+B,duration_rule,full_train_baseline,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+B,duration_rule,full_train_baseline,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+B,duration_rule,full_train_baseline,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+B,duration_rule,full_train_baseline,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+B,duration_rule,full_train_baseline,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+B,duration_rule,full_train_baseline,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+B,duration_rule,full_train_baseline,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+B,duration_rule,full_train_baseline,test,original_label,Infilteration,1,65251,31317,33934,,0.47994666748402326,,False,0,reported
+B,duration_rule,full_train_baseline,test,original_label,SQL Injection,1,0,0,0,,,,True,34,absent
+B,duration_rule,full_train_baseline,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+B,logistic_regression,group_sample,validation,family,Benign,0,1094200,,,1602,,0.0014640833485651617,True,664936,reported
+B,logistic_regression,group_sample,validation,family,Bot,1,0,0,0,,,,False,0,absent
+B,logistic_regression,group_sample,validation,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+B,logistic_regression,group_sample,validation,family,DDoS,1,0,0,0,,,,True,80477,absent
+B,logistic_regression,group_sample,validation,family,DoS,1,0,0,0,,,,True,37445,absent
+B,logistic_regression,group_sample,validation,family,Infiltration,1,56633,600,56033,,0.01059452969116946,,False,0,reported
+B,logistic_regression,group_sample,validation,family,Web attack,1,423,0,423,,0.0,,True,28,reported
+B,logistic_regression,group_sample,validation,original_label,Benign,0,1094200,,,1602,,0.0014640833485651617,True,664936,reported
+B,logistic_regression,group_sample,validation,original_label,Bot,1,0,0,0,,,,False,0,absent
+B,logistic_regression,group_sample,validation,original_label,Brute Force -Web,1,276,0,276,,0.0,,True,20,reported
+B,logistic_regression,group_sample,validation,original_label,Brute Force -XSS,1,111,0,111,,0.0,,True,5,reported
+B,logistic_regression,group_sample,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+B,logistic_regression,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+B,logistic_regression,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+B,logistic_regression,group_sample,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+B,logistic_regression,group_sample,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+B,logistic_regression,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+B,logistic_regression,group_sample,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+B,logistic_regression,group_sample,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+B,logistic_regression,group_sample,validation,original_label,Infilteration,1,56633,600,56033,,0.01059452969116946,,False,0,reported
+B,logistic_regression,group_sample,validation,original_label,SQL Injection,1,36,0,36,,0.0,,True,3,low
+B,logistic_regression,group_sample,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+B,logistic_regression,group_sample,test,family,Benign,0,771584,,,51,,6.609779362972794e-05,True,664936,reported
+B,logistic_regression,group_sample,test,family,Bot,1,143274,177,143097,,0.0012353951170484526,,False,0,reported
+B,logistic_regression,group_sample,test,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+B,logistic_regression,group_sample,test,family,DDoS,1,0,0,0,,,,True,80477,absent
+B,logistic_regression,group_sample,test,family,DoS,1,0,0,0,,,,True,37445,absent
+B,logistic_regression,group_sample,test,family,Infiltration,1,65251,0,65251,,0.0,,False,0,reported
+B,logistic_regression,group_sample,test,family,Web attack,1,0,0,0,,,,True,28,absent
+B,logistic_regression,group_sample,test,original_label,Benign,0,771584,,,51,,6.609779362972794e-05,True,664936,reported
+B,logistic_regression,group_sample,test,original_label,Bot,1,143274,177,143097,,0.0012353951170484526,,False,0,reported
+B,logistic_regression,group_sample,test,original_label,Brute Force -Web,1,0,0,0,,,,True,20,absent
+B,logistic_regression,group_sample,test,original_label,Brute Force -XSS,1,0,0,0,,,,True,5,absent
+B,logistic_regression,group_sample,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+B,logistic_regression,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+B,logistic_regression,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+B,logistic_regression,group_sample,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+B,logistic_regression,group_sample,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+B,logistic_regression,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+B,logistic_regression,group_sample,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+B,logistic_regression,group_sample,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+B,logistic_regression,group_sample,test,original_label,Infilteration,1,65251,0,65251,,0.0,,False,0,reported
+B,logistic_regression,group_sample,test,original_label,SQL Injection,1,0,0,0,,,,True,3,absent
+B,logistic_regression,group_sample,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+B,random_forest,group_sample,validation,family,Benign,0,1094200,,,9494,,0.008676658746115883,True,664936,reported
+B,random_forest,group_sample,validation,family,Bot,1,0,0,0,,,,False,0,absent
+B,random_forest,group_sample,validation,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+B,random_forest,group_sample,validation,family,DDoS,1,0,0,0,,,,True,80477,absent
+B,random_forest,group_sample,validation,family,DoS,1,0,0,0,,,,True,37445,absent
+B,random_forest,group_sample,validation,family,Infiltration,1,56633,577,56056,,0.010188406053007963,,False,0,reported
+B,random_forest,group_sample,validation,family,Web attack,1,423,9,414,,0.02127659574468085,,True,28,reported
+B,random_forest,group_sample,validation,original_label,Benign,0,1094200,,,9494,,0.008676658746115883,True,664936,reported
+B,random_forest,group_sample,validation,original_label,Bot,1,0,0,0,,,,False,0,absent
+B,random_forest,group_sample,validation,original_label,Brute Force -Web,1,276,3,273,,0.010869565217391304,,True,20,reported
+B,random_forest,group_sample,validation,original_label,Brute Force -XSS,1,111,5,106,,0.04504504504504504,,True,5,reported
+B,random_forest,group_sample,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+B,random_forest,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+B,random_forest,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+B,random_forest,group_sample,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+B,random_forest,group_sample,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+B,random_forest,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+B,random_forest,group_sample,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+B,random_forest,group_sample,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+B,random_forest,group_sample,validation,original_label,Infilteration,1,56633,577,56056,,0.010188406053007963,,False,0,reported
+B,random_forest,group_sample,validation,original_label,SQL Injection,1,36,1,35,,0.027777777777777776,,True,3,low
+B,random_forest,group_sample,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+B,random_forest,group_sample,test,family,Benign,0,771584,,,4863,,0.0063026190278699405,True,664936,reported
+B,random_forest,group_sample,test,family,Bot,1,143274,2,143272,,1.395926685930455e-05,,False,0,reported
+B,random_forest,group_sample,test,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+B,random_forest,group_sample,test,family,DDoS,1,0,0,0,,,,True,80477,absent
+B,random_forest,group_sample,test,family,DoS,1,0,0,0,,,,True,37445,absent
+B,random_forest,group_sample,test,family,Infiltration,1,65251,415,64836,,0.006360055784585677,,False,0,reported
+B,random_forest,group_sample,test,family,Web attack,1,0,0,0,,,,True,28,absent
+B,random_forest,group_sample,test,original_label,Benign,0,771584,,,4863,,0.0063026190278699405,True,664936,reported
+B,random_forest,group_sample,test,original_label,Bot,1,143274,2,143272,,1.395926685930455e-05,,False,0,reported
+B,random_forest,group_sample,test,original_label,Brute Force -Web,1,0,0,0,,,,True,20,absent
+B,random_forest,group_sample,test,original_label,Brute Force -XSS,1,0,0,0,,,,True,5,absent
+B,random_forest,group_sample,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+B,random_forest,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+B,random_forest,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+B,random_forest,group_sample,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+B,random_forest,group_sample,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+B,random_forest,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+B,random_forest,group_sample,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+B,random_forest,group_sample,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+B,random_forest,group_sample,test,original_label,Infilteration,1,65251,415,64836,,0.006360055784585677,,False,0,reported
+B,random_forest,group_sample,test,original_label,SQL Injection,1,0,0,0,,,,True,3,absent
+B,random_forest,group_sample,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+B,gradient_boosted_trees,group_sample,validation,family,Benign,0,1094200,,,13828,,0.012637543410711022,True,664936,reported
+B,gradient_boosted_trees,group_sample,validation,family,Bot,1,0,0,0,,,,False,0,absent
+B,gradient_boosted_trees,group_sample,validation,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+B,gradient_boosted_trees,group_sample,validation,family,DDoS,1,0,0,0,,,,True,80477,absent
+B,gradient_boosted_trees,group_sample,validation,family,DoS,1,0,0,0,,,,True,37445,absent
+B,gradient_boosted_trees,group_sample,validation,family,Infiltration,1,56633,460,56173,,0.008122472763229919,,False,0,reported
+B,gradient_boosted_trees,group_sample,validation,family,Web attack,1,423,10,413,,0.02364066193853428,,True,28,reported
+B,gradient_boosted_trees,group_sample,validation,original_label,Benign,0,1094200,,,13828,,0.012637543410711022,True,664936,reported
+B,gradient_boosted_trees,group_sample,validation,original_label,Bot,1,0,0,0,,,,False,0,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,Brute Force -Web,1,276,3,273,,0.010869565217391304,,True,20,reported
+B,gradient_boosted_trees,group_sample,validation,original_label,Brute Force -XSS,1,111,6,105,,0.05405405405405406,,True,5,reported
+B,gradient_boosted_trees,group_sample,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+B,gradient_boosted_trees,group_sample,validation,original_label,Infilteration,1,56633,460,56173,,0.008122472763229919,,False,0,reported
+B,gradient_boosted_trees,group_sample,validation,original_label,SQL Injection,1,36,1,35,,0.027777777777777776,,True,3,low
+B,gradient_boosted_trees,group_sample,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+B,gradient_boosted_trees,group_sample,test,family,Benign,0,771584,,,7021,,0.009099462923025879,True,664936,reported
+B,gradient_boosted_trees,group_sample,test,family,Bot,1,143274,787,142487,,0.00549297150913634,,False,0,reported
+B,gradient_boosted_trees,group_sample,test,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+B,gradient_boosted_trees,group_sample,test,family,DDoS,1,0,0,0,,,,True,80477,absent
+B,gradient_boosted_trees,group_sample,test,family,DoS,1,0,0,0,,,,True,37445,absent
+B,gradient_boosted_trees,group_sample,test,family,Infiltration,1,65251,431,64820,,0.0066052627545937995,,False,0,reported
+B,gradient_boosted_trees,group_sample,test,family,Web attack,1,0,0,0,,,,True,28,absent
+B,gradient_boosted_trees,group_sample,test,original_label,Benign,0,771584,,,7021,,0.009099462923025879,True,664936,reported
+B,gradient_boosted_trees,group_sample,test,original_label,Bot,1,143274,787,142487,,0.00549297150913634,,False,0,reported
+B,gradient_boosted_trees,group_sample,test,original_label,Brute Force -Web,1,0,0,0,,,,True,20,absent
+B,gradient_boosted_trees,group_sample,test,original_label,Brute Force -XSS,1,0,0,0,,,,True,5,absent
+B,gradient_boosted_trees,group_sample,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+B,gradient_boosted_trees,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+B,gradient_boosted_trees,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+B,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+B,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+B,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+B,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+B,gradient_boosted_trees,group_sample,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+B,gradient_boosted_trees,group_sample,test,original_label,Infilteration,1,65251,431,64820,,0.0066052627545937995,,False,0,reported
+B,gradient_boosted_trees,group_sample,test,original_label,SQL Injection,1,0,0,0,,,,True,3,absent
+B,gradient_boosted_trees,group_sample,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+B,logistic_regression,full_train_refit,validation,family,Benign,0,1094200,,,261,,0.0002385304331932005,True,10892078,reported
+B,logistic_regression,full_train_refit,validation,family,Bot,1,0,0,0,,,,False,0,absent
+B,logistic_regression,full_train_refit,validation,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+B,logistic_regression,full_train_refit,validation,family,DDoS,1,0,0,0,,,,True,1263933,absent
+B,logistic_regression,full_train_refit,validation,family,DoS,1,0,0,0,,,,True,654300,absent
+B,logistic_regression,full_train_refit,validation,family,Infiltration,1,56633,72,56561,,0.001271343562940335,,False,0,reported
+B,logistic_regression,full_train_refit,validation,family,Web attack,1,423,0,423,,0.0,,True,362,reported
+B,logistic_regression,full_train_refit,validation,original_label,Benign,0,1094200,,,261,,0.0002385304331932005,True,10892078,reported
+B,logistic_regression,full_train_refit,validation,original_label,Bot,1,0,0,0,,,,False,0,absent
+B,logistic_regression,full_train_refit,validation,original_label,Brute Force -Web,1,276,0,276,,0.0,,True,249,reported
+B,logistic_regression,full_train_refit,validation,original_label,Brute Force -XSS,1,111,0,111,,0.0,,True,79,reported
+B,logistic_regression,full_train_refit,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+B,logistic_regression,full_train_refit,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+B,logistic_regression,full_train_refit,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+B,logistic_regression,full_train_refit,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+B,logistic_regression,full_train_refit,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+B,logistic_regression,full_train_refit,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+B,logistic_regression,full_train_refit,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+B,logistic_regression,full_train_refit,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+B,logistic_regression,full_train_refit,validation,original_label,Infilteration,1,56633,72,56561,,0.001271343562940335,,False,0,reported
+B,logistic_regression,full_train_refit,validation,original_label,SQL Injection,1,36,0,36,,0.0,,True,34,low
+B,logistic_regression,full_train_refit,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+B,logistic_regression,full_train_refit,test,family,Benign,0,771584,,,91,,0.000117939200398142,True,10892078,reported
+B,logistic_regression,full_train_refit,test,family,Bot,1,143274,786,142488,,0.005485991875706688,,False,0,reported
+B,logistic_regression,full_train_refit,test,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+B,logistic_regression,full_train_refit,test,family,DDoS,1,0,0,0,,,,True,1263933,absent
+B,logistic_regression,full_train_refit,test,family,DoS,1,0,0,0,,,,True,654300,absent
+B,logistic_regression,full_train_refit,test,family,Infiltration,1,65251,1,65250,,1.5325435625507655e-05,,False,0,reported
+B,logistic_regression,full_train_refit,test,family,Web attack,1,0,0,0,,,,True,362,absent
+B,logistic_regression,full_train_refit,test,original_label,Benign,0,771584,,,91,,0.000117939200398142,True,10892078,reported
+B,logistic_regression,full_train_refit,test,original_label,Bot,1,143274,786,142488,,0.005485991875706688,,False,0,reported
+B,logistic_regression,full_train_refit,test,original_label,Brute Force -Web,1,0,0,0,,,,True,249,absent
+B,logistic_regression,full_train_refit,test,original_label,Brute Force -XSS,1,0,0,0,,,,True,79,absent
+B,logistic_regression,full_train_refit,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+B,logistic_regression,full_train_refit,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+B,logistic_regression,full_train_refit,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+B,logistic_regression,full_train_refit,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+B,logistic_regression,full_train_refit,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+B,logistic_regression,full_train_refit,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+B,logistic_regression,full_train_refit,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+B,logistic_regression,full_train_refit,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+B,logistic_regression,full_train_refit,test,original_label,Infilteration,1,65251,1,65250,,1.5325435625507655e-05,,False,0,reported
+B,logistic_regression,full_train_refit,test,original_label,SQL Injection,1,0,0,0,,,,True,34,absent
+B,logistic_regression,full_train_refit,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+C,majority,full_train_baseline,validation,family,Benign,0,351060,,,0,,0.0,True,10844286,reported
+C,majority,full_train_baseline,validation,family,Bot,1,0,0,0,,,,True,286191,absent
+C,majority,full_train_baseline,validation,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+C,majority,full_train_baseline,validation,family,DDoS,1,0,0,0,,,,True,1263933,absent
+C,majority,full_train_baseline,validation,family,DoS,1,0,0,0,,,,True,654300,absent
+C,majority,full_train_baseline,validation,family,Infiltration,1,41842,0,41842,,0.0,,True,93063,reported
+C,majority,full_train_baseline,validation,family,Web attack,1,0,0,0,,,,False,0,absent
+C,majority,full_train_baseline,validation,original_label,Benign,0,351060,,,0,,0.0,True,10844286,reported
+C,majority,full_train_baseline,validation,original_label,Bot,1,0,0,0,,,,True,286191,absent
+C,majority,full_train_baseline,validation,original_label,Brute Force -Web,1,0,0,0,,,,False,0,absent
+C,majority,full_train_baseline,validation,original_label,Brute Force -XSS,1,0,0,0,,,,False,0,absent
+C,majority,full_train_baseline,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+C,majority,full_train_baseline,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+C,majority,full_train_baseline,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+C,majority,full_train_baseline,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+C,majority,full_train_baseline,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+C,majority,full_train_baseline,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+C,majority,full_train_baseline,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+C,majority,full_train_baseline,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+C,majority,full_train_baseline,validation,original_label,Infilteration,1,41842,0,41842,,0.0,,True,93063,reported
+C,majority,full_train_baseline,validation,original_label,SQL Injection,1,0,0,0,,,,False,0,absent
+C,majority,full_train_baseline,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+C,duration_rule,full_train_baseline,validation,family,Benign,0,351060,,,118187,,0.3366575514157124,True,10844286,reported
+C,duration_rule,full_train_baseline,validation,family,Bot,1,0,0,0,,,,True,286191,absent
+C,duration_rule,full_train_baseline,validation,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+C,duration_rule,full_train_baseline,validation,family,DDoS,1,0,0,0,,,,True,1263933,absent
+C,duration_rule,full_train_baseline,validation,family,DoS,1,0,0,0,,,,True,654300,absent
+C,duration_rule,full_train_baseline,validation,family,Infiltration,1,41842,13096,28746,,0.31298695091056833,,True,93063,reported
+C,duration_rule,full_train_baseline,validation,family,Web attack,1,0,0,0,,,,False,0,absent
+C,duration_rule,full_train_baseline,validation,original_label,Benign,0,351060,,,118187,,0.3366575514157124,True,10844286,reported
+C,duration_rule,full_train_baseline,validation,original_label,Bot,1,0,0,0,,,,True,286191,absent
+C,duration_rule,full_train_baseline,validation,original_label,Brute Force -Web,1,0,0,0,,,,False,0,absent
+C,duration_rule,full_train_baseline,validation,original_label,Brute Force -XSS,1,0,0,0,,,,False,0,absent
+C,duration_rule,full_train_baseline,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+C,duration_rule,full_train_baseline,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+C,duration_rule,full_train_baseline,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+C,duration_rule,full_train_baseline,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+C,duration_rule,full_train_baseline,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+C,duration_rule,full_train_baseline,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+C,duration_rule,full_train_baseline,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+C,duration_rule,full_train_baseline,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+C,duration_rule,full_train_baseline,validation,original_label,Infilteration,1,41842,13096,28746,,0.31298695091056833,,True,93063,reported
+C,duration_rule,full_train_baseline,validation,original_label,SQL Injection,1,0,0,0,,,,False,0,absent
+C,duration_rule,full_train_baseline,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+C,majority,full_train_baseline,test,family,Benign,0,1457560,,,0,,0.0,True,10844286,reported
+C,majority,full_train_baseline,test,family,Bot,1,0,0,0,,,,True,286191,absent
+C,majority,full_train_baseline,test,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+C,majority,full_train_baseline,test,family,DDoS,1,0,0,0,,,,True,1263933,absent
+C,majority,full_train_baseline,test,family,DoS,1,0,0,0,,,,True,654300,absent
+C,majority,full_train_baseline,test,family,Infiltration,1,0,0,0,,,,True,93063,absent
+C,majority,full_train_baseline,test,family,Web attack,1,658,0,658,,0.0,,False,0,reported
+C,majority,full_train_baseline,test,original_label,Benign,0,1457560,,,0,,0.0,True,10844286,reported
+C,majority,full_train_baseline,test,original_label,Bot,1,0,0,0,,,,True,286191,absent
+C,majority,full_train_baseline,test,original_label,Brute Force -Web,1,423,0,423,,0.0,,False,0,reported
+C,majority,full_train_baseline,test,original_label,Brute Force -XSS,1,176,0,176,,0.0,,False,0,reported
+C,majority,full_train_baseline,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+C,majority,full_train_baseline,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+C,majority,full_train_baseline,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+C,majority,full_train_baseline,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+C,majority,full_train_baseline,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+C,majority,full_train_baseline,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+C,majority,full_train_baseline,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+C,majority,full_train_baseline,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+C,majority,full_train_baseline,test,original_label,Infilteration,1,0,0,0,,,,True,93063,absent
+C,majority,full_train_baseline,test,original_label,SQL Injection,1,59,0,59,,0.0,,False,0,low
+C,majority,full_train_baseline,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+C,duration_rule,full_train_baseline,test,family,Benign,0,1457560,,,325786,,0.22351464090672082,True,10844286,reported
+C,duration_rule,full_train_baseline,test,family,Bot,1,0,0,0,,,,True,286191,absent
+C,duration_rule,full_train_baseline,test,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+C,duration_rule,full_train_baseline,test,family,DDoS,1,0,0,0,,,,True,1263933,absent
+C,duration_rule,full_train_baseline,test,family,DoS,1,0,0,0,,,,True,654300,absent
+C,duration_rule,full_train_baseline,test,family,Infiltration,1,0,0,0,,,,True,93063,absent
+C,duration_rule,full_train_baseline,test,family,Web attack,1,658,71,587,,0.10790273556231003,,False,0,reported
+C,duration_rule,full_train_baseline,test,original_label,Benign,0,1457560,,,325786,,0.22351464090672082,True,10844286,reported
+C,duration_rule,full_train_baseline,test,original_label,Bot,1,0,0,0,,,,True,286191,absent
+C,duration_rule,full_train_baseline,test,original_label,Brute Force -Web,1,423,6,417,,0.014184397163120567,,False,0,reported
+C,duration_rule,full_train_baseline,test,original_label,Brute Force -XSS,1,176,59,117,,0.3352272727272727,,False,0,reported
+C,duration_rule,full_train_baseline,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+C,duration_rule,full_train_baseline,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+C,duration_rule,full_train_baseline,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+C,duration_rule,full_train_baseline,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+C,duration_rule,full_train_baseline,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+C,duration_rule,full_train_baseline,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+C,duration_rule,full_train_baseline,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+C,duration_rule,full_train_baseline,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+C,duration_rule,full_train_baseline,test,original_label,Infilteration,1,0,0,0,,,,True,93063,absent
+C,duration_rule,full_train_baseline,test,original_label,SQL Injection,1,59,6,53,,0.1016949152542373,,False,0,low
+C,duration_rule,full_train_baseline,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+C,logistic_regression,group_sample,validation,family,Benign,0,351060,,,3535,,0.010069503788526177,True,659296,reported
+C,logistic_regression,group_sample,validation,family,Bot,1,0,0,0,,,,True,17402,absent
+C,logistic_regression,group_sample,validation,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+C,logistic_regression,group_sample,validation,family,DDoS,1,0,0,0,,,,True,80477,absent
+C,logistic_regression,group_sample,validation,family,DoS,1,0,0,0,,,,True,37445,absent
+C,logistic_regression,group_sample,validation,family,Infiltration,1,41842,641,41201,,0.015319535395057598,,True,5516,reported
+C,logistic_regression,group_sample,validation,family,Web attack,1,0,0,0,,,,False,0,absent
+C,logistic_regression,group_sample,validation,original_label,Benign,0,351060,,,3535,,0.010069503788526177,True,659296,reported
+C,logistic_regression,group_sample,validation,original_label,Bot,1,0,0,0,,,,True,17402,absent
+C,logistic_regression,group_sample,validation,original_label,Brute Force -Web,1,0,0,0,,,,False,0,absent
+C,logistic_regression,group_sample,validation,original_label,Brute Force -XSS,1,0,0,0,,,,False,0,absent
+C,logistic_regression,group_sample,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+C,logistic_regression,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+C,logistic_regression,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+C,logistic_regression,group_sample,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+C,logistic_regression,group_sample,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+C,logistic_regression,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+C,logistic_regression,group_sample,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+C,logistic_regression,group_sample,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+C,logistic_regression,group_sample,validation,original_label,Infilteration,1,41842,641,41201,,0.015319535395057598,,True,5516,reported
+C,logistic_regression,group_sample,validation,original_label,SQL Injection,1,0,0,0,,,,False,0,absent
+C,logistic_regression,group_sample,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+C,logistic_regression,group_sample,test,family,Benign,0,1457560,,,2291,,0.0015718049342737176,True,659296,reported
+C,logistic_regression,group_sample,test,family,Bot,1,0,0,0,,,,True,17402,absent
+C,logistic_regression,group_sample,test,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+C,logistic_regression,group_sample,test,family,DDoS,1,0,0,0,,,,True,80477,absent
+C,logistic_regression,group_sample,test,family,DoS,1,0,0,0,,,,True,37445,absent
+C,logistic_regression,group_sample,test,family,Infiltration,1,0,0,0,,,,True,5516,absent
+C,logistic_regression,group_sample,test,family,Web attack,1,658,1,657,,0.001519756838905775,,False,0,reported
+C,logistic_regression,group_sample,test,original_label,Benign,0,1457560,,,2291,,0.0015718049342737176,True,659296,reported
+C,logistic_regression,group_sample,test,original_label,Bot,1,0,0,0,,,,True,17402,absent
+C,logistic_regression,group_sample,test,original_label,Brute Force -Web,1,423,0,423,,0.0,,False,0,reported
+C,logistic_regression,group_sample,test,original_label,Brute Force -XSS,1,176,1,175,,0.005681818181818182,,False,0,reported
+C,logistic_regression,group_sample,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+C,logistic_regression,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+C,logistic_regression,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+C,logistic_regression,group_sample,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+C,logistic_regression,group_sample,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+C,logistic_regression,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+C,logistic_regression,group_sample,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+C,logistic_regression,group_sample,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+C,logistic_regression,group_sample,test,original_label,Infilteration,1,0,0,0,,,,True,5516,absent
+C,logistic_regression,group_sample,test,original_label,SQL Injection,1,59,0,59,,0.0,,False,0,low
+C,logistic_regression,group_sample,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+C,random_forest,group_sample,validation,family,Benign,0,351060,,,23666,,0.06741297783854612,True,659296,reported
+C,random_forest,group_sample,validation,family,Bot,1,0,0,0,,,,True,17402,absent
+C,random_forest,group_sample,validation,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+C,random_forest,group_sample,validation,family,DDoS,1,0,0,0,,,,True,80477,absent
+C,random_forest,group_sample,validation,family,DoS,1,0,0,0,,,,True,37445,absent
+C,random_forest,group_sample,validation,family,Infiltration,1,41842,743,41099,,0.01775727737679843,,True,5516,reported
+C,random_forest,group_sample,validation,family,Web attack,1,0,0,0,,,,False,0,absent
+C,random_forest,group_sample,validation,original_label,Benign,0,351060,,,23666,,0.06741297783854612,True,659296,reported
+C,random_forest,group_sample,validation,original_label,Bot,1,0,0,0,,,,True,17402,absent
+C,random_forest,group_sample,validation,original_label,Brute Force -Web,1,0,0,0,,,,False,0,absent
+C,random_forest,group_sample,validation,original_label,Brute Force -XSS,1,0,0,0,,,,False,0,absent
+C,random_forest,group_sample,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+C,random_forest,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+C,random_forest,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+C,random_forest,group_sample,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+C,random_forest,group_sample,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+C,random_forest,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+C,random_forest,group_sample,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+C,random_forest,group_sample,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+C,random_forest,group_sample,validation,original_label,Infilteration,1,41842,743,41099,,0.01775727737679843,,True,5516,reported
+C,random_forest,group_sample,validation,original_label,SQL Injection,1,0,0,0,,,,False,0,absent
+C,random_forest,group_sample,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+C,random_forest,group_sample,test,family,Benign,0,1457560,,,11969,,0.008211668816378057,True,659296,reported
+C,random_forest,group_sample,test,family,Bot,1,0,0,0,,,,True,17402,absent
+C,random_forest,group_sample,test,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+C,random_forest,group_sample,test,family,DDoS,1,0,0,0,,,,True,80477,absent
+C,random_forest,group_sample,test,family,DoS,1,0,0,0,,,,True,37445,absent
+C,random_forest,group_sample,test,family,Infiltration,1,0,0,0,,,,True,5516,absent
+C,random_forest,group_sample,test,family,Web attack,1,658,16,642,,0.0243161094224924,,False,0,reported
+C,random_forest,group_sample,test,original_label,Benign,0,1457560,,,11969,,0.008211668816378057,True,659296,reported
+C,random_forest,group_sample,test,original_label,Bot,1,0,0,0,,,,True,17402,absent
+C,random_forest,group_sample,test,original_label,Brute Force -Web,1,423,5,418,,0.01182033096926714,,False,0,reported
+C,random_forest,group_sample,test,original_label,Brute Force -XSS,1,176,10,166,,0.056818181818181816,,False,0,reported
+C,random_forest,group_sample,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+C,random_forest,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+C,random_forest,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+C,random_forest,group_sample,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+C,random_forest,group_sample,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+C,random_forest,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+C,random_forest,group_sample,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+C,random_forest,group_sample,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+C,random_forest,group_sample,test,original_label,Infilteration,1,0,0,0,,,,True,5516,absent
+C,random_forest,group_sample,test,original_label,SQL Injection,1,59,1,58,,0.01694915254237288,,False,0,low
+C,random_forest,group_sample,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+C,gradient_boosted_trees,group_sample,validation,family,Benign,0,351060,,,28975,,0.08253574887483621,True,659296,reported
+C,gradient_boosted_trees,group_sample,validation,family,Bot,1,0,0,0,,,,True,17402,absent
+C,gradient_boosted_trees,group_sample,validation,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+C,gradient_boosted_trees,group_sample,validation,family,DDoS,1,0,0,0,,,,True,80477,absent
+C,gradient_boosted_trees,group_sample,validation,family,DoS,1,0,0,0,,,,True,37445,absent
+C,gradient_boosted_trees,group_sample,validation,family,Infiltration,1,41842,1450,40392,,0.03465417523062951,,True,5516,reported
+C,gradient_boosted_trees,group_sample,validation,family,Web attack,1,0,0,0,,,,False,0,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,Benign,0,351060,,,28975,,0.08253574887483621,True,659296,reported
+C,gradient_boosted_trees,group_sample,validation,original_label,Bot,1,0,0,0,,,,True,17402,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,Brute Force -Web,1,0,0,0,,,,False,0,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,Brute Force -XSS,1,0,0,0,,,,False,0,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,Infilteration,1,41842,1450,40392,,0.03465417523062951,,True,5516,reported
+C,gradient_boosted_trees,group_sample,validation,original_label,SQL Injection,1,0,0,0,,,,False,0,absent
+C,gradient_boosted_trees,group_sample,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+C,gradient_boosted_trees,group_sample,test,family,Benign,0,1457560,,,21976,,0.01507725239441258,True,659296,reported
+C,gradient_boosted_trees,group_sample,test,family,Bot,1,0,0,0,,,,True,17402,absent
+C,gradient_boosted_trees,group_sample,test,family,Credential brute force,1,0,0,0,,,,True,12384,absent
+C,gradient_boosted_trees,group_sample,test,family,DDoS,1,0,0,0,,,,True,80477,absent
+C,gradient_boosted_trees,group_sample,test,family,DoS,1,0,0,0,,,,True,37445,absent
+C,gradient_boosted_trees,group_sample,test,family,Infiltration,1,0,0,0,,,,True,5516,absent
+C,gradient_boosted_trees,group_sample,test,family,Web attack,1,658,27,631,,0.041033434650455926,,False,0,reported
+C,gradient_boosted_trees,group_sample,test,original_label,Benign,0,1457560,,,21976,,0.01507725239441258,True,659296,reported
+C,gradient_boosted_trees,group_sample,test,original_label,Bot,1,0,0,0,,,,True,17402,absent
+C,gradient_boosted_trees,group_sample,test,original_label,Brute Force -Web,1,423,5,418,,0.01182033096926714,,False,0,reported
+C,gradient_boosted_trees,group_sample,test,original_label,Brute Force -XSS,1,176,8,168,,0.045454545454545456,,False,0,reported
+C,gradient_boosted_trees,group_sample,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,44289,absent
+C,gradient_boosted_trees,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,122,absent
+C,gradient_boosted_trees,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,36066,absent
+C,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,2663,absent
+C,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,28198,absent
+C,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,5900,absent
+C,gradient_boosted_trees,group_sample,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,684,absent
+C,gradient_boosted_trees,group_sample,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,6425,absent
+C,gradient_boosted_trees,group_sample,test,original_label,Infilteration,1,0,0,0,,,,True,5516,absent
+C,gradient_boosted_trees,group_sample,test,original_label,SQL Injection,1,59,14,45,,0.23728813559322035,,False,0,low
+C,gradient_boosted_trees,group_sample,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,5959,absent
+C,logistic_regression,full_train_refit,validation,family,Benign,0,351060,,,3287,,0.009363071839571583,True,10844286,reported
+C,logistic_regression,full_train_refit,validation,family,Bot,1,0,0,0,,,,True,286191,absent
+C,logistic_regression,full_train_refit,validation,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+C,logistic_regression,full_train_refit,validation,family,DDoS,1,0,0,0,,,,True,1263933,absent
+C,logistic_regression,full_train_refit,validation,family,DoS,1,0,0,0,,,,True,654300,absent
+C,logistic_regression,full_train_refit,validation,family,Infiltration,1,41842,551,41291,,0.013168586587639215,,True,93063,reported
+C,logistic_regression,full_train_refit,validation,family,Web attack,1,0,0,0,,,,False,0,absent
+C,logistic_regression,full_train_refit,validation,original_label,Benign,0,351060,,,3287,,0.009363071839571583,True,10844286,reported
+C,logistic_regression,full_train_refit,validation,original_label,Bot,1,0,0,0,,,,True,286191,absent
+C,logistic_regression,full_train_refit,validation,original_label,Brute Force -Web,1,0,0,0,,,,False,0,absent
+C,logistic_regression,full_train_refit,validation,original_label,Brute Force -XSS,1,0,0,0,,,,False,0,absent
+C,logistic_regression,full_train_refit,validation,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+C,logistic_regression,full_train_refit,validation,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+C,logistic_regression,full_train_refit,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+C,logistic_regression,full_train_refit,validation,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+C,logistic_regression,full_train_refit,validation,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+C,logistic_regression,full_train_refit,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+C,logistic_regression,full_train_refit,validation,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+C,logistic_regression,full_train_refit,validation,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+C,logistic_regression,full_train_refit,validation,original_label,Infilteration,1,41842,551,41291,,0.013168586587639215,,True,93063,reported
+C,logistic_regression,full_train_refit,validation,original_label,SQL Injection,1,0,0,0,,,,False,0,absent
+C,logistic_regression,full_train_refit,validation,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent
+C,logistic_regression,full_train_refit,test,family,Benign,0,1457560,,,452,,0.0003101073026153297,True,10844286,reported
+C,logistic_regression,full_train_refit,test,family,Bot,1,0,0,0,,,,True,286191,absent
+C,logistic_regression,full_train_refit,test,family,Credential brute force,1,0,0,0,,,,True,380949,absent
+C,logistic_regression,full_train_refit,test,family,DDoS,1,0,0,0,,,,True,1263933,absent
+C,logistic_regression,full_train_refit,test,family,DoS,1,0,0,0,,,,True,654300,absent
+C,logistic_regression,full_train_refit,test,family,Infiltration,1,0,0,0,,,,True,93063,absent
+C,logistic_regression,full_train_refit,test,family,Web attack,1,658,0,658,,0.0,,False,0,reported
+C,logistic_regression,full_train_refit,test,original_label,Benign,0,1457560,,,452,,0.0003101073026153297,True,10844286,reported
+C,logistic_regression,full_train_refit,test,original_label,Bot,1,0,0,0,,,,True,286191,absent
+C,logistic_regression,full_train_refit,test,original_label,Brute Force -Web,1,423,0,423,,0.0,,False,0,reported
+C,logistic_regression,full_train_refit,test,original_label,Brute Force -XSS,1,176,0,176,,0.0,,False,0,reported
+C,logistic_regression,full_train_refit,test,original_label,DDOS attack-HOIC,1,0,0,0,,,,True,686012,absent
+C,logistic_regression,full_train_refit,test,original_label,DDOS attack-LOIC-UDP,1,0,0,0,,,,True,1730,absent
+C,logistic_regression,full_train_refit,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0,0,,,,True,576191,absent
+C,logistic_regression,full_train_refit,test,original_label,DoS attacks-GoldenEye,1,0,0,0,,,,True,41508,absent
+C,logistic_regression,full_train_refit,test,original_label,DoS attacks-Hulk,1,0,0,0,,,,True,461912,absent
+C,logistic_regression,full_train_refit,test,original_label,DoS attacks-SlowHTTPTest,1,0,0,0,,,,True,139890,absent
+C,logistic_regression,full_train_refit,test,original_label,DoS attacks-Slowloris,1,0,0,0,,,,True,10990,absent
+C,logistic_regression,full_train_refit,test,original_label,FTP-BruteForce,1,0,0,0,,,,True,193360,absent
+C,logistic_regression,full_train_refit,test,original_label,Infilteration,1,0,0,0,,,,True,93063,absent
+C,logistic_regression,full_train_refit,test,original_label,SQL Injection,1,59,0,59,,0.0,,False,0,low
+C,logistic_regression,full_train_refit,test,original_label,SSH-Bruteforce,1,0,0,0,,,,True,187589,absent

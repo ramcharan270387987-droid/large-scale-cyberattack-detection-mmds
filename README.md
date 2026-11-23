@@ -51,3 +51,7 @@ SPARK_LOCAL_IP=127.0.0.1 python -m unittest discover -s tests -v
 ## Phase 3 Spark SQL analytics
 
 Phase 3 queries the verified Phase 2 Notebook Output in private Kaggle CPU. See the [analytics results](reports/phase3_analytics.md), [methodology](docs/phase3_methodology.md), [pattern findings](docs/attack_pattern_findings.md), and [research readiness](reports/phase3_research_readiness.md). Local tests use Spark, PyArrow, and Matplotlib. Rebuild the bundled notebook with `python scripts/build_phase3_notebook.py`.
+
+## Phase 4 supervised evaluation
+
+Phase 4 compares majority and duration baselines, Logistic Regression, Random Forest and Gradient-Boosted Trees on three prespecified grouped or capture-held-out protocols. It reads the verified Phase 2 Notebook Output. See the [protocol](docs/phase4_experimental_protocol.md), [measured results](reports/phase4_supervised_results.md), and [model manifest](manifests/phase4_models.json). Build each version with `python scripts/build_phase4_notebook.py --protocol A|B|C --output PATH`.

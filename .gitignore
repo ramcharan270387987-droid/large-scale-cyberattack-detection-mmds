@@ -269,6 +269,10 @@ metastore_db/
 !/reports/phase3_candidate_patterns.csv
 !/reports/phase3_duplicate_quality.csv
 !/reports/phase3_query_performance.csv
+!/reports/phase4_metrics.csv
+!/reports/phase4_family_recall.csv
+!/reports/phase4_split_diagnostics.csv
+!/reports/phase4_training_performance.csv
 *.csv.gz
 *.parquet
 *.pkl
