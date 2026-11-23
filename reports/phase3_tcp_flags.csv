@@ -1,0 +1,33 @@
+population,attack_family,syn,ack,fin,rst,records
+attack,Bot,False,False,False,True,143011
+attack,Bot,False,True,False,False,142919
+attack,Bot,True,True,False,False,3
+attack,Credential brute force,False,False,False,False,287208
+attack,Credential brute force,False,True,False,False,93741
+attack,DDoS,False,True,False,False,808367
+attack,DDoS,False,False,False,True,453039
+attack,DoS,False,True,False,False,461224
+attack,DoS,False,False,False,False,188113
+attack,DoS,True,True,False,False,3570
+attack,DoS,False,False,True,False,1392
+attack,DoS,False,True,True,False,1
+attack,Infiltration,False,False,False,False,40908
+attack,Infiltration,False,False,False,True,32509
+attack,Infiltration,False,True,False,False,23416
+attack,Infiltration,True,True,False,False,9287
+attack,Infiltration,True,False,False,False,1224
+attack,Infiltration,False,False,True,False,671
+attack,Infiltration,False,True,True,False,303
+attack,Infiltration,False,True,False,True,1
+attack,Web attack,False,False,False,True,434
+attack,Web attack,False,True,False,False,338
+attack,Web attack,False,False,False,False,1
+attack,Web attack,True,True,False,False,1
+benign,Benign,False,True,False,False,3118001
+benign,Benign,False,False,False,False,2803682
+benign,Benign,False,False,False,True,2413000
+benign,Benign,True,True,False,False,697032
+benign,Benign,False,False,True,False,50831
+benign,Benign,False,True,True,False,24646
+benign,Benign,True,False,False,False,1435
+benign,Benign,False,True,False,True,27

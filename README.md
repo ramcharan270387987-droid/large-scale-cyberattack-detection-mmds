@@ -47,3 +47,7 @@ python -m pip install pyarrow
 python scripts/build_phase2_notebook.py
 SPARK_LOCAL_IP=127.0.0.1 python -m unittest discover -s tests -v
 ```
+
+## Phase 3 Spark SQL analytics
+
+Phase 3 queries the verified Phase 2 Notebook Output in private Kaggle CPU. See the [analytics results](reports/phase3_analytics.md), [methodology](docs/phase3_methodology.md), [pattern findings](docs/attack_pattern_findings.md), and [research readiness](reports/phase3_research_readiness.md). Local tests use Spark, PyArrow, and Matplotlib. Rebuild the bundled notebook with `python scripts/build_phase3_notebook.py`.

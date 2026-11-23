@@ -1,0 +1,2 @@
+packet_rate_p99,packet_count_p99,byte_count_p99,duration_p10,iat_p99
+2000000.0,70.0,31417.0,74.0,86251836.0

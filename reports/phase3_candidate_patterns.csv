@@ -1,0 +1,29 @@
+population,attack_family,pattern,eligible,matches
+attack,Bot,high_mean_iat,286191,0
+attack,Bot,high_packet_rate,286191,0
+attack,Bot,large_packet_count,286191,102
+attack,Bot,short_high_bytes,286191,0
+attack,Credential brute force,high_mean_iat,380949,0
+attack,Credential brute force,high_packet_rate,380943,0
+attack,Credential brute force,large_packet_count,380949,0
+attack,Credential brute force,short_high_bytes,380949,0
+attack,DDoS,high_mean_iat,1263933,2438
+attack,DDoS,high_packet_rate,1263933,0
+attack,DDoS,large_packet_count,1263933,2527
+attack,DDoS,short_high_bytes,1263933,0
+attack,DoS,high_mean_iat,654300,0
+attack,DoS,high_packet_rate,654300,0
+attack,DoS,large_packet_count,654300,0
+attack,DoS,short_high_bytes,654300,0
+attack,Infiltration,high_mean_iat,161934,107
+attack,Infiltration,high_packet_rate,160639,183
+attack,Infiltration,large_packet_count,161934,1481
+attack,Infiltration,short_high_bytes,161934,0
+attack,Web attack,high_mean_iat,928,0
+attack,Web attack,high_packet_rate,928,0
+attack,Web attack,large_packet_count,928,238
+attack,Web attack,short_high_bytes,928,0
+benign,Benign,high_mean_iat,13484694,135684
+benign,Benign,high_packet_rate,13390235,16676
+benign,Benign,large_packet_count,13484708,134952
+benign,Benign,short_high_bytes,13484694,8

@@ -1,0 +1,16 @@
+population,attack_family,protocol,records
+attack,Bot,0.0,258
+attack,Bot,6.0,285933
+attack,Credential brute force,6.0,380949
+attack,DDoS,6.0,1261406
+attack,DDoS,17.0,2527
+attack,DoS,6.0,654300
+attack,Infiltration,0.0,2255
+attack,Infiltration,6.0,108319
+attack,Infiltration,17.0,51360
+attack,Web attack,0.0,21
+attack,Web attack,6.0,774
+attack,Web attack,17.0,133
+benign,Benign,0.0,235779
+benign,Benign,6.0,9108654
+benign,Benign,17.0,4140275

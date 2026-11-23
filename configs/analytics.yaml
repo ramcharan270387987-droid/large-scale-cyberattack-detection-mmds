@@ -1,0 +1,19 @@
+{
+  "version": "phase3-v1",
+  "quantile_accuracy": 4096,
+  "top_ports": 12,
+  "max_compact_rows": 6000,
+  "benchmark_repeats": 3,
+  "spark": {"master": "local[4]", "driver_memory": "8g", "shuffle_partitions": 48, "input_partition_bytes": 67108864},
+  "flow_statistics": [
+    "flow_duration", "total_packets", "total_bytes", "tot_fwd_pkts", "tot_bwd_pkts",
+    "totlen_fwd_pkts", "totlen_bwd_pkts", "pkt_len_mean", "flow_iat_mean",
+    "flow_pkts_s", "flow_byts_s", "syn_flag_cnt", "ack_flag_cnt", "rst_flag_cnt"
+  ],
+  "correlations": [
+    ["flow_duration", "total_packets"], ["flow_duration", "total_bytes"],
+    ["tot_fwd_pkts", "tot_bwd_pkts"], ["totlen_fwd_pkts", "totlen_bwd_pkts"],
+    ["total_packets", "total_bytes"], ["pkt_len_mean", "total_bytes"],
+    ["flow_iat_mean", "flow_duration"], ["syn_flag_cnt", "rst_flag_cnt"]
+  ]
+}
