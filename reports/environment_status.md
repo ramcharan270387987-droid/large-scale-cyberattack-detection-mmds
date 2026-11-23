@@ -1,6 +1,6 @@
 # Phase 0 environment status
 
-Verified on 23 November 2026 in Codex Cloud. **PARTIALLY READY**. Spark passed two local runs. Kaggle public metadata is reachable, while the Cloud proxy blocks authenticated Kaggle CLI calls and the Kaggle notebook has yet to run.
+Verified on 23 November 2026 in Codex Cloud. **PARTIALLY READY**. Spark passed two local runs, and the Phase 0 setup was published to GitHub. Kaggle public metadata is reachable, while the Cloud proxy blocks authenticated Kaggle CLI calls and the Kaggle notebook has yet to run.
 
 | Component | Observed version or evidence | Status |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ Verified on 23 November 2026 in Codex Cloud. **PARTIALLY READY**. Spark passed t
 | Kaggle CLI | 2.2.5 with Kaggle SDK 0.1.38; writable config directory needed | Pass locally |
 | Kaggle API authentication | Modern token present at runtime; proxy CONNECT 403 for `api.kaggle.com` | Blocked by policy |
 | Kaggle notebook execution | Notebook and CPU manifest validated locally with a mock mount | Cloud run unverified |
-| GitHub push | Dry-run to `origin/work` passed; compare the published ref with the local commit using the verification guide | Preflight passed |
+| GitHub push | `git push` and independent remote ref lookup confirmed the Phase 0 setup commit on `origin/work` | Pass |
 | Internet access | GitHub Git, raw GitHub, Kaggle web and PyPI reachable through the proxy | Restricted |
 
 ## System and Spark
@@ -46,7 +46,7 @@ The file list contained ten entries with no next page. All names have the direct
 
 ## GitHub and network policy
 
-The clean checkout started on `work` with one commit, `e6215d6834ce06ba60fe9c7e65ce4a97b611343d`. HTTPS fetch and push both use [the project repository](https://github.com/ramcharan270387987-droid/large-scale-cyberattack-detection-mmds). Remote HEAD pointed to `main` at that same commit. The managed runtime supplied a GitHub credential, but the proxy blocked the GitHub REST identity check, independently of Git-over-HTTPS access.
+The clean checkout started on `work` with one commit, `e6215d6834ce06ba60fe9c7e65ce4a97b611343d`. HTTPS fetch and push both use [the project repository](https://github.com/ramcharan270387987-droid/large-scale-cyberattack-detection-mmds). Remote HEAD pointed to `main` at that same commit. The authenticated Git-over-HTTPS push published setup commit `878bb79e02adca867f5c20d72dc755fd97bbac3a` to `origin/work`, and `git ls-remote` returned the matching hash. The local fetch configuration originally tracked only `main`; it now also tracks `work`. The proxy blocked the separate GitHub REST identity check.
 
 | Host | Observed result |
 | --- | --- |
