@@ -1,0 +1,11 @@
+file,capture_day,path,bytes,expected_bytes,access,status,columns,physical_lines,headers,repeated_header_lines,blank,data_records,malformed,bad_width_or_quotes,spark_corrupt,parsed,error
+Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-14,Cyberattack-MMDS/dataset/raw/Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv,358223333,358223333,readable,complete,80,1048576,1,0,0,1048575,0,0,0,1048575,
+Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-15,Cyberattack-MMDS/dataset/raw/Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv,375945899,375945899,readable,complete,80,1048576,1,0,0,1048575,0,0,0,1048575,
+Friday-16-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-16,Cyberattack-MMDS/dataset/raw/Friday-16-02-2018_TrafficForML_CICFlowMeter.csv,333723605,333723605,readable,complete,80,1048576,2,1,0,1048574,0,0,0,1048574,
+Thuesday-20-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-20,Cyberattack-MMDS/dataset/raw/Thuesday-20-02-2018_TrafficForML_CICFlowMeter.csv,4054925350,4054925350,readable,complete,84,7948749,1,0,0,7948748,0,0,0,7948748,
+Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-21,Cyberattack-MMDS/dataset/raw/Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv,328893673,328893673,readable,complete,80,1048576,1,0,0,1048575,0,0,0,1048575,
+Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-22,Cyberattack-MMDS/dataset/raw/Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv,382636202,382636202,readable,complete,80,1048576,1,0,0,1048575,0,0,0,1048575,
+Friday-23-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-23,Cyberattack-MMDS/dataset/raw/Friday-23-02-2018_TrafficForML_CICFlowMeter.csv,382840456,382840456,readable,complete,80,1048576,1,0,0,1048575,0,0,0,1048575,
+Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-28,Cyberattack-MMDS/dataset/raw/Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv,209249758,209249758,readable,complete,80,613105,34,33,0,613071,0,0,0,613071,
+Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv,2018-03-01,Cyberattack-MMDS/dataset/raw/Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv,107842858,107842858,readable,complete,80,331126,26,25,0,331100,0,0,0,331100,
+Friday-02-03-2018_TrafficForML_CICFlowMeter.csv,2018-03-02,Cyberattack-MMDS/dataset/raw/Friday-02-03-2018_TrafficForML_CICFlowMeter.csv,352368373,352368373,readable,complete,80,1048576,1,0,0,1048575,0,0,0,1048575,

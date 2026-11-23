@@ -1,0 +1,29 @@
+file,capture_day,original_label,normalized_label,proposed_binary,proposed_family,count,percent_of_file,percent_of_measured_labeled_rows
+Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-14,"""Benign""",benign,benign,Benign,667626,63.66983764,4.11278472
+Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-14,"""FTP-BruteForce""",ftp-bruteforce,attack,Credential brute force,193360,18.44026417,1.19115801
+Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-14,"""SSH-Bruteforce""",ssh-bruteforce,attack,Credential brute force,187589,17.8898982,1.15560684
+Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-15,"""Benign""",benign,benign,Benign,996077,94.9933958,6.13614549
+Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-15,"""DoS attacks-GoldenEye""",dos attacks-goldeneye,attack,DoS,41508,3.95851513,0.25570225
+Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-15,"""DoS attacks-Slowloris""",dos attacks-slowloris,attack,DoS,10990,1.04808907,0.06770183
+Friday-16-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-16,"""Benign""",benign,benign,Benign,446772,42.60757944,2.75225509
+Friday-16-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-16,"""DoS attacks-Hulk""",dos attacks-hulk,attack,DoS,461912,44.05144511,2.84552222
+Friday-16-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-16,"""DoS attacks-SlowHTTPTest""",dos attacks-slowhttptest,attack,DoS,139890,13.34097546,0.8617661
+Thuesday-20-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-20,"""Benign""",benign,benign,Benign,7372557,92.75117289,45.41725428
+Thuesday-20-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-20,"""DDoS attacks-LOIC-HTTP""",ddos attacks-loic-http,attack,DDoS,576191,7.24882711,3.54951656
+Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-21,"""Benign""",benign,benign,Benign,360833,34.41174928,2.222844
+Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-21,"""DDOS attack-HOIC""",ddos attack-hoic,attack,DDoS,686012,65.42326491,4.22604823
+Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-21,"""DDOS attack-LOIC-UDP""",ddos attack-loic-udp,attack,DDoS,1730,0.16498581,0.01065734
+Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-22,"""Benign""",benign,benign,Benign,1048213,99.96547696,6.45731954
+Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-22,"""Brute Force -Web""",brute force -web,attack,Web attack,249,0.02374651,0.00153392
+Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-22,"""Brute Force -XSS""",brute force -xss,attack,Web attack,79,0.00753403,0.00048666
+Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-22,"""SQL Injection""",sql injection,attack,Web attack,34,0.0032425,0.00020945
+Friday-23-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-23,"""Benign""",benign,benign,Benign,1048009,99.94602198,6.45606283
+Friday-23-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-23,"""Brute Force -Web""",brute force -web,attack,Web attack,362,0.03452304,0.00223003
+Friday-23-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-23,"""Brute Force -XSS""",brute force -xss,attack,Web attack,151,0.0144005,0.00093021
+Friday-23-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-23,"""SQL Injection""",sql injection,attack,Web attack,53,0.00505448,0.0003265
+Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-28,"""Benign""",benign,benign,Benign,544200,88.76622773,3.35244201
+Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv,2018-02-28,"""Infilteration""",infilteration,attack,Infiltration,68871,11.23377227,0.42426688
+Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv,2018-03-01,"""Benign""",benign,benign,Benign,238037,71.89278164,1.46638228
+Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv,2018-03-01,"""Infilteration""",infilteration,attack,Infiltration,93063,28.10721836,0.57329715
+Friday-02-03-2018_TrafficForML_CICFlowMeter.csv,2018-03-02,"""Benign""",benign,benign,Benign,762384,72.70667334,4.69652361
+Friday-02-03-2018_TrafficForML_CICFlowMeter.csv,2018-03-02,"""Bot""",bot,attack,Bot,286191,27.29332666,1.76302597

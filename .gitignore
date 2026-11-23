@@ -242,6 +242,10 @@ access_token
 /spark-warehouse/
 metastore_db/
 *.csv
+!/reports/dataset_file_statistics.csv
+!/reports/dataset_label_distribution.csv
+!/reports/dataset_quality_summary.csv
+!/reports/dataset_timestamp_summary.csv
 *.csv.gz
 *.parquet
 *.pkl

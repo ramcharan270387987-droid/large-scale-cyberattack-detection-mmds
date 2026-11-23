@@ -1,7 +1,7 @@
 """Use the Kaggle API routes on www.kaggle.com for the Phase 0 smoke test."""
 
 from io import BytesIO
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import re
 import sys
 from urllib.parse import urljoin, urlsplit
@@ -15,7 +15,7 @@ WEB_HOST = "https://www.kaggle.com"
 STATUS_FILE = "phase0_status.txt"
 
 
-def download_phase0_status(kernel_version, destination):
+def download_archive(kernel_version, maximum_bytes):
     match = re.fullmatch(r"([\w-]+/[\w-]+)/([1-9][0-9]*)", kernel_version, re.ASCII)
     if not match:
         raise SystemExit("Specify the Kaggle notebook as owner/slug/version.")
@@ -49,16 +49,40 @@ def download_phase0_status(kernel_version, destination):
                     raise SystemExit(f"Kaggle archive download returned HTTP {response.status_code}.")
                 for chunk in response.iter_content(65536):
                     archive.write(chunk)
-                    if archive.tell() > 2 * 1024 * 1024:
-                        raise SystemExit("Kaggle smoke test archive exceeded 2 MiB.")
+                    if archive.tell() > maximum_bytes:
+                        raise SystemExit("Kaggle archive exceeded the configured byte limit.")
         except requests.RequestException:
             raise SystemExit("Kaggle archive request failed.") from None
 
-    with ZipFile(archive) as output:
+    return ZipFile(archive)
+
+
+def download_phase0_status(kernel_version, destination):
+    with download_archive(kernel_version, 2 * 1024 * 1024) as output:
         status = output.getinfo(STATUS_FILE)
         if status.file_size > 1024:
             raise SystemExit("Kaggle smoke test status file exceeded 1 KiB.")
         destination.write_bytes(output.read(status))
+
+
+def download_phase1_results(kernel_version, destination):
+    with download_archive(kernel_version, 8 * 1024 * 1024) as output:
+        entries = {}
+        for entry in output.infolist():
+            path = PurePosixPath(entry.filename)
+            if len(path.parts) != 2 or path.parts[0] != "mmds_phase1":
+                continue
+            name = path.name
+            if name not in {"run_summary.json", "inventory.json", "exact_duplicates.json"} and not re.fullmatch(r"[\w.-]+\.csv\.json", name):
+                continue
+            if name in entries or entry.file_size > 1024 * 1024:
+                raise SystemExit("Unexpected Phase 1 member size or duplicate archive member.")
+            entries[name] = entry
+        if "inventory.json" not in entries:
+            raise SystemExit("Kaggle archive does not contain the Phase 1 inventory.")
+        destination.mkdir(parents=True, exist_ok=True)
+        for name, entry in entries.items():
+            (destination / name).write_bytes(output.read(entry))
 
 
 def main():
@@ -70,6 +94,11 @@ def main():
         if len(sys.argv) != 4:
             raise SystemExit("Usage: kaggle_web_api.py phase0-output owner/slug/version destination")
         download_phase0_status(sys.argv[2], Path(sys.argv[3]))
+        return 0
+    if sys.argv[1:2] == ["phase1-output"]:
+        if len(sys.argv) != 4:
+            raise SystemExit("Usage: kaggle_web_api.py phase1-output owner/slug/version destination")
+        download_phase1_results(sys.argv[2], Path(sys.argv[3]))
         return 0
 
     from kaggle import api
