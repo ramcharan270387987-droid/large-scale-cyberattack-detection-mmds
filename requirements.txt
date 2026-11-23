@@ -1,0 +1,4 @@
+# Phase 0 dependencies verified with Python 3.12 and OpenJDK 21.
+pyspark==4.3.0
+numpy==2.5.5
+kaggle==2.2.5

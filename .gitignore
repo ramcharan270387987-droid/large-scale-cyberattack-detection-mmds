@@ -221,3 +221,36 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# MMDS credentials and local configuration
+.env.*
+.kaggle/
+kaggle.json
+access_token
+*api_token*
+*api-token*
+*.pem
+*.key
+
+# MMDS datasets, Spark output and trained artifacts
+/data/
+/dataset/
+/datasets/
+/artifacts/
+/models/
+/outputs/
+/spark-warehouse/
+metastore_db/
+*.csv
+*.csv.gz
+*.parquet
+*.pkl
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.tmp
+*.swp
+*.bak
+/tmp/
+/temp/

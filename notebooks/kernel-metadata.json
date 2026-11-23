@@ -1,0 +1,14 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/mmds-phase-0-environment-check",
+  "title": "MMDS Phase 0 Environment Check",
+  "code_file": "phase0_kaggle_environment.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["saisathwikregula/mmds-dataset-23013"],
+  "competition_sources": [],
+  "kernel_sources": []
+}
