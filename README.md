@@ -35,3 +35,15 @@ python scripts/render_phase1_audit.py "$run_dir/audit" \
 ```
 
 For a bounded retry, set `ONLY_DAYS` in a temporary notebook to the unfinished ISO capture dates. Retrieve completed versions' JSON separately and retain the source version for each recovered file. A caught per-file error leaves earlier stage markers available in the finished archive. An interrupted worker may lose unpublished markers. Global fingerprint metrics require one run with all captures present. Use `scripts/build_phase1_notebook.py --exact-duplicates --output PATH` for the independent full-value duplicate pass. Pass its extracted directory and verified version to the renderer with `--exact-source` and `--exact-version`.
+
+## Phase 2 typed Parquet
+
+Phase 2 builds and validates a raw-aligned layer, a clean layer, and a feature-ready base layer in private Kaggle CPU. See the [data contract](docs/data_contract.md), [cleaning policy](docs/cleaning_policy.md), [saved output reuse](docs/parquet_storage.md), and [execution report](reports/phase2_data_engineering.md).
+
+For local verification, activate the project virtual environment and install PyArrow in addition to the Phase 0 dependencies. Build the self-contained notebook and run the tests with the same Spark version as Kaggle.
+
+```bash
+python -m pip install pyarrow
+python scripts/build_phase2_notebook.py
+SPARK_LOCAL_IP=127.0.0.1 python -m unittest discover -s tests -v
+```

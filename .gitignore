@@ -246,6 +246,9 @@ metastore_db/
 !/reports/dataset_label_distribution.csv
 !/reports/dataset_quality_summary.csv
 !/reports/dataset_timestamp_summary.csv
+!/reports/phase2_count_reconciliation.csv
+!/reports/phase2_quality_actions.csv
+!/reports/phase2_performance.csv
 *.csv.gz
 *.parquet
 *.pkl

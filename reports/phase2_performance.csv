@@ -1,0 +1,11 @@
+source_file,source_bytes,read_transform_seconds,effective_read_mib_s,driver_peak_rss_bytes,raw_aligned_write_seconds,clean_write_seconds,feature_ready_write_seconds
+Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv,107842858,53.319,1.929,2258862080,12.015,11.446,12.093
+Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv,209249758,59.996,3.326,2491858944,9.844,11.835,20.152
+Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv,328893673,109.956,2.853,2914787328,13.931,16.517,16.771
+Friday-16-02-2018_TrafficForML_CICFlowMeter.csv,333723605,108.136,2.943,3092213760,12.612,14.799,15.988
+Friday-02-03-2018_TrafficForML_CICFlowMeter.csv,352368373,108.218,3.105,3553304576,14.902,17.289,18.216
+Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv,358223333,113.024,3.023,4372795392,13.125,18.685,18.669
+Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv,375945899,105.503,3.398,4372795392,15.609,20.697,21.16
+Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv,382636202,105.588,3.456,4372795392,15.921,18.76,19.988
+Friday-23-02-2018_TrafficForML_CICFlowMeter.csv,382840456,107.116,3.409,4372795392,15.44,18.264,19.493
+Thuesday-20-02-2018_TrafficForML_CICFlowMeter.csv,4054925350,815.434,4.742,5784305664,116.645,149.514,152.329
