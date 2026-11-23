@@ -1,6 +1,32 @@
-# Phase 0 environment status
+# Phase 0 and Phase 0B environment status
 
-Verified on 23 November 2026 in Codex Cloud. **PARTIALLY READY**. Spark passed two local runs, and the Phase 0 setup was published to GitHub. Kaggle public metadata is reachable, while the Cloud proxy blocks authenticated Kaggle CLI calls and the Kaggle notebook has yet to run.
+## Phase 0B integration
+
+Checked on 23 November 2026 IST from Codex Cloud, starting from Phase 0 commit `b4d316db5046df081de9dab672f33e71429b42a8`.
+
+| Check | Observed result |
+| --- | --- |
+| `api.kaggle.com` | Cloud proxy CONNECT 403 before HTTPS reached Kaggle. The standard CLI stopped at its token introspection request. |
+| `www.kaggle.com` | Proxy CONNECT 200 and HTTPS 200. Kaggle's API routes under `/api/v1` served the authenticated notebook operations. |
+| `api.github.com` | Cloud proxy CONNECT 403 before HTTPS reached GitHub REST. |
+| `github.com` | Git over HTTPS fetched `origin/work` at the expected Phase 0 commit. |
+| Kaggle authentication | Token introspection returned HTTP 200 with `active: true` and an account. The authenticated notebook list returned HTTP 200. |
+| Dataset metadata | The authenticated CLI retrieved metadata for `saisathwikregula/mmds-dataset-23013`, ID `13610604`. |
+| Notebook submission | Kaggle accepted version 1. A versioned API pull confirmed private visibility, GPU and TPU disabled, and the exact dataset attachment. |
+| CPU execution | The versioned API reported `RUNNING`, then `COMPLETE`. The first `COMPLETE` poll was at 22:25:59 IST. |
+| Runtime and Spark | Python 3.13.18 and OpenJDK 21.0.12.1. Spark and PySpark 4.3.0 initialized on `local[2]` and the synthetic four-row count passed. The log recorded the Spark result at +75.58 s and its last event at +85.67 s. |
+| Dataset mount | The log confirmed the known file under `/kaggle/input/datasets/saisathwikregula/mmds-dataset-23013/Cyberattack-MMDS/dataset/raw/`. The notebook checked the path with `Path.is_file()` and ran Spark on synthetic rows. |
+| Logs and output | The versioned API returned the completed execution log with 124 records. The archive API returned the [74-byte smoke test status file](phase0b_kaggle_status.txt), which matched the log. |
+
+The enforced settings for the running task included `www.kaggle.com` and the misspelled `pi.github.com`. The two requested API hostnames were absent. The [private Phase 0B notebook](https://www.kaggle.com/code/ramcharan2345/mmds-phase-0b-cloud-integration-check) used the existing notebook and CPU manifest. A temporary manifest supplied the authenticated owner and a new title and slug so the check could use its own version history.
+
+The CLI's individual output file download hit a proxy CONNECT 403 for `www.kaggleusercontent.com`. The authenticated archive endpoint on `www.kaggle.com` returned HTTP 200 and contained `phase0_status.txt`. The archive contained notebook outputs only. Kaggle logged a dependency conflict with its preinstalled `dataproc-spark-connect` package after upgrading PySpark and a Spark temporary-directory cleanup warning. The synthetic local-mode job and the Kaggle run completed successfully.
+
+Codex Cloud prepared the submission, resolved the Kaggle account from the existing token, submitted the notebook, monitored version 1, retrieved the completed log and status file, and verified the results without manual intervention. The integration guide records the working API and Git commands. [Verification guide](../docs/environment_verification.md)
+
+## Phase 0 baseline
+
+Spark passed two local runs on 23 November 2026 IST, and the Phase 0 setup was published to GitHub. The table and sections below record the Phase 0 observations.
 
 | Component | Observed version or evidence | Status |
 | --- | --- | --- |

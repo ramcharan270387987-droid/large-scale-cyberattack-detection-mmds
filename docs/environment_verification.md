@@ -17,32 +17,32 @@ Activating the virtual environment lets `spark-submit` find the installed PySpar
 
 ## Kaggle connection
 
-In the running Codex Cloud environment settings, add `api.kaggle.com` to the restricted HTTP allowlist. Keep `www.kaggle.com` for public metadata. If GitHub REST authentication and repository permission checks are needed, add `api.github.com` and correct the existing `pi.github.com` entry.
+The standard Kaggle CLI uses `api.kaggle.com`. Phase 0B used Kaggle's API routes on `www.kaggle.com` through `scripts/kaggle_web_api.py` because the running Cloud proxy allowed that host. For the standard route, allow `api.kaggle.com` in the running environment. GitHub REST uses `api.github.com`, and Git over HTTPS uses `github.com`.
 
 Prefer `KAGGLE_API_TOKEN`. If it is missing from a new task, generate a token at [Kaggle API settings](https://www.kaggle.com/settings/api) and bind it through the Cloud environment's private credential configuration. For legacy authentication, supply both `KAGGLE_USERNAME` and `KAGGLE_KEY` through that configuration and remove the `KAGGLE_API_TOKEN` binding or unset it in the shell before testing the legacy pair. The CLI checks the modern token first. Keep values out of shell commands, source files, and logs.
 
-Start a new shell after applying the environment changes, activate the project virtual environment, and run:
+Activate the project virtual environment. For a CLI-only setup, install `kaggle==2.2.5`, `kagglesdk==0.1.38`, and `six`. Run the following from the repository root:
 
 ```bash
 export KAGGLE_CONFIG_DIR="$(mktemp -d /tmp/mmds-kaggle.XXXXXX)"
-kaggle --version
-kaggle datasets files saisathwikregula/mmds-dataset-23013
-kaggle datasets metadata saisathwikregula/mmds-dataset-23013 -p "$KAGGLE_CONFIG_DIR"
-kaggle kernels list --mine
+phase0_cli=(python scripts/kaggle_web_api.py)
+"${phase0_cli[@]}" --version
+phase0_owner=$("${phase0_cli[@]}" account)
+"${phase0_cli[@]}" datasets metadata saisathwikregula/mmds-dataset-23013 -p "$KAGGLE_CONFIG_DIR"
+"${phase0_cli[@]}" kernels list --mine --csv
 ```
 
-The writable config directory accommodates the CLI on Cloud images with a read-only home. A proxy CONNECT 403 means the destination was denied before reaching Kaggle. If Kaggle itself returns HTTP 401 once the host is reachable, replace the credential in Cloud settings and retry. A service HTTP 403 calls for checking the Kaggle account and its access. Inspect service availability and retry a transient HTTP 5xx.
+The writable config directory accommodates the CLI on Cloud images with a read-only home. The `account` command prints the account returned by Kaggle token introspection. A proxy CONNECT 403 means the destination was denied before reaching Kaggle. If Kaggle rejects the credential or reports that it is inactive, update the binding in Cloud settings and retry. A service HTTP 403 calls for checking the Kaggle account and resource access.
 
 ### Private CPU notebook
 
 The notebook manifest attaches the exact dataset by owner and slug. The notebook checks for a known file with a filesystem metadata operation, then runs a tiny synthetic Spark job. It prints Python and Java versions, checks both Spark versions and writes `phase0_status.txt`. Internet is enabled for the optional installation of the pinned PySpark package in Kaggle.
 
-After the CLI account check succeeds, replace the username placeholder in a temporary copy. Before submitting, confirm the notebook slug is unused in your account and change the title and slug together if it is already in use.
+After the account check succeeds, replace the username placeholder in a temporary copy. Before submitting, confirm the notebook slug is unused in your account and change the title and slug together if it is already in use.
 
 ```bash
 phase0_dir="$(mktemp -d /tmp/mmds-kaggle-notebook.XXXXXX)"
 cp notebooks/phase0_kaggle_environment.ipynb notebooks/kernel-metadata.json "$phase0_dir/"
-read -r -p "Kaggle username: " phase0_owner
 python - "$phase0_dir/kernel-metadata.json" "$phase0_owner" <<'PY'
 import json
 from pathlib import Path
@@ -54,14 +54,26 @@ manifest["id"] = manifest["id"].replace("YOUR_KAGGLE_USERNAME", sys.argv[2])
 manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 PY
 phase0_kernel="$phase0_owner/mmds-phase-0-environment-check"
-kaggle kernels push -p "$phase0_dir"
-kaggle kernels status "$phase0_kernel"
-kaggle kernels logs "$phase0_kernel"
-kaggle kernels output "$phase0_kernel" -p "$phase0_dir" --file-pattern '^phase0_status\.txt$'
+"${phase0_cli[@]}" kernels push -p "$phase0_dir"
+```
+
+Use the version number returned by the push. The following uses version 1, as returned in Phase 0B. Pull the saved metadata and check private visibility, CPU settings and the exact dataset reference before monitoring the version.
+
+```bash
+phase0_version="$phase0_kernel/1"
+"${phase0_cli[@]}" kernels pull "$phase0_version" -p "$phase0_dir/saved" -m
+"${phase0_cli[@]}" kernels status "$phase0_version"
+```
+
+Poll until the status is `KernelWorkerStatus.COMPLETE`, then retrieve the execution log and status file.
+
+```bash
+"${phase0_cli[@]}" kernels logs "$phase0_version" > "$phase0_dir/run.log"
+"${phase0_cli[@]}" phase0-output "$phase0_version" "$phase0_dir/phase0_status.txt"
 cat "$phase0_dir/phase0_status.txt"
 ```
 
-Repeat the status command until the run reaches a terminal state and collect the log and output after completion. The same notebook can be imported from Kaggle's web UI. Select the exact dataset under **Add Input**, choose **Accelerator → None**, and use **Save Version → Save & Run All**.
+The `phase0-output` command downloads the compact archive from Kaggle's web API and extracts only `phase0_status.txt`. The regular `kernels output` command uses `www.kaggleusercontent.com` for individual files and requires that host to be allowed. Confirm the log includes the Python version, dataset path and Spark result, and the status file contains `PASS`. The same notebook can be imported from Kaggle's web UI. Select the exact dataset under **Add Input**, choose **Accelerator → None**, and use **Save Version → Save & Run All**.
 
 ## GitHub
 
