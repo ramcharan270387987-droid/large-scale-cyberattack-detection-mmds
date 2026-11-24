@@ -1,0 +1,306 @@
+[
+  {
+    "antecedent": [
+      "flow_duration=BIN_0"
+    ],
+    "consequent": [
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "support": 0.3120015883749484,
+    "confidence": 0.9367427707529781,
+    "lift": 1.6350882705003258,
+    "leverage": 0.12118523062597009,
+    "conviction": 6.751790690419771
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0"
+    ],
+    "consequent": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "support": 0.2835329982985833,
+    "confidence": 0.8512696611881737,
+    "lift": 1.572326893848277,
+    "leverage": 0.10320599415720211,
+    "conviction": 3.0833819611837643
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0"
+    ],
+    "consequent": [
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "support": 0.17269222222981995,
+    "confidence": 0.9952794132214063,
+    "lift": 1.737264215149103,
+    "leverage": 0.07328752562470486,
+    "conviction": 90.47594961468577
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0"
+    ],
+    "consequent": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "support": 0.16066150173754692,
+    "confidence": 0.9259425995677766,
+    "lift": 1.7102506031145601,
+    "leverage": 0.06672117425281217,
+    "conviction": 6.192391862212796
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0"
+    ],
+    "consequent": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "support": 0.17350766278178886,
+    "confidence": 0.9999790527512081,
+    "lift": 2.7021619596445894,
+    "leverage": 0.1092969806046887,
+    "conviction": 30072.384003900126
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0"
+    ],
+    "consequent": [
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "support": 0.1567880205086656,
+    "confidence": 0.9036185129654594,
+    "lift": 2.7094054435874817,
+    "leverage": 0.09891996651189464,
+    "conviction": 6.915106671686878
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "support": 0.15985203668860293,
+    "confidence": 0.9256469957047098,
+    "lift": 1.7097046117266177,
+    "leverage": 0.06635516267176937,
+    "conviction": 6.167772884493699
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "support": 0.17268926527986947,
+    "confidence": 0.999982877341479,
+    "lift": 2.7021722945234177,
+    "leverage": 0.10878169520009902,
+    "conviction": 36789.480367190255
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "support": 0.1559796027128291,
+    "confidence": 0.9032230907611486,
+    "lift": 2.708219811534239,
+    "leverage": 0.0983847198866582,
+    "conviction": 6.886852135096813
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "support": 0.15985043500737975,
+    "confidence": 0.9999899802263621,
+    "lift": 2.702191488070805,
+    "leverage": 0.10069458476025203,
+    "conviction": 62869.055954653166
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "support": 0.1554872705460741,
+    "confidence": 0.9726949607089992,
+    "lift": 2.9165239353565706,
+    "leverage": 0.10217474029006425,
+    "conviction": 24.40898388449913
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "support": 0.15548566886485093,
+    "confidence": 0.972694687115945,
+    "lift": 2.9165231150164606,
+    "leverage": 0.1021736727883263,
+    "conviction": 24.408739312005874
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "support": 0.15548566886485093,
+    "confidence": 0.9999896989559496,
+    "lift": 2.702190728016675,
+    "leverage": 0.09794507143301359,
+    "conviction": 61152.413911736025
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "support": 0.15985043500737975,
+    "confidence": 0.925653570581342,
+    "lift": 1.7097167557695974,
+    "leverage": 0.06635516190559276,
+    "conviction": 6.168318335648897
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "support": 0.15597670736600258,
+    "confidence": 0.9032217903829655,
+    "lift": 2.7082159124864913,
+    "leverage": 0.0983828107173429,
+    "conviction": 6.886759598643593
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "support": 0.15548566886485093,
+    "confidence": 0.9968518472440926,
+    "lift": 1.8412226349245542,
+    "leverage": 0.07103870090151057,
+    "conviction": 145.6703277541411
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "support": 0.1554872705460741,
+    "confidence": 0.9968436118685249,
+    "lift": 1.8412074238779534,
+    "leverage": 0.07103873502008398,
+    "conviction": 145.2902573039439
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "support": 0.15597670736600258,
+    "confidence": 0.999981437657385,
+    "lift": 2.702168404182333,
+    "leverage": 0.09825391439551762,
+    "conviction": 33936.11046622799
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "support": 0.15985203668860293,
+    "confidence": 0.9949616738285796,
+    "lift": 1.736709599762139,
+    "leverage": 0.06780899350481653,
+    "conviction": 84.77013138896943
+  },
+  {
+    "antecedent": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "consequent": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "support": 0.1606592224219601,
+    "confidence": 0.999985812932394,
+    "lift": 2.702180227131684,
+    "leverage": 0.10120381644687568,
+    "conviction": 44401.96712860894
+  }
+]

@@ -1,0 +1,4810 @@
+[
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1945012,
+    "benign_count": 7354848,
+    "attack_support": 0.7077313257417943,
+    "benign_support": 0.5454213765696669,
+    "difference": 0.16230994917212738,
+    "support_ratio": 1.2975863362616031,
+    "attack_given_pattern": 0.20914422367648544,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.2353478729874405
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1878440,
+    "benign_count": 6910198,
+    "attack_support": 0.683507778628829,
+    "benign_support": 0.5124469880994086,
+    "difference": 0.17106079052942047,
+    "support_ratio": 1.3338116810167235,
+    "attack_given_pattern": 0.21373505200692075,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.2624644240140963
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1863647,
+    "benign_count": 6149804,
+    "attack_support": 0.678125051169205,
+    "benign_support": 0.4560576320970391,
+    "difference": 0.22206741907216587,
+    "support_ratio": 1.4869284130846752,
+    "attack_given_pattern": 0.2325648462815833,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.3736859815455023
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1914613,
+    "benign_count": 4092652,
+    "attack_support": 0.6966700445922565,
+    "benign_support": 0.30350319784455104,
+    "difference": 0.3931668467477054,
+    "support_ratio": 2.2954290087878366,
+    "attack_given_pattern": 0.3187162544019616,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.8825547272633314
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1902384,
+    "benign_count": 3966311,
+    "attack_support": 0.6922202795612457,
+    "benign_support": 0.2941339923712104,
+    "difference": 0.39808628719003525,
+    "support_ratio": 2.3534181615011445,
+    "attack_given_pattern": 0.3241579260806704,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.9146969371490197
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 68554,
+    "benign_count": 5547013,
+    "attack_support": 0.024944737258640545,
+    "benign_support": 0.4113558113382952,
+    "difference": -0.38641107407965464,
+    "support_ratio": 0.06064029380668266,
+    "attack_given_pattern": 0.01220785007106139,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07210785626268695
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1"
+    ],
+    "attack_count": 203401,
+    "benign_count": 5349424,
+    "attack_support": 0.07401150192760081,
+    "benign_support": 0.3967029912698147,
+    "difference": -0.32269148934221387,
+    "support_ratio": 0.18656653354363648,
+    "attack_given_pattern": 0.0366301837353059,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.21636275087637985
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0"
+    ],
+    "attack_count": 1900782,
+    "benign_count": 3585265,
+    "attack_support": 0.6916373599783133,
+    "benign_support": 0.2658763541635458,
+    "difference": 0.4257610058147675,
+    "support_ratio": 2.601349646734186,
+    "attack_given_pattern": 0.3464757046376015,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.0465208995107846
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1899509,
+    "benign_count": 3567203,
+    "attack_support": 0.6911741535931243,
+    "benign_support": 0.26453691099577387,
+    "difference": 0.4266372425973504,
+    "support_ratio": 2.6127701839089146,
+    "attack_given_pattern": 0.3474682770923363,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.0523837067601938
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2"
+    ],
+    "attack_count": 568672,
+    "benign_count": 4846956,
+    "attack_support": 0.20692262488469873,
+    "benign_support": 0.35944093116439746,
+    "difference": -0.15251830627969873,
+    "support_ratio": 0.575679080883692,
+    "attack_given_pattern": 0.10500573525360309,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.6202352109789845
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 2184413,
+    "benign_count": 3229464,
+    "attack_support": 0.7948421441397843,
+    "benign_support": 0.23949083658318743,
+    "difference": 0.5553513075565968,
+    "support_ratio": 3.3188833254741037,
+    "attack_given_pattern": 0.40348404664531534,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.3832508976134665
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1"
+    ],
+    "attack_count": 1422606,
+    "benign_count": 3987977,
+    "attack_support": 0.5176435057409574,
+    "benign_support": 0.2957407012446988,
+    "difference": 0.2219028044962586,
+    "support_ratio": 1.7503289319404636,
+    "attack_given_pattern": 0.2629302609349122,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5530447500783433
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 640697,
+    "benign_count": 4768031,
+    "attack_support": 0.23313035457302597,
+    "benign_support": 0.3535880050202051,
+    "difference": -0.12045765044717913,
+    "support_ratio": 0.6593276674068855,
+    "attack_given_pattern": 0.11845613238454587,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.6996823943362875
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0"
+    ],
+    "attack_count": 756957,
+    "benign_count": 4649761,
+    "attack_support": 0.2754338693743439,
+    "benign_support": 0.34481732937784043,
+    "difference": -0.06938346000349654,
+    "support_ratio": 0.7987819807992648,
+    "attack_given_pattern": 0.14000304805983962,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.826953116811931
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1892465,
+    "benign_count": 3447906,
+    "attack_support": 0.6886110540037514,
+    "benign_support": 0.25569007500941066,
+    "difference": 0.4329209789943408,
+    "support_ratio": 2.693147373743025,
+    "attack_given_pattern": 0.35436957469808744,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.0931474590085255
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1892459,
+    "benign_count": 3446984,
+    "attack_support": 0.6886088707843397,
+    "benign_support": 0.2556217012633866,
+    "difference": 0.4329871695209531,
+    "support_ratio": 2.693859196542993,
+    "attack_given_pattern": 0.35443004073645884,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.0935046125104346
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 768331,
+    "benign_count": 4550148,
+    "attack_support": 0.27957252563918294,
+    "benign_support": 0.3374302209584368,
+    "difference": -0.05785769531925383,
+    "support_ratio": 0.8285343406559292,
+    "attack_given_pattern": 0.14446442300514864,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.8533050281982678
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 187257,
+    "benign_count": 5054666,
+    "attack_support": 0.06813718623043517,
+    "benign_support": 0.37484430511954725,
+    "difference": -0.30670711888911206,
+    "support_ratio": 0.18177463362743237,
+    "attack_given_pattern": 0.03572295892175448,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.21100406477909708
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 495268,
+    "benign_count": 4708231,
+    "attack_support": 0.18021311860157518,
+    "benign_support": 0.3491533520785174,
+    "difference": -0.1689402334769422,
+    "support_ratio": 0.5161431718434396,
+    "attack_given_pattern": 0.09517980112997043,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.5621965685227593
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2"
+    ],
+    "attack_count": 644052,
+    "benign_count": 4550019,
+    "attack_support": 0.23435113809408584,
+    "benign_support": 0.3374206545666395,
+    "difference": -0.10306951647255366,
+    "support_ratio": 0.6945370264753672,
+    "attack_given_pattern": 0.12399753488159865,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.7324136821900247
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1894815,
+    "benign_count": 3200136,
+    "attack_support": 0.6894661482733464,
+    "benign_support": 0.2373159285317858,
+    "difference": 0.4521502197415606,
+    "support_ratio": 2.905267052822374,
+    "attack_given_pattern": 0.3719005344703021,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.1966972175690755
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1893817,
+    "benign_count": 3191500,
+    "attack_support": 0.689103006111195,
+    "benign_support": 0.23667549938789925,
+    "difference": 0.4524275067232958,
+    "support_ratio": 2.9115941780766663,
+    "attack_given_pattern": 0.37240883901632876,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.1996996095487615
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1893817,
+    "benign_count": 3191500,
+    "attack_support": 0.689103006111195,
+    "benign_support": 0.23667549938789925,
+    "difference": 0.4524275067232958,
+    "support_ratio": 2.9115941780766663,
+    "attack_given_pattern": 0.37240883901632876,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.1996996095487615
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 755804,
+    "benign_count": 4308900,
+    "attack_support": 0.2750143273773895,
+    "benign_support": 0.3195397334521445,
+    "difference": -0.04452540607475497,
+    "support_ratio": 0.8606576853722535,
+    "attack_given_pattern": 0.14922964895875454,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.8814516900692524
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1887520,
+    "benign_count": 3099553,
+    "attack_support": 0.6868117173385828,
+    "benign_support": 0.2298568867787126,
+    "difference": 0.4569548305598702,
+    "support_ratio": 2.987997127098432,
+    "attack_given_pattern": 0.37848252872977795,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.2355749473266835
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1887306,
+    "benign_count": 3087286,
+    "attack_support": 0.6867338491795644,
+    "benign_support": 0.22894718966105904,
+    "difference": 0.45778665951850533,
+    "support_ratio": 2.9995294993409956,
+    "attack_given_pattern": 0.3793891036692054,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.2409297948258797
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1887301,
+    "benign_count": 3086424,
+    "attack_support": 0.6867320298300545,
+    "benign_support": 0.2288832653995919,
+    "difference": 0.45784876443046263,
+    "support_ratio": 3.0003592819734344,
+    "attack_given_pattern": 0.3794542319891027,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.2413144869299315
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1887301,
+    "benign_count": 3086424,
+    "attack_support": 0.6867320298300545,
+    "benign_support": 0.2288832653995919,
+    "difference": 0.45784876443046263,
+    "support_ratio": 3.0003592819734344,
+    "attack_given_pattern": 0.3794542319891027,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.2413144869299315
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 192925,
+    "benign_count": 4624025,
+    "attack_support": 0.07019960083471756,
+    "benign_support": 0.34290879713524386,
+    "difference": -0.2727091963005263,
+    "support_ratio": 0.204717993300798,
+    "attack_given_pattern": 0.04005127726050717,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.23657005345140025
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 177737,
+    "benign_count": 4608678,
+    "attack_support": 0.06467314476382115,
+    "benign_support": 0.3417706931436706,
+    "difference": -0.27709754837984946,
+    "support_ratio": 0.1892296386473208,
+    "attack_given_pattern": 0.03713363759724136,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.2193364914203756
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 55408,
+    "benign_count": 4621053,
+    "attack_support": 0.020161303527536766,
+    "benign_support": 0.3426883993335265,
+    "difference": -0.32252709580598976,
+    "support_ratio": 0.05883275759187425,
+    "attack_given_pattern": 0.01184827586501844,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0699839667150444
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1826522,
+    "benign_count": 2841369,
+    "attack_support": 0.6646163810591161,
+    "benign_support": 0.21071045809816571,
+    "difference": 0.45390592296095045,
+    "support_ratio": 3.154168934270386,
+    "attack_given_pattern": 0.39129491241333614,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.3112535898115256
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 344091,
+    "benign_count": 4302561,
+    "attack_support": 0.12520435843368563,
+    "benign_support": 0.31906964540871036,
+    "difference": -0.19386528697502473,
+    "support_ratio": 0.39240448044910653,
+    "attack_given_pattern": 0.07405138151081682,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.4373977680716326
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 633006,
+    "benign_count": 4009377,
+    "attack_support": 0.2303318311570881,
+    "benign_support": 0.29732768406998505,
+    "difference": -0.06699585291289695,
+    "support_ratio": 0.7746733435789738,
+    "attack_given_pattern": 0.1363536787033728,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.8053974620919115
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1821346,
+    "benign_count": 2792306,
+    "attack_support": 0.6627329904465957,
+    "benign_support": 0.20707204041793117,
+    "difference": 0.4556609500286646,
+    "support_ratio": 3.2004948089998493,
+    "attack_given_pattern": 0.39477316451262473,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.331798509757375
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 623704,
+    "benign_count": 3982375,
+    "attack_support": 0.2269471133291003,
+    "benign_support": 0.29532526770323836,
+    "difference": -0.06837815437413805,
+    "support_ratio": 0.7684649373014408,
+    "attack_given_pattern": 0.13540888030795825,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.7998168408934857
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 749502,
+    "benign_count": 3853073,
+    "attack_support": 0.2727212192552675,
+    "benign_support": 0.28573648016701586,
+    "difference": -0.013015260911748372,
+    "support_ratio": 0.9544501251497854,
+    "attack_given_pattern": 0.16284406011852062,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.9618676517082849
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 749133,
+    "benign_count": 3832147,
+    "attack_support": 0.272586951261446,
+    "benign_support": 0.28418464826972895,
+    "difference": -0.011597697008282948,
+    "support_ratio": 0.9591895724174545,
+    "attack_given_pattern": 0.16352045716480984,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.9658629121928436
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1825047,
+    "benign_count": 2699308,
+    "attack_support": 0.6640796729537322,
+    "benign_support": 0.20017548767092325,
+    "difference": 0.4639041852828089,
+    "support_ratio": 3.3174874740179985,
+    "attack_given_pattern": 0.4033828026315353,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.3826528816851407
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1824266,
+    "benign_count": 2695581,
+    "attack_support": 0.6637954905603051,
+    "benign_support": 0.19989910052186521,
+    "difference": 0.46389639003843985,
+    "support_ratio": 3.3206527134307855,
+    "attack_given_pattern": 0.40361233466531055,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.384008653815598
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1819110,
+    "benign_count": 2647468,
+    "attack_support": 0.6619193773458237,
+    "benign_support": 0.19633113301378124,
+    "difference": 0.4655882443320425,
+    "support_ratio": 3.371443780642579,
+    "attack_given_pattern": 0.40727151747937684,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.4056222734832455
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 1819106,
+    "benign_count": 2646827,
+    "attack_support": 0.661917921866216,
+    "benign_support": 0.1962835976870986,
+    "difference": 0.46563432417911743,
+    "support_ratio": 3.3722528508031457,
+    "attack_given_pattern": 0.40732944269428134,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.40596441915558
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 170804,
+    "benign_count": 4252481,
+    "attack_support": 0.06215043473356536,
+    "benign_support": 0.3153558089652368,
+    "difference": -0.25320537423167144,
+    "support_ratio": 0.1970803548458386,
+    "attack_given_pattern": 0.03861473995005974,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.2280848881442608
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1823631,
+    "benign_count": 2584693,
+    "attack_support": 0.6635644331725635,
+    "benign_support": 0.19167585979614835,
+    "difference": 0.4718885733764152,
+    "support_ratio": 3.4619092559609723,
+    "attack_given_pattern": 0.4136789854829182,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.4434691326040308
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 475249,
+    "benign_count": 3927576,
+    "attack_support": 0.17292880703433294,
+    "benign_support": 0.29126147929936635,
+    "difference": -0.11833267226503341,
+    "support_ratio": 0.5937235759782435,
+    "attack_given_pattern": 0.10794183280053148,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.6375777978107977
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1823369,
+    "benign_count": 2572288,
+    "attack_support": 0.6634690992582513,
+    "benign_support": 0.19075592886401396,
+    "difference": 0.4727131703942373,
+    "support_ratio": 3.4781047341979336,
+    "attack_given_pattern": 0.4148114832435743,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.450158433772365
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 166125,
+    "benign_count": 4228446,
+    "attack_support": 0.060447887462316725,
+    "benign_support": 0.31357341960982765,
+    "difference": -0.25312553214751093,
+    "support_ratio": 0.1927710822477577,
+    "attack_given_pattern": 0.03780232473203869,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.22328621192972012
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1822590,
+    "benign_count": 2568638,
+    "attack_support": 0.663185644604628,
+    "benign_support": 0.19048525188680393,
+    "difference": 0.4727003927178241,
+    "support_ratio": 3.4815590080366263,
+    "attack_given_pattern": 0.4150524636844181,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.451581827972764
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1822590,
+    "benign_count": 2568638,
+    "attack_support": 0.663185644604628,
+    "benign_support": 0.19048525188680393,
+    "difference": 0.4727003927178241,
+    "support_ratio": 3.4815590080366263,
+    "attack_given_pattern": 0.4150524636844181,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.451581827972764
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 53522,
+    "benign_count": 4298944,
+    "attack_support": 0.019475044892449153,
+    "benign_support": 0.3188014156480066,
+    "difference": -0.29932637075555746,
+    "support_ratio": 0.06108832626374482,
+    "attack_given_pattern": 0.012296936954820554,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0726340639218246
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1817650,
+    "benign_count": 2533002,
+    "attack_support": 0.6613881272889691,
+    "benign_support": 0.18784255469232258,
+    "difference": 0.47354557259664654,
+    "support_ratio": 3.520970678727684,
+    "attack_given_pattern": 0.4177879545410665,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.4677394954040404
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 347504,
+    "benign_count": 3997429,
+    "attack_support": 0.1264462464090589,
+    "benign_support": 0.2964416433785589,
+    "difference": -0.16999539696949997,
+    "support_ratio": 0.4265468406123556,
+    "attack_given_pattern": 0.07997913891882798,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.47241113051046074
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1817436,
+    "benign_count": 2520768,
+    "attack_support": 0.6613102591299507,
+    "benign_support": 0.18693530479117532,
+    "difference": 0.47437495433877536,
+    "support_ratio": 3.537642393814789,
+    "attack_given_pattern": 0.41893742202994605,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.4745290313161203
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1817432,
+    "benign_count": 2520128,
+    "attack_support": 0.6613088036503428,
+    "benign_support": 0.1868878436225686,
+    "difference": 0.47442096002777423,
+    "support_ratio": 3.538533009059146,
+    "attack_given_pattern": 0.418998699729802,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.4748909790421822
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 1817432,
+    "benign_count": 2520128,
+    "attack_support": 0.6613088036503428,
+    "benign_support": 0.1868878436225686,
+    "difference": 0.47442096002777423,
+    "support_ratio": 3.538533009059146,
+    "attack_given_pattern": 0.418998699729802,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.4748909790421822
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 49993,
+    "benign_count": 4240073,
+    "attack_support": 0.01819094800844906,
+    "benign_support": 0.31443565555887454,
+    "difference": -0.2962447075504255,
+    "support_ratio": 0.05785268841765628,
+    "attack_given_pattern": 0.011653200673369593,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.068831720103401
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 160339,
+    "benign_count": 4121027,
+    "attack_support": 0.05834253620960362,
+    "benign_support": 0.30560743324957423,
+    "difference": -0.24726489703997062,
+    "support_ratio": 0.19090679696248816,
+    "attack_given_pattern": 0.03745043054015938,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.22120768576335956
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 186823,
+    "benign_count": 4090440,
+    "attack_support": 0.0679792666929866,
+    "benign_support": 0.3033391601805541,
+    "difference": -0.23535989348756753,
+    "support_ratio": 0.2241031677298897,
+    "attack_given_pattern": 0.04367816521920677,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.25799291776284267
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 53067,
+    "benign_count": 4204329,
+    "attack_support": 0.019309484087059514,
+    "benign_support": 0.3117849492921908,
+    "difference": -0.2924754652051313,
+    "support_ratio": 0.06193205968054454,
+    "attack_given_pattern": 0.012464661497309622,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07362475901810499
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 341174,
+    "benign_count": 3863187,
+    "attack_support": 0.12414294992968214,
+    "benign_support": 0.2864865149471535,
+    "difference": -0.16234356501747135,
+    "support_ratio": 0.4333291218003126,
+    "attack_given_pattern": 0.0811476464556683,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.4793131298811839
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 76589,
+    "benign_count": 4048265,
+    "attack_support": 0.02786843192085102,
+    "benign_support": 0.30021154332744915,
+    "difference": -0.2723431114065981,
+    "support_ratio": 0.09282931499557344,
+    "attack_given_pattern": 0.01856768748663589,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10967337677177304
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 168988,
+    "benign_count": 3920011,
+    "attack_support": 0.06148964699161462,
+    "benign_support": 0.2907004734548201,
+    "difference": -0.22921082646320545,
+    "support_ratio": 0.2115223489691742,
+    "attack_given_pattern": 0.04132747403459869,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.244108138619012
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 168620,
+    "benign_count": 3909663,
+    "attack_support": 0.06135574286769509,
+    "benign_support": 0.28993308568491066,
+    "difference": -0.2285773428172156,
+    "support_ratio": 0.21162035620306682,
+    "attack_given_pattern": 0.041345831076460365,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.2442165677796148
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 159635,
+    "benign_count": 3871341,
+    "attack_support": 0.05808637179862712,
+    "benign_support": 0.2870911998984331,
+    "difference": -0.229004828099806,
+    "support_ratio": 0.2023272459036601,
+    "attack_given_pattern": 0.039602071557855965,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.23391673939113541
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 334017,
+    "benign_count": 3683919,
+    "attack_support": 0.12153873304138839,
+    "benign_support": 0.27319234498811545,
+    "difference": -0.15165361194672705,
+    "support_ratio": 0.444883377119061,
+    "attack_given_pattern": 0.08313148840598755,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.49103104821805876
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 163576,
+    "benign_count": 3799462,
+    "attack_support": 0.05952038308223278,
+    "benign_support": 0.28176079155737005,
+    "difference": -0.22224040847513726,
+    "support_ratio": 0.211244377733492,
+    "attack_given_pattern": 0.04127540538344573,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.2438005857910141
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 163208,
+    "benign_count": 3789115,
+    "attack_support": 0.05938647895831325,
+    "benign_support": 0.28099347794553653,
+    "difference": -0.22160699898722327,
+    "support_ratio": 0.21134468811345086,
+    "attack_given_pattern": 0.041294195843811346,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.24391157501575608
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 49333,
+    "benign_count": 3893488,
+    "attack_support": 0.01795079387315859,
+    "benign_support": 0.28873357880645245,
+    "difference": -0.2707827849332939,
+    "support_ratio": 0.062170787157359325,
+    "attack_given_pattern": 0.012512107447941461,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0739050070362648
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 48323,
+    "benign_count": 3876284,
+    "attack_support": 0.017583285272183783,
+    "benign_support": 0.28745776326784384,
+    "difference": -0.26987447799566006,
+    "support_ratio": 0.061168239369483464,
+    "attack_given_pattern": 0.012312825207721435,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07272791073758438
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 620842,
+    "benign_count": 3265547,
+    "attack_support": 0.22590571766970438,
+    "benign_support": 0.2421666824376175,
+    "difference": -0.01626096476791311,
+    "support_ratio": 0.9328521801420724,
+    "attack_given_pattern": 0.15974777614901647,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.943578895037631
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 620674,
+    "benign_count": 3258515,
+    "attack_support": 0.2258445875261759,
+    "benign_support": 0.24164520284755148,
+    "difference": -0.015800615321375583,
+    "support_ratio": 0.9346123360398599,
+    "attack_given_pattern": 0.16000096927476337,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.9450744256520949
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 45031,
+    "benign_count": 3825429,
+    "attack_support": 0.016385425554947083,
+    "benign_support": 0.2836864543155106,
+    "difference": -0.2673010287605635,
+    "support_ratio": 0.05775892823110803,
+    "attack_given_pattern": 0.011634534396428331,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06872146439033071
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 252813,
+    "benign_count": 3577910,
+    "attack_support": 0.09199104152301386,
+    "benign_support": 0.26533092151494864,
+    "difference": -0.1733398799919348,
+    "support_ratio": 0.34670305668776386,
+    "attack_given_pattern": 0.06599615790543978,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.3898181449177393
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 156496,
+    "benign_count": 3648500,
+    "attack_support": 0.05694418417638957,
+    "benign_support": 0.2705657400961148,
+    "difference": -0.2136215559197252,
+    "support_ratio": 0.21046339479699436,
+    "attack_given_pattern": 0.04112908397275582,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.2429363121319533
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 250328,
+    "benign_count": 3539469,
+    "attack_support": 0.09108682481665506,
+    "benign_support": 0.2624802109174333,
+    "difference": -0.17139338610077823,
+    "support_ratio": 0.34702358893374885,
+    "attack_given_pattern": 0.06605314216038484,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.39015473264128575
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 156357,
+    "benign_count": 3628902,
+    "attack_support": 0.05689360626001779,
+    "benign_support": 0.26911239012368676,
+    "difference": -0.21221878386366896,
+    "support_ratio": 0.21141206554580752,
+    "attack_given_pattern": 0.0413068167858527,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.24398612287384086
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 74355,
+    "benign_count": 3647030,
+    "attack_support": 0.02705554655988298,
+    "benign_support": 0.2704567277244713,
+    "difference": -0.24340118116458834,
+    "support_ratio": 0.10003650782703363,
+    "attack_given_pattern": 0.0199804642626334,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.11801819622007034
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 73281,
+    "benign_count": 3639112,
+    "attack_support": 0.026664750285183034,
+    "benign_support": 0.2698695440791154,
+    "difference": -0.24320479379393237,
+    "support_ratio": 0.0988060745282393,
+    "attack_given_pattern": 0.01973955882364825,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.1165952450316036
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 45654,
+    "benign_count": 3644659,
+    "attack_support": 0.01661211650386521,
+    "benign_support": 0.2702808989263987,
+    "difference": -0.25366878242253355,
+    "support_ratio": 0.06146241399170765,
+    "attack_given_pattern": 0.012371308341595957,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07307335185839336
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 45285,
+    "benign_count": 3632119,
+    "attack_support": 0.01647784851004372,
+    "benign_support": 0.2693509566540113,
+    "difference": -0.2528731081439676,
+    "support_ratio": 0.06117612766161423,
+    "attack_given_pattern": 0.012314393523257167,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07273717427461726
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 44894,
+    "benign_count": 3595128,
+    "attack_support": 0.016335575378379215,
+    "benign_support": 0.26660777526662055,
+    "difference": -0.25027219988824134,
+    "support_ratio": 0.0612719391324685,
+    "attack_given_pattern": 0.012333441940735523,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07284968716931745
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 64508,
+    "benign_count": 3569044,
+    "attack_support": 0.023472519635329585,
+    "benign_support": 0.26467343601359405,
+    "difference": -0.24120091637826446,
+    "support_ratio": 0.08868483361558052,
+    "attack_given_pattern": 0.017753426949717523,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10486380085015597
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 64293,
+    "benign_count": 3550121,
+    "attack_support": 0.023394287606409204,
+    "benign_support": 0.26327014274243093,
+    "difference": -0.23987585513602172,
+    "support_ratio": 0.08886039017837617,
+    "attack_given_pattern": 0.017787945708488292,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10506769209073644
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 64270,
+    "benign_count": 3549204,
+    "attack_support": 0.023385918598664235,
+    "benign_support": 0.26320213978678664,
+    "difference": -0.2398162211881224,
+    "support_ratio": 0.08885155195777882,
+    "attack_given_pattern": 0.017786207953896998,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10505742773152826
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 331272,
+    "benign_count": 3254992,
+    "attack_support": 0.12053991016052121,
+    "benign_support": 0.2413839439459868,
+    "difference": -0.1208440337854656,
+    "support_ratio": 0.49937004172694177,
+    "attack_given_pattern": 0.09237245222326075,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.5456144586290528
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 60092,
+    "benign_count": 3522617,
+    "attack_support": 0.02186567014829518,
+    "benign_support": 0.26123049902155837,
+    "difference": -0.23936482887326319,
+    "support_ratio": 0.08370259303639231,
+    "attack_given_pattern": 0.016772782829975866,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.09907145045106293
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 331104,
+    "benign_count": 3247960,
+    "attack_support": 0.12047878001699272,
+    "benign_support": 0.2408624643559208,
+    "difference": -0.12038368433892807,
+    "support_ratio": 0.5001974065953343,
+    "attack_given_pattern": 0.09251133815992114,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.5464348133269988
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2"
+    ],
+    "attack_count": 255656,
+    "benign_count": 3285468,
+    "attack_support": 0.09302552365427265,
+    "benign_support": 0.2436439854685767,
+    "difference": -0.15061846181430405,
+    "support_ratio": 0.3818092347954567,
+    "attack_given_pattern": 0.072196285699117,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.42644031189671966
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 43818,
+    "benign_count": 3482191,
+    "attack_support": 0.01594405136387536,
+    "benign_support": 0.2582325846432863,
+    "difference": -0.24228853327941094,
+    "support_ratio": 0.06174298795754196,
+    "attack_given_pattern": 0.012427081156060577,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07340278399143649
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 249756,
+    "benign_count": 3270563,
+    "attack_support": 0.09087869123273665,
+    "benign_support": 0.24253865934657243,
+    "difference": -0.15165996811383578,
+    "support_ratio": 0.3746977553086773,
+    "attack_given_pattern": 0.07094697952089,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.4190610608571591
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 43605,
+    "benign_count": 3469868,
+    "attack_support": 0.01586654707475889,
+    "benign_support": 0.2573187346733797,
+    "difference": -0.24145218759862078,
+    "support_ratio": 0.06166106441840952,
+    "attack_given_pattern": 0.012410796952189471,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07330659842024623
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 46338,
+    "benign_count": 3464755,
+    "attack_support": 0.016861003516802604,
+    "benign_support": 0.25693956443105775,
+    "difference": -0.24007856091425514,
+    "support_ratio": 0.06562244920955629,
+    "attack_given_pattern": 0.013197599721796033,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07795399011392071
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 43232,
+    "benign_count": 3438399,
+    "attack_support": 0.01573082360132958,
+    "benign_support": 0.25498505418137346,
+    "difference": -0.2392542305800439,
+    "support_ratio": 0.06169312021770534,
+    "attack_given_pattern": 0.012417168849886735,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07334423517697246
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 246652,
+    "benign_count": 3229439,
+    "attack_support": 0.08974923905706754,
+    "benign_support": 0.2394889826312887,
+    "difference": -0.14973974357422115,
+    "support_ratio": 0.37475310167083237,
+    "attack_given_pattern": 0.07095671545998077,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.4191185679278106
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 42394,
+    "benign_count": 3364649,
+    "attack_support": 0.015425900623491078,
+    "benign_support": 0.24951589608021174,
+    "difference": -0.23408999545672066,
+    "support_ratio": 0.061823318136541176,
+    "attack_given_pattern": 0.0124430481212007,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07349709573515659
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 42176,
+    "benign_count": 3350639,
+    "attack_support": 0.015346576984864831,
+    "benign_support": 0.2484769414361809,
+    "difference": -0.23313036445131607,
+    "support_ratio": 0.06176258004530558,
+    "attack_given_pattern": 0.01243097545843201,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07342578638694496
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 42085,
+    "benign_count": 3334289,
+    "attack_support": 0.015313464823786904,
+    "benign_support": 0.24726445689443183,
+    "difference": -0.23195099207064493,
+    "support_ratio": 0.061931524716975,
+    "attack_given_pattern": 0.01246455517072457,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07362413098105773
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 41868,
+    "benign_count": 3321298,
+    "attack_support": 0.015234505055062613,
+    "benign_support": 0.24630106932979193,
+    "difference": -0.23106656427472932,
+    "support_ratio": 0.06185318275928365,
+    "attack_given_pattern": 0.012448984082260584,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07353215755393674
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 153618,
+    "benign_count": 3208965,
+    "attack_support": 0.05589696659856235,
+    "benign_support": 0.23797067018433027,
+    "difference": -0.1820737035857679,
+    "support_ratio": 0.234890150770534,
+    "attack_given_pattern": 0.04568452288017872,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.2698438291835076
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 153471,
+    "benign_count": 3202683,
+    "attack_support": 0.055843477722974925,
+    "benign_support": 0.23750480915122524,
+    "difference": -0.1816613314282503,
+    "support_ratio": 0.23512567144448004,
+    "attack_given_pattern": 0.045728235355111835,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.27010202475775
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 153591,
+    "benign_count": 3199233,
+    "attack_support": 0.055887142111209556,
+    "benign_support": 0.2372489637892048,
+    "difference": -0.18136182167799525,
+    "support_ratio": 0.23556327167298047,
+    "attack_given_pattern": 0.045809443024745704,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.27058169242530006
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 153444,
+    "benign_count": 3192951,
+    "attack_support": 0.05583365323562214,
+    "benign_support": 0.23678310275609973,
+    "difference": -0.1809494495204776,
+    "support_ratio": 0.2358008345432234,
+    "attack_given_pattern": 0.04585352297024111,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.2708420585303348
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 66568,
+    "benign_count": 3274364,
+    "attack_support": 0.02422209163335741,
+    "benign_support": 0.24282053419325061,
+    "difference": -0.2185984425598932,
+    "support_ratio": 0.09975306130444499,
+    "attack_given_pattern": 0.01992497901783095,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.11769046266882045
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 67286,
+    "benign_count": 3271900,
+    "attack_support": 0.024483350222961282,
+    "benign_support": 0.24263780869411483,
+    "difference": -0.21815445847115356,
+    "support_ratio": 0.10090492637866921,
+    "attack_given_pattern": 0.020150419892752305,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.11902206963564407
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 59416,
+    "benign_count": 3273692,
+    "attack_support": 0.021619694094573427,
+    "benign_support": 0.2427706999662136,
+    "difference": -0.22115100587164016,
+    "support_ratio": 0.08905396778763765,
+    "attack_given_pattern": 0.017826005037940566,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10529249634714719
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 59405,
+    "benign_count": 3273508,
+    "attack_support": 0.021615691525651917,
+    "benign_support": 0.24275705488023916,
+    "difference": -0.22114136335458723,
+    "support_ratio": 0.08904248544420561,
+    "attack_given_pattern": 0.017823747574569154,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10527916223480499
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 66437,
+    "benign_count": 3264745,
+    "attack_support": 0.024174424676201272,
+    "benign_support": 0.24210720766070723,
+    "difference": -0.21793278298450597,
+    "support_ratio": 0.09985008257201365,
+    "attack_given_pattern": 0.019943971839425166,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.11780264717645829
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 61498,
+    "benign_count": 3266088,
+    "attack_support": 0.02237727123044427,
+    "benign_support": 0.24220680195670533,
+    "difference": -0.21982953072626105,
+    "support_ratio": 0.09238911149342628,
+    "attack_given_pattern": 0.018481265397798884,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10916290920184832
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 830074,
+    "benign_count": 2491068,
+    "attack_support": 0.3020389449956063,
+    "benign_support": 0.18473280993552105,
+    "difference": 0.11730613506008525,
+    "support_ratio": 1.6350043346443421,
+    "attack_given_pattern": 0.24993631708611075,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.476293689909619
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 61390,
+    "benign_count": 3257356,
+    "attack_support": 0.0223379732810331,
+    "benign_support": 0.24155925363752778,
+    "difference": -0.21922128035649469,
+    "support_ratio": 0.092474094635813,
+    "attack_given_pattern": 0.01849795073199335,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10926146412124739
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 61367,
+    "benign_count": 3256470,
+    "attack_support": 0.022329604273288128,
+    "benign_support": 0.2414935495822379,
+    "difference": -0.21916394530894978,
+    "support_ratio": 0.09246459920737565,
+    "attack_given_pattern": 0.01849608645632682,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10925045244261325
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 58455,
+    "benign_count": 3226961,
+    "attack_support": 0.021270015118794425,
+    "benign_support": 0.23930521891908968,
+    "difference": -0.21803520380029526,
+    "support_ratio": 0.08888237045087564,
+    "attack_given_pattern": 0.01779226740236244,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10509321895082026
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 58330,
+    "benign_count": 3207916,
+    "attack_support": 0.02122453138105002,
+    "benign_support": 0.23789287836266088,
+    "difference": -0.21666834698161086,
+    "support_ratio": 0.08921885987983982,
+    "attack_given_pattern": 0.017858422176406798,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10548397399041474
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 58328,
+    "benign_count": 3207748,
+    "attack_support": 0.021223803641246108,
+    "benign_support": 0.2378804198059016,
+    "difference": -0.2166566161646555,
+    "support_ratio": 0.08922047328890566,
+    "attack_given_pattern": 0.017858739355728404,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10548584746697276
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 243730,
+    "benign_count": 2929513,
+    "attack_support": 0.08868601120355428,
+    "benign_support": 0.2172470475445223,
+    "difference": -0.128561036340968,
+    "support_ratio": 0.4082265430345105,
+    "attack_given_pattern": 0.07680785871110407,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.4536793951060975
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 243641,
+    "benign_count": 2928421,
+    "attack_support": 0.08865362678228027,
+    "benign_support": 0.21716606692558713,
+    "difference": -0.12851244014330687,
+    "support_ratio": 0.4082296467277174,
+    "attack_given_pattern": 0.07680839781820153,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.4536825794388725
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 731030,
+    "benign_count": 2434467,
+    "attack_support": 0.26599981442635,
+    "benign_support": 0.18053538867879082,
+    "difference": 0.08546442574755919,
+    "support_ratio": 1.473394309963338,
+    "attack_given_pattern": 0.23093687973800006,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.3640701051346809
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 730825,
+    "benign_count": 2421133,
+    "attack_support": 0.26592522109644917,
+    "benign_support": 0.17954656489410079,
+    "difference": 0.08637865620234839,
+    "support_ratio": 1.4810933378385478,
+    "attack_given_pattern": 0.23186381290613645,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.3695452021635621
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 38916,
+    "benign_count": 3075424,
+    "attack_support": 0.0141603611044907,
+    "benign_support": 0.22806752656416437,
+    "difference": -0.21390716545967367,
+    "support_ratio": 0.06208845826416604,
+    "attack_given_pattern": 0.012495745487005272,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07380836217902174
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 38549,
+    "benign_count": 3063021,
+    "attack_support": 0.014026820850473121,
+    "benign_support": 0.2271477439481819,
+    "difference": -0.21312092309770878,
+    "support_ratio": 0.061751970795153446,
+    "attack_given_pattern": 0.01242886667075062,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07341333045423502
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 886430,
+    "benign_count": 2188817,
+    "attack_support": 0.32254519719019664,
+    "benign_support": 0.16231845732217562,
+    "difference": 0.16022673986802102,
+    "support_ratio": 1.9871134959716696,
+    "attack_given_pattern": 0.288246765219184,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.7025812238536358
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 37813,
+    "benign_count": 2968049,
+    "attack_support": 0.013759012602634055,
+    "benign_support": 0.22010480315925268,
+    "difference": -0.2063457905566186,
+    "support_ratio": 0.06251118742138026,
+    "attack_given_pattern": 0.012579752496954285,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07430456465228286
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 37600,
+    "benign_count": 2955115,
+    "attack_support": 0.013681508313517585,
+    "benign_support": 0.21914564260494185,
+    "difference": -0.20546413429142427,
+    "support_ratio": 0.06243112183700366,
+    "attack_given_pattern": 0.01256384253094598,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07421058958415923
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 55538,
+    "benign_count": 2928822,
+    "attack_support": 0.020208606614790948,
+    "benign_support": 0.21719580431404226,
+    "difference": -0.1969871976992513,
+    "support_ratio": 0.09304326425003787,
+    "attack_given_pattern": 0.018609685158626977,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10992144355484071
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 55449,
+    "benign_count": 2927740,
+    "attack_support": 0.02017622219351693,
+    "benign_support": 0.21711556527586656,
+    "difference": -0.19693934308234964,
+    "support_ratio": 0.09292849256515102,
+    "attack_given_pattern": 0.018587156227781745,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.10978837238361205
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 37506,
+    "benign_count": 2938047,
+    "attack_support": 0.013647304542733791,
+    "benign_support": 0.21787991256466213,
+    "difference": -0.20423260802192833,
+    "support_ratio": 0.06263681852122811,
+    "attack_given_pattern": 0.012604715829292908,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07445201505260994
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 55520,
+    "benign_count": 2919535,
+    "attack_support": 0.020202056956555754,
+    "benign_support": 0.21650709826271358,
+    "difference": -0.19630504130615783,
+    "support_ratio": 0.09330898210109591,
+    "attack_given_pattern": 0.01866183986514535,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.11022950468429088
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 55518,
+    "benign_count": 2919359,
+    "attack_support": 0.020201329216751843,
+    "benign_support": 0.21649404644134673,
+    "difference": -0.1962927172245949,
+    "support_ratio": 0.09331124596179069,
+    "attack_given_pattern": 0.018662284188556366,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.11023212916021982
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 55431,
+    "benign_count": 2918443,
+    "attack_support": 0.020169672535281735,
+    "benign_support": 0.21642611764377842,
+    "difference": -0.19625644510849669,
+    "support_ratio": 0.09319426303473938,
+    "attack_given_pattern": 0.018639323656617596,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.1100965086597125
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 55429,
+    "benign_count": 2918277,
+    "attack_support": 0.020168944795477824,
+    "benign_support": 0.21641380740317107,
+    "difference": -0.19624486260769325,
+    "support_ratio": 0.09319620146927045,
+    "attack_given_pattern": 0.01863970412676976,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.11009875597491418
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 37293,
+    "benign_count": 2925834,
+    "attack_support": 0.013569800253617322,
+    "benign_support": 0.21697421998310976,
+    "difference": -0.20340441972949244,
+    "support_ratio": 0.06254107172121026,
+    "attack_given_pattern": 0.012585690724697254,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07433963985963325
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 33254,
+    "benign_count": 2796669,
+    "attack_support": 0.012100129719620047,
+    "benign_support": 0.20739559210329211,
+    "difference": -0.19529546238367207,
+    "support_ratio": 0.05834323476650194,
+    "attack_given_pattern": 0.01175084975810296,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.069408501938462
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0"
+    ],
+    "attack_count": 726430,
+    "benign_count": 2090169,
+    "attack_support": 0.26432601287735585,
+    "benign_support": 0.1550029114460617,
+    "difference": 0.10932310143129415,
+    "support_ratio": 1.7052970838508195,
+    "attack_given_pattern": 0.25791033796433216,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5233936745895966
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 726428,
+    "benign_count": 2090112,
+    "attack_support": 0.26432528513755194,
+    "benign_support": 0.15499868443573267,
+    "difference": 0.10932660070181927,
+    "support_ratio": 1.7053388943255807,
+    "attack_given_pattern": 0.25791503049841297,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5234213918838815
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 726253,
+    "benign_count": 2077050,
+    "attack_support": 0.26426160790470976,
+    "benign_support": 0.1540300316477005,
+    "difference": 0.11023157625700927,
+    "support_ratio": 1.7156498968274732,
+    "attack_given_pattern": 0.25907046080998025,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.530246148277765
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 726252,
+    "benign_count": 2077003,
+    "attack_support": 0.2642612440348078,
+    "benign_support": 0.15402654621813094,
+    "difference": 0.11023469781667683,
+    "support_ratio": 1.7156863574708965,
+    "attack_given_pattern": 0.2590745401328099,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5302702435297983
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 724330,
+    "benign_count": 1957866,
+    "attack_support": 0.2635618860832498,
+    "benign_support": 0.1451915755239194,
+    "difference": 0.11837031055933042,
+    "support_ratio": 1.8152698263118556,
+    "attack_given_pattern": 0.27005110737619475,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.595105306905941
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 724161,
+    "benign_count": 1944674,
+    "attack_support": 0.26350039206981934,
+    "benign_support": 0.14421328218601395,
+    "difference": 0.11928710988380539,
+    "support_ratio": 1.8271575826832824,
+    "attack_given_pattern": 0.27133974187239,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6027168577102104
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 723373,
+    "benign_count": 1884636,
+    "attack_support": 0.2632136625870786,
+    "benign_support": 0.13976097962225062,
+    "difference": 0.123452682964828,
+    "support_ratio": 1.8833129482814082,
+    "attack_given_pattern": 0.2773659906848481,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.638311977296581
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 723371,
+    "benign_count": 1884601,
+    "attack_support": 0.2632129348472747,
+    "benign_support": 0.13975838408959246,
+    "difference": 0.12345455075768225,
+    "support_ratio": 1.8833427172322013,
+    "attack_given_pattern": 0.27736915887133756,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6383306907583837
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 820700,
+    "benign_count": 1787035,
+    "attack_support": 0.29862802853467774,
+    "benign_support": 0.13252307725165424,
+    "difference": 0.1661049512830235,
+    "support_ratio": 2.2534039710502576,
+    "attack_given_pattern": 0.3147175614086554,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.8589357298213955
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 723217,
+    "benign_count": 1871652,
+    "attack_support": 0.2631568988823736,
+    "benign_support": 0.13879811116414237,
+    "difference": 0.12435878771823122,
+    "support_ratio": 1.8959688764868332,
+    "attack_given_pattern": 0.2787104088876934,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6462530245705407
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 723216,
+    "benign_count": 1871627,
+    "attack_support": 0.26315653501247166,
+    "benign_support": 0.13879625721224367,
+    "difference": 0.12436027780022799,
+    "support_ratio": 1.8959915800183245,
+    "attack_given_pattern": 0.27871281615111204,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6462672435037327
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722693,
+    "benign_count": 1830651,
+    "attack_support": 0.26296623105374906,
+    "benign_support": 0.13575755589220026,
+    "difference": 0.1272086751615488,
+    "support_ratio": 1.9370283246890523,
+    "attack_given_pattern": 0.2830378515390014,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.671813840837873
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722565,
+    "benign_count": 1822649,
+    "attack_support": 0.26291965570629877,
+    "benign_support": 0.1351641429684647,
+    "difference": 0.12775551273783406,
+    "support_ratio": 1.9451879021468055,
+    "attack_given_pattern": 0.28389164918941984,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6768569498124608
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722536,
+    "benign_count": 1822595,
+    "attack_support": 0.2629091034791421,
+    "benign_support": 0.13516013843236355,
+    "difference": 0.12774896504677855,
+    "support_ratio": 1.9451674623040307,
+    "attack_given_pattern": 0.28388951295630754,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.67684433176839
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722534,
+    "benign_count": 1822539,
+    "attack_support": 0.2629083757393382,
+    "benign_support": 0.13515598558011044,
+    "difference": 0.12775239015922774,
+    "support_ratio": 1.9452218457872559,
+    "attack_given_pattern": 0.28389519671930824,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6768779039340949
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722534,
+    "benign_count": 1822539,
+    "attack_support": 0.2629083757393382,
+    "benign_support": 0.13515598558011044,
+    "difference": 0.12775239015922774,
+    "support_ratio": 1.9452218457872559,
+    "attack_given_pattern": 0.28389519671930824,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6768779039340949
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722519,
+    "benign_count": 1817691,
+    "attack_support": 0.2629029176908088,
+    "benign_support": 0.13479646722791477,
+    "difference": 0.12810645046289404,
+    "support_ratio": 1.9503694948198516,
+    "attack_given_pattern": 0.2844327831163565,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6800532544193554
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722414,
+    "benign_count": 1814595,
+    "attack_support": 0.2628647113511035,
+    "benign_support": 0.1345668738247799,
+    "difference": 0.12829783752632362,
+    "support_ratio": 1.9534132277857683,
+    "attack_given_pattern": 0.28475027088985494,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6819285529037997
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722412,
+    "benign_count": 1814560,
+    "attack_support": 0.2628639836112996,
+    "benign_support": 0.13456427829212173,
+    "difference": 0.12829970531917786,
+    "support_ratio": 1.9534454979252052,
+    "attack_given_pattern": 0.28475363543626026,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6819484262006679
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722412,
+    "benign_count": 1814560,
+    "attack_support": 0.2628639836112996,
+    "benign_support": 0.13456427829212173,
+    "difference": 0.12829970531917786,
+    "support_ratio": 1.9534454979252052,
+    "attack_given_pattern": 0.28475363543626026,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6819484262006679
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722409,
+    "benign_count": 1809807,
+    "attack_support": 0.26286289200159374,
+    "benign_support": 0.13421180495714108,
+    "difference": 0.12865108704445266,
+    "support_ratio": 1.9585675945982235,
+    "attack_given_pattern": 0.28528727407140625,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6851004585221117
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722370,
+    "benign_count": 1809638,
+    "attack_support": 0.26284870107541747,
+    "benign_support": 0.13419927224230588,
+    "difference": 0.1286494288331116,
+    "support_ratio": 1.9586447577809984,
+    "attack_given_pattern": 0.28529530712383216,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.685147907187217
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722369,
+    "benign_count": 1809592,
+    "attack_support": 0.26284833720551554,
+    "benign_support": 0.13419586097081226,
+    "difference": 0.12865247623470327,
+    "support_ratio": 1.9586918352324243,
+    "attack_given_pattern": 0.2853002080205817,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6851768552129804
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722369,
+    "benign_count": 1809592,
+    "attack_support": 0.26284833720551554,
+    "benign_support": 0.13419586097081226,
+    "difference": 0.12865247623470327,
+    "support_ratio": 1.9586918352324243,
+    "attack_given_pattern": 0.2853002080205817,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6851768552129804
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722260,
+    "benign_count": 1801756,
+    "attack_support": 0.2628086753862024,
+    "benign_support": 0.1336147582876841,
+    "difference": 0.1291939170985183,
+    "support_ratio": 1.9669135262764361,
+    "attack_given_pattern": 0.2861550798410153,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6902263089654452
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722259,
+    "benign_count": 1801731,
+    "attack_support": 0.26280831151630046,
+    "benign_support": 0.1336129043357854,
+    "difference": 0.12919540718051506,
+    "support_ratio": 1.966938094959985,
+    "attack_given_pattern": 0.28615763136937944,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6902413800254157
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 722259,
+    "benign_count": 1801731,
+    "attack_support": 0.26280831151630046,
+    "benign_support": 0.1336129043357854,
+    "difference": 0.12919540718051506,
+    "support_ratio": 1.966938094959985,
+    "attack_given_pattern": 0.28615763136937944,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6902413800254157
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 33128,
+    "benign_count": 2475071,
+    "attack_support": 0.012054282111973685,
+    "benign_support": 0.1835465031945816,
+    "difference": -0.17149222108260792,
+    "support_ratio": 0.06567426729560018,
+    "attack_given_pattern": 0.013207883425517672,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07801473265462128
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 165678,
+    "benign_count": 2315837,
+    "attack_support": 0.060285237616142726,
+    "benign_support": 0.17173801612908488,
+    "difference": -0.11145277851294215,
+    "support_ratio": 0.35103024347754214,
+    "attack_given_pattern": 0.06676485937018313,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.39435861800726596
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1"
+    ],
+    "attack_count": 167904,
+    "benign_count": 2292961,
+    "attack_support": 0.06109521201789512,
+    "benign_support": 0.17004157598369946,
+    "difference": -0.10894636396580434,
+    "support_ratio": 0.35929572908540813,
+    "attack_given_pattern": 0.06822966721051338,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.40301076827026533
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 33529,
+    "benign_count": 2407920,
+    "attack_support": 0.012200193942657742,
+    "benign_support": 0.17856671423660045,
+    "difference": -0.16636652029394272,
+    "support_ratio": 0.068322889821966,
+    "attack_given_pattern": 0.013733237925510629,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.08111783324579312
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1"
+    ],
+    "attack_count": 27291,
+    "benign_count": 2357600,
+    "attack_support": 0.009930373494260862,
+    "benign_support": 0.17483507985489935,
+    "difference": -0.16490470636063848,
+    "support_ratio": 0.056798518366579315,
+    "attack_given_pattern": 0.011443290280352436,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06759184671376905
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 26958,
+    "benign_count": 2347968,
+    "attack_support": 0.009809204816909762,
+    "benign_support": 0.17412078926736863,
+    "difference": -0.16431158445045888,
+    "support_ratio": 0.05633563262711486,
+    "attack_given_pattern": 0.011351090518188778,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06704725227995383
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 26453,
+    "benign_count": 2258568,
+    "attack_support": 0.009625450516422359,
+    "benign_support": 0.16749105727762142,
+    "difference": -0.15786560676119907,
+    "support_ratio": 0.057468444422485714,
+    "attack_given_pattern": 0.011576698857472208,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06837984840507143
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 682538,
+    "benign_count": 1519844,
+    "attack_support": 0.24835503514073579,
+    "benign_support": 0.11270870678104412,
+    "difference": 0.13564632835969165,
+    "support_ratio": 2.203512419171021,
+    "attack_given_pattern": 0.30990899852977366,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.8305330906275845
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 162227,
+    "benign_count": 1972384,
+    "attack_support": 0.05902952258449514,
+    "benign_support": 0.1462682024705318,
+    "difference": -0.08723867988603665,
+    "support_ratio": 0.4035704383280955,
+    "attack_given_pattern": 0.075998390339036,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.44889812496577697
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 27022,
+    "benign_count": 2036010,
+    "attack_support": 0.009832492490634899,
+    "benign_support": 0.15098658421079642,
+    "difference": -0.14115409172016152,
+    "support_ratio": 0.06512163012382274,
+    "attack_given_pattern": 0.013098197216524029,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0773668513859234
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 26845,
+    "benign_count": 2026547,
+    "attack_support": 0.009768087517988818,
+    "benign_support": 0.15028482633810092,
+    "difference": -0.1405167388201121,
+    "support_ratio": 0.06499716409169091,
+    "attack_given_pattern": 0.013073490108074834,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07722091441796011
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 26714,
+    "benign_count": 2016100,
+    "attack_support": 0.00972042056083268,
+    "benign_support": 0.14951009691867262,
+    "difference": -0.13978967635783995,
+    "support_ratio": 0.06501514453649368,
+    "attack_given_pattern": 0.01307705938964585,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0772419970198094
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 24295,
+    "benign_count": 2016843,
+    "attack_support": 0.008840219268002918,
+    "benign_support": 0.14956519636910195,
+    "difference": -0.14072497710109905,
+    "support_ratio": 0.05910612550654319,
+    "attack_given_pattern": 0.011902673900539796,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07030527846965422
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 26599,
+    "benign_count": 2008596,
+    "attack_support": 0.009678575522107826,
+    "benign_support": 0.14895361471675916,
+    "difference": -0.13927503919465134,
+    "support_ratio": 0.0649771107637233,
+    "attack_given_pattern": 0.013069509309918705,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0771974011195839
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 24216,
+    "benign_count": 1999879,
+    "attack_support": 0.008811473545748454,
+    "benign_support": 0.14830717876872085,
+    "difference": -0.1394957052229724,
+    "support_ratio": 0.059413668434011524,
+    "attack_given_pattern": 0.011963865332407817,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0706667166383705
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 23372,
+    "benign_count": 1992252,
+    "attack_support": 0.008504367348498219,
+    "benign_support": 0.14774157512346578,
+    "difference": -0.13923720777496756,
+    "support_ratio": 0.05756245214924252,
+    "attack_given_pattern": 0.011595416605478005,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06849040814121717
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 27347,
+    "benign_count": 1955040,
+    "attack_support": 0.009950750208770356,
+    "benign_support": 0.14498200480129048,
+    "difference": -0.13503125459252013,
+    "support_ratio": 0.06863438136621619,
+    "attack_given_pattern": 0.013794985540159415,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.08148255660787086
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 25079,
+    "benign_count": 1943902,
+    "attack_support": 0.009125493271135838,
+    "benign_support": 0.14415603215138215,
+    "difference": -0.1350305388802463,
+    "support_ratio": 0.06330288878617935,
+    "attack_given_pattern": 0.012737045202569248,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07523364223282582
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 24779,
+    "benign_count": 1933372,
+    "attack_support": 0.009016332300549261,
+    "benign_support": 0.14337514761165018,
+    "difference": -0.13435881531110092,
+    "support_ratio": 0.06288629829327984,
+    "attack_given_pattern": 0.012654284577644932,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07474480175628695
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 24935,
+    "benign_count": 1879904,
+    "attack_support": 0.00907309600525428,
+    "benign_support": 0.1394100636068649,
+    "difference": -0.13033696760161062,
+    "support_ratio": 0.06508207349248708,
+    "attack_given_pattern": 0.013090345168279314,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07732047185448242
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 24830,
+    "benign_count": 1872252,
+    "attack_support": 0.00903488966554898,
+    "benign_support": 0.13884260600971116,
+    "difference": -0.1298077163441622,
+    "support_ratio": 0.06507289026912277,
+    "attack_given_pattern": 0.013088522267355865,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07730970456319002
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 24828,
+    "benign_count": 1872173,
+    "attack_support": 0.00903416192574507,
+    "benign_support": 0.13883674752171127,
+    "difference": -0.1298025855959662,
+    "support_ratio": 0.0650703944525372,
+    "attack_given_pattern": 0.013088026838151377,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07730677822172467
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 24777,
+    "benign_count": 1871233,
+    "attack_support": 0.009015604560745351,
+    "benign_support": 0.1387670389303202,
+    "difference": -0.12975143436957484,
+    "support_ratio": 0.06496935172964527,
+    "attack_given_pattern": 0.013067969050796146,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07718830330278813
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 24680,
+    "benign_count": 1864149,
+    "attack_support": 0.008980309180255691,
+    "benign_support": 0.13824170312030487,
+    "difference": -0.12926139394004918,
+    "support_ratio": 0.06496092696746202,
+    "attack_given_pattern": 0.013066296631404961,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07717842485765909
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 24678,
+    "benign_count": 1864091,
+    "attack_support": 0.008979581440451781,
+    "benign_support": 0.13823740195189987,
+    "difference": -0.1292578205114481,
+    "support_ratio": 0.06495768376474736,
+    "attack_given_pattern": 0.013065652814081553,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07717462203515181
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 21677,
+    "benign_count": 1849283,
+    "attack_support": 0.00788760786468406,
+    "benign_support": 0.13713926916326255,
+    "difference": -0.12925166129857849,
+    "support_ratio": 0.05751531208244929,
+    "attack_given_pattern": 0.011586030700816694,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06843496861171168
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 21610,
+    "benign_count": 1845043,
+    "attack_support": 0.00786322858125306,
+    "benign_support": 0.13682483892124322,
+    "difference": -0.12896161033999015,
+    "support_ratio": 0.057469306328064865,
+    "attack_given_pattern": 0.011576870473515967,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06838086208601801
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 21777,
+    "benign_count": 1784520,
+    "attack_support": 0.007923994854879586,
+    "benign_support": 0.13233656969064514,
+    "difference": -0.12441257483576555,
+    "support_ratio": 0.059877589946626314,
+    "attack_given_pattern": 0.012056156877855636,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07121185320661752
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 23509,
+    "benign_count": 1773227,
+    "attack_support": 0.008554217525066087,
+    "benign_support": 0.13149910253896488,
+    "difference": -0.12294488501389879,
+    "support_ratio": 0.06505152780439215,
+    "attack_given_pattern": 0.013084281719740685,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07728465700804062
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 21089,
+    "benign_count": 1768552,
+    "attack_support": 0.007673652362334371,
+    "benign_support": 0.1311524135339082,
+    "difference": -0.12347876117157382,
+    "support_ratio": 0.058509425450645046,
+    "attack_given_pattern": 0.011783927614532747,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06960388223089949
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 23396,
+    "benign_count": 1765870,
+    "attack_support": 0.008513100226145143,
+    "benign_support": 0.13095352157421578,
+    "difference": -0.12244042134807064,
+    "support_ratio": 0.06500856276186878,
+    "attack_given_pattern": 0.01307575285061025,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07723427971263146
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 23360,
+    "benign_count": 1765150,
+    "attack_support": 0.008500000909674755,
+    "benign_support": 0.13090012775953325,
+    "difference": -0.12240012684985849,
+    "support_ratio": 0.06493500850732144,
+    "attack_given_pattern": 0.013061151461272232,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07714803398734055
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 22705,
+    "benign_count": 1763405,
+    "attack_support": 0.008261666123894063,
+    "benign_support": 0.13077072191700406,
+    "difference": -0.12250905579311,
+    "support_ratio": 0.06317672643221679,
+    "attack_given_pattern": 0.012711983024561757,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07508560798282483
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 21025,
+    "benign_count": 1764388,
+    "attack_support": 0.0076503646886092345,
+    "benign_support": 0.1308436193056609,
+    "difference": -0.12319325461705168,
+    "support_ratio": 0.05846952819867651,
+    "attack_given_pattern": 0.011775986844500404,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06955697864830515
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 23247,
+    "benign_count": 1757796,
+    "attack_support": 0.00845888361075381,
+    "benign_support": 0.130354769269012,
+    "difference": -0.12189588565825818,
+    "support_ratio": 0.06489124761747142,
+    "attack_given_pattern": 0.013052464202155703,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07709672113306686
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 22414,
+    "benign_count": 1755191,
+    "attack_support": 0.008155779982425084,
+    "benign_support": 0.13016158748116755,
+    "difference": -0.12200580749874246,
+    "support_ratio": 0.06265888531518644,
+    "attack_given_pattern": 0.012609100446949687,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07447791358330302
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 22561,
+    "benign_count": 1701105,
+    "attack_support": 0.008209268858012507,
+    "benign_support": 0.12615067378544645,
+    "difference": -0.11794140492743393,
+    "support_ratio": 0.06507510908720633,
+    "attack_given_pattern": 0.01308896271087322,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07731230612183108
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 22464,
+    "benign_count": 1694020,
+    "attack_support": 0.008173973477522847,
+    "benign_support": 0.1256252638173552,
+    "difference": -0.11745129033983236,
+    "support_ratio": 0.06506631890068602,
+    "attack_given_pattern": 0.01308721782434325,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07730199963654781
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 22462,
+    "benign_count": 1693963,
+    "attack_support": 0.008173245737718935,
+    "benign_support": 0.12562103680702616,
+    "difference": -0.11744779106930722,
+    "support_ratio": 0.06506271517464338,
+    "attack_given_pattern": 0.013086502468794151,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07729777426067812
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 22412,
+    "benign_count": 1693053,
+    "attack_support": 0.008155052242621173,
+    "benign_support": 0.1255535529579135,
+    "difference": -0.11739850071529234,
+    "support_ratio": 0.06495277951516679,
+    "attack_given_pattern": 0.013064679256061768,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07716887154007321
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 22315,
+    "benign_count": 1685971,
+    "attack_support": 0.008119756862131514,
+    "benign_support": 0.1250283654640501,
+    "difference": -0.1169086086019186,
+    "support_ratio": 0.06494331771829985,
+    "attack_given_pattern": 0.013062800959558293,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07715777704485063
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 22313,
+    "benign_count": 1685914,
+    "attack_support": 0.008119029122327603,
+    "benign_support": 0.12502413845372107,
+    "difference": -0.11690510933139346,
+    "support_ratio": 0.06493969262849944,
+    "attack_given_pattern": 0.013062081327598733,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07715352640959544
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 19459,
+    "benign_count": 1670220,
+    "attack_support": 0.007080544422147305,
+    "benign_support": 0.12386030160979385,
+    "difference": -0.11677975718764654,
+    "support_ratio": 0.0571655674184749,
+    "attack_given_pattern": 0.011516388615825846,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0680236151444654
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 869892,
+    "benign_count": 753411,
+    "attack_support": 0.31652751675166063,
+    "benign_support": 0.055871510158024926,
+    "difference": 0.2606560065936357,
+    "support_ratio": 5.66527584195247,
+    "attack_given_pattern": 0.5358777751288576,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.1652582034045715
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 34892,
+    "benign_count": 1579712,
+    "attack_support": 0.012696148619022754,
+    "benign_support": 0.11714840247189631,
+    "difference": -0.10445225385287356,
+    "support_ratio": 0.10837662615218792,
+    "attack_given_pattern": 0.021610252421027074,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.12764483232552692
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 18158,
+    "benign_count": 1577464,
+    "attack_support": 0.006607149679703519,
+    "benign_support": 0.11698169511716532,
+    "difference": -0.1103745454374618,
+    "support_ratio": 0.05648020122367006,
+    "attack_given_pattern": 0.01137988821913962,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0672173510662898
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 869099,
+    "benign_count": 718887,
+    "attack_support": 0.3162389679194101,
+    "benign_support": 0.05331127674399772,
+    "difference": 0.26292769117541237,
+    "support_ratio": 5.931933865287051,
+    "attack_given_pattern": 0.5472963867439637,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.2327042811552573
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 969174,
+    "benign_count": 541297,
+    "attack_support": 0.3526532483575822,
+    "benign_support": 0.04014154403640034,
+    "difference": 0.31251170432118186,
+    "support_ratio": 8.785243737455549,
+    "attack_given_pattern": 0.6416369463564676,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.789943719113757
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0"
+    ],
+    "attack_count": 869542,
+    "benign_count": 632457,
+    "attack_support": 0.3164001622859763,
+    "benign_support": 0.04690179423981595,
+    "difference": 0.26949836804616034,
+    "support_ratio": 6.746014036652298,
+    "attack_given_pattern": 0.5789231550753363,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.419513461446381
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 868520,
+    "benign_count": 624193,
+    "attack_support": 0.316028287246178,
+    "benign_support": 0.04628895190018204,
+    "difference": 0.2697393353459959,
+    "support_ratio": 6.827294079322956,
+    "attack_given_pattern": 0.5818399116240027,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.4367418072026132
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 17259,
+    "benign_count": 1462026,
+    "attack_support": 0.006280030637845745,
+    "benign_support": 0.10842103514588525,
+    "difference": -0.1021410045080395,
+    "support_ratio": 0.0579226220206779,
+    "attack_given_pattern": 0.011667122968190714,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06891395463511332
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 17257,
+    "benign_count": 1461797,
+    "attack_support": 0.006279302898041834,
+    "benign_support": 0.10840405294649316,
+    "difference": -0.10212475004845133,
+    "support_ratio": 0.057924982760019283,
+    "attack_given_pattern": 0.011667592934402666,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06891673057484575
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 17191,
+    "benign_count": 1457176,
+    "attack_support": 0.0062552874845127875,
+    "benign_support": 0.10806136847753767,
+    "difference": -0.10180608099302488,
+    "support_ratio": 0.057886435945081076,
+    "attack_given_pattern": 0.0116599191381793,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06887140392094333
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 17190,
+    "benign_count": 1457135,
+    "attack_support": 0.006254923614610832,
+    "benign_support": 0.1080583279964238,
+    "difference": -0.10180340438181297,
+    "support_ratio": 0.05788469737212516,
+    "attack_given_pattern": 0.011659573024943618,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06886935954103172
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 867757,
+    "benign_count": 591473,
+    "attack_support": 0.31575065451098616,
+    "benign_support": 0.04386249965516495,
+    "difference": 0.2718881548558212,
+    "support_ratio": 7.198647067388589,
+    "attack_given_pattern": 0.5946677357236351,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.5125116512746657
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 419903,
+    "benign_count": 1038760,
+    "attack_support": 0.1527900634407174,
+    "benign_support": 0.07703244297169802,
+    "difference": 0.07575762046901939,
+    "support_ratio": 1.983450836381406,
+    "attack_given_pattern": 0.28786841100377536,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.7003464068119567
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 867753,
+    "benign_count": 590898,
+    "attack_support": 0.3157491990313783,
+    "benign_support": 0.04381985876149487,
+    "difference": 0.27192934026988347,
+    "support_ratio": 7.205618821136676,
+    "attack_given_pattern": 0.5949010421272806,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.5138897173978005
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2"
+    ],
+    "attack_count": 385160,
+    "benign_count": 1062559,
+    "attack_support": 0.140148131437086,
+    "benign_support": 0.0787973310211834,
+    "difference": 0.06135080041590259,
+    "support_ratio": 1.778589828117521,
+    "attack_given_pattern": 0.266046104250894,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5714490375374812
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 867963,
+    "benign_count": 536515,
+    "attack_support": 0.31582561171078893,
+    "benign_support": 0.03978692011721722,
+    "difference": 0.2760386915935717,
+    "support_ratio": 7.9379255991749895,
+    "attack_given_pattern": 0.6179968643154253,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.6503093340311263
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 867133,
+    "benign_count": 533140,
+    "attack_support": 0.3155235996921661,
+    "benign_support": 0.03953663661089287,
+    "difference": 0.27598696308127324,
+    "support_ratio": 7.980537211534962,
+    "attack_given_pattern": 0.6192599585937885,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.657770026957421
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 867133,
+    "benign_count": 533140,
+    "attack_support": 0.3155235996921661,
+    "benign_support": 0.03953663661089287,
+    "difference": 0.27598696308127324,
+    "support_ratio": 7.980537211534962,
+    "attack_given_pattern": 0.6192599585937885,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.657770026957421
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 144074,
+    "benign_count": 1238081,
+    "attack_support": 0.052424192254301394,
+    "benign_support": 0.0918137048277204,
+    "difference": -0.03938951257341901,
+    "support_ratio": 0.5709843901046184,
+    "attack_given_pattern": 0.1042386707713679,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.6157044070202807
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 16066,
+    "benign_count": 1364523,
+    "attack_support": 0.005845933844813126,
+    "benign_support": 0.10119040026673176,
+    "difference": -0.09534446642191864,
+    "support_ratio": 0.057771624871564876,
+    "attack_given_pattern": 0.011637062152458117,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06873639503474409
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 866573,
+    "benign_count": 507362,
+    "attack_support": 0.31531983254707113,
+    "benign_support": 0.03762498972910648,
+    "difference": 0.27769484281796464,
+    "support_ratio": 8.38059584380807,
+    "attack_given_pattern": 0.6307234330590603,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.725481095180012
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 15934,
+    "benign_count": 1357454,
+    "attack_support": 0.005797903017755032,
+    "benign_support": 0.10066617682785567,
+    "difference": -0.09486827381010064,
+    "support_ratio": 0.057595343346253665,
+    "attack_given_pattern": 0.01160196535866048,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06852908952659074
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 866508,
+    "benign_count": 503211,
+    "attack_support": 0.31529618100344403,
+    "benign_support": 0.03731715955584652,
+    "difference": 0.2779790214475975,
+    "support_ratio": 8.449093788384177,
+    "attack_given_pattern": 0.6326173470616966,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.7366678379628153
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 866504,
+    "benign_count": 502640,
+    "attack_support": 0.3152947255238362,
+    "benign_support": 0.037274815294480235,
+    "difference": 0.27801991022935596,
+    "support_ratio": 8.458652927799376,
+    "attack_given_pattern": 0.632880106110095,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.7382198714153354
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 866504,
+    "benign_count": 502640,
+    "attack_support": 0.3152947255238362,
+    "benign_support": 0.037274815294480235,
+    "difference": 0.27801991022935596,
+    "support_ratio": 8.458652927799376,
+    "attack_given_pattern": 0.632880106110095,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.7382198714153354
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 492546,
+    "benign_count": 857502,
+    "attack_support": 0.179222664728453,
+    "benign_support": 0.06359069844152354,
+    "difference": 0.11563196628692946,
+    "support_ratio": 2.8183786170120744,
+    "attack_given_pattern": 0.3648359169451753,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.154968786920975
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 15231,
+    "benign_count": 1300418,
+    "attack_support": 0.005542102476680488,
+    "benign_support": 0.09643649680808809,
+    "difference": -0.0908943943314076,
+    "support_ratio": 0.05746893199272325,
+    "attack_given_pattern": 0.01157679593873442,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0683804218329609
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 15165,
+    "benign_count": 1296244,
+    "attack_support": 0.005518087063151441,
+    "benign_support": 0.09612696099908133,
+    "difference": -0.09060887393592988,
+    "support_ratio": 0.05740415598079894,
+    "attack_given_pattern": 0.011563898066888362,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.06830423823930958
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 387036,
+    "benign_count": 918729,
+    "attack_support": 0.14083075137315404,
+    "benign_support": 0.068131174957589,
+    "difference": 0.07269957641556504,
+    "support_ratio": 2.067053026178102,
+    "attack_given_pattern": 0.2964055553640969,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.7507725813508412
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 15045,
+    "benign_count": 1244049,
+    "attack_support": 0.00547442267491681,
+    "benign_support": 0.09225628022497781,
+    "difference": -0.086781857550061,
+    "support_ratio": 0.059339295509929356,
+    "attack_given_pattern": 0.011949068139471716,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07057931436400468
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 15044,
+    "benign_count": 1243973,
+    "attack_support": 0.005474058805014855,
+    "benign_support": 0.09225064421120575,
+    "difference": -0.0867765854061909,
+    "support_ratio": 0.05933897645724968,
+    "attack_given_pattern": 0.011949004659984734,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07057893941102801
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 14981,
+    "benign_count": 1239891,
+    "attack_support": 0.005451135001191674,
+    "benign_support": 0.0919479309451862,
+    "difference": -0.08649679594399454,
+    "support_ratio": 0.059285020828161,
+    "attack_given_pattern": 0.011938269401181954,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07051552967924168
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 14980,
+    "benign_count": 1239854,
+    "attack_support": 0.005450771131289719,
+    "benign_support": 0.09194518709637613,
+    "difference": -0.0864944159650864,
+    "support_ratio": 0.059282832559536466,
+    "attack_given_pattern": 0.011937834008323014,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07051295795322052
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 313691,
+    "benign_count": 904760,
+    "attack_support": 0.11414271341424587,
+    "benign_support": 0.06709526079467201,
+    "difference": 0.047047452619573854,
+    "support_ratio": 1.7012038117498436,
+    "attack_given_pattern": 0.25745064840522924,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.520678435750628
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 517390,
+    "benign_count": 698523,
+    "attack_support": 0.18826264857262934,
+    "benign_support": 0.05180112168539356,
+    "difference": 0.13646152688723578,
+    "support_ratio": 3.634335366635778,
+    "attack_given_pattern": 0.42551564133289144,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.513384463615837
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0"
+    ],
+    "attack_count": 304810,
+    "benign_count": 862625,
+    "attack_support": 0.11091118481498125,
+    "benign_support": 0.06397061026460492,
+    "difference": 0.04694057455037633,
+    "support_ratio": 1.7337834414305822,
+    "attack_given_pattern": 0.2610937653916492,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5421971597254287
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 302778,
+    "benign_count": 857117,
+    "attack_support": 0.11017180117420818,
+    "benign_support": 0.06356214758228358,
+    "difference": 0.046609653591924594,
+    "support_ratio": 1.7332926177735994,
+    "attack_given_pattern": 0.26103914578474774,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5418745392197175
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 76526,
+    "benign_count": 1083313,
+    "attack_support": 0.027845508117027837,
+    "benign_support": 0.08033640772940727,
+    "difference": -0.05249089961237943,
+    "support_ratio": 0.3466113173844957,
+    "attack_given_pattern": 0.06597984720293075,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.3897218028275909
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 304561,
+    "benign_count": 852884,
+    "attack_support": 0.11082058120939439,
+    "benign_support": 0.06324823644679588,
+    "difference": 0.047572344762598515,
+    "support_ratio": 1.752152904731441,
+    "attack_given_pattern": 0.26313215746752544,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5542372881639905
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 304316,
+    "benign_count": 841012,
+    "attack_support": 0.11073143308341536,
+    "benign_support": 0.062367831769141756,
+    "difference": 0.048363601314273606,
+    "support_ratio": 1.7754574745085632,
+    "attack_given_pattern": 0.2657020521632231,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5694168321663275
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 304150,
+    "benign_count": 835807,
+    "attack_support": 0.11067103067969078,
+    "benign_support": 0.06198183898383265,
+    "difference": 0.04868919169585813,
+    "support_ratio": 1.785539643451983,
+    "attack_given_pattern": 0.2668083094362331,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5759511391874181
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 304150,
+    "benign_count": 835807,
+    "attack_support": 0.11067103067969078,
+    "benign_support": 0.06198183898383265,
+    "difference": 0.04868919169585813,
+    "support_ratio": 1.785539643451983,
+    "attack_given_pattern": 0.2668083094362331,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5759511391874181
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 803555,
+    "benign_count": 333691,
+    "attack_support": 0.2923894790656549,
+    "benign_support": 0.02474588252114914,
+    "difference": 0.26764359654450576,
+    "support_ratio": 11.815682015614652,
+    "attack_given_pattern": 0.706579754951875,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.17354006738425
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 302460,
+    "benign_count": 826277,
+    "attack_support": 0.1100560905453864,
+    "benign_support": 0.061275112520048636,
+    "difference": 0.04878097802533776,
+    "support_ratio": 1.796097730695755,
+    "attack_given_pattern": 0.26796321906697484,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.5827728200866067
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 75512,
+    "benign_count": 1049109,
+    "attack_support": 0.02747654403644521,
+    "benign_support": 0.0777999048996834,
+    "difference": -0.05032336086323819,
+    "support_ratio": 0.3531693781872094,
+    "attack_given_pattern": 0.06714439797940817,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.3966004308834754
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 75479,
+    "benign_count": 1046959,
+    "attack_support": 0.027464536329680687,
+    "benign_support": 0.0776404650363953,
+    "difference": -0.05017592870671461,
+    "support_ratio": 0.3537399771730658,
+    "attack_given_pattern": 0.06724558505681383,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.3971981105068928
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 803371,
+    "benign_count": 317379,
+    "attack_support": 0.2923225270036951,
+    "benign_support": 0.023536215986286094,
+    "difference": 0.268786311017409,
+    "support_ratio": 12.420115755821726,
+    "attack_given_pattern": 0.7168155253178675,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.233999481121519
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 18786,
+    "benign_count": 1100637,
+    "attack_support": 0.006835659978131419,
+    "benign_support": 0.08162112223712964,
+    "difference": -0.07478546225899822,
+    "support_ratio": 0.08374866444830455,
+    "attack_given_pattern": 0.016781859940344267,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.09912506603168647
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 110612,
+    "benign_count": 991707,
+    "attack_support": 0.04024837759507466,
+    "benign_support": 0.07354308302411888,
+    "difference": -0.033294705429044225,
+    "support_ratio": 0.5472761807099515,
+    "attack_given_pattern": 0.10034481851442277,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.5927046701937678
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 382402,
+    "benign_count": 719412,
+    "attack_support": 0.13914457824749338,
+    "benign_support": 0.0533502097338704,
+    "difference": 0.08579436851362299,
+    "support_ratio": 2.608135543263943,
+    "attack_given_pattern": 0.34706583869872776,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.0500066321998087
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 804113,
+    "benign_count": 278403,
+    "attack_support": 0.2925925184709459,
+    "benign_support": 0.020645830818138592,
+    "difference": 0.27194668765280733,
+    "support_ratio": 14.171990512190286,
+    "attack_given_pattern": 0.7428185818962492,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.38759119917425
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 803344,
+    "benign_count": 275506,
+    "attack_support": 0.2923127025163423,
+    "benign_support": 0.020430994872117365,
+    "difference": 0.2718817076442249,
+    "support_ratio": 14.307316131495288,
+    "attack_given_pattern": 0.7446299300180748,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.398290251771554
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 298455,
+    "benign_count": 779369,
+    "attack_support": 0.1085987915880556,
+    "benign_support": 0.05779650549348195,
+    "difference": 0.050802286094573657,
+    "support_ratio": 1.8789854275930735,
+    "attack_given_pattern": 0.2769051347900956,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6355898492868837
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 298454,
+    "benign_count": 779069,
+    "attack_support": 0.10859842771815365,
+    "benign_support": 0.05777425807069756,
+    "difference": 0.050824169647456084,
+    "support_ratio": 1.8797026797862684,
+    "attack_given_pattern": 0.276981558630303,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6360412604078132
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 298428,
+    "benign_count": 774486,
+    "attack_support": 0.10858896710070282,
+    "benign_support": 0.05743439160862809,
+    "difference": 0.05115457549207473,
+    "support_ratio": 1.890661049230824,
+    "attack_given_pattern": 0.2781471767541481,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6429261929423833
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 298428,
+    "benign_count": 774423,
+    "attack_support": 0.10858896710070282,
+    "benign_support": 0.057429719649843364,
+    "difference": 0.05115924745085945,
+    "support_ratio": 1.890814856189168,
+    "attack_given_pattern": 0.27816351012395946,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.643022668921019
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 298428,
+    "benign_count": 774178,
+    "attack_support": 0.10858896710070282,
+    "benign_support": 0.057411550921236114,
+    "difference": 0.0511774161794667,
+    "support_ratio": 1.891413232324587,
+    "attack_given_pattern": 0.27822704702379064,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6433979610169847
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 298428,
+    "benign_count": 774178,
+    "attack_support": 0.10858896710070282,
+    "benign_support": 0.057411550921236114,
+    "difference": 0.0511774161794667,
+    "support_ratio": 1.891413232324587,
+    "attack_given_pattern": 0.27822704702379064,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6433979610169847
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 415228,
+    "benign_count": 653314,
+    "attack_support": 0.1510889716490766,
+    "benign_support": 0.04844850922986245,
+    "difference": 0.10264046241921414,
+    "support_ratio": 3.118547382587969,
+    "attack_given_pattern": 0.3885930548354674,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.2952945833744263
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 104429,
+    "benign_count": 962467,
+    "attack_support": 0.037998569991285314,
+    "benign_support": 0.07137470088340066,
+    "difference": -0.033376130892115344,
+    "support_ratio": 0.532381495417552,
+    "attack_given_pattern": 0.09788114305424334,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.5781525291593979
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 803164,
+    "benign_count": 259679,
+    "attack_support": 0.29224720593399034,
+    "benign_support": 0.019257295004089077,
+    "difference": 0.27298991092990127,
+    "support_ratio": 15.175921949159259,
+    "attack_given_pattern": 0.7556751091177154,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.463530583384119
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 803161,
+    "benign_count": 259253,
+    "attack_support": 0.2922461143242845,
+    "benign_support": 0.019225703663735248,
+    "difference": 0.2730204106605492,
+    "support_ratio": 15.20080198029567,
+    "attack_given_pattern": 0.7559774249962821,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.465316266349647
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 803507,
+    "benign_count": 225775,
+    "attack_support": 0.292372013310361,
+    "benign_support": 0.016743039597149602,
+    "difference": 0.2756289737132114,
+    "support_ratio": 17.46230196816446,
+    "attack_given_pattern": 0.7806480634073072,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.611037817490573
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 803396,
+    "benign_count": 221551,
+    "attack_support": 0.292331623751244,
+    "benign_support": 0.016429795884345438,
+    "difference": 0.27590182786689854,
+    "support_ratio": 17.792772704485152,
+    "attack_given_pattern": 0.7838415059510394,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.629900458708001
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 605224,
+    "benign_count": 416296,
+    "attack_support": 0.2202227975409672,
+    "benign_support": 0.030871710384829987,
+    "difference": 0.18935108715613722,
+    "support_ratio": 7.133482233274067,
+    "attack_given_pattern": 0.5924739603727778,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 3.49955372365011
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 802627,
+    "benign_count": 218707,
+    "attack_support": 0.2920518077966404,
+    "benign_support": 0.016218890316349453,
+    "difference": 0.275832917480291,
+    "support_ratio": 18.006892093119195,
+    "attack_given_pattern": 0.7858614322053314,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.641831515459016
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 802627,
+    "benign_count": 218707,
+    "attack_support": 0.2920518077966404,
+    "benign_support": 0.016218890316349453,
+    "difference": 0.275832917480291,
+    "support_ratio": 18.006892093119195,
+    "attack_given_pattern": 0.7858614322053314,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.641831515459016
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 278995,
+    "benign_count": 735978,
+    "attack_support": 0.10151788329600635,
+    "benign_support": 0.054578712420024225,
+    "difference": 0.04693917087598212,
+    "support_ratio": 1.8600270837235937,
+    "attack_given_pattern": 0.2748792332406872,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6236234983834281
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 802512,
+    "benign_count": 207078,
+    "attack_support": 0.2920099627579155,
+    "benign_support": 0.015356506051150682,
+    "difference": 0.27665345670676483,
+    "support_ratio": 19.01539072659271,
+    "attack_given_pattern": 0.7948890143523608,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.695154548758769
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 802447,
+    "benign_count": 202946,
+    "attack_support": 0.2919863112142884,
+    "benign_support": 0.01505008488133373,
+    "difference": 0.27693622633295467,
+    "support_ratio": 19.400974380977228,
+    "attack_given_pattern": 0.798142616867235,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.714372535637114
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 802444,
+    "benign_count": 202520,
+    "attack_support": 0.29198521960458257,
+    "benign_support": 0.0150184935409799,
+    "difference": 0.2769667260636027,
+    "support_ratio": 19.44171156766577,
+    "attack_given_pattern": 0.7984803435744962,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.716367379014244
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 802444,
+    "benign_count": 202520,
+    "attack_support": 0.29198521960458257,
+    "benign_support": 0.0150184935409799,
+    "difference": 0.2769667260636027,
+    "support_ratio": 19.44171156766577,
+    "attack_given_pattern": 0.7984803435744962,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 4.716367379014244
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 14778,
+    "benign_count": 983043,
+    "attack_support": 0.005377269411094757,
+    "benign_support": 0.07290057745410579,
+    "difference": -0.06752330804301103,
+    "support_ratio": 0.07376168473397884,
+    "attack_given_pattern": 0.014810271581776691,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.08747952573251591
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 481920,
+    "benign_count": 505202,
+    "attack_support": 0.17535618315027646,
+    "benign_support": 0.037464808285058895,
+    "difference": 0.13789137486521758,
+    "support_ratio": 4.680557333058852,
+    "attack_given_pattern": 0.4882071314386672,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.8836829953906387
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 279392,
+    "benign_count": 704669,
+    "attack_support": 0.10166233964708259,
+    "benign_support": 0.05225689722016969,
+    "difference": 0.049405442426912895,
+    "support_ratio": 1.9454339054758074,
+    "attack_given_pattern": 0.2839173587816202,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.6770088081305239
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 8459,
+    "benign_count": 941483,
+    "attack_support": 0.0030779755006395014,
+    "benign_support": 0.06981856781770877,
+    "difference": -0.06674059231706927,
+    "support_ratio": 0.04408534286575274,
+    "attack_given_pattern": 0.008904754184992347,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.05259752790936445
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 6152,
+    "benign_count": 879423,
+    "attack_support": 0.0022385276368287283,
+    "benign_support": 0.06521631762437867,
+    "difference": -0.06297778998754994,
+    "support_ratio": 0.034324655521365086,
+    "attack_given_pattern": 0.0069468989074894846,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.04103310451691324
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "attack_count": 376446,
+    "benign_count": 503086,
+    "attack_support": 0.1369773691114479,
+    "benign_support": 0.03730788979635302,
+    "difference": 0.09966947931509487,
+    "support_ratio": 3.6715389119874025,
+    "attack_given_pattern": 0.4280071674481429,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.528101109540181
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 11345,
+    "benign_count": 859115,
+    "attack_support": 0.004128104037682367,
+    "benign_support": 0.06371031541802759,
+    "difference": -0.059582211380345224,
+    "support_ratio": 0.06479490818082297,
+    "attack_given_pattern": 0.013033338694483377,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.07698375289130772
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 278981,
+    "benign_count": 589369,
+    "attack_support": 0.10151278911737897,
+    "benign_support": 0.04370647106337045,
+    "difference": 0.05780631805400852,
+    "support_ratio": 2.322603190044663,
+    "attack_given_pattern": 0.3212771347958772,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.8976810266752266
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 298864,
+    "benign_count": 566055,
+    "attack_support": 0.10874761437795531,
+    "benign_support": 0.04197754968071982,
+    "difference": 0.0667700646972355,
+    "support_ratio": 2.590613678146698,
+    "attack_given_pattern": 0.3455398713636768,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.0409932324105826
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 142969,
+    "benign_count": 721722,
+    "attack_support": 0.05202211601264084,
+    "benign_support": 0.05352151488931017,
+    "difference": -0.0014993988766693334,
+    "support_ratio": 0.9719851188859229,
+    "attack_given_pattern": 0.16534114498705318,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.9766171314060006
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 357835,
+    "benign_count": 505369,
+    "attack_support": 0.13020538636615864,
+    "benign_support": 0.03747719268374221,
+    "difference": 0.09272819368241643,
+    "support_ratio": 3.474256662309778,
+    "attack_given_pattern": 0.414542796372584,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.4485713865723864
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "attack_count": 17001,
+    "benign_count": 842285,
+    "attack_support": 0.006186152203141289,
+    "benign_support": 0.06246223499982351,
+    "difference": -0.05627608279668222,
+    "support_ratio": 0.09903827813972343,
+    "attack_given_pattern": 0.019785030827919926,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.11686383358150484
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 147740,
+    "benign_count": 709205,
+    "attack_support": 0.05375813931486936,
+    "benign_support": 0.052593278252669615,
+    "difference": 0.0011648610621997485,
+    "support_ratio": 1.0221484779215226,
+    "attack_given_pattern": 0.17240312972244426,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.0183300110092635
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "attack_count": 10790,
+    "benign_count": 843569,
+    "attack_support": 0.003926156242097201,
+    "benign_support": 0.06255745396934068,
+    "difference": -0.05863129772724347,
+    "support_ratio": 0.06276080615463354,
+    "attack_given_pattern": 0.012629351361664124,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 0.0745975292436295
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 298637,
+    "benign_count": 549810,
+    "attack_support": 0.10866501591021147,
+    "benign_support": 0.04077285173694529,
+    "difference": 0.06789216417326618,
+    "support_ratio": 2.6651316079455736,
+    "attack_given_pattern": 0.3519807365692848,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.079037358096093
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 297561,
+    "benign_count": 536267,
+    "attack_support": 0.1082734918957076,
+    "benign_support": 0.03976852891438213,
+    "difference": 0.06850496298132547,
+    "support_ratio": 2.722592332464954,
+    "attack_given_pattern": 0.3568613670924939,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.1078656777584626
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 297559,
+    "benign_count": 536267,
+    "attack_support": 0.1082727641559037,
+    "benign_support": 0.03976852891438213,
+    "difference": 0.06850423524152158,
+    "support_ratio": 2.722574033075367,
+    "attack_given_pattern": 0.3568598244717723,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.1078565659924586
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 297559,
+    "benign_count": 536140,
+    "attack_support": 0.1082727641559037,
+    "benign_support": 0.03975911083873674,
+    "difference": 0.06851365331716697,
+    "support_ratio": 2.7232189521304657,
+    "attack_given_pattern": 0.356914186055159,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.1081776624359967
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 297551,
+    "benign_count": 535472,
+    "attack_support": 0.10826985319668805,
+    "benign_support": 0.0397095732440035,
+    "difference": 0.06856027995268454,
+    "support_ratio": 2.726542854827526,
+    "attack_given_pattern": 0.35719421912720295,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.109831728007756
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 297551,
+    "benign_count": 535369,
+    "attack_support": 0.10826985319668805,
+    "benign_support": 0.039701934962180864,
+    "difference": 0.0685679182345072,
+    "support_ratio": 2.7270674162310575,
+    "attack_given_pattern": 0.3572383902415598,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.1100926326180245
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 297551,
+    "benign_count": 535369,
+    "attack_support": 0.10826985319668805,
+    "benign_support": 0.039701934962180864,
+    "difference": 0.0685679182345072,
+    "support_ratio": 2.7270674162310575,
+    "attack_given_pattern": 0.3572383902415598,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.1100926326180245
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "attack_count": 293814,
+    "benign_count": 530620,
+    "attack_support": 0.10691007137308127,
+    "benign_support": 0.03934975825950403,
+    "difference": 0.06756031311357724,
+    "support_ratio": 2.716918123563303,
+    "attack_given_pattern": 0.356382681936941,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.105038238021673
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "attack_count": 293814,
+    "benign_count": 530251,
+    "attack_support": 0.10691007137308127,
+    "benign_support": 0.03932239392947923,
+    "difference": 0.06758767744360204,
+    "support_ratio": 2.718808818324077,
+    "attack_given_pattern": 0.3565422630496381,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 2.105980832489136
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "attack_count": 143953,
+    "benign_count": 671333,
+    "attack_support": 0.05238016399616481,
+    "benign_support": 0.04978476360036865,
+    "difference": 0.0025954003957961574,
+    "support_ratio": 1.0521324238200649,
+    "attack_given_pattern": 0.17656748674698203,
+    "population_attack_prevalence": 0.1692998613991314,
+    "enrichment": 1.0429275327681273
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "tn": 771584,
+  "fn": 208525,
+  "rows": 980109,
+  "precision": null,
+  "recall": 0.0,
+  "f1": 0.0,
+  "fpr": 0.0,
+  "review_rows": 0,
+  "coverage": 1.0,
+  "family_recall": {
+    "Bot": 0.0,
+    "Infiltration": 0.0
+  }
+}

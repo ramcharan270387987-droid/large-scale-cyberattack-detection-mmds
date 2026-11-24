@@ -58,9 +58,19 @@ if __name__=='__main__':
  ref_counts,ref_totals=complete_counts(reference);all_counts,all_totals=complete_counts(rows)
  ref_n=sum(ref_totals.values());days=sorted({key[0] for key in all_totals})
  chosen=sorted((p for p,c in ref_counts.items() if sum(c.values())/ref_n>=.05),key=lambda p:(-sum(ref_counts[p].values()),p))[:500]
+ day_mining=[]
+ union=set(chosen)
+ for day in days:
+  den=sum(n for (d,_,_),n in all_totals.items() if d==day)
+  frequent=[(p,sum(n for (d,_,_),n in c.items() if d==day)) for p,c in all_counts.items()]
+  frequent=sorted(((p,n) for p,n in frequent if n/den>=.05),key=lambda item:(-item[1],item[0]))
+  union.update(p for p,_ in frequent[:500])
+  day_mining.append({'day':day,'total':den,'frequent_patterns':len(frequent),'export':[{'items':p,'count':n} for p,n in frequent[:500]]})
+ chosen=sorted(union)
+ save('day_mining',day_mining)
  temporal=[];sets={day:set() for day in days}
  for pattern in chosen:
-  ref=sum(ref_counts[pattern].values())
+  ref=sum(ref_counts.get(pattern,{}).values())
   for day in days:
    n=sum(n for (d,_,_),n in all_totals.items() if d==day)
    count=sum(n for (d,_,_),n in all_counts[pattern].items() if d==day)
