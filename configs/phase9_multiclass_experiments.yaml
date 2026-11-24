@@ -1,0 +1,32 @@
+{
+  "version": "phase9-v1",
+  "baseline_revision": "beb558748b24309b1f752b2d744614f31b1d9351",
+  "seeds": [
+    23013,
+    23014
+  ],
+  "group_sample_permyriad": 625,
+  "holdouts": [
+    "Web attack",
+    "Bot",
+    "Infiltration",
+    "DDoS"
+  ],
+  "weighting": [
+    "unweighted",
+    "inverse",
+    "capped_10"
+  ],
+  "rejection_budgets": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "primary_budget": 0.05,
+  "spark": {
+    "master": "local[4]",
+    "driver_memory": "8g",
+    "shuffle_partitions": 48,
+    "input_partition_bytes": 67108864
+  }
+}
