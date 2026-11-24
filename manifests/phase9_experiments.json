@@ -749,5 +749,8 @@
         }
       }
     }
+  },
+  "extended_figures_sha256": {
+    "figures/phase9_hierarchical_attack_outcomes.png": "585a38efd928f7b6a2eca0adf92c2548dbb4c236080f0e4ddf7711c499bcfe71"
   }
 }
