@@ -1,0 +1,123 @@
+population,stage,split_rank,source_day,binary_label,attack_family,count,role
+B,baseline,0,2018-02-14,0,Benign,667626,
+B,baseline,0,2018-02-14,1,Credential brute force,380949,
+B,baseline,0,2018-02-15,0,Benign,996077,
+B,baseline,0,2018-02-15,1,DoS,52498,
+B,baseline,0,2018-02-16,0,Benign,446772,
+B,baseline,0,2018-02-16,1,DoS,601802,
+B,baseline,0,2018-02-20,0,Benign,7372557,
+B,baseline,0,2018-02-20,1,DDoS,576191,
+B,baseline,0,2018-02-21,0,Benign,360833,
+B,baseline,0,2018-02-21,1,DDoS,687742,
+B,baseline,0,2018-02-22,0,Benign,1048213,
+B,baseline,0,2018-02-22,1,Web attack,362,
+B,baseline,1,2018-02-23,0,Benign,709043,
+B,baseline,1,2018-02-23,1,Web attack,423,
+B,baseline,1,2018-02-28,0,Benign,385157,
+B,baseline,1,2018-02-28,1,Infiltration,56633,
+B,baseline,2,2018-03-01,0,Benign,166222,
+B,baseline,2,2018-03-01,1,Infiltration,65251,
+B,baseline,2,2018-03-02,0,Benign,605362,
+B,baseline,2,2018-03-02,1,Bot,143274,
+C,baseline,0,2018-02-14,0,Benign,667626,
+C,baseline,0,2018-02-14,1,Credential brute force,380949,
+C,baseline,0,2018-02-15,0,Benign,996077,
+C,baseline,0,2018-02-15,1,DoS,52498,
+C,baseline,0,2018-02-16,0,Benign,446772,
+C,baseline,0,2018-02-16,1,DoS,601802,
+C,baseline,0,2018-02-20,0,Benign,7372557,
+C,baseline,0,2018-02-20,1,DDoS,576191,
+C,baseline,0,2018-02-21,0,Benign,360833,
+C,baseline,0,2018-02-21,1,DDoS,687742,
+C,baseline,0,2018-03-01,0,Benign,238037,
+C,baseline,0,2018-03-01,1,Infiltration,93063,
+C,baseline,0,2018-03-02,0,Benign,762384,
+C,baseline,0,2018-03-02,1,Bot,286191,
+C,baseline,1,2018-02-28,0,Benign,351060,
+C,baseline,1,2018-02-28,1,Infiltration,41842,
+C,baseline,2,2018-02-22,0,Benign,728445,
+C,baseline,2,2018-02-22,1,Web attack,236,
+C,baseline,2,2018-02-23,0,Benign,729115,
+C,baseline,2,2018-02-23,1,Web attack,422,
+B,hybrid,,2018-02-14,0,Benign,667626,train
+B,hybrid,,2018-02-14,1,Credential brute force,380949,train
+B,hybrid,,2018-02-15,0,Benign,996077,train
+B,hybrid,,2018-02-15,1,DoS,52498,train
+B,hybrid,,2018-02-16,0,Benign,446772,train
+B,hybrid,,2018-02-16,1,DoS,601802,train
+B,hybrid,,2018-02-20,0,Benign,7372557,train
+B,hybrid,,2018-02-20,1,DDoS,576191,train
+B,hybrid,,2018-02-21,0,Benign,360833,train
+B,hybrid,,2018-02-21,1,DDoS,687742,train
+B,hybrid,,2018-02-22,0,Benign,1048213,train
+B,hybrid,,2018-02-22,1,Web attack,362,train
+B,hybrid,,2018-02-23,0,Benign,142379,meta
+B,hybrid,,2018-02-23,1,Web attack,75,meta
+B,hybrid,,2018-02-23,0,Benign,318850,operating
+B,hybrid,,2018-02-23,1,Web attack,208,operating
+B,hybrid,,2018-02-23,0,Benign,247814,probability
+B,hybrid,,2018-02-23,1,Web attack,140,probability
+B,hybrid,,2018-02-28,0,Benign,77012,meta
+B,hybrid,,2018-02-28,1,Infiltration,11161,meta
+B,hybrid,,2018-02-28,0,Benign,173035,operating
+B,hybrid,,2018-02-28,1,Infiltration,25598,operating
+B,hybrid,,2018-02-28,0,Benign,135110,probability
+B,hybrid,,2018-02-28,1,Infiltration,19874,probability
+B,hybrid,,2018-03-01,0,Benign,166222,test
+B,hybrid,,2018-03-01,1,Infiltration,65251,test
+B,hybrid,,2018-03-02,0,Benign,605362,test
+B,hybrid,,2018-03-02,1,Bot,143274,test
+C,hybrid,,2018-02-14,0,Benign,667626,train
+C,hybrid,,2018-02-14,1,Credential brute force,380949,train
+C,hybrid,,2018-02-15,0,Benign,996077,train
+C,hybrid,,2018-02-15,1,DoS,52498,train
+C,hybrid,,2018-02-16,0,Benign,446772,train
+C,hybrid,,2018-02-16,1,DoS,601802,train
+C,hybrid,,2018-02-20,0,Benign,7372557,train
+C,hybrid,,2018-02-20,1,DDoS,576191,train
+C,hybrid,,2018-02-21,0,Benign,360833,train
+C,hybrid,,2018-02-21,1,DDoS,687742,train
+C,hybrid,,2018-02-22,0,Benign,728445,test
+C,hybrid,,2018-02-22,1,Web attack,236,test
+C,hybrid,,2018-02-23,0,Benign,729115,test
+C,hybrid,,2018-02-23,1,Web attack,422,test
+C,hybrid,,2018-02-28,0,Benign,69775,meta
+C,hybrid,,2018-02-28,1,Infiltration,8258,meta
+C,hybrid,,2018-02-28,0,Benign,157911,operating
+C,hybrid,,2018-02-28,1,Infiltration,18876,operating
+C,hybrid,,2018-02-28,0,Benign,123374,probability
+C,hybrid,,2018-02-28,1,Infiltration,14708,probability
+C,hybrid,,2018-03-01,0,Benign,238037,train
+C,hybrid,,2018-03-01,1,Infiltration,93063,train
+C,hybrid,,2018-03-02,0,Benign,762384,train
+C,hybrid,,2018-03-02,1,Bot,286191,train
+R1,hybrid,,2018-02-14,0,Benign,667626,train
+R1,hybrid,,2018-02-14,1,Credential brute force,380949,train
+R1,hybrid,,2018-02-15,0,Benign,996077,train
+R1,hybrid,,2018-02-15,1,DoS,52498,train
+R1,hybrid,,2018-02-16,0,Benign,156820,meta
+R1,hybrid,,2018-02-16,1,DoS,214498,meta
+R1,hybrid,,2018-02-16,0,Benign,289939,probability
+R1,hybrid,,2018-02-16,1,DoS,308501,probability
+R1,hybrid,,2018-02-20,0,Benign,7179080,operating
+R1,hybrid,,2018-02-20,1,DDoS,575358,operating
+R1,hybrid,,2018-02-21,0,Benign,360745,test
+R1,hybrid,,2018-02-21,1,DDoS,167666,test
+R2,hybrid,,2018-02-14,0,Benign,667626,train
+R2,hybrid,,2018-02-14,1,Credential brute force,380949,train
+R2,hybrid,,2018-02-15,0,Benign,996077,train
+R2,hybrid,,2018-02-15,1,DoS,52498,train
+R2,hybrid,,2018-02-16,0,Benign,446772,train
+R2,hybrid,,2018-02-16,1,DoS,601802,train
+R2,hybrid,,2018-02-20,0,Benign,7372557,train
+R2,hybrid,,2018-02-20,1,DDoS,576191,train
+R2,hybrid,,2018-02-21,0,Benign,360833,train
+R2,hybrid,,2018-02-21,1,DDoS,687742,train
+R2,hybrid,,2018-02-22,0,Benign,257649,meta
+R2,hybrid,,2018-02-22,1,Web attack,97,meta
+R2,hybrid,,2018-02-22,0,Benign,477199,probability
+R2,hybrid,,2018-02-22,1,Web attack,139,probability
+R2,hybrid,,2018-02-23,0,Benign,709043,operating
+R2,hybrid,,2018-02-23,1,Web attack,423,operating
+R2,hybrid,,2018-02-28,0,Benign,381001,test
+R2,hybrid,,2018-02-28,1,Infiltration,56631,test

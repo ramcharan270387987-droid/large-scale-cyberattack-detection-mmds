@@ -1,0 +1,5 @@
+population,model,score,low_cutoff_exclusive,high_cutoff_inclusive,attacks_below_low_cutoff,benign_at_or_above_high_cutoff,attack_support,benign_support
+B,lr_w10,Platt calibrated supervised,0.0625,0.9375,208525,0,208525,771584
+C,rf_w5,Platt calibrated supervised,0.0625,0.9375,20,0,658,1457560
+R1,rf_w10,Platt calibrated supervised,0.0625,0.9375,0,11,167666,360745
+R2,lr_w1,Platt calibrated supervised,0.0625,0.9375,56631,0,56631,381001

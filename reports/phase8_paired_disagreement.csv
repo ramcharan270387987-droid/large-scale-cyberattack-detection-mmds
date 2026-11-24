@@ -1,0 +1,24 @@
+population,stage,source_day,attack_family,binary_label,supervised_positive,hybrid_positive,count
+B,hybrid,2018-03-02,Benign,0,False,False,605361
+B,hybrid,2018-03-02,Benign,0,False,True,1
+B,hybrid,2018-03-01,Benign,0,False,True,3
+B,hybrid,2018-03-01,Benign,0,False,False,166219
+B,hybrid,2018-03-01,Infiltration,1,False,False,65251
+B,hybrid,2018-03-02,Bot,1,False,False,143274
+C,hybrid,2018-02-22,Benign,0,False,False,724595
+C,hybrid,2018-02-22,Benign,0,False,True,3841
+C,hybrid,2018-02-22,Web attack,1,False,True,37
+C,hybrid,2018-02-22,Benign,0,True,False,4
+C,hybrid,2018-02-22,Benign,0,True,True,5
+C,hybrid,2018-02-22,Web attack,1,False,False,199
+C,hybrid,2018-02-23,Benign,0,False,False,725340
+C,hybrid,2018-02-23,Web attack,1,False,False,351
+C,hybrid,2018-02-23,Web attack,1,False,True,71
+C,hybrid,2018-02-23,Benign,0,False,True,3765
+C,hybrid,2018-02-23,Benign,0,True,True,4
+C,hybrid,2018-02-23,Benign,0,True,False,6
+R1,hybrid,2018-02-21,DDoS,1,False,False,167666
+R1,hybrid,2018-02-21,Benign,0,False,False,360745
+R2,hybrid,2018-02-28,Benign,0,False,True,7
+R2,hybrid,2018-02-28,Benign,0,False,False,380994
+R2,hybrid,2018-02-28,Infiltration,1,False,False,56631

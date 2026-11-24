@@ -291,6 +291,7 @@ metastore_db/
 !/reports/phase6_replay_batches.csv
 !/reports/phase6_shift_metrics.csv
 !/reports/phase6_window_metrics.csv
+!/reports/phase8_*.csv
 *.csv.gz
 *.parquet
 *.pkl
