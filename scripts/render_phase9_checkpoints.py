@@ -49,11 +49,15 @@ manifest={'schema':'phase9-checkpoints-v1','complete':False,'stages':stages,'tab
 manifest_path = Path('manifests/phase9_experiments.json')
 if manifest_path.exists():
     previous = json.loads(manifest_path.read_text())
-    manifest.update({key: value for key, value in previous.items() if key not in manifest})
+    manifest.update({key: value for key, value in previous.items() if key not in {"schema", "stages", "tables_sha256"}})
 manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
-report=['# Phase 9 verified checkpoints','','The study remains incomplete. Only retrieved and validated stages below support experimental claims.','','| Scenario | Version | Model | Known test rows | Accuracy | Macro F1 | Seconds |','|---|---|---|---:|---:|---:|---:|']
+overview = (
+    'Phase 9 is complete. The [research report](phase9_research_report.md) consolidates the evidence.'
+    if manifest['complete'] else 'The study remains incomplete. Only retrieved and validated stages below support experimental claims.'
+)
+report=['# Phase 9 verified checkpoints','',overview,'','| Scenario | Version | Model | Known test rows | Accuracy | Macro F1 | Seconds |','|---|---|---|---:|---:|---:|---:|']
 for scenario,s in stages.items():
     m=s['test']; report.append(f"| {scenario} | {s['kernel_version']} | {s['model']} | {m['rows']} | {m['accuracy']} | {m['macro_f1']} | {s['seconds']:.1f} |")
-report.extend(['','Zero known-family chronological support means closed-set chronological classification is unsupported. Unknown-family rejection remains a separate result.','', 'All four family holdouts are complete and validated. The [chronological B](phase9_hierarchy/B/results.md) and [retrospective C](phase9_hierarchy/C/results.md) hierarchies are validated. Remaining robustness checks, novelty-model persistence for the original open-set scenarios and final research interpretation are pending.'])
+report.extend(['','Zero known-family chronological support means closed-set chronological classification is unsupported. Unknown-family rejection remains a separate result.','', 'All four family holdouts are validated. See the [chronological B](phase9_hierarchy/B/results.md) and [retrospective C](phase9_hierarchy/C/results.md) hierarchies, [matched sensitivity](phase9_sensitivity/results.md) and [rejection evidence](phase9_research_report.md#known-acceptance-and-unknown-rejection).'])
 Path('reports/phase9_multiclass_results.md').write_text('\n'.join(report)+'\n')
 print('Rendered verified stages',list(stages))

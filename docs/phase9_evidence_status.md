@@ -28,10 +28,10 @@ training-prior reference. All B closed-set comparisons have zero support.
 | Class weights | Validation results for unweighted, inverse-frequency and capped inverse-frequency LR and RF are available in [closed-set metrics](../reports/phase9_closed_set_metrics.csv). Matched RF test sensitivity is validated in [version 14](../reports/phase9_sensitivity/results.md). |
 | Second seed | Version 14 validated the seed 23014 comparison on identical grouped-random test rows. |
 | Duplicate weighting | Version 14 validated duplicate-weighted training and separately measured equal predictor-group test weights. |
-| Confidence and uncertainty | Maximum score, margin, entropy, reference novelty and a combined rule were evaluated at frozen thresholds in [open-set metrics](../reports/phase9_open_set_metrics.csv). Full score distributions and risk–coverage curves are pending. |
+| Confidence and uncertainty | Maximum score, margin, entropy, reference novelty and a combined rule were evaluated at frozen thresholds in [open-set metrics](../reports/phase9_open_set_metrics.csv). Versions 15 and 16 verified score distributions, risk–coverage and supported ROC/PR curves. |
 | Rejection thresholds | The 1%, 5% and 10% known-validation budgets were evaluated with whole-bin ties retained. Realized test rejection can differ from the calibration budget. |
 | Low-support families | [Per-family metrics](../reports/phase9_per_family.csv) and [support](../reports/phase9_family_support.csv) are available. Version 14 contains aggregate high-confidence errors by capture day and actual and predicted family. |
-| Known rejection and unknown acceptance | Existing tables contain aggregate known rejection and unknown rejection. Unknown false acceptance is the complement of unknown rejection for supported unknown populations. Per-day and high-confidence error breakdowns are pending. |
+| Known rejection and unknown acceptance | Existing tables contain aggregate known rejection and unknown rejection. Unknown false acceptance is the complement of unknown rejection for supported unknown populations. Versions 15 and 16 verified daily decisions and aggregate false-rejection and false-acceptance groups. Version 14 supplies the separate high-confidence error analysis. |
 | Uncertainty intervals | No row-independent intervals are reported. Flows are correlated and capture-day support is sparse. Version 14 reports a descriptive leave-one-day-out range. |
 
 ## Capture-day association
@@ -70,3 +70,18 @@ The DDoS holdout rejected only 61 unknown flows with this rule. It also
 exceeded the calibration budget on known test flows. The known-family
 rejection budget on validation did not imply equivalent rejection on the
 matched test split.
+
+## Additional rejection evidence and persistence
+
+The [B and Web batch](../reports/phase9_open_set_evidence/15/results.md) and
+[Bot, Infiltration and DDoS batch](../reports/phase9_open_set_evidence/16/results.md)
+provide matched capture-day outcomes, confidence histograms, grouped error
+examples and feature quantiles. The reconstructed novelty pipelines matched
+the frozen novelty and combined thresholds. All 75 historical operating points
+reconciled, including accepted coverage and accuracy among accepted decisions.
+
+The [curves](../reports/figures/phase9_risk_coverage_roc_pr.png) show supported
+risk–coverage, ROC and PR evidence. B has no known attack examples, so its
+rejection ROC and PR remain undefined. The [daily figure](../reports/figures/phase9_per_day_rejection.png)
+shows the large day-to-day difference in chronological B and the low DDoS
+rejection on both capture days.

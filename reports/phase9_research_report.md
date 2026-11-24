@@ -57,10 +57,15 @@ rejection among the supported unknown evaluation groups.
 Five scores and three known-validation budgets were evaluated with cutoff
 ties retained. The validation constraint transferred unevenly to held-out
 traffic. Results reported at the frozen operating points remain the
-primary results.
+primary results. The reproduced histograms reconciled all 75 historical
+operating points, including rejection, acceptance coverage and accepted
+correct-family rates.
 
 [Operating points](phase9_open_set_metrics.csv)
 · [Tradeoff figure](figures/phase9_open_set_tradeoffs.png)
+· [Risk–coverage, ROC and PR](figures/phase9_risk_coverage_roc_pr.png)
+· [Known and unknown distributions](figures/phase9_known_unknown_score_distributions.png)
+· [Per-day rates](figures/phase9_per_day_rejection.png)
 
 ## End-to-end and oracle comparisons
 
@@ -105,9 +110,21 @@ in a retrospective corpus. The study provides no independent external
 confirmation and correlates many flows within each capture. Descriptive
 day and predictor-group comparisons replace row-independent intervals.
 
+Under B's frozen maximum-score rule, the first test day rejected 40,680
+of 65,251 unknown attacks and the second rejected 38 of 143,274. Median
+registered flow duration was 39,838 µs on the first day and 10,917 µs on
+the second. Median forward packet counts were two and three,
+respectively. These feature and outcome contrasts coincide with a change
+in evaluated family composition. B's training and test attack dates have
+zero overlap. In the Web holdout, eight capture days overlap between
+training and evaluation attacks overall, with the held-out family's two
+days absent from known training attacks.
+
 [Sensitivity results](phase9_sensitivity/results.md)
 · [Capture-day support](figures/phase9_capture_family_support.png)
 · [Evidence checklist](../docs/phase9_evidence_status.md)
+· [B and Web daily evidence](phase9_open_set_evidence/15/results.md)
+· [Bot, Infiltration and DDoS daily evidence](phase9_open_set_evidence/16/results.md)
 
 ## Models, execution and integration
 
@@ -117,18 +134,25 @@ feature order, frozen rejection policies, model component hashes and
 independent Spark 4.3.0 reload results. Phase 4 and Phase 8 binary and
 clustering assets were checksum-verified against their original registries.
 The C classifier and novelty pipeline are versioned private outputs, with
-their registries linked from the C report. The [novelty reload receipt](../manifests/phase9_novelty_reload.json) records independently repeated centroid assignments and distances on synthetic probes.
+their registries linked from the C report. Versions 15 and 16 reconstructed
+and persisted the five training-reference novelty pipelines used by the
+original open-set scenarios. Grouped-random A is the closed-set reference.
+The [novelty reload receipt](../manifests/phase9_novelty_reload.json) records
+independently repeated centroid assignments and distances on synthetic
+probes.
 
 | Version | Validated stage | Worker status | Measured execution seconds | Peak driver RSS bytes |
 |---|---|---|---:|---:|
 | 12 | Chronological B hierarchy | COMPLETE | 299.2 | 3,753,791,488 |
 | 13 | Retrospective C hierarchy and model persistence | COMPLETE | 468.7 | 4,532,752,384 |
 | 14 | Grouped-random sensitivity | COMPLETE | 131.3 | 3,261,235,200 |
+| 15 | B and Web open-set evidence and persistence | COMPLETE | 560.3 | 4,702,318,592 |
+| 16 | Bot, Infiltration and DDoS open-set evidence and persistence | COMPLETE | 300.5 | 3,943,927,808 |
 
 The new workers used Spark 4.3.0, four CPUs, an 8 GiB driver heap and
 48 shuffle partitions. Additional resources, input counts and artifact
 checksums are recorded in the [experiment manifest](../manifests/phase9_experiments.json)
-and linked receipts.
+and linked receipts. [Measured worker runtime and driver memory](figures/phase9_worker_resources.png)
 
 The [inference contract](../docs/phase9_inference_contract.md) version
 `phase9-hierarchy-v1` preserves Phase 8 score and abstention semantics
@@ -138,11 +162,21 @@ and hybrid scores and Phase 8 abstention behavior. The isolated
 [Streamlit preview](../dashboard/phase9_preview.py) reads verified aggregate
 evidence. Run it locally with `streamlit run dashboard/phase9_preview.py`.
 
-The local Spark 4.3.0 regression suite passed 75 tests, including earlier-
+The local Spark 4.3.0 regression suite passed 76 tests, including earlier-
 only C splitting, exact hierarchical reconciliation and unsupported
 open-set discrimination metrics. The preview was smoke-tested with
 Streamlit AppTest across all six family evaluation scenarios and both
 hierarchical populations.
 
-The remaining rejection-evidence and novelty-model batches determine final
-Phase 9 readiness.
+## Scientific conclusion and readiness
+
+The grouped-random result shows measurable family discrimination relative to
+the prespecified references, alongside marked second-seed, duplicate-weighting
+and capture-day sensitivity. The archived deployment-like gates failed to
+support useful unknown-family rejection in the chronological B population.
+The retrospective C hierarchy yielded zero correct unknown decisions across
+the three archived gates. These negative findings, the unsupported closed-set
+metrics and the capture-family association are part of the validated record.
+
+All required Phase 9 experimental stages and their compact evidence are
+verified. **READY FOR PHASE 10.**

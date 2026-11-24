@@ -20,6 +20,106 @@
         ]
       ],
       "reloaded_probe_rows": 3
+    },
+    "B": {
+      "kernel_version": 15,
+      "artifact": "mmds_phase9_open_set/B/models/family_kmeans",
+      "spark_version": "4.3.0",
+      "synthetic_cluster_distance": [
+        [
+          0,
+          121512944797.62679
+        ],
+        [
+          0,
+          134418155184.7953
+        ],
+        [
+          0,
+          134409659948.35762
+        ]
+      ],
+      "reloaded_probe_rows": 3
+    },
+    "Web": {
+      "kernel_version": 15,
+      "artifact": "mmds_phase9_open_set/Web/models/family_kmeans",
+      "spark_version": "4.3.0",
+      "synthetic_cluster_distance": [
+        [
+          0,
+          124995990920.4587
+        ],
+        [
+          0,
+          136618633847.5628
+        ],
+        [
+          0,
+          136610644662.02269
+        ]
+      ],
+      "reloaded_probe_rows": 3
+    },
+    "Bot": {
+      "kernel_version": 16,
+      "artifact": "mmds_phase9_open_set/Bot/models/family_kmeans",
+      "spark_version": "4.3.0",
+      "synthetic_cluster_distance": [
+        [
+          1,
+          174326321570.35056
+        ],
+        [
+          1,
+          200785286418.7334
+        ],
+        [
+          1,
+          200775761239.0481
+        ]
+      ],
+      "reloaded_probe_rows": 3
+    },
+    "Infiltration": {
+      "kernel_version": 16,
+      "artifact": "mmds_phase9_open_set/Infiltration/models/family_kmeans",
+      "spark_version": "4.3.0",
+      "synthetic_cluster_distance": [
+        [
+          1,
+          2676821192.142932
+        ],
+        [
+          1,
+          4554793339.546653
+        ],
+        [
+          1,
+          4552931818.773477
+        ]
+      ],
+      "reloaded_probe_rows": 3
+    },
+    "DDoS": {
+      "kernel_version": 16,
+      "artifact": "mmds_phase9_open_set/DDoS/models/family_kmeans",
+      "spark_version": "4.3.0",
+      "synthetic_cluster_distance": [
+        [
+          0,
+          219058414986.64502
+        ],
+        [
+          0,
+          269618236182.79214
+        ],
+        [
+          0,
+          269607260315.0355
+        ]
+      ],
+      "reloaded_probe_rows": 3
     }
   }
 }

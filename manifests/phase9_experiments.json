@@ -1,6 +1,6 @@
 {
   "schema": "phase9-checkpoints-v1",
-  "complete": false,
+  "complete": true,
   "stages": {
     "A": {
       "status": "validated",
@@ -923,6 +923,40 @@
         "reports/phase9_open_set_evidence/16/DDoS/capture_feature_quantiles.csv": "51b221ecb93390644e4c8f27d27df48a31a9129f54c447c9e5d7a7ae5b162131",
         "reports/phase9_open_set_evidence/16/DDoS/rejection_error_groups.csv": "ee218a23a560cb875b3826af009b8b13d7ca5601c70bd0ff84b1098dcead77e4"
       }
+    }
+  },
+  "completion_verification": {
+    "validated_kaggle_versions": [
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "archived_stage_aggregate_hashes": 33,
+    "new_stage_artifact_hashes": 50,
+    "reconciled_rejection_operating_points": 75,
+    "regression_tests_passed": 76,
+    "spark_version": "4.3.0",
+    "dashboard_preview": "validated",
+    "classifier_registry_sha256": "25ae78eeda4819e4032f34c4b09370dcddf2431afa9bd9a50df2f8c55fb66eee",
+    "novelty_reload_registry_sha256": "2a1cc9a39944a602541c2ba0bfcf71289427e96bb40649dc0e1241010f85861a",
+    "figures_sha256": {
+      "reports/figures/phase9_confusion_Infiltration.png": "1538667a3da75f330ae11e8b519e6882b93b8766cb53e39c31833e578c396389",
+      "reports/figures/phase9_risk_coverage_roc_pr.png": "61a3ea2023945e2e2a4c6496269b167d6fc6c10016f5ea74bd61c89b415d5794",
+      "reports/figures/phase9_confusion_Web.png": "79ebcd184e2229ec566b31a26c52dba6413fb04ba5191a328277d787d21ec64e",
+      "reports/figures/phase9_hierarchical_attack_outcomes.png": "642651c9a130b2461064079ea516b3ffbc26595c78e22ec08ae9936e6dea20e4",
+      "reports/figures/phase9_confusion_A.png": "316476b936785ae5a399aad3d93988e6ea0b57464fabeff92078bc84783e5b73",
+      "reports/figures/phase9_macro_f1_runtime.png": "011b2c542bff04d7aa5ae0edfe1f92a4e2a69a0e5c65d308e0ee0b9c16f15454",
+      "reports/figures/phase9_capture_family_support.png": "36a8512c2d59cb95ef1d30951ac47c3431cccef8466f3e77974f4e7bae3780ea",
+      "reports/figures/phase9_confusion_DDoS.png": "c4b3cd4b0022b39efbe36aae70967019a52a59c9badc80801a77b3f0d4d2b91c",
+      "reports/figures/phase9_known_unknown_score_distributions.png": "456857cc6961630c2d6d19dc235010e8cddc79673d4d2981790b73cd7e7fe35d",
+      "reports/figures/phase9_confusion_Bot.png": "99f4655fe285a74340436235459c12aea8a10c3a236b2c7443be476ba1a7e065",
+      "reports/figures/phase9_open_set_tradeoffs.png": "010fa5ba7d114f2b033e2c18efbce6aea35dab6be49a9e6d69322f53dff74e07",
+      "reports/figures/phase9_grouped_random_family_precision_recall.png": "12ecd28e2ef6daed67417c0e402e973367267bf6defffcfd3b19bc95f9625acd",
+      "reports/figures/phase9_per_day_rejection.png": "44846c5ca66c002e32c3e0b3ca70d15a8e51ce851daba7e2468fe465e2602e85",
+      "reports/figures/phase9_grouped_random_sensitivity.png": "4a96b5d98c7f2e41d72432ec44404c2c7e8954e9db9b044eedc646521969d926",
+      "reports/figures/phase9_worker_resources.png": "9fb2fe6fb96e6bd8a83f8bdf6854dc2de40624d5f89d55a7f2377e41ed15074e"
     }
   }
 }
