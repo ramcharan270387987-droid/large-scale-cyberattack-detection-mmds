@@ -1,0 +1,29 @@
+source_day,original_label,attack_family,binary_label,count
+2018-02-14,Benign,Benign,0,667626
+2018-02-14,FTP-BruteForce,Credential brute force,1,193360
+2018-02-14,SSH-Bruteforce,Credential brute force,1,187589
+2018-02-15,Benign,Benign,0,996077
+2018-02-15,DoS attacks-GoldenEye,DoS,1,41508
+2018-02-15,DoS attacks-Slowloris,DoS,1,10990
+2018-02-16,Benign,Benign,0,446772
+2018-02-16,DoS attacks-Hulk,DoS,1,461912
+2018-02-16,DoS attacks-SlowHTTPTest,DoS,1,139890
+2018-02-20,Benign,Benign,0,7372557
+2018-02-20,DDoS attacks-LOIC-HTTP,DDoS,1,576191
+2018-02-21,Benign,Benign,0,360833
+2018-02-21,DDOS attack-HOIC,DDoS,1,686012
+2018-02-21,DDOS attack-LOIC-UDP,DDoS,1,1730
+2018-02-22,Benign,Benign,0,1048213
+2018-02-22,Brute Force -Web,Web attack,1,249
+2018-02-22,Brute Force -XSS,Web attack,1,79
+2018-02-22,SQL Injection,Web attack,1,34
+2018-02-23,Benign,Benign,0,1048009
+2018-02-23,Brute Force -Web,Web attack,1,362
+2018-02-23,Brute Force -XSS,Web attack,1,151
+2018-02-23,SQL Injection,Web attack,1,53
+2018-02-28,Benign,Benign,0,544200
+2018-02-28,Infilteration,Infiltration,1,68871
+2018-03-01,Benign,Benign,0,238037
+2018-03-01,Infilteration,Infiltration,1,93063
+2018-03-02,Benign,Benign,0,762384
+2018-03-02,Bot,Bot,1,286191
