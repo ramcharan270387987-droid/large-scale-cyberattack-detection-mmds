@@ -1,0 +1,69 @@
+{
+  "status": "validated",
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "split": {
+    "purged_rows": 909956,
+    "prepurge_predictor_groups": {
+      "groups": 136985,
+      "rows": 2773438
+    }
+  },
+  "features": [
+    "flow_duration",
+    "tot_fwd_pkts",
+    "tot_bwd_pkts",
+    "totlen_fwd_pkts",
+    "totlen_bwd_pkts",
+    "pkt_len_mean"
+  ],
+  "seconds": 311.191720059,
+  "resources": {
+    "spark_version": "4.3.0",
+    "master": "local[4]",
+    "driver_memory": "8g",
+    "shuffle_partitions": 48,
+    "input_partition_bytes": 67108864,
+    "default_parallelism": 4,
+    "cpu_affinity": 4,
+    "scratch_output_free_bytes_start": 20932087808,
+    "memory.max": "32212254720",
+    "cpu.max": "400000 100000"
+  },
+  "driver_peak_rss_bytes": 4231335936,
+  "sha256": {
+    "A3.json": "d69c7c6cf74b156645e6f190ad56bf1c839f42ed52bad63d07de80aa62d4c856",
+    "domain_registry.json": "cf44e7358db36e493a4aa10e000119f48aca5cd54ed162f7b3d7b7dbc004926a",
+    "phase8_split_diagnostics.csv": "c3a0ea358281f0867acd084b4093d63529d09567fdf80e708702223d6e9fd7e2",
+    "A5.json": "cfc84f982679ba07a2a62540dc73ce35b50246cfdd60fa65fc3e53b7612023ad",
+    "domain.json": "a7ce326df4b014e0a04cfd9d2347c57e8935549c4bb3b88d9de9e146a181567d",
+    "B5.json": "ed94e65a9a8bb010caf43efd7ec6ee61035331770b9edb82612b999b5091d88b",
+    "B3.json": "83104a331fd6e0704a7b1647db60dd4aea647dc62fdab46dfb57a60d63488e8e"
+  }
+}

@@ -109,6 +109,22 @@
         "independent direct rule verification",
         "derived association metrics"
       ]
+    },
+    "C_counts": {
+      "status": "validated",
+      "kernel_version": 3,
+      "worker_status": "COMPLETE",
+      "artifacts": {
+        "B3.json": "83104a331fd6e0704a7b1647db60dd4aea647dc62fdab46dfb57a60d63488e8e",
+        "phase8_split_diagnostics.csv": "c3a0ea358281f0867acd084b4093d63529d09567fdf80e708702223d6e9fd7e2",
+        "domain.json": "a7ce326df4b014e0a04cfd9d2347c57e8935549c4bb3b88d9de9e146a181567d",
+        "A5.json": "cfc84f982679ba07a2a62540dc73ce35b50246cfdd60fa65fc3e53b7612023ad",
+        "A3.json": "d69c7c6cf74b156645e6f190ad56bf1c839f42ed52bad63d07de80aa62d4c856",
+        "receipt.json": "a576f450b42faf233a3d59a1f4aedb3d7099249fdfe9c5067eeb1362b62fe840",
+        "domain_registry.json": "cf44e7358db36e493a4aa10e000119f48aca5cd54ed162f7b3d7b7dbc004926a",
+        "B5.json": "ed94e65a9a8bb010caf43efd7ec6ee61035331770b9edb82612b999b5091d88b"
+      },
+      "seconds": 311.191720059
     }
   },
   "pending": [
