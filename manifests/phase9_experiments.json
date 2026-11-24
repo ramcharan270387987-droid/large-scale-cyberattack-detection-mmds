@@ -842,9 +842,10 @@
     "figures/phase9_macro_f1_runtime.png": "011b2c542bff04d7aa5ae0edfe1f92a4e2a69a0e5c65d308e0ee0b9c16f15454",
     "figures/phase9_grouped_random_family_precision_recall.png": "12ecd28e2ef6daed67417c0e402e973367267bf6defffcfd3b19bc95f9625acd",
     "figures/phase9_grouped_random_sensitivity.png": "4a96b5d98c7f2e41d72432ec44404c2c7e8954e9db9b044eedc646521969d926",
-    "figures/phase9_known_unknown_score_distributions.png": "4ea3d2bbe6c17488e911bd86fc3ceb4f494eb10e51def97cb267a06e9340e3e5",
-    "figures/phase9_per_day_rejection.png": "c09f5a21f8234e103e50ca722e3cb974668e5145a77bfd0b22dc713e81fcf95d",
-    "figures/phase9_risk_coverage_roc_pr.png": "2420fad55c088f4535c3c109c09f5565d8a4e4a74a0b2a9d38bf7f6770baa525"
+    "figures/phase9_known_unknown_score_distributions.png": "456857cc6961630c2d6d19dc235010e8cddc79673d4d2981790b73cd7e7fe35d",
+    "figures/phase9_per_day_rejection.png": "44846c5ca66c002e32c3e0b3ca70d15a8e51ce851daba7e2468fe465e2602e85",
+    "figures/phase9_risk_coverage_roc_pr.png": "61a3ea2023945e2e2a4c6496269b167d6fc6c10016f5ea74bd61c89b415d5794",
+    "figures/phase9_worker_resources.png": "9fb2fe6fb96e6bd8a83f8bdf6854dc2de40624d5f89d55a7f2377e41ed15074e"
   },
   "reference_baselines_sha256": {
     "reports/phase9_reference_baselines/phase9_reference_baselines.csv": "04e6ffe0c77790108e17c4424b7d11456dba426190bafe3b24b74b204dc73165"
@@ -888,6 +889,39 @@
         "reports/phase9_open_set_evidence/15/Web/day_rejection.csv": "58b21a9e30ad227689f63238b6c906410d10c973da36bdc80b1c96e67740c49b",
         "reports/phase9_open_set_evidence/15/Web/capture_feature_quantiles.csv": "f786a600f935a5059720c9429f9e9e6b1f16716e5cb938eba9009f5ac39c1c69",
         "reports/phase9_open_set_evidence/15/Web/rejection_error_groups.csv": "a12b91a6c898f126a72adf30a503bcaa0621baf28c959a0987f6273d80d371ed"
+      }
+    },
+    "16": {
+      "status": "validated",
+      "worker_status": "COMPLETE",
+      "kernel_version": 16,
+      "scenarios": [
+        "Bot",
+        "Infiltration",
+        "DDoS"
+      ],
+      "log_sha256": "58bea1e21a1203e1b15d38bed4eef63ede0e1b804555d700e815824febe43c40",
+      "notebook_sha256": "1c96d47b704150c2e611e5851746ba32573ce43dceb6663a153ddf6a2962e96d",
+      "artifacts": {
+        "reports/phase9_open_set_evidence/16/receipt.json": "267e36ffdea375bb3183725e0acb525db45dcafd0b86d657f8f2634951c80318",
+        "reports/phase9_open_set_evidence/16/Bot/receipt.json": "0127a63e9a880070709862c42b6427e659d79760c604a244368616db8ddac5d5",
+        "reports/phase9_open_set_evidence/16/Bot/thresholds.json": "6c6c443a951cc7785635318089838ee103e09027235481d570ac03e22ae92730",
+        "reports/phase9_open_set_evidence/16/Bot/score_histograms.csv": "fd881c215c7e8829bb8f0dc9814c91326dbabd3c34a351ced486c94ba7d2b8bf",
+        "reports/phase9_open_set_evidence/16/Bot/day_rejection.csv": "f4848f0b6ebeece90a5fb0a95aef7a140838be506c93f7348c956c0140738d6a",
+        "reports/phase9_open_set_evidence/16/Bot/capture_feature_quantiles.csv": "7825bb1fe4ac28402ab5f99ec80bee5efb0492cbec933f44354a9811febdfec1",
+        "reports/phase9_open_set_evidence/16/Bot/rejection_error_groups.csv": "4d42b71cdeb8961bc9ae19b6953025c88f3dcc7c8e14dba8eeb603378daa7c84",
+        "reports/phase9_open_set_evidence/16/Infiltration/receipt.json": "ba1ceda3a553d8a812c57c825fd64624ec6140514f11f3fbf69d56e2b505fa3e",
+        "reports/phase9_open_set_evidence/16/Infiltration/thresholds.json": "e6e0825d2c99663e474b2697506221b7b43656fbd82730dfe3815b9e6ab91250",
+        "reports/phase9_open_set_evidence/16/Infiltration/score_histograms.csv": "eec6fe61a3ef4878e78195513bbec648ee2dfbe9cd3ba4095189cd9fc624ca9d",
+        "reports/phase9_open_set_evidence/16/Infiltration/day_rejection.csv": "9de199036ae9c1ddb5dd20403659a607dfb25217748ccdbf86ac4af58752a918",
+        "reports/phase9_open_set_evidence/16/Infiltration/capture_feature_quantiles.csv": "61215303ff7d48cf9e6d20ec93e7a8cf48df8c30e22b9ac0fd8a962262382ade",
+        "reports/phase9_open_set_evidence/16/Infiltration/rejection_error_groups.csv": "dfbb663f3e6fd17961e2dc27f19d0d77d6ceee1319ab2e8b515ba81c807b286d",
+        "reports/phase9_open_set_evidence/16/DDoS/receipt.json": "8cb8fc23e1045f000300f794c2e346e9960dd0f50873658f1a72e6ec48b2c938",
+        "reports/phase9_open_set_evidence/16/DDoS/thresholds.json": "35b39bfd6c85d7872730d161341e314afc5f857c26e86a596f61613fd27191fc",
+        "reports/phase9_open_set_evidence/16/DDoS/score_histograms.csv": "db18a58029eddbfd08fbe6decfa92c91ce3dc094e22a394d77612eff6e9e2daa",
+        "reports/phase9_open_set_evidence/16/DDoS/day_rejection.csv": "04980809852d0394e5773a0b360f4318c0c221a2c28ff3864444a612b6a4c43c",
+        "reports/phase9_open_set_evidence/16/DDoS/capture_feature_quantiles.csv": "51b221ecb93390644e4c8f27d27df48a31a9129f54c447c9e5d7a7ae5b162131",
+        "reports/phase9_open_set_evidence/16/DDoS/rejection_error_groups.csv": "ee218a23a560cb875b3826af009b8b13d7ca5601c70bd0ff84b1098dcead77e4"
       }
     }
   }

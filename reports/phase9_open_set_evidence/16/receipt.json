@@ -1,0 +1,50 @@
+{
+  "status": "validated",
+  "scenarios": [
+    "Bot",
+    "Infiltration",
+    "DDoS"
+  ],
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "resources": {
+    "spark_version": "4.3.0",
+    "master": "local[4]",
+    "driver_memory": "8g",
+    "shuffle_partitions": 48,
+    "input_partition_bytes": 67108864,
+    "default_parallelism": 4,
+    "cpu_affinity": 4,
+    "scratch_output_free_bytes_start": 20938088448,
+    "memory.max": "32212254720",
+    "cpu.max": "400000 100000"
+  },
+  "driver_peak_rss_bytes": 3943927808,
+  "elapsed_seconds": 300.45128798900004
+}

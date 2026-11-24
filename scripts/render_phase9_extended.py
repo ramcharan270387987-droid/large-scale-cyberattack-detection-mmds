@@ -203,6 +203,35 @@ def open_set(figures, manifest):
     save(figures, "risk_coverage_roc_pr", fig)
 
 
+def worker_cost(figures, manifest):
+    runs = []
+    for population, stage in manifest.get("hierarchy", {}).items():
+        path = f"reports/phase9_hierarchy/{population}/phase9_hierarchical_receipt.json"
+        runs.append((stage, path, f"{population} hierarchy"))
+    sensitivity = manifest.get("grouped_random_sensitivity")
+    if sensitivity is not None:
+        runs.append((sensitivity, "reports/phase9_sensitivity/phase9_sensitivity_receipt.json", "Sensitivity"))
+    for version, stage in manifest.get("open_set_evidence", {}).items():
+        path = f"reports/phase9_open_set_evidence/{version}/receipt.json"
+        runs.append((stage, path, "Open-set aggregates"))
+    if not runs:
+        return
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4), layout="constrained")
+    labels, elapsed, peak = [], [], []
+    for stage, path, label in runs:
+        receipt = json.loads(evidence(stage["artifacts"], path))
+        labels.append(f"v{stage['kernel_version']} · {label}")
+        elapsed.append(receipt["elapsed_seconds"] / 60)
+        peak.append(receipt["driver_peak_rss_bytes"] / 1024**3)
+    axes[0].barh(labels, elapsed, color="#276687")
+    axes[1].barh(labels, peak, color="#66a892")
+    axes[0].set(xlabel="Elapsed minutes", title="Measured worker runtime")
+    axes[1].set(xlabel="Peak RSS (GiB)", title="Measured driver memory")
+    for ax in axes:
+        ax.invert_yaxis()
+    save(figures, "worker_resources", fig)
+
+
 if __name__ == "__main__":
     manifest = json.loads(MANIFEST.read_text())
     figures = manifest.setdefault("extended_figures_sha256", {})
@@ -210,4 +239,5 @@ if __name__ == "__main__":
     hierarchies(figures, manifest)
     sensitivities(figures, manifest)
     open_set(figures, manifest)
+    worker_cost(figures, manifest)
     MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n")

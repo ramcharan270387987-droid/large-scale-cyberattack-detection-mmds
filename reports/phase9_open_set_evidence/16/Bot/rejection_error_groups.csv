@@ -1,0 +1,26 @@
+source_day,attack_family,known,rejected,prediction,count
+2018-02-23,Web attack,True,True,3.0,7
+2018-02-15,DoS,True,True,3.0,40
+2018-02-16,DoS,True,True,2.0,1584
+2018-02-21,DDoS,True,True,3.0,5
+2018-02-23,Web attack,True,True,4.0,23
+2018-02-15,DoS,True,True,1.0,358
+2018-02-28,Infiltration,True,True,2.0,143
+2018-03-01,Infiltration,True,True,1.0,22
+2018-02-15,DoS,True,True,2.0,457
+2018-03-01,Infiltration,True,True,3.0,454
+2018-02-22,Web attack,True,True,2.0,14
+2018-02-16,DoS,True,True,3.0,458
+2018-02-28,Infiltration,True,True,3.0,429
+2018-03-01,Infiltration,True,True,2.0,97
+2018-02-21,DDoS,True,True,2.0,21
+2018-02-20,DDoS,True,True,1.0,13
+2018-02-20,DDoS,True,True,3.0,13
+2018-02-28,Infiltration,True,True,1.0,12
+2018-02-21,DDoS,True,True,1.0,36
+2018-02-14,Credential brute force,True,True,3.0,2
+2018-02-22,Web attack,True,True,3.0,8
+2018-02-23,Web attack,True,True,2.0,7
+2018-02-14,Credential brute force,True,True,2.0,1
+2018-03-02,Bot,False,False,3.0,143113
+2018-03-02,Bot,False,False,2.0,119836

@@ -10,7 +10,8 @@ from src.ml.phase9_open_set_evidence import population
 class HoldoutCohortTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.spark = SparkSession.builder.master("local[2]").appName("phase9-holdout-test").getOrCreate()
+        cls.spark = SparkSession.builder.master("local[2]").appName("phase9-holdout-test").config(
+            "spark.sql.shuffle.partitions", "4").getOrCreate()
 
     @classmethod
     def tearDownClass(cls):
