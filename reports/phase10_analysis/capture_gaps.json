@@ -1,0 +1,47 @@
+[
+  {
+    "previous": "2018-02-14",
+    "current": "2018-02-15",
+    "calendar_days": 1
+  },
+  {
+    "previous": "2018-02-15",
+    "current": "2018-02-16",
+    "calendar_days": 1
+  },
+  {
+    "previous": "2018-02-16",
+    "current": "2018-02-20",
+    "calendar_days": 4
+  },
+  {
+    "previous": "2018-02-20",
+    "current": "2018-02-21",
+    "calendar_days": 1
+  },
+  {
+    "previous": "2018-02-21",
+    "current": "2018-02-22",
+    "calendar_days": 1
+  },
+  {
+    "previous": "2018-02-22",
+    "current": "2018-02-23",
+    "calendar_days": 1
+  },
+  {
+    "previous": "2018-02-23",
+    "current": "2018-02-28",
+    "calendar_days": 5
+  },
+  {
+    "previous": "2018-02-28",
+    "current": "2018-03-01",
+    "calendar_days": 1
+  },
+  {
+    "previous": "2018-03-01",
+    "current": "2018-03-02",
+    "calendar_days": 1
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "schema": "phase10-pattern-models-v1",
+  "primary_fpgrowth": {
+    "kernel_version": 2,
+    "artifact": "mmds_phase10_mining/model",
+    "spark_version": "4.3.0",
+    "reload_probe_rows": 3,
+    "feature_count": 6,
+    "support": 0.05
+  },
+  "registries": {
+    "reports/phase10_detection/frozen.json": "2a141f7070f9850f1f46e0534be04758fca0d7ea7f44f9814f6dd232cd732909",
+    "reports/phase10_stageB/registry.json": "44304f58084fa64685ccd8c8f77f081639d3a80b8172545becd4af05ac512aaf",
+    "reports/phase10_stageA/discretization.json": "3abaf8175e9f76b897bd377656d04780a78ceb4d973d70f7a8165a59c7bdd793",
+    "reports/phase10_rule_validation/count_metrics.json": "43066b917e3b0e57d644a50e0928e1e1659263bffe4fff228eb163270143ad5e"
+  }
+}

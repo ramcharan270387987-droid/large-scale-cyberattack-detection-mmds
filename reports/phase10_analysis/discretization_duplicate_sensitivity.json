@@ -1,0 +1,110 @@
+[
+  {
+    "configuration": "A3",
+    "support": 0.1,
+    "flow_rows": 16232943,
+    "predictor_groups": 10368837.999999976,
+    "flow_frequent_patterns": 203,
+    "group_frequent_patterns": 159,
+    "jaccard": 0.6160714285714286
+  },
+  {
+    "configuration": "A3",
+    "support": 0.05,
+    "flow_rows": 16232943,
+    "predictor_groups": 10368837.999999976,
+    "flow_frequent_patterns": 298,
+    "group_frequent_patterns": 323,
+    "jaccard": 0.5801526717557252
+  },
+  {
+    "configuration": "A3",
+    "support": 0.02,
+    "flow_rows": 16232943,
+    "predictor_groups": 10368837.999999976,
+    "flow_frequent_patterns": 539,
+    "group_frequent_patterns": 595,
+    "jaccard": 0.75
+  },
+  {
+    "configuration": "A3",
+    "support": 0.01,
+    "flow_rows": 16232943,
+    "predictor_groups": 10368837.999999976,
+    "flow_frequent_patterns": 759,
+    "group_frequent_patterns": 777,
+    "jaccard": 0.8373205741626795
+  },
+  {
+    "configuration": "A5",
+    "support": 0.1,
+    "flow_rows": 16232943,
+    "predictor_groups": 10368837.999999994,
+    "flow_frequent_patterns": 103,
+    "group_frequent_patterns": 109,
+    "jaccard": 0.39473684210526316
+  },
+  {
+    "configuration": "A5",
+    "support": 0.05,
+    "flow_rows": 16232943,
+    "predictor_groups": 10368837.999999994,
+    "flow_frequent_patterns": 329,
+    "group_frequent_patterns": 352,
+    "jaccard": 0.4336842105263158
+  },
+  {
+    "configuration": "A5",
+    "support": 0.02,
+    "flow_rows": 16232943,
+    "predictor_groups": 10368837.999999994,
+    "flow_frequent_patterns": 806,
+    "group_frequent_patterns": 856,
+    "jaccard": 0.5708884688090737
+  },
+  {
+    "configuration": "A5",
+    "support": 0.01,
+    "flow_rows": 16232943,
+    "predictor_groups": 10368837.999999994,
+    "flow_frequent_patterns": 1315,
+    "group_frequent_patterns": 1261,
+    "jaccard": 0.7300201477501679
+  },
+  {
+    "configuration": "domain",
+    "support": 0.1,
+    "flow_rows": 16232943,
+    "predictor_groups": null,
+    "flow_frequent_patterns": 193,
+    "group_frequent_patterns": null,
+    "jaccard": null
+  },
+  {
+    "configuration": "domain",
+    "support": 0.05,
+    "flow_rows": 16232943,
+    "predictor_groups": null,
+    "flow_frequent_patterns": 428,
+    "group_frequent_patterns": null,
+    "jaccard": null
+  },
+  {
+    "configuration": "domain",
+    "support": 0.02,
+    "flow_rows": 16232943,
+    "predictor_groups": null,
+    "flow_frequent_patterns": 576,
+    "group_frequent_patterns": null,
+    "jaccard": null
+  },
+  {
+    "configuration": "domain",
+    "support": 0.01,
+    "flow_rows": 16232943,
+    "predictor_groups": null,
+    "flow_frequent_patterns": 754,
+    "group_frequent_patterns": null,
+    "jaccard": null
+  }
+]

@@ -1,0 +1,6963 @@
+[
+  {
+    "items": [
+      "flow_duration=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 6,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 8,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 4,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 9,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 3,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 7,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 5,
+    "persistent": false
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 9,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 2,
+    "persistent": false
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 1,
+    "persistent": false
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 8,
+    "persistent": true
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "first_observed": "2018-02-14",
+    "last_observed": "2018-03-02",
+    "captures_present": 10,
+    "frequent_captures": 10,
+    "persistent": true
+  }
+]

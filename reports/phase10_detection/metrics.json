@@ -11,5 +11,9 @@
   "family_recall": {
     "Bot": 0.0,
     "Infiltration": 0.0
-  }
+  },
+  "roc_auc": 0.7127769733126628,
+  "pr_auc_trapezoidal_at_unique_scores": 0.29228010680103667,
+  "false_alarms_per_million": 0.0,
+  "score_cost_note": "Offline exact signature scoring; per-flow Spark latency unmeasured"
 }

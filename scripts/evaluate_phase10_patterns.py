@@ -1,13 +1,15 @@
 """Freeze training pattern choices and validation threshold before test aggregation."""
 from collections import Counter
 import json
+import argparse
 from pathlib import Path
 from analyze_phase10_aggregates import complete_counts
 from src.patterns.support import score,select_threshold
 from src.patterns.metrics import contrast
 
-root=Path('reports/phase10_aggregates');out=Path('reports/phase10_detection');out.mkdir(exist_ok=True)
-rows=json.loads((root/'B3.json').read_text())
+parser=argparse.ArgumentParser();parser.add_argument('--configuration',choices=('B3','B5'),default='B3');args=parser.parse_args()
+root=Path('reports/phase10_aggregates');out=Path('reports/phase10_detection') if args.configuration=='B3' else Path('reports/phase10_detection_B5');out.mkdir(exist_ok=True)
+rows=json.loads((root/(args.configuration+'.json')).read_text())
 train=[r for r in rows if r['split_rank']==0];validation=[r for r in rows if r['split_rank']==1]
 counts,totals=complete_counts(train)
 a=sum(n for (_,label,_),n in totals.items() if label==1);b=sum(totals.values())-a
@@ -25,7 +27,7 @@ for enrichment,ac,pattern in candidates:
  if len(selected)==20:break
 calibration=[dict(r,score=score(r['items'],selected)) for r in validation]
 threshold=select_threshold(calibration)
-policy={'patterns':selected,'threshold':threshold,'validation_fpr_budget':.01,'discretization':'B3','training_rows':sum(totals.values()),'selection':'training attack/benign support ratio, attack support and canonical ID'}
+policy={'patterns':selected,'threshold':threshold,'validation_fpr_budget':.01,'discretization':args.configuration,'training_rows':sum(totals.values()),'selection':'training attack/benign support ratio, attack support and canonical ID'}
 (out/'frozen.json').write_text(json.dumps(policy,indent=2)+'\n')
 # Evaluation is accessed only after the policy is materialized.
 results=[];families=Counter();family_totals=Counter();review=0
