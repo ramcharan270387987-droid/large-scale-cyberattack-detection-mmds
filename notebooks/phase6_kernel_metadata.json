@@ -1,0 +1,17 @@
+{
+  "id": "ramcharan2345/mmds-phase-6-historical-streaming-drift-monitoring",
+  "title": "MMDS Phase 6 Historical Streaming Drift Monitoring",
+  "code_file": "phase6_streaming_drift_monitoring.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [
+    "ramcharan2345/mmds-phase-2-spark-data-engineering/1",
+    "ramcharan2345/mmds-phase-6-pinned-chronological-models/1"
+  ]
+}

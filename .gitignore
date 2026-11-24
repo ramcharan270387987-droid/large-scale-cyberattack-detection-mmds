@@ -285,6 +285,12 @@ metastore_db/
 !/reports/phase5_novelty_metrics.csv
 !/reports/phase5_score_histogram.csv
 !/reports/phase5_duplicate_sensitivity.csv
+!/reports/phase6_alerts.csv
+!/reports/phase6_performance.csv
+!/reports/phase6_recovery_tests.csv
+!/reports/phase6_replay_batches.csv
+!/reports/phase6_shift_metrics.csv
+!/reports/phase6_window_metrics.csv
 *.csv.gz
 *.parquet
 *.pkl

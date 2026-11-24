@@ -1,0 +1,2279 @@
+{
+  "historical": {
+    "attempts": [
+      {
+        "query_id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "run_id": "49fb2954-e5b1-4752-949e-5fa77b65d01d",
+        "outcome": "planned_interruption"
+      },
+      {
+        "query_id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "run_id": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "outcome": "terminated"
+      }
+    ],
+    "progress": [
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "49fb2954-e5b1-4752-949e-5fa77b65d01d",
+        "name": null,
+        "timestamp": "2026-11-24T04:31:46.285Z",
+        "batchId": 0,
+        "batchDuration": 28258,
+        "numInputRows": 471128,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 16672.4,
+        "durationMs": {
+          "addBatch": 27968,
+          "commitOffsets": 51,
+          "getBatch": 34,
+          "latestOffset": 44,
+          "queryPlanning": 70,
+          "triggerExecution": 28255,
+          "walCommit": 58
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": null,
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 471128,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 16672.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:32:28.987Z",
+        "batchId": 1,
+        "batchDuration": 481,
+        "numInputRows": 142824,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 296931.4,
+        "durationMs": {
+          "addBatch": 418,
+          "commitOffsets": 34,
+          "getBatch": 13,
+          "queryPlanning": 13,
+          "triggerExecution": 481
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 0
+            },
+            "endOffset": {
+              "logOffset": 1
+            },
+            "latestOffset": null,
+            "numInputRows": 142824,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 296931.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:32:29.469Z",
+        "batchId": 2,
+        "batchDuration": 7936,
+        "numInputRows": 134586,
+        "inputRowsPerSecond": 279224.1,
+        "processedRowsPerSecond": 16958.9,
+        "durationMs": {
+          "addBatch": 7815,
+          "commitOffsets": 33,
+          "getBatch": 10,
+          "latestOffset": 31,
+          "queryPlanning": 10,
+          "triggerExecution": 7935,
+          "walCommit": 33
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 1
+            },
+            "endOffset": {
+              "logOffset": 2
+            },
+            "latestOffset": null,
+            "numInputRows": 134586,
+            "inputRowsPerSecond": 279224.1,
+            "processedRowsPerSecond": 16958.9
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:32:37.406Z",
+        "batchId": 3,
+        "batchDuration": 30182,
+        "numInputRows": 997988,
+        "inputRowsPerSecond": 125738.7,
+        "processedRowsPerSecond": 33065.7,
+        "durationMs": {
+          "addBatch": 30064,
+          "commitOffsets": 34,
+          "getBatch": 11,
+          "latestOffset": 30,
+          "queryPlanning": 7,
+          "triggerExecution": 30182,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 2
+            },
+            "endOffset": {
+              "logOffset": 3
+            },
+            "latestOffset": null,
+            "numInputRows": 997988,
+            "inputRowsPerSecond": 125738.7,
+            "processedRowsPerSecond": 33065.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:33:07.589Z",
+        "batchId": 4,
+        "batchDuration": 8655,
+        "numInputRows": 207790,
+        "inputRowsPerSecond": 6884.3,
+        "processedRowsPerSecond": 24008.1,
+        "durationMs": {
+          "addBatch": 8542,
+          "commitOffsets": 35,
+          "getBatch": 8,
+          "latestOffset": 32,
+          "queryPlanning": 5,
+          "triggerExecution": 8655,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 3
+            },
+            "endOffset": {
+              "logOffset": 4
+            },
+            "latestOffset": null,
+            "numInputRows": 207790,
+            "inputRowsPerSecond": 6884.3,
+            "processedRowsPerSecond": 24008.1
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:33:16.245Z",
+        "batchId": 5,
+        "batchDuration": 3005,
+        "numInputRows": 10,
+        "inputRowsPerSecond": 1.2,
+        "processedRowsPerSecond": 3.3,
+        "durationMs": {
+          "addBatch": 2886,
+          "commitOffsets": 36,
+          "getBatch": 9,
+          "latestOffset": 32,
+          "queryPlanning": 7,
+          "triggerExecution": 3005,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 4
+            },
+            "endOffset": {
+              "logOffset": 5
+            },
+            "latestOffset": null,
+            "numInputRows": 10,
+            "inputRowsPerSecond": 1.2,
+            "processedRowsPerSecond": 3.3
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:33:19.251Z",
+        "batchId": 6,
+        "batchDuration": 14540,
+        "numInputRows": 395596,
+        "inputRowsPerSecond": 131602.1,
+        "processedRowsPerSecond": 27207.4,
+        "durationMs": {
+          "addBatch": 14426,
+          "commitOffsets": 34,
+          "getBatch": 8,
+          "latestOffset": 31,
+          "queryPlanning": 7,
+          "triggerExecution": 14539,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 5
+            },
+            "endOffset": {
+              "logOffset": 6
+            },
+            "latestOffset": null,
+            "numInputRows": 395596,
+            "inputRowsPerSecond": 131602.1,
+            "processedRowsPerSecond": 27207.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:33:33.792Z",
+        "batchId": 7,
+        "batchDuration": 13448,
+        "numInputRows": 383102,
+        "inputRowsPerSecond": 26346.3,
+        "processedRowsPerSecond": 28487.7,
+        "durationMs": {
+          "addBatch": 13334,
+          "commitOffsets": 33,
+          "getBatch": 10,
+          "latestOffset": 30,
+          "queryPlanning": 7,
+          "triggerExecution": 13448,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 6
+            },
+            "endOffset": {
+              "logOffset": 7
+            },
+            "latestOffset": null,
+            "numInputRows": 383102,
+            "inputRowsPerSecond": 26346.3,
+            "processedRowsPerSecond": 28487.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:33:47.241Z",
+        "batchId": 8,
+        "batchDuration": 8218,
+        "numInputRows": 175162,
+        "inputRowsPerSecond": 13024.2,
+        "processedRowsPerSecond": 21314.4,
+        "durationMs": {
+          "addBatch": 8103,
+          "commitOffsets": 36,
+          "getBatch": 9,
+          "latestOffset": 31,
+          "queryPlanning": 6,
+          "triggerExecution": 8218,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 7
+            },
+            "endOffset": {
+              "logOffset": 8
+            },
+            "latestOffset": null,
+            "numInputRows": 175162,
+            "inputRowsPerSecond": 13024.2,
+            "processedRowsPerSecond": 21314.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:33:55.460Z",
+        "batchId": 9,
+        "batchDuration": 27969,
+        "numInputRows": 926932,
+        "inputRowsPerSecond": 112779.2,
+        "processedRowsPerSecond": 33141.4,
+        "durationMs": {
+          "addBatch": 27838,
+          "commitOffsets": 35,
+          "getBatch": 8,
+          "latestOffset": 45,
+          "queryPlanning": 9,
+          "triggerExecution": 27969,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 8
+            },
+            "endOffset": {
+              "logOffset": 9
+            },
+            "latestOffset": null,
+            "numInputRows": 926932,
+            "inputRowsPerSecond": 112779.2,
+            "processedRowsPerSecond": 33141.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:34:23.430Z",
+        "batchId": 10,
+        "batchDuration": 8732,
+        "numInputRows": 216358,
+        "inputRowsPerSecond": 7735.4,
+        "processedRowsPerSecond": 24777.6,
+        "durationMs": {
+          "addBatch": 8617,
+          "commitOffsets": 32,
+          "getBatch": 9,
+          "latestOffset": 32,
+          "queryPlanning": 7,
+          "triggerExecution": 8732,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 9
+            },
+            "endOffset": {
+              "logOffset": 10
+            },
+            "latestOffset": null,
+            "numInputRows": 216358,
+            "inputRowsPerSecond": 7735.4,
+            "processedRowsPerSecond": 24777.6
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:34:32.163Z",
+        "batchId": 11,
+        "batchDuration": 51658,
+        "numInputRows": 1816678,
+        "inputRowsPerSecond": 208024.5,
+        "processedRowsPerSecond": 35167.4,
+        "durationMs": {
+          "addBatch": 51548,
+          "commitOffsets": 34,
+          "getBatch": 8,
+          "latestOffset": 30,
+          "queryPlanning": 6,
+          "triggerExecution": 51658,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 10
+            },
+            "endOffset": {
+              "logOffset": 11
+            },
+            "latestOffset": null,
+            "numInputRows": 1816678,
+            "inputRowsPerSecond": 208024.5,
+            "processedRowsPerSecond": 35167.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:35:23.822Z",
+        "batchId": 12,
+        "batchDuration": 2757,
+        "numInputRows": 100,
+        "inputRowsPerSecond": 1.9,
+        "processedRowsPerSecond": 36.3,
+        "durationMs": {
+          "addBatch": 2641,
+          "commitOffsets": 31,
+          "getBatch": 11,
+          "latestOffset": 32,
+          "queryPlanning": 6,
+          "triggerExecution": 2757,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 11
+            },
+            "endOffset": {
+              "logOffset": 12
+            },
+            "latestOffset": null,
+            "numInputRows": 100,
+            "inputRowsPerSecond": 1.9,
+            "processedRowsPerSecond": 36.3
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:35:26.580Z",
+        "batchId": 13,
+        "batchDuration": 9961,
+        "numInputRows": 280264,
+        "inputRowsPerSecond": 101618.6,
+        "processedRowsPerSecond": 28136.1,
+        "durationMs": {
+          "addBatch": 9853,
+          "commitOffsets": 33,
+          "getBatch": 7,
+          "latestOffset": 32,
+          "queryPlanning": 5,
+          "triggerExecution": 9961,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 12
+            },
+            "endOffset": {
+              "logOffset": 13
+            },
+            "latestOffset": null,
+            "numInputRows": 280264,
+            "inputRowsPerSecond": 101618.6,
+            "processedRowsPerSecond": 28136.1
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:35:36.542Z",
+        "batchId": 14,
+        "batchDuration": 2676,
+        "numInputRows": 106,
+        "inputRowsPerSecond": 10.6,
+        "processedRowsPerSecond": 39.6,
+        "durationMs": {
+          "addBatch": 2560,
+          "commitOffsets": 31,
+          "getBatch": 10,
+          "latestOffset": 31,
+          "queryPlanning": 7,
+          "triggerExecution": 2676,
+          "walCommit": 33
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 13
+            },
+            "endOffset": {
+              "logOffset": 14
+            },
+            "latestOffset": null,
+            "numInputRows": 106,
+            "inputRowsPerSecond": 10.6,
+            "processedRowsPerSecond": 39.6
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:35:39.219Z",
+        "batchId": 15,
+        "batchDuration": 69818,
+        "numInputRows": 3286536,
+        "inputRowsPerSecond": 1227693.7,
+        "processedRowsPerSecond": 47072.9,
+        "durationMs": {
+          "addBatch": 69706,
+          "commitOffsets": 37,
+          "getBatch": 8,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 69818,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 14
+            },
+            "endOffset": {
+              "logOffset": 15
+            },
+            "latestOffset": null,
+            "numInputRows": 3286536,
+            "inputRowsPerSecond": 1227693.7,
+            "processedRowsPerSecond": 47072.9
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:36:49.038Z",
+        "batchId": 16,
+        "batchDuration": 72990,
+        "numInputRows": 3890050,
+        "inputRowsPerSecond": 55716.2,
+        "processedRowsPerSecond": 53295.7,
+        "durationMs": {
+          "addBatch": 72876,
+          "commitOffsets": 33,
+          "getBatch": 9,
+          "latestOffset": 32,
+          "queryPlanning": 6,
+          "triggerExecution": 72990,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 15
+            },
+            "endOffset": {
+              "logOffset": 16
+            },
+            "latestOffset": null,
+            "numInputRows": 3890050,
+            "inputRowsPerSecond": 55716.2,
+            "processedRowsPerSecond": 53295.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:38:02.029Z",
+        "batchId": 17,
+        "batchDuration": 33671,
+        "numInputRows": 959744,
+        "inputRowsPerSecond": 13148.8,
+        "processedRowsPerSecond": 28503.6,
+        "durationMs": {
+          "addBatch": 33553,
+          "commitOffsets": 38,
+          "getBatch": 9,
+          "latestOffset": 31,
+          "queryPlanning": 7,
+          "triggerExecution": 33671,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 16
+            },
+            "endOffset": {
+              "logOffset": 17
+            },
+            "latestOffset": null,
+            "numInputRows": 959744,
+            "inputRowsPerSecond": 13148.8,
+            "processedRowsPerSecond": 28503.6
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:38:35.702Z",
+        "batchId": 18,
+        "batchDuration": 99590,
+        "numInputRows": 6441072,
+        "inputRowsPerSecond": 191283.0,
+        "processedRowsPerSecond": 64675.9,
+        "durationMs": {
+          "addBatch": 99463,
+          "commitOffsets": 33,
+          "getBatch": 11,
+          "latestOffset": 32,
+          "queryPlanning": 7,
+          "triggerExecution": 99590,
+          "walCommit": 39
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 17
+            },
+            "endOffset": {
+              "logOffset": 18
+            },
+            "latestOffset": null,
+            "numInputRows": 6441072,
+            "inputRowsPerSecond": 191283.0,
+            "processedRowsPerSecond": 64675.9
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:40:15.294Z",
+        "batchId": 19,
+        "batchDuration": 38715,
+        "numInputRows": 1320094,
+        "inputRowsPerSecond": 13255.0,
+        "processedRowsPerSecond": 34097.7,
+        "durationMs": {
+          "addBatch": 38594,
+          "commitOffsets": 30,
+          "getBatch": 10,
+          "latestOffset": 38,
+          "queryPlanning": 7,
+          "triggerExecution": 38715,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 18
+            },
+            "endOffset": {
+              "logOffset": 19
+            },
+            "latestOffset": null,
+            "numInputRows": 1320094,
+            "inputRowsPerSecond": 13255.0,
+            "processedRowsPerSecond": 34097.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:40:54.010Z",
+        "batchId": 20,
+        "batchDuration": 59306,
+        "numInputRows": 2089410,
+        "inputRowsPerSecond": 53967.6,
+        "processedRowsPerSecond": 35231.0,
+        "durationMs": {
+          "addBatch": 59197,
+          "commitOffsets": 33,
+          "getBatch": 9,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 59306,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 19
+            },
+            "endOffset": {
+              "logOffset": 20
+            },
+            "latestOffset": null,
+            "numInputRows": 2089410,
+            "inputRowsPerSecond": 53967.6,
+            "processedRowsPerSecond": 35231.0
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:41:53.318Z",
+        "batchId": 21,
+        "batchDuration": 2871,
+        "numInputRows": 290,
+        "inputRowsPerSecond": 4.9,
+        "processedRowsPerSecond": 101.0,
+        "durationMs": {
+          "addBatch": 2763,
+          "commitOffsets": 32,
+          "getBatch": 9,
+          "latestOffset": 29,
+          "queryPlanning": 5,
+          "triggerExecution": 2871,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 20
+            },
+            "endOffset": {
+              "logOffset": 21
+            },
+            "latestOffset": null,
+            "numInputRows": 290,
+            "inputRowsPerSecond": 4.9,
+            "processedRowsPerSecond": 101.0
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:41:56.190Z",
+        "batchId": 22,
+        "batchDuration": 2800,
+        "numInputRows": 7450,
+        "inputRowsPerSecond": 2594.0,
+        "processedRowsPerSecond": 2660.7,
+        "durationMs": {
+          "addBatch": 2693,
+          "commitOffsets": 30,
+          "getBatch": 9,
+          "latestOffset": 30,
+          "queryPlanning": 6,
+          "triggerExecution": 2800,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 21
+            },
+            "endOffset": {
+              "logOffset": 22
+            },
+            "latestOffset": null,
+            "numInputRows": 7450,
+            "inputRowsPerSecond": 2594.0,
+            "processedRowsPerSecond": 2660.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:41:58.991Z",
+        "batchId": 23,
+        "batchDuration": 13986,
+        "numInputRows": 404594,
+        "inputRowsPerSecond": 144446.3,
+        "processedRowsPerSecond": 28928.5,
+        "durationMs": {
+          "addBatch": 13883,
+          "commitOffsets": 32,
+          "getBatch": 7,
+          "latestOffset": 28,
+          "queryPlanning": 5,
+          "triggerExecution": 13986,
+          "walCommit": 28
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 22
+            },
+            "endOffset": {
+              "logOffset": 23
+            },
+            "latestOffset": null,
+            "numInputRows": 404594,
+            "inputRowsPerSecond": 144446.3,
+            "processedRowsPerSecond": 28928.5
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:42:12.979Z",
+        "batchId": 24,
+        "batchDuration": 15307,
+        "numInputRows": 457820,
+        "inputRowsPerSecond": 32729.5,
+        "processedRowsPerSecond": 29909.2,
+        "durationMs": {
+          "addBatch": 15199,
+          "commitOffsets": 32,
+          "getBatch": 8,
+          "latestOffset": 29,
+          "queryPlanning": 6,
+          "triggerExecution": 15307,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 23
+            },
+            "endOffset": {
+              "logOffset": 24
+            },
+            "latestOffset": null,
+            "numInputRows": 457820,
+            "inputRowsPerSecond": 32729.5,
+            "processedRowsPerSecond": 29909.2
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:42:28.287Z",
+        "batchId": 25,
+        "batchDuration": 6964,
+        "numInputRows": 148842,
+        "inputRowsPerSecond": 9723.2,
+        "processedRowsPerSecond": 21373.1,
+        "durationMs": {
+          "addBatch": 6857,
+          "commitOffsets": 32,
+          "getBatch": 8,
+          "latestOffset": 30,
+          "queryPlanning": 6,
+          "triggerExecution": 6964,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 24
+            },
+            "endOffset": {
+              "logOffset": 25
+            },
+            "latestOffset": null,
+            "numInputRows": 148842,
+            "inputRowsPerSecond": 9723.2,
+            "processedRowsPerSecond": 21373.1
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:42:35.252Z",
+        "batchId": 26,
+        "batchDuration": 25983,
+        "numInputRows": 838246,
+        "inputRowsPerSecond": 120351.2,
+        "processedRowsPerSecond": 32261.3,
+        "durationMs": {
+          "addBatch": 25874,
+          "commitOffsets": 34,
+          "getBatch": 7,
+          "latestOffset": 28,
+          "queryPlanning": 5,
+          "triggerExecution": 25983,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 25
+            },
+            "endOffset": {
+              "logOffset": 26
+            },
+            "latestOffset": null,
+            "numInputRows": 838246,
+            "inputRowsPerSecond": 120351.2,
+            "processedRowsPerSecond": 32261.3
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:43:01.237Z",
+        "batchId": 27,
+        "batchDuration": 9872,
+        "numInputRows": 247630,
+        "inputRowsPerSecond": 9529.7,
+        "processedRowsPerSecond": 25084.1,
+        "durationMs": {
+          "addBatch": 9747,
+          "commitOffsets": 31,
+          "getBatch": 14,
+          "latestOffset": 33,
+          "queryPlanning": 10,
+          "triggerExecution": 9872,
+          "walCommit": 32
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 26
+            },
+            "endOffset": {
+              "logOffset": 27
+            },
+            "latestOffset": null,
+            "numInputRows": 247630,
+            "inputRowsPerSecond": 9529.7,
+            "processedRowsPerSecond": 25084.1
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:43:11.110Z",
+        "batchId": 28,
+        "batchDuration": 2493,
+        "numInputRows": 18,
+        "inputRowsPerSecond": 1.8,
+        "processedRowsPerSecond": 7.2,
+        "durationMs": {
+          "addBatch": 2387,
+          "commitOffsets": 31,
+          "getBatch": 9,
+          "latestOffset": 29,
+          "queryPlanning": 5,
+          "triggerExecution": 2493,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 27
+            },
+            "endOffset": {
+              "logOffset": 28
+            },
+            "latestOffset": null,
+            "numInputRows": 18,
+            "inputRowsPerSecond": 1.8,
+            "processedRowsPerSecond": 7.2
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:43:13.604Z",
+        "batchId": 29,
+        "batchDuration": 9820,
+        "numInputRows": 246994,
+        "inputRowsPerSecond": 99035.3,
+        "processedRowsPerSecond": 25152.1,
+        "durationMs": {
+          "addBatch": 9708,
+          "commitOffsets": 32,
+          "getBatch": 6,
+          "latestOffset": 38,
+          "queryPlanning": 5,
+          "triggerExecution": 9820,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 28
+            },
+            "endOffset": {
+              "logOffset": 29
+            },
+            "latestOffset": null,
+            "numInputRows": 246994,
+            "inputRowsPerSecond": 99035.3,
+            "processedRowsPerSecond": 25152.1
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:43:23.425Z",
+        "batchId": 30,
+        "batchDuration": 12101,
+        "numInputRows": 343504,
+        "inputRowsPerSecond": 34976.5,
+        "processedRowsPerSecond": 28386.4,
+        "durationMs": {
+          "addBatch": 11997,
+          "commitOffsets": 31,
+          "getBatch": 9,
+          "latestOffset": 28,
+          "queryPlanning": 6,
+          "triggerExecution": 12101,
+          "walCommit": 28
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 29
+            },
+            "endOffset": {
+              "logOffset": 30
+            },
+            "latestOffset": null,
+            "numInputRows": 343504,
+            "inputRowsPerSecond": 34976.5,
+            "processedRowsPerSecond": 28386.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:43:35.527Z",
+        "batchId": 31,
+        "batchDuration": 7172,
+        "numInputRows": 149826,
+        "inputRowsPerSecond": 12380.3,
+        "processedRowsPerSecond": 20890.4,
+        "durationMs": {
+          "addBatch": 7065,
+          "commitOffsets": 31,
+          "getBatch": 8,
+          "latestOffset": 31,
+          "queryPlanning": 5,
+          "triggerExecution": 7172,
+          "walCommit": 28
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 30
+            },
+            "endOffset": {
+              "logOffset": 31
+            },
+            "latestOffset": null,
+            "numInputRows": 149826,
+            "inputRowsPerSecond": 12380.3,
+            "processedRowsPerSecond": 20890.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:43:42.700Z",
+        "batchId": 32,
+        "batchDuration": 17701,
+        "numInputRows": 527804,
+        "inputRowsPerSecond": 73582.0,
+        "processedRowsPerSecond": 29817.8,
+        "durationMs": {
+          "addBatch": 17590,
+          "commitOffsets": 34,
+          "getBatch": 8,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 17701,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 31
+            },
+            "endOffset": {
+              "logOffset": 32
+            },
+            "latestOffset": null,
+            "numInputRows": 527804,
+            "inputRowsPerSecond": 73582.0,
+            "processedRowsPerSecond": 29817.8
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:00.403Z",
+        "batchId": 33,
+        "batchDuration": 7241,
+        "numInputRows": 150804,
+        "inputRowsPerSecond": 8518.6,
+        "processedRowsPerSecond": 20826.4,
+        "durationMs": {
+          "addBatch": 7130,
+          "commitOffsets": 34,
+          "getBatch": 9,
+          "latestOffset": 30,
+          "queryPlanning": 6,
+          "triggerExecution": 7241,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 32
+            },
+            "endOffset": {
+              "logOffset": 33
+            },
+            "latestOffset": null,
+            "numInputRows": 150804,
+            "inputRowsPerSecond": 8518.6,
+            "processedRowsPerSecond": 20826.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:07.645Z",
+        "batchId": 34,
+        "batchDuration": 8285,
+        "numInputRows": 201560,
+        "inputRowsPerSecond": 27832.1,
+        "processedRowsPerSecond": 24328.3,
+        "durationMs": {
+          "addBatch": 8141,
+          "commitOffsets": 32,
+          "getBatch": 12,
+          "latestOffset": 33,
+          "queryPlanning": 33,
+          "triggerExecution": 8285,
+          "walCommit": 32
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 33
+            },
+            "endOffset": {
+              "logOffset": 34
+            },
+            "latestOffset": null,
+            "numInputRows": 201560,
+            "inputRowsPerSecond": 27832.1,
+            "processedRowsPerSecond": 24328.3
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:15.931Z",
+        "batchId": 35,
+        "batchDuration": 8078,
+        "numInputRows": 188074,
+        "inputRowsPerSecond": 22697.8,
+        "processedRowsPerSecond": 23282.2,
+        "durationMs": {
+          "addBatch": 7972,
+          "commitOffsets": 32,
+          "getBatch": 8,
+          "latestOffset": 29,
+          "queryPlanning": 5,
+          "triggerExecution": 8078,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 34
+            },
+            "endOffset": {
+              "logOffset": 35
+            },
+            "latestOffset": null,
+            "numInputRows": 188074,
+            "inputRowsPerSecond": 22697.8,
+            "processedRowsPerSecond": 23282.2
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:24.010Z",
+        "batchId": 36,
+        "batchDuration": 4476,
+        "numInputRows": 63896,
+        "inputRowsPerSecond": 7908.9,
+        "processedRowsPerSecond": 14275.2,
+        "durationMs": {
+          "addBatch": 4364,
+          "commitOffsets": 35,
+          "getBatch": 8,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 4476,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 35
+            },
+            "endOffset": {
+              "logOffset": 36
+            },
+            "latestOffset": null,
+            "numInputRows": 63896,
+            "inputRowsPerSecond": 7908.9,
+            "processedRowsPerSecond": 14275.2
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:28.487Z",
+        "batchId": 37,
+        "batchDuration": 12811,
+        "numInputRows": 360216,
+        "inputRowsPerSecond": 80459.2,
+        "processedRowsPerSecond": 28117.7,
+        "durationMs": {
+          "addBatch": 12692,
+          "commitOffsets": 32,
+          "getBatch": 12,
+          "latestOffset": 32,
+          "queryPlanning": 8,
+          "triggerExecution": 12811,
+          "walCommit": 32
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 36
+            },
+            "endOffset": {
+              "logOffset": 37
+            },
+            "latestOffset": null,
+            "numInputRows": 360216,
+            "inputRowsPerSecond": 80459.2,
+            "processedRowsPerSecond": 28117.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:41.300Z",
+        "batchId": 38,
+        "batchDuration": 4839,
+        "numInputRows": 69834,
+        "inputRowsPerSecond": 5450.2,
+        "processedRowsPerSecond": 14431.5,
+        "durationMs": {
+          "addBatch": 4732,
+          "commitOffsets": 32,
+          "getBatch": 8,
+          "latestOffset": 30,
+          "queryPlanning": 6,
+          "triggerExecution": 4839,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 37
+            },
+            "endOffset": {
+              "logOffset": 38
+            },
+            "latestOffset": null,
+            "numInputRows": 69834,
+            "inputRowsPerSecond": 5450.2,
+            "processedRowsPerSecond": 14431.5
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:46.140Z",
+        "batchId": 39,
+        "batchDuration": 5956,
+        "numInputRows": 111512,
+        "inputRowsPerSecond": 23039.7,
+        "processedRowsPerSecond": 18722.6,
+        "durationMs": {
+          "addBatch": 5841,
+          "commitOffsets": 32,
+          "getBatch": 7,
+          "latestOffset": 38,
+          "queryPlanning": 6,
+          "triggerExecution": 5956,
+          "walCommit": 28
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 38
+            },
+            "endOffset": {
+              "logOffset": 39
+            },
+            "latestOffset": null,
+            "numInputRows": 111512,
+            "inputRowsPerSecond": 23039.7,
+            "processedRowsPerSecond": 18722.6
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:52.097Z",
+        "batchId": 40,
+        "batchDuration": 6106,
+        "numInputRows": 121294,
+        "inputRowsPerSecond": 20361.6,
+        "processedRowsPerSecond": 19864.7,
+        "durationMs": {
+          "addBatch": 5997,
+          "commitOffsets": 33,
+          "getBatch": 9,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 6106,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 39
+            },
+            "endOffset": {
+              "logOffset": 40
+            },
+            "latestOffset": null,
+            "numInputRows": 121294,
+            "inputRowsPerSecond": 20361.6,
+            "processedRowsPerSecond": 19864.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:44:58.204Z",
+        "batchId": 41,
+        "batchDuration": 3616,
+        "numInputRows": 38454,
+        "inputRowsPerSecond": 6296.7,
+        "processedRowsPerSecond": 10634.4,
+        "durationMs": {
+          "addBatch": 3508,
+          "commitOffsets": 31,
+          "getBatch": 8,
+          "latestOffset": 30,
+          "queryPlanning": 7,
+          "triggerExecution": 3616,
+          "walCommit": 28
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 40
+            },
+            "endOffset": {
+              "logOffset": 41
+            },
+            "latestOffset": null,
+            "numInputRows": 38454,
+            "inputRowsPerSecond": 6296.7,
+            "processedRowsPerSecond": 10634.4
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:45:01.821Z",
+        "batchId": 42,
+        "batchDuration": 7446,
+        "numInputRows": 163214,
+        "inputRowsPerSecond": 45124.1,
+        "processedRowsPerSecond": 21919.7,
+        "durationMs": {
+          "addBatch": 7340,
+          "commitOffsets": 33,
+          "getBatch": 6,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 7446,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 41
+            },
+            "endOffset": {
+              "logOffset": 42
+            },
+            "latestOffset": null,
+            "numInputRows": 163214,
+            "inputRowsPerSecond": 45124.1,
+            "processedRowsPerSecond": 21919.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:45:09.269Z",
+        "batchId": 43,
+        "batchDuration": 3523,
+        "numInputRows": 28472,
+        "inputRowsPerSecond": 3822.8,
+        "processedRowsPerSecond": 8081.7,
+        "durationMs": {
+          "addBatch": 3416,
+          "commitOffsets": 30,
+          "getBatch": 9,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 3523,
+          "walCommit": 28
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 42
+            },
+            "endOffset": {
+              "logOffset": 43
+            },
+            "latestOffset": null,
+            "numInputRows": 28472,
+            "inputRowsPerSecond": 3822.8,
+            "processedRowsPerSecond": 8081.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:45:12.792Z",
+        "batchId": 44,
+        "batchDuration": 11932,
+        "numInputRows": 324434,
+        "inputRowsPerSecond": 92090.3,
+        "processedRowsPerSecond": 27190.2,
+        "durationMs": {
+          "addBatch": 11826,
+          "commitOffsets": 34,
+          "getBatch": 7,
+          "latestOffset": 29,
+          "queryPlanning": 5,
+          "triggerExecution": 11932,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 43
+            },
+            "endOffset": {
+              "logOffset": 44
+            },
+            "latestOffset": null,
+            "numInputRows": 324434,
+            "inputRowsPerSecond": 92090.3,
+            "processedRowsPerSecond": 27190.2
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:45:24.725Z",
+        "batchId": 45,
+        "batchDuration": 13716,
+        "numInputRows": 403456,
+        "inputRowsPerSecond": 33810.1,
+        "processedRowsPerSecond": 29415.0,
+        "durationMs": {
+          "addBatch": 13604,
+          "commitOffsets": 33,
+          "getBatch": 10,
+          "latestOffset": 32,
+          "queryPlanning": 6,
+          "triggerExecution": 13716,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 44
+            },
+            "endOffset": {
+              "logOffset": 45
+            },
+            "latestOffset": null,
+            "numInputRows": 403456,
+            "inputRowsPerSecond": 33810.1,
+            "processedRowsPerSecond": 29415.0
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:45:38.443Z",
+        "batchId": 46,
+        "batchDuration": 4294,
+        "numInputRows": 56858,
+        "inputRowsPerSecond": 4144.8,
+        "processedRowsPerSecond": 13241.3,
+        "durationMs": {
+          "addBatch": 4181,
+          "commitOffsets": 35,
+          "getBatch": 12,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 4294,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 45
+            },
+            "endOffset": {
+              "logOffset": 46
+            },
+            "latestOffset": null,
+            "numInputRows": 56858,
+            "inputRowsPerSecond": 4144.8,
+            "processedRowsPerSecond": 13241.3
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:45:42.738Z",
+        "batchId": 47,
+        "batchDuration": 17975,
+        "numInputRows": 555946,
+        "inputRowsPerSecond": 129440.3,
+        "processedRowsPerSecond": 30928.8,
+        "durationMs": {
+          "addBatch": 17863,
+          "commitOffsets": 35,
+          "getBatch": 8,
+          "latestOffset": 31,
+          "queryPlanning": 6,
+          "triggerExecution": 17974,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 46
+            },
+            "endOffset": {
+              "logOffset": 47
+            },
+            "latestOffset": null,
+            "numInputRows": 555946,
+            "inputRowsPerSecond": 129440.3,
+            "processedRowsPerSecond": 30928.8
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "83ae9086-2cee-4c32-87b0-f108e97c9b26",
+        "runId": "a6ea4e3d-1e24-499f-8db9-87d6b1ff1d61",
+        "name": null,
+        "timestamp": "2026-11-24T04:46:00.714Z",
+        "batchId": 48,
+        "batchDuration": 7262,
+        "numInputRows": 156578,
+        "inputRowsPerSecond": 8710.4,
+        "processedRowsPerSecond": 21561.3,
+        "durationMs": {
+          "addBatch": 7144,
+          "commitOffsets": 33,
+          "getBatch": 11,
+          "latestOffset": 33,
+          "queryPlanning": 5,
+          "triggerExecution": 7262,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/available]",
+            "startOffset": {
+              "logOffset": 47
+            },
+            "endOffset": {
+              "logOffset": 48
+            },
+            "latestOffset": null,
+            "numInputRows": 156578,
+            "inputRowsPerSecond": 8710.4,
+            "processedRowsPerSecond": 21561.3
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      }
+    ],
+    "recovery": [
+      {
+        "test": "partial_aggregate_ignored",
+        "batch_id": 1,
+        "passed": true
+      },
+      {
+        "test": "replayed_committed_sink_batch",
+        "batch_id": 1,
+        "passed": true
+      },
+      {
+        "test": "restart_same_query_new_run",
+        "batch_id": 1,
+        "passed": true
+      },
+      {
+        "test": "durable_sink_hash_unchanged",
+        "batch_id": 1,
+        "passed": true
+      },
+      {
+        "test": "checkpoint_and_sink_reconcile",
+        "batch_id": 48,
+        "passed": true
+      }
+    ],
+    "checkpoint_bytes": 78005,
+    "elapsed_seconds": 862.319
+  },
+  "comparison-1": {
+    "attempts": [
+      {
+        "query_id": "5d712057-89f4-4e6a-830d-1b72ce273dc7",
+        "run_id": "e7eb9a5b-a94d-4c7a-a930-26e985adc19e",
+        "outcome": "terminated"
+      }
+    ],
+    "progress": [
+      {
+        "id": "5d712057-89f4-4e6a-830d-1b72ce273dc7",
+        "runId": "e7eb9a5b-a94d-4c7a-a930-26e985adc19e",
+        "name": null,
+        "timestamp": "2026-11-24T04:46:08.345Z",
+        "batchId": 0,
+        "batchDuration": 15605,
+        "numInputRows": 471128,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 30190.8,
+        "durationMs": {
+          "addBatch": 15494,
+          "commitOffsets": 31,
+          "getBatch": 7,
+          "latestOffset": 32,
+          "queryPlanning": 9,
+          "triggerExecution": 15605,
+          "walCommit": 28
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/comparison-input]",
+            "startOffset": null,
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 471128,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 30190.8
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "5d712057-89f4-4e6a-830d-1b72ce273dc7",
+        "runId": "e7eb9a5b-a94d-4c7a-a930-26e985adc19e",
+        "name": null,
+        "timestamp": "2026-11-24T04:46:23.951Z",
+        "batchId": 1,
+        "batchDuration": 10844,
+        "numInputRows": 285648,
+        "inputRowsPerSecond": 18303.7,
+        "processedRowsPerSecond": 26341.6,
+        "durationMs": {
+          "addBatch": 10737,
+          "commitOffsets": 32,
+          "getBatch": 9,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 10844,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/comparison-input]",
+            "startOffset": {
+              "logOffset": 0
+            },
+            "endOffset": {
+              "logOffset": 1
+            },
+            "latestOffset": null,
+            "numInputRows": 285648,
+            "inputRowsPerSecond": 18303.7,
+            "processedRowsPerSecond": 26341.6
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "5d712057-89f4-4e6a-830d-1b72ce273dc7",
+        "runId": "e7eb9a5b-a94d-4c7a-a930-26e985adc19e",
+        "name": null,
+        "timestamp": "2026-11-24T04:46:34.796Z",
+        "batchId": 2,
+        "batchDuration": 6362,
+        "numInputRows": 134586,
+        "inputRowsPerSecond": 12410.0,
+        "processedRowsPerSecond": 21154.7,
+        "durationMs": {
+          "addBatch": 6254,
+          "commitOffsets": 34,
+          "getBatch": 8,
+          "latestOffset": 29,
+          "queryPlanning": 5,
+          "triggerExecution": 6361,
+          "walCommit": 28
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/comparison-input]",
+            "startOffset": {
+              "logOffset": 1
+            },
+            "endOffset": {
+              "logOffset": 2
+            },
+            "latestOffset": null,
+            "numInputRows": 134586,
+            "inputRowsPerSecond": 12410.0,
+            "processedRowsPerSecond": 21154.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "5d712057-89f4-4e6a-830d-1b72ce273dc7",
+        "runId": "e7eb9a5b-a94d-4c7a-a930-26e985adc19e",
+        "name": null,
+        "timestamp": "2026-11-24T04:46:41.159Z",
+        "batchId": 3,
+        "batchDuration": 30081,
+        "numInputRows": 997988,
+        "inputRowsPerSecond": 156842.4,
+        "processedRowsPerSecond": 33176.7,
+        "durationMs": {
+          "addBatch": 29965,
+          "commitOffsets": 35,
+          "getBatch": 9,
+          "latestOffset": 30,
+          "queryPlanning": 7,
+          "triggerExecution": 30080,
+          "walCommit": 32
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/comparison-input]",
+            "startOffset": {
+              "logOffset": 2
+            },
+            "endOffset": {
+              "logOffset": 3
+            },
+            "latestOffset": null,
+            "numInputRows": 997988,
+            "inputRowsPerSecond": 156842.4,
+            "processedRowsPerSecond": 33176.7
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      }
+    ],
+    "recovery": [
+      {
+        "test": "checkpoint_and_sink_reconcile",
+        "batch_id": 3,
+        "passed": true
+      }
+    ],
+    "checkpoint_bytes": 5529,
+    "elapsed_seconds": 63.017
+  },
+  "comparison-2": {
+    "attempts": [
+      {
+        "query_id": "15be96f5-844a-410b-bee8-f0fe4306c59c",
+        "run_id": "d0131fcb-2120-43a1-be15-97ea9ef8d126",
+        "outcome": "terminated"
+      }
+    ],
+    "progress": [
+      {
+        "id": "15be96f5-844a-410b-bee8-f0fe4306c59c",
+        "runId": "d0131fcb-2120-43a1-be15-97ea9ef8d126",
+        "name": null,
+        "timestamp": "2026-11-24T04:47:11.332Z",
+        "batchId": 0,
+        "batchDuration": 17134,
+        "numInputRows": 756776,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 44168.1,
+        "durationMs": {
+          "addBatch": 17029,
+          "commitOffsets": 31,
+          "getBatch": 7,
+          "latestOffset": 31,
+          "queryPlanning": 5,
+          "triggerExecution": 17134,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/comparison-input]",
+            "startOffset": null,
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 756776,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 44168.1
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "15be96f5-844a-410b-bee8-f0fe4306c59c",
+        "runId": "d0131fcb-2120-43a1-be15-97ea9ef8d126",
+        "name": null,
+        "timestamp": "2026-11-24T04:47:28.468Z",
+        "batchId": 1,
+        "batchDuration": 30616,
+        "numInputRows": 1132574,
+        "inputRowsPerSecond": 66093.3,
+        "processedRowsPerSecond": 36992.9,
+        "durationMs": {
+          "addBatch": 30510,
+          "commitOffsets": 31,
+          "getBatch": 9,
+          "latestOffset": 29,
+          "queryPlanning": 5,
+          "triggerExecution": 30616,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/kaggle/temp/mmds_phase6/replay/comparison-input]",
+            "startOffset": {
+              "logOffset": 0
+            },
+            "endOffset": {
+              "logOffset": 1
+            },
+            "latestOffset": null,
+            "numInputRows": 1132574,
+            "inputRowsPerSecond": 66093.3,
+            "processedRowsPerSecond": 36992.9
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      }
+    ],
+    "recovery": [
+      {
+        "test": "checkpoint_and_sink_reconcile",
+        "batch_id": 1,
+        "passed": true
+      }
+    ],
+    "checkpoint_bytes": 3037,
+    "elapsed_seconds": 47.842
+  }
+}

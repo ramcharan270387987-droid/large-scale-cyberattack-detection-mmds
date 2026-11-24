@@ -28,9 +28,10 @@ def read(path):
     return json.loads(path.read_text())
 
 
-def cohorts(clean, names, phase4, experiment, days):
+def cohorts(clean, names, phase4, experiment, days, extra_metadata=()):
     # Exactly the Phase 4 predictor digest, with clean timestamps carried only as metadata.
-    projected = clean.select(*META, "parsed_event_time", "record_fingerprint", *[finite(x).alias(x) for x in names])
+    projected = clean.select(*META, "parsed_event_time", "record_fingerprint", *extra_metadata,
+                             *[finite(x).alias(x) for x in names])
     projected = projected.withColumn("predictor_key", F.unhex(F.sha2(
         F.concat(F.lit(phase4["version"] + "\u0000"), F.to_json(F.array(*names))), 256)))
     if experiment == "G":

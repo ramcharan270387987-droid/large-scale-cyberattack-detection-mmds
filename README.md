@@ -59,3 +59,7 @@ Phase 4 compares majority and duration baselines, Logistic Regression, Random Fo
 ## Phase 5 clustering and pattern evolution
 
 Phase 5 compares global retrospective and reference-trained K-Means fits on the verified Phase 2 Notebook Output. See the [design](docs/phase5_clustering_protocol.md), [measured results and figures](reports/phase5_clustering_results.md), and [pattern analysis](docs/phase5_pattern_evolution.md). Build notebook versions using `python scripts/build_phase5_notebook.py --experiment G|B|C --output PATH`.
+
+## Phase 6 historical Structured Streaming replay
+
+Phase 6 replays the retained chronological B cohorts with the frozen Phase 4 classifiers and the frozen Phase 5 K-Means pipeline. See the [replay protocol](docs/phase6_replay_protocol.md), [results and figures](reports/phase6_streaming_results.md), and [interpretation](docs/phase6_drift_interpretation.md). Build the replay notebook with `python scripts/build_phase6_notebook.py`. Build its private model mirror with `python scripts/build_phase6_model_mirror.py PATH` using the configured Kaggle credentials. Attach the verified Phase 2 output and the model mirror listed in the run manifest.

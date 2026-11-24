@@ -1,0 +1,27 @@
+{
+  "version": "phase6-v1",
+  "phase2": "ramcharan2345/mmds-phase-2-spark-data-engineering/1",
+  "phase4": "ramcharan2345/mmds-phase-4-supervised-attack-detection/2",
+  "phase5": "ramcharan2345/mmds-phase-5-clustering-pattern-evolution/2",
+  "window_hours": 3,
+  "files_per_trigger": 1,
+  "comparison_files_per_trigger": 2,
+  "comparison_chunks": 4,
+  "max_chunks": 90,
+  "max_staging_bytes": 8589934592,
+  "max_chunk_rows": 4000000,
+  "features": {
+    "flow_duration": [0, 100, 10000, 1000000, 10000000, 60000000],
+    "tot_fwd_pkts": [0, 1, 2, 5, 20, 100],
+    "totlen_fwd_pkts": [0, 64, 128, 512, 1460, 10000],
+    "pkt_len_mean": [0, 32, 64, 128, 512, 1200],
+    "flow_iat_mean": [0, 100, 10000, 100000, 1000000, 10000000],
+    "flow_pkts_s": [0, 1, 10, 100, 1000, 10000]
+  },
+  "score_bins": 2048,
+  "distance_bounds": [0, 1, 2, 4, 8, 12, 16, 20, 32, 64, 128, 256, 512, 1024],
+  "alert_thresholds": {"INPUT_SHIFT": 0.10, "SCORE_SHIFT": 0.10, "CLUSTER_SHIFT": 0.10, "NOVELTY_RATE": 0.015, "PERFORMANCE_WARNING": 0.20},
+  "minimum_window": 10000,
+  "minimum_per_class": 100,
+  "spark": {"master": "local[4]", "driver_memory": "8g", "shuffle_partitions": 48, "input_partition_bytes": 16777216}
+}
