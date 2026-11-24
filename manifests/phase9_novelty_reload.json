@@ -1,0 +1,25 @@
+{
+  "schema": "phase9-novelty-reload-v1",
+  "models": {
+    "C": {
+      "kernel_version": 13,
+      "artifact": "mmds_phase9_hierarchy/family/models/family_kmeans",
+      "spark_version": "4.3.0",
+      "synthetic_cluster_distance": [
+        [
+          0,
+          122031881288.06297
+        ],
+        [
+          0,
+          135279716024.34103
+        ],
+        [
+          0,
+          135271109201.61807
+        ]
+      ],
+      "reloaded_probe_rows": 3
+    }
+  }
+}

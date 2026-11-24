@@ -14,8 +14,7 @@ original selected classifier.
 | Duplicate-group training weights | 65.51% | 0.565 | 94.97% | 0.787 |
 | Capped inverse, seed 23014 | 65.86% | 0.563 | 91.15% | 0.726 |
 
-Second-seed and duplicate weighting effects were material under both
-evaluation estimands. Unweighted fitting improved flow accuracy while
+The second seed reduced macro F1 under both weighting schemes. Duplicate weighting reduced flow macro F1 and slightly increased group-weighted macro F1. Unweighted fitting improved flow accuracy while
 reducing flow macro F1. Group weights change the target from a random flow
 to a random predictor group, which explains why the two evaluation columns
 can give different impressions.
