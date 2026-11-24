@@ -2,7 +2,7 @@
   "schema": "phase11-experiments-v1",
   "protocol_version": "phase11-v1",
   "starting_git_sha": "901a9f33954653cf6b327aa366700d7b91d997da",
-  "complete": false,
+  "complete": true,
   "stages": {
     "11A": {
       "status": "COMPLETE AND VERIFIED",
@@ -62,11 +62,9 @@
       "remaining": []
     }
   },
-  "pending": [
-    "Final GitHub synchronization and acceptance attestation"
-  ],
+  "pending": [],
   "phase12_started": false,
-  "final_verdict": "Validated evidence pending final GitHub synchronization",
+  "final_verdict": "READY FOR PHASE 12",
   "limitations": [
     "Retrospective historical corpus without true drift labels",
     "Historical binary DDM unsupported without within-window binary error order",
@@ -280,5 +278,28 @@
     "native_state_counters": "arrivals, valid and suppressed updates; legacy unknown counters retained",
     "distribution_state": "JS/PSI JSON reference state passed three probes each",
     "preview_unmeasured_state": "unmeasured original non-River state sizes shown unavailable"
+  },
+  "completed_stage_validation_commit": "eea4b72f5ea2a95c31af69d8eec10c2e315fe6fd",
+  "acceptance_gate": {
+    "original_protocol_preserved": true,
+    "six_detectors_validated": true,
+    "synthetic_and_stationary_evidence": true,
+    "historical_population_reconciled": true,
+    "label_clocks_verified": true,
+    "remaining_robustness_completed": true,
+    "agreement_and_performance_associations_verified": true,
+    "state_and_failure_recovery_verified": true,
+    "registry_and_unsupported_populations_audited": true,
+    "figures_and_tables_verified": true,
+    "preview_and_real_download_verified": true,
+    "complete_regression_suite_passed": true,
+    "kaggle_versions_1_and_2_verified": true,
+    "phase12_not_started": true
+  },
+  "protected_references": {
+    "work": "16ef2c23bbfe33c497d32863173455185fe868ed",
+    "main": "e6215d6834ce06ba60fe9c7e65ce4a97b611343d",
+    "baseline_tag_object": "3295d05e5f873355ed0c5140f45f4c3b58047043",
+    "baseline_tag_target": "16ef2c23bbfe33c497d32863173455185fe868ed"
   }
 }
