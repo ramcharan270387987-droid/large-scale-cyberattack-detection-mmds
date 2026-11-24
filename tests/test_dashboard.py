@@ -1,5 +1,6 @@
 """Contract, presentation and interaction checks for the aggregate dashboard."""
 
+import csv
 from pathlib import Path
 import shutil
 import tempfile
@@ -13,6 +14,7 @@ from dashboard.sections.replay import filter_alerts
 from dashboard.components.ui import window_labels
 from dashboard.validation import EvidenceError, ROOT, parse_table, verify_package
 from scripts.build_dashboard_package import build
+from scripts.audit_dashboard_evidence import audit
 
 
 class DashboardEvidenceTest(unittest.TestCase):
@@ -43,6 +45,9 @@ class DashboardEvidenceTest(unittest.TestCase):
             with self.subTest(content=content), self.assertRaises(EvidenceError):
                 parse_table(content, ["id", "count"], "fixture")
 
+    def test_research_arithmetic_and_lineage(self):
+        audit()
+
     def test_protocol_and_confusion(self):
         rows = models_for(table("phase4_metrics"), "B", "test")
         self.assertEqual(set(rows.protocol), {"B"})
@@ -72,6 +77,12 @@ class DashboardEvidenceTest(unittest.TestCase):
         self.assertTrue((filtered.rows >= 10000).all())
         payload = raw.loc[filtered.index].to_csv(index=False).encode()
         self.assertEqual(len(parse_table(payload, list(raw.columns), "export")), len(filtered))
+        high = raw[raw.severity == "high"]
+        exact = table("phase6_alerts", text=True).loc[high.index].to_csv(index=False).encode()
+        exported = parse_table(exact, list(raw.columns), "high severity export")
+        with (ROOT / "reports/phase6_alerts.csv").open(newline="") as handle:
+            self.assertEqual(exported, [r for r in csv.DictReader(handle) if r["severity"] == "high"])
+        self.assertEqual(len(exported), 62)
 
 
 class DashboardAppTest(unittest.TestCase):

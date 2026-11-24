@@ -10,7 +10,13 @@ from dashboard.validation import ROOT
 def architecture(summary):
     st.title("Architecture and methodology")
     st.caption("Spark research workflow with an aggregate-only Streamlit presentation layer.")
-    st.image(str(ROOT / "dashboard/assets/architecture.svg"), width="stretch")
+    with st.container(key="architecture-diagram"):
+        st.image(str(ROOT / "dashboard/assets/architecture.svg"), width="stretch")
+    st.markdown("""<ol class="mmds-architecture-mobile" aria-label="Research pipeline">
+<li>Raw historical captures</li><li>Spark ingestion and schema checks</li>
+<li>Cleaning and versioned Parquet</li><li>Spark SQL traffic aggregates</li>
+<li>Frozen MLlib classifiers and K-Means</li><li>Ordered Structured Streaming replay</li>
+<li>Window metrics and alert aggregates</li><li>Streamlit evidence dashboard</li></ol>""", unsafe_allow_html=True)
     r = summary["sql"]["resources"]
     metrics(("Spark version", r["spark_version"]), ("Research workers", r["default_parallelism"]),
             ("Evidence contract", evidence()[0]["schema_version"]))

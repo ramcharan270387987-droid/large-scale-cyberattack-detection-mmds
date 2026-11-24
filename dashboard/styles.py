@@ -13,7 +13,10 @@ def apply():
     padding: 1rem; min-width: 0;}
 [data-testid="stMetricValue"] {font-variant-numeric: tabular-nums; font-size: clamp(1.25rem, 2.2vw, 2rem);}
 [data-testid="stMetricLabel"] {color: #b3c8c4;}
-[data-testid="stCaptionContainer"] {color: #a8bfbb;}
+[data-testid="stCaptionContainer"] p {color: #a8bfbb;}
+[data-testid="stDataFrame"] > .stElementToolbar,
+div:has(> [data-testid="stVegaLiteChart"]) > .stElementToolbar {z-index: 3;}
+.mmds-architecture-mobile {display: none;}
 .mmds-brand {border-bottom: 1px solid #314749; padding: .4rem 0 1rem; margin-bottom: .8rem;}
 .mmds-brand b {font-size: 1.2rem; letter-spacing: -.04em;}
 .mmds-brand p {color: #a8bfbb; font-size: .88rem; margin: .15rem 0 0;}
@@ -35,6 +38,10 @@ def apply():
 @media(max-width: 700px) {
     [data-testid="stMainBlockContainer"] {padding: 3.2rem 1rem 2rem;}
     .mmds-hero {padding: 1.25rem;}
+    .st-key-architecture-diagram {display: none;}
+    .mmds-architecture-mobile {display: block; padding: .85rem 1.1rem .85rem 2.4rem;
+        border: 1px solid #345354; border-radius: 12px; background: #172629;}
+    .mmds-architecture-mobile li {padding: .3rem 0;}
 }
 </style>
 """, unsafe_allow_html=True)

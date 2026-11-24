@@ -76,7 +76,7 @@ python scripts/validate_dashboard_package.py
 python -m streamlit run dashboard/app.py
 ```
 
-Open the local address printed by Streamlit. Public deployment is ready for manual setup through Streamlit Community Cloud. [Deployment settings](docs/dashboard_deployment.md) · [Quick start](docs/dashboard_quickstart.md) · [Architecture](docs/system_architecture.md)
+Open the local address printed by Streamlit. The maintainer provided a [public Streamlit URL](https://large-scale-cyberattack-detection-mmds-jbsvxctpmtssjjcbeaky6d.streamlit.app/). Public verification of the final QA revision remains pending because the Codex Cloud proxy blocked the connection. [Deployment settings](docs/dashboard_deployment.md) · [Quick start](docs/dashboard_quickstart.md) · [Architecture](docs/system_architecture.md)
 
 Random Forest test recall fell from 82.82% on grouped-random traffic to 0.20% on later captures at threshold 0.5. Web novelty flags reached 55.78% recall at 1.50% precision. Historical replay covered 15,322,987 retained flows in 49 microbatches, with 102 monitoring records. These measures characterize the dataset, evaluation cohorts and single-node historical replay. Live detection efficacy and concept drift require additional evidence.
 
@@ -85,3 +85,5 @@ Random Forest test recall fell from 82.82% on grouped-random traffic to 0.20% on
 ![Dashboard overview captured in local Chrome](docs/screenshots/overview.jpg)
 
 [Chronological model comparison screenshot](docs/screenshots/chronological.jpg)
+
+[Final dashboard QA and responsive screenshots](reports/dashboard_final_qa.md)

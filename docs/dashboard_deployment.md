@@ -1,6 +1,8 @@
 # Dashboard deployment
 
-**Status: ready for manual deployment.** The Codex Cloud browser returned a tunnel connection failure and the Cloud proxy returned HTTP 403 for the Streamlit Community Cloud dashboard. An authorized Streamlit account and a reachable Community Cloud UI are needed to create the app. A public deployment URL has yet to be verified.
+**QA status: public verification pending.** The maintainer supplied the [public Streamlit URL](https://large-scale-cyberattack-detection-mmds-jbsvxctpmtssjjcbeaky6d.streamlit.app/). During final QA the Cloud proxy returned HTTP 403 and Chromium could not establish the tunnel. The post-audit UI was tested locally. The published host’s active revision could not be observed from this environment.
+
+The existing app should track repository `ramcharan270387987-droid/large-scale-cyberattack-detection-mmds`, branch `work`, and entry point `dashboard/app.py`. In Streamlit Community Cloud, confirm the app is following that branch and that the latest revision rebuilt successfully. Follow the steps below only when setting up a new deployment.
 
 1. Sign in to [Streamlit Community Cloud](https://share.streamlit.io/) using a GitHub account authorized for the repository.
 2. Choose **Create app** and select repository `ramcharan270387987-droid/large-scale-cyberattack-detection-mmds`, branch `work`, and main file path `dashboard/app.py`.

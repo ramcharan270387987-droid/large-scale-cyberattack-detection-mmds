@@ -6,7 +6,8 @@ import streamlit as st
 
 from dashboard.data_loader import evidence, lineage
 
-COLORS = ["#58e0c1", "#ffae79", "#99acff", "#de8bca", "#e6d57a", "#8dc8f3", "#c4e299"]
+COLORS = ["#58e0c1", "#ffae79", "#99acff", "#de8bca", "#e6d57a", "#8dc8f3",
+          "#c4e299", "#ff7e86", "#bb93f5", "#b99c76", "#56a7a3", "#f1c4d2"]
 REPO = "https://github.com/ramcharan270387987-droid/large-scale-cyberattack-detection-mmds"
 EXPERIMENTS = {"G": "Global retrospective", "B": "Historical reference", "C": "Web capture holdout"}
 PROTOCOLS = {"A": "Grouped random", "B": "Chronological", "C": "Web attack capture holdout"}

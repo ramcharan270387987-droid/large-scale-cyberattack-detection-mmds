@@ -1,12 +1,30 @@
 """Overview and Phase 3 data views."""
 
 from math import log10
+import json
+
+import pandas as pd
 
 import altair as alt
 import streamlit as st
 
 from dashboard.components.ui import chart, count, metrics, pct, selector, show, source
 from dashboard.data_loader import table
+
+
+FEATURE_UNITS = {
+    "flow_duration": "µs", "flow_iat_mean": "µs", "flow_byts_s": "bytes/s", "flow_pkts_s": "packets/s",
+    "pkt_len_mean": "bytes", "total_bytes": "bytes", "total_packets": "packets",
+    "tot_fwd_pkts": "packets", "tot_bwd_pkts": "packets",
+}
+
+
+def display_statistics(stats, feature):
+    subset = stats[stats.feature == feature].drop(columns="quantiles")
+    st.caption(f"Distribution units · {FEATURE_UNITS.get(feature, 'source feature units')}. P10–P99 are approximate.")
+    quantiles = pd.DataFrame(stats.loc[subset.index, "quantiles"].map(json.loads).tolist(), index=subset.index,
+                             columns=["P10", "P50", "P90", "P99"])
+    show(subset.join(quantiles))
 
 
 def overview(summary):
@@ -65,7 +83,7 @@ def explorer(summary):
             by_day = by_day[by_day.source_day == day]
         if attack != "All families":
             by_day = by_day[by_day.attack_family == attack]
-        if by_day.empty:
+        if not by_day.records.sum():
             st.info("The selected family has no recorded flows on this capture day.")
         else:
             chart(alt.Chart(by_day).mark_bar().encode(
@@ -76,12 +94,14 @@ def explorer(summary):
         show(subset if label == "All labels" else subset[subset.original_label == label])
     with b:
         for name, title, columns in (("protocols", "Protocol composition", ["population", "attack_family", "protocol", "records"]),
-                                      ("destination_ports", "Ranked destination ports", ["attack_family", "dst_port", "records", "population_records", "rank"])):
+                                      ("destination_ports", "Ranked destination ports", ["population", "scope", "attack_family", "dst_port",
+                                                                                         "records", "population_records", "rank"])):
             st.subheader(title)
             data = table("phase3_" + name)
             if attack != "All families":
                 data = data[data.attack_family == attack]
             field = "protocol" if name == "protocols" else "dst_port"
+            data = data.assign(**{field: data[field].astype("Int64")})
             selected = selector("Protocol code" if field == "protocol" else "Destination port", data, field,
                                 all_label="Show all")
             if selected != "Show all":
@@ -90,10 +110,15 @@ def explorer(summary):
             show(data, columns)
     with c:
         stats = table("phase3_feature_statistics")
-        feature = selector("Numerical feature", stats, "feature")
-        st.caption("Valid and total flow counts by population. Means and ranges use original feature units.")
-        show(stats[stats.feature == feature])
-        show(table("phase3_feature_missingness").query("feature == @feature"))
+        missingness = table("phase3_feature_missingness")
+        feature = st.selectbox("Numerical feature", sorted(set(stats.feature) | set(missingness.feature)))
+        if feature in set(stats.feature):
+            display_statistics(stats, feature)
+        else:
+            st.info("Phase 3 published missingness for this feature. Distribution summaries are available for selected features.")
+        missing = missingness[missingness.feature == feature].copy()
+        missing["Missing rate"] = missing.missing / missing.records
+        show(missing)
         st.subheader("Duplicate and quality audit")
         show(table("phase3_duplicate_quality"))
     source("phase3_daily_traffic", "phase3_family_by_day", "phase3_original_labels", "phase3_protocols", "phase3_destination_ports",
@@ -120,7 +145,7 @@ def analytics(summary):
     stat = table("phase3_feature_statistics")
     feature = st.selectbox("Flow statistic", ["flow_duration", "total_packets", "total_bytes"],
                            format_func={"flow_duration": "Flow duration (µs)", "total_packets": "Packet count", "total_bytes": "Byte volume"}.get)
-    show(stat[stat.feature == feature])
+    display_statistics(stat, feature)
     left, right = st.columns(2)
     with left:
         st.subheader("Feature correlations")

@@ -6,7 +6,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-from dashboard.components.ui import chart, count, metrics, pct, selector, show, source, window_labels
+from dashboard.components.ui import chart, count, metrics, pct, show, source, window_labels
 from dashboard.data_loader import table
 
 
@@ -59,10 +59,12 @@ def replay(summary):
         shift["Window"] = window_labels(shift)
         show(shift[(shift.source_day == day) & (shift.Window == selected)],
              ["category", "detector", "value", "reference_value", "delta", "threshold", "rows", "support"])
+        st.caption("Distribution divergences are in Jensen–Shannon bits. Novelty rates use all rows in each comparison population. Recall uses its attack rows.")
         alerts = table("phase6_alerts")
         timeline = alerts.groupby(["source_day", "severity"], as_index=False).size()
         chart(alt.Chart(timeline).mark_bar().encode(x=alt.X("source_day:N", title="Capture day"),
-              y=alt.Y("size:Q", title="Alert records"), color="severity:N",
+              y=alt.Y("size:Q", title="Alert records"), color=alt.Color("severity:N", title="Severity",
+                  scale=alt.Scale(domain=["warning", "high"], range=["#e6d57a", "#ff7e86"])),
               tooltip=["source_day:N", "severity:N", "size:Q"]).properties(height=165))
         st.caption("Distribution changes and retrospective performance warnings have distinct evidence. These shifts do not establish concept drift.")
     with c:
@@ -98,8 +100,8 @@ def alerts(summary):
     rows = filter_alerts(raw, category, severity, day, window, detector, support)
     metrics(("Matching alerts", count(len(rows))), ("High severity", count((rows.severity == "high").sum())),
             ("Label-backed records", count(rows.labels_used.sum())))
-    st.download_button("Download filtered alerts CSV", source_rows.loc[rows.index].to_csv(index=False).encode("utf-8"),
-                       "mmds-historical-alerts.csv", "text/csv", disabled=rows.empty)
+    st.download_button("Download filtered alerts CSV", table("phase6_alerts", text=True).loc[rows.index].to_csv(index=False).encode("utf-8"),
+                       "mmds-historical-alerts.csv", "text/csv", disabled=rows.empty, on_click="ignore")
     show(rows, ["source_day", "Window", "category", "detector", "value", "reference_value", "delta",
                 "threshold", "rows", "evidence", "severity", "version"])
     st.caption("The novelty threshold is a rate increase, the performance threshold is a recall drop, and shift thresholds are in Jensen–Shannon bits.")

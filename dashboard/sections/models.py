@@ -1,5 +1,7 @@
 """Historical supervised, clustering and novelty evaluations."""
 
+from math import log1p
+
 import altair as alt
 import pandas as pd
 import streamlit as st
@@ -10,6 +12,8 @@ from dashboard.data_loader import table
 
 MODEL_NAMES = {"majority": "Majority class", "duration_rule": "Duration rule", "random_forest": "Random Forest",
                "logistic_regression": "Logistic Regression", "gradient_boosted_trees": "Gradient-Boosted Trees"}
+METRIC_LABELS = {"recall": "Recall", "precision": "Precision", "f1": "F1", "accuracy": "Accuracy",
+                 "roc_auc": "ROC-AUC", "pr_auc": "PR-AUC"}
 
 
 def models_for(data, protocol, split):
@@ -35,14 +39,14 @@ def supervised(summary):
     n = sum(labels.values())
     metrics(("Training flows before sampling", count(sum(support["train"]["labels"].values()))),
             ("Evaluation flows", count(n)), ("Evaluation attack prevalence", pct(labels.get("1", 0) / n)))
-    st.caption(f"Frozen classification threshold {summary['models']['threshold']:.1f}. PR-AUC depends on attack prevalence.")
+    st.caption(f"Scores at or above {summary['models']['threshold']:.1f} count as positive. ROC-AUC and PR-AUC are binned ranking metrics. PR-AUC depends on attack prevalence.")
     if protocol != "A":
         design = summary["protocols"][protocol]
         st.markdown(f"**Capture dates** · Train {', '.join(design['train'])} · {split.title()} {', '.join(design[split])}")
-    metric = st.selectbox("Compare metric", ["recall", "precision", "f1", "accuracy", "roc_auc", "pr_auc"],
-                          format_func=lambda x: x.upper().replace("_", "-"))
-    chart(alt.Chart(data).mark_bar(cornerRadiusEnd=4).encode(x=alt.X(f"{metric}:Q", scale=alt.Scale(domain=[0, 1])),
-          y=alt.Y("Model:N", sort="-x", title=None, axis=alt.Axis(labelLimit=210)),
+    metric = st.selectbox("Compare metric", list(METRIC_LABELS), format_func=METRIC_LABELS.get)
+    chart(alt.Chart(data).mark_bar(cornerRadiusEnd=4).encode(
+          x=alt.X(f"{metric}:Q", title=METRIC_LABELS[metric], scale=alt.Scale(domain=[0, 1])),
+          y=alt.Y("Model:N", sort="-x", title=None, axis=alt.Axis(labelLimit=210, labelOverlap=False)),
           color=alt.Color("training_cohort:N", title="Training cohort", legend=alt.Legend(orient="bottom")),
           tooltip=["Model:N", alt.Tooltip(f"{metric}:Q", format=".4f"), "rows:Q"]).properties(height=235))
     show(data, ["Model", "training_cohort", "training_rows", "accuracy", "precision", "recall", "f1", "roc_auc", "pr_auc",
@@ -94,7 +98,8 @@ def clusters(summary):
     with o:
         occupancy = experiment_data("phase5_cluster_occupancy", exp).query("window_hour == -1")
         chart(alt.Chart(occupancy).mark_bar().encode(x=alt.X("source_day:N", title="Capture day"),
-              y=alt.Y("occupancy:Q", axis=alt.Axis(format="%"), title="Occupancy"), color="cluster:N",
+              y=alt.Y("occupancy:Q", axis=alt.Axis(format="%"), title="Occupancy"),
+              color=alt.Color("cluster:O", title="Cluster", sort=list(range(details["selected_k"]))),
               tooltip=["source_day:N", "cluster:N", alt.Tooltip("occupancy:Q", format=".2%"), "records:Q"]))
         shift = experiment_data("phase5_temporal_shift", exp).query("window_hour == -1")
         chart(alt.Chart(shift).mark_line(point=True).encode(x=alt.X("source_day:N", title="Capture day"),
@@ -136,10 +141,16 @@ def novelty(summary):
     histogram["Label"] = histogram.binary_label.map({0: "Benign", 1: "Attack"})
     histogram["Log-distance bin start"] = histogram.score_bin / 4
     histogram["Within-label share"] = histogram["count"] / histogram.groupby("Label")["count"].transform("sum")
-    chart(alt.Chart(histogram).mark_line(point=True).encode(
+    distribution = alt.Chart(histogram).mark_line(point=True).encode(
         x=alt.X("Log-distance bin start:Q", title="log(1 + squared distance), bin start"),
         y=alt.Y("Within-label share:Q", axis=alt.Axis(format="%")), color="Label:N",
-        tooltip=["Label:N", "Log-distance bin start:Q", "count:Q", alt.Tooltip("Within-label share:Q", format=".2%")]))
+        tooltip=["Label:N", "Log-distance bin start:Q", "count:Q", alt.Tooltip("Within-label share:Q", format=".2%")])
+    cutoff_line = alt.Chart(pd.DataFrame({"Log-distance bin start": [log1p(binary.threshold)],
+                                        "Squared-distance cutoff": [binary.threshold]})).mark_rule(
+                                            color="#e6d57a", strokeDash=[5, 4]).encode(
+                                                x="Log-distance bin start:Q", tooltip=["Squared-distance cutoff:Q"])
+    chart(distribution + cutoff_line)
+    st.caption("The dashed line marks the selected cutoff on the log-distance axis. The curves show proportions within each label.")
     st.subheader("Family support")
     show(row[row.scope == "family"], ["family", "attacks", "flags", "attack_recall", "support_status"])
     st.info("Reference-distance flags can prioritize inspection. The held-out results do not validate a production detection decision or a comparison at matched operating points.")
