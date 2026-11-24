@@ -668,5 +668,86 @@
     "phase9_closed_set_metrics.csv": "5be1a7a667bd2b0928c70946046a044a3a9cada46ed7d0a976f73ca8927c66a1",
     "phase9_family_confusion.csv": "40c15c368b2d5ea7d5caaaa1dba376e68f852cad6fcbc34776ab381b6798af00",
     "phase9_open_set_metrics.csv": "2b2ac3d5207d84396a27b03dc7fc8edbb75a2ec0746caf6990049baff160f7cb"
+  },
+  "hierarchy": {
+    "B": {
+      "status": "validated",
+      "worker_status": "COMPLETE",
+      "kernel_version": 12,
+      "log_sha256": "5672db0e4c102e72028922dffed36f65eeab18969d2aba62e21ea20537beecd1",
+      "notebook_sha256": "40881dcdcd0a33e0cf7df9761e23c21511a81ad50d9080062e25d76efbfa8503",
+      "artifacts": {
+        "reports/phase9_hierarchy/B/phase9_hierarchical_receipt.json": "e87fd40dcfd1ba56efb5ff40c7dba87d6407376d0eefaba820282bad14ebf045",
+        "reports/phase9_hierarchy/B/phase9_hierarchical_counts.csv": "d3cc7deab22239d8cc55a48d9e4f6328d72dd2e050d17e826ce1f29dc46dd886",
+        "reports/phase9_hierarchy/B/phase8_split_diagnostics.csv": "c3a0ea358281f0867acd084b4093d63529d09567fdf80e708702223d6e9fd7e2"
+      },
+      "results": {
+        "phase4_rf": {
+          "counts": {
+            "correct_benign": 766721,
+            "benign_false_alarm": 4863,
+            "missed_attack": 208108,
+            "unknown_false_accept": 75,
+            "unknown_rejected": 342
+          },
+          "rows": 980109,
+          "supported_target_macro_f1": 0.44063137568957106,
+          "accuracy": 0.782630299283039,
+          "review_rows": 4531,
+          "automatic_coverage": 0.9953770447980785,
+          "unknown_rejection_recall": 0.0016400911161731208,
+          "conditional_unknown_rejection_recall": 0.8201438848920863,
+          "known_family_recall": null,
+          "known_family_macro_f1": null
+        },
+        "phase8_supervised": {
+          "counts": {
+            "correct_benign": 771584,
+            "missed_attack": 208525
+          },
+          "rows": 980109,
+          "supported_target_macro_f1": 0.44047901087690594,
+          "accuracy": 0.7872430515381452,
+          "review_rows": 0,
+          "automatic_coverage": 1.0,
+          "unknown_rejection_recall": 0.0,
+          "conditional_unknown_rejection_recall": null,
+          "known_family_recall": null,
+          "known_family_macro_f1": null
+        },
+        "phase8_hybrid": {
+          "counts": {
+            "correct_benign": 771580,
+            "benign_false_alarm": 4,
+            "missed_attack": 208525
+          },
+          "rows": 980109,
+          "supported_target_macro_f1": 0.44047773320492395,
+          "accuracy": 0.7872389703594193,
+          "review_rows": 0,
+          "automatic_coverage": 1.0,
+          "unknown_rejection_recall": 0.0,
+          "conditional_unknown_rejection_recall": null,
+          "known_family_recall": null,
+          "known_family_macro_f1": null
+        },
+        "oracle": {
+          "counts": {
+            "correct_benign": 771584,
+            "unknown_false_accept": 167807,
+            "unknown_rejected": 40718
+          },
+          "rows": 980109,
+          "supported_target_macro_f1": 0.6633666742897494,
+          "accuracy": 0.8287874103798659,
+          "review_rows": 40718,
+          "automatic_coverage": 0.9584556411582793,
+          "unknown_rejection_recall": 0.19526675458578108,
+          "conditional_unknown_rejection_recall": 0.19526675458578108,
+          "known_family_recall": null,
+          "known_family_macro_f1": null
+        }
+      }
+    }
   }
 }

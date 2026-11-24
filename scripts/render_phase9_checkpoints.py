@@ -46,10 +46,14 @@ if 'phase9_open_set_metrics' in combined:
             if rows:ax.plot([float(r['known_false_rejection']) for r in rows],[float(r['unknown_rejection_recall']) for r in rows],'.-',label=scenario+' '+method)
     ax.set(xlabel='Realized known-family false rejection rate',ylabel='Held-out family rejection recall',title='Retrospective family holdouts at frozen validation thresholds');ax.legend(fontsize=6,ncols=2);save(fig,'open_set_tradeoffs')
 manifest={'schema':'phase9-checkpoints-v1','complete':False,'stages':stages,'tables_sha256':{p.name:sha256(p.read_bytes()).hexdigest() for p in Path('reports').glob('phase9_*.csv')}}
-Path('manifests/phase9_experiments.json').write_text(json.dumps(manifest,indent=2)+'\n')
+manifest_path = Path('manifests/phase9_experiments.json')
+if manifest_path.exists():
+    previous = json.loads(manifest_path.read_text())
+    manifest.update({key: value for key, value in previous.items() if key not in manifest})
+manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
 report=['# Phase 9 verified checkpoints','','The study remains incomplete. Only retrieved and validated stages below support experimental claims.','','| Scenario | Version | Model | Known test rows | Accuracy | Macro F1 | Seconds |','|---|---|---|---:|---:|---:|---:|']
 for scenario,s in stages.items():
     m=s['test']; report.append(f"| {scenario} | {s['kernel_version']} | {s['model']} | {m['rows']} | {m['accuracy']} | {m['macro_f1']} | {s['seconds']:.1f} |")
-report.extend(['','Zero known-family chronological support means closed-set chronological classification is unsupported. Unknown-family rejection remains a separate result.','', 'All four family holdouts are complete and validated. Archived-gate hierarchical scoring, remaining robustness checks, novelty-model persistence and final research interpretation are pending.'])
+report.extend(['','Zero known-family chronological support means closed-set chronological classification is unsupported. Unknown-family rejection remains a separate result.','', 'All four family holdouts are complete and validated. The [chronological B hierarchy](phase9_hierarchy/B/results.md) is validated. Hierarchical C scoring, remaining robustness checks, novelty-model persistence and final research interpretation are pending.'])
 Path('reports/phase9_multiclass_results.md').write_text('\n'.join(report)+'\n')
 print('Rendered verified stages',list(stages))
