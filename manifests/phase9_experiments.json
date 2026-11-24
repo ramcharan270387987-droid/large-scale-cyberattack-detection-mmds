@@ -440,13 +440,124 @@
         "phase9_family_confusion.csv": "b3ac380f5fb6c0f289f6426add8c407f6c6bc5b012f2f534ed8f7eb5bb8f53ca",
         "phase9_open_set_metrics.csv": "84e04f9e13b784ab33c9fa5a03a97c1cede972b4589e7ced4ed386c203f7893a"
       }
+    },
+    "Web": {
+      "status": "validated",
+      "scenario": "Web",
+      "input": {
+        "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+        "days": [
+          "2018-02-14",
+          "2018-02-15",
+          "2018-02-16",
+          "2018-02-20",
+          "2018-02-21",
+          "2018-02-22",
+          "2018-02-23",
+          "2018-02-28",
+          "2018-03-01",
+          "2018-03-02"
+        ],
+        "totals": {
+          "0": 13484708,
+          "1": 2748235
+        },
+        "rows": 16232943,
+        "temporally_flagged": 14,
+        "policy_version": "phase2-v1",
+        "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+        "producer": {
+          "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+          "kernel_version": 1,
+          "status": "COMPLETE"
+        }
+      },
+      "classes": {
+        "Bot": 0,
+        "Credential brute force": 1,
+        "DDoS": 2,
+        "DoS": 3,
+        "Infiltration": 4
+      },
+      "training_support": {
+        "Infiltration": 115991,
+        "Credential brute force": 341040,
+        "DoS": 479843,
+        "DDoS": 885758,
+        "Bot": 205917
+      },
+      "sample_support": {
+        "Infiltration": 6207,
+        "Credential brute force": 4989,
+        "DoS": 22380,
+        "DDoS": 56636,
+        "Bot": 13940
+      },
+      "overlap": {
+        "groups": 0,
+        "rows": 0
+      },
+      "model": "rf_capped_10",
+      "registry": {
+        "artifact": "models/rf_capped_10",
+        "reload_probe_rows": 3,
+        "preprocessing_stages": [
+          "ImputerModel",
+          "VectorAssembler",
+          "StandardScalerModel"
+        ],
+        "bytes": 43961,
+        "sha256": {
+          "metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "metadata/part-00000-aa2ef0b4-2ece-41e5-b9fa-6cd35c2c166d-c000.txt": "dccdc2f7d6f625a37f5bd3487da91642578c3f983001f6988b274b78f991aa09",
+          "stages/0_Imputer_befb92acecc6/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stages/0_Imputer_befb92acecc6/data/part-00000-1d1af5f2-567b-4de6-8b9a-0fe9d2cf580a-c000.snappy.parquet": "ea25fad6ef5ba5d2f421303341f4a6d54edafcfa4246ad229276b414a5cbb4bb",
+          "stages/0_Imputer_befb92acecc6/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stages/0_Imputer_befb92acecc6/metadata/part-00000-ad8922bb-5fc2-44f8-bc4e-b39f06471621-c000.txt": "620711a7fe733621763b778976a8f563e0fd943ff232985f6af61fcaca146cdb",
+          "stages/1_VectorAssembler_f5e0e8e52964/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stages/1_VectorAssembler_f5e0e8e52964/metadata/part-00000-55777362-71c8-4b1c-8296-a48d00d55292-c000.txt": "8435f859802c7750d93e9e866fb63c94f7aa8c19e599ecab53f6acf34a285d35",
+          "stages/2_StandardScaler_7ea702626b94/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stages/2_StandardScaler_7ea702626b94/data/part-00000-5166020f-91c9-4e62-a128-dce848bf554d-c000.snappy.parquet": "155d30120412d5f72f346476b7020467110a39a851f46c7ac96179e2a2e9335c",
+          "stages/2_StandardScaler_7ea702626b94/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stages/2_StandardScaler_7ea702626b94/metadata/part-00000-15e584ac-f9fc-4797-8950-d42c019a025c-c000.txt": "44afd548917a74d82c0c9774ef1ab263d81cb1cabdba077c0702dc7eb37d0b56",
+          "stages/3_RandomForestClassifier_a09c23700cbc/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stages/3_RandomForestClassifier_a09c23700cbc/data/part-00000-937e6371-8c54-4c5a-ac04-0956325fd7cf-c000.snappy.parquet": "03625b9d100cbdb841d00c8802b308f1cd40cb46357efd0c0b426398a3e249b6",
+          "stages/3_RandomForestClassifier_a09c23700cbc/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stages/3_RandomForestClassifier_a09c23700cbc/metadata/part-00000-3b4140bd-6035-4915-982a-dcd855a364b0-c000.txt": "f770ecadda64a3569c3eb0419531b629236317f0a1c5ac1bfb6bd5e6a4aeb29a",
+          "stages/3_RandomForestClassifier_a09c23700cbc/treesMetadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stages/3_RandomForestClassifier_a09c23700cbc/treesMetadata/part-00000-7c67c646-9081-4b2b-9f38-53ecbb1585f0-c000.snappy.parquet": "0e89ce071a38ff4b0fe8d1705869c8a3144086b6230379957e8ee6d3f4b67b98"
+        }
+      },
+      "seconds": 456.980680365,
+      "test": {
+        "rows": 363966,
+        "accuracy": 0.7372721627844359,
+        "macro_precision": 0.7177488653310391,
+        "macro_recall": 0.8082497207248952,
+        "macro_f1": 0.7530718084372332,
+        "balanced_accuracy": 0.8082497207248952,
+        "weighted_f1": 0.7431285540161741
+      },
+      "kernel_version": 8,
+      "kernel_url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-9-multiclass-open-set-classification",
+      "worker_status": "COMPLETE",
+      "log_sha256": "7ff12131a6fca69c0f588f95b7d4097dbfe23ae8724ada3695eb951c636bfb62",
+      "source_sha256": "deee6e255d6ae13bb4428e7f1d8f6caa65555783770de3b0e1c52858163a1806",
+      "tables_sha256": {
+        "phase9_per_family.csv": "7902d2af93e8cd76ea72aab159255f9fa378af9ca271c7ce5a6cd6bc3ba1c7fd",
+        "phase9_frozen.json": "3584561e606e98e488ec1df1da4254d107bce5bd0758bde1c73bdd163fc877d5",
+        "phase9_rejection_frozen.json": "b56b15e41017e16189e1d1479f7f2b0f0c58bf1613b3b1352fae156fad71a602",
+        "phase9_closed_set_metrics.csv": "f8adfe656ff96cd533e2845e271b9c282a5bc8b5e78745cec26704e6dc344a15",
+        "phase9_family_confusion.csv": "eecb85399b9514f1e430bbc6a5e8d166f9676e2532d27b5c635ee50a9c64979f",
+        "phase9_open_set_metrics.csv": "9192372909a327d12a5812e2191647dfcc2dcf57e9345ddd6054514981bc8ebe"
+      }
     }
   },
   "tables_sha256": {
-    "phase9_per_family.csv": "b081ca4b66743956c7f221f7c522b755df394e542357d0abcb371ae7c2ad962a",
+    "phase9_per_family.csv": "a41b64fc01cfecde36a07d2771a140980a1548e74fcb980d073602adf2a76505",
     "phase9_family_support.csv": "4604357c45c162cef1f54473c260032dd58c073f028eb7ac5d368d51933179f5",
-    "phase9_closed_set_metrics.csv": "95649dcead655bfe926b848eac44142c2262d51844f3fc41b5b6b9629753f170",
-    "phase9_family_confusion.csv": "fec01100ab0cf927414483c637817835cee0bc08f61d6998a06e3ffdedc4ec4c",
-    "phase9_open_set_metrics.csv": "2b9514f61bcbdfc0027166f7423b0d7433bf3c5d04cbc3e135be9412a4943f2b"
+    "phase9_closed_set_metrics.csv": "57f7f2155813166942caf5d16e6261a8bc38370df04283520ddb6eeba7489dcc",
+    "phase9_family_confusion.csv": "ea3fdef7befb9231496ac6776963c2a267d7d3a440d331815801c734d595c254",
+    "phase9_open_set_metrics.csv": "2e75f2bfd9de6bbb30385cb942d4a02eac71477c5c7ffd65fcb07742413bea08"
   }
 }
