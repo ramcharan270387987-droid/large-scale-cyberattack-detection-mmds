@@ -14,11 +14,14 @@
       "artifacts": {
         "phase8_split_diagnostics.csv": "c3a0ea358281f0867acd084b4093d63529d09567fdf80e708702223d6e9fd7e2",
         "receipt.json": "4b9dd47bd9a4455409d0bcc2742cf1eea82dcde31922cce72a133ddb839789a6",
-        "discretization.json": "3abaf8175e9f76b897bd377656d04780a78ceb4d973d70f7a8165a59c7bdd793"
+        "discretization.json": "3abaf8175e9f76b897bd377656d04780a78ceb4d973d70f7a8165a59c7bdd793",
+        "bin_summary.json": "2b3ca49128bdef72a24ad876140bdf1ed6c93e50ad69f9146bb3d137ab5164c0"
       },
       "remaining": [
         "domain-informed sensitivity"
-      ]
+      ],
+      "log_sha256": "f95f042238b9ca7f8b95022d2bef4205e4aa60a971a213a463df06658428eaec",
+      "submitted_notebook_sha256": "bfbf9d8677391490ea89cd8edeaf11ba9f84b92ce98a1313afeff6c91b35c1d7"
     },
     "B": {
       "status": "running_unvalidated",
