@@ -25,14 +25,14 @@ training-prior reference. All B closed-set comparisons have zero support.
 
 | Requirement | Evidence and status |
 |---|---|
-| Class weights | Validation results for unweighted, inverse-frequency and capped inverse-frequency LR and RF are available in [closed-set metrics](../reports/phase9_closed_set_metrics.csv). Final-test class-weight sensitivity on matched rows is pending. |
-| Second seed | Seed 23014 is prespecified. A matched bounded comparison is pending. |
-| Duplicate weighting | Cross-partition predictor-group retention is documented. Matched duplicate-weighting sensitivity is pending. |
+| Class weights | Validation results for unweighted, inverse-frequency and capped inverse-frequency LR and RF are available in [closed-set metrics](../reports/phase9_closed_set_metrics.csv). Matched RF test sensitivity is validated in [version 14](../reports/phase9_sensitivity/results.md). |
+| Second seed | Version 14 validated the seed 23014 comparison on identical grouped-random test rows. |
+| Duplicate weighting | Version 14 validated duplicate-weighted training and separately measured equal predictor-group test weights. |
 | Confidence and uncertainty | Maximum score, margin, entropy, reference novelty and a combined rule were evaluated at frozen thresholds in [open-set metrics](../reports/phase9_open_set_metrics.csv). Full score distributions and risk–coverage curves are pending. |
 | Rejection thresholds | The 1%, 5% and 10% known-validation budgets were evaluated with whole-bin ties retained. Realized test rejection can differ from the calibration budget. |
-| Low-support families | [Per-family metrics](../reports/phase9_per_family.csv) and [support](../reports/phase9_family_support.csv) are available. Stratified error examples and uncertainty assessments are pending. |
+| Low-support families | [Per-family metrics](../reports/phase9_per_family.csv) and [support](../reports/phase9_family_support.csv) are available. Version 14 contains aggregate high-confidence errors by capture day and actual and predicted family. |
 | Known rejection and unknown acceptance | Existing tables contain aggregate known rejection and unknown rejection. Unknown false acceptance is the complement of unknown rejection for supported unknown populations. Per-day and high-confidence error breakdowns are pending. |
-| Uncertainty intervals | No row-independent intervals are reported. Capture-day support is sparse and the flows are correlated. |
+| Uncertainty intervals | No row-independent intervals are reported. Flows are correlated and capture-day support is sparse. Version 14 reports a descriptive leave-one-day-out range. |
 
 ## Capture-day association
 

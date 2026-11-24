@@ -840,9 +840,24 @@
   "extended_figures_sha256": {
     "figures/phase9_hierarchical_attack_outcomes.png": "642651c9a130b2461064079ea516b3ffbc26595c78e22ec08ae9936e6dea20e4",
     "figures/phase9_macro_f1_runtime.png": "011b2c542bff04d7aa5ae0edfe1f92a4e2a69a0e5c65d308e0ee0b9c16f15454",
-    "figures/phase9_grouped_random_family_precision_recall.png": "12ecd28e2ef6daed67417c0e402e973367267bf6defffcfd3b19bc95f9625acd"
+    "figures/phase9_grouped_random_family_precision_recall.png": "12ecd28e2ef6daed67417c0e402e973367267bf6defffcfd3b19bc95f9625acd",
+    "figures/phase9_grouped_random_sensitivity.png": "4a96b5d98c7f2e41d72432ec44404c2c7e8954e9db9b044eedc646521969d926"
   },
   "reference_baselines_sha256": {
     "reports/phase9_reference_baselines/phase9_reference_baselines.csv": "04e6ffe0c77790108e17c4424b7d11456dba426190bafe3b24b74b204dc73165"
+  },
+  "grouped_random_sensitivity": {
+    "status": "validated",
+    "worker_status": "COMPLETE",
+    "kernel_version": 14,
+    "log_sha256": "d86476376a626d6aa8074a232cc78a87cc1ca7a3150cce3eddb576e8d20dfb0e",
+    "notebook_sha256": "3512cbce3026eeb993a75404f8fc975dc76386d2c32a274458a874726d7fa006",
+    "artifacts": {
+      "reports/phase9_sensitivity/phase9_sensitivity_receipt.json": "0edf05530d43cd1428c4fa2145a7e30811f8d39539447791dab4ee03242c1cd9",
+      "reports/phase9_sensitivity/phase9_sensitivity_metrics.csv": "5fdb814c23e9dce8c02551fb026bc4712f8ba9ea962abe9b8b7fcaa820a5fcf4",
+      "reports/phase9_sensitivity/phase9_sensitivity_confusion.csv": "77ff7f39f02d67e3d0047faf000c629c99079db10e3abdeb23ce15991a9e1e94",
+      "reports/phase9_sensitivity/phase9_sensitivity_day.csv": "831ae408cf1eb8ad1c9607107f547d2c7702bfcb020a52c3d474a4a651a3bf63",
+      "reports/phase9_sensitivity/phase9_sensitivity_high_confidence_errors.csv": "5ebbf9896fb7700a11fb4ba81e7ffcc3177f7f54378f117d7dbd03b71f7786d9"
+    }
   }
 }
