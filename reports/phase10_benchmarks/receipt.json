@@ -1,0 +1,115 @@
+{
+  "status": "validated",
+  "stage": "B",
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "last_sample_rows": 7979942,
+  "features": [
+    "flow_duration",
+    "tot_fwd_pkts",
+    "tot_bwd_pkts",
+    "totlen_fwd_pkts",
+    "totlen_bwd_pkts",
+    "pkt_len_mean"
+  ],
+  "summaries": [
+    {
+      "seconds": 10.750034821999975,
+      "itemsets": 307,
+      "lengths": {
+        "1": 18,
+        "2": 75,
+        "3": 99,
+        "4": 76,
+        "5": 33,
+        "6": 6
+      },
+      "target": 1000000,
+      "rows": 996584,
+      "support": 0.05,
+      "transaction_seconds": 135.015407187,
+      "rule_seconds": 1.842455297000015,
+      "rules": 650
+    },
+    {
+      "seconds": 20.763543626,
+      "itemsets": 295,
+      "lengths": {
+        "1": 18,
+        "2": 72,
+        "3": 96,
+        "4": 74,
+        "5": 30,
+        "6": 5
+      },
+      "target": 4000000,
+      "rows": 4071873,
+      "support": 0.05,
+      "transaction_seconds": 105.67169265899997,
+      "rule_seconds": 1.4158628350000981,
+      "rules": 627
+    },
+    {
+      "seconds": 34.45020978600007,
+      "itemsets": 299,
+      "lengths": {
+        "1": 18,
+        "2": 74,
+        "3": 98,
+        "4": 74,
+        "5": 30,
+        "6": 5
+      },
+      "target": 8000000,
+      "rows": 7979942,
+      "support": 0.05,
+      "transaction_seconds": 110.80154137,
+      "rule_seconds": 1.2002320440000176,
+      "rules": 628
+    }
+  ],
+  "seconds": 444.93321924899993,
+  "resources": {
+    "spark_version": "4.3.0",
+    "master": "local[4]",
+    "driver_memory": "8g",
+    "shuffle_partitions": 48,
+    "input_partition_bytes": 67108864,
+    "default_parallelism": 4,
+    "cpu_affinity": 4,
+    "scratch_output_free_bytes_start": 20939567104,
+    "memory.max": "32212254720",
+    "cpu.max": "400000 100000"
+  },
+  "driver_peak_rss_bytes": 6899773440,
+  "sha256": {
+    "progress.json": "3c2551cf7407dee030b40b91673818ea7f6eb57d93ae169fbd9bc61c73bc5319",
+    "registry.json": "44304f58084fa64685ccd8c8f77f081639d3a80b8172545becd4af05ac512aaf"
+  }
+}

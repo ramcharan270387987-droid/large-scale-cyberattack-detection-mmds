@@ -125,11 +125,77 @@
         "B5.json": "ed94e65a9a8bb010caf43efd7ec6ee61035331770b9edb82612b999b5091d88b"
       },
       "seconds": 311.191720059
+    },
+    "D_benchmarks": {
+      "status": "COMPLETE AND VERIFIED",
+      "kernel_version": 4,
+      "worker_status": "COMPLETE",
+      "kernel": "ramcharan2345/mmds-phase-10-frequent-emerging-pattern-mining",
+      "receipt": "reports/phase10_benchmarks/receipt.json",
+      "receipt_sha256": "269e4daa7b6e6b0acb5ede304f7ec9029ead62403f5c80aa16d50be5f9a12ec1",
+      "log_sha256": "eb0721d6b7fabccc682a5235501d56f6b786260d98e45ea3ad08e749e1f0dd5c",
+      "summaries": [
+        {
+          "seconds": 10.750034821999975,
+          "itemsets": 307,
+          "lengths": {
+            "1": 18,
+            "2": 75,
+            "3": 99,
+            "4": 76,
+            "5": 33,
+            "6": 6
+          },
+          "target": 1000000,
+          "rows": 996584,
+          "support": 0.05,
+          "transaction_seconds": 135.015407187,
+          "rule_seconds": 1.842455297000015,
+          "rules": 650
+        },
+        {
+          "seconds": 20.763543626,
+          "itemsets": 295,
+          "lengths": {
+            "1": 18,
+            "2": 72,
+            "3": 96,
+            "4": 74,
+            "5": 30,
+            "6": 5
+          },
+          "target": 4000000,
+          "rows": 4071873,
+          "support": 0.05,
+          "transaction_seconds": 105.67169265899997,
+          "rule_seconds": 1.4158628350000981,
+          "rules": 627
+        },
+        {
+          "seconds": 34.45020978600007,
+          "itemsets": 299,
+          "lengths": {
+            "1": 18,
+            "2": 74,
+            "3": 98,
+            "4": 74,
+            "5": 30,
+            "6": 5
+          },
+          "target": 8000000,
+          "rows": 7979942,
+          "support": 0.05,
+          "transaction_seconds": 110.80154137,
+          "rule_seconds": 1.2002320440000176,
+          "rules": 628
+        }
+      ],
+      "seconds": 444.93321924899993,
+      "driver_peak_rss_bytes": 6899773440
     }
   },
   "pending": [
-    "Retrieve and validate already-running Kaggle version 4 computational benchmarks",
-    "Consolidated report and final evidence hashes"
+    "Final regression result and consolidated evidence validation"
   ],
   "reconciliation": {
     "Stage A output validation": {
@@ -154,7 +220,12 @@
       "status": "COMPLETE AND VERIFIED"
     },
     "Robustness and computational benchmarks": {
-      "status": "PARTIALLY COMPLETE"
+      "status": "COMPLETE AND VERIFIED",
+      "evidence": [
+        "reports/phase10_benchmarks/receipt.json",
+        "reports/phase10_analysis/capture_sensitivity.json",
+        "reports/phase10_analysis/discretization_duplicate_sensitivity.json"
+      ]
     },
     "Persistence and reload validation": {
       "status": "COMPLETE AND VERIFIED",

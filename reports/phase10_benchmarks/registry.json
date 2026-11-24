@@ -1,0 +1,26 @@
+{
+  "flow_duration": [
+    1054.0,
+    1192745.0
+  ],
+  "tot_fwd_pkts": [
+    2.0,
+    3.0
+  ],
+  "tot_bwd_pkts": [
+    1.0,
+    3.0
+  ],
+  "totlen_fwd_pkts": [
+    25.0,
+    161.0
+  ],
+  "totlen_bwd_pkts": [
+    0.0,
+    275.0
+  ],
+  "pkt_len_mean": [
+    19.0,
+    81.125
+  ]
+}

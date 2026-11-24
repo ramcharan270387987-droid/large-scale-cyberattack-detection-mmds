@@ -32,7 +32,7 @@ def emergence(reference, current, reference_total, current_total):
     delta=b-a
     category='stable'
     if reference and not current: category='disappearing'
-    elif not reference and current>=100 and delta>=.01: category='newly_observed'
+    elif not reference and current: category='newly_observed'
     elif current>=100 and delta>=.01 and growth>=5: category='strongly_emerging'
     elif current>=100 and delta>=.01 and growth>=2: category='emerging'
     elif reference>=100 and delta<=-.01 and growth<=.5: category='declining'

@@ -6,4 +6,4 @@ Each input produces deterministic transaction items, matched pattern identifiers
 
 The review indicator is score greater than or equal to the frozen threshold. With no eligible patterns the score is zero and validation may select a threshold above one to meet the benign false-alarm budget. Unknown input schemas must return unsupported_input with no score. Pattern evidence has descriptive association provenance and carries no calibration claim as attack probability. A rule match requires every antecedent item. Synthetic transaction parity and frozen-score parity must pass before registry release.
 
-The chronological registry remains pending experimental validation until the experiment manifest records the corresponding completed receipt.
+The chronological registry was validated from exact retained signature counts. Its frozen patterns and threshold, model component hashes and independent reload receipt are indexed by the completed Phase 10 manifests.
