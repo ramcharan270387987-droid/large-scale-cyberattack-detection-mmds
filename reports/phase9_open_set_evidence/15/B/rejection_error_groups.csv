@@ -1,0 +1,9 @@
+source_day,attack_family,known,rejected,prediction,count
+2018-03-01,Infiltration,False,False,0.0,2377
+2018-03-01,Infiltration,False,False,3.0,15699
+2018-03-01,Infiltration,False,False,2.0,2181
+2018-03-01,Infiltration,False,False,1.0,4314
+2018-03-02,Bot,False,False,3.0,4303
+2018-03-02,Bot,False,False,0.0,784
+2018-03-02,Bot,False,False,1.0,137927
+2018-03-02,Bot,False,False,2.0,222

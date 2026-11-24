@@ -30,13 +30,16 @@ BINS = 2048
 
 def population(frame, scenario, design, days):
     withheld = HOLDOUTS.get(scenario)
-    assigned = assign_population(frame, "A" if withheld else scenario, design, days)
-    if withheld:
-        excluded = assigned.where(F.col("attack_family") == withheld).select("predictor_key").distinct()
-        known = assigned.where(F.col("attack_family") != withheld).join(excluded, "predictor_key", "left_anti")
-        unknown = assigned.where(F.col("attack_family") == withheld).withColumn("split_rank", F.lit(2))
-        assigned = known.unionByName(unknown)
-    return retain(assigned)
+    if withheld is None:
+        return retain(assign_population(frame, scenario, design, days))
+    attacks = frame.where("binary_label = 1")
+    assigned = assign_population(attacks, "A", design, days)
+    unknown = assigned.where(F.col("attack_family") == withheld).withColumn("split_rank", F.lit(2))
+    keys = unknown.select("predictor_key").distinct()
+    known = assigned.where(F.col("attack_family") != withheld).join(keys, "predictor_key", "left_anti")
+    # The known assignment is constant within each group. The excluded keys
+    # belong only to the held-out family and enter evaluation at rank 2.
+    return known.unionByName(unknown).persist(StorageLevel.DISK_ONLY), {"groups": 0, "rows": 0}
 
 
 def scenario_evidence(spark, project, data, scenario, design, names, source, archive, output):
@@ -147,8 +150,9 @@ def run(project, input_root, archives, output, scratch, scenarios):
         require(spark.version == "4.3.0", "Unexpected Spark version")
         producer = locate_producer(input_root, upstream["independent_mount"]["summary_sha256"])
         raw, source = verified_input(spark, producer, upstream, json_file(project, "configs/cleaning.yaml"))
-        # Retention must also consider predictor groups containing benign flows.
-        data = predictor_input(raw, names, design["version"]).persist(StorageLevel.DISK_ONLY)
+        # Chronological retention also considers predictor groups containing benign flows.
+        frame = raw if "B" in scenarios else raw.where("binary_label = 1")
+        data = predictor_input(frame, names, design["version"]).persist(StorageLevel.DISK_ONLY)
         data.count()
         for scenario in scenarios:
             scenario_evidence(spark, project, data, scenario, design, names, source, archives / scenario, output / scenario)
