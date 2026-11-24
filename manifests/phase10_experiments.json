@@ -17,9 +17,14 @@
         "discretization.json": "3abaf8175e9f76b897bd377656d04780a78ceb4d973d70f7a8165a59c7bdd793"
       },
       "remaining": [
-        "domain-informed sensitivity",
-        "effective bin and missing prevalence summary"
+        "domain-informed sensitivity"
       ]
+    },
+    "B": {
+      "status": "running_unvalidated",
+      "kernel_version": 2,
+      "focused_tests_passed_before_submission": 6,
+      "full_expected_rows": 16232943
     }
   },
   "pending": [
