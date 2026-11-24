@@ -1,0 +1,42 @@
+{
+  "status": "validated",
+  "stage": "A",
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "split": {
+    "purged_rows": 909956,
+    "prepurge_predictor_groups": {
+      "groups": 136985,
+      "rows": 2773438
+    }
+  },
+  "spark_version": "4.3.0",
+  "seconds": 1178.6794998379999,
+  "sha256": "3abaf8175e9f76b897bd377656d04780a78ceb4d973d70f7a8165a59c7bdd793"
+}

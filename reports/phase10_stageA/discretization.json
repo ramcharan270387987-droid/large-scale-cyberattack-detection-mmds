@@ -1,0 +1,1453 @@
+{
+  "A3": {
+    "boundaries": {
+      "flow_duration": [
+        1054.0,
+        1192745.0
+      ],
+      "tot_fwd_pkts": [
+        2.0,
+        3.0
+      ],
+      "tot_bwd_pkts": [
+        1.0,
+        3.0
+      ],
+      "totlen_fwd_pkts": [
+        25.0,
+        161.0
+      ],
+      "totlen_bwd_pkts": [
+        0.0,
+        275.0
+      ],
+      "pkt_len_mean": [
+        19.0,
+        81.125
+      ],
+      "pkt_len_std": [
+        9.237604307,
+        109.3094877060729
+      ],
+      "flow_iat_mean": [
+        864.0,
+        120359.636363636
+      ],
+      "flow_iat_std": [
+        0.0,
+        53817.4192
+      ],
+      "fwd_iat_mean": [
+        82.0,
+        138176.5
+      ],
+      "bwd_iat_mean": [
+        0.0,
+        9019.5
+      ],
+      "flow_pkts_s": [
+        8.9428240544,
+        2159.827214
+      ],
+      "flow_byts_s": [
+        20.88458657,
+        7665.9269719588465
+      ],
+      "down_up_ratio": [
+        0.0,
+        1.0
+      ],
+      "syn_flag_cnt": [
+        0.0
+      ],
+      "ack_flag_cnt": [
+        0.0
+      ],
+      "rst_flag_cnt": [
+        0.0
+      ],
+      "fin_flag_cnt": [
+        0.0
+      ]
+    },
+    "rows": 16232943,
+    "lengths": [
+      {
+        "length": 18,
+        "unique": 18,
+        "count": 16232943
+      }
+    ],
+    "singletons": [
+      {
+        "item": "flow_iat_mean=BIN_2",
+        "count": 5414959
+      },
+      {
+        "item": "fwd_iat_mean=BIN_0",
+        "count": 5422654
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_0",
+        "count": 8788638
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_1",
+        "count": 1614604
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_1",
+        "count": 4816950
+      },
+      {
+        "item": "pkt_len_std=BIN_2",
+        "count": 5408187
+      },
+      {
+        "item": "syn_flag_cnt=BIN_1",
+        "count": 712552
+      },
+      {
+        "item": "flow_byts_s=BIN_0",
+        "count": 5374659
+      },
+      {
+        "item": "pkt_len_mean=BIN_2",
+        "count": 5194071
+      },
+      {
+        "item": "flow_pkts_s=BIN_2",
+        "count": 5381648
+      },
+      {
+        "item": "flow_pkts_s=MISSING",
+        "count": 95774
+      },
+      {
+        "item": "fin_flag_cnt=BIN_0",
+        "count": 16155099
+      },
+      {
+        "item": "flow_pkts_s=BIN_1",
+        "count": 5382122
+      },
+      {
+        "item": "ack_flag_cnt=BIN_1",
+        "count": 5382877
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_2",
+        "count": 5318479
+      },
+      {
+        "item": "rst_flag_cnt=BIN_1",
+        "count": 3042021
+      },
+      {
+        "item": "pkt_len_mean=BIN_1",
+        "count": 5552825
+      },
+      {
+        "item": "pkt_len_std=BIN_1",
+        "count": 5126388
+      },
+      {
+        "item": "flow_byts_s=BIN_2",
+        "count": 5382875
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_1",
+        "count": 2202382
+      },
+      {
+        "item": "bwd_iat_mean=BIN_0",
+        "count": 9337704
+      },
+      {
+        "item": "bwd_iat_mean=BIN_1",
+        "count": 1480559
+      },
+      {
+        "item": "fwd_iat_mean=BIN_2",
+        "count": 5414731
+      },
+      {
+        "item": "flow_byts_s=MISSING",
+        "count": 95760
+      },
+      {
+        "item": "pkt_len_std=BIN_0",
+        "count": 5698368
+      },
+      {
+        "item": "syn_flag_cnt=BIN_0",
+        "count": 15520391
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_2",
+        "count": 5203499
+      },
+      {
+        "item": "flow_iat_std=BIN_1",
+        "count": 2990253
+      },
+      {
+        "item": "flow_iat_std=BIN_0",
+        "count": 7829422
+      },
+      {
+        "item": "fin_flag_cnt=BIN_1",
+        "count": 77844
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_0",
+        "count": 9299860
+      },
+      {
+        "item": "bwd_iat_mean=BIN_2",
+        "count": 5414680
+      },
+      {
+        "item": "ack_flag_cnt=BIN_0",
+        "count": 10850066
+      },
+      {
+        "item": "down_up_ratio=BIN_1",
+        "count": 7628961
+      },
+      {
+        "item": "flow_iat_mean=BIN_1",
+        "count": 5410049
+      },
+      {
+        "item": "flow_duration=BIN_2",
+        "count": 5415628
+      },
+      {
+        "item": "down_up_ratio=BIN_2",
+        "count": 127309
+      },
+      {
+        "item": "flow_duration=BIN_1",
+        "count": 5410583
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_0",
+        "count": 6007265
+      },
+      {
+        "item": "down_up_ratio=BIN_0",
+        "count": 8476673
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_1",
+        "count": 5615567
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_0",
+        "count": 5413877
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_2",
+        "count": 5241923
+      },
+      {
+        "item": "flow_pkts_s=BIN_0",
+        "count": 5373399
+      },
+      {
+        "item": "flow_duration=BIN_0",
+        "count": 5406718
+      },
+      {
+        "item": "flow_iat_mean=BIN_0",
+        "count": 5407921
+      },
+      {
+        "item": "fwd_iat_mean=BIN_1",
+        "count": 5395544
+      },
+      {
+        "item": "flow_byts_s=BIN_1",
+        "count": 5379649
+      },
+      {
+        "item": "rst_flag_cnt=BIN_0",
+        "count": 13190922
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_2",
+        "count": 5408728
+      },
+      {
+        "item": "pkt_len_mean=BIN_0",
+        "count": 5486047
+      },
+      {
+        "item": "flow_iat_std=BIN_2",
+        "count": 5413268
+      },
+      {
+        "item": "flow_iat_mean=MISSING",
+        "count": 14
+      },
+      {
+        "item": "fwd_iat_mean=MISSING",
+        "count": 14
+      },
+      {
+        "item": "flow_duration=MISSING",
+        "count": 14
+      }
+    ]
+  },
+  "A5": {
+    "boundaries": {
+      "flow_duration": [
+        310.0,
+        1895.0,
+        198901.0,
+        4444120.0
+      ],
+      "tot_fwd_pkts": [
+        1.0,
+        2.0,
+        3.0,
+        8.0
+      ],
+      "tot_bwd_pkts": [
+        0.0,
+        1.0,
+        2.0,
+        7.0
+      ],
+      "totlen_fwd_pkts": [
+        0.0,
+        35.0,
+        77.0,
+        935.0
+      ],
+      "totlen_bwd_pkts": [
+        0.0,
+        56.0,
+        172.0,
+        1039.0
+      ],
+      "pkt_len_mean": [
+        0.0,
+        39.8387096774,
+        66.0833333333,
+        144.2272727
+      ],
+      "pkt_len_std": [
+        0.0,
+        15.500000000000002,
+        58.0585910955,
+        312.0067636898843
+      ],
+      "flow_iat_mean": [
+        231.0,
+        1617.0,
+        46664.1,
+        539199.625
+      ],
+      "flow_iat_std": [
+        0.0,
+        8426.113758,
+        296004.5566
+      ],
+      "fwd_iat_mean": [
+        0.0,
+        217.5,
+        30665.0,
+        619331.6923
+      ],
+      "bwd_iat_mean": [
+        0.0,
+        158.0,
+        296631.6666666667
+      ],
+      "flow_pkts_s": [
+        2.0316469647702258,
+        27.69876896283691,
+        1085.103085,
+        7220.216606498195
+      ],
+      "flow_byts_s": [
+        0.0,
+        160.17416964066882,
+        1682.116398814979,
+        119480.51948052
+      ],
+      "down_up_ratio": [
+        0.0,
+        1.0
+      ],
+      "syn_flag_cnt": [
+        0.0
+      ],
+      "ack_flag_cnt": [
+        0.0,
+        1.0
+      ],
+      "rst_flag_cnt": [
+        0.0
+      ],
+      "fin_flag_cnt": [
+        0.0
+      ]
+    },
+    "rows": 16232943,
+    "lengths": [
+      {
+        "length": 18,
+        "unique": 18,
+        "count": 16232943
+      }
+    ],
+    "singletons": [
+      {
+        "item": "fwd_iat_mean=BIN_0",
+        "count": 4591176
+      },
+      {
+        "item": "flow_iat_mean=BIN_2",
+        "count": 3249395
+      },
+      {
+        "item": "flow_duration=BIN_4",
+        "count": 3249986
+      },
+      {
+        "item": "flow_duration=BIN_3",
+        "count": 3245877
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_0",
+        "count": 4495606
+      },
+      {
+        "item": "flow_pkts_s=BIN_3",
+        "count": 3235584
+      },
+      {
+        "item": "flow_iat_std=BIN_3",
+        "count": 3252212
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_1",
+        "count": 5162478
+      },
+      {
+        "item": "pkt_len_std=BIN_2",
+        "count": 3213169
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_1",
+        "count": 516713
+      },
+      {
+        "item": "syn_flag_cnt=BIN_1",
+        "count": 712552
+      },
+      {
+        "item": "pkt_len_mean=BIN_2",
+        "count": 3285795
+      },
+      {
+        "item": "flow_byts_s=BIN_0",
+        "count": 4966532
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_4",
+        "count": 2079174
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_4",
+        "count": 3243754
+      },
+      {
+        "item": "flow_pkts_s=BIN_2",
+        "count": 3225310
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_3",
+        "count": 3206551
+      },
+      {
+        "item": "flow_pkts_s=MISSING",
+        "count": 95774
+      },
+      {
+        "item": "pkt_len_std=BIN_3",
+        "count": 3254126
+      },
+      {
+        "item": "flow_pkts_s=BIN_1",
+        "count": 3228954
+      },
+      {
+        "item": "fin_flag_cnt=BIN_0",
+        "count": 16155099
+      },
+      {
+        "item": "ack_flag_cnt=BIN_1",
+        "count": 5382877
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_2",
+        "count": 1184432
+      },
+      {
+        "item": "flow_iat_mean=BIN_4",
+        "count": 3248335
+      },
+      {
+        "item": "rst_flag_cnt=BIN_1",
+        "count": 3042021
+      },
+      {
+        "item": "pkt_len_mean=BIN_1",
+        "count": 1470713
+      },
+      {
+        "item": "flow_byts_s=BIN_2",
+        "count": 3228139
+      },
+      {
+        "item": "pkt_len_mean=BIN_3",
+        "count": 3202513
+      },
+      {
+        "item": "pkt_len_std=BIN_1",
+        "count": 1379066
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_1",
+        "count": 4293032
+      },
+      {
+        "item": "bwd_iat_mean=BIN_0",
+        "count": 9337704
+      },
+      {
+        "item": "bwd_iat_mean=BIN_1",
+        "count": 398117
+      },
+      {
+        "item": "fwd_iat_mean=BIN_3",
+        "count": 3244104
+      },
+      {
+        "item": "fwd_iat_mean=BIN_2",
+        "count": 3245965
+      },
+      {
+        "item": "flow_byts_s=MISSING",
+        "count": 95760
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_2",
+        "count": 3324998
+      },
+      {
+        "item": "pkt_len_std=BIN_0",
+        "count": 5148326
+      },
+      {
+        "item": "syn_flag_cnt=BIN_0",
+        "count": 15520391
+      },
+      {
+        "item": "flow_iat_std=BIN_1",
+        "count": 1905308
+      },
+      {
+        "item": "flow_iat_std=BIN_0",
+        "count": 7829422
+      },
+      {
+        "item": "fin_flag_cnt=BIN_1",
+        "count": 77844
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_4",
+        "count": 2553206
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_0",
+        "count": 4137382
+      },
+      {
+        "item": "bwd_iat_mean=BIN_2",
+        "count": 3246833
+      },
+      {
+        "item": "flow_pkts_s=BIN_4",
+        "count": 3223948
+      },
+      {
+        "item": "flow_byts_s=BIN_4",
+        "count": 3230727
+      },
+      {
+        "item": "ack_flag_cnt=BIN_0",
+        "count": 10850066
+      },
+      {
+        "item": "down_up_ratio=BIN_1",
+        "count": 7628961
+      },
+      {
+        "item": "flow_iat_mean=BIN_1",
+        "count": 3239291
+      },
+      {
+        "item": "flow_iat_mean=BIN_3",
+        "count": 3247601
+      },
+      {
+        "item": "flow_duration=BIN_2",
+        "count": 3247269
+      },
+      {
+        "item": "pkt_len_std=BIN_4",
+        "count": 3238256
+      },
+      {
+        "item": "down_up_ratio=BIN_2",
+        "count": 127309
+      },
+      {
+        "item": "flow_duration=BIN_1",
+        "count": 3237733
+      },
+      {
+        "item": "bwd_iat_mean=BIN_3",
+        "count": 3250289
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_0",
+        "count": 6007265
+      },
+      {
+        "item": "down_up_ratio=BIN_0",
+        "count": 8476673
+      },
+      {
+        "item": "fwd_iat_mean=BIN_4",
+        "count": 3252054
+      },
+      {
+        "item": "pkt_len_mean=BIN_4",
+        "count": 3247669
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_1",
+        "count": 1590124
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_3",
+        "count": 3733005
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_0",
+        "count": 5031610
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_2",
+        "count": 2202382
+      },
+      {
+        "item": "flow_pkts_s=BIN_0",
+        "count": 3223373
+      },
+      {
+        "item": "flow_duration=BIN_0",
+        "count": 3252064
+      },
+      {
+        "item": "flow_iat_mean=BIN_0",
+        "count": 3248307
+      },
+      {
+        "item": "fwd_iat_mean=BIN_1",
+        "count": 1899630
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_3",
+        "count": 2666846
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_3",
+        "count": 3669477
+      },
+      {
+        "item": "flow_byts_s=BIN_1",
+        "count": 1484946
+      },
+      {
+        "item": "flow_byts_s=BIN_3",
+        "count": 3226839
+      },
+      {
+        "item": "rst_flag_cnt=BIN_0",
+        "count": 13190922
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_2",
+        "count": 3258660
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_4",
+        "count": 2575077
+      },
+      {
+        "item": "pkt_len_mean=BIN_0",
+        "count": 5026253
+      },
+      {
+        "item": "flow_iat_std=BIN_2",
+        "count": 3246001
+      },
+      {
+        "item": "flow_iat_mean=MISSING",
+        "count": 14
+      },
+      {
+        "item": "fwd_iat_mean=MISSING",
+        "count": 14
+      },
+      {
+        "item": "flow_duration=MISSING",
+        "count": 14
+      }
+    ]
+  },
+  "B3": {
+    "boundaries": {
+      "flow_duration": [
+        1121.0,
+        1160709.0
+      ],
+      "tot_fwd_pkts": [
+        2.0,
+        3.0
+      ],
+      "tot_bwd_pkts": [
+        1.0,
+        3.0
+      ],
+      "totlen_fwd_pkts": [
+        20.0,
+        161.0
+      ],
+      "totlen_bwd_pkts": [
+        0.0,
+        299.0
+      ],
+      "pkt_len_mean": [
+        19.0,
+        81.125
+      ],
+      "pkt_len_std": [
+        9.237604307,
+        109.5332170669046
+      ],
+      "flow_iat_mean": [
+        913.0,
+        122231.13333333333
+      ],
+      "flow_iat_std": [
+        0.0,
+        58032.85657366868
+      ],
+      "fwd_iat_mean": [
+        83.0,
+        131525.0
+      ],
+      "bwd_iat_mean": [
+        0.0,
+        10963.66667
+      ],
+      "flow_pkts_s": [
+        8.838935978191088,
+        2061.8556701030925
+      ],
+      "flow_byts_s": [
+        19.673439214053392,
+        7303.2483104426
+      ],
+      "down_up_ratio": [
+        0.0,
+        1.0
+      ],
+      "syn_flag_cnt": [
+        0.0
+      ],
+      "ack_flag_cnt": [
+        0.0,
+        1.0
+      ],
+      "rst_flag_cnt": [
+        0.0
+      ],
+      "fin_flag_cnt": [
+        0.0
+      ]
+    },
+    "rows": 13191622,
+    "lengths": [
+      {
+        "length": 18,
+        "unique": 18,
+        "count": 13191622
+      }
+    ],
+    "singletons": [
+      {
+        "item": "flow_iat_mean=BIN_2",
+        "count": 4399013
+      },
+      {
+        "item": "fwd_iat_mean=BIN_0",
+        "count": 4409797
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_0",
+        "count": 7115428
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_1",
+        "count": 1424426
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_1",
+        "count": 3921142
+      },
+      {
+        "item": "pkt_len_std=BIN_2",
+        "count": 4381221
+      },
+      {
+        "item": "syn_flag_cnt=BIN_1",
+        "count": 578683
+      },
+      {
+        "item": "flow_byts_s=BIN_0",
+        "count": 4368978
+      },
+      {
+        "item": "pkt_len_mean=BIN_2",
+        "count": 4357077
+      },
+      {
+        "item": "flow_pkts_s=BIN_2",
+        "count": 4374161
+      },
+      {
+        "item": "flow_pkts_s=MISSING",
+        "count": 76928
+      },
+      {
+        "item": "fin_flag_cnt=BIN_0",
+        "count": 13129139
+      },
+      {
+        "item": "flow_pkts_s=BIN_1",
+        "count": 4372544
+      },
+      {
+        "item": "ack_flag_cnt=BIN_1",
+        "count": 4478926
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_2",
+        "count": 4215904
+      },
+      {
+        "item": "rst_flag_cnt=BIN_1",
+        "count": 2437463
+      },
+      {
+        "item": "pkt_len_mean=BIN_1",
+        "count": 4370317
+      },
+      {
+        "item": "pkt_len_std=BIN_1",
+        "count": 4291806
+      },
+      {
+        "item": "flow_byts_s=BIN_2",
+        "count": 4375704
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_1",
+        "count": 1770584
+      },
+      {
+        "item": "bwd_iat_mean=BIN_0",
+        "count": 7580296
+      },
+      {
+        "item": "bwd_iat_mean=BIN_1",
+        "count": 1210260
+      },
+      {
+        "item": "fwd_iat_mean=BIN_2",
+        "count": 4398939
+      },
+      {
+        "item": "flow_byts_s=MISSING",
+        "count": 76914
+      },
+      {
+        "item": "pkt_len_std=BIN_0",
+        "count": 4518595
+      },
+      {
+        "item": "syn_flag_cnt=BIN_0",
+        "count": 12612939
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_2",
+        "count": 4202946
+      },
+      {
+        "item": "flow_iat_std=BIN_1",
+        "count": 2432882
+      },
+      {
+        "item": "flow_iat_std=BIN_0",
+        "count": 6359444
+      },
+      {
+        "item": "fin_flag_cnt=BIN_1",
+        "count": 62483
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_0",
+        "count": 7551292
+      },
+      {
+        "item": "bwd_iat_mean=BIN_2",
+        "count": 4401066
+      },
+      {
+        "item": "ack_flag_cnt=BIN_0",
+        "count": 8712696
+      },
+      {
+        "item": "down_up_ratio=BIN_1",
+        "count": 6133464
+      },
+      {
+        "item": "flow_iat_mean=BIN_1",
+        "count": 4396968
+      },
+      {
+        "item": "flow_duration=BIN_2",
+        "count": 4401023
+      },
+      {
+        "item": "down_up_ratio=BIN_2",
+        "count": 94580
+      },
+      {
+        "item": "flow_duration=BIN_1",
+        "count": 4396313
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_0",
+        "count": 4878763
+      },
+      {
+        "item": "down_up_ratio=BIN_0",
+        "count": 6963578
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_1",
+        "count": 4531290
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_0",
+        "count": 4457386
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_2",
+        "count": 4305610
+      },
+      {
+        "item": "flow_pkts_s=BIN_0",
+        "count": 4367989
+      },
+      {
+        "item": "flow_duration=BIN_0",
+        "count": 4394272
+      },
+      {
+        "item": "flow_iat_mean=BIN_0",
+        "count": 4395627
+      },
+      {
+        "item": "fwd_iat_mean=BIN_1",
+        "count": 4382872
+      },
+      {
+        "item": "flow_byts_s=BIN_1",
+        "count": 4370026
+      },
+      {
+        "item": "rst_flag_cnt=BIN_0",
+        "count": 10754159
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_2",
+        "count": 4391717
+      },
+      {
+        "item": "pkt_len_mean=BIN_0",
+        "count": 4464228
+      },
+      {
+        "item": "flow_iat_std=BIN_2",
+        "count": 4399296
+      },
+      {
+        "item": "flow_iat_mean=MISSING",
+        "count": 14
+      },
+      {
+        "item": "fwd_iat_mean=MISSING",
+        "count": 14
+      },
+      {
+        "item": "flow_duration=MISSING",
+        "count": 14
+      }
+    ]
+  },
+  "B5": {
+    "boundaries": {
+      "flow_duration": [
+        313.0,
+        2028.0,
+        203973.0,
+        4406961.0
+      ],
+      "tot_fwd_pkts": [
+        1.0,
+        2.0,
+        3.0,
+        8.0
+      ],
+      "tot_bwd_pkts": [
+        0.0,
+        1.0,
+        2.0,
+        6.0
+      ],
+      "totlen_fwd_pkts": [
+        0.0,
+        35.0,
+        77.0,
+        935.0
+      ],
+      "totlen_bwd_pkts": [
+        0.0,
+        56.0,
+        182.0,
+        964.0
+      ],
+      "pkt_len_mean": [
+        0.0,
+        39.83870967741935,
+        67.6,
+        145.27586206896555
+      ],
+      "pkt_len_std": [
+        0.0,
+        15.500000000000002,
+        58.88972745734183,
+        315.3193267
+      ],
+      "flow_iat_mean": [
+        223.0,
+        1725.0,
+        46658.66666666667,
+        556908.4444
+      ],
+      "flow_iat_std": [
+        0.0,
+        9303.3450641344,
+        351279.99737369403
+      ],
+      "fwd_iat_mean": [
+        0.0,
+        216.5,
+        30118.0,
+        688854.444444445
+      ],
+      "bwd_iat_mean": [
+        0.0,
+        165.0,
+        295705.1666666666
+      ],
+      "flow_pkts_s": [
+        1.9998620095213429,
+        27.735596558012464,
+        1026.6940451745,
+        7172.131148
+      ],
+      "flow_byts_s": [
+        0.0,
+        160.9030822716013,
+        1615.2994726156724,
+        123927.55004766444
+      ],
+      "down_up_ratio": [
+        0.0,
+        1.0
+      ],
+      "syn_flag_cnt": [
+        0.0
+      ],
+      "ack_flag_cnt": [
+        0.0,
+        1.0
+      ],
+      "rst_flag_cnt": [
+        0.0
+      ],
+      "fin_flag_cnt": [
+        0.0
+      ]
+    },
+    "rows": 13191622,
+    "lengths": [
+      {
+        "length": 18,
+        "unique": 18,
+        "count": 13191622
+      }
+    ],
+    "singletons": [
+      {
+        "item": "fwd_iat_mean=BIN_0",
+        "count": 3712637
+      },
+      {
+        "item": "flow_iat_mean=BIN_2",
+        "count": 2638115
+      },
+      {
+        "item": "flow_duration=BIN_4",
+        "count": 2640969
+      },
+      {
+        "item": "flow_duration=BIN_3",
+        "count": 2638699
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_0",
+        "count": 3635606
+      },
+      {
+        "item": "flow_pkts_s=BIN_3",
+        "count": 2626219
+      },
+      {
+        "item": "flow_iat_std=BIN_3",
+        "count": 2642265
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_1",
+        "count": 4180019
+      },
+      {
+        "item": "pkt_len_std=BIN_2",
+        "count": 2637941
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_1",
+        "count": 415480
+      },
+      {
+        "item": "syn_flag_cnt=BIN_1",
+        "count": 578683
+      },
+      {
+        "item": "pkt_len_mean=BIN_2",
+        "count": 2644567
+      },
+      {
+        "item": "flow_byts_s=BIN_0",
+        "count": 4053982
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_4",
+        "count": 2617772
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_4",
+        "count": 2590021
+      },
+      {
+        "item": "flow_pkts_s=BIN_2",
+        "count": 2623299
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_3",
+        "count": 2675624
+      },
+      {
+        "item": "flow_pkts_s=MISSING",
+        "count": 76928
+      },
+      {
+        "item": "pkt_len_std=BIN_3",
+        "count": 2619489
+      },
+      {
+        "item": "flow_pkts_s=BIN_1",
+        "count": 2621864
+      },
+      {
+        "item": "fin_flag_cnt=BIN_0",
+        "count": 13129139
+      },
+      {
+        "item": "ack_flag_cnt=BIN_1",
+        "count": 4478926
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_2",
+        "count": 1010366
+      },
+      {
+        "item": "flow_iat_mean=BIN_4",
+        "count": 2640945
+      },
+      {
+        "item": "rst_flag_cnt=BIN_1",
+        "count": 2437463
+      },
+      {
+        "item": "pkt_len_mean=BIN_1",
+        "count": 1176192
+      },
+      {
+        "item": "flow_byts_s=BIN_2",
+        "count": 2625020
+      },
+      {
+        "item": "pkt_len_mean=BIN_3",
+        "count": 2629827
+      },
+      {
+        "item": "pkt_len_std=BIN_1",
+        "count": 1103556
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_1",
+        "count": 3479822
+      },
+      {
+        "item": "bwd_iat_mean=BIN_0",
+        "count": 7580296
+      },
+      {
+        "item": "bwd_iat_mean=BIN_1",
+        "count": 331505
+      },
+      {
+        "item": "fwd_iat_mean=BIN_3",
+        "count": 2636519
+      },
+      {
+        "item": "fwd_iat_mean=BIN_2",
+        "count": 2634733
+      },
+      {
+        "item": "flow_byts_s=MISSING",
+        "count": 76914
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_2",
+        "count": 2681609
+      },
+      {
+        "item": "pkt_len_std=BIN_0",
+        "count": 4191950
+      },
+      {
+        "item": "syn_flag_cnt=BIN_0",
+        "count": 12612939
+      },
+      {
+        "item": "flow_iat_std=BIN_1",
+        "count": 1553110
+      },
+      {
+        "item": "flow_iat_std=BIN_0",
+        "count": 6359444
+      },
+      {
+        "item": "fin_flag_cnt=BIN_1",
+        "count": 62483
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_4",
+        "count": 1992441
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_0",
+        "count": 3371273
+      },
+      {
+        "item": "bwd_iat_mean=BIN_2",
+        "count": 2639321
+      },
+      {
+        "item": "flow_pkts_s=BIN_4",
+        "count": 2623290
+      },
+      {
+        "item": "flow_byts_s=BIN_4",
+        "count": 2627735
+      },
+      {
+        "item": "ack_flag_cnt=BIN_0",
+        "count": 8712696
+      },
+      {
+        "item": "down_up_ratio=BIN_1",
+        "count": 6133464
+      },
+      {
+        "item": "flow_iat_mean=BIN_1",
+        "count": 2637218
+      },
+      {
+        "item": "flow_iat_mean=BIN_3",
+        "count": 2638133
+      },
+      {
+        "item": "flow_duration=BIN_2",
+        "count": 2638036
+      },
+      {
+        "item": "pkt_len_std=BIN_4",
+        "count": 2638686
+      },
+      {
+        "item": "down_up_ratio=BIN_2",
+        "count": 94580
+      },
+      {
+        "item": "flow_duration=BIN_1",
+        "count": 2632879
+      },
+      {
+        "item": "bwd_iat_mean=BIN_3",
+        "count": 2640500
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_0",
+        "count": 4878763
+      },
+      {
+        "item": "down_up_ratio=BIN_0",
+        "count": 6963578
+      },
+      {
+        "item": "fwd_iat_mean=BIN_4",
+        "count": 2642664
+      },
+      {
+        "item": "pkt_len_mean=BIN_4",
+        "count": 2639520
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_1",
+        "count": 1331632
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_3",
+        "count": 3081304
+      },
+      {
+        "item": "totlen_fwd_pkts=BIN_0",
+        "count": 4104636
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_2",
+        "count": 1770584
+      },
+      {
+        "item": "flow_pkts_s=BIN_0",
+        "count": 2620022
+      },
+      {
+        "item": "flow_duration=BIN_0",
+        "count": 2641025
+      },
+      {
+        "item": "flow_iat_mean=BIN_0",
+        "count": 2637197
+      },
+      {
+        "item": "fwd_iat_mean=BIN_1",
+        "count": 1565055
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_3",
+        "count": 2252455
+      },
+      {
+        "item": "tot_bwd_pkts=BIN_3",
+        "count": 2012192
+      },
+      {
+        "item": "flow_byts_s=BIN_1",
+        "count": 1187672
+      },
+      {
+        "item": "flow_byts_s=BIN_3",
+        "count": 2620299
+      },
+      {
+        "item": "rst_flag_cnt=BIN_0",
+        "count": 10754159
+      },
+      {
+        "item": "totlen_bwd_pkts=BIN_2",
+        "count": 2631734
+      },
+      {
+        "item": "tot_fwd_pkts=BIN_4",
+        "count": 2053155
+      },
+      {
+        "item": "pkt_len_mean=BIN_0",
+        "count": 4101516
+      },
+      {
+        "item": "flow_iat_std=BIN_2",
+        "count": 2636803
+      },
+      {
+        "item": "flow_iat_mean=MISSING",
+        "count": 14
+      },
+      {
+        "item": "fwd_iat_mean=MISSING",
+        "count": 14
+      },
+      {
+        "item": "flow_duration=MISSING",
+        "count": 14
+      }
+    ]
+  }
+}

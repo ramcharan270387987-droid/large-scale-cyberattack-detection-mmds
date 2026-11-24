@@ -4,11 +4,22 @@
   "protocol_commit": "d0864a3a1875e4fa26918baed44e6ec8cb5ed167",
   "stages": {
     "A": {
-      "status": "running_unvalidated",
+      "status": "quantile_evidence_validated",
       "kernel": "ramcharan2345/mmds-phase-10-frequent-emerging-pattern-mining",
       "kernel_version": 1,
-      "last_observed_worker_status": "RUNNING",
-      "logs_available": false
+      "last_observed_worker_status": "COMPLETE",
+      "logs_available": false,
+      "runtime_worker_seconds": 1178.6794998379999,
+      "runtime_ui_seconds_user_reported": 1297.1,
+      "artifacts": {
+        "phase8_split_diagnostics.csv": "c3a0ea358281f0867acd084b4093d63529d09567fdf80e708702223d6e9fd7e2",
+        "receipt.json": "4b9dd47bd9a4455409d0bcc2742cf1eea82dcde31922cce72a133ddb839789a6",
+        "discretization.json": "3abaf8175e9f76b897bd377656d04780a78ceb4d973d70f7a8165a59c7bdd793"
+      },
+      "remaining": [
+        "domain-informed sensitivity",
+        "effective bin and missing prevalence summary"
+      ]
     }
   },
   "pending": [
