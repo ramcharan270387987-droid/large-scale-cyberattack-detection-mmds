@@ -61,3 +61,7 @@ The isolated Emerging Attack Pattern Explorer provides filters, charts and downl
 ## Scientific contribution and limits
 
 The contribution is a reproducible experiment using standard FP-Growth and exact aggregate support accounting. Frequent associations and prevalence changes cannot establish causation, concept drift or discovery of a new attack. Capture conditions, family/day confounding, discretization and duplicates materially limit interpretation. PrefixSpan is unsupported because the verified contract lacks defensible session identifiers and ordering semantics. Independent external validation remains future work.
+
+## Execution and final validation
+
+Kaggle versions 1, 2, 3 and 4 completed discretization, full-corpus mining, exact signature aggregation and bounded CPU benchmarks, respectively. Their retrieved logs contain the expected terminal markers. All 77 research regression tests and eight dashboard regression tests passed. The preview passed 32 support/section combinations, six family filters, six temporal-category choices and the empty-rule state. Tables, figures and source hashes are indexed in manifests/phase10_experiments.json.

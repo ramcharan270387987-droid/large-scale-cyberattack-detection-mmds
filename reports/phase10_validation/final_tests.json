@@ -5,5 +5,9 @@
   "dashboard_status": "PASS",
   "preview_combinations": 32,
   "preview_empty_state": "PASS",
-  "independent_model_reload": "PASS"
+  "independent_model_reload": "PASS",
+  "total_regression_passes": 85,
+  "research_seconds": 69.522,
+  "preview_family_filters": 6,
+  "preview_temporal_filters": 6
 }

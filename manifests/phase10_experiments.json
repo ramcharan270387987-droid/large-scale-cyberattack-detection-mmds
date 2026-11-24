@@ -1,14 +1,14 @@
 {
   "schema": "phase10-checkpoints-v1",
-  "complete": false,
+  "complete": true,
   "protocol_commit": "d0864a3a1875e4fa26918baed44e6ec8cb5ed167",
   "stages": {
     "A": {
-      "status": "quantile_evidence_validated",
+      "status": "COMPLETE AND VERIFIED",
       "kernel": "ramcharan2345/mmds-phase-10-frequent-emerging-pattern-mining",
       "kernel_version": 1,
       "last_observed_worker_status": "COMPLETE",
-      "logs_available": false,
+      "logs_available": true,
       "runtime_worker_seconds": 1178.6794998379999,
       "runtime_ui_seconds_user_reported": 1297.1,
       "artifacts": {
@@ -17,14 +17,17 @@
         "discretization.json": "3abaf8175e9f76b897bd377656d04780a78ceb4d973d70f7a8165a59c7bdd793",
         "bin_summary.json": "2b3ca49128bdef72a24ad876140bdf1ed6c93e50ad69f9146bb3d137ab5164c0"
       },
-      "remaining": [
-        "domain-informed sensitivity"
-      ],
+      "remaining": [],
       "log_sha256": "f95f042238b9ca7f8b95022d2bef4205e4aa60a971a213a463df06658428eaec",
-      "submitted_notebook_sha256": "bfbf9d8677391490ea89cd8edeaf11ba9f84b92ce98a1313afeff6c91b35c1d7"
+      "submitted_notebook_sha256": "bfbf9d8677391490ea89cd8edeaf11ba9f84b92ce98a1313afeff6c91b35c1d7",
+      "worker_status": "COMPLETE",
+      "retrieved_log_sha256": "f95f042238b9ca7f8b95022d2bef4205e4aa60a971a213a463df06658428eaec",
+      "completion_markers": [
+        "PHASE10 stage A complete"
+      ]
     },
     "B": {
-      "status": "mining_outputs_validated",
+      "status": "COMPLETE AND VERIFIED",
       "kernel_version": 2,
       "focused_tests_passed_before_submission": 6,
       "full_expected_rows": 16232943,
@@ -105,13 +108,15 @@
         "items_0.1.json": "75f715b4d3cf48b1b54d85089703294075d8c5f935e3d23b490af5882aece39b",
         "items_0.02.json": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2"
       },
-      "remaining": [
-        "independent direct rule verification",
-        "derived association metrics"
+      "remaining": [],
+      "logs_available": true,
+      "retrieved_log_sha256": "09d7f7a9c6ef5242aafadd0ef0a335f3a4c155bdb584e314b9660500d9a54810",
+      "completion_markers": [
+        "PHASE10 mining complete"
       ]
     },
     "C_counts": {
-      "status": "validated",
+      "status": "COMPLETE AND VERIFIED",
       "kernel_version": 3,
       "worker_status": "COMPLETE",
       "artifacts": {
@@ -124,7 +129,13 @@
         "domain_registry.json": "cf44e7358db36e493a4aa10e000119f48aca5cd54ed162f7b3d7b7dbc004926a",
         "B5.json": "ed94e65a9a8bb010caf43efd7ec6ee61035331770b9edb82612b999b5091d88b"
       },
-      "seconds": 311.191720059
+      "seconds": 311.191720059,
+      "logs_available": true,
+      "retrieved_log_sha256": "1ccfff4cf5e49358f809e33746edd72f871f61d30935e67a7cba9afad3d4893e",
+      "completion_markers": [
+        "PHASE10 aggregates complete"
+      ],
+      "remaining": []
     },
     "D_benchmarks": {
       "status": "COMPLETE AND VERIFIED",
@@ -191,12 +202,16 @@
         }
       ],
       "seconds": 444.93321924899993,
-      "driver_peak_rss_bytes": 6899773440
+      "driver_peak_rss_bytes": 6899773440,
+      "logs_available": true,
+      "retrieved_log_sha256": "eb0721d6b7fabccc682a5235501d56f6b786260d98e45ea3ad08e749e1f0dd5c",
+      "completion_markers": [
+        "PHASE10 benchmarks complete"
+      ],
+      "remaining": []
     }
   },
-  "pending": [
-    "Final regression result and consolidated evidence validation"
-  ],
+  "pending": [],
   "reconciliation": {
     "Stage A output validation": {
       "status": "COMPLETE AND VERIFIED"
@@ -239,5 +254,112 @@
       "status": "COMPLETE AND VERIFIED",
       "evidence": "77 research tests and 8 existing dashboard regression tests passed"
     }
+  },
+  "starting_revision": "595737ce8de14fd34055d2a8ea09aa41cb387d7c",
+  "final_verdict": "READY FOR PHASE 11",
+  "validation": "reports/phase10_validation/final_tests.json",
+  "limitations": [
+    "Sequential mining unsupported without verified sequence identifiers",
+    "Domain predictor-group weighting unavailable in exported sufficient counts",
+    "Per-flow deployed latency and multi-node scaling unmeasured",
+    "Retrospective captures with family/day confounding"
+  ],
+  "evidence_sha256": {
+    "reports/figures/phase10_attack_benign_contrast.png": "ff954779f104c30b0d5162552053ad50262ef7137e9ce41859acb763ee4e0af1",
+    "reports/figures/phase10_attack_benign_contrast.svg": "79710ec726ed4d7b0e9dfa75aff7f16c309a29fe58eba3cc069cfd948afccec5",
+    "reports/figures/phase10_benchmarks.png": "1b8640df508f264effde7231869b3863b69e31b9bed5bea79129e895dc740974",
+    "reports/figures/phase10_bin_sensitivity.png": "a7ec7ed6813ffb3fe562921eeea34133a54015304fe31b6927feb7f881bb84ff",
+    "reports/figures/phase10_bin_sensitivity.svg": "9fddd98270286b2212e770d23696b490b1847093206f6ebfbc36c14a04a33cc7",
+    "reports/figures/phase10_confidence_lift.png": "4b57798fb9d12fbc0429084c16d4623994d7c3716ff17b6dbc89515b0fa96b70",
+    "reports/figures/phase10_confidence_lift.svg": "06307ad07c4afcebf1b9f2d110e7a18aaa07d18cbd985990931b21adfffe1185",
+    "reports/figures/phase10_daily_support.png": "79f89bfe5b9d5635441a95556758cdc2726317baa39e72be35710b975ce09cb1",
+    "reports/figures/phase10_daily_support.svg": "5a20daca07a0bef4c8b7d365160524ebbf270da60e5abe6657d29a4c941aa474",
+    "reports/figures/phase10_evolution_detection.png": "a435d7ec09044225968d66c85dcb9557a554879c2ccec93aa5765ea999ebeee6",
+    "reports/figures/phase10_itemset_lengths.png": "ad1991cb3603d162e8f58f7585b0c965102c86d4b2c60349b306dcbda1be44ab",
+    "reports/figures/phase10_itemset_lengths.svg": "50c96ef216fd24159b596f36976e85a38903e68592123bc76ab5c7321ea7ab93",
+    "reports/figures/phase10_similarity.png": "0067fed655c1ca80df6407ffbe1b65cb7a29e6cdf08d7130fcee419584be3aba",
+    "reports/figures/phase10_similarity.svg": "d29fbf3e22a5b477c3ed259055edb71b9dc7157e3f05600196e4a6df37499756",
+    "reports/figures/phase10_support_sensitivity.png": "c44a21d8bbfbac1a1dec37e836b9d31a5752efed6dd582cab35411f7b57f2e95",
+    "reports/figures/phase10_support_sensitivity.svg": "f4ba21578cb6069f93f2e1f0b1b324a687ac861094f95f4faab85f38888e9447",
+    "reports/phase10_aggregates/A3.json": "d69c7c6cf74b156645e6f190ad56bf1c839f42ed52bad63d07de80aa62d4c856",
+    "reports/phase10_aggregates/A5.json": "cfc84f982679ba07a2a62540dc73ce35b50246cfdd60fa65fc3e53b7612023ad",
+    "reports/phase10_aggregates/B3.json": "83104a331fd6e0704a7b1647db60dd4aea647dc62fdab46dfb57a60d63488e8e",
+    "reports/phase10_aggregates/B5.json": "ed94e65a9a8bb010caf43efd7ec6ee61035331770b9edb82612b999b5091d88b",
+    "reports/phase10_aggregates/domain.json": "a7ce326df4b014e0a04cfd9d2347c57e8935549c4bb3b88d9de9e146a181567d",
+    "reports/phase10_aggregates/domain_registry.json": "cf44e7358db36e493a4aa10e000119f48aca5cd54ed162f7b3d7b7dbc004926a",
+    "reports/phase10_aggregates/phase8_split_diagnostics.csv": "c3a0ea358281f0867acd084b4093d63529d09567fdf80e708702223d6e9fd7e2",
+    "reports/phase10_aggregates/receipt.json": "a576f450b42faf233a3d59a1f4aedb3d7099249fdfe9c5067eeb1362b62fe840",
+    "reports/phase10_analysis/capture_gaps.json": "ddd631bcf5f306e85b2a65191dbc420324ff6fac2e6a0d1825f3475409f41550",
+    "reports/phase10_analysis/capture_sensitivity.json": "87f2e6d1b506c8ad464121f3af76afa6ca964f8baa937fa222ba62aa8bd23348",
+    "reports/phase10_analysis/contrast.json": "e3f0fbff2447009b9b59b10a09054033cb6703cb5f00a7f32b3e2dab56e987e1",
+    "reports/phase10_analysis/day_mining.json": "8d82045c03dc50858b119e10b7ba13ad7c50a6cba12397170527237577306df1",
+    "reports/phase10_analysis/direct_rule_verification.json": "2c3726413deee0c39ff12cd150fcd77e47715f7f46dece189866fbdd119005de",
+    "reports/phase10_analysis/discretization_duplicate_sensitivity.json": "b38a287e38a331b086413af1da9f1f84f3b453194b4b43a60b26a35ea83f3d0b",
+    "reports/phase10_analysis/families.json": "3b26eed71e126957eb5654962145eba789375e5ee4a28945a8774577d9858286",
+    "reports/phase10_analysis/persistence.json": "1d8e4c84b2c7551575c4c6e8da1be33fc6515aafa3226838d640fbd4a57a38a8",
+    "reports/phase10_analysis/similarity.json": "968f5e9182b25a51d4aa10b7bd7969f53ff9f23f726c1803d1136c9ee920b3f9",
+    "reports/phase10_analysis/standardized_support.json": "e7ac084e638373f846cae322bb1fd072c3193c96134f9ee31b5c1bbd4dff1ad9",
+    "reports/phase10_analysis/temporal.json": "3c4a19c1fd75797b7659c9819188f5bea579f7a179d74d567337bf1ec22f7001",
+    "reports/phase10_benchmarks/progress.json": "3c2551cf7407dee030b40b91673818ea7f6eb57d93ae169fbd9bc61c73bc5319",
+    "reports/phase10_benchmarks/receipt.json": "269e4daa7b6e6b0acb5ede304f7ec9029ead62403f5c80aa16d50be5f9a12ec1",
+    "reports/phase10_benchmarks/registry.json": "44304f58084fa64685ccd8c8f77f081639d3a80b8172545becd4af05ac512aaf",
+    "reports/phase10_detection/frozen.json": "2a141f7070f9850f1f46e0534be04758fca0d7ea7f44f9814f6dd232cd732909",
+    "reports/phase10_detection/matched_comparison.json": "45fbb002e1083c8c93f79120adaadc987fa1d7158461554850be0316878b01c1",
+    "reports/phase10_detection/metrics.json": "f2a13f7b937fb2d3164cf74619d7c2865b2e7734eab13104f7dbaf9c4b348d21",
+    "reports/phase10_detection/score_curves.json": "5a515fbe9c32f29a935fbe861a533d32ea32d08042fba6ffdea64264a2e7a20e",
+    "reports/phase10_detection_B5/frozen.json": "11e64da55aa6b6b38b9d0e2c9bd0af61ef9a41fe6a84f83c6de2c95d6d6e32fc",
+    "reports/phase10_detection_B5/metrics.json": "055413e998e3a5d9ca8ed6f04d5f2674131dd94279af555d8037daf0edd63018",
+    "reports/phase10_results.md": "f8d8366263116089ce4dad84d39e20b4537a0e78ffe43be88be65ee7b4b8715c",
+    "reports/phase10_rule_validation/confidence_sensitivity.json": "3af1875ae4cfbe0f55efedbf7c8dee4ffab08797cab56a4ae34d5ad1c7257444",
+    "reports/phase10_rule_validation/count_metrics.json": "43066b917e3b0e57d644a50e0928e1e1659263bffe4fff228eb163270143ad5e",
+    "reports/phase10_stageA/bin_summary.json": "2b3ca49128bdef72a24ad876140bdf1ed6c93e50ad69f9146bb3d137ab5164c0",
+    "reports/phase10_stageA/discretization.json": "3abaf8175e9f76b897bd377656d04780a78ceb4d973d70f7a8165a59c7bdd793",
+    "reports/phase10_stageA/phase8_split_diagnostics.csv": "c3a0ea358281f0867acd084b4093d63529d09567fdf80e708702223d6e9fd7e2",
+    "reports/phase10_stageA/receipt.json": "4b9dd47bd9a4455409d0bcc2742cf1eea82dcde31922cce72a133ddb839789a6",
+    "reports/phase10_stageA/validation.md": "2a6c9f225098db47007d12595a17f248d5d9b7cce2e9315853555f478ef30186",
+    "reports/phase10_stageB/items_0.01.json": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2",
+    "reports/phase10_stageB/items_0.02.json": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2",
+    "reports/phase10_stageB/items_0.05.json": "55e095bd599f4d378d60625155d156bffb2e1fdad6175dd1847e54c2d0265108",
+    "reports/phase10_stageB/items_0.1.json": "75f715b4d3cf48b1b54d85089703294075d8c5f935e3d23b490af5882aece39b",
+    "reports/phase10_stageB/progress.json": "2114260cbd4de7d9b4d92678f701843ce0946b1c73983dc6f67eddf175dc3095",
+    "reports/phase10_stageB/receipt.json": "9ea03fda525207e7c9a23a7de6cea018ba51f9e377eb7eff10cee3bf099df19f",
+    "reports/phase10_stageB/registry.json": "44304f58084fa64685ccd8c8f77f081639d3a80b8172545becd4af05ac512aaf",
+    "reports/phase10_stageB/rules_0.01.json": "7159f3b560e5345e8cfa1787a381855352ee4e60b9c8fc6a11df940e476f4840",
+    "reports/phase10_stageB/rules_0.02.json": "40ef057a74e6b9e5d13e5b8029a3592ad48172e575cfe40dd23d5b1dc66ab56e",
+    "reports/phase10_stageB/rules_0.05.json": "7723876f8eee93f9031a52a0a429c1a199939358b3a587600d3d34359dda9e8c",
+    "reports/phase10_stageB/rules_0.1.json": "e89f33e40a9c885a0ea26a5c2fe8529b52a1261ad4080be876e14e86154d5a92",
+    "reports/phase10_validation/final_tests.json": "d6597136ca861d7f31f846139e52cebd7953c3e687a7002bd3719a0779bd9869",
+    "reports/phase10_validation/focused_tests.json": "126052a766385f97869df3332fcf585d6b3ff2f7f74e3727debafc8ca11e7f26",
+    "reports/phase10_validation/independent_reload.json": "be35469f5b31f5a5c8478f3cbd21e193af2c0d4fac9ed52d7f1dee9645d72009"
+  },
+  "source_sha256": {
+    "src/patterns/discretization.py": "9d9cd6a720672d651b7bce57d20de616faefe2085717f71c5d0b3905c33a56a2",
+    "src/patterns/frequent_itemsets.py": "c1acf94389a623a501fd6382de12e0b415b8fa9f2ab728fdbf811d8d3d869da5",
+    "src/patterns/metrics.py": "25c637b0a3e07874140b5be63662831ebed6ca4143e5e19875ddeeb4849e8710",
+    "src/patterns/support.py": "e8c0ac183e412203c14aa801a41d34f17327cb1fb98e0e607449c8308bb255e2",
+    "scripts/analyze_phase10_aggregates.py": "b87b2df5d6a30d2c15648384bc70f911e2a47f184ae4684fa3048ffaed86f56e",
+    "scripts/analyze_phase10_rules.py": "c30a7628a795c2d9cf1d3b6a457cce7f01974d8f473480b94728ea854c6fae64",
+    "scripts/analyze_phase10_sensitivity.py": "cb653af18dadb8535c8ac85289c6aeab46e6389dcb8e2275d6554a02b4168b72",
+    "scripts/build_phase10_aggregates.py": "b333008ece025aeadc8feeb39b85054f44f817fca4104ce10429ad53cac557dc",
+    "scripts/build_phase10_benchmarks.py": "4fbcd8db270fff91615f0e3774a0e2c4a8a595bbd45d878ab9d337214015dce3",
+    "scripts/build_phase10_mining.py": "d03ef9f7fc1a040bd35bddb74e664eae056d65a1f6b1ff2b8961724a52ba47b9",
+    "scripts/build_phase10_notebook.py": "faf7f5d36e2f9999448fd0dcfa0053cb328100404e9c1b7d3e2b6e171ea9be64",
+    "scripts/complete_phase10_evaluation.py": "ff8f6e7958843d68eb237867dcdffa57556a925a946a666ad00cb7d6fc4a50ff",
+    "scripts/evaluate_phase10_patterns.py": "fa3f87fb4aaca5e48e60c272c0a25e8c20c96f812e53b35fb3c3132524e9d1f7",
+    "scripts/finalize_phase10_evidence.py": "ee31237abd078676ef769d1abb1e854df61d7b31a368b66b92db6ff4fe023e32",
+    "scripts/render_phase10_analysis.py": "97fd7640b98c2b4c6bc5e37db403946991dd36a676cb7dfd6c5b613dbea9ce63",
+    "scripts/render_phase10_figures.py": "7c466e1a143dc76b2c2c05f5162dcba30d1b0ec7da554a748e7a513d58b88fa0",
+    "scripts/render_phase10_final_report.py": "672d182c14a6786b3e5e9381224262526b8fe41de415d0849a363ba6a9eca33c",
+    "dashboard/phase10_preview.py": "b9ac3f218104f35ef61fbead7d5ef78a14d4760e7258a1b63f6c27906f2fe4d8",
+    "docs/phase10_limitations.md": "5b43efba99e212c037925699237b555f563a90225f5253c2a479619cfbebdab3",
+    "docs/phase10_methodology.md": "172b43461b685cc64ef558d9cd8c118980ecac7c743975242be4b3ee2496fc6e",
+    "docs/phase10_pattern_inference_contract.md": "29434f9f5393f38b0fedbf2f2349ffc9c42bb6289ccb24c06d29a91c1ceec937",
+    "docs/phase10_research_contribution.md": "d16e3480be512af5f2d05326161943a764ebb11e5e88bb4f2b90a649721c837e",
+    "docs/phase10_research_protocol.md": "4a64f08c293bcdee78d709ed0c346372dbfa91ae9771729ae546d46f61d4f5d3",
+    "tests/test_phase10_fpgrowth.py": "fe94dc7e7e00c38e2cbea72c8d5b18b66ed5284ebc5ab3aecd4a64573826b183",
+    "tests/test_phase10_metrics.py": "81734d2fd9ad9f03dbf0b4a714670e21006d3a22b8fcbe9c62ebcaafbc66111b",
+    "tests/test_phase10_patterns.py": "949676cb450fc1a19078ed408a3f87c7fc722c77f13bb3d3d53568c0000344b6",
+    "tests/test_phase10_registry.py": "a76da7a7fe95adfaea24a17f65dcee05795c60e0cc9c07a9f6b806952fbb1b44",
+    "tests/test_phase10_support.py": "7e02719b59c2ccf9bf5b3a00025e13ae78186347ef3229a8d8a97e2dcc21404f"
   }
 }
