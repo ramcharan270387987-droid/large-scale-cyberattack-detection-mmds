@@ -1,0 +1,29 @@
+# Phase 10 prespecified protocol
+
+Version phase10-v1 starts from d5ab1d87e4b32bfdc484cec1b05b4ecc3e73b5b0.
+
+RQ1 concerns recurring full-corpus feature combinations. RQ2 concerns attack versus benign enrichment. RQ3 concerns prevalence across observed captures. RQ4 concerns transfer of earlier-reference patterns. RQ5 concerns discretization, support, duplicates and capture composition. RQ6 concerns complementary chronological detection evidence. RQ7 concerns single-node Spark FP-Growth cost.
+
+## Populations and boundaries
+
+A includes every one of 16,232,943 feature-ready flows. C and D condition A on binary label and family for descriptive analysis. E tracks the ten recorded captures. F weights each predictor group equally as a separate estimand. B uses the exact retained Phase 4 B train, validation and test assignments, including earliest-role predictor-group overlap purging. Labels and capture metadata remain evaluation columns. The captures were examined in earlier phases and provide retrospective evidence. Independent external validation belongs to Phase 14.
+
+## Transactions and discretization
+
+Use the frozen ordered 18 predictors and existing finite-value masking. Every flow contributes exactly one transaction with one unique item per feature. Missing values get FEATURE=MISSING. Feature names and ascending bin IDs define deterministic item names. Fit quantile boundaries at thirds or fifths with Spark approxQuantile relative error 0.001. Collapse repeated boundaries. Constant observed features have one effective bin. Upper bins include values beyond the fitting maximum and lower bins include values below its minimum. Use right-closed intervals. Fit A's descriptive registry on A and B's registry only on retained B training flows. Freeze before later scoring. Domain sensitivity uses cuts 0, 1 and 10 for packet and flag counts, and 0, 1000 and 1000000 for duration and inter-arrival microseconds. Other predictors retain thirds. Report effective cardinalities and all boundaries.
+
+## Mining and safeguards
+
+Run Spark 4.3.0 MLlib FPGrowth on all eligible transactions at least once. Because 18-item transactions can generate combinatorial output, primary mining uses the first six registered predictors, with all 18 retained in the transaction audit. Compare support 0.10, 0.05, 0.02 and 0.01 sequentially, stopping a lower-support series if the preceding result exceeds 100,000 itemsets or takes over 15 minutes. Record any omitted configuration and reason. This feature restriction controls the mining search. Filtering long itemsets afterward only controls exports. There is no native maximum-length parameter. Primary support is 0.05, with confidence 0.70, lift at least 1.2 and absolute support at least 100. Compare confidence 0.50 and 0.90. Export complete summaries and at most 500 patterns or rules, ordered by frequency then canonical item IDs; persist full outputs privately. For descriptive family analysis require at least 100 observations and class support at least 0.10.
+
+## Rule and contrast metrics
+
+Calculate antecedent, consequent and joint support, confidence, lift, leverage and conviction. Confidence one produces infinite conviction unless consequent support is one, when conviction is undefined. Verify 20 canonical rules by direct transaction predicates. Label-containing transactions are excluded. Evaluate attack support, benign support, their difference and ratio, pattern-conditioned attack prevalence and enrichment over population prevalence. Zero denominators remain explicit. Select chronological patterns only from training counts, using attack/benign support ratio at least two, support at least 100 and length two or three. Sort by enrichment, attack support and canonical ID; retain at most 20 and eliminate strict supersets with identical training support. Score the fraction of selected patterns matched. Choose the validation threshold maximizing recall under 1% benign FPR, accepting whole-score ties, then freeze before test. Compare exact compatible archived baselines on the same retained rows.
+
+## Temporal analysis and uncertainty
+
+Freeze B training bins across all captures. Track exact counts for selected reference patterns and the bounded union of day-mined patterns. Use consecutive observed captures and report calendar gaps. Require count at least 100 and absolute support change at least 0.01. Emerging means ratio at least two, strongly emerging at least five, declining at most one half. Persistent means support at least 0.05 on at least eight captures. Newly observed means zero reference count and positive current count; disappearing means positive reference count and zero current count. Raw growth is infinite for positive current support with zero reference support and undefined when both are zero. Report threshold crossings separately from absence. Compare Jaccard and support-weighted Jaccard, class-conditional support and fixed binary-mixture support where both classes have support. Do not extrapolate absent family/day strata. Use leave-one-capture-out descriptive ranges, without independent-flow confidence intervals or mass significance claims.
+
+## Resources, persistence and completion
+
+Use private Kaggle CPU, local[4], 8 GiB driver, 48 shuffle partitions and pinned Phase 2 version 1. Benchmark deterministic predictor-group samples targeting one, four and eight million flows plus full A where feasible; report actual rows. Persist discretization and model hashes, registries, frozen decisions and synthetic reload parity in versioned private outputs. Verify meaningful sequence IDs and ordering before PrefixSpan. Absent defensible session metadata, sequential analysis is unsupported. Checkpoint every successful stage with retrieved logs, counts, checksums and a verified research-v2 push. Completion requires all mandatory evidence or explicitly documented technical/statistical limitations and the full regression suite.
