@@ -1,0 +1,20 @@
+[
+  {
+    "confidence": 0.5,
+    "all_rules": 740,
+    "filtered_rules": 732,
+    "method": "exact enumeration from complete primary frequent itemsets"
+  },
+  {
+    "confidence": 0.7,
+    "all_rules": 629,
+    "filtered_rules": 629,
+    "method": "exact enumeration from complete primary frequent itemsets"
+  },
+  {
+    "confidence": 0.9,
+    "all_rules": 383,
+    "filtered_rules": 383,
+    "method": "exact enumeration from complete primary frequent itemsets"
+  }
+]
