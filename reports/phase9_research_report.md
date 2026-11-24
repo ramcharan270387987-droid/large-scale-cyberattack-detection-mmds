@@ -138,7 +138,7 @@ and hybrid scores and Phase 8 abstention behavior. The isolated
 [Streamlit preview](../dashboard/phase9_preview.py) reads verified aggregate
 evidence. Run it locally with `streamlit run dashboard/phase9_preview.py`.
 
-The local Spark 4.3.0 regression suite passed 73 tests, including earlier-
+The local Spark 4.3.0 regression suite passed 75 tests, including earlier-
 only C splitting, exact hierarchical reconciliation and unsupported
 open-set discrimination metrics. The preview was smoke-tested with
 Streamlit AppTest across all six family evaluation scenarios and both
