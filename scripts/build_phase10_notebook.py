@@ -9,6 +9,7 @@ p = argparse.ArgumentParser()
 p.add_argument('output', type=Path)
 a = p.parse_args()
 note = build('baseline', 'B')
+note['cells'][0]['source'] = ['# Phase 10 discretization and transaction audit']
 source = (ROOT / 'src/patterns/discretization.py').read_text()
 note['cells'].insert(-1, cell('code', 'phase10-source', 'target = project / "src/patterns/discretization.py"\ntarget.parent.mkdir(parents=True, exist_ok=True)\ntarget.write_text(' + repr(source) + ')\n'))
 code = '''from hashlib import sha256
