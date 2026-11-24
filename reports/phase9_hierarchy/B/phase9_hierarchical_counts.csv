@@ -1,0 +1,40 @@
+gate,source_day,binary_label,attack_family,outcome,decision,count
+phase4_rf,2018-03-02,0,Benign,correct_benign,Benign,601393
+phase4_rf,2018-03-02,0,Benign,benign_false_alarm,Credential brute force,13
+phase4_rf,2018-03-02,0,Benign,benign_false_alarm,DDoS,496
+phase4_rf,2018-03-02,0,Benign,benign_false_alarm,UNKNOWN,3449
+phase4_rf,2018-03-02,0,Benign,benign_false_alarm,DoS,11
+phase4_rf,2018-03-01,1,Infiltration,missed_attack,Benign,64836
+phase4_rf,2018-03-01,1,Infiltration,unknown_false_accept,DoS,1
+phase4_rf,2018-03-01,0,Benign,correct_benign,Benign,165328
+phase4_rf,2018-03-01,1,Infiltration,unknown_false_accept,DDoS,68
+phase4_rf,2018-03-01,0,Benign,benign_false_alarm,DDoS,139
+phase4_rf,2018-03-01,1,Infiltration,unknown_false_accept,Credential brute force,6
+phase4_rf,2018-03-01,0,Benign,benign_false_alarm,Credential brute force,9
+phase4_rf,2018-03-01,0,Benign,benign_false_alarm,UNKNOWN,740
+phase4_rf,2018-03-01,1,Infiltration,unknown_rejected,UNKNOWN,340
+phase4_rf,2018-03-01,0,Benign,benign_false_alarm,DoS,6
+phase4_rf,2018-03-02,1,Bot,missed_attack,Benign,143272
+phase4_rf,2018-03-02,1,Bot,unknown_rejected,UNKNOWN,2
+phase8_supervised,2018-03-02,0,Benign,correct_benign,Benign,605362
+phase8_supervised,2018-03-01,1,Infiltration,missed_attack,Benign,65251
+phase8_supervised,2018-03-01,0,Benign,correct_benign,Benign,166222
+phase8_supervised,2018-03-02,1,Bot,missed_attack,Benign,143274
+phase8_hybrid,2018-03-02,0,Benign,correct_benign,Benign,605361
+phase8_hybrid,2018-03-02,0,Benign,benign_false_alarm,Credential brute force,1
+phase8_hybrid,2018-03-01,1,Infiltration,missed_attack,Benign,65251
+phase8_hybrid,2018-03-01,0,Benign,correct_benign,Benign,166219
+phase8_hybrid,2018-03-01,0,Benign,benign_false_alarm,Credential brute force,3
+phase8_hybrid,2018-03-02,1,Bot,missed_attack,Benign,143274
+oracle,2018-03-02,0,Benign,correct_benign,Benign,605362
+oracle,2018-03-01,1,Infiltration,unknown_false_accept,Web attack,15699
+oracle,2018-03-01,1,Infiltration,unknown_false_accept,DoS,2181
+oracle,2018-03-01,0,Benign,correct_benign,Benign,166222
+oracle,2018-03-01,1,Infiltration,unknown_false_accept,DDoS,4314
+oracle,2018-03-01,1,Infiltration,unknown_false_accept,Credential brute force,2377
+oracle,2018-03-01,1,Infiltration,unknown_rejected,UNKNOWN,40680
+oracle,2018-03-02,1,Bot,unknown_false_accept,DoS,222
+oracle,2018-03-02,1,Bot,unknown_rejected,UNKNOWN,38
+oracle,2018-03-02,1,Bot,unknown_false_accept,Web attack,4303
+oracle,2018-03-02,1,Bot,unknown_false_accept,DDoS,137927
+oracle,2018-03-02,1,Bot,unknown_false_accept,Credential brute force,784
