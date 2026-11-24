@@ -303,3 +303,7 @@ metastore_db/
 *.bak
 /tmp/
 /temp/
+
+!/dashboard/data/*.csv
+
+/.dashboard-venv/

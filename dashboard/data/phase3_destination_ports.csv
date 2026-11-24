@@ -1,0 +1,72 @@
+population,attack_family,scope,dst_port,records,rank,population_records
+attack,Bot,family,8080.0,281634,1,286191
+attack,Bot,family,0.0,258,2,286191
+attack,Bot,family,50891.0,6,3,286191
+attack,Bot,family,50895.0,6,4,286191
+attack,Bot,family,50896.0,6,5,286191
+attack,Bot,family,50899.0,6,6,286191
+attack,Bot,family,50906.0,6,7,286191
+attack,Bot,family,50747.0,5,8,286191
+attack,Bot,family,50749.0,5,9,286191
+attack,Bot,family,50754.0,5,10,286191
+attack,Bot,family,50755.0,5,11,286191
+attack,Bot,family,50756.0,5,12,286191
+attack,Credential brute force,family,21.0,193390,1,380949
+attack,Credential brute force,family,22.0,187559,2,380949
+attack,DDoS,family,80.0,1263933,1,1263933
+attack,DoS,family,80.0,514410,1,654300
+attack,DoS,family,21.0,139890,2,654300
+attack,Infiltration,family,53.0,50320,1,161934
+attack,Infiltration,family,443.0,29262,2,161934
+attack,Infiltration,family,3389.0,13630,3,161934
+attack,Infiltration,family,80.0,5827,4,161934
+attack,Infiltration,family,445.0,5465,5,161934
+attack,Infiltration,family,135.0,2579,6,161934
+attack,Infiltration,family,0.0,2255,7,161934
+attack,Infiltration,family,22.0,939,8,161934
+attack,Infiltration,family,139.0,901,9,161934
+attack,Infiltration,family,137.0,267,10,161934
+attack,Infiltration,family,123.0,185,11,161934
+attack,Infiltration,family,23.0,174,12,161934
+attack,Web attack,family,80.0,772,1,928
+attack,Web attack,family,500.0,130,2,928
+attack,Web attack,family,0.0,21,3,928
+attack,Web attack,family,67.0,3,4,928
+attack,Web attack,family,22.0,1,5,928
+attack,Web attack,family,31808.0,1,6,928
+benign,Benign,family,53.0,4021224,1,13484708
+benign,Benign,family,443.0,1997917,2,13484708
+benign,Benign,family,3389.0,1821460,3,13484708
+benign,Benign,family,80.0,1690855,4,13484708
+benign,Benign,family,445.0,706330,5,13484708
+benign,Benign,family,0.0,235803,6,13484708
+benign,Benign,family,5355.0,50684,7,13484708
+benign,Benign,family,3128.0,28012,8,13484708
+benign,Benign,family,137.0,22667,9,13484708
+benign,Benign,family,67.0,13424,10,13484708
+benign,Benign,family,123.0,12545,11,13484708
+benign,Benign,family,135.0,12175,12,13484708
+attack,All families,population,80.0,1784942,1,2748235
+attack,All families,population,21.0,333315,2,2748235
+attack,All families,population,8080.0,281670,3,2748235
+attack,All families,population,22.0,188499,4,2748235
+attack,All families,population,53.0,50320,5,2748235
+attack,All families,population,443.0,29262,6,2748235
+attack,All families,population,3389.0,13630,7,2748235
+attack,All families,population,445.0,5465,8,2748235
+attack,All families,population,135.0,2579,9,2748235
+attack,All families,population,0.0,2534,10,2748235
+attack,All families,population,139.0,901,11,2748235
+attack,All families,population,137.0,267,12,2748235
+benign,All families,population,53.0,4021224,1,13484708
+benign,All families,population,443.0,1997917,2,13484708
+benign,All families,population,3389.0,1821460,3,13484708
+benign,All families,population,80.0,1690855,4,13484708
+benign,All families,population,445.0,706330,5,13484708
+benign,All families,population,0.0,235803,6,13484708
+benign,All families,population,5355.0,50684,7,13484708
+benign,All families,population,3128.0,28012,8,13484708
+benign,All families,population,137.0,22667,9,13484708
+benign,All families,population,67.0,13424,10,13484708
+benign,All families,population,123.0,12545,11,13484708
+benign,All families,population,135.0,12175,12,13484708

@@ -1,0 +1,16 @@
+attack_family,original_label,records,capture_days
+Benign,Benign,13484708,10
+Bot,Bot,286191,1
+Credential brute force,FTP-BruteForce,193360,1
+Credential brute force,SSH-Bruteforce,187589,1
+DDoS,DDOS attack-HOIC,686012,1
+DDoS,DDOS attack-LOIC-UDP,1730,1
+DDoS,DDoS attacks-LOIC-HTTP,576191,1
+DoS,DoS attacks-GoldenEye,41508,1
+DoS,DoS attacks-Hulk,461912,1
+DoS,DoS attacks-SlowHTTPTest,139890,1
+DoS,DoS attacks-Slowloris,10990,1
+Infiltration,Infilteration,161934,2
+Web attack,Brute Force -Web,611,2
+Web attack,Brute Force -XSS,230,2
+Web attack,SQL Injection,87,2

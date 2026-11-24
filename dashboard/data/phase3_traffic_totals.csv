@@ -1,0 +1,3 @@
+population,records,packet_count,byte_count,packet_observations,byte_observations
+attack,2748235,306194295.0,10852060785.0,2748235,2748235
+benign,13484708,178292446.0,81740137674.0,13484708,13484708

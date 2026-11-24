@@ -1,0 +1,6 @@
+test,batch_id,passed
+partial_aggregate_ignored,1,True
+replayed_committed_sink_batch,1,True
+restart_same_query_new_run,1,True
+durable_sink_hash_unchanged,1,True
+checkpoint_and_sink_reconcile,48,True

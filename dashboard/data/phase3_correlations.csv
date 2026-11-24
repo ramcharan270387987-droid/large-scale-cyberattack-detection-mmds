@@ -1,0 +1,17 @@
+population,x,y,pairs,pearson
+attack,flow_duration,total_bytes,2748235,0.24720253582696838
+attack,flow_duration,total_packets,2748235,0.24492887072079553
+attack,flow_iat_mean,flow_duration,2748235,0.6886754738718436
+attack,pkt_len_mean,total_bytes,2748235,0.014766679349921586
+attack,syn_flag_cnt,rst_flag_cnt,2748235,-0.039102122755058824
+attack,tot_fwd_pkts,tot_bwd_pkts,2748235,-0.0016273692869511578
+attack,total_packets,total_bytes,2748235,0.9862659021518216
+attack,totlen_fwd_pkts,totlen_bwd_pkts,2748235,0.00022727016250926279
+benign,flow_duration,total_bytes,13484694,0.04637136094760688
+benign,flow_duration,total_packets,13484694,0.07053187743871243
+benign,flow_iat_mean,flow_duration,13484694,0.4935607518283946
+benign,pkt_len_mean,total_bytes,13484708,0.17212440380974559
+benign,syn_flag_cnt,rst_flag_cnt,13484708,-0.10911282790346759
+benign,tot_fwd_pkts,tot_bwd_pkts,13484708,0.7611690066125651
+benign,total_packets,total_bytes,13484708,0.9818227515174587
+benign,totlen_fwd_pkts,totlen_bwd_pkts,13484708,0.0047822027002276885

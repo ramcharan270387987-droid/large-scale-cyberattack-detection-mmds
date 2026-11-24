@@ -63,3 +63,25 @@ Phase 5 compares global retrospective and reference-trained K-Means fits on the 
 ## Phase 6 historical Structured Streaming replay
 
 Phase 6 replays the retained chronological B cohorts with the frozen Phase 4 classifiers and the frozen Phase 5 K-Means pipeline. See the [replay protocol](docs/phase6_replay_protocol.md), [results and figures](reports/phase6_streaming_results.md), and [interpretation](docs/phase6_drift_interpretation.md). Build the replay notebook with `python scripts/build_phase6_notebook.py`. Build its private model mirror with `python scripts/build_phase6_model_mirror.py PATH` using the configured Kaggle credentials. Attach the verified Phase 2 output and the model mirror listed in the run manifest.
+
+## Phase 7 faculty dashboard
+
+The Streamlit dashboard connects the audited Parquet corpus, Spark SQL analysis, supervised benchmarks, K-Means novelty analysis, and historical streaming replay through verified aggregate evidence. It includes a prediction explorer and filtered historical alert downloads.
+
+```sh
+python -m venv .dashboard-venv
+source .dashboard-venv/bin/activate
+python -m pip install -r dashboard/requirements.txt
+python scripts/validate_dashboard_package.py
+python -m streamlit run dashboard/app.py
+```
+
+Open the local address printed by Streamlit. Public deployment is ready for manual setup through Streamlit Community Cloud. [Deployment settings](docs/dashboard_deployment.md) · [Quick start](docs/dashboard_quickstart.md) · [Architecture](docs/system_architecture.md)
+
+Random Forest test recall fell from 82.82% on grouped-random traffic to 0.20% on later captures at threshold 0.5. Web novelty flags reached 55.78% recall at 1.50% precision. Historical replay covered 15,322,987 retained flows in 49 microbatches, with 102 monitoring records. These measures characterize the dataset, evaluation cohorts and single-node historical replay. Live detection efficacy and concept drift require additional evidence.
+
+[Final academic report](docs/final_project_report.md) · [Faculty demo guide](docs/faculty_demo_guide.md) · [Presentation and notes](docs/final_presentation/outline.md) · [Viva](docs/viva_questions.md) · [Evidence manifest](manifests/dashboard_package.json)
+
+![Dashboard overview captured in local Chrome](docs/screenshots/overview.jpg)
+
+[Chronological model comparison screenshot](docs/screenshots/chronological.jpg)

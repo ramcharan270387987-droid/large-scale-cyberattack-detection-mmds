@@ -1,0 +1,420 @@
+{
+  "clusters": {
+    "B": {
+      "cutoffs": {
+        "0.95": 8.508047634376355,
+        "0.99": 16.67940564007534,
+        "0.999": 35.317581821449224
+      },
+      "retained_rows": 15322987,
+      "scale_ari": 0.21828525609211355,
+      "seed_ari": 0.8503551767126171,
+      "selected_k": 12,
+      "version": 2
+    },
+    "C": {
+      "cutoffs": {
+        "0.95": 8.43342825481104,
+        "0.99": 17.880003619372005,
+        "0.999": 42.38438316542496
+      },
+      "retained_rows": 15373842,
+      "scale_ari": 0.4201543819333072,
+      "seed_ari": 0.7973700368914762,
+      "selected_k": 12,
+      "version": 3
+    },
+    "G": {
+      "cutoffs": {
+        "0.95": 13.37902829503273,
+        "0.99": 31.042924705057366,
+        "0.999": 263.37528662305107
+      },
+      "retained_rows": 16232943,
+      "scale_ari": 0.2899832117108664,
+      "seed_ari": 0.8954796677466573,
+      "selected_k": 5,
+      "version": 1
+    }
+  },
+  "dataset": {
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "identity": {
+      "owner": "saisathwikregula",
+      "slug": "mmds-dataset-23013",
+      "version": 1
+    },
+    "policy": "phase2-v1",
+    "producer": {
+      "kernel_version": 1,
+      "status": "COMPLETE",
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering"
+    },
+    "totals": {
+      "attack": 2748235,
+      "bad_width_or_quotes": 0,
+      "benign": 13484708,
+      "blank": 0,
+      "canonical_rows": 16232943,
+      "cast_failure_cells": 0,
+      "cast_failure_rows": 0,
+      "headers": 69,
+      "invalid_negative_cells": 106,
+      "invalid_negative_rows": 15,
+      "nan_cells": 59721,
+      "nan_rows": 59721,
+      "negative_infinity_cells": 0,
+      "negative_infinity_rows": 0,
+      "parsed": 16232943,
+      "physical_lines": 16233012,
+      "positive_infinity_cells": 131799,
+      "positive_infinity_rows": 95760,
+      "quality_affected_cells": 12879783,
+      "quality_affected_rows": 8257114,
+      "repeated_headers": 59,
+      "sentinel_cells": 12688157,
+      "sentinel_rows": 8255549,
+      "source_null_cells": 0,
+      "source_null_rows": 0,
+      "spark_corrupt": 0,
+      "structural_missing_cells": 33136780,
+      "structural_missing_rows": 8284195,
+      "temporal_eligible": 16232929,
+      "timestamp_missing": 0,
+      "timestamp_outlier": 14,
+      "timestamp_unparseable": 0,
+      "unknown_labels": 0
+    }
+  },
+  "model_support": {
+    "A": {
+      "test": {
+        "families": {
+          "Benign": 2068172,
+          "Bot": 39807,
+          "Credential brute force": 22108,
+          "DDoS": 188933,
+          "DoS": 88711,
+          "Infiltration": 24407,
+          "Web attack": 154
+        },
+        "labels": {
+          "0": 2068172,
+          "1": 364120
+        },
+        "original_labels": {
+          "Benign": 2068172,
+          "Bot": 39807,
+          "Brute Force -Web": 93,
+          "Brute Force -XSS": 42,
+          "DDOS attack-HOIC": 102714,
+          "DDOS attack-LOIC-UDP": 238,
+          "DDoS attacks-LOIC-HTTP": 85981,
+          "DoS attacks-GoldenEye": 6112,
+          "DoS attacks-Hulk": 68449,
+          "DoS attacks-SlowHTTPTest": 12568,
+          "DoS attacks-Slowloris": 1582,
+          "FTP-BruteForce": 7125,
+          "Infilteration": 24407,
+          "SQL Injection": 19,
+          "SSH-Bruteforce": 14983
+        },
+        "rows": 2432292
+      },
+      "train": {
+        "families": {
+          "Benign": 9426379,
+          "Bot": 205917,
+          "Credential brute force": 341040,
+          "DDoS": 885772,
+          "DoS": 479941,
+          "Infiltration": 116242,
+          "Web attack": 634
+        },
+        "labels": {
+          "0": 9426379,
+          "1": 2029546
+        },
+        "original_labels": {
+          "Benign": 9426379,
+          "Bot": 205917,
+          "Brute Force -Web": 411,
+          "Brute Force -XSS": 163,
+          "DDOS attack-HOIC": 480857,
+          "DDOS attack-LOIC-UDP": 1215,
+          "DDoS attacks-LOIC-HTTP": 403700,
+          "DoS attacks-GoldenEye": 29251,
+          "DoS attacks-Hulk": 323298,
+          "DoS attacks-SlowHTTPTest": 119917,
+          "DoS attacks-Slowloris": 7475,
+          "FTP-BruteForce": 183538,
+          "Infilteration": 116242,
+          "SQL Injection": 60,
+          "SSH-Bruteforce": 157502
+        },
+        "rows": 11455925
+      },
+      "validation": {
+        "families": {
+          "Benign": 1990157,
+          "Bot": 40467,
+          "Credential brute force": 17801,
+          "DDoS": 189228,
+          "DoS": 85648,
+          "Infiltration": 21285,
+          "Web attack": 140
+        },
+        "labels": {
+          "0": 1990157,
+          "1": 354569
+        },
+        "original_labels": {
+          "Benign": 1990157,
+          "Bot": 40467,
+          "Brute Force -Web": 107,
+          "Brute Force -XSS": 25,
+          "DDOS attack-HOIC": 102441,
+          "DDOS attack-LOIC-UDP": 277,
+          "DDoS attacks-LOIC-HTTP": 86510,
+          "DoS attacks-GoldenEye": 6145,
+          "DoS attacks-Hulk": 70165,
+          "DoS attacks-SlowHTTPTest": 7405,
+          "DoS attacks-Slowloris": 1933,
+          "FTP-BruteForce": 2697,
+          "Infilteration": 21285,
+          "SQL Injection": 8,
+          "SSH-Bruteforce": 15104
+        },
+        "rows": 2344726
+      }
+    },
+    "B": {
+      "test": {
+        "families": {
+          "Benign": 771584,
+          "Bot": 143274,
+          "Infiltration": 65251
+        },
+        "labels": {
+          "0": 771584,
+          "1": 208525
+        },
+        "original_labels": {
+          "Benign": 771584,
+          "Bot": 143274,
+          "Infilteration": 65251
+        },
+        "rows": 980109
+      },
+      "train": {
+        "families": {
+          "Benign": 10892078,
+          "Credential brute force": 380949,
+          "DDoS": 1263933,
+          "DoS": 654300,
+          "Web attack": 362
+        },
+        "labels": {
+          "0": 10892078,
+          "1": 2299544
+        },
+        "original_labels": {
+          "Benign": 10892078,
+          "Brute Force -Web": 249,
+          "Brute Force -XSS": 79,
+          "DDOS attack-HOIC": 686012,
+          "DDOS attack-LOIC-UDP": 1730,
+          "DDoS attacks-LOIC-HTTP": 576191,
+          "DoS attacks-GoldenEye": 41508,
+          "DoS attacks-Hulk": 461912,
+          "DoS attacks-SlowHTTPTest": 139890,
+          "DoS attacks-Slowloris": 10990,
+          "FTP-BruteForce": 193360,
+          "SQL Injection": 34,
+          "SSH-Bruteforce": 187589
+        },
+        "rows": 13191622
+      },
+      "validation": {
+        "families": {
+          "Benign": 1094200,
+          "Infiltration": 56633,
+          "Web attack": 423
+        },
+        "labels": {
+          "0": 1094200,
+          "1": 57056
+        },
+        "original_labels": {
+          "Benign": 1094200,
+          "Brute Force -Web": 276,
+          "Brute Force -XSS": 111,
+          "Infilteration": 56633,
+          "SQL Injection": 36
+        },
+        "rows": 1151256
+      }
+    },
+    "C": {
+      "test": {
+        "families": {
+          "Benign": 1457560,
+          "Web attack": 658
+        },
+        "labels": {
+          "0": 1457560,
+          "1": 658
+        },
+        "original_labels": {
+          "Benign": 1457560,
+          "Brute Force -Web": 423,
+          "Brute Force -XSS": 176,
+          "SQL Injection": 59
+        },
+        "rows": 1458218
+      },
+      "train": {
+        "families": {
+          "Benign": 10844286,
+          "Bot": 286191,
+          "Credential brute force": 380949,
+          "DDoS": 1263933,
+          "DoS": 654300,
+          "Infiltration": 93063
+        },
+        "labels": {
+          "0": 10844286,
+          "1": 2678436
+        },
+        "original_labels": {
+          "Benign": 10844286,
+          "Bot": 286191,
+          "DDOS attack-HOIC": 686012,
+          "DDOS attack-LOIC-UDP": 1730,
+          "DDoS attacks-LOIC-HTTP": 576191,
+          "DoS attacks-GoldenEye": 41508,
+          "DoS attacks-Hulk": 461912,
+          "DoS attacks-SlowHTTPTest": 139890,
+          "DoS attacks-Slowloris": 10990,
+          "FTP-BruteForce": 193360,
+          "Infilteration": 93063,
+          "SSH-Bruteforce": 187589
+        },
+        "rows": 13522722
+      },
+      "validation": {
+        "families": {
+          "Benign": 351060,
+          "Infiltration": 41842
+        },
+        "labels": {
+          "0": 351060,
+          "1": 41842
+        },
+        "original_labels": {
+          "Benign": 351060,
+          "Infilteration": 41842
+        },
+        "rows": 392902
+      }
+    }
+  },
+  "models": {
+    "threshold": 0.5,
+    "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-4-supervised-attack-detection",
+    "version": "phase4-v1"
+  },
+  "protocols": {
+    "A": {
+      "name": "predictor-group random"
+    },
+    "B": {
+      "name": "chronological capture-day holdout",
+      "test": [
+        "2018-03-01",
+        "2018-03-02"
+      ],
+      "train": [
+        "2018-02-14",
+        "2018-02-15",
+        "2018-02-16",
+        "2018-02-20",
+        "2018-02-21",
+        "2018-02-22"
+      ],
+      "validation": [
+        "2018-02-23",
+        "2018-02-28"
+      ]
+    },
+    "C": {
+      "name": "web-attack capture holdout",
+      "test": [
+        "2018-02-22",
+        "2018-02-23"
+      ],
+      "train": [
+        "2018-02-14",
+        "2018-02-15",
+        "2018-02-16",
+        "2018-02-20",
+        "2018-02-21",
+        "2018-03-01",
+        "2018-03-02"
+      ],
+      "validation": [
+        "2018-02-28"
+      ]
+    }
+  },
+  "replay": {
+    "alerts": {
+      "count": 102,
+      "high": 62
+    },
+    "batches": 49,
+    "callback_seconds": 852.598585,
+    "checkpoint_bytes": 78005,
+    "configuration": "historical",
+    "cutoff": 16.67940564007534,
+    "elapsed_seconds": 862.319,
+    "files_per_trigger": 1,
+    "ineligible": 14,
+    "purged": 909956,
+    "rows": 15322987,
+    "rows_per_second": 17769.511051014764,
+    "scoring_seconds": 601.221671,
+    "spark": "4.3.0",
+    "staging_bytes_replayed": 1715782027,
+    "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-6-historical-streaming-drift-monitoring",
+    "version": 4
+  },
+  "sql": {
+    "benchmark_repeats": 3,
+    "quantile_accuracy": 4096,
+    "resources": {
+      "cpu.max": "400000 100000",
+      "cpu_affinity": 4,
+      "default_parallelism": 4,
+      "driver_memory": "8g",
+      "driver_peak_rss_bytes": 4926799872,
+      "input_partition_bytes": 67108864,
+      "master": "local[4]",
+      "memory.max": "32212254720",
+      "scratch_output_free_bytes_start": 20940304384,
+      "shuffle_partitions": 48,
+      "spark_version": "4.3.0"
+    }
+  }
+}

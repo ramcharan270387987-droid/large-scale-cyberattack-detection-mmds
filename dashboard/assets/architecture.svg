@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-labelledby="title"><title id="title">MMDS research pipeline from CSV to Streamlit</title>
+<rect width="960" height="300" fill="#172629" rx="18"/>
+<style>text{fill:#ecf6f2;font:600 17px sans-serif;text-anchor:middle}.label{fill:#9ab9b3;font:14px sans-serif}.edge{fill:none;stroke:#59dfbe;stroke-width:2;marker-end:url(#arrow)}</style>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#59dfbe"/></marker></defs>
+<rect x="23" y="39" width="194" height="78" rx="10" fill="#203538" stroke="#47696a"/><text x="120" y="75">Raw CSV</text><text class="label" x="120" y="98">Historical captures</text>
+<path class="edge" d="M217 78H258"/>
+<rect x="263" y="39" width="194" height="78" rx="10" fill="#203538" stroke="#47696a"/><text x="360" y="75">Spark ingestion</text><text class="label" x="360" y="98">Explicit schema</text>
+<path class="edge" d="M457 78H498"/>
+<rect x="503" y="39" width="194" height="78" rx="10" fill="#203538" stroke="#47696a"/><text x="600" y="75">Cleaning and Parquet</text><text class="label" x="600" y="98">Versioned layers</text>
+<path class="edge" d="M697 78H738"/>
+<rect x="743" y="39" width="194" height="78" rx="10" fill="#203538" stroke="#47696a"/><text x="840" y="75">Spark SQL</text><text class="label" x="840" y="98">Traffic aggregates</text>
+<path class="edge" d="M840 117V176"/>
+<rect x="743" y="181" width="194" height="78" rx="10" fill="#203538" stroke="#47696a"/><text x="840" y="217">MLlib and K-Means</text><text class="label" x="840" y="240">Frozen pipelines</text>
+<path class="edge" d="M743 220H702"/>
+<rect x="503" y="181" width="194" height="78" rx="10" fill="#203538" stroke="#47696a"/><text x="600" y="217">Structured Streaming</text><text class="label" x="600" y="240">Ordered historical replay</text>
+<path class="edge" d="M503 220H462"/>
+<rect x="263" y="181" width="194" height="78" rx="10" fill="#203538" stroke="#47696a"/><text x="360" y="217">Monitoring</text><text class="label" x="360" y="240">Shift and alert aggregates</text>
+<path class="edge" d="M263 220H222"/>
+<rect x="23" y="181" width="194" height="78" rx="10" fill="#203538" stroke="#47696a"/><text x="120" y="217">Streamlit</text><text class="label" x="120" y="240">Faculty exploration</text>
+</svg>

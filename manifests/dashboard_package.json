@@ -1,0 +1,377 @@
+{
+  "config_sha256": "249022c4c1826788fe9d3f6af363a9c938b63bcacfafe53f26a0d57b3cbe5483",
+  "inputs": {
+    "configs/ml_experiments.yaml": {
+      "bytes": 1876,
+      "phase": 4,
+      "sha256": "38410105b2fe84ffef90476eaf5b40c9f4ceba6515bbf9b55a59c5a4fafb18cc",
+      "version": "phase4-v1 / Kaggle 1–3"
+    },
+    "manifests/parquet_layers.json": {
+      "bytes": 5961,
+      "phase": 2,
+      "sha256": "502d1d9704aaf1fa2e1d150bad459989db0555a77b466a4d41cfb804cd40bb63",
+      "version": "phase2-v1 / Kaggle 1"
+    },
+    "manifests/phase4_models.json": {
+      "bytes": 96547,
+      "phase": 4,
+      "sha256": "f25f2c891b0a835455a25e2ce494ce7a361eba079198b8cab3dccdce9e792f87",
+      "version": "phase4-v1 / Kaggle 1–3"
+    },
+    "manifests/phase5_clustering_models.json": {
+      "bytes": 62095,
+      "phase": 5,
+      "sha256": "ffa00705046fbb9c8aaf0ca318fa667471b594eb856cf03ceaed9ff776181f10",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "manifests/phase6_replay_runs.json": {
+      "bytes": 32659,
+      "phase": 6,
+      "sha256": "20cbae12ddf592ce554d5323c9c6cbd0f096326b4dc3723eada42605d7d59857",
+      "version": "phase6-v1 / Kaggle 4"
+    },
+    "reports/phase3_attack_families.csv": {
+      "bytes": 603,
+      "phase": 3,
+      "sha256": "3bf2e41f52d66c2fcf64b4b25da2e8d2101d03ba4b488dd0d93421b7a6cae675",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_correlations.csv": {
+      "bytes": 1038,
+      "phase": 3,
+      "sha256": "f5ac60cb88cafdfc74a09d738066bbbb5d21860dfbd589eb397a2320269e5628",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_daily_traffic.csv": {
+      "bytes": 830,
+      "phase": 3,
+      "sha256": "bc8e50c43fcd4d584fa080bf4037da250fe4efa165616b3c54d8e8b609bda98e",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_destination_ports.csv": {
+      "bytes": 3384,
+      "phase": 3,
+      "sha256": "486f0546f39a4c394cc4e2d250d3d87fa300a21f25f7f31ed4675870494b535c",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_duplicate_quality.csv": {
+      "bytes": 167,
+      "phase": 3,
+      "sha256": "365dfdf830a12fdb84c14dc61e99d658ab27f7a27590e9f4d014e02fb0647003",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_family_by_day.csv": {
+      "bytes": 1454,
+      "phase": 3,
+      "sha256": "804837ff4f147a65a670ed7c8431c81442713e889756f7807ce0de12bbf8e823",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_family_feature_statistics.csv": {
+      "bytes": 11422,
+      "phase": 3,
+      "sha256": "cc5997f4186d5b65ad0e997bb651d3bb551c63ccbe86b591a3bc11511523e92e",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_feature_missingness.csv": {
+      "bytes": 1958,
+      "phase": 3,
+      "sha256": "eb75284491a6c66bcf3389c98b905513a5a69fa6a70b767050766deda0adb8c5",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_feature_statistics.csv": {
+      "bytes": 3405,
+      "phase": 3,
+      "sha256": "25cd007908e62f343308a6f12a8ece3baac1b67fd989da39972e5e837165fad1",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_original_labels.csv": {
+      "bytes": 558,
+      "phase": 3,
+      "sha256": "94fc61fc7b14547dbc6410aef8207eb415277a4e0cf29d7dfbe5250ae4e3f9d0",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_protocols.csv": {
+      "bytes": 439,
+      "phase": 3,
+      "sha256": "b96ae93723c1aa6281563d75c3a03c0d6893a98f99eea2213e7ea8554c6f6383",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_query_performance.csv": {
+      "bytes": 958,
+      "phase": 3,
+      "sha256": "16d80768b47cb4b6df9b0c32daa9b9aed3ae31a67e157d55b473961f4390cbc2",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_traffic_totals.csv": {
+      "bytes": 198,
+      "phase": 3,
+      "sha256": "7803184f2363e2f5394c2cc5a04fad46c35358ea805797ebe3f37b559979eaac",
+      "version": "Kaggle 1"
+    },
+    "reports/phase3_validation.json": {
+      "bytes": 4683,
+      "phase": 3,
+      "sha256": "61b41d3ad763e7f757d2193037988ed63c63e4c49180486bf282396d19603f42",
+      "version": "Kaggle 1"
+    },
+    "reports/phase4_family_recall.csv": {
+      "bytes": 86738,
+      "phase": 4,
+      "sha256": "042538208092970394e59b2f8047338271c64a884ed8ccc6ddb5c7e2d5e1cd0e",
+      "version": "phase4-v1 / Kaggle 1–3"
+    },
+    "reports/phase4_metrics.csv": {
+      "bytes": 8528,
+      "phase": 4,
+      "sha256": "45b66da86f111a3a9beee12fea97fd5ad66dabc29397b3f8c6abb9e9c962b8ea",
+      "version": "phase4-v1 / Kaggle 1–3"
+    },
+    "reports/phase4_split_diagnostics.csv": {
+      "bytes": 17244,
+      "phase": 4,
+      "sha256": "c1951d09aa376a6423ee9fa4afa0326f859cd7f031ff89ea3e9d1120d7c22c49",
+      "version": "phase4-v1 / Kaggle 1–3"
+    },
+    "reports/phase5_centroids.csv": {
+      "bytes": 19437,
+      "phase": 5,
+      "sha256": "80494409a1a800d96c11e2fa71ebae7b52c8b84a05761516d4f1ccb18cdfaed5",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "reports/phase5_cluster_occupancy.csv": {
+      "bytes": 226508,
+      "phase": 5,
+      "sha256": "2b0f0ecf4784bfa61918d3aa81f4b97f6bd89d42a2bd044798b1ab9a98557cfc",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "reports/phase5_cluster_profiles.csv": {
+      "bytes": 6128,
+      "phase": 5,
+      "sha256": "3b482b4f014683a38ca5aee9ac9f03d9bfec581c28c0e7a02ed7cbd09985f00d",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "reports/phase5_composition.csv": {
+      "bytes": 23863,
+      "phase": 5,
+      "sha256": "b96b77f8704aab4a3785364f11283f45a39965550944ed4c0d1f30072d0cbd83",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "reports/phase5_model_selection.csv": {
+      "bytes": 2204,
+      "phase": 5,
+      "sha256": "b4d6348a90f5bb52a25a2386a70d5e10714bcb35b2ce8cb55fc5f53e5607e8f4",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "reports/phase5_novelty_metrics.csv": {
+      "bytes": 15201,
+      "phase": 5,
+      "sha256": "8396f886a8627a3026b991981f2f3de3b92858639b0047d2217735886c379e44",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "reports/phase5_score_histogram.csv": {
+      "bytes": 4095,
+      "phase": 5,
+      "sha256": "f594d0c3187d47aa4cc0d432eaad8ee787f69e720b19ca586c28d4dc47bef4e9",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "reports/phase5_temporal_shift.csv": {
+      "bytes": 9675,
+      "phase": 5,
+      "sha256": "dc7201a1a386103bcbb684fc3c11dace867f3f369f9a20d57e10fb4055fa732d",
+      "version": "phase5-v1 / Kaggle 1–3"
+    },
+    "reports/phase6_alerts.csv": {
+      "bytes": 18010,
+      "phase": 6,
+      "sha256": "e304ac85815e052a178975fe35cd9a94e95a1aac42fccd4e228405b5f73d9ae9",
+      "version": "phase6-v1 / Kaggle 4"
+    },
+    "reports/phase6_performance.csv": {
+      "bytes": 418,
+      "phase": 6,
+      "sha256": "9e6038c42604d80ab46c6b5b672e0a623368d5fd4f3d102b1f8a4d1de4593902",
+      "version": "phase6-v1 / Kaggle 4"
+    },
+    "reports/phase6_recovery_tests.csv": {
+      "bytes": 198,
+      "phase": 6,
+      "sha256": "09ae2d7bc48df8b7647cebc4c04de9b1d133d7f9f142a4e93d29870eb381708f",
+      "version": "phase6-v1 / Kaggle 4"
+    },
+    "reports/phase6_replay_batches.csv": {
+      "bytes": 6963,
+      "phase": 6,
+      "sha256": "cc575c54798f81bfd0cb0ff9d66475c936d6bb0bf638b3578168c02d6f142fe5",
+      "version": "phase6-v1 / Kaggle 4"
+    },
+    "reports/phase6_shift_metrics.csv": {
+      "bytes": 106707,
+      "phase": 6,
+      "sha256": "200bf2a89a62db392db44b11b4f22e4fd777b90edb5d9a1daea3f0de3c4d46a6",
+      "version": "phase6-v1 / Kaggle 4"
+    },
+    "reports/phase6_window_metrics.csv": {
+      "bytes": 93807,
+      "phase": 6,
+      "sha256": "6f5050993f0f36de76607dce4b30e0c8e2594a2b62f7d90ba7e58749b2bc0116",
+      "version": "phase6-v1 / Kaggle 4"
+    }
+  },
+  "package_bytes": 682936,
+  "schema_version": "dashboard-v1",
+  "source_revision": "c7dc703d7ced871b496b1b5ced4b606ba78d7668",
+  "summary_sha256": "8819a2320a8736cd81ece53315b826acc04dc6cf9a3e46d33babc8f064338028",
+  "tables": {
+    "phase3_attack_families": {
+      "rows": 6,
+      "sha256": "3bf2e41f52d66c2fcf64b4b25da2e8d2101d03ba4b488dd0d93421b7a6cae675",
+      "source": "reports/phase3_attack_families.csv"
+    },
+    "phase3_correlations": {
+      "rows": 16,
+      "sha256": "f5ac60cb88cafdfc74a09d738066bbbb5d21860dfbd589eb397a2320269e5628",
+      "source": "reports/phase3_correlations.csv"
+    },
+    "phase3_daily_traffic": {
+      "rows": 10,
+      "sha256": "bc8e50c43fcd4d584fa080bf4037da250fe4efa165616b3c54d8e8b609bda98e",
+      "source": "reports/phase3_daily_traffic.csv"
+    },
+    "phase3_destination_ports": {
+      "rows": 71,
+      "sha256": "486f0546f39a4c394cc4e2d250d3d87fa300a21f25f7f31ed4675870494b535c",
+      "source": "reports/phase3_destination_ports.csv"
+    },
+    "phase3_duplicate_quality": {
+      "rows": 1,
+      "sha256": "365dfdf830a12fdb84c14dc61e99d658ab27f7a27590e9f4d014e02fb0647003",
+      "source": "reports/phase3_duplicate_quality.csv"
+    },
+    "phase3_family_by_day": {
+      "rows": 60,
+      "sha256": "804837ff4f147a65a670ed7c8431c81442713e889756f7807ce0de12bbf8e823",
+      "source": "reports/phase3_family_by_day.csv"
+    },
+    "phase3_family_feature_statistics": {
+      "rows": 98,
+      "sha256": "cc5997f4186d5b65ad0e997bb651d3bb551c63ccbe86b591a3bc11511523e92e",
+      "source": "reports/phase3_family_feature_statistics.csv"
+    },
+    "phase3_feature_missingness": {
+      "rows": 77,
+      "sha256": "eb75284491a6c66bcf3389c98b905513a5a69fa6a70b767050766deda0adb8c5",
+      "source": "reports/phase3_feature_missingness.csv"
+    },
+    "phase3_feature_statistics": {
+      "rows": 28,
+      "sha256": "25cd007908e62f343308a6f12a8ece3baac1b67fd989da39972e5e837165fad1",
+      "source": "reports/phase3_feature_statistics.csv"
+    },
+    "phase3_original_labels": {
+      "rows": 15,
+      "sha256": "94fc61fc7b14547dbc6410aef8207eb415277a4e0cf29d7dfbe5250ae4e3f9d0",
+      "source": "reports/phase3_original_labels.csv"
+    },
+    "phase3_protocols": {
+      "rows": 15,
+      "sha256": "b96ae93723c1aa6281563d75c3a03c0d6893a98f99eea2213e7ea8554c6f6383",
+      "source": "reports/phase3_protocols.csv"
+    },
+    "phase3_query_performance": {
+      "rows": 25,
+      "sha256": "16d80768b47cb4b6df9b0c32daa9b9aed3ae31a67e157d55b473961f4390cbc2",
+      "source": "reports/phase3_query_performance.csv"
+    },
+    "phase3_traffic_totals": {
+      "rows": 2,
+      "sha256": "7803184f2363e2f5394c2cc5a04fad46c35358ea805797ebe3f37b559979eaac",
+      "source": "reports/phase3_traffic_totals.csv"
+    },
+    "phase4_family_recall": {
+      "rows": 792,
+      "sha256": "042538208092970394e59b2f8047338271c64a884ed8ccc6ddb5c7e2d5e1cd0e",
+      "source": "reports/phase4_family_recall.csv"
+    },
+    "phase4_metrics": {
+      "rows": 36,
+      "sha256": "45b66da86f111a3a9beee12fea97fd5ad66dabc29397b3f8c6abb9e9c962b8ea",
+      "source": "reports/phase4_metrics.csv"
+    },
+    "phase4_split_diagnostics": {
+      "rows": 314,
+      "sha256": "c1951d09aa376a6423ee9fa4afa0326f859cd7f031ff89ea3e9d1120d7c22c49",
+      "source": "reports/phase4_split_diagnostics.csv"
+    },
+    "phase5_centroids": {
+      "rows": 522,
+      "sha256": "80494409a1a800d96c11e2fa71ebae7b52c8b84a05761516d4f1ccb18cdfaed5",
+      "source": "reports/phase5_centroids.csv"
+    },
+    "phase5_cluster_occupancy": {
+      "rows": 1623,
+      "sha256": "2b0f0ecf4784bfa61918d3aa81f4b97f6bd89d42a2bd044798b1ab9a98557cfc",
+      "source": "reports/phase5_cluster_occupancy.csv"
+    },
+    "phase5_cluster_profiles": {
+      "rows": 29,
+      "sha256": "3b482b4f014683a38ca5aee9ac9f03d9bfec581c28c0e7a02ed7cbd09985f00d",
+      "source": "reports/phase5_cluster_profiles.csv"
+    },
+    "phase5_composition": {
+      "rows": 546,
+      "sha256": "b96b77f8704aab4a3785364f11283f45a39965550944ed4c0d1f30072d0cbd83",
+      "source": "reports/phase5_composition.csv"
+    },
+    "phase5_model_selection": {
+      "rows": 12,
+      "sha256": "b4d6348a90f5bb52a25a2386a70d5e10714bcb35b2ce8cb55fc5f53e5607e8f4",
+      "source": "reports/phase5_model_selection.csv"
+    },
+    "phase5_novelty_metrics": {
+      "rows": 147,
+      "sha256": "8396f886a8627a3026b991981f2f3de3b92858639b0047d2217735886c379e44",
+      "source": "reports/phase5_novelty_metrics.csv"
+    },
+    "phase5_score_histogram": {
+      "rows": 296,
+      "sha256": "f594d0c3187d47aa4cc0d432eaad8ee787f69e720b19ca586c28d4dc47bef4e9",
+      "source": "reports/phase5_score_histogram.csv"
+    },
+    "phase5_temporal_shift": {
+      "rows": 171,
+      "sha256": "dc7201a1a386103bcbb684fc3c11dace867f3f369f9a20d57e10fb4055fa732d",
+      "source": "reports/phase5_temporal_shift.csv"
+    },
+    "phase6_alerts": {
+      "rows": 102,
+      "sha256": "e304ac85815e052a178975fe35cd9a94e95a1aac42fccd4e228405b5f73d9ae9",
+      "source": "reports/phase6_alerts.csv"
+    },
+    "phase6_performance": {
+      "rows": 3,
+      "sha256": "9e6038c42604d80ab46c6b5b672e0a623368d5fd4f3d102b1f8a4d1de4593902",
+      "source": "reports/phase6_performance.csv"
+    },
+    "phase6_recovery_tests": {
+      "rows": 5,
+      "sha256": "09ae2d7bc48df8b7647cebc4c04de9b1d133d7f9f142a4e93d29870eb381708f",
+      "source": "reports/phase6_recovery_tests.csv"
+    },
+    "phase6_replay_batches": {
+      "rows": 49,
+      "sha256": "cc575c54798f81bfd0cb0ff9d66475c936d6bb0bf638b3578168c02d6f142fe5",
+      "source": "reports/phase6_replay_batches.csv"
+    },
+    "phase6_shift_metrics": {
+      "rows": 708,
+      "sha256": "200bf2a89a62db392db44b11b4f22e4fd777b90edb5d9a1daea3f0de3c4d46a6",
+      "source": "reports/phase6_shift_metrics.csv"
+    },
+    "phase6_window_metrics": {
+      "rows": 59,
+      "sha256": "6f5050993f0f36de76607dce4b30e0c8e2594a2b62f7d90ba7e58749b2bc0116",
+      "source": "reports/phase6_window_metrics.csv"
+    }
+  }
+}

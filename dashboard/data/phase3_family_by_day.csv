@@ -1,0 +1,61 @@
+source_day,attack_family,records
+2018-02-14,Bot,0
+2018-02-14,Credential brute force,380949
+2018-02-14,DDoS,0
+2018-02-14,DoS,0
+2018-02-14,Infiltration,0
+2018-02-14,Web attack,0
+2018-02-15,Bot,0
+2018-02-15,Credential brute force,0
+2018-02-15,DDoS,0
+2018-02-15,DoS,52498
+2018-02-15,Infiltration,0
+2018-02-15,Web attack,0
+2018-02-16,Bot,0
+2018-02-16,Credential brute force,0
+2018-02-16,DDoS,0
+2018-02-16,DoS,601802
+2018-02-16,Infiltration,0
+2018-02-16,Web attack,0
+2018-02-20,Bot,0
+2018-02-20,Credential brute force,0
+2018-02-20,DDoS,576191
+2018-02-20,DoS,0
+2018-02-20,Infiltration,0
+2018-02-20,Web attack,0
+2018-02-21,Bot,0
+2018-02-21,Credential brute force,0
+2018-02-21,DDoS,687742
+2018-02-21,DoS,0
+2018-02-21,Infiltration,0
+2018-02-21,Web attack,0
+2018-02-22,Bot,0
+2018-02-22,Credential brute force,0
+2018-02-22,DDoS,0
+2018-02-22,DoS,0
+2018-02-22,Infiltration,0
+2018-02-22,Web attack,362
+2018-02-23,Bot,0
+2018-02-23,Credential brute force,0
+2018-02-23,DDoS,0
+2018-02-23,DoS,0
+2018-02-23,Infiltration,0
+2018-02-23,Web attack,566
+2018-02-28,Bot,0
+2018-02-28,Credential brute force,0
+2018-02-28,DDoS,0
+2018-02-28,DoS,0
+2018-02-28,Infiltration,68871
+2018-02-28,Web attack,0
+2018-03-01,Bot,0
+2018-03-01,Credential brute force,0
+2018-03-01,DDoS,0
+2018-03-01,DoS,0
+2018-03-01,Infiltration,93063
+2018-03-01,Web attack,0
+2018-03-02,Bot,286191
+2018-03-02,Credential brute force,0
+2018-03-02,DDoS,0
+2018-03-02,DoS,0
+2018-03-02,Infiltration,0
+2018-03-02,Web attack,0
