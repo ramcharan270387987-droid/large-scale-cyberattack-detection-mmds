@@ -1,0 +1,105 @@
+{
+  "status": "validated",
+  "scenario": "B",
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "classes": {
+    "Credential brute force": 0,
+    "DDoS": 1,
+    "DoS": 2,
+    "Web attack": 3
+  },
+  "training_support": {
+    "Web attack": 362,
+    "DoS": 654300,
+    "DDoS": 1263933,
+    "Credential brute force": 380949
+  },
+  "sample_support": {
+    "Web attack": 28,
+    "DoS": 37445,
+    "DDoS": 80477,
+    "Credential brute force": 12384
+  },
+  "overlap": {
+    "groups": 136985,
+    "rows": 2773438
+  },
+  "model": "lr_inverse",
+  "registry": {
+    "artifact": "models/lr_inverse",
+    "reload_probe_rows": 3,
+    "preprocessing_stages": [
+      "ImputerModel",
+      "VectorAssembler",
+      "StandardScalerModel"
+    ],
+    "bytes": 16694,
+    "sha256": {
+      "metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "metadata/part-00000-3268d4ab-ddbb-40a1-bafc-3ef68366ad28-c000.txt": "75c8381f5d1264d747c0574804afcc85e3dab298c44e0708a2a94f66429957f0",
+      "stages/0_Imputer_9de99867d643/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/0_Imputer_9de99867d643/data/part-00000-2f092dca-5b11-44cf-ac21-fcd8ca8fd1c0-c000.snappy.parquet": "5c7cf3f6b48cbd2d6b5a6182d37bee6e5c5065451c785e3d575a250075daab03",
+      "stages/0_Imputer_9de99867d643/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/0_Imputer_9de99867d643/metadata/part-00000-f0e1c766-42e5-44f6-b237-a88589a536a8-c000.txt": "b983f5b3b734732610d17d7578ed910eb2b0dd27a75324c7d06a89efc711c4e9",
+      "stages/1_VectorAssembler_b0456538a85d/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/1_VectorAssembler_b0456538a85d/metadata/part-00000-b9524804-9f02-4004-b849-9da6865cb858-c000.txt": "e7669bafdfd7e5cd1c668407c39c146b39e47a6d54506889bd0cd216bc799af9",
+      "stages/2_StandardScaler_cf05d2239eaa/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/2_StandardScaler_cf05d2239eaa/data/part-00000-c00740f9-8033-41a6-bfa6-6a9fceb51c22-c000.snappy.parquet": "442b2e0ee77d11aa175304dca10aa96a2bf24d9edc6f298e9226b454b41e37bc",
+      "stages/2_StandardScaler_cf05d2239eaa/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/2_StandardScaler_cf05d2239eaa/metadata/part-00000-64a3e3b1-7423-43ea-a83c-a2ac66ee6c03-c000.txt": "1728e17f2d00117e1619fd7705285aa250f7c12c3c58a7778d82198feb3e7559",
+      "stages/3_LogisticRegression_0ae8582fea57/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/3_LogisticRegression_0ae8582fea57/data/part-00000-c1ffcc6f-d829-499b-9568-46e23aeb784b-c000.snappy.parquet": "63ef433b8df2ff599f755903237f1b8ac15d78dd03e2d77efa4b141cafb3fc1f",
+      "stages/3_LogisticRegression_0ae8582fea57/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/3_LogisticRegression_0ae8582fea57/metadata/part-00000-4e44258b-fea6-411b-aec6-09866216916f-c000.txt": "6f546c865b1ff10415f8366819a8667ae9c05c9ec0e61179aea72ad978066402"
+    }
+  },
+  "seconds": 331.080158178,
+  "test": {
+    "rows": 0,
+    "accuracy": null,
+    "macro_precision": null,
+    "macro_recall": null,
+    "macro_f1": null,
+    "balanced_accuracy": null,
+    "weighted_f1": null
+  },
+  "kernel_version": 7,
+  "kernel_url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-9-multiclass-open-set-classification",
+  "worker_status": "COMPLETE",
+  "log_sha256": "d500330f4df47db4ca79e0cd27717a79b1feb4facbf15bbb1ebbed94780cdd9a",
+  "source_sha256": "5c8b31966c8a29750e2428981b0e8f17d43f1e3b6760a23942a703a77cdc5e1b",
+  "tables_sha256": {
+    "phase9_per_family.csv": "f7ee60d33b93c3f69a3b46f3ca5b5590476fb9c963bd6be7fdf972581be5b364",
+    "phase9_frozen.json": "1ce09ecc57e3e3006dab9d5dc01dbf05a6b040a95a61b10a674e2cbd505f6b31",
+    "phase9_rejection_frozen.json": "3ea38f679db66d9c0220c2c3349c6d2194178740410a0c454180991ccf34bd6e",
+    "phase9_closed_set_metrics.csv": "1184c82cb5822cf3498a51bbcede161b43be6ac9789e69bd1e777aca35c3f803",
+    "phase9_open_set_metrics.csv": "e076d0ac856601ab007c66ef0b842db94b8738ad2138d50b6a85d5d067d59474"
+  }
+}
