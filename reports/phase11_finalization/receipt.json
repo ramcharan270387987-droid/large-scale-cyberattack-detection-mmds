@@ -1,12 +1,16 @@
 {
   "status": "validated",
   "scope": "Phase 11 supplemental local CPU experiments",
-  "seconds": 66.98795290999988,
   "tables": {
+    "engineering_costs.csv": 4,
+    "native_support.csv": 1536,
+    "association_pairs.csv": 4116,
     "before_after.csv": 16,
     "support.csv": 2828,
+    "detector_comparison.csv": 7,
     "agreement.csv": 502,
     "missing.csv": 132,
+    "episode_agreement.csv": 360,
     "costs.csv": 36,
     "association.csv": 144,
     "reference.csv": 162,
@@ -23,15 +27,32 @@
     23014,
     23015
   ],
-  "source_sha256": "27492d44204151f8f8b98c8a319b1ec5f3f033c0e27fb44986f3ca46fe78a25f",
+  "source_sha256": "042605739960499334fbf17345f03ecf18f7cca3d145a5c3425323e7f5108d81",
   "table_sha256": {
+    "engineering_costs.csv": "bc9c885229305ae186f066dae0172fecf00351b67609620989d88d3176905757",
+    "native_support.csv": "5750e41fea03de4f1059379843068b926fb3f3c21eb916ad15c454e37fa9afa1",
+    "association_pairs.csv": "0bd97f52c9753b4d942e951c47f34f9072313d2b3a782342631c3c7c3eb3501c",
     "before_after.csv": "3d2d3ad3642fb643370c5f585feb881e88ff4dc8760b8e2ef2564722f42b81f1",
     "support.csv": "c011da0880426bf649181402f4dd024ee82cd93ad12489ee235be82560e20121",
-    "agreement.csv": "a6b25867e74dd3b81c4d2fb09ee2ec1392f7aaa71c31b54cf509766ab3251e50",
-    "missing.csv": "b5993b98d0f2b1280a913b93f1076abcedd336c93ea60d037998cd3c6e4f4761",
+    "detector_comparison.csv": "553a9e8711f2820f7263b4b6204b46a73afd2b3ea3f8a0ac34243809f938d35e",
+    "agreement.csv": "6e683c72834a29ea3b45bb15181e0373aa3ba51e2b4898f0eed703012e535b27",
+    "missing.csv": "bcdb81a261c5144dd9e94a6eabc3da77882d8dd3ce1b611646b207d5c4d0bf57",
+    "episode_agreement.csv": "3ae0152305db1f94ebce4bfb84fa16cb204be10293d259ee3f965db548ce7680",
     "costs.csv": "9d869b714a3606e74a3bc38ed1dfca3da376763a0adc3844747d772680fa7495",
     "association.csv": "67f7bf394befc710edb233423bbb934257bf5a3cad2e8755890538c2580c44d6",
     "reference.csv": "8c896820ec60fe025a16f5684fa44d44d210520444946ec414719fb5a87f7995",
     "reset.csv": "51c04d273f06eb6156c9ebb206323bdd2e6d0db4c4c7efa599883b7f3d17d434"
-  }
+  },
+  "initial_trial_seconds": 66.98795290999988,
+  "timing_scope": "Initial sensitivity execution; supplemental engineering timings are separately tabulated",
+  "input_sha256": {
+    "reports/phase11_synthetic/frozen.json": "639550b31b34aa9c528f96227f2b41da17f66e9336112ce0fed6a9d0836c2742",
+    "reports/phase11_synthetic/alerts.csv": "7fd0267f31d89478803a781bd43995b411c48de017fd4b42539fe8e6b4fd4f3d",
+    "reports/phase11_historical/historical_alerts.csv": "ed0aa71786189327ab75414ac1ac255989f3f8f7038c91ded6388926cd0f2e93",
+    "reports/phase6_window_metrics.csv": "6f5050993f0f36de76607dce4b30e0c8e2594a2b62f7d90ba7e58749b2bc0116",
+    "reports/phase6_shift_metrics.csv": "200bf2a89a62db392db44b11b4f22e4fd777b90edb5d9a1daea3f0de3c4d46a6",
+    "reports/phase10_analysis/temporal.json": "3c4a19c1fd75797b7659c9819188f5bea579f7a179d74d567337bf1ec22f7001",
+    "reports/phase3_family_by_day.csv": "804837ff4f147a65a670ed7c8431c81442713e889756f7807ce0de12bbf8e823"
+  },
+  "state_adapter_sha256": "c7b57a961ae851ee8ce0fe236ea4251e043b9a7ed8701d3725895bcdc2ef7bd0"
 }

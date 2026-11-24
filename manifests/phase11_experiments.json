@@ -50,21 +50,23 @@
       "remaining": []
     },
     "11E": {
-      "status": "PARTIALLY COMPLETE",
-      "research_regression_tests": 80,
-      "dashboard_regression_tests": 8,
-      "preview_checks": "PASS sections, detector filters and downloads",
-      "figures": 13,
-      "remaining": [
-        "Complete comparison figures and final scientific gate audit"
-      ]
+      "status": "COMPLETE AND VERIFIED",
+      "research_tests": 100,
+      "dashboard_tests": 8,
+      "total_tests": 108,
+      "preview_filter_groups": 2022,
+      "preview_sections": 20,
+      "figures": 23,
+      "browser_receipt": "reports/phase11_validation/browser_validation.json",
+      "validation_receipt": "reports/phase11_validation/final_tests.json",
+      "remaining": []
     }
   },
   "pending": [
-    "11E final registry, figures, preview, complete regression and scientific acceptance audit"
+    "Final GitHub synchronization and acceptance attestation"
   ],
   "phase12_started": false,
-  "final_verdict": "PHASE 11 PARTIALLY READY \u2014 PHASE 12 NOT STARTED",
+  "final_verdict": "Validated evidence pending final GitHub synchronization",
   "limitations": [
     "Retrospective historical corpus without true drift labels",
     "Historical binary DDM unsupported without within-window binary error order",
@@ -74,23 +76,47 @@
   ],
   "artifacts_sha256": {
     "reports/figures/phase11_adwin_detections.png": "a3502229bad8bc205ba1b2459da87f28adda6961a5c869f1d590ded70f50c116",
+    "reports/figures/phase11_agreement_heatmap.png": "a1771abc02679624e44f9cc27b4a1bfdda06b0fc7e33ad54d8f94542c012f39f",
+    "reports/figures/phase11_applicability.png": "e1a8f618a3d52ff887aa93c8d05ab186092b6a651e424c74ecadc0d7c98159d4",
     "reports/figures/phase11_ddm_detections.png": "fea65b8c4f10c268bbd06a08e9629fa468588d95e6175ba560c203dcb1028fd0",
-    "reports/figures/phase11_false_alarms.png": "dec540d34f66d5e59a3846e3c12349c10788ffce54d2bdf221deacec7d3d21a0",
+    "reports/figures/phase11_delay_by_scenario.png": "b4f27f207ae55ecc597a2c5e51d9ae5e6093454a896c1d7b1ca1efa8963c5412",
+    "reports/figures/phase11_ensemble_and_misses.png": "92f10a053c60bdeca4b0bafa26f4a1dc6782511e00254c7baf21a6883262212e",
+    "reports/figures/phase11_false_alarms.png": "74737c49dd8b71fe1a421ab08518922f880db7bc92396af3fb014678cc5651f7",
     "reports/figures/phase11_fixedjs_detections.png": "fb7ced94c86110094e29e758c392bc38d2ee6ff55938885654820dc9801af70d",
     "reports/figures/phase11_historical_timeline.png": "bf04c3d8430cb53143f9d28b3147507b73e3c9f38d28a0cecb03351039fe0869",
     "reports/figures/phase11_js_detections.png": "de0628865a390f2c17e7ed9cc99ef9d3c379c73723f0236415c3d001f0399650",
     "reports/figures/phase11_kswin_detections.png": "baf648f0de3dd041eb456c238b000e25264488d21abfd2f42f25caa1b2bc2dce",
-    "reports/figures/phase11_label_delay.png": "48c0a6c4674c3be49821a2bbc6adfd3b78982c01a5826a8a2a4be9d53c04cb9d",
-    "reports/figures/phase11_mean_delay_observations.png": "570c21826dc203b1c30cc415bf982c135a43adbfad78b1f871f69155c286decc",
+    "reports/figures/phase11_label_delay.png": "0c5e9f4f1057b867ff2bd2e553ac2d72a9ce07aab824cdfbde5835e583d365f8",
+    "reports/figures/phase11_mean_delay_observations.png": "dfe75e8c2c63f37a0f4b98b91952341d0cc01f01fc222d02ac47df260aac262f",
+    "reports/figures/phase11_missing_sensitivity.png": "ee6f8aa8ff77464d3b4432a5aaef3f4accadd2ed40139826058182d376f3bb29",
     "reports/figures/phase11_pagehinkley_detections.png": "f5c4fb43b0b21be1420e67a249916988fc32f73c216322a1b4601548b27fa645",
+    "reports/figures/phase11_performance_association.png": "d2b3f0e6714423552a2e5fc0d0d1dd138382f8d89cbbbabf2dc57135eacc48ce",
     "reports/figures/phase11_psi_detections.png": "a1fb00c15c0fcac40795436b91e4979fb486cca65db4a44332a3e374561b8195",
+    "reports/figures/phase11_reference_sensitivity.png": "adac7ee5d48bb8c45fa90faaf6fb8d432877d4668d44bf62b89f878b78ce73b7",
+    "reports/figures/phase11_reset_sensitivity.png": "4494065b6b89c22c7eaea762580ca92f61e1218ba636b8620cd0c760b8d65e70",
     "reports/figures/phase11_seconds.png": "c01fa063eb3ed162097adceab0fbda66c4077276d0fb3e68eb0607b0e14dd546",
+    "reports/figures/phase11_state_overhead.png": "00084763b206b4b9d24501e3ff7d81378a16bb0d932598cb88951c765d2f2b63",
+    "reports/figures/phase11_support_sensitivity.png": "9d325dad943e5e96f5e7c059e9c6179d6977159d9ddbc3f6e533f51c8c2b2340",
     "reports/figures/phase11_window_sensitivity.png": "c5c6de5b6dd0e2821e79e28fafacf5cd6e645a2678482fbc05353c9532043c35",
+    "reports/phase11_finalization/agreement.csv": "6e683c72834a29ea3b45bb15181e0373aa3ba51e2b4898f0eed703012e535b27",
+    "reports/phase11_finalization/association.csv": "67f7bf394befc710edb233423bbb934257bf5a3cad2e8755890538c2580c44d6",
+    "reports/phase11_finalization/association_pairs.csv": "0bd97f52c9753b4d942e951c47f34f9072313d2b3a782342631c3c7c3eb3501c",
+    "reports/phase11_finalization/before_after.csv": "3d2d3ad3642fb643370c5f585feb881e88ff4dc8760b8e2ef2564722f42b81f1",
+    "reports/phase11_finalization/costs.csv": "9d869b714a3606e74a3bc38ed1dfca3da376763a0adc3844747d772680fa7495",
+    "reports/phase11_finalization/detector_comparison.csv": "553a9e8711f2820f7263b4b6204b46a73afd2b3ea3f8a0ac34243809f938d35e",
+    "reports/phase11_finalization/engineering_costs.csv": "bc9c885229305ae186f066dae0172fecf00351b67609620989d88d3176905757",
+    "reports/phase11_finalization/episode_agreement.csv": "3ae0152305db1f94ebce4bfb84fa16cb204be10293d259ee3f965db548ce7680",
+    "reports/phase11_finalization/missing.csv": "bcdb81a261c5144dd9e94a6eabc3da77882d8dd3ce1b611646b207d5c4d0bf57",
+    "reports/phase11_finalization/native_support.csv": "5750e41fea03de4f1059379843068b926fb3f3c21eb916ad15c454e37fa9afa1",
+    "reports/phase11_finalization/receipt.json": "64e448504f96b8ef1735bdd0a845a3d6092d3260fc1b45d7d43366a07231cc97",
+    "reports/phase11_finalization/reference.csv": "8c896820ec60fe025a16f5684fa44d44d210520444946ec414719fb5a87f7995",
+    "reports/phase11_finalization/reset.csv": "51c04d273f06eb6156c9ebb206323bdd2e6d0db4c4c7efa599883b7f3d17d434",
+    "reports/phase11_finalization/support.csv": "c011da0880426bf649181402f4dd024ee82cd93ad12489ee235be82560e20121",
     "reports/phase11_historical/frozen.json": "3f680fe7f3a45512e79321987bd02ec4623c89a4075c30a24e4e7a86580ccf03",
     "reports/phase11_historical/historical_alerts.csv": "ed0aa71786189327ab75414ac1ac255989f3f8f7038c91ded6388926cd0f2e93",
     "reports/phase11_historical/performance.csv": "d17f675e58d897a25b9600ccfb120d546af92a806bc79a8a8b06b2c9704d1fe0",
     "reports/phase11_historical/receipt.json": "7983d750e74ad19bf71d2dac0dbd1419005acfd6ff22f1d529f699d2af1e597c",
-    "reports/phase11_results.md": "94fba670f5a9757ab86b55a7fef903bbb5ec0f9e67f52ca807d678d400c3a7e3",
+    "reports/phase11_results.md": "5b93e9889722b081e799caf64acf8db1b324a4fbccd937887d652c3ad0c70221",
     "reports/phase11_robustness/ablations.csv": "0b2328dd28ce87add4801d85b139092815d7fb50ead73c97d4cdd0705c7e2ec5",
     "reports/phase11_robustness/receipt.json": "c52e7cf59f968e5e8950f0a137161a5f8ac26ce37e6f52d2d43fab47e63d5bf9",
     "reports/phase11_robustness/sensitivity.csv": "497b07640a807c1937f460e98a364107078738373f842905c8eddf96301009cc",
@@ -100,6 +126,146 @@
     "reports/phase11_synthetic/receipt.json": "cc4ecd38da732a717cd5853be36c788eeb1e22a5e072d345297cacb29f00037d",
     "reports/phase11_synthetic/signals.csv": "a2dc6e0b6742905c49cfa2e9ea0de1860dd4c9905bc04b7e04525ff10af4f470",
     "reports/phase11_synthetic/synthetic_metrics.csv": "9490c589a8e6bca6e878f7d9bd14969ff8a92a9ef95fad571f5b71301b365e75",
-    "reports/phase11_validation/compatibility.json": "38138edb74f88a94d9b3c802bbd964bdefe7d5c1ad443c4a15cbb75220afec51"
+    "reports/phase11_validation/browser_validation.json": "7dbf2278f0023f4650576e6e026487ea4e94a3fdbccf58204d7334b67405ab16",
+    "reports/phase11_validation/compatibility.json": "38138edb74f88a94d9b3c802bbd964bdefe7d5c1ad443c4a15cbb75220afec51",
+    "reports/phase11_validation/final_tests.json": "2f53acabce00496e6c5508c70af88d51c8124895040dea82194b11bd7504a792",
+    "reports/phase11_validation/preview_desktop.png": "96d712a7a1fe486a30acecc6c6af2e48963fb605b7880628b4b10241bae7d3bc",
+    "reports/phase11_validation/preview_final.json": "b366aea35dc13e6681d4e50159aa26860887ded9ccc3ad5941a9738891677aa1",
+    "reports/phase11_validation/preview_mobile.png": "1b15b6723fe8520ba7fa4fae356d874415c0a15deaf1c6e464b340a783dcbc8c"
+  },
+  "authorization_scope": "Phase 11 only; Phase 12 requires separate user authorization",
+  "unsupported_comparisons": [
+    {
+      "population": "historical event-level DDM",
+      "status": "UNSUPPORTED",
+      "reason": "Saved aggregates omit ordered binary prediction errors"
+    },
+    {
+      "population": "historical frozen KSWIN",
+      "status": "UNSUPPORTED",
+      "reason": "100-observation warm-up exceeds 49 replay windows and 45 support-eligible windows"
+    },
+    {
+      "population": "historical true drift efficacy",
+      "status": "UNSUPPORTED",
+      "reason": "No authoritative historical drift-event labels"
+    },
+    {
+      "population": "historical family-specific window recall",
+      "status": "UNSUPPORTED",
+      "reason": "Saved matched score aggregates do not contain family-level confusion counts"
+    }
+  ],
+  "environment_validation": "reports/phase11_validation/final_tests.json",
+  "kaggle_status_reverification": [
+    "ramcharan2345/mmds-phase-11-advanced-drift-detection/1 has status \"KernelWorkerStatus.COMPLETE\"",
+    "ramcharan2345/mmds-phase-11-advanced-drift-detection/2 has status \"KernelWorkerStatus.COMPLETE\""
+  ],
+  "figure_sources": {
+    "phase11_adwin_detections.png": [
+      "reports/phase11_synthetic/signals.csv",
+      "reports/phase11_synthetic/alerts.csv"
+    ],
+    "phase11_missing_sensitivity.png": [
+      "reports/phase11_finalization/missing.csv"
+    ],
+    "phase11_historical_timeline.png": [
+      "reports/phase11_historical/historical_alerts.csv"
+    ],
+    "phase11_performance_association.png": [
+      "reports/phase11_finalization/association.csv"
+    ],
+    "phase11_reference_sensitivity.png": [
+      "reports/phase11_finalization/reference.csv"
+    ],
+    "phase11_state_overhead.png": [
+      "reports/phase11_finalization/costs.csv"
+    ],
+    "phase11_pagehinkley_detections.png": [
+      "reports/phase11_synthetic/signals.csv",
+      "reports/phase11_synthetic/alerts.csv"
+    ],
+    "phase11_delay_by_scenario.png": [
+      "reports/phase11_synthetic/synthetic_metrics.csv"
+    ],
+    "phase11_false_alarms.png": [
+      "reports/phase11_synthetic/synthetic_metrics.csv"
+    ],
+    "phase11_ddm_detections.png": [
+      "reports/phase11_synthetic/signals.csv",
+      "reports/phase11_synthetic/alerts.csv"
+    ],
+    "phase11_support_sensitivity.png": [
+      "reports/phase11_finalization/support.csv"
+    ],
+    "phase11_ensemble_and_misses.png": [
+      "reports/phase11_synthetic/synthetic_metrics.csv",
+      "reports/phase11_robustness/ablations.csv"
+    ],
+    "phase11_applicability.png": [
+      "manifests/phase11_detectors.json"
+    ],
+    "phase11_agreement_heatmap.png": [
+      "reports/phase11_finalization/agreement.csv"
+    ],
+    "phase11_fixedjs_detections.png": [
+      "reports/phase11_synthetic/signals.csv",
+      "reports/phase11_synthetic/alerts.csv"
+    ],
+    "phase11_seconds.png": [
+      "reports/phase11_synthetic/synthetic_metrics.csv"
+    ],
+    "phase11_window_sensitivity.png": [
+      "reports/phase11_robustness/sensitivity.csv"
+    ],
+    "phase11_reset_sensitivity.png": [
+      "reports/phase11_finalization/reset.csv"
+    ],
+    "phase11_label_delay.png": [
+      "reports/phase11_synthetic/synthetic_metrics.csv"
+    ],
+    "phase11_js_detections.png": [
+      "reports/phase11_synthetic/signals.csv",
+      "reports/phase11_synthetic/alerts.csv"
+    ],
+    "phase11_kswin_detections.png": [
+      "reports/phase11_synthetic/signals.csv",
+      "reports/phase11_synthetic/alerts.csv"
+    ],
+    "phase11_psi_detections.png": [
+      "reports/phase11_synthetic/signals.csv",
+      "reports/phase11_synthetic/alerts.csv"
+    ],
+    "phase11_mean_delay_observations.png": [
+      "reports/phase11_synthetic/synthetic_metrics.csv"
+    ]
+  },
+  "sources_sha256": {
+    "src/drift/advanced_detectors.py": "4b261881de194be3dbc219d08fd0d150989ba5c9cf2d8028ca7a1a29f49054ee",
+    "src/drift/drift_evaluation.py": "acb3b10056614dfe1b147b51d4718d6f594070e7b3da520fa3f7d9725e29842e",
+    "src/drift/drift_state.py": "c7b57a961ae851ee8ce0fe236ea4251e043b9a7ed8701d3725895bcdc2ef7bd0",
+    "src/drift/finalization.py": "042605739960499334fbf17345f03ecf18f7cca3d145a5c3425323e7f5108d81",
+    "src/drift/historical_monitoring.py": "ea07c56e6cc7d84f768d31f57ac26b8d0fc495677f3d2e5b22f4d181f7f5dad8",
+    "src/drift/label_availability.py": "f73f606b62683ac557800e6fadab9efe8647edc14e3341336d41f1c48b1b523d",
+    "src/drift/robustness.py": "04ace9e77d9ec03476a01e77f43ade8243c524fae5367963d9809a3897d77487",
+    "src/drift/run_synthetic.py": "b90cecc6b3c0e850303006dd29c582929a3e5d0677b1b1d54cd6cf148e87a726",
+    "src/drift/signal_registry.py": "15294a915157de2b3f4260c09a779c09504f97e5d52a3dd2de8a498c2e5ed92e",
+    "src/drift/synthetic_generators.py": "b38d00da3968ef9710e2f05c595a05fbddc71532a37d7c8fa13e6b55b582a59e",
+    "scripts/build_phase11_historical.py": "3ef2f8f3835fc692406c3ddd67800e784a0c537717a5104f32e2259bf0f14521",
+    "scripts/build_phase11_notebook.py": "4309bd980eed4988d4eaf7d3dfd75013351365a6cae2e738fdeeb4d9f8c4f6ad",
+    "scripts/build_phase11_registry.py": "927c20ac68eff2aa7fdb25f3146bd33acc2173ada20c3ff0cdd8e508d5650030",
+    "scripts/finalize_phase11_report.py": "1e602a3b3cb03153cdb3c09101fff723368df4a6302c58b1706bafc214caf468",
+    "scripts/render_phase11_evidence.py": "71f1185ff25935c330b15fe645f750123d0dc9b452cecad5a44e8ad3519f1942",
+    "scripts/validate_phase11_preview.py": "11eb9e3d72cafab7884498200a63b63adcbf4b0bbb3a63d83a8611b4e259dbb3",
+    "scripts/verify_phase11_completion.py": "7b1a26e1c2aba4ec034bf7c62c4ea392264bf473c9494add95aed76c595c4c69",
+    "docs/phase11_evaluation_limitations.md": "b7d34bbd0848f7709daaf12e45496a4ce75c3c537c7159456c0f193cda65fd34",
+    "docs/phase11_finalization_protocol.md": "9b73ea419332d8a24fb162e7cb499f81fad2580e5b684c8bbef0e653ddeb3431",
+    "docs/phase11_inference_contract.md": "3813a9c7974438afe757a934790470416fb1bba5c02a136339f4de6f91e0fae4",
+    "docs/phase11_methodology.md": "69c3bb4a2c669195d6cab14c238eb133ba2d1be79bbb9d3d02119dc459b7f024",
+    "docs/phase11_research_protocol.md": "88cff6addd4c9d2e1384cf09631bf3fe959667296d2c8f5fda2ca661751579ec",
+    "tests/test_phase11_drift.py": "effd317df32e38361e4464e8380ee220382c8d7930a36dd281488b1aaa3d2029",
+    "tests/test_phase11_finalization.py": "853b0776ad61ecc57ddd19f7697d0a4150bd59273e59a4979d53303afd8c4a69",
+    "dashboard/phase11_preview.py": "2fa936db3fbebb0ff94f32bd9be33401f96fb450d6edbd4b4df141e4e934f7bb",
+    "configs/phase11_drift.yaml": "ea1683ee78e90d078bc02da19894f411682599d456742632192cb7ce4332ea05"
   }
 }

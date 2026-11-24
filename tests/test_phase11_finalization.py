@@ -2,6 +2,12 @@
 import json,math
 from pathlib import Path
 import unittest
+import csv
+
+
+def table(path):
+    with open(path,newline='') as file:
+        return list(csv.DictReader(file))
 from src.drift.advanced_detectors import create,update,divergences
 from src.drift.drift_state import DetectorState
 from src.drift.finalization import agreement,correlation,ranks,supported_alert,tolerance_matches,NATIVE_WARMUP
@@ -64,6 +70,30 @@ class FinalDriftTests(unittest.TestCase):
         self.assertEqual(restored.batch('next',[.9]*100),[])
         self.assertEqual(restored.observations,140)
 
+    def test_arrival_and_valid_clocks(self):
+        state=DetectorState('ADWIN');state.batch('missing',[.1,None,float('nan'),.9])
+        self.assertEqual((state.observations,state.valid_updates,state.suppressed_updates),(4,2,2))
+        state.batch('missing',[.1])
+        self.assertEqual((state.observations,state.valid_updates,state.suppressed_updates),(4,2,2))
+
+    def test_legacy_snapshot_counters_remain_unknown(self):
+        state=DetectorState('ADWIN');state.batch('old',[.2]*20)
+        del state.valid_updates;del state.suppressed_updates
+        opened=DetectorState.restore(state.snapshot())
+        self.assertIsNone(opened.valid_updates);self.assertIsNone(opened.suppressed_updates)
+        opened.batch('new',[.3,None]);self.assertEqual(opened.observations,22)
+
+    def test_failed_batch_restores_state_before_retry(self):
+        state=DetectorState('DDM')
+        with self.assertRaises(ValueError):state.batch('retry',[0,1,.2])
+        self.assertEqual(state.observations,0)
+        self.assertNotIn('retry',state.batch_ids)
+        fresh=DetectorState('DDM')
+        self.assertEqual(state.batch('retry',[0,1,0]),fresh.batch('retry',[0,1,0]))
+        self.assertEqual(state.observations,fresh.observations)
+        self.assertEqual(state.valid_updates,fresh.valid_updates)
+        self.assertEqual(state.batch('future',[0]*100+[1]*100),fresh.batch('future',[0]*100+[1]*100))
+
     def test_reset_reconstruction(self):
         detector=create('PageHinkley')
         for value in [.1]*100+[.9]*200:update(detector,value)
@@ -75,3 +105,56 @@ class FinalDriftTests(unittest.TestCase):
         self.assertEqual(primary['window_size'],64)
         self.assertIn(primary['KSWIN'],('conservative','sensitive'))
         self.assertTrue(Path('docs/phase11_research_protocol.md').exists())
+
+
+class FinalEvidenceTests(unittest.TestCase):
+    def test_historical_agreement_excludes_native_warmup(self):
+        import csv
+        rows=list(table('reports/phase11_finalization/agreement.csv'))
+        mean=next(r for r in rows if r['population']=='historical' and r['signal']=='RF score mean')
+        raw=[r for r in table('reports/phase6_window_metrics.csv') if r['scope'] in ('intraday','capture_only')]
+        raw.sort(key=lambda r:json.loads(r['batch_ids'])[0])
+        count=0;eligible=0
+        for i,row in enumerate(raw):
+            if int(row['rows'])<100:continue
+            count+=1
+            eligible+=int(i>=10 and count>=30)
+        self.assertEqual(int(mean['intervals']),eligible)
+        self.assertFalse(any(r['population']=='historical' and 'KSWIN' in (r['first'],r['second']) for r in rows))
+
+    def test_paired_outcomes_release_before_analysis(self):
+        import csv
+        for row in table('reports/phase11_finalization/association_pairs.csv'):
+            self.assertEqual(int(row['outcome_batch'])-int(row['drift_batch']),int(row['lag_windows']))
+            self.assertEqual(int(row['label_release_batch']),int(row['outcome_batch'])+int(row['label_delay_windows']))
+            self.assertGreaterEqual(int(row['analysis_asof_batch']),int(row['label_release_batch']))
+            self.assertGreaterEqual(int(row['outcome_rows']),100)
+
+    def test_suppression_and_native_label_clock(self):
+        import csv
+        for row in table('reports/phase11_finalization/native_support.csv'):
+            if row['eligible']=='False':self.assertEqual(row['alert'],'')
+            if row['label_release_batch']:
+                self.assertLessEqual(int(row['label_release_batch']),int(row['update_batch']))
+                self.assertEqual(int(row['label_release_batch'])-int(row['source_batch']),int(row['label_delay_windows']))
+
+    def test_registry_actual_parameters(self):
+        from collections import deque
+        registry=json.loads(Path('manifests/phase11_detectors.json').read_text())
+        primary=json.loads(Path('reports/phase11_synthetic/frozen.json').read_text())
+        self.assertEqual(len(registry['detectors']),6)
+        for entry in registry['detectors']:
+            name=entry['identifier']
+            if name in NATIVE_WARMUP:
+                actual={k:list(v) if isinstance(v,deque) else v for k,v in create(name,primary[name])._get_params().items()}
+                self.assertEqual(entry['primary_synthetic_configuration'],actual)
+        self.assertFalse(registry['phase12_started'])
+
+    def test_final_manifest_gate_if_closed(self):
+        manifest=json.loads(Path('manifests/phase11_experiments.json').read_text())
+        if manifest['complete']:
+            self.assertEqual(manifest['pending'],[])
+            self.assertTrue(all(stage['status']=='COMPLETE AND VERIFIED' for stage in manifest['stages'].values()))
+            self.assertFalse(manifest['phase12_started'])
+        else:
+            self.assertTrue(manifest['pending'])

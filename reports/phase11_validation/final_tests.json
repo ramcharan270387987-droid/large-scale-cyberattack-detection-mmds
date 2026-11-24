@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "research_tests": 100,
+  "dashboard_tests": 8,
+  "total_regression_tests": 108,
+  "research_test_seconds": 70.854,
+  "dashboard_test_seconds": 0.706,
+  "research_log_sha256": "4288fab56c5bd07428bb5b680a54e901d785c378287bb4bc719cf69a2645ff4b",
+  "dashboard_log_sha256": "b739b212516bb8f9017df282cbd7a5720985a0a9fc5bff696ae22329bc7a3c00",
+  "supported_filter_groups": 2022,
+  "preview_sections": 20,
+  "browser_receipt": "reports/phase11_validation/browser_validation.json",
+  "python": "3.12.14",
+  "java": "openjdk version \"21.0.13\" 2026-10-20",
+  "phase12_started": false
+}

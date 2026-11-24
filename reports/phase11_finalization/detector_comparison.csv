@@ -1,0 +1,8 @@
+detector,target,events,detected,misses,stationary_false_alarms,stationary_eligible_arrivals,mean_detected_delay_arrivals,mean_processing_seconds_per_stream
+ADWIN,feature-signal episodes,27,24,3,0,11520,152.14285714285714,0.020304021757586572
+PageHinkley,feature-signal episodes,27,18,9,0,11520,119.56666666666666,0.0052752452727280325
+KSWIN,feature-signal episodes,27,17,10,7,11520,76.42857142857143,2.6316234608787896
+DDM,released binary error episodes,6,6,0,1,11520,26.0,0.012888736909103776
+JS,feature-signal episodes,27,24,3,1,11520,129.66666666666666,0.0024709523939505248
+PSI,feature-signal episodes,27,24,3,3,11520,153.43478260869566,0.0025235588484795726
+FixedJS,feature-signal episodes,27,24,3,0,11520,140.33333333333334,0.002451505545464401

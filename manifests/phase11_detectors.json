@@ -1,9 +1,281 @@
 {
-  "schema": "phase11-detectors-v1",
-  "library": "river==0.22.0",
-  "compatibility": "reports/phase11_validation/compatibility.json",
-  "frozen_synthetic": "reports/phase11_synthetic/frozen.json",
-  "frozen_historical": "reports/phase11_historical/frozen.json",
-  "snapshot_contract": "Trusted internal pickle snapshots only",
-  "phase12_acceptance_gate": false
+  "schema": "phase11-detectors-v2",
+  "detectors": [
+    {
+      "identifier": "ADWIN",
+      "algorithm": "ADWIN",
+      "library": "River 0.22.0",
+      "primary_synthetic_configuration": {
+        "delta": 0.01,
+        "clock": 32,
+        "max_buckets": 5,
+        "min_window_length": 5,
+        "grace_period": 10
+      },
+      "historical_configuration": {
+        "delta": 0.001,
+        "clock": 32,
+        "max_buckets": 5,
+        "min_window_length": 5,
+        "grace_period": 10
+      },
+      "input_signal": "bounded observed signal or explicitly declared released aggregate signal",
+      "input_granularity": "observations in synthetic tests, explicitly aggregate windows in history",
+      "reference_requirements": "adaptive state, no artificial fixed reference",
+      "primary_reporting_warmup_arrivals": 256,
+      "evaluation_seeds": [
+        23013,
+        23014,
+        23015
+      ],
+      "warmup_observations": 10,
+      "label_dependency": "required only for error or prevalence signals",
+      "missing_input_behavior": "unavailable without a detector update; declared skip, independent-reference median or separate missingness sensitivity",
+      "minimum_support": "native valid-update warm-up; historical flow support 100, sensitivity 1/100/1000/10000",
+      "reset_semantics": "native library state adaptation by default, separately measured external reconstruction and cooldown",
+      "calibration_provenance": "independent seeds 13013\u201313015, frozen before evaluation seeds 23013\u201323015",
+      "state_serialization": "trusted internal pickle tested",
+      "validated_populations": [
+        "bounded synthetic evaluation",
+        "supplemental independent-seed sensitivity",
+        "retrospective supported aggregate replay windows"
+      ],
+      "unsupported_populations": [],
+      "computational_evidence": [
+        "reports/phase11_finalization/costs.csv",
+        "reports/phase11_finalization/engineering_costs.csv"
+      ],
+      "interpretation": "monitoring evidence without attack confirmation or future adaptation efficacy"
+    },
+    {
+      "identifier": "PageHinkley",
+      "algorithm": "PageHinkley",
+      "library": "River 0.22.0",
+      "primary_synthetic_configuration": {
+        "min_instances": 30,
+        "delta": 0.005,
+        "threshold": 30,
+        "alpha": 0.9999,
+        "mode": "both"
+      },
+      "historical_configuration": {
+        "min_instances": 30,
+        "delta": 0.005,
+        "threshold": 30,
+        "alpha": 0.9999,
+        "mode": "both"
+      },
+      "input_signal": "bounded observed signal or explicitly declared released aggregate signal",
+      "input_granularity": "observations in synthetic tests, explicitly aggregate windows in history",
+      "reference_requirements": "adaptive state, no artificial fixed reference",
+      "primary_reporting_warmup_arrivals": 256,
+      "evaluation_seeds": [
+        23013,
+        23014,
+        23015
+      ],
+      "warmup_observations": 30,
+      "label_dependency": "required only for error or prevalence signals",
+      "missing_input_behavior": "unavailable without a detector update; declared skip, independent-reference median or separate missingness sensitivity",
+      "minimum_support": "native valid-update warm-up; historical flow support 100, sensitivity 1/100/1000/10000",
+      "reset_semantics": "native library state adaptation by default, separately measured external reconstruction and cooldown",
+      "calibration_provenance": "independent seeds 13013\u201313015, frozen before evaluation seeds 23013\u201323015",
+      "state_serialization": "trusted internal pickle tested",
+      "validated_populations": [
+        "bounded synthetic evaluation",
+        "supplemental independent-seed sensitivity",
+        "retrospective supported aggregate replay windows"
+      ],
+      "unsupported_populations": [],
+      "computational_evidence": [
+        "reports/phase11_finalization/costs.csv",
+        "reports/phase11_finalization/engineering_costs.csv"
+      ],
+      "interpretation": "monitoring evidence without attack confirmation or future adaptation efficacy"
+    },
+    {
+      "identifier": "KSWIN",
+      "algorithm": "KSWIN",
+      "library": "River 0.22.0",
+      "primary_synthetic_configuration": {
+        "alpha": 0.001,
+        "window_size": 100,
+        "stat_size": 30,
+        "seed": 23013,
+        "window": []
+      },
+      "historical_configuration": {
+        "alpha": 0.001,
+        "window_size": 100,
+        "stat_size": 30,
+        "seed": 23013,
+        "window": []
+      },
+      "input_signal": "bounded observed signal or explicitly declared released aggregate signal",
+      "input_granularity": "observations in synthetic tests, explicitly aggregate windows in history",
+      "reference_requirements": "adaptive state, no artificial fixed reference",
+      "primary_reporting_warmup_arrivals": 256,
+      "evaluation_seeds": [
+        23013,
+        23014,
+        23015
+      ],
+      "warmup_observations": 100,
+      "label_dependency": "required only for error or prevalence signals",
+      "missing_input_behavior": "unavailable without a detector update; declared skip, independent-reference median or separate missingness sensitivity",
+      "minimum_support": "native valid-update warm-up; historical flow support 100, sensitivity 1/100/1000/10000",
+      "reset_semantics": "native library state adaptation by default, separately measured external reconstruction and cooldown",
+      "calibration_provenance": "independent seeds 13013\u201313015, frozen before evaluation seeds 23013\u201323015",
+      "state_serialization": "trusted internal pickle tested",
+      "validated_populations": [
+        "bounded synthetic evaluation",
+        "supplemental independent-seed sensitivity"
+      ],
+      "unsupported_populations": [
+        "historical 49-window KSWIN with 100-observation warm-up"
+      ],
+      "computational_evidence": [
+        "reports/phase11_finalization/costs.csv",
+        "reports/phase11_finalization/engineering_costs.csv"
+      ],
+      "interpretation": "monitoring evidence without attack confirmation or future adaptation efficacy"
+    },
+    {
+      "identifier": "DDM",
+      "algorithm": "DDM",
+      "library": "River 0.22.0",
+      "primary_synthetic_configuration": {
+        "warm_start": 30,
+        "warning_threshold": 2.0,
+        "drift_threshold": 3.0
+      },
+      "historical_configuration": {
+        "warm_start": 30,
+        "warning_threshold": 2.0,
+        "drift_threshold": 3.0
+      },
+      "input_signal": "released binary prediction error",
+      "input_granularity": "individual released binary error",
+      "reference_requirements": "adaptive state, no artificial fixed reference",
+      "primary_reporting_warmup_arrivals": 256,
+      "evaluation_seeds": [
+        23013,
+        23014,
+        23015
+      ],
+      "warmup_observations": 30,
+      "label_dependency": "required",
+      "missing_input_behavior": "unavailable without a detector update; declared skip, independent-reference median or separate missingness sensitivity",
+      "minimum_support": "native valid-update warm-up; historical flow support 100, sensitivity 1/100/1000/10000",
+      "reset_semantics": "native library state adaptation by default, separately measured external reconstruction and cooldown",
+      "calibration_provenance": "independent seeds 13013\u201313015, frozen before evaluation seeds 23013\u201323015",
+      "state_serialization": "trusted internal pickle tested",
+      "validated_populations": [
+        "bounded synthetic evaluation",
+        "supplemental independent-seed sensitivity"
+      ],
+      "unsupported_populations": [
+        "historical ordered binary-error monitoring"
+      ],
+      "computational_evidence": [
+        "reports/phase11_finalization/costs.csv",
+        "reports/phase11_finalization/engineering_costs.csv"
+      ],
+      "interpretation": "monitoring evidence without attack confirmation or future adaptation efficacy"
+    },
+    {
+      "identifier": "JS",
+      "algorithm": "JS",
+      "library": "MMDS count-derived divergence",
+      "primary_synthetic_configuration": {
+        "threshold": 0.07629310991179271,
+        "reference_observations": 256,
+        "window_observations": 64,
+        "bins": 10,
+        "smoothing": 1e-06,
+        "log_base": 2
+      },
+      "historical_configuration": {
+        "registry": "reports/phase11_historical/frozen.json"
+      },
+      "input_signal": "reference and current histogram counts",
+      "input_granularity": "fixed histogram window",
+      "reference_requirements": "independent calibration-reference bins and counts",
+      "primary_reporting_warmup_arrivals": 256,
+      "evaluation_seeds": [
+        23013,
+        23014,
+        23015
+      ],
+      "warmup_observations": 256,
+      "label_dependency": "required only for error or prevalence signals",
+      "missing_input_behavior": "unavailable without a detector update; declared skip, independent-reference median or separate missingness sensitivity",
+      "minimum_support": "reference and current nonzero counts; historical flow support 100 with explicit sensitivity",
+      "reset_semantics": "fixed reference retained across windows",
+      "calibration_provenance": "independent seeds 13013\u201313015, frozen before evaluation seeds 23013\u201323015",
+      "state_serialization": "JSON reference bins and counts",
+      "validated_populations": [
+        "bounded synthetic evaluation",
+        "supplemental independent-seed sensitivity",
+        "retrospective supported aggregate replay windows"
+      ],
+      "unsupported_populations": [],
+      "computational_evidence": [
+        "reports/phase11_synthetic/synthetic_metrics.csv"
+      ],
+      "interpretation": "monitoring evidence without attack confirmation or future adaptation efficacy"
+    },
+    {
+      "identifier": "PSI",
+      "algorithm": "PSI",
+      "library": "MMDS count-derived divergence",
+      "primary_synthetic_configuration": {
+        "threshold": 1.682505110410195,
+        "reference_observations": 256,
+        "window_observations": 64,
+        "bins": 10,
+        "smoothing": 1e-06,
+        "log_base": "e"
+      },
+      "historical_configuration": {
+        "registry": "reports/phase11_historical/frozen.json"
+      },
+      "input_signal": "reference and current histogram counts",
+      "input_granularity": "fixed histogram window",
+      "reference_requirements": "independent calibration-reference bins and counts",
+      "primary_reporting_warmup_arrivals": 256,
+      "evaluation_seeds": [
+        23013,
+        23014,
+        23015
+      ],
+      "warmup_observations": 256,
+      "label_dependency": "required only for error or prevalence signals",
+      "missing_input_behavior": "unavailable without a detector update; declared skip, independent-reference median or separate missingness sensitivity",
+      "minimum_support": "reference and current nonzero counts; historical flow support 100 with explicit sensitivity",
+      "reset_semantics": "fixed reference retained across windows",
+      "calibration_provenance": "independent seeds 13013\u201313015, frozen before evaluation seeds 23013\u201323015",
+      "state_serialization": "JSON reference bins and counts",
+      "validated_populations": [
+        "bounded synthetic evaluation",
+        "supplemental independent-seed sensitivity",
+        "retrospective supported aggregate replay windows"
+      ],
+      "unsupported_populations": [],
+      "computational_evidence": [
+        "reports/phase11_synthetic/synthetic_metrics.csv"
+      ],
+      "interpretation": "monitoring evidence without attack confirmation or future adaptation efficacy"
+    }
+  ],
+  "controls": {
+    "FixedJS": {
+      "threshold": 0.1,
+      "source": "reports/phase11_synthetic/synthetic_metrics.csv"
+    },
+    "no_detector": "reports/phase11_robustness/ablations.csv",
+    "ensemble": "two distinct label-free families within 64 arrivals, cooldown 64"
+  },
+  "phase12_started": false,
+  "phase12_authorized": false
 }

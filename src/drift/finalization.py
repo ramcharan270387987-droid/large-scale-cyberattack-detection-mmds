@@ -4,14 +4,21 @@ from collections import defaultdict
 from itertools import combinations
 from math import isfinite,sqrt
 from pathlib import Path
-import csv,json,pickle,random,resource
+import csv,json,pickle,random,resource,statistics
 from time import perf_counter
 from src.drift.advanced_detectors import create,update,divergences
 from src.drift.synthetic_generators import generate
 from src.drift.drift_evaluation import evaluate
 from src.drift.run_synthetic import write
+from src.drift.drift_state import DetectorState
+from src.drift.label_availability import LabelSchedule
 
 NATIVE_WARMUP={'ADWIN':10,'PageHinkley':30,'KSWIN':100,'DDM':30}
+
+
+def read_table(path):
+    with open(path,newline='') as file:
+        return list(csv.DictReader(file))
 
 
 def supported_alert(value,support,minimum,threshold):
@@ -154,12 +161,12 @@ def missing_inputs(output):
                     if events:
                         matched=[i for i in alerts if events[0]<=i<events[0]+512]
                         if matched:delay_updates=sum(events[0]<=i<=min(matched) for i in valid_indices)
-                    rows.append({'profile':profile,'policy':policy,'detector':method,'seed':seed,'arrival_observations':4096,'valid_observations':4096-missing_count,'missing_fraction':missing_count/4096,'detector_updates':updates,'suppressed_updates':suppressed,'delay_valid_observations':delay_updates,'minimum_valid_window_support':min(window_support) if window_support else None,'seconds':perf_counter()-tick,**stats})
+                    rows.append({'profile':profile,'policy':policy,'detector':method,'seed':seed,'arrival_observations':4096,'valid_observations':4096-missing_count,'missing_fraction':missing_count/4096,'detector_updates':updates,'suppressed_updates':suppressed,'valid_observations_to_first_alert':delay_updates,'minimum_valid_window_support':min(window_support) if window_support else None,'seconds':perf_counter()-tick,**stats})
     write(output/'missing.csv',rows)
 
 
 def historical_support(output):
-    raw=list(csv.DictReader(open('reports/phase6_window_metrics.csv')));raw=[r for r in raw if r['scope'] in ('intraday','capture_only')];raw.sort(key=lambda r:json.loads(r['batch_ids'])[0]);rows=[]
+    raw=list(read_table('reports/phase6_window_metrics.csv'));raw=[r for r in raw if r['scope'] in ('intraday','capture_only')];raw.sort(key=lambda r:json.loads(r['batch_ids'])[0]);rows=[]
     for field in ('rf_score_counts_32','cluster_counts'):
         hist=[json.loads(r[field]) for r in raw];reference=[sum(h[i] for h in hist[:3]) for i in range(len(hist[0]))]
         for minimum in (1,100,1000,10000):
@@ -169,7 +176,7 @@ def historical_support(output):
                 scores=divergences(reference,h)
                 for k,name in enumerate(('JS','PSI')):
                     rows.append({'signal':field,'unit':'replay window','detector':name,'batch':index,'source_day':r['source_day'],'minimum_support':minimum,'actual_support':int(r['rows']),'eligible':int(r['rows'])>=minimum and thresholds[k] is not None,'evaluation':index>=10,'value':scores[k],'threshold':thresholds[k],'alert':supported_alert(scores[k],int(r['rows']),minimum,thresholds[k]) if thresholds[k] is not None else None})
-    shifts=list(csv.DictReader(open('reports/phase6_shift_metrics.csv')))
+    shifts=list(read_table('reports/phase6_shift_metrics.csv'))
     for r in shifts:
         if r['scope'] not in ('intraday','capture_only') or r['category']!='INPUT_SHIFT':continue
         for minimum in (1,100,1000,10000):
@@ -185,7 +192,7 @@ def historical_support(output):
         if r['items']!=['flow_duration=BIN_0']:continue
         for minimum in (1,100,1000,10000):
             rows.append({'signal':'pattern_support/flow_duration=BIN_0','unit':'capture','detector':'support eligibility only','source_day':r['day'],'minimum_support':minimum,'actual_support':r['total'],'eligible':r['total']>=minimum,'value':r['support'],'alert':None})
-    for r in csv.DictReader(open('reports/phase3_family_by_day.csv')):
+    for r in read_table('reports/phase3_family_by_day.csv'):
         for minimum in (1,100,1000,10000):
             rows.append({'signal':'released_family_support/'+r['attack_family'],'unit':'capture','detector':'support eligibility only','source_day':r['source_day'],'minimum_support':minimum,'actual_support':int(r['records']),'eligible':int(r['records'])>=minimum,'alert':None})
     write(output/'support.csv',rows)
@@ -193,31 +200,44 @@ def historical_support(output):
 
 def agreements(output):
     grouped=defaultdict(dict)
-    for r in csv.DictReader(open('reports/phase11_synthetic/alerts.csv')):
+    episode_rows=[]
+    event_clock=defaultdict(list)
+    for r in read_table('reports/phase11_synthetic/alerts.csv'):
         if r['label_delay_windows']!='0' or r['detector']=='DDM':continue
         key=r['scenario'],r['seed'];grouped[key].setdefault(r['detector'],set()).add(int(r['alert_index'])//64)
+        event_clock[r['scenario'],r['seed'],r['detector']].append(int(r['alert_index']))
     methods=('ADWIN','PageHinkley','KSWIN','JS','PSI','FixedJS');rows=[]
     for scenario in ('stationary','abrupt','gradual','incremental','recurring','variance','correlation','prior','missingness','error','concept'):
         for seed in ('23013','23014','23015'):
             for a,b in combinations(methods,2):
                 first=grouped[scenario,seed].get(a,set())&set(range(4,64));second=grouped[scenario,seed].get(b,set())&set(range(4,64))
                 rows.append({'population':'synthetic','scenario':scenario,'seed':seed,'first':a,'second':b,'signal':'bounded feature','interval_unit':'64 arrivals','tolerance_intervals':1,'tolerance_positive_matches':tolerance_matches(first,second),**agreement([i in first for i in range(4,64)],[i in second for i in range(4,64)])})
+                events=[] if scenario in ('stationary','error','concept') else [2048,3072] if scenario=='recurring' else [2048]
+                if events:
+                    # Episode detection is evaluated from the original alert clock.
+                    raw_first=event_clock[scenario,seed,a]
+                    raw_second=event_clock[scenario,seed,b]
+                    episode_rows.append({'scenario':scenario,'seed':seed,'first':a,'second':b,'interval_unit':'known change episode',**agreement([any(e<=i<e+512 for i in raw_first) for e in events],[any(e<=i<e+512 for i in raw_second) for e in events])})
     history=defaultdict(lambda:defaultdict(dict))
-    for r in csv.DictReader(open('reports/phase11_historical/historical_alerts.csv')):
-        if r['evaluation']!='True' or r['detector'] in ('KSWIN','support_check'):continue
+    updates=defaultdict(int)
+    for r in read_table('reports/phase11_historical/historical_alerts.csv'):
+        stream=r['signal'],r['label_delay'],r['detector']
+        updates[stream]+=1
+        if r['evaluation']!='True' or r['detector'] in ('KSWIN','support_check') or updates[stream]<NATIVE_WARMUP.get(r['detector'],0):continue
         history[r['signal'],r['label_delay']][r['detector']][int(r['batch'])]=r['alert']=='True'
     for (signal,delay),detectors in history.items():
         for a,b in combinations(sorted(detectors),2):
             indices=sorted(set(detectors[a])&set(detectors[b]));first=[detectors[a][i] for i in indices];second=[detectors[b][i] for i in indices]
             if indices:rows.append({'population':'historical','signal':signal,'label_delay':delay,'first':a,'second':b,'interval_unit':'replay window',**agreement(first,second)})
     write(output/'agreement.csv',rows)
+    write(output/'episode_agreement.csv',episode_rows)
 
 
 def performance_associations(output):
-    raw=[r for r in csv.DictReader(open('reports/phase6_window_metrics.csv')) if r['scope'] in ('intraday','capture_only')];raw.sort(key=lambda r:json.loads(r['batch_ids'])[0]);metrics=[]
+    raw=[r for r in read_table('reports/phase6_window_metrics.csv') if r['scope'] in ('intraday','capture_only')];raw.sort(key=lambda r:json.loads(r['batch_ids'])[0]);metrics=[]
     for r in raw:
         m=json.loads(r['classifier_metrics'])['random_forest'];m.update(error=(m['fp']+m['fn'])/m['rows'],fpr=m['fp']/(m['fp']+m['tn']) if m['fp']+m['tn'] else None,prevalence=int(r['attacks'])/int(r['rows']));metrics.append(m)
-    histories=list(csv.DictReader(open('reports/phase11_historical/historical_alerts.csv')));rows=[];before=[]
+    histories=list(read_table('reports/phase11_historical/historical_alerts.csv'));rows=[];before=[];paired=[]
     for detector in ('JS','PSI'):
         scores={int(r['batch']):r for r in histories if r['detector']==detector and r['signal']=='RF histogram' and r['evaluation']=='True'}
         for metric in ('recall','precision','f1','fpr','error','predicted_rate','pr_auc','prevalence'):
@@ -225,16 +245,75 @@ def performance_associations(output):
                 for delay in (0,1,3):
                     pairs=[(float(r['value']),metrics[i+lag][metric],int(raw[i+lag]['rows'])) for i,r in scores.items() if i+lag+delay<len(raw) and int(raw[i+lag]['rows'])>=100 and metrics[i+lag][metric] is not None]
                     x=[p[0] for p in pairs];y=[p[1] for p in pairs]
+                    for i,r in scores.items():
+                        target=i+lag
+                        if target+delay>=len(raw) or int(raw[target]['rows'])<100 or metrics[target][metric] is None:continue
+                        paired.append({'detector':detector,'metric':metric,'lag_windows':lag,'label_delay_windows':delay,'drift_batch':i,'outcome_batch':target,'label_release_batch':target+delay,'analysis_asof_batch':target+delay,'drift_value':float(r['value']),'outcome_value':metrics[target][metric],'outcome_rows':int(raw[target]['rows']),'drift_day':raw[i]['source_day'],'outcome_day':raw[target]['source_day']})
                     rows.append({'detector':detector,'performance_metric':metric,'lag_windows':lag,'label_delay_windows':delay,'eligible_pairs':len(pairs),'excluded_windows':len(scores)-len(pairs),'pearson':correlation(x,y),'spearman':correlation(ranks(x),ranks(y)),'row_weighted_pearson':correlation(x,y,[p[2] for p in pairs]) if pairs else None,'interpretation':'Retrospective descriptive association, no independent-replication or causal inference'})
             for i,r in scores.items():
                 if r['alert']!='True' or i<=0 or i+1>=len(raw):continue
                 a,b=metrics[i-1][metric],metrics[i+1][metric]
                 before.append({'detector':detector,'alert_batch':i,'metric':metric,'before':a,'after':b,'difference':b-a if a is not None and b is not None else None,'after_label_release_batch':i+1,'label_delay_assumption':0})
-    write(output/'association.csv',rows);write(output/'before_after.csv',before)
+    write(output/'association.csv',rows);write(output/'before_after.csv',before);write(output/'association_pairs.csv',paired)
+
+
+def engineering_costs(output):
+    rows=[]
+    for name in NATIVE_WARMUP:
+        state=DetectorState(name)
+        state.batch('trusted-0',[0 if name=='DDM' else .25]*128)
+        snapshots=[];restores=[]
+        for _ in range(50):
+            tick=perf_counter();payload=state.snapshot();snapshots.append(perf_counter()-tick)
+            tick=perf_counter();DetectorState.restore(payload);restores.append(perf_counter()-tick)
+        tick=perf_counter()
+        for _ in range(10000):
+            assert state.batch('trusted-0',[1])==[]
+        duplicate=(perf_counter()-tick)/10000
+        assert state.observations==128
+        example={'detector':name,'arrival_index':2048,'signal':'bounded synthetic benchmark'}
+        tick=perf_counter()
+        for _ in range(10000):record=dict(example)
+        emission=(perf_counter()-tick)/10000
+        rows.append({'detector':name,'snapshot_repeats':50,'median_snapshot_seconds':statistics.median(snapshots),'median_restore_seconds':statistics.median(restores),'serialized_bytes':len(payload),'duplicate_batch_checks':10000,'duplicate_seconds_per_check':duplicate,'duplicate_observation_clock_unchanged':True,'alert_record_copy_seconds_per_operation':emission,'cost_scope':'Trusted-state snapshot and alert metadata construction, not additional detection events','peak_process_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss})
+    write(output/'engineering_costs.csv',rows)
+
+
+def native_support(output):
+    raw=[r for r in read_table('reports/phase6_window_metrics.csv') if r['scope'] in ('intraday','capture_only')]
+    raw.sort(key=lambda r:json.loads(r['batch_ids'])[0])
+    rows=[]
+    for minimum in (1,100,1000,10000):
+        for method in ('ADWIN','PageHinkley'):
+            score_detector=create(method)
+            score_updates=0
+            for batch,r in enumerate(raw):
+                counts=json.loads(r['rf_score_counts_32']);n=int(r['rows'])
+                value=sum((i+.5)/32*c for i,c in enumerate(counts))/n
+                alert=None
+                if n>=minimum:
+                    score_updates+=1
+                    detected=update(score_detector,value)
+                    if score_updates>=NATIVE_WARMUP[method]:alert=detected
+                rows.append({'detector':method,'signal':'RF score mean','minimum_support':minimum,'source_batch':batch,'update_batch':batch,'actual_support':n,'valid_updates':score_updates,'eligible':n>=minimum and score_updates>=NATIVE_WARMUP[method],'alert':alert,'unit':'replay window'})
+            for delay in (0,1,3):
+                detector=create(method);schedule=LabelSchedule(delay);updates=0
+                for batch,r in enumerate(raw):
+                    n=int(r['rows']);m=json.loads(r['classifier_metrics'])['random_forest']
+                    schedule.predict(batch,batch,((m['fp']+m['fn'])/n,n))
+                    for source,(value,support),released in schedule.release(batch):
+                        assert released<=batch
+                        alert=None
+                        if support>=minimum:
+                            updates+=1
+                            detected=update(detector,value)
+                            if updates>=NATIVE_WARMUP[method]:alert=detected
+                        rows.append({'detector':method,'signal':'released RF aggregate error rate','minimum_support':minimum,'source_batch':source,'label_release_batch':released,'label_delay_windows':delay,'update_batch':batch,'actual_support':support,'valid_updates':updates,'eligible':support>=minimum and updates>=NATIVE_WARMUP[method],'alert':alert,'unit':'released replay window'})
+    write(output/'native_support.csv',rows)
 
 
 def run(output):
     output=Path(output);output.mkdir(parents=True,exist_ok=True);start=perf_counter()
-    for action in (reference_and_reset,missing_inputs,historical_support,agreements,performance_associations):
+    for action in (reference_and_reset,missing_inputs,historical_support,native_support,agreements,performance_associations,engineering_costs):
         action(output);print('PHASE11 finalization',action.__name__,'complete',flush=True)
     (output/'receipt.json').write_text(json.dumps({'status':'validated','scope':'Phase 11 supplemental local CPU experiments','seconds':perf_counter()-start,'tables':{p.name:sum(1 for _ in csv.DictReader(p.open())) for p in output.glob('*.csv')}},indent=2)+'\n')

@@ -22,13 +22,13 @@ for method in methods:
 for field,title,subset in [('mean_delay_observations','Mean matched detection delay',lambda r:r['label_delay_windows']=='0'),('false_alarms','False alarms on stationary evaluation',lambda r:r['scenario']=='stationary' and r['label_delay_windows']=='0'),('seconds','Measured synthetic processing seconds',lambda r:r['label_delay_windows']=='0')]:
  values=[]
  for method in methods:
-  points=[float(r[field]) for r in metrics if r['detector']==method and subset(r) and r[field]!=''];values.append(sum(points)/len(points) if points else 0)
- fig,ax=plt.subplots(figsize=(8,4));ax.bar(methods,values);ax.set(ylabel=field.replace('_',' '),title=title);save(fig,field)
+  points=[float(r[field]) for r in metrics if r['detector']==method and subset(r) and r[field]!=''];values.append(sum(points)/len(points) if points else float('nan'))
+ fig,ax=plt.subplots(figsize=(8,4));ax.bar(methods,values);ax.set(ylabel='Mean false alarms per seed (3840 eligible arrivals)' if field=='false_alarms' else field.replace('_',' '),title=title+(' · detector-specific target sets' if field=='mean_delay_observations' else ''));save(fig,field)
 fig,ax=plt.subplots(figsize=(7,4))
-for scenario in ('error','concept'):
+for scenario,color in (('error','#176c82'),('concept','#b54e38')):
  for delay in (0,1,3):
   points=[float(r['mean_delay_observations']) for r in metrics if r['detector']=='DDM' and r['scenario']==scenario and int(r['label_delay_windows'])==delay and r['mean_delay_observations']!='']
-  if points:ax.scatter([delay]*len(points),points,label=scenario if delay==0 else None)
+  if points:ax.scatter([delay]*len(points),points,color=color,label=scenario if delay==0 else None)
 ax.set(xlabel='Simulated label delay in 64-observation windows',ylabel='Detection delay in observations',title='DDM label-delay sensitivity');ax.legend();save(fig,'label_delay')
 history=read('phase11_historical/historical_alerts.csv')
 fig,ax=plt.subplots(figsize=(9,4))

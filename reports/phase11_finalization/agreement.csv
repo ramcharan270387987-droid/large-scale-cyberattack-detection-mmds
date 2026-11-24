@@ -497,7 +497,7 @@ synthetic,concept,23015,PSI,FixedJS,bounded feature,64 arrivals,1,0,60,0,2,0,58,
 historical,,,FixedJS,JS,RF histogram,replay window,,,36,1,35,0,0,0.027777777777777776,0.027777777777777776,0.0,0.05405405405405406,0.0,
 historical,,,FixedJS,PSI,RF histogram,replay window,,,36,1,35,0,0,0.027777777777777776,0.027777777777777776,0.0,0.05405405405405406,0.0,
 historical,,,JS,PSI,RF histogram,replay window,,,36,1,0,0,35,1.0,1.0,1.0,1.0,1.0,
-historical,,,ADWIN,PageHinkley,RF score mean,replay window,,,36,0,0,0,36,1.0,,,,1.0,
-historical,,,ADWIN,PageHinkley,released RF aggregate error rate,replay window,,,36,0,0,0,36,1.0,,,,1.0,0
-historical,,,ADWIN,PageHinkley,released RF aggregate error rate,replay window,,,36,0,0,0,36,1.0,,,,1.0,1
-historical,,,ADWIN,PageHinkley,released RF aggregate error rate,replay window,,,34,0,0,0,34,1.0,,,,1.0,3
+historical,,,ADWIN,PageHinkley,RF score mean,replay window,,,16,0,0,0,16,1.0,,,,1.0,
+historical,,,ADWIN,PageHinkley,released RF aggregate error rate,replay window,,,16,0,0,0,16,1.0,,,,1.0,0
+historical,,,ADWIN,PageHinkley,released RF aggregate error rate,replay window,,,15,0,0,0,15,1.0,,,,1.0,1
+historical,,,ADWIN,PageHinkley,released RF aggregate error rate,replay window,,,13,0,0,0,13,1.0,,,,1.0,3
