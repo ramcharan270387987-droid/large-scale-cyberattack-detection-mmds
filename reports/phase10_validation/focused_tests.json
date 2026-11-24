@@ -1,0 +1,13 @@
+{
+  "timing": "after version 1 submission",
+  "source_sha256": "9d9cd6a720672d651b7bce57d20de616faefe2085717f71c5d0b3905c33a56a2",
+  "spark_version": "4.3.0",
+  "discretization_tests": 3,
+  "metric_tests": 2,
+  "status": "passed",
+  "commands": [
+    "python -m unittest discover -s tests -p test_phase10_patterns.py -v",
+    "python -m unittest discover -s tests -p test_phase10_metrics.py -v"
+  ],
+  "limitation": "Full Stage A output reconciliation remains pending."
+}
