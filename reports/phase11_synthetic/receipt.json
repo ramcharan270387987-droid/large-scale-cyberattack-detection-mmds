@@ -1,0 +1,8 @@
+{
+  "status": "validated",
+  "stage": "11B",
+  "rows": 297,
+  "seconds": 105.35230425999998,
+  "synthetic_only": true,
+  "pending_end_labels_note": "Labels released after the final observation remain pending and are excluded from detector updates"
+}

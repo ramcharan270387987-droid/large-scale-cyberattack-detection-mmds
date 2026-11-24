@@ -11,9 +11,21 @@
       "focused_tests": 3
     },
     "11B": {
-      "status": "RUNNING",
-      "local_log": "/tmp/phase11-synthetic.log",
-      "kaggle_notebook": "ramcharan2345/mmds-phase-11-advanced-drift-detection"
+      "status": "COMPLETE AND VERIFIED",
+      "kernel_version": 1,
+      "worker_status": "COMPLETE",
+      "receipt": "reports/phase11_synthetic/receipt.json",
+      "comparisons": 297,
+      "log_sha256": "af78177476168eceee7ff8c658478cbd7e96ca1ee836171da6247a934f95143d",
+      "source_sha256": "471bc7c2f4afa88865d63dcdacc6ade13b41178806e1d4c763c18b4b5f039a07",
+      "output_sha256": {
+        "signals.csv": "a2dc6e0b6742905c49cfa2e9ea0de1860dd4c9905bc04b7e04525ff10af4f470",
+        "synthetic_metrics.csv": "9490c589a8e6bca6e878f7d9bd14969ff8a92a9ef95fad571f5b71301b365e75",
+        "frozen.json": "639550b31b34aa9c528f96227f2b41da17f66e9336112ce0fed6a9d0836c2742",
+        "receipt.json": "cc4ecd38da732a717cd5853be36c788eeb1e22a5e072d345297cacb29f00037d",
+        "alerts.csv": "7fd0267f31d89478803a781bd43995b411c48de017fd4b42539fe8e6b4fd4f3d",
+        "calibration.csv": "411993ff4e0ca6750ae31315012a801f25ab51ce09430835d008dc32e83e5186"
+      }
     }
   },
   "pending": [
