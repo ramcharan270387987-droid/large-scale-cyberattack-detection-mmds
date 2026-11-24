@@ -1,0 +1,18 @@
+{
+  "version": "phase5-v1",
+  "seed": 23013,
+  "candidate_k": [3, 5, 8, 12],
+  "max_iter": 16,
+  "init_steps": 2,
+  "tolerance": 0.0001,
+  "training_permyriad": 250,
+  "internal_permyriad": 12,
+  "reference_percentiles": [0.95, 0.99, 0.999],
+  "primary_percentile": 0.99,
+  "quantile_accuracy": 8192,
+  "max_internal_rows": 40000,
+  "rare_support": 100,
+  "window_hours": 3,
+  "lag_reference": "full retained phase4 train-day population",
+  "spark": {"master": "local[4]", "driver_memory": "8g", "shuffle_partitions": 48, "input_partition_bytes": 67108864}
+}

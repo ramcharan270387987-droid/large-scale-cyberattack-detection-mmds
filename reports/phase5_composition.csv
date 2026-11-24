@@ -1,0 +1,547 @@
+experiment,source_day,split_rank,cluster,binary_label,attack_family,original_label,count
+G,2018-02-14,0,0,0,Benign,Benign,121673
+G,2018-02-14,0,0,1,Credential brute force,FTP-BruteForce,193360
+G,2018-02-14,0,0,1,Credential brute force,SSH-Bruteforce,93768
+G,2018-02-14,0,1,0,Benign,Benign,226637
+G,2018-02-14,0,2,0,Benign,Benign,72374
+G,2018-02-14,0,2,1,Credential brute force,SSH-Bruteforce,3
+G,2018-02-14,0,3,0,Benign,Benign,26167
+G,2018-02-14,0,4,0,Benign,Benign,220775
+G,2018-02-14,0,4,1,Credential brute force,SSH-Bruteforce,93818
+G,2018-02-15,0,0,0,Benign,Benign,184102
+G,2018-02-15,0,0,1,DoS,DoS attacks-GoldenEye,1
+G,2018-02-15,0,0,1,DoS,DoS attacks-Slowloris,125
+G,2018-02-15,0,1,0,Benign,Benign,367620
+G,2018-02-15,0,1,1,DoS,DoS attacks-Slowloris,71
+G,2018-02-15,0,2,0,Benign,Benign,118015
+G,2018-02-15,0,2,1,DoS,DoS attacks-GoldenEye,14606
+G,2018-02-15,0,2,1,DoS,DoS attacks-Slowloris,4830
+G,2018-02-15,0,3,0,Benign,Benign,43465
+G,2018-02-15,0,3,1,DoS,DoS attacks-GoldenEye,1
+G,2018-02-15,0,3,1,DoS,DoS attacks-Slowloris,972
+G,2018-02-15,0,4,0,Benign,Benign,282875
+G,2018-02-15,0,4,1,DoS,DoS attacks-GoldenEye,26900
+G,2018-02-15,0,4,1,DoS,DoS attacks-Slowloris,4992
+G,2018-02-16,0,0,0,Benign,Benign,3366
+G,2018-02-16,0,0,1,DoS,DoS attacks-Hulk,217313
+G,2018-02-16,0,0,1,DoS,DoS attacks-SlowHTTPTest,139890
+G,2018-02-16,0,1,0,Benign,Benign,17
+G,2018-02-16,0,1,1,DoS,DoS attacks-Hulk,11845
+G,2018-02-16,0,2,0,Benign,Benign,1015
+G,2018-02-16,0,2,1,DoS,DoS attacks-Hulk,219051
+G,2018-02-16,0,3,0,Benign,Benign,44
+G,2018-02-16,0,4,0,Benign,Benign,442330
+G,2018-02-16,0,4,1,DoS,DoS attacks-Hulk,13703
+G,2018-02-20,0,0,0,Benign,Benign,1179595
+G,2018-02-20,0,0,1,DDoS,DDoS attacks-LOIC-HTTP,82
+G,2018-02-20,0,1,0,Benign,Benign,2621977
+G,2018-02-20,0,1,1,DDoS,DDoS attacks-LOIC-HTTP,291
+G,2018-02-20,0,2,0,Benign,Benign,695274
+G,2018-02-20,0,2,1,DDoS,DDoS attacks-LOIC-HTTP,286023
+G,2018-02-20,0,3,0,Benign,Benign,381489
+G,2018-02-20,0,4,0,Benign,Benign,2494222
+G,2018-02-20,0,4,1,DDoS,DDoS attacks-LOIC-HTTP,289795
+G,2018-02-21,0,0,0,Benign,Benign,104
+G,2018-02-21,0,0,1,DDoS,DDOS attack-HOIC,353206
+G,2018-02-21,0,1,0,Benign,Benign,242223
+G,2018-02-21,0,1,1,DDoS,DDOS attack-HOIC,136262
+G,2018-02-21,0,2,0,Benign,Benign,2084
+G,2018-02-21,0,2,1,DDoS,DDOS attack-HOIC,169056
+G,2018-02-21,0,3,0,Benign,Benign,15
+G,2018-02-21,0,4,0,Benign,Benign,116407
+G,2018-02-21,0,4,1,DDoS,DDOS attack-HOIC,27488
+G,2018-02-21,0,4,1,DDoS,DDOS attack-LOIC-UDP,1730
+G,2018-02-22,0,0,0,Benign,Benign,170168
+G,2018-02-22,0,0,1,Web attack,Brute Force -Web,102
+G,2018-02-22,0,0,1,Web attack,Brute Force -XSS,39
+G,2018-02-22,0,0,1,Web attack,SQL Injection,12
+G,2018-02-22,0,1,0,Benign,Benign,332201
+G,2018-02-22,0,2,0,Benign,Benign,171223
+G,2018-02-22,0,2,1,Web attack,Brute Force -Web,5
+G,2018-02-22,0,2,1,Web attack,Brute Force -XSS,1
+G,2018-02-22,0,2,1,Web attack,SQL Injection,1
+G,2018-02-22,0,3,0,Benign,Benign,36812
+G,2018-02-22,0,4,0,Benign,Benign,337809
+G,2018-02-22,0,4,1,Web attack,Brute Force -Web,142
+G,2018-02-22,0,4,1,Web attack,Brute Force -XSS,39
+G,2018-02-22,0,4,1,Web attack,SQL Injection,21
+G,2018-02-23,0,0,0,Benign,Benign,174280
+G,2018-02-23,0,0,1,Web attack,Brute Force -Web,87
+G,2018-02-23,0,0,1,Web attack,Brute Force -XSS,73
+G,2018-02-23,0,0,1,Web attack,SQL Injection,22
+G,2018-02-23,0,1,0,Benign,Benign,317164
+G,2018-02-23,0,1,1,Web attack,Brute Force -Web,2
+G,2018-02-23,0,1,1,Web attack,Brute Force -XSS,1
+G,2018-02-23,0,2,0,Benign,Benign,178302
+G,2018-02-23,0,2,1,Web attack,Brute Force -Web,149
+G,2018-02-23,0,2,1,Web attack,Brute Force -XSS,4
+G,2018-02-23,0,2,1,Web attack,SQL Injection,4
+G,2018-02-23,0,3,0,Benign,Benign,37208
+G,2018-02-23,0,3,1,Web attack,Brute Force -Web,1
+G,2018-02-23,0,4,0,Benign,Benign,341055
+G,2018-02-23,0,4,1,Web attack,Brute Force -Web,123
+G,2018-02-23,0,4,1,Web attack,Brute Force -XSS,73
+G,2018-02-23,0,4,1,Web attack,SQL Injection,27
+G,2018-02-28,0,0,0,Benign,Benign,131462
+G,2018-02-28,0,0,1,Infiltration,Infilteration,16306
+G,2018-02-28,0,1,0,Benign,Benign,185416
+G,2018-02-28,0,1,1,Infiltration,Infilteration,24181
+G,2018-02-28,0,2,0,Benign,Benign,42347
+G,2018-02-28,0,2,1,Infiltration,Infilteration,5513
+G,2018-02-28,0,3,0,Benign,Benign,28230
+G,2018-02-28,0,3,1,Infiltration,Infilteration,3699
+G,2018-02-28,0,4,0,Benign,Benign,156745
+G,2018-02-28,0,4,1,Infiltration,Infilteration,19172
+G,2018-03-01,0,0,0,Benign,Benign,42855
+G,2018-03-01,0,0,1,Infiltration,Infilteration,33012
+G,2018-03-01,0,1,0,Benign,Benign,81155
+G,2018-03-01,0,1,1,Infiltration,Infilteration,25684
+G,2018-03-01,0,2,0,Benign,Benign,26274
+G,2018-03-01,0,2,1,Infiltration,Infilteration,8206
+G,2018-03-01,0,3,0,Benign,Benign,13215
+G,2018-03-01,0,3,1,Infiltration,Infilteration,4065
+G,2018-03-01,0,4,0,Benign,Benign,74538
+G,2018-03-01,0,4,1,Infiltration,Infilteration,22096
+G,2018-03-02,0,0,0,Benign,Benign,115408
+G,2018-03-02,0,0,1,Bot,Bot,142923
+G,2018-03-02,0,1,0,Benign,Benign,217686
+G,2018-03-02,0,1,1,Bot,Bot,141356
+G,2018-03-02,0,2,0,Benign,Benign,100805
+G,2018-03-02,0,2,1,Bot,Bot,340
+G,2018-03-02,0,3,0,Benign,Benign,27505
+G,2018-03-02,0,3,1,Bot,Bot,3
+G,2018-03-02,0,4,0,Benign,Benign,300980
+G,2018-03-02,0,4,1,Bot,Bot,1569
+B,2018-02-14,0,0,0,Benign,Benign,188487
+B,2018-02-14,0,1,0,Benign,Benign,29266
+B,2018-02-14,0,1,1,Credential brute force,SSH-Bruteforce,11
+B,2018-02-14,0,2,0,Benign,Benign,110698
+B,2018-02-14,0,2,1,Credential brute force,FTP-BruteForce,193360
+B,2018-02-14,0,2,1,Credential brute force,SSH-Bruteforce,93760
+B,2018-02-14,0,3,0,Benign,Benign,41080
+B,2018-02-14,0,4,0,Benign,Benign,48922
+B,2018-02-14,0,5,0,Benign,Benign,3746
+B,2018-02-14,0,6,0,Benign,Benign,66563
+B,2018-02-14,0,7,0,Benign,Benign,24185
+B,2018-02-14,0,8,0,Benign,Benign,59
+B,2018-02-14,0,9,0,Benign,Benign,3536
+B,2018-02-14,0,10,0,Benign,Benign,82669
+B,2018-02-14,0,10,1,Credential brute force,SSH-Bruteforce,44171
+B,2018-02-14,0,11,0,Benign,Benign,68415
+B,2018-02-14,0,11,1,Credential brute force,SSH-Bruteforce,49647
+B,2018-02-15,0,0,0,Benign,Benign,312168
+B,2018-02-15,0,0,1,DoS,DoS attacks-Slowloris,70
+B,2018-02-15,0,1,0,Benign,Benign,46945
+B,2018-02-15,0,1,1,DoS,DoS attacks-GoldenEye,11
+B,2018-02-15,0,1,1,DoS,DoS attacks-Slowloris,1
+B,2018-02-15,0,2,0,Benign,Benign,165220
+B,2018-02-15,0,3,0,Benign,Benign,51877
+B,2018-02-15,0,4,0,Benign,Benign,81601
+B,2018-02-15,0,4,1,DoS,DoS attacks-GoldenEye,13752
+B,2018-02-15,0,4,1,DoS,DoS attacks-Slowloris,2232
+B,2018-02-15,0,5,0,Benign,Benign,6026
+B,2018-02-15,0,5,1,DoS,DoS attacks-GoldenEye,1
+B,2018-02-15,0,5,1,DoS,DoS attacks-Slowloris,125
+B,2018-02-15,0,6,0,Benign,Benign,95716
+B,2018-02-15,0,6,1,DoS,DoS attacks-GoldenEye,8708
+B,2018-02-15,0,6,1,DoS,DoS attacks-Slowloris,2
+B,2018-02-15,0,7,0,Benign,Benign,39488
+B,2018-02-15,0,7,1,DoS,DoS attacks-GoldenEye,1
+B,2018-02-15,0,7,1,DoS,DoS attacks-Slowloris,918
+B,2018-02-15,0,8,0,Benign,Benign,9039
+B,2018-02-15,0,9,0,Benign,Benign,10436
+B,2018-02-15,0,9,1,DoS,DoS attacks-Slowloris,2651
+B,2018-02-15,0,10,0,Benign,Benign,83400
+B,2018-02-15,0,10,1,DoS,DoS attacks-GoldenEye,19035
+B,2018-02-15,0,10,1,DoS,DoS attacks-Slowloris,4991
+B,2018-02-15,0,11,0,Benign,Benign,94161
+B,2018-02-16,0,0,0,Benign,Benign,17
+B,2018-02-16,0,0,1,DoS,DoS attacks-Hulk,56
+B,2018-02-16,0,1,0,Benign,Benign,1770
+B,2018-02-16,0,1,1,DoS,DoS attacks-Hulk,416854
+B,2018-02-16,0,2,0,Benign,Benign,2441
+B,2018-02-16,0,2,1,DoS,DoS attacks-Hulk,19508
+B,2018-02-16,0,2,1,DoS,DoS attacks-SlowHTTPTest,139890
+B,2018-02-16,0,4,0,Benign,Benign,169
+B,2018-02-16,0,4,1,DoS,DoS attacks-Hulk,2
+B,2018-02-16,0,5,1,DoS,DoS attacks-Hulk,1267
+B,2018-02-16,0,6,0,Benign,Benign,6
+B,2018-02-16,0,6,1,DoS,DoS attacks-Hulk,13897
+B,2018-02-16,0,7,0,Benign,Benign,36
+B,2018-02-16,0,8,0,Benign,Benign,3
+B,2018-02-16,0,8,1,DoS,DoS attacks-Hulk,2
+B,2018-02-16,0,9,0,Benign,Benign,15
+B,2018-02-16,0,10,0,Benign,Benign,442119
+B,2018-02-16,0,10,1,DoS,DoS attacks-Hulk,10326
+B,2018-02-16,0,11,0,Benign,Benign,196
+B,2018-02-20,0,0,0,Benign,Benign,2173844
+B,2018-02-20,0,1,0,Benign,Benign,293558
+B,2018-02-20,0,1,1,DDoS,DDoS attacks-LOIC-HTTP,3057
+B,2018-02-20,0,2,0,Benign,Benign,1074552
+B,2018-02-20,0,3,0,Benign,Benign,1143622
+B,2018-02-20,0,4,0,Benign,Benign,432935
+B,2018-02-20,0,4,1,DDoS,DDoS attacks-LOIC-HTTP,283048
+B,2018-02-20,0,5,0,Benign,Benign,45951
+B,2018-02-20,0,6,0,Benign,Benign,522290
+B,2018-02-20,0,7,0,Benign,Benign,355398
+B,2018-02-20,0,8,0,Benign,Benign,166666
+B,2018-02-20,0,8,1,DDoS,DDoS attacks-LOIC-HTTP,289289
+B,2018-02-20,0,9,0,Benign,Benign,99476
+B,2018-02-20,0,10,0,Benign,Benign,690809
+B,2018-02-20,0,10,1,DDoS,DDoS attacks-LOIC-HTTP,13
+B,2018-02-20,0,11,0,Benign,Benign,373456
+B,2018-02-20,0,11,1,DDoS,DDoS attacks-LOIC-HTTP,784
+B,2018-02-21,0,0,0,Benign,Benign,12
+B,2018-02-21,0,1,0,Benign,Benign,69
+B,2018-02-21,0,1,1,DDoS,DDOS attack-HOIC,521727
+B,2018-02-21,0,2,0,Benign,Benign,97
+B,2018-02-21,0,2,1,DDoS,DDOS attack-HOIC,535
+B,2018-02-21,0,3,0,Benign,Benign,2
+B,2018-02-21,0,4,0,Benign,Benign,1694
+B,2018-02-21,0,5,0,Benign,Benign,1
+B,2018-02-21,0,6,0,Benign,Benign,50
+B,2018-02-21,0,7,0,Benign,Benign,6
+B,2018-02-21,0,8,0,Benign,Benign,358531
+B,2018-02-21,0,8,1,DDoS,DDOS attack-HOIC,163750
+B,2018-02-21,0,9,0,Benign,Benign,17
+B,2018-02-21,0,10,0,Benign,Benign,344
+B,2018-02-21,0,10,1,DDoS,DDOS attack-LOIC-UDP,19
+B,2018-02-21,0,11,0,Benign,Benign,10
+B,2018-02-21,0,11,1,DDoS,DDOS attack-LOIC-UDP,1711
+B,2018-02-22,0,0,0,Benign,Benign,271676
+B,2018-02-22,0,1,0,Benign,Benign,39479
+B,2018-02-22,0,1,1,Web attack,Brute Force -Web,27
+B,2018-02-22,0,1,1,Web attack,Brute Force -XSS,9
+B,2018-02-22,0,2,0,Benign,Benign,153424
+B,2018-02-22,0,2,1,Web attack,Brute Force -Web,77
+B,2018-02-22,0,2,1,Web attack,Brute Force -XSS,30
+B,2018-02-22,0,2,1,Web attack,SQL Injection,12
+B,2018-02-22,0,3,0,Benign,Benign,122217
+B,2018-02-22,0,3,1,Web attack,Brute Force -Web,142
+B,2018-02-22,0,3,1,Web attack,Brute Force -XSS,2
+B,2018-02-22,0,3,1,Web attack,SQL Injection,21
+B,2018-02-22,0,4,0,Benign,Benign,140552
+B,2018-02-22,0,4,1,Web attack,Brute Force -Web,3
+B,2018-02-22,0,4,1,Web attack,Brute Force -XSS,1
+B,2018-02-22,0,4,1,Web attack,SQL Injection,1
+B,2018-02-22,0,5,0,Benign,Benign,5366
+B,2018-02-22,0,6,0,Benign,Benign,99243
+B,2018-02-22,0,7,0,Benign,Benign,33935
+B,2018-02-22,0,8,0,Benign,Benign,1143
+B,2018-02-22,0,9,0,Benign,Benign,6345
+B,2018-02-22,0,10,0,Benign,Benign,83049
+B,2018-02-22,0,11,0,Benign,Benign,91784
+B,2018-02-22,0,11,1,Web attack,Brute Force -XSS,37
+B,2018-02-23,1,0,0,Benign,Benign,121709
+B,2018-02-23,1,0,1,Web attack,Brute Force -Web,1
+B,2018-02-23,1,1,0,Benign,Benign,34251
+B,2018-02-23,1,1,1,Web attack,Brute Force -Web,3
+B,2018-02-23,1,1,1,Web attack,Brute Force -XSS,16
+B,2018-02-23,1,1,1,Web attack,SQL Injection,1
+B,2018-02-23,1,2,0,Benign,Benign,7107
+B,2018-02-23,1,2,1,Web attack,Brute Force -XSS,18
+B,2018-02-23,1,2,1,Web attack,SQL Injection,4
+B,2018-02-23,1,3,0,Benign,Benign,121206
+B,2018-02-23,1,3,1,Web attack,Brute Force -Web,122
+B,2018-02-23,1,3,1,Web attack,Brute Force -XSS,2
+B,2018-02-23,1,3,1,Web attack,SQL Injection,27
+B,2018-02-23,1,4,0,Benign,Benign,131063
+B,2018-02-23,1,4,1,Web attack,Brute Force -Web,22
+B,2018-02-23,1,4,1,Web attack,SQL Injection,4
+B,2018-02-23,1,5,0,Benign,Benign,1708
+B,2018-02-23,1,6,0,Benign,Benign,95817
+B,2018-02-23,1,7,0,Benign,Benign,10310
+B,2018-02-23,1,8,0,Benign,Benign,506
+B,2018-02-23,1,9,0,Benign,Benign,6316
+B,2018-02-23,1,9,1,Web attack,Brute Force -Web,1
+B,2018-02-23,1,10,0,Benign,Benign,85942
+B,2018-02-23,1,10,1,Web attack,Brute Force -Web,127
+B,2018-02-23,1,10,1,Web attack,Brute Force -XSS,4
+B,2018-02-23,1,11,0,Benign,Benign,93108
+B,2018-02-23,1,11,1,Web attack,Brute Force -XSS,71
+B,2018-02-28,1,0,0,Benign,Benign,96365
+B,2018-02-28,1,0,1,Infiltration,Infilteration,20386
+B,2018-02-28,1,1,0,Benign,Benign,17120
+B,2018-02-28,1,1,1,Infiltration,Infilteration,2043
+B,2018-02-28,1,2,0,Benign,Benign,37834
+B,2018-02-28,1,2,1,Infiltration,Infilteration,3545
+B,2018-02-28,1,3,0,Benign,Benign,98192
+B,2018-02-28,1,3,1,Infiltration,Infilteration,12134
+B,2018-02-28,1,4,0,Benign,Benign,18558
+B,2018-02-28,1,4,1,Infiltration,Infilteration,2260
+B,2018-02-28,1,5,0,Benign,Benign,1322
+B,2018-02-28,1,5,1,Infiltration,Infilteration,392
+B,2018-02-28,1,6,0,Benign,Benign,45148
+B,2018-02-28,1,6,1,Infiltration,Infilteration,5813
+B,2018-02-28,1,7,0,Benign,Benign,16307
+B,2018-02-28,1,7,1,Infiltration,Infilteration,3447
+B,2018-02-28,1,8,0,Benign,Benign,15247
+B,2018-02-28,1,8,1,Infiltration,Infilteration,2493
+B,2018-02-28,1,9,0,Benign,Benign,7530
+B,2018-02-28,1,9,1,Infiltration,Infilteration,854
+B,2018-02-28,1,10,0,Benign,Benign,22414
+B,2018-02-28,1,10,1,Infiltration,Infilteration,2127
+B,2018-02-28,1,11,0,Benign,Benign,9120
+B,2018-02-28,1,11,1,Infiltration,Infilteration,1139
+B,2018-03-01,2,0,0,Benign,Benign,41331
+B,2018-03-01,2,0,1,Infiltration,Infilteration,12879
+B,2018-03-01,2,1,0,Benign,Benign,8926
+B,2018-03-01,2,1,1,Infiltration,Infilteration,2318
+B,2018-03-01,2,2,0,Benign,Benign,3697
+B,2018-03-01,2,2,1,Infiltration,Infilteration,15961
+B,2018-03-01,2,3,0,Benign,Benign,40595
+B,2018-03-01,2,3,1,Infiltration,Infilteration,12276
+B,2018-03-01,2,4,0,Benign,Benign,14009
+B,2018-03-01,2,4,1,Infiltration,Infilteration,3293
+B,2018-03-01,2,5,0,Benign,Benign,469
+B,2018-03-01,2,5,1,Infiltration,Infilteration,154
+B,2018-03-01,2,6,0,Benign,Benign,17421
+B,2018-03-01,2,6,1,Infiltration,Infilteration,6778
+B,2018-03-01,2,7,0,Benign,Benign,6311
+B,2018-03-01,2,7,1,Infiltration,Infilteration,2061
+B,2018-03-01,2,8,0,Benign,Benign,3981
+B,2018-03-01,2,8,1,Infiltration,Infilteration,2318
+B,2018-03-01,2,9,0,Benign,Benign,3115
+B,2018-03-01,2,9,1,Infiltration,Infilteration,1144
+B,2018-03-01,2,10,0,Benign,Benign,18858
+B,2018-03-01,2,10,1,Infiltration,Infilteration,4446
+B,2018-03-01,2,11,0,Benign,Benign,7509
+B,2018-03-01,2,11,1,Infiltration,Infilteration,1623
+B,2018-03-02,2,0,0,Benign,Benign,128056
+B,2018-03-02,2,1,0,Benign,Benign,24842
+B,2018-03-02,2,1,1,Bot,Bot,38
+B,2018-03-02,2,2,0,Benign,Benign,10051
+B,2018-03-02,2,3,0,Benign,Benign,131882
+B,2018-03-02,2,3,1,Bot,Bot,9
+B,2018-03-02,2,4,0,Benign,Benign,76009
+B,2018-03-02,2,4,1,Bot,Bot,282
+B,2018-03-02,2,5,0,Benign,Benign,1768
+B,2018-03-02,2,6,0,Benign,Benign,65418
+B,2018-03-02,2,6,1,Bot,Bot,769
+B,2018-03-02,2,7,0,Benign,Benign,18617
+B,2018-03-02,2,7,1,Bot,Bot,3
+B,2018-03-02,2,8,0,Benign,Benign,1013
+B,2018-03-02,2,8,1,Bot,Bot,142173
+B,2018-03-02,2,9,0,Benign,Benign,6876
+B,2018-03-02,2,10,0,Benign,Benign,75715
+B,2018-03-02,2,11,0,Benign,Benign,65115
+C,2018-02-14,0,0,0,Benign,Benign,33288
+C,2018-02-14,0,1,0,Benign,Benign,189685
+C,2018-02-14,0,2,0,Benign,Benign,35978
+C,2018-02-14,0,3,0,Benign,Benign,75096
+C,2018-02-14,0,3,1,Credential brute force,SSH-Bruteforce,49646
+C,2018-02-14,0,4,0,Benign,Benign,83320
+C,2018-02-14,0,4,1,Credential brute force,SSH-Bruteforce,238
+C,2018-02-14,0,5,0,Benign,Benign,35591
+C,2018-02-14,0,5,1,Credential brute force,FTP-BruteForce,193360
+C,2018-02-14,0,5,1,Credential brute force,SSH-Bruteforce,93533
+C,2018-02-14,0,6,0,Benign,Benign,3746
+C,2018-02-14,0,7,0,Benign,Benign,114735
+C,2018-02-14,0,7,1,Credential brute force,SSH-Bruteforce,44172
+C,2018-02-14,0,8,0,Benign,Benign,58
+C,2018-02-14,0,9,0,Benign,Benign,24366
+C,2018-02-14,0,10,0,Benign,Benign,4439
+C,2018-02-14,0,11,0,Benign,Benign,67324
+C,2018-02-15,0,0,0,Benign,Benign,64626
+C,2018-02-15,0,0,1,DoS,DoS attacks-Slowloris,2410
+C,2018-02-15,0,1,0,Benign,Benign,316610
+C,2018-02-15,0,1,1,DoS,DoS attacks-Slowloris,70
+C,2018-02-15,0,2,0,Benign,Benign,48287
+C,2018-02-15,0,2,1,DoS,DoS attacks-GoldenEye,13730
+C,2018-02-15,0,2,1,DoS,DoS attacks-Slowloris,1
+C,2018-02-15,0,3,0,Benign,Benign,118935
+C,2018-02-15,0,3,1,DoS,DoS attacks-GoldenEye,776
+C,2018-02-15,0,4,0,Benign,Benign,120851
+C,2018-02-15,0,4,1,DoS,DoS attacks-GoldenEye,5
+C,2018-02-15,0,5,0,Benign,Benign,56620
+C,2018-02-15,0,6,0,Benign,Benign,6026
+C,2018-02-15,0,6,1,DoS,DoS attacks-GoldenEye,1
+C,2018-02-15,0,6,1,DoS,DoS attacks-Slowloris,125
+C,2018-02-15,0,7,0,Benign,Benign,107674
+C,2018-02-15,0,7,1,DoS,DoS attacks-GoldenEye,10517
+C,2018-02-15,0,7,1,DoS,DoS attacks-Slowloris,4701
+C,2018-02-15,0,8,0,Benign,Benign,8786
+C,2018-02-15,0,9,0,Benign,Benign,39867
+C,2018-02-15,0,9,1,DoS,DoS attacks-GoldenEye,1
+C,2018-02-15,0,9,1,DoS,DoS attacks-Slowloris,972
+C,2018-02-15,0,10,0,Benign,Benign,11622
+C,2018-02-15,0,10,1,DoS,DoS attacks-GoldenEye,911
+C,2018-02-15,0,10,1,DoS,DoS attacks-Slowloris,2704
+C,2018-02-15,0,11,0,Benign,Benign,96173
+C,2018-02-15,0,11,1,DoS,DoS attacks-GoldenEye,15567
+C,2018-02-15,0,11,1,DoS,DoS attacks-Slowloris,7
+C,2018-02-16,0,0,0,Benign,Benign,7
+C,2018-02-16,0,0,1,DoS,DoS attacks-Hulk,4681
+C,2018-02-16,0,1,0,Benign,Benign,17
+C,2018-02-16,0,1,1,DoS,DoS attacks-Hulk,45
+C,2018-02-16,0,2,0,Benign,Benign,167
+C,2018-02-16,0,2,1,DoS,DoS attacks-Hulk,14
+C,2018-02-16,0,3,0,Benign,Benign,25
+C,2018-02-16,0,4,0,Benign,Benign,1769
+C,2018-02-16,0,4,1,DoS,DoS attacks-Hulk,431613
+C,2018-02-16,0,5,0,Benign,Benign,2438
+C,2018-02-16,0,5,1,DoS,DoS attacks-Hulk,56
+C,2018-02-16,0,5,1,DoS,DoS attacks-SlowHTTPTest,139890
+C,2018-02-16,0,6,1,DoS,DoS attacks-Hulk,1267
+C,2018-02-16,0,7,0,Benign,Benign,90
+C,2018-02-16,0,7,1,DoS,DoS attacks-Hulk,159
+C,2018-02-16,0,8,0,Benign,Benign,3
+C,2018-02-16,0,8,1,DoS,DoS attacks-Hulk,4
+C,2018-02-16,0,9,0,Benign,Benign,36
+C,2018-02-16,0,10,0,Benign,Benign,442214
+C,2018-02-16,0,10,1,DoS,DoS attacks-Hulk,10165
+C,2018-02-16,0,11,0,Benign,Benign,6
+C,2018-02-16,0,11,1,DoS,DoS attacks-Hulk,13908
+C,2018-02-20,0,0,0,Benign,Benign,409456
+C,2018-02-20,0,0,1,DDoS,DDoS attacks-LOIC-HTTP,3
+C,2018-02-20,0,1,0,Benign,Benign,2188376
+C,2018-02-20,0,2,0,Benign,Benign,262197
+C,2018-02-20,0,2,1,DDoS,DDoS attacks-LOIC-HTTP,284867
+C,2018-02-20,0,3,0,Benign,Benign,877310
+C,2018-02-20,0,3,1,DDoS,DDoS attacks-LOIC-HTTP,684
+C,2018-02-20,0,4,0,Benign,Benign,786920
+C,2018-02-20,0,4,1,DDoS,DDoS attacks-LOIC-HTTP,1237
+C,2018-02-20,0,5,0,Benign,Benign,347941
+C,2018-02-20,0,6,0,Benign,Benign,45951
+C,2018-02-20,0,7,0,Benign,Benign,1279416
+C,2018-02-20,0,7,1,DDoS,DDoS attacks-LOIC-HTTP,111
+C,2018-02-20,0,8,0,Benign,Benign,202220
+C,2018-02-20,0,8,1,DDoS,DDoS attacks-LOIC-HTTP,289289
+C,2018-02-20,0,9,0,Benign,Benign,360776
+C,2018-02-20,0,10,0,Benign,Benign,103608
+C,2018-02-20,0,11,0,Benign,Benign,508386
+C,2018-02-21,0,0,0,Benign,Benign,1991
+C,2018-02-21,0,1,0,Benign,Benign,12
+C,2018-02-21,0,2,0,Benign,Benign,80
+C,2018-02-21,0,3,0,Benign,Benign,12
+C,2018-02-21,0,3,1,DDoS,DDOS attack-LOIC-UDP,1706
+C,2018-02-21,0,4,0,Benign,Benign,21
+C,2018-02-21,0,4,1,DDoS,DDOS attack-HOIC,522201
+C,2018-02-21,0,5,0,Benign,Benign,92
+C,2018-02-21,0,5,1,DDoS,DDOS attack-HOIC,61
+C,2018-02-21,0,6,0,Benign,Benign,1
+C,2018-02-21,0,7,0,Benign,Benign,55
+C,2018-02-21,0,7,1,DDoS,DDOS attack-LOIC-UDP,24
+C,2018-02-21,0,8,0,Benign,Benign,358533
+C,2018-02-21,0,8,1,DDoS,DDOS attack-HOIC,163750
+C,2018-02-21,0,9,0,Benign,Benign,9
+C,2018-02-21,0,10,0,Benign,Benign,14
+C,2018-02-21,0,11,0,Benign,Benign,13
+C,2018-02-22,2,0,0,Benign,Benign,40687
+C,2018-02-22,2,0,1,Web attack,Brute Force -Web,3
+C,2018-02-22,2,0,1,Web attack,Brute Force -XSS,1
+C,2018-02-22,2,0,1,Web attack,SQL Injection,1
+C,2018-02-22,2,1,0,Benign,Benign,136798
+C,2018-02-22,2,2,0,Benign,Benign,121051
+C,2018-02-22,2,3,0,Benign,Benign,95154
+C,2018-02-22,2,3,1,Web attack,Brute Force -Web,74
+C,2018-02-22,2,3,1,Web attack,Brute Force -XSS,39
+C,2018-02-22,2,3,1,Web attack,SQL Injection,3
+C,2018-02-22,2,4,0,Benign,Benign,14761
+C,2018-02-22,2,4,1,Web attack,Brute Force -Web,4
+C,2018-02-22,2,4,1,Web attack,Brute Force -XSS,24
+C,2018-02-22,2,4,1,Web attack,SQL Injection,1
+C,2018-02-22,2,5,0,Benign,Benign,302
+C,2018-02-22,2,6,0,Benign,Benign,1635
+C,2018-02-22,2,7,0,Benign,Benign,197759
+C,2018-02-22,2,7,1,Web attack,Brute Force -Web,68
+C,2018-02-22,2,7,1,Web attack,SQL Injection,14
+C,2018-02-22,2,8,0,Benign,Benign,914
+C,2018-02-22,2,8,1,Web attack,SQL Injection,4
+C,2018-02-22,2,9,0,Benign,Benign,11502
+C,2018-02-22,2,10,0,Benign,Benign,7293
+C,2018-02-22,2,11,0,Benign,Benign,100589
+C,2018-02-23,2,0,0,Benign,Benign,42439
+C,2018-02-23,2,0,1,Web attack,Brute Force -Web,128
+C,2018-02-23,2,0,1,Web attack,Brute Force -XSS,4
+C,2018-02-23,2,0,1,Web attack,SQL Injection,4
+C,2018-02-23,2,1,0,Benign,Benign,130705
+C,2018-02-23,2,1,1,Web attack,Brute Force -XSS,1
+C,2018-02-23,2,2,0,Benign,Benign,126068
+C,2018-02-23,2,2,1,Web attack,Brute Force -Web,20
+C,2018-02-23,2,3,0,Benign,Benign,96663
+C,2018-02-23,2,3,1,Web attack,Brute Force -Web,62
+C,2018-02-23,2,3,1,Web attack,Brute Force -XSS,73
+C,2018-02-23,2,3,1,Web attack,SQL Injection,4
+C,2018-02-23,2,4,0,Benign,Benign,15283
+C,2018-02-23,2,4,1,Web attack,Brute Force -Web,2
+C,2018-02-23,2,4,1,Web attack,Brute Force -XSS,34
+C,2018-02-23,2,4,1,Web attack,SQL Injection,5
+C,2018-02-23,2,5,0,Benign,Benign,301
+C,2018-02-23,2,6,0,Benign,Benign,1808
+C,2018-02-23,2,7,0,Benign,Benign,199295
+C,2018-02-23,2,7,1,Web attack,Brute Force -Web,61
+C,2018-02-23,2,7,1,Web attack,SQL Injection,16
+C,2018-02-23,2,8,0,Benign,Benign,496
+C,2018-02-23,2,8,1,Web attack,SQL Injection,7
+C,2018-02-23,2,9,0,Benign,Benign,11975
+C,2018-02-23,2,10,0,Benign,Benign,6733
+C,2018-02-23,2,10,1,Web attack,Brute Force -Web,1
+C,2018-02-23,2,11,0,Benign,Benign,97349
+C,2018-02-28,1,0,0,Benign,Benign,29667
+C,2018-02-28,1,0,1,Infiltration,Infilteration,3542
+C,2018-02-28,1,1,0,Benign,Benign,73512
+C,2018-02-28,1,1,1,Infiltration,Infilteration,10279
+C,2018-02-28,1,2,0,Benign,Benign,7550
+C,2018-02-28,1,2,1,Infiltration,Infilteration,912
+C,2018-02-28,1,3,0,Benign,Benign,72330
+C,2018-02-28,1,3,1,Infiltration,Infilteration,9388
+C,2018-02-28,1,4,0,Benign,Benign,16209
+C,2018-02-28,1,4,1,Infiltration,Infilteration,1879
+C,2018-02-28,1,5,0,Benign,Benign,20471
+C,2018-02-28,1,5,1,Infiltration,Infilteration,34
+C,2018-02-28,1,6,0,Benign,Benign,878
+C,2018-02-28,1,6,1,Infiltration,Infilteration,143
+C,2018-02-28,1,7,0,Benign,Benign,54123
+C,2018-02-28,1,7,1,Infiltration,Infilteration,5753
+C,2018-02-28,1,8,0,Benign,Benign,15117
+C,2018-02-28,1,8,1,Infiltration,Infilteration,2443
+C,2018-02-28,1,9,0,Benign,Benign,12015
+C,2018-02-28,1,9,1,Infiltration,Infilteration,1444
+C,2018-02-28,1,10,0,Benign,Benign,8282
+C,2018-02-28,1,10,1,Infiltration,Infilteration,901
+C,2018-02-28,1,11,0,Benign,Benign,40906
+C,2018-02-28,1,11,1,Infiltration,Infilteration,5124
+C,2018-03-01,0,0,0,Benign,Benign,16430
+C,2018-03-01,0,0,1,Infiltration,Infilteration,5875
+C,2018-03-01,0,1,0,Benign,Benign,69448
+C,2018-03-01,0,1,1,Infiltration,Infilteration,21956
+C,2018-03-01,0,2,0,Benign,Benign,8551
+C,2018-03-01,0,2,1,Infiltration,Infilteration,1301
+C,2018-03-01,0,3,0,Benign,Benign,30348
+C,2018-03-01,0,3,1,Infiltration,Infilteration,8509
+C,2018-03-01,0,4,0,Benign,Benign,15646
+C,2018-03-01,0,4,1,Infiltration,Infilteration,5773
+C,2018-03-01,0,5,0,Benign,Benign,26198
+C,2018-03-01,0,5,1,Infiltration,Infilteration,26872
+C,2018-03-01,0,6,0,Benign,Benign,1498
+C,2018-03-01,0,6,1,Infiltration,Infilteration,453
+C,2018-03-01,0,7,0,Benign,Benign,35318
+C,2018-03-01,0,7,1,Infiltration,Infilteration,9664
+C,2018-03-01,0,8,0,Benign,Benign,3703
+C,2018-03-01,0,8,1,Infiltration,Infilteration,2184
+C,2018-03-01,0,9,0,Benign,Benign,12501
+C,2018-03-01,0,9,1,Infiltration,Infilteration,3921
+C,2018-03-01,0,10,0,Benign,Benign,3299
+C,2018-03-01,0,10,1,Infiltration,Infilteration,1197
+C,2018-03-01,0,11,0,Benign,Benign,15097
+C,2018-03-01,0,11,1,Infiltration,Infilteration,5358
+C,2018-03-02,0,0,0,Benign,Benign,34899
+C,2018-03-02,0,0,1,Bot,Bot,336
+C,2018-03-02,0,1,0,Benign,Benign,178143
+C,2018-03-02,0,2,0,Benign,Benign,62974
+C,2018-03-02,0,2,1,Bot,Bot,1
+C,2018-03-02,0,3,0,Benign,Benign,82659
+C,2018-03-02,0,3,1,Bot,Bot,9
+C,2018-03-02,0,4,0,Benign,Benign,82619
+C,2018-03-02,0,4,1,Bot,Bot,142926
+C,2018-03-02,0,5,0,Benign,Benign,29667
+C,2018-03-02,0,6,0,Benign,Benign,3874
+C,2018-03-02,0,7,0,Benign,Benign,189525
+C,2018-03-02,0,8,0,Benign,Benign,971
+C,2018-03-02,0,8,1,Bot,Bot,142501
+C,2018-03-02,0,9,0,Benign,Benign,25621
+C,2018-03-02,0,9,1,Bot,Bot,3
+C,2018-03-02,0,10,0,Benign,Benign,5422
+C,2018-03-02,0,11,0,Benign,Benign,66010
+C,2018-03-02,0,11,1,Bot,Bot,415

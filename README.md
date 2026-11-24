@@ -55,3 +55,7 @@ Phase 3 queries the verified Phase 2 Notebook Output in private Kaggle CPU. See 
 ## Phase 4 supervised evaluation
 
 Phase 4 compares majority and duration baselines, Logistic Regression, Random Forest and Gradient-Boosted Trees on three prespecified grouped or capture-held-out protocols. It reads the verified Phase 2 Notebook Output. See the [protocol](docs/phase4_experimental_protocol.md), [measured results](reports/phase4_supervised_results.md), and [model manifest](manifests/phase4_models.json). Build each version with `python scripts/build_phase4_notebook.py --protocol A|B|C --output PATH`.
+
+## Phase 5 clustering and pattern evolution
+
+Phase 5 compares global retrospective and reference-trained K-Means fits on the verified Phase 2 Notebook Output. See the [design](docs/phase5_clustering_protocol.md), [measured results and figures](reports/phase5_clustering_results.md), and [pattern analysis](docs/phase5_pattern_evolution.md). Build notebook versions using `python scripts/build_phase5_notebook.py --experiment G|B|C --output PATH`.
