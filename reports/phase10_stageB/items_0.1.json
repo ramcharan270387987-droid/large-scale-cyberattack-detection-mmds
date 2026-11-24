@@ -1,0 +1,1843 @@
+[
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "count": 9299860,
+    "support": 0.5729004284682081
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 8788638,
+    "support": 0.5414075562268653
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 8013451,
+    "support": 0.49365361536721963
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 6007265,
+    "support": 0.3700662905056711
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 5868695,
+    "support": 0.36152994561737817
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 5615567,
+    "support": 0.3459364700535202
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1"
+    ],
+    "count": 5552825,
+    "support": 0.34207136684949857
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0"
+    ],
+    "count": 5486047,
+    "support": 0.33795763343714075
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 5466712,
+    "support": 0.3367665370352129
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2"
+    ],
+    "count": 5415628,
+    "support": 0.3336196030504142
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 5413877,
+    "support": 0.33351173598034567
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1"
+    ],
+    "count": 5410583,
+    "support": 0.33330881528999395
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 5408728,
+    "support": 0.33319454149503264
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0"
+    ],
+    "count": 5406718,
+    "support": 0.3330707192158563
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "count": 5340371,
+    "support": 0.3289835367499288
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 5339443,
+    "support": 0.32892636905088624
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "count": 5318479,
+    "support": 0.3276349211600139
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "count": 5241923,
+    "support": 0.32291883240149366
+  },
+  {
+    "items": [
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 5203499,
+    "support": 0.3205517939661342
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2"
+    ],
+    "count": 5194071,
+    "support": 0.3199709997133607
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 5094951,
+    "support": 0.3138648980656188
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 5085317,
+    "support": 0.3132714135693078
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 5085317,
+    "support": 0.3132714135693078
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "count": 5064704,
+    "support": 0.3120015883749484
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4987073,
+    "support": 0.3072192762581622
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4974592,
+    "support": 0.3064504076679133
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4973725,
+    "support": 0.3063969977594328
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4973725,
+    "support": 0.3063969977594328
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 4816950,
+    "support": 0.2967391679992962
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4786415,
+    "support": 0.29485811660892297
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 4676461,
+    "support": 0.2880846067161081
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 4667891,
+    "support": 0.28755666794369944
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4646652,
+    "support": 0.28624827919373586
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 4642383,
+    "support": 0.285985295457515
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 4613652,
+    "support": 0.28421537610278064
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 4606079,
+    "support": 0.2837488556449684
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 4602575,
+    "support": 0.2835329982985833
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 4581280,
+    "support": 0.2822211597736775
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 4524355,
+    "support": 0.27871440194177977
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 4519847,
+    "support": 0.2784366950589305
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 4466578,
+    "support": 0.275155158248261
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 4465933,
+    "support": 0.2751154242333014
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 4423285,
+    "support": 0.2724881742022996
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4408324,
+    "support": 0.2715665298646093
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4402825,
+    "support": 0.2712277742859074
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4395657,
+    "support": 0.2707862030933023
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4394571,
+    "support": 0.2707193021006727
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4391228,
+    "support": 0.27051336285724653
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4391228,
+    "support": 0.27051336285724653
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 4352466,
+    "support": 0.2681255025659857
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4350652,
+    "support": 0.26801375449910714
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4344933,
+    "support": 0.2676614462331322
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4338204,
+    "support": 0.26724691881194923
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4337560,
+    "support": 0.2672072464001136
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 4337560,
+    "support": 0.2672072464001136
+  },
+  {
+    "items": [
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 4290066,
+    "support": 0.2642814676303613
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "count": 4281366,
+    "support": 0.26374552045183675
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 4277263,
+    "support": 0.26349276283419465
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 4257396,
+    "support": 0.26226889357031563
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4204361,
+    "support": 0.2590017718906547
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "count": 4124854,
+    "support": 0.2541038923133039
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "count": 4088999,
+    "support": 0.25189511230341904
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4078283,
+    "support": 0.2512349732269743
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4030976,
+    "support": 0.24832071424140403
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 4017936,
+    "support": 0.24751740950485687
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3963038,
+    "support": 0.24413552120524296
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3952323,
+    "support": 0.24347544373192218
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 3942821,
+    "support": 0.242890090847975
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3924607,
+    "support": 0.24176805154801567
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "count": 3886389,
+    "support": 0.23941370335619364
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3879189,
+    "support": 0.23897016086362158
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3870460,
+    "support": 0.23843242719450194
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3830723,
+    "support": 0.23598450385737202
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3804996,
+    "support": 0.23439964028703852
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "count": 3789797,
+    "support": 0.23346333440584371
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3785259,
+    "support": 0.2331837794292754
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3721385,
+    "support": 0.22924894148892164
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3712393,
+    "support": 0.22869500619819833
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 3690313,
+    "support": 0.22733480922097737
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3677404,
+    "support": 0.22653957449367007
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3640022,
+    "support": 0.22423672651348556
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3633552,
+    "support": 0.2238381543014104
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3614414,
+    "support": 0.2226591937149043
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3613474,
+    "support": 0.22260128677837407
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3586264,
+    "support": 0.22092506577519555
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "count": 3582709,
+    "support": 0.22070606666948808
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3579064,
+    "support": 0.2204815232826235
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2"
+    ],
+    "count": 3541124,
+    "support": 0.21814430075926466
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 3526009,
+    "support": 0.2172131695404832
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3520319,
+    "support": 0.21686264776510333
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3513473,
+    "support": 0.2164409127784161
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "count": 3511093,
+    "support": 0.21629429734337144
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3481631,
+    "support": 0.2144793461050162
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3476091,
+    "support": 0.2141380647982316
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 3407043,
+    "support": 0.20988449229446565
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3392815,
+    "support": 0.2090080030466441
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 3376374,
+    "support": 0.20799518608548062
+  },
+  {
+    "items": [
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3363166,
+    "support": 0.20718153202410677
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "count": 3362583,
+    "support": 0.20714561740283324
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3356154,
+    "support": 0.20674957091884077
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3352824,
+    "support": 0.2065444325160262
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3346395,
+    "support": 0.20614838603203375
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "count": 3340932,
+    "support": 0.2058118481657947
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3339186,
+    "support": 0.20570428911134597
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3333108,
+    "support": 0.2053298653238664
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3332913,
+    "support": 0.20531785271469258
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3331182,
+    "support": 0.20521121770710338
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3327586,
+    "support": 0.20498969287331323
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 3321142,
+    "support": 0.20459272234246126
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3318746,
+    "support": 0.2044451212574331
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3317837,
+    "support": 0.2043891240177459
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3285416,
+    "support": 0.20239188913556833
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3266246,
+    "support": 0.20121095724909524
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 3266076,
+    "support": 0.20120048471802063
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2"
+    ],
+    "count": 3173243,
+    "support": 0.1954816819106677
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 3172062,
+    "support": 0.1954089286212611
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 3165497,
+    "support": 0.19500450411240894
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 3151958,
+    "support": 0.1941704594170016
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 3114340,
+    "support": 0.19185307309956057
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 3101570,
+    "support": 0.19106640120648485
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "count": 3075247,
+    "support": 0.18944482217426625
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 3005862,
+    "support": 0.18517048941772296
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2992715,
+    "support": 0.1843605931469112
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2"
+    ],
+    "count": 2984360,
+    "support": 0.1838458990461557
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2"
+    ],
+    "count": 2983189,
+    "support": 0.1837737617879888
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 2975553,
+    "support": 0.18330336033336653
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 2975055,
+    "support": 0.1832726819776303
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 2974877,
+    "support": 0.18326171662156393
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 2973874,
+    "support": 0.18319992868822368
+  },
+  {
+    "items": [
+      "flow_duration=BIN_2",
+      "pkt_len_mean=BIN_2",
+      "tot_bwd_pkts=BIN_2",
+      "tot_fwd_pkts=BIN_2",
+      "totlen_bwd_pkts=BIN_2",
+      "totlen_fwd_pkts=BIN_2"
+    ],
+    "count": 2973706,
+    "support": 0.18318957936339703
+  },
+  {
+    "items": [
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2963127,
+    "support": 0.18253787991493595
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2829923,
+    "support": 0.17433209738985717
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0"
+    ],
+    "count": 2816599,
+    "support": 0.173511297366103
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 2816540,
+    "support": 0.17350766278178886
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "count": 2803303,
+    "support": 0.17269222222981995
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 2803255,
+    "support": 0.17268926527986947
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 2682196,
+    "support": 0.16523165269538617
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 2668835,
+    "support": 0.16440857335604517
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 2608009,
+    "support": 0.16066150173754692
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 2607972,
+    "support": 0.1606592224219601
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 2607735,
+    "support": 0.1606446224815796
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 2594869,
+    "support": 0.15985203668860293
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 2594843,
+    "support": 0.15985043500737975
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2553344,
+    "support": 0.1572939669658176
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2545214,
+    "support": 0.156793133567955
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2545131,
+    "support": 0.1567880205086656
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2545073,
+    "support": 0.15678444752747545
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2545073,
+    "support": 0.15678444752747545
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2540210,
+    "support": 0.1564848715356174
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2537009,
+    "support": 0.15628767993579476
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2536972,
+    "support": 0.15628540062020793
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2536972,
+    "support": 0.15628540062020793
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2532216,
+    "support": 0.1559924161626145
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2532008,
+    "support": 0.1559796027128291
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2531961,
+    "support": 0.15597670736600258
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2531961,
+    "support": 0.15597670736600258
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2524016,
+    "support": 0.1554872705460741
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2523990,
+    "support": 0.15548566886485093
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_0"
+    ],
+    "count": 2523990,
+    "support": 0.15548566886485093
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2508199,
+    "support": 0.15451289393426687
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 2481515,
+    "support": 0.15286907617429568
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1"
+    ],
+    "count": 2460865,
+    "support": 0.15159697166434946
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2441449,
+    "support": 0.15040088540938018
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1"
+    ],
+    "count": 2384891,
+    "support": 0.14691673592397878
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2374926,
+    "support": 0.14630286079363428
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2285021,
+    "support": 0.14076443193326066
+  },
+  {
+    "items": [
+      "tot_fwd_pkts=BIN_1"
+    ],
+    "count": 2202382,
+    "support": 0.135673611371641
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 2134611,
+    "support": 0.1314987060571826
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0"
+    ],
+    "count": 2063032,
+    "support": 0.1270892160466528
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2053392,
+    "support": 0.126495361931598
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2042814,
+    "support": 0.12584372408626088
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2041138,
+    "support": 0.12574047725048995
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2035195,
+    "support": 0.1253743698847461
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 2024095,
+    "support": 0.12469057520869753
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 2015624,
+    "support": 0.12416873514556172
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1982387,
+    "support": 0.12212123211422599
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1968981,
+    "support": 0.12129538063430642
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1958151,
+    "support": 0.1206282188017293
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1904839,
+    "support": 0.11734403305672915
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1897082,
+    "support": 0.11686617762410673
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1897001,
+    "support": 0.1168611877710653
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1896010,
+    "support": 0.11680013907521267
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1888829,
+    "support": 0.11635776704199602
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1888769,
+    "support": 0.11635407085455791
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 1870960,
+    "support": 0.11525698081980575
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1866653,
+    "support": 0.11499165616487411
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1806297,
+    "support": 0.11127353801464097
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 1796736,
+    "support": 0.11068455054637967
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1789641,
+    "support": 0.11024747638182429
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0"
+    ],
+    "count": 1789266,
+    "support": 0.11022437521033616
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1788510,
+    "support": 0.1101778032486161
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1786110,
+    "support": 0.11002995575109209
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1785413,
+    "support": 0.10998701837368616
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1781043,
+    "support": 0.1097178127219445
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1777605,
+    "support": 0.10950602118174135
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1723666,
+    "support": 0.10618321027801306
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1716484,
+    "support": 0.10574077664167243
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1"
+    ],
+    "count": 1716425,
+    "support": 0.1057371420573583
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1715465,
+    "support": 0.1056780030583487
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1708286,
+    "support": 0.10523575423137997
+  },
+  {
+    "items": [
+      "flow_duration=BIN_0",
+      "pkt_len_mean=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "tot_fwd_pkts=BIN_0",
+      "totlen_bwd_pkts=BIN_1",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1708227,
+    "support": 0.10523211964706584
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "tot_bwd_pkts=BIN_0",
+      "totlen_fwd_pkts=BIN_1"
+    ],
+    "count": 1689679,
+    "support": 0.10408950490370107
+  },
+  {
+    "items": [
+      "flow_duration=BIN_1",
+      "totlen_bwd_pkts=BIN_0"
+    ],
+    "count": 1623303,
+    "support": 0.10000053594717852
+  }
+]

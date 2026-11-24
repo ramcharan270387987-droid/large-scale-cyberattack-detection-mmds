@@ -24,10 +24,91 @@
       "submitted_notebook_sha256": "bfbf9d8677391490ea89cd8edeaf11ba9f84b92ce98a1313afeff6c91b35c1d7"
     },
     "B": {
-      "status": "running_unvalidated",
+      "status": "mining_outputs_validated",
       "kernel_version": 2,
       "focused_tests_passed_before_submission": 6,
-      "full_expected_rows": 16232943
+      "full_expected_rows": 16232943,
+      "worker_status": "COMPLETE",
+      "summaries": [
+        {
+          "seconds": 71.97139165300001,
+          "itemsets": 203,
+          "lengths": {
+            "1": 17,
+            "2": 48,
+            "3": 67,
+            "4": 49,
+            "5": 19,
+            "6": 3
+          },
+          "support": 0.1,
+          "rows": 16232943,
+          "rules": 468
+        },
+        {
+          "seconds": 72.26187140299999,
+          "itemsets": 298,
+          "lengths": {
+            "1": 18,
+            "2": 73,
+            "3": 98,
+            "4": 74,
+            "5": 30,
+            "6": 5
+          },
+          "support": 0.05,
+          "rows": 16232943,
+          "rules": 629,
+          "reload_rows": 3
+        },
+        {
+          "seconds": 71.25346887999996,
+          "itemsets": 539,
+          "lengths": {
+            "1": 18,
+            "2": 103,
+            "3": 191,
+            "4": 156,
+            "5": 61,
+            "6": 10
+          },
+          "support": 0.02,
+          "rows": 16232943,
+          "rules": 1009
+        },
+        {
+          "seconds": 70.11998415999994,
+          "itemsets": 759,
+          "lengths": {
+            "1": 18,
+            "2": 112,
+            "3": 248,
+            "4": 244,
+            "5": 115,
+            "6": 22
+          },
+          "support": 0.01,
+          "rows": 16232943,
+          "rules": 1428
+        }
+      ],
+      "artifacts": {
+        "rules_0.05.json": "7723876f8eee93f9031a52a0a429c1a199939358b3a587600d3d34359dda9e8c",
+        "rules_0.1.json": "e89f33e40a9c885a0ea26a5c2fe8529b52a1261ad4080be876e14e86154d5a92",
+        "items_0.01.json": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2",
+        "registry.json": "44304f58084fa64685ccd8c8f77f081639d3a80b8172545becd4af05ac512aaf",
+        "items_0.05.json": "55e095bd599f4d378d60625155d156bffb2e1fdad6175dd1847e54c2d0265108",
+        "rules_0.01.json": "7159f3b560e5345e8cfa1787a381855352ee4e60b9c8fc6a11df940e476f4840",
+        "receipt.json": "9ea03fda525207e7c9a23a7de6cea018ba51f9e377eb7eff10cee3bf099df19f",
+        "rules_0.02.json": "40ef057a74e6b9e5d13e5b8029a3592ad48172e575cfe40dd23d5b1dc66ab56e",
+        "progress.json": "2114260cbd4de7d9b4d92678f701843ce0946b1c73983dc6f67eddf175dc3095",
+        "items_0.1.json": "75f715b4d3cf48b1b54d85089703294075d8c5f935e3d23b490af5882aece39b",
+        "items_0.02.json": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2"
+      },
+      "remaining": [
+        "independent direct rule verification",
+        "derived association metrics"
+      ]
     }
   },
   "pending": [

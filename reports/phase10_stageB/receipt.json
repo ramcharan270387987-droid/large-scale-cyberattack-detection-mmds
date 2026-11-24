@@ -1,0 +1,151 @@
+{
+  "status": "validated",
+  "stage": "B",
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "rows": 16232943,
+  "features": [
+    "flow_duration",
+    "tot_fwd_pkts",
+    "tot_bwd_pkts",
+    "totlen_fwd_pkts",
+    "totlen_bwd_pkts",
+    "pkt_len_mean"
+  ],
+  "summaries": [
+    {
+      "seconds": 71.97139165300001,
+      "itemsets": 203,
+      "lengths": {
+        "1": 17,
+        "2": 48,
+        "3": 67,
+        "4": 49,
+        "5": 19,
+        "6": 3
+      },
+      "support": 0.1,
+      "rows": 16232943,
+      "rules": 468
+    },
+    {
+      "seconds": 72.26187140299999,
+      "itemsets": 298,
+      "lengths": {
+        "1": 18,
+        "2": 73,
+        "3": 98,
+        "4": 74,
+        "5": 30,
+        "6": 5
+      },
+      "support": 0.05,
+      "rows": 16232943,
+      "rules": 629,
+      "reload_rows": 3
+    },
+    {
+      "seconds": 71.25346887999996,
+      "itemsets": 539,
+      "lengths": {
+        "1": 18,
+        "2": 103,
+        "3": 191,
+        "4": 156,
+        "5": 61,
+        "6": 10
+      },
+      "support": 0.02,
+      "rows": 16232943,
+      "rules": 1009
+    },
+    {
+      "seconds": 70.11998415999994,
+      "itemsets": 759,
+      "lengths": {
+        "1": 18,
+        "2": 112,
+        "3": 248,
+        "4": 244,
+        "5": 115,
+        "6": 22
+      },
+      "support": 0.01,
+      "rows": 16232943,
+      "rules": 1428
+    }
+  ],
+  "seconds": 349.405190507,
+  "resources": {
+    "spark_version": "4.3.0",
+    "master": "local[4]",
+    "driver_memory": "8g",
+    "shuffle_partitions": 48,
+    "input_partition_bytes": 67108864,
+    "default_parallelism": 4,
+    "cpu_affinity": 4,
+    "scratch_output_free_bytes_start": 20938498048,
+    "memory.max": "32212254720",
+    "cpu.max": "400000 100000"
+  },
+  "driver_peak_rss_bytes": 8934535168,
+  "sha256": {
+    "items_0.1.json": "75f715b4d3cf48b1b54d85089703294075d8c5f935e3d23b490af5882aece39b",
+    "rules_0.1.json": "e89f33e40a9c885a0ea26a5c2fe8529b52a1261ad4080be876e14e86154d5a92",
+    "progress.json": "2114260cbd4de7d9b4d92678f701843ce0946b1c73983dc6f67eddf175dc3095",
+    "rules_0.01.json": "7159f3b560e5345e8cfa1787a381855352ee4e60b9c8fc6a11df940e476f4840",
+    "registry.json": "44304f58084fa64685ccd8c8f77f081639d3a80b8172545becd4af05ac512aaf",
+    "rules_0.02.json": "40ef057a74e6b9e5d13e5b8029a3592ad48172e575cfe40dd23d5b1dc66ab56e",
+    "rules_0.05.json": "7723876f8eee93f9031a52a0a429c1a199939358b3a587600d3d34359dda9e8c",
+    "items_0.01.json": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2",
+    "items_0.02.json": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2",
+    "items_0.05.json": "55e095bd599f4d378d60625155d156bffb2e1fdad6175dd1847e54c2d0265108",
+    "model/data/part-00002-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "92f8c89306227e433506cce154f2a41c42711cc4909ddef0fe82ff5b3e5caaa4",
+    "model/data/part-00008-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "88feabe159d7d1d1d53ad7ce9767d6fe64cc1704d6ec794d6e8c641f30bd2ca3",
+    "model/data/part-00013-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "26222a50501aee1ec7400f7ea6c0f3da92a585ae2e302a4e7480c0f5da650ad5",
+    "model/data/part-00014-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "1b66c3c6682658b986bb3a676f43b72ff2748311bb7a230b6a59d828141ead7f",
+    "model/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model/data/part-00007-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "bbcf591912f71f2ebbf481b1244c867c225f4ebaa43b40cea93bf3dcdf5cefb2",
+    "model/data/part-00005-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "11e33bc9d696a8f48a08813383a1727a4a5c09fc230a1e0b4a8dd58a638025ec",
+    "model/data/part-00016-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "722dc40972d86a95790b302f464273a164d04a666b6704dcd311d43d8b8ce4f7",
+    "model/data/part-00001-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "1e456e3f7f2971188564c06365374b083a891e4d282eca35563dda2ee0164aa5",
+    "model/data/part-00017-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "2bb20aa2ce06fbaba233d4345343ad91a39eccc43e4845fc67510eb1014b5ade",
+    "model/data/part-00012-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "8799931a33b53665fbfc696dea5e58c8d01dfe820d4c0f7664ef051d24667083",
+    "model/data/part-00015-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "f07719823637ffd300c47d25a1897da20d1527facbbd22b5fe07e66496e131a5",
+    "model/data/part-00009-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "7e699e774850a0021360d86ef57d67a516e664f72691e9407fc0a9ea892c29d8",
+    "model/data/part-00000-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "9c71cc056d24b8e526569a3816b07d9e00382488cb37fa40e08120c0bbfecf49",
+    "model/data/part-00011-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "dc3e04069707aa8978c9f3c4ee828a3fae4a4c27eafc9c1b0c5fb4baae3f4da9",
+    "model/data/part-00010-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "19ead00806bd97a850f4caf311a47e52a9d424961ad05faa354cd4af913be7eb",
+    "model/data/part-00003-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "876993d0264c9900bb9a6901d90ca4fb36aef124c8c816c3059eca7afeae5ce3",
+    "model/data/part-00004-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "749cdf6610bdc9b4c8481286e34f4080f0b42ea540450680053821f05676a510",
+    "model/data/part-00006-e09e03cd-96b5-45a1-90fd-8964d079ef70-c000.snappy.parquet": "7dfbc003ba46e4879a73836741e68ebb83235fbd4ac8fc1c0776ad5d95d3ebc1",
+    "model/metadata/part-00000-094cffa4-12c7-4d31-9eb2-4f917072c315-c000.txt": "394d5b63dec4274840dadc69da01d41a61943192d9950509e7d5409e855dbb30",
+    "model/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
