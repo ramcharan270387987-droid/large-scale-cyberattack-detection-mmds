@@ -5,7 +5,21 @@ The input audit and all six family-classification runs are available in the
 The grouped-random run, chronological run and four family holdouts are validated.
 The chronological B test set has 208,525 retained attacks from unsupported families
 and zero from training-supported families. Its closed-set accuracy, known-family
-recall and known-family false rejection are undefined.
+recall and known-family false rejection are undefined. The [B](../reports/phase9_hierarchy/B/results.md) and
+[C](../reports/phase9_hierarchy/C/results.md) full-population hierarchies are
+validated. Their archived binary confusion counts exactly match Phase 4 and
+Phase 8. Only B has a strictly chronological binary policy.
+
+## Matched closed-set references
+
+The [reference baselines](../reports/phase9_reference_baselines/phase9_reference_baselines.csv)
+use the exact archived test support. The majority baseline predicts the most
+frequent training-supported family. The training-prior reference independently
+draws labels according to their training proportions and uses analytical expected
+confusion cells. Its reported F1 is calculated from those expected cells.
+In grouped-random A, the selected RF achieved accuracy 74.05% and macro F1
+0.633, versus 51.89% and 0.114 for majority and 30.92% and 0.162 for the
+training-prior reference. All B closed-set comparisons have zero support.
 
 ## Existing robustness evidence
 

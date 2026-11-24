@@ -841,5 +841,8 @@
     "figures/phase9_hierarchical_attack_outcomes.png": "642651c9a130b2461064079ea516b3ffbc26595c78e22ec08ae9936e6dea20e4",
     "figures/phase9_macro_f1_runtime.png": "011b2c542bff04d7aa5ae0edfe1f92a4e2a69a0e5c65d308e0ee0b9c16f15454",
     "figures/phase9_grouped_random_family_precision_recall.png": "12ecd28e2ef6daed67417c0e402e973367267bf6defffcfd3b19bc95f9625acd"
+  },
+  "reference_baselines_sha256": {
+    "reports/phase9_reference_baselines/phase9_reference_baselines.csv": "04e6ffe0c77790108e17c4424b7d11456dba426190bafe3b24b74b204dc73165"
   }
 }
