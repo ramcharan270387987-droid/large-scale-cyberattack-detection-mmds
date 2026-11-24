@@ -39,18 +39,15 @@
       "log_sha256": "dd066e23100239e31f16364f5b2c7bf3fdb4cc26e4f694c89b809ea095c2b5cd"
     },
     "11D": {
-      "status": "PARTIALLY COMPLETE",
-      "kernel_version": 2,
-      "worker_status": "COMPLETE",
-      "validated_sensitivity_rows": 36,
-      "validated_ablation_rows": 66,
-      "state_parity": "Four detector states passed snapshot/restore and duplicate-batch checks",
-      "remaining": [
-        "Reference-length sensitivity",
-        "Explicit reset-policy sensitivity",
-        "Missing-input and support-threshold sensitivity",
-        "Detector agreement and performance-association summaries"
-      ]
+      "status": "COMPLETE AND VERIFIED",
+      "supplemental_protocol": "docs/phase11_finalization_protocol.md",
+      "execution": "bounded local CPU, River 0.22.0",
+      "receipt": "reports/phase11_finalization/receipt.json",
+      "primary_kaggle_versions_reused": [
+        1,
+        2
+      ],
+      "remaining": []
     },
     "11E": {
       "status": "PARTIALLY COMPLETE",
@@ -64,9 +61,7 @@
     }
   },
   "pending": [
-    "Complete and validate remaining 11D sensitivity/comparison analyses",
-    "Complete remaining 11E figures and scientific acceptance-gate audit",
-    "Commit and verify Phase 11 completion before starting any Phase 12 work"
+    "11E final registry, figures, preview, complete regression and scientific acceptance audit"
   ],
   "phase12_started": false,
   "final_verdict": "PHASE 11 PARTIALLY READY \u2014 PHASE 12 NOT STARTED",

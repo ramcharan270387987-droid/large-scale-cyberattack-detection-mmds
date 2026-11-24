@@ -1,0 +1,37 @@
+{
+  "status": "validated",
+  "scope": "Phase 11 supplemental local CPU experiments",
+  "seconds": 66.98795290999988,
+  "tables": {
+    "before_after.csv": 16,
+    "support.csv": 2828,
+    "agreement.csv": 502,
+    "missing.csv": 132,
+    "costs.csv": 36,
+    "association.csv": 144,
+    "reference.csv": 162,
+    "reset.csv": 36
+  },
+  "protocol": "docs/phase11_finalization_protocol.md",
+  "calibration_seeds": [
+    13013,
+    13014,
+    13015
+  ],
+  "evaluation_seeds": [
+    23013,
+    23014,
+    23015
+  ],
+  "source_sha256": "27492d44204151f8f8b98c8a319b1ec5f3f033c0e27fb44986f3ca46fe78a25f",
+  "table_sha256": {
+    "before_after.csv": "3d2d3ad3642fb643370c5f585feb881e88ff4dc8760b8e2ef2564722f42b81f1",
+    "support.csv": "c011da0880426bf649181402f4dd024ee82cd93ad12489ee235be82560e20121",
+    "agreement.csv": "a6b25867e74dd3b81c4d2fb09ee2ec1392f7aaa71c31b54cf509766ab3251e50",
+    "missing.csv": "b5993b98d0f2b1280a913b93f1076abcedd336c93ea60d037998cd3c6e4f4761",
+    "costs.csv": "9d869b714a3606e74a3bc38ed1dfca3da376763a0adc3844747d772680fa7495",
+    "association.csv": "67f7bf394befc710edb233423bbb934257bf5a3cad2e8755890538c2580c44d6",
+    "reference.csv": "8c896820ec60fe025a16f5684fa44d44d210520444946ec414719fb5a87f7995",
+    "reset.csv": "51c04d273f06eb6156c9ebb206323bdd2e6d0db4c4c7efa599883b7f3d17d434"
+  }
+}

@@ -13,7 +13,7 @@ def create(name,sensitivity='conservative',seed=23013):
 
 
 def update(detector,value,binary=False):
-    if not isfinite(value):return False
+    if value is None or not isfinite(value):return None
     if binary and value not in (0,1):raise ValueError('DDM requires a released binary error')
     detector.update(value)
     return bool(detector.drift_detected)
