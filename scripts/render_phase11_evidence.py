@@ -15,10 +15,13 @@ methods=('ADWIN','PageHinkley','KSWIN','DDM','JS','PSI','FixedJS')
 for method in methods:
  scenario='error' if method=='DDM' else 'abrupt'
  sample=[r for r in signals if r['scenario']==scenario]
- fig,ax=plt.subplots(figsize=(8,3));ax.plot([int(r['index']) for r in sample],[int(r['error']) if method=='DDM' else float(r['signal']) for r in sample],linewidth=.7)
+ fig,ax=plt.subplots(figsize=(8,3));ax.plot([int(r['index']) for r in sample],[int(r['error']) if method=='DDM' else float(r['signal']) for r in sample],linewidth=.7,label='Observed signal')
+ ax.axvspan(0,256,color='#777777',alpha=.15,label='Warm-up excluded')
  for r in alerts:
-  if r['scenario']==scenario and r['seed']=='23013' and r['detector']==method and r['label_delay_windows']=='0':ax.axvline(int(r['alert_index']),color='#b74d37',alpha=.4)
- ax.axvline(2048,color='black',linestyle='--');ax.set(xlabel='Synthetic observation index',ylabel='Binary error' if method=='DDM' else 'Bounded signal',title=method+' · controlled '+scenario+' · seed 23013');save(fig,method.lower()+'_detections')
+  if r['scenario']==scenario and r['seed']=='23013' and r['detector']==method and r['label_delay_windows']=='0':ax.axvline(int(r['alert_index']),color='#b74d37',alpha=.4,label='Detector emission')
+ ax.axvline(2048,color='black',linestyle='--',label='Known change boundary')
+ handles,labels=ax.get_legend_handles_labels();legend=dict(zip(labels,handles));ax.legend(legend.values(),legend.keys(),fontsize=7,ncols=2)
+ ax.set(xlabel='Synthetic observation index',ylabel='Binary error' if method=='DDM' else 'Bounded signal',title=method+' · controlled '+scenario+' · seed 23013');save(fig,method.lower()+'_detections')
 for field,title,subset in [('mean_delay_observations','Mean matched detection delay',lambda r:r['label_delay_windows']=='0'),('false_alarms','False alarms on stationary evaluation',lambda r:r['scenario']=='stationary' and r['label_delay_windows']=='0'),('seconds','Measured synthetic processing seconds',lambda r:r['label_delay_windows']=='0')]:
  values=[]
  for method in methods:

@@ -10,8 +10,10 @@
     844
   ],
   "downloaded_primary_csv_rows": 297,
+  "unmeasured_primary_state_bytes": "unavailable in filtered export",
   "page_errors": [],
   "http_errors": [],
   "document_overflow": false,
+  "isolated_navigation": true,
   "runtime_fix": "Streamlit 1.67.0 preview served using compatible Starlette 0.49.3"
 }

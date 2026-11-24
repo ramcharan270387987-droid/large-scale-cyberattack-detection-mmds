@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import pandas as pd
 import streamlit as st
+from src.drift.signal_registry import historical_availability
 
 ROOT=Path(__file__).resolve().parents[1]
 SECTIONS={
@@ -23,6 +24,7 @@ SECTIONS={
  'Label-delay effects':'phase11_synthetic/synthetic_metrics.csv',
  'Compute and state costs':'phase11_finalization/costs.csv',
  'Recovery and duplicate costs':'phase11_finalization/engineering_costs.csv',
+ 'Distribution reference costs':'phase11_finalization/distribution_state_costs.csv',
  'Historical window costs':'phase11_historical/performance.csv',
 }
 FILTERS=('population','detector','first','second','scenario','seed','profile','policy','signal','performance_metric','metric','lag_windows','label_delay_windows','label_delay','minimum_support','warmup','reference_length','window','magnitude')
@@ -30,15 +32,15 @@ FILTERS=('population','detector','first','second','scenario','seed','profile','p
 
 def load(section):
     data=pd.read_csv(ROOT/'reports'/SECTIONS[section])
+    if section=='Primary synthetic results':
+        data['state_bytes']=data['state_bytes'].astype('Int64')
+        data.loc[data['detector'].isin(['JS','PSI','FixedJS']),'state_bytes']=pd.NA
     if section=='Label-delay effects':data=data[data['detector'].eq('DDM')]
     if section=='Historical alert timeline':
         registry=json.loads((ROOT/'manifests/phase11_detectors.json').read_text())
         warmup={r['identifier']:r['warmup_observations'] for r in registry['detectors'] if r['identifier'] in ('ADWIN','PageHinkley','KSWIN','DDM')}
-        updates=data.groupby(['signal','label_delay','detector'],dropna=False).cumcount()+1
-        data['available']=updates.ge(data['detector'].map(warmup).fillna(0)) & data['detector'].ne('support_check')
+        data=pd.DataFrame(historical_availability(data.to_dict('records'),warmup))
         data['alert']=data['alert'].astype('boolean')
-        data.loc[~data['available'],'alert']=pd.NA
-        data=data[data['evaluation'].eq(True)]
     return data
 
 

@@ -11,6 +11,7 @@ def table(path):
 from src.drift.advanced_detectors import create,update,divergences
 from src.drift.drift_state import DetectorState
 from src.drift.finalization import agreement,correlation,ranks,supported_alert,tolerance_matches,NATIVE_WARMUP
+from src.drift.signal_registry import historical_availability
 
 
 class FinalDriftTests(unittest.TestCase):
@@ -57,6 +58,14 @@ class FinalDriftTests(unittest.TestCase):
         self.assertEqual(NATIVE_WARMUP['KSWIN'],100)
         self.assertEqual(max(64,NATIVE_WARMUP['KSWIN']),100)
         self.assertEqual(max(512,NATIVE_WARMUP['ADWIN']),512)
+
+    def test_legacy_emissions_have_separate_availability(self):
+        rows=[{'signal':'x','label_delay':float('nan'),'detector':'PageHinkley','evaluation':True,'alert':False} for _ in range(31)]
+        derived=historical_availability(rows,{'PageHinkley':30})
+        self.assertTrue(all(r['alert'] is None for r in derived[:29]))
+        self.assertFalse(derived[29]['alert'])
+        self.assertTrue(derived[29]['available'])
+        self.assertFalse(rows[0]['alert'])
 
     def test_reference_histogram_stability(self):
         self.assertEqual(divergences([10,0],[10,0]),(0,0))

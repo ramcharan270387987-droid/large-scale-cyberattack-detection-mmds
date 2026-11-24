@@ -1,0 +1,3 @@
+detector,serialization,serialized_bytes,median_snapshot_seconds,median_restore_seconds,reload_probes,status,scope
+JS,JSON reference state,318,5.157497071195394e-06,3.660505171865225e-06,3,PASS,"Frozen bins, reference counts, threshold and smoothing; current window buffer excluded"
+PSI,JSON reference state,316,3.98599513573572e-06,3.0840019462630153e-06,3,PASS,"Frozen bins, reference counts, threshold and smoothing; current window buffer excluded"

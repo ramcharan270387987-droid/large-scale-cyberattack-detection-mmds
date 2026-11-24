@@ -42,6 +42,8 @@ Native continuation and explicit external reset each detected 21 of 24 recurring
 
 There are 132 comparisons over random missingness, a consecutive burst, post-change missingness and nonfinite arrivals. Skip and reference-median policies detected all 36 feature targets in their respective grids. Histogram support suppression missed six of 24 targets. The indicator policy targets missingness transitions and missed three of 27 targets. These denominators describe different signals. Delay is in original arrival observations; valid-observation delay and effective update counts are separate columns. No invalid input is silently replaced by zero. Unavailable update results remain distinct from negative alerts.
 
+Under the prespecified 512-arrival event horizon, skip generated 18 excess alerts and reference-median imputation 22. The missingness-indicator grid generated two excess alerts over its distinct targets. Histogram support handling generated 445 excess alerts while detecting 18 of 24 targets. Fixed-reference breaches can persist after a change; this event metric records their continuing alert workload. The separate stationary experiments provide the no-change false-alarm benchmark.
+
 ## Minimum-support sensitivity
 
 RF and cluster histogram eligibility changes from 49 windows at minimum support one to 45 at 100, 44 at 1000 and 43 at 10000. Saved feature-JS, released error support, capture-level pattern support and family-label support have separate records and units. Zero-support family strata remain unavailable. Suppressed windows have null alert fields. No historical false-alarm rate is inferred without event truth.
@@ -72,4 +74,4 @@ The state adapter distinguishes arrivals, valid updates and suppressed updates, 
 
 ## Final validation
 
-The complete regression run passed 100 research tests and 8 dashboard tests. Preview validation covered 2022 supported filter groups and 20 sections. No Phase 12 implementation was started.
+The complete regression run passed 101 research tests and 8 dashboard tests. Preview validation covered 2024 supported filter groups and 21 sections. No Phase 12 implementation was started.

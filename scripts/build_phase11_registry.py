@@ -29,7 +29,7 @@ for name in ('ADWIN','PageHinkley','KSWIN','DDM','JS','PSI'):
            'state_serialization':'trusted internal pickle tested' if native else 'JSON reference bins and counts',
            'validated_populations':['bounded synthetic evaluation','supplemental independent-seed sensitivity'],
            'unsupported_populations':(['historical ordered binary-error monitoring'] if name=='DDM' else ['historical 49-window KSWIN with 100-observation warm-up'] if name=='KSWIN' else []),
-           'computational_evidence':['reports/phase11_finalization/costs.csv','reports/phase11_finalization/engineering_costs.csv'] if native else ['reports/phase11_synthetic/synthetic_metrics.csv'],
+           'computational_evidence':['reports/phase11_finalization/costs.csv','reports/phase11_finalization/engineering_costs.csv'] if native else ['reports/phase11_finalization/distribution_state_costs.csv'],
            'interpretation':'monitoring evidence without attack confirmation or future adaptation efficacy'}
     if name not in ('DDM','KSWIN'):entry['validated_populations'].append('retrospective supported aggregate replay windows')
     entries.append(entry)

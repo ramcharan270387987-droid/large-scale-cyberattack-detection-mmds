@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "supported_filter_groups": 2022,
-  "sections": 20,
+  "supported_filter_groups": 2024,
+  "sections": 21,
   "unsupported_KSWIN_alerts": "unavailable",
   "empty_state": "PASS",
   "chart_and_table_controls": "PASS",

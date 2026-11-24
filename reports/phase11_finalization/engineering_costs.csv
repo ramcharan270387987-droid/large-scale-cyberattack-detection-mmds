@@ -1,5 +1,5 @@
 detector,snapshot_repeats,median_snapshot_seconds,median_restore_seconds,serialized_bytes,duplicate_batch_checks,duplicate_seconds_per_check,duplicate_observation_clock_unchanged,alert_record_copy_seconds_per_operation,cost_scope,peak_process_rss_kib
-ADWIN,50,1.7956503143068403e-05,1.1957497918047011e-05,1508,10000,7.233859942061827e-08,True,3.8573300116695465e-08,"Trusted-state snapshot and alert metadata construction, not additional detection events",134820
-PageHinkley,50,3.3149917726404965e-06,3.785498847719282e-06,565,10000,6.828850018791854e-08,True,4.976990021532402e-08,"Trusted-state snapshot and alert metadata construction, not additional detection events",134820
-KSWIN,50,2.0500003302004188e-05,2.3199499992188066e-05,5154,10000,6.780980038456619e-08,True,4.174200003035367e-08,"Trusted-state snapshot and alert metadata construction, not additional detection events",135268
-DDM,50,2.654007403180003e-06,2.9294969863258302e-06,461,10000,6.819940026616677e-08,True,4.0981901111081245e-08,"Trusted-state snapshot and alert metadata construction, not additional detection events",135268
+ADWIN,50,1.782600156730041e-05,1.2398500985000283e-05,1508,10000,6.655489996774122e-08,True,4.173300112597644e-08,"Trusted-state snapshot and alert metadata construction, not additional detection events",134840
+PageHinkley,50,3.360000846441835e-06,3.956003638450056e-06,565,10000,7.001310004852712e-08,True,4.6248699072748423e-08,"Trusted-state snapshot and alert metadata construction, not additional detection events",134840
+KSWIN,50,2.0640996808651835e-05,2.3339998733717948e-05,5154,10000,7.163349946495146e-08,True,4.380110040074214e-08,"Trusted-state snapshot and alert metadata construction, not additional detection events",135276
+DDM,50,2.6839989004656672e-06,3.05499997921288e-06,461,10000,7.750419899821281e-08,True,4.3257301149424164e-08,"Trusted-state snapshot and alert metadata construction, not additional detection events",135276

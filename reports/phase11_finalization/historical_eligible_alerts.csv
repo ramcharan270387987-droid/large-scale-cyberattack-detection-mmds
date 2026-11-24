@@ -1,0 +1,442 @@
+batch,source_day,detector,signal,value,threshold,alert,label_delay,label_source_batch,evaluation,unit,available
+10,2018-02-15,JS,RF histogram,0.24134181383412984,0.9696313348256245,False,,,True,replay window,True
+10,2018-02-15,PSI,RF histogram,5.606716929437779,18.887810668916135,False,,,True,replay window,True
+10,2018-02-15,FixedJS,RF histogram,0.24134181383412984,0.1,True,,,True,replay window,True
+10,2018-02-15,ADWIN,RF score mean,0.045839678911803586,,False,,,True,replay window,True
+10,2018-02-15,PageHinkley,RF score mean,0.045839678911803586,,,,,True,replay window,False
+10,2018-02-15,KSWIN,RF score mean,0.045839678911803586,,,,,True,replay window,False
+10,2018-02-15,ADWIN,released RF aggregate error rate,0.017193725214690467,,False,0,10,True,released replay window,True
+10,2018-02-15,PageHinkley,released RF aggregate error rate,0.017193725214690467,,,0,10,True,released replay window,False
+11,2018-02-16,JS,RF histogram,0.42192769341719266,0.9696313348256245,False,,,True,replay window,True
+11,2018-02-16,PSI,RF histogram,7.920505470871007,18.887810668916135,False,,,True,replay window,True
+11,2018-02-16,FixedJS,RF histogram,0.42192769341719266,0.1,True,,,True,replay window,True
+11,2018-02-16,ADWIN,RF score mean,0.4380525710940519,,False,,,True,replay window,True
+11,2018-02-16,PageHinkley,RF score mean,0.4380525710940519,,,,,True,replay window,False
+11,2018-02-16,KSWIN,RF score mean,0.4380525710940519,,,,,True,replay window,False
+11,2018-02-16,ADWIN,released RF aggregate error rate,0.04083167187580848,,False,0,11,True,released replay window,True
+11,2018-02-16,PageHinkley,released RF aggregate error rate,0.04083167187580848,,,0,11,True,released replay window,False
+12,2018-02-16,support_check,RF histogram,50,100,,,,True,replay window,False
+13,2018-02-16,JS,RF histogram,0.9805611055302137,0.9696313348256245,True,,,True,replay window,True
+13,2018-02-16,PSI,RF histogram,19.972735909710334,18.887810668916135,True,,,True,replay window,True
+13,2018-02-16,FixedJS,RF histogram,0.9805611055302137,0.1,True,,,True,replay window,True
+13,2018-02-16,ADWIN,RF score mean,0.8166748583478435,,False,,,True,replay window,True
+13,2018-02-16,PageHinkley,RF score mean,0.8166748583478435,,,,,True,replay window,False
+13,2018-02-16,KSWIN,RF score mean,0.8166748583478435,,,,,True,replay window,False
+13,2018-02-16,ADWIN,released RF aggregate error rate,6.422515913567208e-05,,False,0,13,True,released replay window,True
+13,2018-02-16,PageHinkley,released RF aggregate error rate,6.422515913567208e-05,,,0,13,True,released replay window,False
+14,2018-02-16,support_check,RF histogram,53,100,,,,True,replay window,False
+15,2018-02-20,JS,RF histogram,0.22935309212063237,0.9696313348256245,False,,,True,replay window,True
+15,2018-02-20,PSI,RF histogram,5.896468005416441,18.887810668916135,False,,,True,replay window,True
+15,2018-02-20,FixedJS,RF histogram,0.22935309212063237,0.1,True,,,True,replay window,True
+15,2018-02-20,ADWIN,RF score mean,0.03542498849852854,,False,,,True,replay window,True
+15,2018-02-20,PageHinkley,RF score mean,0.03542498849852854,,,,,True,replay window,False
+15,2018-02-20,KSWIN,RF score mean,0.03542498849852854,,,,,True,replay window,False
+15,2018-02-20,ADWIN,released RF aggregate error rate,0.011489300588826655,,False,0,15,True,released replay window,True
+15,2018-02-20,PageHinkley,released RF aggregate error rate,0.011489300588826655,,,0,15,True,released replay window,False
+16,2018-02-20,JS,RF histogram,0.2303382598185122,0.9696313348256245,False,,,True,replay window,True
+16,2018-02-20,PSI,RF histogram,5.963602218810154,18.887810668916135,False,,,True,replay window,True
+16,2018-02-20,FixedJS,RF histogram,0.2303382598185122,0.1,True,,,True,replay window,True
+16,2018-02-20,ADWIN,RF score mean,0.036645295368954126,,False,,,True,replay window,True
+16,2018-02-20,PageHinkley,RF score mean,0.036645295368954126,,,,,True,replay window,False
+16,2018-02-20,KSWIN,RF score mean,0.036645295368954126,,,,,True,replay window,False
+16,2018-02-20,ADWIN,released RF aggregate error rate,0.011225048521227233,,False,0,16,True,released replay window,True
+16,2018-02-20,PageHinkley,released RF aggregate error rate,0.011225048521227233,,,0,16,True,released replay window,False
+17,2018-02-20,JS,RF histogram,0.23329079942256567,0.9696313348256245,False,,,True,replay window,True
+17,2018-02-20,PSI,RF histogram,5.725062256686803,18.887810668916135,False,,,True,replay window,True
+17,2018-02-20,FixedJS,RF histogram,0.23329079942256567,0.1,True,,,True,replay window,True
+17,2018-02-20,ADWIN,RF score mean,0.03848969100093358,,False,,,True,replay window,True
+17,2018-02-20,PageHinkley,RF score mean,0.03848969100093358,,,,,True,replay window,False
+17,2018-02-20,KSWIN,RF score mean,0.03848969100093358,,,,,True,replay window,False
+17,2018-02-20,ADWIN,released RF aggregate error rate,0.013113913710322753,,False,0,17,True,released replay window,True
+17,2018-02-20,PageHinkley,released RF aggregate error rate,0.013113913710322753,,,0,17,True,released replay window,False
+18,2018-02-20,JS,RF histogram,0.1547000901752592,0.9696313348256245,False,,,True,replay window,True
+18,2018-02-20,PSI,RF histogram,1.2832342978958748,18.887810668916135,False,,,True,replay window,True
+18,2018-02-20,FixedJS,RF histogram,0.1547000901752592,0.1,True,,,True,replay window,True
+18,2018-02-20,ADWIN,RF score mean,0.1719413418294346,,False,,,True,replay window,True
+18,2018-02-20,PageHinkley,RF score mean,0.1719413418294346,,,,,True,replay window,False
+18,2018-02-20,KSWIN,RF score mean,0.1719413418294346,,,,,True,replay window,False
+18,2018-02-20,ADWIN,released RF aggregate error rate,0.03981480101448951,,False,0,18,True,released replay window,True
+18,2018-02-20,PageHinkley,released RF aggregate error rate,0.03981480101448951,,,0,18,True,released replay window,False
+19,2018-02-20,JS,RF histogram,0.23668535396274346,0.9696313348256245,False,,,True,replay window,True
+19,2018-02-20,PSI,RF histogram,5.869388464848389,18.887810668916135,False,,,True,replay window,True
+19,2018-02-20,FixedJS,RF histogram,0.23668535396274346,0.1,True,,,True,replay window,True
+19,2018-02-20,ADWIN,RF score mean,0.03499166063174289,,False,,,True,replay window,True
+19,2018-02-20,PageHinkley,RF score mean,0.03499166063174289,,,,,True,replay window,False
+19,2018-02-20,KSWIN,RF score mean,0.03499166063174289,,,,,True,replay window,False
+19,2018-02-20,ADWIN,released RF aggregate error rate,0.010550763809243887,,False,0,19,True,released replay window,True
+19,2018-02-20,PageHinkley,released RF aggregate error rate,0.010550763809243887,,,0,19,True,released replay window,False
+20,2018-02-21,JS,RF histogram,0.39784366329877086,0.9696313348256245,False,,,True,replay window,True
+20,2018-02-21,PSI,RF histogram,5.575258721550843,18.887810668916135,False,,,True,replay window,True
+20,2018-02-21,FixedJS,RF histogram,0.39784366329877086,0.1,True,,,True,replay window,True
+20,2018-02-21,ADWIN,RF score mean,0.6187439127552754,,False,,,True,replay window,True
+20,2018-02-21,PageHinkley,RF score mean,0.6187439127552754,,,,,True,replay window,False
+20,2018-02-21,KSWIN,RF score mean,0.6187439127552754,,,,,True,replay window,False
+20,2018-02-21,ADWIN,released RF aggregate error rate,0.0009658228878008624,,False,0,20,True,released replay window,True
+20,2018-02-21,PageHinkley,released RF aggregate error rate,0.0009658228878008624,,,0,20,True,released replay window,False
+21,2018-02-21,JS,RF histogram,0.5684282953772078,0.9696313348256245,False,,,True,replay window,True
+21,2018-02-21,PSI,RF histogram,10.444352778606936,18.887810668916135,False,,,True,replay window,True
+21,2018-02-21,FixedJS,RF histogram,0.5684282953772078,0.1,True,,,True,replay window,True
+21,2018-02-21,ADWIN,RF score mean,0.16821120689655172,,False,,,True,replay window,True
+21,2018-02-21,PageHinkley,RF score mean,0.16821120689655172,,,,,True,replay window,False
+21,2018-02-21,KSWIN,RF score mean,0.16821120689655172,,,,,True,replay window,False
+21,2018-02-21,ADWIN,released RF aggregate error rate,0.1724137931034483,,False,0,21,True,released replay window,True
+21,2018-02-21,PageHinkley,released RF aggregate error rate,0.1724137931034483,,,0,21,True,released replay window,False
+22,2018-02-21,JS,RF histogram,0.42920130528476097,0.9696313348256245,False,,,True,replay window,True
+22,2018-02-21,PSI,RF histogram,7.317119378705507,18.887810668916135,False,,,True,replay window,True
+22,2018-02-21,FixedJS,RF histogram,0.42920130528476097,0.1,True,,,True,replay window,True
+22,2018-02-21,ADWIN,RF score mean,0.44594379194630873,,False,,,True,replay window,True
+22,2018-02-21,PageHinkley,RF score mean,0.44594379194630873,,,,,True,replay window,False
+22,2018-02-21,KSWIN,RF score mean,0.44594379194630873,,,,,True,replay window,False
+22,2018-02-21,ADWIN,released RF aggregate error rate,0.022818791946308724,,False,0,22,True,released replay window,True
+22,2018-02-21,PageHinkley,released RF aggregate error rate,0.022818791946308724,,,0,22,True,released replay window,False
+23,2018-02-22,JS,RF histogram,0.2547152595760432,0.9696313348256245,False,,,True,replay window,True
+23,2018-02-22,PSI,RF histogram,5.9119105305154696,18.887810668916135,False,,,True,replay window,True
+23,2018-02-22,FixedJS,RF histogram,0.2547152595760432,0.1,True,,,True,replay window,True
+23,2018-02-22,ADWIN,RF score mean,0.05029942053021053,,False,,,True,replay window,True
+23,2018-02-22,PageHinkley,RF score mean,0.05029942053021053,,,,,True,replay window,False
+23,2018-02-22,KSWIN,RF score mean,0.05029942053021053,,,,,True,replay window,False
+23,2018-02-22,ADWIN,released RF aggregate error rate,0.013583987898980212,,False,0,23,True,released replay window,True
+23,2018-02-22,PageHinkley,released RF aggregate error rate,0.013583987898980212,,,0,23,True,released replay window,False
+24,2018-02-22,JS,RF histogram,0.2565320324259024,0.9696313348256245,False,,,True,replay window,True
+24,2018-02-22,PSI,RF histogram,5.9446404227878125,18.887810668916135,False,,,True,replay window,True
+24,2018-02-22,FixedJS,RF histogram,0.2565320324259024,0.1,True,,,True,replay window,True
+24,2018-02-22,ADWIN,RF score mean,0.05038142719846228,,False,,,True,replay window,True
+24,2018-02-22,PageHinkley,RF score mean,0.05038142719846228,,,,,True,replay window,False
+24,2018-02-22,KSWIN,RF score mean,0.05038142719846228,,,,,True,replay window,False
+24,2018-02-22,ADWIN,released RF aggregate error rate,0.012009086540561794,,False,0,24,True,released replay window,True
+24,2018-02-22,PageHinkley,released RF aggregate error rate,0.012009086540561794,,,0,24,True,released replay window,False
+25,2018-02-22,JS,RF histogram,0.2516943575477356,0.9696313348256245,False,,,True,replay window,True
+25,2018-02-22,PSI,RF histogram,5.572218556412732,18.887810668916135,False,,,True,replay window,True
+25,2018-02-22,FixedJS,RF histogram,0.2516943575477356,0.1,True,,,True,replay window,True
+25,2018-02-22,ADWIN,RF score mean,0.05258785322691176,,False,,,True,replay window,True
+25,2018-02-22,PageHinkley,RF score mean,0.05258785322691176,,,,,True,replay window,False
+25,2018-02-22,KSWIN,RF score mean,0.05258785322691176,,,,,True,replay window,False
+25,2018-02-22,ADWIN,released RF aggregate error rate,0.012093360744951022,,False,0,25,True,released replay window,True
+25,2018-02-22,PageHinkley,released RF aggregate error rate,0.012093360744951022,,,0,25,True,released replay window,False
+26,2018-02-22,JS,RF histogram,0.2607003982053231,0.9696313348256245,False,,,True,replay window,True
+26,2018-02-22,PSI,RF histogram,6.058974908162456,18.887810668916135,False,,,True,replay window,True
+26,2018-02-22,FixedJS,RF histogram,0.2607003982053231,0.1,True,,,True,replay window,True
+26,2018-02-22,ADWIN,RF score mean,0.050824094299286846,,False,,,True,replay window,True
+26,2018-02-22,PageHinkley,RF score mean,0.050824094299286846,,,,,True,replay window,False
+26,2018-02-22,KSWIN,RF score mean,0.050824094299286846,,,,,True,replay window,False
+26,2018-02-22,ADWIN,released RF aggregate error rate,0.012538085478487223,,False,0,26,True,released replay window,True
+26,2018-02-22,PageHinkley,released RF aggregate error rate,0.012538085478487223,,,0,26,True,released replay window,False
+27,2018-02-22,JS,RF histogram,0.2537078136171894,0.9696313348256245,False,,,True,replay window,True
+27,2018-02-22,PSI,RF histogram,5.775457838955625,18.887810668916135,False,,,True,replay window,True
+27,2018-02-22,FixedJS,RF histogram,0.2537078136171894,0.1,True,,,True,replay window,True
+27,2018-02-22,ADWIN,RF score mean,0.049313113314218796,,False,,,True,replay window,True
+27,2018-02-22,PageHinkley,RF score mean,0.049313113314218796,,,,,True,replay window,False
+27,2018-02-22,KSWIN,RF score mean,0.049313113314218796,,,,,True,replay window,False
+27,2018-02-22,ADWIN,released RF aggregate error rate,0.013310180511246618,,False,0,27,True,released replay window,True
+27,2018-02-22,PageHinkley,released RF aggregate error rate,0.013310180511246618,,,0,27,True,released replay window,False
+28,2018-02-22,support_check,RF histogram,9,100,,,,True,replay window,False
+29,2018-02-23,JS,RF histogram,0.2703600081110464,0.9696313348256245,False,,,True,replay window,True
+29,2018-02-23,PSI,RF histogram,6.668972648212804,18.887810668916135,False,,,True,replay window,True
+29,2018-02-23,FixedJS,RF histogram,0.2703600081110464,0.1,True,,,True,replay window,True
+29,2018-02-23,ADWIN,RF score mean,0.051615499769225165,,False,,,True,replay window,True
+29,2018-02-23,PageHinkley,RF score mean,0.051615499769225165,,,,,True,replay window,False
+29,2018-02-23,KSWIN,RF score mean,0.051615499769225165,,,,,True,replay window,False
+29,2018-02-23,ADWIN,released RF aggregate error rate,0.008931391045936338,,False,0,29,True,released replay window,True
+29,2018-02-23,PageHinkley,released RF aggregate error rate,0.008931391045936338,,,0,29,True,released replay window,False
+30,2018-02-23,JS,RF histogram,0.28642717943972135,0.9696313348256245,False,,,True,replay window,True
+30,2018-02-23,PSI,RF histogram,6.895904423085698,18.887810668916135,False,,,True,replay window,True
+30,2018-02-23,FixedJS,RF histogram,0.28642717943972135,0.1,True,,,True,replay window,True
+30,2018-02-23,ADWIN,RF score mean,0.056311753283804555,,False,,,True,replay window,True
+30,2018-02-23,PageHinkley,RF score mean,0.056311753283804555,,,,,True,replay window,False
+30,2018-02-23,KSWIN,RF score mean,0.056311753283804555,,,,,True,replay window,False
+30,2018-02-23,ADWIN,released RF aggregate error rate,0.0073070473706274165,,False,0,30,True,released replay window,True
+30,2018-02-23,PageHinkley,released RF aggregate error rate,0.0073070473706274165,,,0,30,True,released replay window,False
+31,2018-02-23,JS,RF histogram,0.28649021683101494,0.9696313348256245,False,,,True,replay window,True
+31,2018-02-23,PSI,RF histogram,6.726606094937566,18.887810668916135,False,,,True,replay window,True
+31,2018-02-23,FixedJS,RF histogram,0.28649021683101494,0.1,True,,,True,replay window,True
+31,2018-02-23,ADWIN,RF score mean,0.05574362093361633,,False,,,True,replay window,True
+31,2018-02-23,PageHinkley,RF score mean,0.05574362093361633,,,,,True,replay window,False
+31,2018-02-23,KSWIN,RF score mean,0.05574362093361633,,,,,True,replay window,False
+31,2018-02-23,ADWIN,released RF aggregate error rate,0.008343011226355905,,False,0,31,True,released replay window,True
+31,2018-02-23,PageHinkley,released RF aggregate error rate,0.008343011226355905,,,0,31,True,released replay window,False
+32,2018-02-23,JS,RF histogram,0.2804254683815576,0.9696313348256245,False,,,True,replay window,True
+32,2018-02-23,PSI,RF histogram,6.825746332769217,18.887810668916135,False,,,True,replay window,True
+32,2018-02-23,FixedJS,RF histogram,0.2804254683815576,0.1,True,,,True,replay window,True
+32,2018-02-23,ADWIN,RF score mean,0.05411656126137733,,False,,,True,replay window,True
+32,2018-02-23,PageHinkley,RF score mean,0.05411656126137733,,,,,True,replay window,False
+32,2018-02-23,KSWIN,RF score mean,0.05411656126137733,,,,,True,replay window,False
+32,2018-02-23,ADWIN,released RF aggregate error rate,0.00935953497889368,,False,0,32,True,released replay window,True
+32,2018-02-23,PageHinkley,released RF aggregate error rate,0.00935953497889368,,,0,32,True,released replay window,False
+33,2018-02-23,JS,RF histogram,0.27472138451723255,0.9696313348256245,False,,,True,replay window,True
+33,2018-02-23,PSI,RF histogram,6.538265757479308,18.887810668916135,False,,,True,replay window,True
+33,2018-02-23,FixedJS,RF histogram,0.27472138451723255,0.1,True,,,True,replay window,True
+33,2018-02-23,ADWIN,RF score mean,0.051808141693854275,,False,,,True,replay window,True
+33,2018-02-23,PageHinkley,RF score mean,0.051808141693854275,,False,,,True,replay window,True
+33,2018-02-23,KSWIN,RF score mean,0.051808141693854275,,,,,True,replay window,False
+33,2018-02-23,ADWIN,released RF aggregate error rate,0.008368478289700538,,False,0,33,True,released replay window,True
+33,2018-02-23,PageHinkley,released RF aggregate error rate,0.008368478289700538,,False,0,33,True,released replay window,True
+34,2018-02-28,JS,RF histogram,0.27733760661723156,0.9696313348256245,False,,,True,replay window,True
+34,2018-02-28,PSI,RF histogram,6.1407491557310285,18.887810668916135,False,,,True,replay window,True
+34,2018-02-28,FixedJS,RF histogram,0.27733760661723156,0.1,True,,,True,replay window,True
+34,2018-02-28,ADWIN,RF score mean,0.04312611629291526,,False,,,True,replay window,True
+34,2018-02-28,PageHinkley,RF score mean,0.04312611629291526,,False,,,True,replay window,True
+34,2018-02-28,KSWIN,RF score mean,0.04312611629291526,,,,,True,replay window,False
+34,2018-02-28,ADWIN,released RF aggregate error rate,0.2196765231196666,,False,0,34,True,released replay window,True
+34,2018-02-28,PageHinkley,released RF aggregate error rate,0.2196765231196666,,False,0,34,True,released replay window,True
+35,2018-02-28,JS,RF histogram,0.25360560383409425,0.9696313348256245,False,,,True,replay window,True
+35,2018-02-28,PSI,RF histogram,5.957352005452459,18.887810668916135,False,,,True,replay window,True
+35,2018-02-28,FixedJS,RF histogram,0.25360560383409425,0.1,True,,,True,replay window,True
+35,2018-02-28,ADWIN,RF score mean,0.02692307947935387,,False,,,True,replay window,True
+35,2018-02-28,PageHinkley,RF score mean,0.02692307947935387,,False,,,True,replay window,True
+35,2018-02-28,KSWIN,RF score mean,0.02692307947935387,,,,,True,replay window,False
+35,2018-02-28,ADWIN,released RF aggregate error rate,0.0068909046439167565,,False,0,35,True,released replay window,True
+35,2018-02-28,PageHinkley,released RF aggregate error rate,0.0068909046439167565,,False,0,35,True,released replay window,True
+36,2018-02-28,JS,RF histogram,0.25371126060775934,0.9696313348256245,False,,,True,replay window,True
+36,2018-02-28,PSI,RF histogram,5.7711208700833,18.887810668916135,False,,,True,replay window,True
+36,2018-02-28,FixedJS,RF histogram,0.25371126060775934,0.1,True,,,True,replay window,True
+36,2018-02-28,ADWIN,RF score mean,0.028084700137723802,,False,,,True,replay window,True
+36,2018-02-28,PageHinkley,RF score mean,0.028084700137723802,,False,,,True,replay window,True
+36,2018-02-28,KSWIN,RF score mean,0.028084700137723802,,,,,True,replay window,False
+36,2018-02-28,ADWIN,released RF aggregate error rate,0.009327657443345436,,False,0,36,True,released replay window,True
+36,2018-02-28,PageHinkley,released RF aggregate error rate,0.009327657443345436,,False,0,36,True,released replay window,True
+37,2018-02-28,JS,RF histogram,0.26658185515540855,0.9696313348256245,False,,,True,replay window,True
+37,2018-02-28,PSI,RF histogram,6.186095329314921,18.887810668916135,False,,,True,replay window,True
+37,2018-02-28,FixedJS,RF histogram,0.26658185515540855,0.1,True,,,True,replay window,True
+37,2018-02-28,ADWIN,RF score mean,0.03750822423212739,,False,,,True,replay window,True
+37,2018-02-28,PageHinkley,RF score mean,0.03750822423212739,,False,,,True,replay window,True
+37,2018-02-28,KSWIN,RF score mean,0.03750822423212739,,,,,True,replay window,False
+37,2018-02-28,ADWIN,released RF aggregate error rate,0.19205698802940457,,False,0,37,True,released replay window,True
+37,2018-02-28,PageHinkley,released RF aggregate error rate,0.19205698802940457,,False,0,37,True,released replay window,True
+38,2018-02-28,JS,RF histogram,0.25674673441011286,0.9696313348256245,False,,,True,replay window,True
+38,2018-02-28,PSI,RF histogram,5.7651747264741555,18.887810668916135,False,,,True,replay window,True
+38,2018-02-28,FixedJS,RF histogram,0.25674673441011286,0.1,True,,,True,replay window,True
+38,2018-02-28,ADWIN,RF score mean,0.03010218876192113,,False,,,True,replay window,True
+38,2018-02-28,PageHinkley,RF score mean,0.03010218876192113,,False,,,True,replay window,True
+38,2018-02-28,KSWIN,RF score mean,0.03010218876192113,,,,,True,replay window,False
+38,2018-02-28,ADWIN,released RF aggregate error rate,0.06312111578887075,,False,0,38,True,released replay window,True
+38,2018-02-28,PageHinkley,released RF aggregate error rate,0.06312111578887075,,False,0,38,True,released replay window,True
+39,2018-03-01,JS,RF histogram,0.2839450784468258,0.9696313348256245,False,,,True,replay window,True
+39,2018-03-01,PSI,RF histogram,6.389358885140093,18.887810668916135,False,,,True,replay window,True
+39,2018-03-01,FixedJS,RF histogram,0.2839450784468258,0.1,True,,,True,replay window,True
+39,2018-03-01,ADWIN,RF score mean,0.03782776741516608,,False,,,True,replay window,True
+39,2018-03-01,PageHinkley,RF score mean,0.03782776741516608,,False,,,True,replay window,True
+39,2018-03-01,KSWIN,RF score mean,0.03782776741516608,,,,,True,replay window,False
+39,2018-03-01,ADWIN,released RF aggregate error rate,0.434859028624722,,False,0,39,True,released replay window,True
+39,2018-03-01,PageHinkley,released RF aggregate error rate,0.434859028624722,,False,0,39,True,released replay window,True
+40,2018-03-01,JS,RF histogram,0.27089381156237935,0.9696313348256245,False,,,True,replay window,True
+40,2018-03-01,PSI,RF histogram,6.37970940224009,18.887810668916135,False,,,True,replay window,True
+40,2018-03-01,FixedJS,RF histogram,0.27089381156237935,0.1,True,,,True,replay window,True
+40,2018-03-01,ADWIN,RF score mean,0.03020166908503306,,False,,,True,replay window,True
+40,2018-03-01,PageHinkley,RF score mean,0.03020166908503306,,False,,,True,replay window,True
+40,2018-03-01,KSWIN,RF score mean,0.03020166908503306,,,,,True,replay window,False
+40,2018-03-01,ADWIN,released RF aggregate error rate,0.2311903309314558,,False,0,40,True,released replay window,True
+40,2018-03-01,PageHinkley,released RF aggregate error rate,0.2311903309314558,,False,0,40,True,released replay window,True
+41,2018-03-01,JS,RF histogram,0.2757500117180594,0.9696313348256245,False,,,True,replay window,True
+41,2018-03-01,PSI,RF histogram,6.613555786125681,18.887810668916135,False,,,True,replay window,True
+41,2018-03-01,FixedJS,RF histogram,0.2757500117180594,0.1,True,,,True,replay window,True
+41,2018-03-01,ADWIN,RF score mean,0.028681184012066364,,False,,,True,replay window,True
+41,2018-03-01,PageHinkley,RF score mean,0.028681184012066364,,False,,,True,replay window,True
+41,2018-03-01,KSWIN,RF score mean,0.028681184012066364,,,,,True,replay window,False
+41,2018-03-01,ADWIN,released RF aggregate error rate,0.0035366931918656055,,False,0,41,True,released replay window,True
+41,2018-03-01,PageHinkley,released RF aggregate error rate,0.0035366931918656055,,False,0,41,True,released replay window,True
+42,2018-03-01,JS,RF histogram,0.2970846287477474,0.9696313348256245,False,,,True,replay window,True
+42,2018-03-01,PSI,RF histogram,6.633296081167265,18.887810668916135,False,,,True,replay window,True
+42,2018-03-01,FixedJS,RF histogram,0.2970846287477474,0.1,True,,,True,replay window,True
+42,2018-03-01,ADWIN,RF score mean,0.04315021229796463,,False,,,True,replay window,True
+42,2018-03-01,PageHinkley,RF score mean,0.04315021229796463,,False,,,True,replay window,True
+42,2018-03-01,KSWIN,RF score mean,0.04315021229796463,,,,,True,replay window,False
+42,2018-03-01,ADWIN,released RF aggregate error rate,0.3351550724815273,,False,0,42,True,released replay window,True
+42,2018-03-01,PageHinkley,released RF aggregate error rate,0.3351550724815273,,False,0,42,True,released replay window,True
+43,2018-03-01,JS,RF histogram,0.2807244452901143,0.9696313348256245,False,,,True,replay window,True
+43,2018-03-01,PSI,RF histogram,6.307244164145128,18.887810668916135,False,,,True,replay window,True
+43,2018-03-01,FixedJS,RF histogram,0.2807244452901143,0.1,True,,,True,replay window,True
+43,2018-03-01,ADWIN,RF score mean,0.03156829516718179,,False,,,True,replay window,True
+43,2018-03-01,PageHinkley,RF score mean,0.03156829516718179,,False,,,True,replay window,True
+43,2018-03-01,KSWIN,RF score mean,0.03156829516718179,,,,,True,replay window,False
+43,2018-03-01,ADWIN,released RF aggregate error rate,0.0030907558302894073,,False,0,43,True,released replay window,True
+43,2018-03-01,PageHinkley,released RF aggregate error rate,0.0030907558302894073,,False,0,43,True,released replay window,True
+44,2018-03-02,JS,RF histogram,0.3420699764284981,0.9696313348256245,False,,,True,replay window,True
+44,2018-03-02,PSI,RF histogram,7.7698553051014025,18.887810668916135,False,,,True,replay window,True
+44,2018-03-02,FixedJS,RF histogram,0.3420699764284981,0.1,True,,,True,replay window,True
+44,2018-03-02,ADWIN,RF score mean,0.06919598824414211,,False,,,True,replay window,True
+44,2018-03-02,PageHinkley,RF score mean,0.06919598824414211,,False,,,True,replay window,True
+44,2018-03-02,KSWIN,RF score mean,0.06919598824414211,,,,,True,replay window,False
+44,2018-03-02,ADWIN,released RF aggregate error rate,0.23125812954252636,,False,0,44,True,released replay window,True
+44,2018-03-02,PageHinkley,released RF aggregate error rate,0.23125812954252636,,False,0,44,True,released replay window,True
+45,2018-03-02,JS,RF histogram,0.32331221433861346,0.9696313348256245,False,,,True,replay window,True
+45,2018-03-02,PSI,RF histogram,7.66166025422944,18.887810668916135,False,,,True,replay window,True
+45,2018-03-02,FixedJS,RF histogram,0.32331221433861346,0.1,True,,,True,replay window,True
+45,2018-03-02,ADWIN,RF score mean,0.061807545308534266,,False,,,True,replay window,True
+45,2018-03-02,PageHinkley,RF score mean,0.061807545308534266,,False,,,True,replay window,True
+45,2018-03-02,KSWIN,RF score mean,0.061807545308534266,,,,,True,replay window,False
+45,2018-03-02,ADWIN,released RF aggregate error rate,0.17156269828680204,,False,0,45,True,released replay window,True
+45,2018-03-02,PageHinkley,released RF aggregate error rate,0.17156269828680204,,False,0,45,True,released replay window,True
+46,2018-03-02,JS,RF histogram,0.27072181735783063,0.9696313348256245,False,,,True,replay window,True
+46,2018-03-02,PSI,RF histogram,9.583701406400003,18.887810668916135,False,,,True,replay window,True
+46,2018-03-02,FixedJS,RF histogram,0.27072181735783063,0.1,True,,,True,replay window,True
+46,2018-03-02,ADWIN,RF score mean,0.049862706215484186,,False,,,True,replay window,True
+46,2018-03-02,PageHinkley,RF score mean,0.049862706215484186,,False,,,True,replay window,True
+46,2018-03-02,KSWIN,RF score mean,0.049862706215484186,,,,,True,replay window,False
+46,2018-03-02,ADWIN,released RF aggregate error rate,0.030813605825037813,,False,0,46,True,released replay window,True
+46,2018-03-02,PageHinkley,released RF aggregate error rate,0.030813605825037813,,False,0,46,True,released replay window,True
+47,2018-03-02,JS,RF histogram,0.3248275535445654,0.9696313348256245,False,,,True,replay window,True
+47,2018-03-02,PSI,RF histogram,7.457135821604401,18.887810668916135,False,,,True,replay window,True
+47,2018-03-02,FixedJS,RF histogram,0.3248275535445654,0.1,True,,,True,replay window,True
+47,2018-03-02,ADWIN,RF score mean,0.06445314607893572,,False,,,True,replay window,True
+47,2018-03-02,PageHinkley,RF score mean,0.06445314607893572,,False,,,True,replay window,True
+47,2018-03-02,KSWIN,RF score mean,0.06445314607893572,,,,,True,replay window,False
+47,2018-03-02,ADWIN,released RF aggregate error rate,0.20873250279703423,,False,0,47,True,released replay window,True
+47,2018-03-02,PageHinkley,released RF aggregate error rate,0.20873250279703423,,False,0,47,True,released replay window,True
+48,2018-03-02,JS,RF histogram,0.3312287418999361,0.9696313348256245,False,,,True,replay window,True
+48,2018-03-02,PSI,RF histogram,7.326227742868578,18.887810668916135,False,,,True,replay window,True
+48,2018-03-02,FixedJS,RF histogram,0.3312287418999361,0.1,True,,,True,replay window,True
+48,2018-03-02,ADWIN,RF score mean,0.06585715266512537,,False,,,True,replay window,True
+48,2018-03-02,PageHinkley,RF score mean,0.06585715266512537,,False,,,True,replay window,True
+48,2018-03-02,KSWIN,RF score mean,0.06585715266512537,,,,,True,replay window,False
+48,2018-03-02,ADWIN,released RF aggregate error rate,0.20718108546539105,,False,0,48,True,released replay window,True
+48,2018-03-02,PageHinkley,released RF aggregate error rate,0.20718108546539105,,False,0,48,True,released replay window,True
+10,2018-02-15,ADWIN,released RF aggregate error rate,0.05942614992254017,,,1,9,True,released replay window,False
+10,2018-02-15,PageHinkley,released RF aggregate error rate,0.05942614992254017,,,1,9,True,released replay window,False
+11,2018-02-16,ADWIN,released RF aggregate error rate,0.017193725214690467,,False,1,10,True,released replay window,True
+11,2018-02-16,PageHinkley,released RF aggregate error rate,0.017193725214690467,,,1,10,True,released replay window,False
+12,2018-02-16,support_check,RF histogram,50,100,,,,True,replay window,False
+13,2018-02-16,ADWIN,released RF aggregate error rate,0.04083167187580848,,False,1,11,True,released replay window,True
+13,2018-02-16,PageHinkley,released RF aggregate error rate,0.04083167187580848,,,1,11,True,released replay window,False
+14,2018-02-16,support_check,RF histogram,53,100,,,,True,replay window,False
+15,2018-02-20,ADWIN,released RF aggregate error rate,6.422515913567208e-05,,False,1,13,True,released replay window,True
+15,2018-02-20,PageHinkley,released RF aggregate error rate,6.422515913567208e-05,,,1,13,True,released replay window,False
+16,2018-02-20,ADWIN,released RF aggregate error rate,0.011489300588826655,,False,1,15,True,released replay window,True
+16,2018-02-20,PageHinkley,released RF aggregate error rate,0.011489300588826655,,,1,15,True,released replay window,False
+17,2018-02-20,ADWIN,released RF aggregate error rate,0.011225048521227233,,False,1,16,True,released replay window,True
+17,2018-02-20,PageHinkley,released RF aggregate error rate,0.011225048521227233,,,1,16,True,released replay window,False
+18,2018-02-20,ADWIN,released RF aggregate error rate,0.013113913710322753,,False,1,17,True,released replay window,True
+18,2018-02-20,PageHinkley,released RF aggregate error rate,0.013113913710322753,,,1,17,True,released replay window,False
+19,2018-02-20,ADWIN,released RF aggregate error rate,0.03981480101448951,,False,1,18,True,released replay window,True
+19,2018-02-20,PageHinkley,released RF aggregate error rate,0.03981480101448951,,,1,18,True,released replay window,False
+20,2018-02-21,ADWIN,released RF aggregate error rate,0.010550763809243887,,False,1,19,True,released replay window,True
+20,2018-02-21,PageHinkley,released RF aggregate error rate,0.010550763809243887,,,1,19,True,released replay window,False
+21,2018-02-21,ADWIN,released RF aggregate error rate,0.0009658228878008624,,False,1,20,True,released replay window,True
+21,2018-02-21,PageHinkley,released RF aggregate error rate,0.0009658228878008624,,,1,20,True,released replay window,False
+22,2018-02-21,ADWIN,released RF aggregate error rate,0.1724137931034483,,False,1,21,True,released replay window,True
+22,2018-02-21,PageHinkley,released RF aggregate error rate,0.1724137931034483,,,1,21,True,released replay window,False
+23,2018-02-22,ADWIN,released RF aggregate error rate,0.022818791946308724,,False,1,22,True,released replay window,True
+23,2018-02-22,PageHinkley,released RF aggregate error rate,0.022818791946308724,,,1,22,True,released replay window,False
+24,2018-02-22,ADWIN,released RF aggregate error rate,0.013583987898980212,,False,1,23,True,released replay window,True
+24,2018-02-22,PageHinkley,released RF aggregate error rate,0.013583987898980212,,,1,23,True,released replay window,False
+25,2018-02-22,ADWIN,released RF aggregate error rate,0.012009086540561794,,False,1,24,True,released replay window,True
+25,2018-02-22,PageHinkley,released RF aggregate error rate,0.012009086540561794,,,1,24,True,released replay window,False
+26,2018-02-22,ADWIN,released RF aggregate error rate,0.012093360744951022,,False,1,25,True,released replay window,True
+26,2018-02-22,PageHinkley,released RF aggregate error rate,0.012093360744951022,,,1,25,True,released replay window,False
+27,2018-02-22,ADWIN,released RF aggregate error rate,0.012538085478487223,,False,1,26,True,released replay window,True
+27,2018-02-22,PageHinkley,released RF aggregate error rate,0.012538085478487223,,,1,26,True,released replay window,False
+28,2018-02-22,support_check,RF histogram,9,100,,,,True,replay window,False
+29,2018-02-23,ADWIN,released RF aggregate error rate,0.013310180511246618,,False,1,27,True,released replay window,True
+29,2018-02-23,PageHinkley,released RF aggregate error rate,0.013310180511246618,,,1,27,True,released replay window,False
+30,2018-02-23,ADWIN,released RF aggregate error rate,0.008931391045936338,,False,1,29,True,released replay window,True
+30,2018-02-23,PageHinkley,released RF aggregate error rate,0.008931391045936338,,,1,29,True,released replay window,False
+31,2018-02-23,ADWIN,released RF aggregate error rate,0.0073070473706274165,,False,1,30,True,released replay window,True
+31,2018-02-23,PageHinkley,released RF aggregate error rate,0.0073070473706274165,,,1,30,True,released replay window,False
+32,2018-02-23,ADWIN,released RF aggregate error rate,0.008343011226355905,,False,1,31,True,released replay window,True
+32,2018-02-23,PageHinkley,released RF aggregate error rate,0.008343011226355905,,,1,31,True,released replay window,False
+33,2018-02-23,ADWIN,released RF aggregate error rate,0.00935953497889368,,False,1,32,True,released replay window,True
+33,2018-02-23,PageHinkley,released RF aggregate error rate,0.00935953497889368,,,1,32,True,released replay window,False
+34,2018-02-28,ADWIN,released RF aggregate error rate,0.008368478289700538,,False,1,33,True,released replay window,True
+34,2018-02-28,PageHinkley,released RF aggregate error rate,0.008368478289700538,,False,1,33,True,released replay window,True
+35,2018-02-28,ADWIN,released RF aggregate error rate,0.2196765231196666,,False,1,34,True,released replay window,True
+35,2018-02-28,PageHinkley,released RF aggregate error rate,0.2196765231196666,,False,1,34,True,released replay window,True
+36,2018-02-28,ADWIN,released RF aggregate error rate,0.0068909046439167565,,False,1,35,True,released replay window,True
+36,2018-02-28,PageHinkley,released RF aggregate error rate,0.0068909046439167565,,False,1,35,True,released replay window,True
+37,2018-02-28,ADWIN,released RF aggregate error rate,0.009327657443345436,,False,1,36,True,released replay window,True
+37,2018-02-28,PageHinkley,released RF aggregate error rate,0.009327657443345436,,False,1,36,True,released replay window,True
+38,2018-02-28,ADWIN,released RF aggregate error rate,0.19205698802940457,,False,1,37,True,released replay window,True
+38,2018-02-28,PageHinkley,released RF aggregate error rate,0.19205698802940457,,False,1,37,True,released replay window,True
+39,2018-03-01,ADWIN,released RF aggregate error rate,0.06312111578887075,,False,1,38,True,released replay window,True
+39,2018-03-01,PageHinkley,released RF aggregate error rate,0.06312111578887075,,False,1,38,True,released replay window,True
+40,2018-03-01,ADWIN,released RF aggregate error rate,0.434859028624722,,False,1,39,True,released replay window,True
+40,2018-03-01,PageHinkley,released RF aggregate error rate,0.434859028624722,,False,1,39,True,released replay window,True
+41,2018-03-01,ADWIN,released RF aggregate error rate,0.2311903309314558,,False,1,40,True,released replay window,True
+41,2018-03-01,PageHinkley,released RF aggregate error rate,0.2311903309314558,,False,1,40,True,released replay window,True
+42,2018-03-01,ADWIN,released RF aggregate error rate,0.0035366931918656055,,False,1,41,True,released replay window,True
+42,2018-03-01,PageHinkley,released RF aggregate error rate,0.0035366931918656055,,False,1,41,True,released replay window,True
+43,2018-03-01,ADWIN,released RF aggregate error rate,0.3351550724815273,,False,1,42,True,released replay window,True
+43,2018-03-01,PageHinkley,released RF aggregate error rate,0.3351550724815273,,False,1,42,True,released replay window,True
+44,2018-03-02,ADWIN,released RF aggregate error rate,0.0030907558302894073,,False,1,43,True,released replay window,True
+44,2018-03-02,PageHinkley,released RF aggregate error rate,0.0030907558302894073,,False,1,43,True,released replay window,True
+45,2018-03-02,ADWIN,released RF aggregate error rate,0.23125812954252636,,False,1,44,True,released replay window,True
+45,2018-03-02,PageHinkley,released RF aggregate error rate,0.23125812954252636,,False,1,44,True,released replay window,True
+46,2018-03-02,ADWIN,released RF aggregate error rate,0.17156269828680204,,False,1,45,True,released replay window,True
+46,2018-03-02,PageHinkley,released RF aggregate error rate,0.17156269828680204,,False,1,45,True,released replay window,True
+47,2018-03-02,ADWIN,released RF aggregate error rate,0.030813605825037813,,False,1,46,True,released replay window,True
+47,2018-03-02,PageHinkley,released RF aggregate error rate,0.030813605825037813,,False,1,46,True,released replay window,True
+48,2018-03-02,ADWIN,released RF aggregate error rate,0.20873250279703423,,False,1,47,True,released replay window,True
+48,2018-03-02,PageHinkley,released RF aggregate error rate,0.20873250279703423,,False,1,47,True,released replay window,True
+10,2018-02-15,ADWIN,released RF aggregate error rate,0.01414244770322264,,,3,7,True,released replay window,False
+10,2018-02-15,PageHinkley,released RF aggregate error rate,0.01414244770322264,,,3,7,True,released replay window,False
+11,2018-02-16,ADWIN,released RF aggregate error rate,0.02408056541944029,,,3,8,True,released replay window,False
+11,2018-02-16,PageHinkley,released RF aggregate error rate,0.02408056541944029,,,3,8,True,released replay window,False
+12,2018-02-16,support_check,RF histogram,50,100,,,,True,replay window,False
+13,2018-02-16,ADWIN,released RF aggregate error rate,0.05942614992254017,,,3,9,True,released replay window,False
+13,2018-02-16,PageHinkley,released RF aggregate error rate,0.05942614992254017,,,3,9,True,released replay window,False
+13,2018-02-16,ADWIN,released RF aggregate error rate,0.017193725214690467,,False,3,10,True,released replay window,True
+13,2018-02-16,PageHinkley,released RF aggregate error rate,0.017193725214690467,,,3,10,True,released replay window,False
+14,2018-02-16,support_check,RF histogram,53,100,,,,True,replay window,False
+15,2018-02-20,ADWIN,released RF aggregate error rate,0.04083167187580848,,False,3,11,True,released replay window,True
+15,2018-02-20,PageHinkley,released RF aggregate error rate,0.04083167187580848,,,3,11,True,released replay window,False
+16,2018-02-20,ADWIN,released RF aggregate error rate,6.422515913567208e-05,,False,3,13,True,released replay window,True
+16,2018-02-20,PageHinkley,released RF aggregate error rate,6.422515913567208e-05,,,3,13,True,released replay window,False
+18,2018-02-20,ADWIN,released RF aggregate error rate,0.011489300588826655,,False,3,15,True,released replay window,True
+18,2018-02-20,PageHinkley,released RF aggregate error rate,0.011489300588826655,,,3,15,True,released replay window,False
+19,2018-02-20,ADWIN,released RF aggregate error rate,0.011225048521227233,,False,3,16,True,released replay window,True
+19,2018-02-20,PageHinkley,released RF aggregate error rate,0.011225048521227233,,,3,16,True,released replay window,False
+20,2018-02-21,ADWIN,released RF aggregate error rate,0.013113913710322753,,False,3,17,True,released replay window,True
+20,2018-02-21,PageHinkley,released RF aggregate error rate,0.013113913710322753,,,3,17,True,released replay window,False
+21,2018-02-21,ADWIN,released RF aggregate error rate,0.03981480101448951,,False,3,18,True,released replay window,True
+21,2018-02-21,PageHinkley,released RF aggregate error rate,0.03981480101448951,,,3,18,True,released replay window,False
+22,2018-02-21,ADWIN,released RF aggregate error rate,0.010550763809243887,,False,3,19,True,released replay window,True
+22,2018-02-21,PageHinkley,released RF aggregate error rate,0.010550763809243887,,,3,19,True,released replay window,False
+23,2018-02-22,ADWIN,released RF aggregate error rate,0.0009658228878008624,,False,3,20,True,released replay window,True
+23,2018-02-22,PageHinkley,released RF aggregate error rate,0.0009658228878008624,,,3,20,True,released replay window,False
+24,2018-02-22,ADWIN,released RF aggregate error rate,0.1724137931034483,,False,3,21,True,released replay window,True
+24,2018-02-22,PageHinkley,released RF aggregate error rate,0.1724137931034483,,,3,21,True,released replay window,False
+25,2018-02-22,ADWIN,released RF aggregate error rate,0.022818791946308724,,False,3,22,True,released replay window,True
+25,2018-02-22,PageHinkley,released RF aggregate error rate,0.022818791946308724,,,3,22,True,released replay window,False
+26,2018-02-22,ADWIN,released RF aggregate error rate,0.013583987898980212,,False,3,23,True,released replay window,True
+26,2018-02-22,PageHinkley,released RF aggregate error rate,0.013583987898980212,,,3,23,True,released replay window,False
+27,2018-02-22,ADWIN,released RF aggregate error rate,0.012009086540561794,,False,3,24,True,released replay window,True
+27,2018-02-22,PageHinkley,released RF aggregate error rate,0.012009086540561794,,,3,24,True,released replay window,False
+28,2018-02-22,support_check,RF histogram,9,100,,,,True,replay window,False
+29,2018-02-23,ADWIN,released RF aggregate error rate,0.012093360744951022,,False,3,25,True,released replay window,True
+29,2018-02-23,PageHinkley,released RF aggregate error rate,0.012093360744951022,,,3,25,True,released replay window,False
+29,2018-02-23,ADWIN,released RF aggregate error rate,0.012538085478487223,,False,3,26,True,released replay window,True
+29,2018-02-23,PageHinkley,released RF aggregate error rate,0.012538085478487223,,,3,26,True,released replay window,False
+30,2018-02-23,ADWIN,released RF aggregate error rate,0.013310180511246618,,False,3,27,True,released replay window,True
+30,2018-02-23,PageHinkley,released RF aggregate error rate,0.013310180511246618,,,3,27,True,released replay window,False
+32,2018-02-23,ADWIN,released RF aggregate error rate,0.008931391045936338,,False,3,29,True,released replay window,True
+32,2018-02-23,PageHinkley,released RF aggregate error rate,0.008931391045936338,,,3,29,True,released replay window,False
+33,2018-02-23,ADWIN,released RF aggregate error rate,0.0073070473706274165,,False,3,30,True,released replay window,True
+33,2018-02-23,PageHinkley,released RF aggregate error rate,0.0073070473706274165,,,3,30,True,released replay window,False
+34,2018-02-28,ADWIN,released RF aggregate error rate,0.008343011226355905,,False,3,31,True,released replay window,True
+34,2018-02-28,PageHinkley,released RF aggregate error rate,0.008343011226355905,,,3,31,True,released replay window,False
+35,2018-02-28,ADWIN,released RF aggregate error rate,0.00935953497889368,,False,3,32,True,released replay window,True
+35,2018-02-28,PageHinkley,released RF aggregate error rate,0.00935953497889368,,,3,32,True,released replay window,False
+36,2018-02-28,ADWIN,released RF aggregate error rate,0.008368478289700538,,False,3,33,True,released replay window,True
+36,2018-02-28,PageHinkley,released RF aggregate error rate,0.008368478289700538,,False,3,33,True,released replay window,True
+37,2018-02-28,ADWIN,released RF aggregate error rate,0.2196765231196666,,False,3,34,True,released replay window,True
+37,2018-02-28,PageHinkley,released RF aggregate error rate,0.2196765231196666,,False,3,34,True,released replay window,True
+38,2018-02-28,ADWIN,released RF aggregate error rate,0.0068909046439167565,,False,3,35,True,released replay window,True
+38,2018-02-28,PageHinkley,released RF aggregate error rate,0.0068909046439167565,,False,3,35,True,released replay window,True
+39,2018-03-01,ADWIN,released RF aggregate error rate,0.009327657443345436,,False,3,36,True,released replay window,True
+39,2018-03-01,PageHinkley,released RF aggregate error rate,0.009327657443345436,,False,3,36,True,released replay window,True
+40,2018-03-01,ADWIN,released RF aggregate error rate,0.19205698802940457,,False,3,37,True,released replay window,True
+40,2018-03-01,PageHinkley,released RF aggregate error rate,0.19205698802940457,,False,3,37,True,released replay window,True
+41,2018-03-01,ADWIN,released RF aggregate error rate,0.06312111578887075,,False,3,38,True,released replay window,True
+41,2018-03-01,PageHinkley,released RF aggregate error rate,0.06312111578887075,,False,3,38,True,released replay window,True
+42,2018-03-01,ADWIN,released RF aggregate error rate,0.434859028624722,,False,3,39,True,released replay window,True
+42,2018-03-01,PageHinkley,released RF aggregate error rate,0.434859028624722,,False,3,39,True,released replay window,True
+43,2018-03-01,ADWIN,released RF aggregate error rate,0.2311903309314558,,False,3,40,True,released replay window,True
+43,2018-03-01,PageHinkley,released RF aggregate error rate,0.2311903309314558,,False,3,40,True,released replay window,True
+44,2018-03-02,ADWIN,released RF aggregate error rate,0.0035366931918656055,,False,3,41,True,released replay window,True
+44,2018-03-02,PageHinkley,released RF aggregate error rate,0.0035366931918656055,,False,3,41,True,released replay window,True
+45,2018-03-02,ADWIN,released RF aggregate error rate,0.3351550724815273,,False,3,42,True,released replay window,True
+45,2018-03-02,PageHinkley,released RF aggregate error rate,0.3351550724815273,,False,3,42,True,released replay window,True
+46,2018-03-02,ADWIN,released RF aggregate error rate,0.0030907558302894073,,False,3,43,True,released replay window,True
+46,2018-03-02,PageHinkley,released RF aggregate error rate,0.0030907558302894073,,False,3,43,True,released replay window,True
+47,2018-03-02,ADWIN,released RF aggregate error rate,0.23125812954252636,,False,3,44,True,released replay window,True
+47,2018-03-02,PageHinkley,released RF aggregate error rate,0.23125812954252636,,False,3,44,True,released replay window,True
+48,2018-03-02,ADWIN,released RF aggregate error rate,0.17156269828680204,,False,3,45,True,released replay window,True
+48,2018-03-02,PageHinkley,released RF aggregate error rate,0.17156269828680204,,False,3,45,True,released replay window,True

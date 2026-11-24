@@ -12,6 +12,7 @@ from src.drift.drift_evaluation import evaluate
 from src.drift.run_synthetic import write
 from src.drift.drift_state import DetectorState
 from src.drift.label_availability import LabelSchedule
+from src.drift.signal_registry import historical_availability
 
 NATIVE_WARMUP={'ADWIN':10,'PageHinkley':30,'KSWIN':100,'DDM':30}
 
@@ -219,12 +220,11 @@ def agreements(output):
                     raw_second=event_clock[scenario,seed,b]
                     episode_rows.append({'scenario':scenario,'seed':seed,'first':a,'second':b,'interval_unit':'known change episode',**agreement([any(e<=i<e+512 for i in raw_first) for e in events],[any(e<=i<e+512 for i in raw_second) for e in events])})
     history=defaultdict(lambda:defaultdict(dict))
-    updates=defaultdict(int)
-    for r in read_table('reports/phase11_historical/historical_alerts.csv'):
-        stream=r['signal'],r['label_delay'],r['detector']
-        updates[stream]+=1
-        if r['evaluation']!='True' or r['detector'] in ('KSWIN','support_check') or updates[stream]<NATIVE_WARMUP.get(r['detector'],0):continue
-        history[r['signal'],r['label_delay']][r['detector']][int(r['batch'])]=r['alert']=='True'
+    eligible_history=historical_availability(read_table('reports/phase11_historical/historical_alerts.csv'),NATIVE_WARMUP)
+    write(output/'historical_eligible_alerts.csv',eligible_history)
+    for r in eligible_history:
+        if not r['available'] or r['detector'] in ('KSWIN','support_check'):continue
+        history[r['signal'],r['label_delay']][r['detector']][int(r['batch'])]=r['alert']
     for (signal,delay),detectors in history.items():
         for a,b in combinations(sorted(detectors),2):
             indices=sorted(set(detectors[a])&set(detectors[b]));first=[detectors[a][i] for i in indices];second=[detectors[b][i] for i in indices]
@@ -277,6 +277,21 @@ def engineering_costs(output):
         emission=(perf_counter()-tick)/10000
         rows.append({'detector':name,'snapshot_repeats':50,'median_snapshot_seconds':statistics.median(snapshots),'median_restore_seconds':statistics.median(restores),'serialized_bytes':len(payload),'duplicate_batch_checks':10000,'duplicate_seconds_per_check':duplicate,'duplicate_observation_clock_unchanged':True,'alert_record_copy_seconds_per_operation':emission,'cost_scope':'Trusted-state snapshot and alert metadata construction, not additional detection events','peak_process_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss})
     write(output/'engineering_costs.csv',rows)
+    frozen=json.loads(Path('reports/phase11_synthetic/frozen.json').read_text())
+    distribution_rows=[]
+    for index,name in enumerate(('JS','PSI')):
+        state={'reference_bins':frozen['reference_bins'],'reference_counts':frozen['reference_counts'],'threshold':frozen[name],'smoothing':1e-6}
+        snapshots=[];restores=[]
+        for _ in range(50):
+            tick=perf_counter();payload=json.dumps(state).encode();snapshots.append(perf_counter()-tick)
+            tick=perf_counter();opened=json.loads(payload);restores.append(perf_counter()-tick)
+        probes=[state['reference_counts'],[64]+[0]*9,[0]*9+[64]]
+        for probe in probes:
+            before=divergences(state['reference_counts'],probe)[index]
+            after=divergences(opened['reference_counts'],probe)[index]
+            assert before==after and (before>state['threshold'])==(after>opened['threshold'])
+        distribution_rows.append({'detector':name,'serialization':'JSON reference state','serialized_bytes':len(payload),'median_snapshot_seconds':statistics.median(snapshots),'median_restore_seconds':statistics.median(restores),'reload_probes':len(probes),'status':'PASS','scope':'Frozen bins, reference counts, threshold and smoothing; current window buffer excluded'})
+    write(output/'distribution_state_costs.csv',distribution_rows)
 
 
 def native_support(output):

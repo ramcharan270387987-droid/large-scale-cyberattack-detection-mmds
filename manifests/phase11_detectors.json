@@ -221,7 +221,7 @@
       ],
       "unsupported_populations": [],
       "computational_evidence": [
-        "reports/phase11_synthetic/synthetic_metrics.csv"
+        "reports/phase11_finalization/distribution_state_costs.csv"
       ],
       "interpretation": "monitoring evidence without attack confirmation or future adaptation efficacy"
     },
@@ -263,7 +263,7 @@
       ],
       "unsupported_populations": [],
       "computational_evidence": [
-        "reports/phase11_synthetic/synthetic_metrics.csv"
+        "reports/phase11_finalization/distribution_state_costs.csv"
       ],
       "interpretation": "monitoring evidence without attack confirmation or future adaptation efficacy"
     }
