@@ -9,5 +9,12 @@
     "python -m unittest discover -s tests -p test_phase10_patterns.py -v",
     "python -m unittest discover -s tests -p test_phase10_metrics.py -v"
   ],
-  "limitation": "Full Stage A output reconciliation remains pending."
+  "limitation": "Full Stage A output reconciliation remains pending.",
+  "full_regression": {
+    "passed": 82,
+    "seconds": 115.818,
+    "spark_version": "4.3.0",
+    "command": "python -m unittest discover -s tests -v",
+    "log_sha256": "f92acba20b32dfcfb1e00422413cb3d8368fffaa7c2d19a9aaba84e62f650d92"
+  }
 }
