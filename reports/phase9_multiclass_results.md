@@ -7,6 +7,7 @@ The study remains incomplete. Only retrieved and validated stages below support 
 | A | 2 | rf_capped_10 | 364120 | 0.7405058771833462 | 0.6332995121619363 | 332.7 |
 | B | 7 | lr_inverse | 0 | None | None | 331.1 |
 | Bot | 9 | rf_capped_10 | 314058 | 0.6819695724993473 | 0.6109909863277436 | 305.6 |
+| Infiltration | 10 | rf_capped_10 | 300984 | 0.7441757701406054 | 0.7665923841550745 | 449.1 |
 
 Zero known-family chronological support means closed-set chronological classification is unsupported. Unknown-family rejection remains a separate result.
 
