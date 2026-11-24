@@ -1,8 +1,14 @@
 """Bounded deterministic group-sample FP-Growth benchmarks."""
 import json,argparse
+import subprocess
+import sys
+from tempfile import TemporaryDirectory
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('output',type=Path);a=p.parse_args()
-n=json.loads(Path('/tmp/phase10-stageB/phase10.ipynb').read_text())
+with TemporaryDirectory(prefix='phase10-benchmark-build-') as temporary:
+ source=Path(temporary)/'mining.ipynb'
+ subprocess.run([sys.executable,str(Path(__file__).with_name('build_phase10_mining.py')),str(source)],check=True)
+ n=json.loads(source.read_text())
 n['cells'][0]['source']=['# Phase 10 bounded computational benchmarks']
 code=''.join(n['cells'][-1]['source'])
 code=code.replace("out=Path('/kaggle/working/mmds_phase10_mining')","out=Path('/kaggle/working/mmds_phase10_benchmarks')")

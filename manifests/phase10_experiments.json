@@ -128,16 +128,45 @@
     }
   },
   "pending": [
-    "Stage A output validation",
-    "Domain discretization sensitivity",
-    "Full-population FP-Growth",
-    "Association rules",
-    "Contrast and family patterns",
-    "Temporal evolution",
-    "Chronological detection",
-    "Robustness and computational benchmarks",
-    "Persistence and reload validation",
-    "Figures and dashboard",
-    "Full regression suite"
-  ]
+    "Retrieve and validate already-running Kaggle version 4 computational benchmarks",
+    "Consolidated report and final evidence hashes"
+  ],
+  "reconciliation": {
+    "Stage A output validation": {
+      "status": "COMPLETE AND VERIFIED"
+    },
+    "Domain discretization sensitivity": {
+      "status": "COMPLETE AND VERIFIED"
+    },
+    "Full-population FP-Growth": {
+      "status": "COMPLETE AND VERIFIED"
+    },
+    "Association rules": {
+      "status": "COMPLETE AND VERIFIED"
+    },
+    "Contrast and family patterns": {
+      "status": "COMPLETE AND VERIFIED"
+    },
+    "Temporal evolution": {
+      "status": "COMPLETE AND VERIFIED"
+    },
+    "Chronological detection": {
+      "status": "COMPLETE AND VERIFIED"
+    },
+    "Robustness and computational benchmarks": {
+      "status": "PARTIALLY COMPLETE"
+    },
+    "Persistence and reload validation": {
+      "status": "COMPLETE AND VERIFIED",
+      "evidence": "reports/phase10_validation/independent_reload.json"
+    },
+    "Figures and dashboard": {
+      "status": "COMPLETE AND VERIFIED",
+      "evidence": "32 preview combinations, charts, downloads and empty-rule state validated with Streamlit AppTest"
+    },
+    "Full regression suite": {
+      "status": "COMPLETE AND VERIFIED",
+      "evidence": "77 research tests and 8 existing dashboard regression tests passed"
+    }
+  }
 }
