@@ -1,0 +1,26 @@
+{
+  "schema": "phase11-experiments-v1",
+  "protocol_version": "phase11-v1",
+  "starting_git_sha": "901a9f33954653cf6b327aa366700d7b91d997da",
+  "complete": false,
+  "stages": {
+    "11A": {
+      "status": "COMPLETE AND VERIFIED",
+      "receipt": "reports/phase11_validation/compatibility.json",
+      "receipt_sha256": "38138edb74f88a94d9b3c802bbd964bdefe7d5c1ad443c4a15cbb75220afec51",
+      "focused_tests": 3
+    },
+    "11B": {
+      "status": "RUNNING",
+      "local_log": "/tmp/phase11-synthetic.log",
+      "kaggle_notebook": "ramcharan2345/mmds-phase-11-advanced-drift-detection"
+    }
+  },
+  "pending": [
+    "11B retrieved and validated experiments",
+    "11C historical monitoring",
+    "11D sensitivity, ablations and performance",
+    "11E figures, report, full regressions and finalization"
+  ],
+  "phase12_started": false
+}

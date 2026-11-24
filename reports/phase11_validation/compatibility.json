@@ -1,0 +1,36 @@
+{
+  "river_version": "0.22.0",
+  "apis": {
+    "ADWIN": "(delta=0.002, clock=32, max_buckets=5, min_window_length=5, grace_period=10)",
+    "PageHinkley": "(min_instances: 'int' = 30, delta: 'float' = 0.005, threshold: 'float' = 50.0, alpha: 'float' = 0.9999, mode: 'str' = 'both')",
+    "KSWIN": "(alpha: 'float' = 0.005, window_size: 'int' = 100, stat_size: 'int' = 30, seed: 'int | None' = None, window: 'typing.Iterable | None' = None)",
+    "DDM": "(warm_start: 'int' = 30, warning_threshold: 'float' = 2.0, drift_threshold: 'float' = 3.0)"
+  },
+  "state_checks": {
+    "ADWIN": {
+      "state_bytes": 2139,
+      "restored_observations": 4096,
+      "parity": "PASS",
+      "duplicate_batch": "PASS"
+    },
+    "PageHinkley": {
+      "state_bytes": 521,
+      "restored_observations": 4096,
+      "parity": "PASS",
+      "duplicate_batch": "PASS"
+    },
+    "KSWIN": {
+      "state_bytes": 5102,
+      "restored_observations": 4096,
+      "parity": "PASS",
+      "duplicate_batch": "PASS"
+    },
+    "DDM": {
+      "state_bytes": 417,
+      "restored_observations": 4096,
+      "parity": "PASS",
+      "duplicate_batch": "PASS"
+    }
+  },
+  "tests_passed": 3
+}
