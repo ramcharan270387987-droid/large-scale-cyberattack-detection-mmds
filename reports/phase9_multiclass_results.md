@@ -13,4 +13,4 @@ The study remains incomplete. Only retrieved and validated stages below support 
 
 Zero known-family chronological support means closed-set chronological classification is unsupported. Unknown-family rejection remains a separate result.
 
-Pending work includes remaining holdouts, archived-gate hierarchical scoring, robustness, complete novelty persistence and final research interpretation.
+All four family holdouts are complete and validated. Archived-gate hierarchical scoring, remaining robustness checks, novelty-model persistence and final research interpretation are pending.
