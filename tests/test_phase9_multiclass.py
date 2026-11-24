@@ -2,6 +2,7 @@
 import unittest
 from src.ml.phase9_label_registry import target, vocabulary, UNKNOWN
 from src.ml.open_set_rejection import cutoff, uncertainty
+from src.ml.phase9_evaluation import multiclass
 
 
 class Phase9Contracts(unittest.TestCase):
@@ -24,3 +25,12 @@ class Phase9Contracts(unittest.TestCase):
         self.assertEqual(threshold, .8)
         self.assertLessEqual(sum(n for x,n in histogram.items() if x > threshold)/100, .05)
         self.assertEqual(cutoff(histogram, 0), .9)
+
+    def test_multiclass_denominators(self):
+        metrics, families = multiclass({(0,0):8,(0,1):2,(1,1):5,(1,0):5},range(3))
+        self.assertEqual(metrics['rows'],20)
+        self.assertAlmostEqual(metrics['accuracy'],.65)
+        self.assertAlmostEqual(metrics['balanced_accuracy'],.65)
+        self.assertEqual(families[2]['support'],0)
+        self.assertIsNone(families[2]['recall'])
+        self.assertIsNone(multiclass({},range(2))[0]['accuracy'])

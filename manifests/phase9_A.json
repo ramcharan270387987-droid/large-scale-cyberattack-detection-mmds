@@ -1,0 +1,112 @@
+{
+  "status": "validated",
+  "scenario": "A",
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "classes": {
+    "Bot": 0,
+    "Credential brute force": 1,
+    "DDoS": 2,
+    "DoS": 3,
+    "Infiltration": 4,
+    "Web attack": 5
+  },
+  "training_support": {
+    "Web attack": 634,
+    "DoS": 479941,
+    "Infiltration": 116242,
+    "Bot": 205917,
+    "DDoS": 885772,
+    "Credential brute force": 341040
+  },
+  "sample_support": {
+    "Web attack": 44,
+    "DoS": 22380,
+    "Infiltration": 6207,
+    "Bot": 13940,
+    "DDoS": 56636,
+    "Credential brute force": 4989
+  },
+  "overlap": {
+    "groups": 0,
+    "rows": 0
+  },
+  "model": "rf_capped_10",
+  "registry": {
+    "artifact": "models/rf_capped_10",
+    "reload_probe_rows": 3,
+    "preprocessing_stages": [
+      "ImputerModel",
+      "VectorAssembler",
+      "StandardScalerModel"
+    ],
+    "bytes": 43776,
+    "sha256": {
+      "metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "metadata/part-00000-02e0a045-2d9c-4495-bc20-698c079c0ff8-c000.txt": "7704b5d338a4c063afe1594c4545bce718d5c02eaa4bf257eacc638332edf36d",
+      "stages/0_Imputer_945cc28a31f5/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/0_Imputer_945cc28a31f5/data/part-00000-19a3e617-dee0-4443-8609-27987f7003ff-c000.snappy.parquet": "bf0ddbe87fa81e0cd05ef3bc909f8cbd829780af4bf5735110273e73f1d5fc38",
+      "stages/0_Imputer_945cc28a31f5/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/0_Imputer_945cc28a31f5/metadata/part-00000-2ff8d4bd-894b-4e91-913f-0009e3c4fa26-c000.txt": "597d377c4e769ffa8adeba5374e194c84152e3a583828ac12b8d54fa4dbb3170",
+      "stages/1_VectorAssembler_b84cc6f02bae/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/1_VectorAssembler_b84cc6f02bae/metadata/part-00000-b4494b3d-36d1-4feb-b84c-426a6accc4e0-c000.txt": "1e61d352a7eb225449ce44a85b4ae9bebad009f555a7f82b913fea9f7ab37a92",
+      "stages/2_StandardScaler_6f62a42734de/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/2_StandardScaler_6f62a42734de/data/part-00000-d195a0f1-a53c-49d6-aa04-8677cb265233-c000.snappy.parquet": "f1bddaac24d72e6c9c0f048afd4acaaf20825a198bb4c687b11a969bcbe66891",
+      "stages/2_StandardScaler_6f62a42734de/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/2_StandardScaler_6f62a42734de/metadata/part-00000-a6a2213c-046c-449d-b2c9-2f8a869fd095-c000.txt": "22d0d233bf1ad09c76236902201353d7cd0aa88a6027ae0ae2ad349ce21523e1",
+      "stages/3_RandomForestClassifier_ee573c13dcfe/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/3_RandomForestClassifier_ee573c13dcfe/data/part-00000-5e9c99b7-2894-4e7a-a6d0-194a19d0e411-c000.snappy.parquet": "aa5aa04326748abf63815f010c72791cb927136bfbb379d31c173bb13f13f387",
+      "stages/3_RandomForestClassifier_ee573c13dcfe/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/3_RandomForestClassifier_ee573c13dcfe/metadata/part-00000-ff55ecb0-7542-43a5-96ba-4bd4ff460922-c000.txt": "cb0ec07dafca09eb12e6b040b6b9543c55b6d82338fdfb937f5cc81477463e21",
+      "stages/3_RandomForestClassifier_ee573c13dcfe/treesMetadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/3_RandomForestClassifier_ee573c13dcfe/treesMetadata/part-00000-bbb3b6f9-e5b6-480d-bd8d-ca3772c56ad5-c000.snappy.parquet": "53723b518c39bc238603933fe79d29d761b2c7f25ca03d18a87e05067d83a5ba"
+    }
+  },
+  "seconds": 332.68090060400004,
+  "test": {
+    "rows": 364120,
+    "accuracy": 0.7405058771833462,
+    "macro_precision": 0.7244094984972623,
+    "macro_recall": 0.6810624116792945,
+    "macro_f1": 0.6332995121619363,
+    "balanced_accuracy": 0.6810624116792945,
+    "weighted_f1": 0.7465554191562972
+  },
+  "kernel_version": 2,
+  "kernel_url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-9-multiclass-open-set-classification",
+  "worker_status": "COMPLETE",
+  "log_sha256": "e91ead831c8cb5ca881afa37f8592bcf0a938f04779a789a31a4f74082826fe6",
+  "source_sha256": "48817f4c0ef143639205d147cc3bb716d97dbd9e5145ccbbba94a6488f282770",
+  "tables_sha256": {
+    "phase9_per_family.csv": "8e8d9ac783c86dc5f6add875414a7d93b9c7e21c982a604ed451ca0d4a4997d2",
+    "phase9_frozen.json": "0d0272010a57466e0996deca3c0d5dfadf80ef338a0c73e51348453fd56e17e2",
+    "phase9_closed_set_metrics.csv": "ee232faa2dc60fbb159f97a5556e432fd9997ab15aabb0ed02319d3ffcf5a810",
+    "phase9_family_confusion.csv": "d4239597d0b1273c1d11c5af53b0c4ecaf1d0d585cf45915ec6a10648d78d85e"
+  }
+}
