@@ -748,9 +748,98 @@
           "known_family_macro_f1": null
         }
       }
+    },
+    "C": {
+      "status": "validated",
+      "worker_status": "COMPLETE",
+      "kernel_version": 13,
+      "log_sha256": "3f34a6f11ce48164940976b7c0e87b93082a183183b6d9873de6ebb6b5eebd33",
+      "notebook_sha256": "509160d15acf1f49fd6519602a6d1d81c0b50047a93e56b5a980c522a95be089",
+      "artifacts": {
+        "reports/phase9_hierarchy/C/phase9_hierarchical_receipt.json": "320f88ddf894903e7f6516ffb6eb37c13f90d99a0677d8210d92489842761679",
+        "reports/phase9_hierarchy/C/phase9_hierarchical_counts.csv": "61067af52b572339e49447976e986e8e3314e835accf37693139b534fef6513b",
+        "reports/phase9_hierarchy/C/phase8_split_diagnostics.csv": "586ae5c9ade10d4552e48c1d43777b66e500751fec6a90e57b36110ae378d5e8",
+        "reports/phase9_hierarchy/C/family/phase9_summary.json": "2701cb468f6501a6d0bb179a23e47dd4457efbcb3139b8fda1773750be602609",
+        "reports/phase9_hierarchy/C/family/phase9_frozen.json": "dcd5ded7bfefb7b99dd8b7ab73a837499c773bce727368177727dc49c84c443a",
+        "reports/phase9_hierarchy/C/family/phase9_rejection_frozen.json": "11ecd75f87415453df7d24bfc228f84ffda85e16d2754c85d89fbb52ffebb74c",
+        "reports/phase9_hierarchy/C/family/phase9_novelty_registry.json": "279f4eb0da6d88dedac4917e23d241b82f02c8881e407d83f76133e088773a5c",
+        "reports/phase9_hierarchy/C/family/phase9_closed_set_metrics.csv": "cc48fd176f4d047ffd11332363f70ebd7fea0e518d1f8e466ec9c42d0c40eddf",
+        "reports/phase9_hierarchy/C/family/phase9_per_family.csv": "f83522c9c816678e0b08d8f8fc50b8c643f1536b08adeeb4137137f4abc8514a",
+        "reports/phase9_hierarchy/C/family/phase9_open_set_metrics.csv": "e63ff82780cc802eeed934265b76d709d76815c89593b34c524da7bf9a09e077"
+      },
+      "results": {
+        "phase4_rf": {
+          "counts": {
+            "missed_attack": 642,
+            "unknown_false_accept": 16,
+            "correct_benign": 1445591,
+            "benign_false_alarm": 11969
+          },
+          "rows": 1458218,
+          "supported_target_macro_f1": 0.49782852978845255,
+          "accuracy": 0.9913408008953394,
+          "review_rows": 1544,
+          "automatic_coverage": 0.9989411734047996,
+          "unknown_rejection_recall": 0.0,
+          "conditional_unknown_rejection_recall": 0.0,
+          "known_family_recall": null,
+          "known_family_macro_f1": null
+        },
+        "phase8_supervised": {
+          "counts": {
+            "missed_attack": 658,
+            "correct_benign": 1457541,
+            "benign_false_alarm": 19
+          },
+          "rows": 1458218,
+          "supported_target_macro_f1": 0.4998839067289169,
+          "accuracy": 0.9995357347118194,
+          "review_rows": 0,
+          "automatic_coverage": 1.0,
+          "unknown_rejection_recall": 0.0,
+          "conditional_unknown_rejection_recall": null,
+          "known_family_recall": null,
+          "known_family_macro_f1": null
+        },
+        "phase8_hybrid": {
+          "counts": {
+            "unknown_false_accept": 108,
+            "missed_attack": 550,
+            "correct_benign": 1449945,
+            "benign_false_alarm": 7615
+          },
+          "rows": 1458218,
+          "supported_target_macro_f1": 0.4985961407194843,
+          "accuracy": 0.994326637032323,
+          "review_rows": 452,
+          "automatic_coverage": 0.9996900326288662,
+          "unknown_rejection_recall": 0.0,
+          "conditional_unknown_rejection_recall": 0.0,
+          "known_family_recall": null,
+          "known_family_macro_f1": null
+        },
+        "oracle": {
+          "counts": {
+            "unknown_false_accept": 649,
+            "correct_benign": 1457560,
+            "unknown_rejected": 9
+          },
+          "rows": 1458218,
+          "supported_target_macro_f1": 0.5134932533733133,
+          "accuracy": 0.9995549362303853,
+          "review_rows": 9,
+          "automatic_coverage": 0.9999938280833182,
+          "unknown_rejection_recall": 0.013677811550151976,
+          "conditional_unknown_rejection_recall": 0.013677811550151976,
+          "known_family_recall": null,
+          "known_family_macro_f1": null
+        }
+      }
     }
   },
   "extended_figures_sha256": {
-    "figures/phase9_hierarchical_attack_outcomes.png": "585a38efd928f7b6a2eca0adf92c2548dbb4c236080f0e4ddf7711c499bcfe71"
+    "figures/phase9_hierarchical_attack_outcomes.png": "642651c9a130b2461064079ea516b3ffbc26595c78e22ec08ae9936e6dea20e4",
+    "figures/phase9_macro_f1_runtime.png": "011b2c542bff04d7aa5ae0edfe1f92a4e2a69a0e5c65d308e0ee0b9c16f15454",
+    "figures/phase9_grouped_random_family_precision_recall.png": "12ecd28e2ef6daed67417c0e402e973367267bf6defffcfd3b19bc95f9625acd"
   }
 }

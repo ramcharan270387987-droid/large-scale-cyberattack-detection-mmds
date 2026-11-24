@@ -1,0 +1,92 @@
+{
+  "status": "validated",
+  "scenario": "C",
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "classes": {
+    "Credential brute force": 0,
+    "DDoS": 1,
+    "DoS": 2
+  },
+  "training_support": {
+    "DoS": 527802,
+    "DDoS": 1072146,
+    "Credential brute force": 287265
+  },
+  "sample_support": {
+    "DoS": 32567,
+    "DDoS": 68062,
+    "Credential brute force": 9434
+  },
+  "overlap": {
+    "groups": 142016,
+    "rows": 2547596
+  },
+  "model": "rf_unweighted",
+  "registry": {
+    "artifact": "models/rf_unweighted",
+    "reload_probe_rows": 3,
+    "preprocessing_stages": [
+      "ImputerModel",
+      "VectorAssembler",
+      "StandardScalerModel"
+    ],
+    "bytes": 25305,
+    "sha256": {
+      "metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "metadata/part-00000-4cb3317b-bc13-4ada-b312-3e8aa9ec1ab5-c000.txt": "1379f6b7aba7f473bb8aedda094a491ac94b4c76b5341c35db79ac80d05728ac",
+      "stages/0_Imputer_2c63d8a42a91/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/0_Imputer_2c63d8a42a91/data/part-00000-0677f462-6904-477a-9e5b-9af1befe1f5d-c000.snappy.parquet": "fd8ccdafbd9b6a12ccf77e7c7f927257a47f965ab04812115b6ec448feb18acf",
+      "stages/0_Imputer_2c63d8a42a91/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/0_Imputer_2c63d8a42a91/metadata/part-00000-00da4179-8a0e-4373-9d08-93a799a9e217-c000.txt": "104e79973fa82717987b9269dd24d12b1ac37aac6331a88812d2929596951efa",
+      "stages/1_VectorAssembler_639af0248001/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/1_VectorAssembler_639af0248001/metadata/part-00000-87bd6b45-8373-4623-81f7-34f258500695-c000.txt": "01c9d51576a6e5bb48b1190e4a7301fab9804a4916b246226b142341161c74fe",
+      "stages/2_StandardScaler_f79516cbcc1a/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/2_StandardScaler_f79516cbcc1a/data/part-00000-98d610f5-4346-4dda-b32b-2610b6e7e6ad-c000.snappy.parquet": "d01ef4a32261347fe0374c502eb2e3bcc4ccc0be011e4eb0eae8bfaaf1b1833c",
+      "stages/2_StandardScaler_f79516cbcc1a/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/2_StandardScaler_f79516cbcc1a/metadata/part-00000-022c3c2f-78bd-453a-8956-da4d36b50372-c000.txt": "0044a053fdbc9273389ef9ee5b8f1e9e412b8c733918ef810d9fcd49ed1cac70",
+      "stages/3_RandomForestClassifier_06a00d84f99a/data/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/3_RandomForestClassifier_06a00d84f99a/data/part-00000-8e9d9f28-fcd2-4be8-aed9-91c6fec51579-c000.snappy.parquet": "881d96f853e5b1499bb83624d7a46e181c575777cb0295fb45f1d838266d6d64",
+      "stages/3_RandomForestClassifier_06a00d84f99a/metadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/3_RandomForestClassifier_06a00d84f99a/metadata/part-00000-c64da3cc-d289-4916-b02f-c1a61444cee5-c000.txt": "d874686062249ff0924194e663efe48d1da0841ff3724fdf4698f4907f62ae12",
+      "stages/3_RandomForestClassifier_06a00d84f99a/treesMetadata/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stages/3_RandomForestClassifier_06a00d84f99a/treesMetadata/part-00000-ecf6adf5-e2b4-4312-ae92-237fce7431d9-c000.snappy.parquet": "0c7e57917b57c2be2ab9931080e911e752d71eaf46a2509fd1d77511c021c1ab"
+    }
+  },
+  "seconds": 387.32286782799997,
+  "test": {
+    "rows": 0,
+    "accuracy": null,
+    "macro_precision": null,
+    "macro_recall": null,
+    "macro_f1": null,
+    "balanced_accuracy": null,
+    "weighted_f1": null
+  }
+}

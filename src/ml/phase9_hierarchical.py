@@ -49,8 +49,6 @@ def run(project, input_root, archives, output, scratch):
         require(support == phase9["training_support"] and classes == phase9["classes"], "Family training support differs")
         require(names == phase8["feature_order"], "Binary gate feature order differs")
         base = phase8["base"]
-        winner = phase8["selected_hybrid"]
-        bins = phase8["bins"]
         rf_meta = next(m for m in phase4["protocols"]["B"]["models"]
                        if m["model"] == "random_forest" and m["training_cohort"] == "group_sample")
         rf = verified_model(spark, archives / "rf", rf_meta["sha256"], names)
@@ -68,53 +66,93 @@ def run(project, input_root, archives, output, scratch):
                          for p in (archives / "family").rglob("*") if p.is_file()}
         require(actual_hashes == phase9["registry"]["sha256"], "Family model checksum differs")
 
-        test = active.where("split_rank = 2")
-        scored = model_score(test, rf, "phase4_rf")
-        scored = fusion_columns(encode_columns(scored, {base: supervised}, km, phase8["reference_grid"], base,
-                                               phase8["calibration"], bins), config, phase8["gates"], phase8["learned"])
-        scored = family.transform(scored).select("source_day", "binary_label", "attack_family", "prediction",
-                                                vector_to_array("probability").alias("family_scores"),
-                                                "phase4_rf", "supervised", winner)
-        ordered = F.reverse(F.array_sort("family_scores"))
-        known = F.col("attack_family").isin(list(classes))
-        labels = F.array(*[F.lit(name) for name in classes])
-        predicted = F.element_at(labels, F.col("prediction").cast("int") + 1)
-        uncertainty = 1 - ordered[0]
-        rejected = F.floor(uncertainty * 2048) > thresholds["maximum"]["0.05"]
-        attack = F.col("binary_label") == 1
-        gated = scored.select("source_day", "binary_label", "attack_family", known.alias("known"),
-                              predicted.alias("family_prediction"), rejected.alias("rejected"),
-                              (F.col("phase4_rf") >= design["threshold"]).alias("phase4_rf"),
-                              (bucket(F.col("supervised"), bins) >= phase8["operating_bins"]["supervised"]).alias("phase8_supervised"),
-                              (bucket(F.col(winner), bins) >= phase8["operating_bins"][winner]).alias("phase8_hybrid"),
-                              attack.alias("oracle")).persist(StorageLevel.DISK_ONLY)
-        counts = []
-        for name in ("phase4_rf", "phase8_supervised", "phase8_hybrid", "oracle"):
-            gate = F.col(name)
-            outcome = (F.when(~attack & ~gate, "correct_benign").when(~attack, "benign_false_alarm")
-                       .when(~gate, "missed_attack").when(F.col("known") & F.col("rejected"), "known_rejected")
-                       .when(F.col("known") & (F.col("attack_family") == F.col("family_prediction")), "known_correct")
-                       .when(F.col("known"), "known_incorrect").when(F.col("rejected"), "unknown_rejected")
-                       .otherwise("unknown_false_accept"))
-            decision = F.when(~gate, "Benign").when(F.col("rejected"), "UNKNOWN").otherwise(F.col("family_prediction"))
-            rows = gated.select("source_day", "binary_label", "attack_family", outcome.alias("outcome"),
-                                decision.alias("decision")).groupBy("source_day", "binary_label", "attack_family",
-                                                                    "outcome", "decision").count().collect()
-            counts.extend({"gate": name, **row.asDict()} for row in rows)
-        write_rows(output / "phase9_hierarchical_counts.csv", counts)
-        expected = test.count()
-        totals = {name: sum(r["count"] for r in counts if r["gate"] == name)
-                  for name in ("phase4_rf", "phase8_supervised", "phase8_hybrid", "oracle")}
-        require(set(totals.values()) == {expected}, "Hierarchical rows do not reconcile")
-        require(not any(r["binary_label"] and r["attack_family"] in classes for r in counts),
-                "Chronological B unexpectedly contains known attacks")
-        atomic_json(output / "phase9_hierarchical_receipt.json",
-                    {"status": "validated", "population": "B", "input": source, "split": split,
-                     "classes": classes, "features": names, "gate_rows": totals,
-                     "rejection_method": "maximum", "rejection_budget": 0.05,
-                     "rejection_bin": thresholds["maximum"]["0.05"],
-                     "resources": resource_limits(spark, config, output),
-                     "driver_peak_rss_bytes": driver_peak_bytes(spark), "elapsed_seconds": monotonic() - start})
-        print("PHASE9 hierarchical B complete", flush=True)
+        score_hierarchy(spark, active, rf, supervised, km, family, classes, names, phase8, config,
+                        design, thresholds, source, split, output, start, "B")
     finally:
         spark.stop()
+
+def score_hierarchy(spark, active, rf, supervised, km, family, classes, names, phase8, config,
+                    design, thresholds, source, split, output, start, population):
+    """Score a fixed binary test population with a separately frozen family stage."""
+    base = phase8["base"]
+    winner = phase8["selected_hybrid"]
+    bins = phase8["bins"]
+    test = active.where("split_rank = 2")
+    scored = model_score(test, rf, "phase4_rf")
+    scored = fusion_columns(encode_columns(scored, {base: supervised}, km, phase8["reference_grid"], base,
+                                           phase8["calibration"], bins), config, phase8["gates"], phase8["learned"])
+    scored = family.transform(scored).select("source_day", "binary_label", "attack_family", "prediction",
+                                            vector_to_array("probability").alias("family_scores"),
+                                            "phase4_rf", "supervised", winner)
+    ordered = F.reverse(F.array_sort("family_scores"))
+    known = F.col("attack_family").isin(list(classes))
+    labels = F.array(*[F.lit(name) for name in classes])
+    predicted = F.element_at(labels, F.col("prediction").cast("int") + 1)
+    uncertainty = 1 - ordered[0]
+    rejected = F.floor(uncertainty * 2048) > thresholds["maximum"]["0.05"]
+    attack = F.col("binary_label") == 1
+    gated = scored.select("source_day", "binary_label", "attack_family", known.alias("known"),
+                          predicted.alias("family_prediction"), rejected.alias("rejected"),
+                          (F.col("phase4_rf") >= design["threshold"]).alias("phase4_rf"),
+                          (bucket(F.col("supervised"), bins) >= phase8["operating_bins"]["supervised"]).alias("phase8_supervised"),
+                          (bucket(F.col(winner), bins) >= phase8["operating_bins"][winner]).alias("phase8_hybrid"),
+                          attack.alias("oracle")).persist(StorageLevel.DISK_ONLY)
+    counts = []
+    for name in ("phase4_rf", "phase8_supervised", "phase8_hybrid", "oracle"):
+        gate = F.col(name)
+        outcome = (F.when(~attack & ~gate, "correct_benign").when(~attack, "benign_false_alarm")
+                   .when(~gate, "missed_attack").when(F.col("known") & F.col("rejected"), "known_rejected")
+                   .when(F.col("known") & (F.col("attack_family") == F.col("family_prediction")), "known_correct")
+                   .when(F.col("known"), "known_incorrect").when(F.col("rejected"), "unknown_rejected")
+                   .otherwise("unknown_false_accept"))
+        decision = F.when(~gate, "Benign").when(F.col("rejected"), "UNKNOWN").otherwise(F.col("family_prediction"))
+        rows = gated.select("source_day", "binary_label", "attack_family", outcome.alias("outcome"),
+                            decision.alias("decision")).groupBy("source_day", "binary_label", "attack_family",
+                                                                "outcome", "decision").count().collect()
+        counts.extend({"gate": name, **row.asDict()} for row in rows)
+    write_rows(output / "phase9_hierarchical_counts.csv", counts)
+    expected = test.count()
+    totals = {name: sum(r["count"] for r in counts if r["gate"] == name)
+              for name in ("phase4_rf", "phase8_supervised", "phase8_hybrid", "oracle")}
+    require(set(totals.values()) == {expected}, "Hierarchical rows do not reconcile")
+    require(not any(r["binary_label"] and r["attack_family"] in classes for r in counts),
+            f"{population} unexpectedly contains known attacks")
+    atomic_json(output / "phase9_hierarchical_receipt.json",
+                {"status": "validated", "population": population, "input": source, "split": split,
+                 "classes": classes, "features": names, "gate_rows": totals,
+                 "rejection_method": "maximum", "rejection_budget": 0.05,
+                 "rejection_bin": thresholds["maximum"]["0.05"],
+                 "resources": resource_limits(spark, config, output),
+                 "driver_peak_rss_bytes": driver_peak_bytes(spark), "elapsed_seconds": monotonic() - start})
+    print(f"PHASE9 hierarchical {population} complete", flush=True)
+
+
+def run_c(project, input_root, archives, output):
+    """Fit the earlier-only C family stage and run the retrospective archive comparison."""
+    from src.ml.train_clustering import split_counts, verify_phase4_match
+    from src.ml.train_multiclass import run as train_family
+
+    start = monotonic()
+    phase4 = json_file(project, "manifests/phase4_models.json")
+    phase5 = json_file(project, "manifests/phase5_clustering_models.json")["experiments"]["C"]
+    phase8 = json_file(project, "manifests/phase8_models.json")["populations"]["C"]
+    config = json_file(project, "configs/phase8_hybrid_experiments.yaml")
+
+    def score(spark, active, names, design, source, family, classes, thresholds):
+        require(spark.version == "4.3.0" and names == phase8["feature_order"], "Unexpected runtime or features")
+        counts = split_counts(active)
+        verify_phase4_match(counts, "C", phase4)
+        purged = source["rows"] - sum(row["count"] for row in counts)
+        require(purged == phase4["protocols"]["C"]["overlap"]["purged_rows"], "C population differs")
+        write_rows(output / "phase8_split_diagnostics.csv", counts)
+        rf_meta = next(m for m in phase4["protocols"]["C"]["models"]
+                       if m["model"] == "random_forest" and m["training_cohort"] == "group_sample")
+        base = phase8["base"]
+        rf = verified_model(spark, archives / "rf", rf_meta["sha256"], names)
+        supervised = verified_model(spark, archives / "supervised", phase8["saved_pipelines"][base]["sha256"], names)
+        cluster = verified_model(spark, archives / "cluster", phase5["model"]["sha256"], names, "_valid", "_filled")
+        km = (PipelineModel(stages=cluster.stages[:-1]), cluster.stages[-1], phase5["calibration"]["cutoffs"]["0.99"])
+        score_hierarchy(spark, active, rf, supervised, km, family, classes, names, phase8, config,
+                        design, thresholds, source, {"purged_rows": purged}, output, start, "C")
+
+    train_family(project, input_root, output / "family", scenario="C", hierarchy=score)

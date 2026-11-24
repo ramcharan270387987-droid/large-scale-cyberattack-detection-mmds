@@ -1,0 +1,47 @@
+gate,source_day,binary_label,attack_family,outcome,decision,count
+phase4_rf,2018-02-22,1,Web attack,missed_attack,Benign,229
+phase4_rf,2018-02-22,1,Web attack,unknown_false_accept,DoS,4
+phase4_rf,2018-02-22,0,Benign,correct_benign,Benign,722564
+phase4_rf,2018-02-22,0,Benign,benign_false_alarm,Credential brute force,25
+phase4_rf,2018-02-22,0,Benign,benign_false_alarm,DoS,784
+phase4_rf,2018-02-22,1,Web attack,unknown_false_accept,DDoS,3
+phase4_rf,2018-02-22,0,Benign,benign_false_alarm,DDoS,4417
+phase4_rf,2018-02-22,0,Benign,benign_false_alarm,UNKNOWN,655
+phase4_rf,2018-02-23,1,Web attack,unknown_false_accept,DoS,5
+phase4_rf,2018-02-23,0,Benign,benign_false_alarm,DDoS,4306
+phase4_rf,2018-02-23,1,Web attack,unknown_false_accept,DDoS,4
+phase4_rf,2018-02-23,0,Benign,benign_false_alarm,Credential brute force,57
+phase4_rf,2018-02-23,1,Web attack,missed_attack,Benign,413
+phase4_rf,2018-02-23,0,Benign,benign_false_alarm,DoS,836
+phase4_rf,2018-02-23,0,Benign,benign_false_alarm,UNKNOWN,889
+phase4_rf,2018-02-23,0,Benign,correct_benign,Benign,723027
+phase8_supervised,2018-02-22,1,Web attack,missed_attack,Benign,236
+phase8_supervised,2018-02-22,0,Benign,correct_benign,Benign,728436
+phase8_supervised,2018-02-22,0,Benign,benign_false_alarm,DoS,9
+phase8_supervised,2018-02-23,1,Web attack,missed_attack,Benign,422
+phase8_supervised,2018-02-23,0,Benign,correct_benign,Benign,729105
+phase8_supervised,2018-02-23,0,Benign,benign_false_alarm,DoS,10
+phase8_hybrid,2018-02-22,1,Web attack,unknown_false_accept,Credential brute force,37
+phase8_hybrid,2018-02-22,1,Web attack,missed_attack,Benign,199
+phase8_hybrid,2018-02-22,0,Benign,correct_benign,Benign,724599
+phase8_hybrid,2018-02-22,0,Benign,benign_false_alarm,Credential brute force,308
+phase8_hybrid,2018-02-22,0,Benign,benign_false_alarm,DoS,2645
+phase8_hybrid,2018-02-22,0,Benign,benign_false_alarm,DDoS,637
+phase8_hybrid,2018-02-22,0,Benign,benign_false_alarm,UNKNOWN,256
+phase8_hybrid,2018-02-23,0,Benign,benign_false_alarm,DDoS,809
+phase8_hybrid,2018-02-23,1,Web attack,unknown_false_accept,Credential brute force,71
+phase8_hybrid,2018-02-23,0,Benign,benign_false_alarm,Credential brute force,355
+phase8_hybrid,2018-02-23,0,Benign,benign_false_alarm,DoS,2409
+phase8_hybrid,2018-02-23,1,Web attack,missed_attack,Benign,351
+phase8_hybrid,2018-02-23,0,Benign,benign_false_alarm,UNKNOWN,196
+phase8_hybrid,2018-02-23,0,Benign,correct_benign,Benign,725346
+oracle,2018-02-22,1,Web attack,unknown_false_accept,Credential brute force,107
+oracle,2018-02-22,1,Web attack,unknown_false_accept,DoS,24
+oracle,2018-02-22,0,Benign,correct_benign,Benign,728445
+oracle,2018-02-22,1,Web attack,unknown_rejected,UNKNOWN,4
+oracle,2018-02-22,1,Web attack,unknown_false_accept,DDoS,101
+oracle,2018-02-23,1,Web attack,unknown_false_accept,DoS,165
+oracle,2018-02-23,1,Web attack,unknown_false_accept,DDoS,118
+oracle,2018-02-23,1,Web attack,unknown_false_accept,Credential brute force,134
+oracle,2018-02-23,1,Web attack,unknown_rejected,UNKNOWN,5
+oracle,2018-02-23,0,Benign,correct_benign,Benign,729115

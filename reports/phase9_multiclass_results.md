@@ -13,4 +13,4 @@ The study remains incomplete. Only retrieved and validated stages below support 
 
 Zero known-family chronological support means closed-set chronological classification is unsupported. Unknown-family rejection remains a separate result.
 
-All four family holdouts are complete and validated. The [chronological B hierarchy](phase9_hierarchy/B/results.md) is validated. Hierarchical C scoring, remaining robustness checks, novelty-model persistence and final research interpretation are pending.
+All four family holdouts are complete and validated. The [chronological B](phase9_hierarchy/B/results.md) and [retrospective C](phase9_hierarchy/C/results.md) hierarchies are validated. Remaining robustness checks, novelty-model persistence for the original open-set scenarios and final research interpretation are pending.

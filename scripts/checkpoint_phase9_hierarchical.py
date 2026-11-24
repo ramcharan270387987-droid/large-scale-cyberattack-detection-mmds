@@ -1,4 +1,4 @@
-"""Verify and checkpoint the chronological B hierarchical run."""
+"""Verify and checkpoint an archived-gate hierarchical run."""
 import argparse
 import csv
 from collections import Counter
@@ -62,47 +62,65 @@ def summarize(rows):
     return result
 
 
-def expected_binary(root):
+def expected_binary(root, population):
     rows4 = table(root / "reports/phase4_metrics.csv")
     rows8 = table(root / "reports/phase8_model_comparison.csv")
     rf = next(row for row in rows4 if (row["protocol"], row["model"], row["training_cohort"], row["split"]) ==
-              ("B", "random_forest", "group_sample", "test"))
-    supervised = next(row for row in rows8 if row["population"] == "B" and row["method"] == "supervised")
-    hybrid = next(row for row in rows8 if row["population"] == "B" and row["selected_hybrid"] == "True")
+              (population, "random_forest", "group_sample", "test"))
+    supervised = next(row for row in rows8 if row["population"] == population and row["method"] == "supervised")
+    hybrid = next(row for row in rows8 if row["population"] == population and row["selected_hybrid"] == "True")
     return dict(zip(GATES, (rf, supervised, hybrid)))
 
 
-def checkpoint(root, version, log, notebook):
+def checkpoint(root, version, log, notebook, population):
     from kaggle_web_api import download_archive
 
-    if not re.search(r"PHASE9 hierarchical B complete", log.read_text(errors="replace")):
+    if not re.search(rf"PHASE9 hierarchical {population} complete", log.read_text(errors="replace")):
         raise ValueError("Missing successful end-of-stage log marker")
     with download_archive(version, 2 * 1024 * 1024) as archive:
         evidence = {name: archive.read(f"{ARCHIVE_ROOT}/{name}") for name in FILES}
+        if population == "C":
+            files = ("phase9_summary.json", "phase9_frozen.json", "phase9_rejection_frozen.json", "phase9_novelty_registry.json",
+                     "phase9_closed_set_metrics.csv", "phase9_per_family.csv", "phase9_open_set_metrics.csv")
+            evidence.update({f"family/{name}": archive.read(f"{ARCHIVE_ROOT}/family/{name}") for name in files})
+            classifier = json.loads(evidence["family/phase9_summary.json"])
+            novelty = json.loads(evidence["family/phase9_novelty_registry.json"])
+            if classifier["status"] != "validated" or classifier["scenario"] != "C":
+                raise ValueError("C classifier receipt differs")
+            for item in (classifier["registry"], novelty["registry"]):
+                for name, expected in item["sha256"].items():
+                    model = archive.read(f"{ARCHIVE_ROOT}/family/{item['artifact']}/{name}")
+                    if sha256(model).hexdigest() != expected:
+                        raise ValueError("C model checksum differs")
     receipt = json.loads(evidence[FILES[0]])
-    if (receipt["status"], receipt["population"]) != ("validated", "B"):
+    if (receipt["status"], receipt["population"]) != ("validated", population):
         raise ValueError("Unexpected worker receipt")
     rows = list(csv.DictReader(evidence[FILES[1]].decode().splitlines()))
     results = summarize(rows)
     if {gate: r["rows"] for gate, r in results.items()} != receipt["gate_rows"]:
         raise ValueError("Worker and independent gate totals differ")
-    for gate, previous in expected_binary(root).items():
+    for gate, previous in expected_binary(root, population).items():
         counts = Counter(results[gate]["counts"])
         actual = (counts["unknown_rejected"] + counts["unknown_false_accept"], counts["correct_benign"],
                   counts["benign_false_alarm"], counts["missed_attack"])
         if actual != tuple(int(previous[key]) for key in ("tp", "tn", "fp", "fn")):
             raise ValueError(f"Historical binary confusion differs for {gate}")
     oracle = Counter(results["oracle"]["counts"])
-    known_zero = json.loads((root / "manifests/phase9_B.json").read_text())["test"]["rows"]
+    family = classifier if population == "C" else json.loads((root / "manifests/phase9_B.json").read_text())
+    known_zero = family["test"]["rows"]
+    if family["classes"] != receipt["classes"]:
+        raise ValueError("Family vocabulary differs")
     if oracle["benign_false_alarm"] or oracle["missed_attack"] or known_zero:
         raise ValueError("Invalid chronological oracle accounting")
-    destination = root / "reports/phase9_hierarchy/B"
+    destination = root / "reports/phase9_hierarchy" / population
     destination.mkdir(parents=True, exist_ok=True)
     for name, payload in evidence.items():
-        (destination / name).write_bytes(payload)
+        target = destination / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(payload)
     manifest_path = root / "manifests/phase9_experiments.json"
     manifest = json.loads(manifest_path.read_text())
-    manifest.setdefault("hierarchy", {})["B"] = {
+    manifest.setdefault("hierarchy", {})[population] = {
         "status": "validated", "worker_status": "COMPLETE", "kernel_version": int(version.rsplit("/", 1)[-1]),
         "log_sha256": sha256(log.read_bytes()).hexdigest(), "notebook_sha256": sha256(notebook.read_bytes()).hexdigest(),
         "artifacts": {str((destination / name).relative_to(root)): sha256(payload).hexdigest()
@@ -118,5 +136,6 @@ if __name__ == "__main__":
     parser.add_argument("version")
     parser.add_argument("log", type=Path)
     parser.add_argument("notebook", type=Path)
+    parser.add_argument("--population", choices=("B", "C"), default="B")
     args = parser.parse_args()
-    checkpoint(Path(__file__).resolve().parents[1], args.version, args.log, args.notebook)
+    checkpoint(Path(__file__).resolve().parents[1], args.version, args.log, args.notebook, args.population)

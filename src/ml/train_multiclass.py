@@ -24,7 +24,18 @@ from src.streaming.model_scoring import probe
 from src.sql.traffic_analytics import locate_producer, write_rows
 
 
-def run(project, input_root, output, scenario='A'):
+def earlier_c_attacks(attacks, config):
+    """Keep the retained test cohort and split only earlier eligible training groups."""
+    cutoff_day = min(config['protocols']['C']['test'])
+    prior = attacks.where((F.col('split_rank') == 0) & (F.col('source_day') < cutoff_day)
+                          & (F.col('attack_family') != 'Web attack'))
+    prior_groups = F.pmod(F.xxhash64(F.lit(config['seed']), F.lit('phase9-C-calibration'),
+                                   F.col('predictor_key')), F.lit(10000))
+    prior = prior.withColumn('split_rank', F.when(prior_groups < 8500, 0).otherwise(1))
+    return prior.unionByName(attacks.where('split_rank == 2'))
+
+
+def run(project, input_root, output, scenario='A', hierarchy=None):
     output.mkdir(parents=True, exist_ok=True)
     config = json_file(project,'configs/ml_experiments.yaml')
     spark = spark_session(config,Path('/kaggle/temp/phase9/spark'))
@@ -44,7 +55,12 @@ def run(project, input_root, output, scenario='A'):
             unknown = assigned.where(F.col('attack_family') == withheld).withColumn('split_rank',F.lit(2))
             assigned = known.unionByName(unknown)
         active, overlap = retain(assigned)
-        attacks = active.where('binary_label = 1').persist(StorageLevel.DISK_ONLY)
+        attacks = active.where('binary_label = 1')
+        if scenario == 'C':
+            if hierarchy is None:
+                raise ValueError("C is reserved for the earlier-only hierarchical experiment")
+            attacks = earlier_c_attacks(attacks, config)
+        attacks = attacks.persist(StorageLevel.DISK_ONLY)
         training = attacks.where('split_rank = 0')
         support = {r['attack_family']:r['count'] for r in training.groupBy('attack_family').count().collect()}
         classes = vocabulary(support)
@@ -120,5 +136,12 @@ def run(project, input_root, output, scenario='A'):
         saved = capture(model,selected[3],output,probe(spark,names))
         atomic_json(output/'phase9_summary.json',{'status':'validated','scenario':scenario,'input':receipt,'classes':classes,'training_support':support,'sample_support':sample_support,'overlap':overlap,'model':selected[3],'registry':saved,'seconds':monotonic()-start,'test':metrics})
         print('PHASE9 complete',scenario,flush=True)
+        if hierarchy is not None:
+            saved_novelty = capture(PipelineModel(stages=[*prep.stages, cluster]), 'family_kmeans', output,
+                                    probe(spark,names), kmeans=True)
+            atomic_json(output/'phase9_novelty_registry.json',
+                        {'registry': saved_novelty, 'reference_grid': grid, 'features': names,
+                         'classes': classes, 'thresholds': thresholds, 'spark_version': spark.version})
+            hierarchy(spark, active, names, config, receipt, model, classes, thresholds)
     finally:
         spark.stop()

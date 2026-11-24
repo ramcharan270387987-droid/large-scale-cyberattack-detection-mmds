@@ -37,6 +37,37 @@ def save(figures, name, fig):
     figures[relative] = sha256(path.read_bytes()).hexdigest()
 
 
+def archived_classification(figures, manifest):
+    stages = manifest["stages"]
+    catalog = ("A", "B", "Web", "Bot", "Infiltration", "DDoS")
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4), layout="constrained")
+    left, right = axes
+    scores = [stages[scenario]["test"]["macro_f1"] for scenario in catalog]
+    left.bar(catalog, [value or 0 for value in scores], color="#276687")
+    left.annotate("No known attacks", xy=(1, .03), ha="center", rotation=90)
+    left.set(ylabel="Known-family macro F1", ylim=(0, 1), title="Closed-set performance")
+    right.bar(catalog, [stages[scenario]["seconds"] for scenario in catalog], color="#66a892")
+    right.set(ylabel="Recorded execution seconds", title="Archived family-stage runtime")
+    for ax in axes:
+        ax.tick_params(axis="x", rotation=15)
+    save(figures, "macro_f1_runtime", fig)
+
+    relative = "reports/phase9_per_family.csv"
+    rows = table({relative: manifest["tables_sha256"]["phase9_per_family.csv"]}, relative)
+    selected = {int(row["class_id"]): row for row in rows if row["scenario"] == "A"}
+    classes = sorted(stages["A"]["classes"].items(), key=lambda item: item[1])
+    fig, ax = plt.subplots(figsize=(8.5, 4.3), layout="constrained")
+    for offset, metric, color in ((-0.16, "precision", "#276687"), (0.16, "recall", "#66a892")):
+        measured = [(class_id + offset, float(selected[class_id][metric])) for _, class_id in classes
+                    if selected[class_id][metric]]
+        ax.bar([i for i, _ in measured], [value for _, value in measured], width=.30, label=metric.title(), color=color)
+    ax.set(xticks=range(len(classes)), xticklabels=[name for name, _ in classes], ylim=(0, 1),
+           title="Grouped-random per-family precision and recall")
+    ax.tick_params(axis="x", rotation=15)
+    ax.legend()
+    save(figures, "grouped_random_family_precision_recall", fig)
+
+
 def hierarchies(figures, manifest):
     scenarios = manifest.get("hierarchy", {})
     if not scenarios:
@@ -121,14 +152,51 @@ def open_set(figures, manifest):
     targets = ("Accepted error rate", "Unknown-family rejection recall", "Unknown-rejection precision")
     for ax, xlabel, ylabel in zip(axes, plots, targets):
         ax.set(xlabel=xlabel, ylabel=ylabel, xlim=(0, 1), ylim=(0, 1))
-    for version, stage in stages.items():
-        for scenario in stage["scenarios"]:
-            path = f"reports/phase9_open_set_evidence/{version}/{scenario}/score_histograms.csv"
-            rows = table(stage["artifacts"], path)
-            curves = rejection_curves(rows)
-            for ax, values in zip(axes, curves):
-                if values is not None:
-                    ax.plot(*values, label=scenario)
+    score_fig, score_axes = plt.subplots(2, 3, figsize=(12, 6), layout="constrained")
+    day_fig, day_axes = plt.subplots(2, 3, figsize=(12, 6), layout="constrained")
+    scenarios = [(version, stage, scenario) for version, stage in stages.items() for scenario in stage["scenarios"]]
+    for i, (version, stage, scenario) in enumerate(scenarios):
+        prefix = f"reports/phase9_open_set_evidence/{version}/{scenario}"
+        rows = table(stage["artifacts"], f"{prefix}/score_histograms.csv")
+        curves = rejection_curves(rows)
+        for ax, values in zip(axes, curves):
+            if values is not None:
+                ax.plot(*values, label=scenario)
+        ax = score_axes.flat[i]
+        dist = Counter()
+        for row in rows:
+            if row["method"] == "maximum":
+                dist[min(int(row["bin"]) * 32 // 2048, 31), row["known"].lower() == "true"] += int(row["count"])
+        for known, label, color in ((True, "Known", "#276687"), (False, "Unknown", "#c75236")):
+            support = sum(n for (_, item), n in dist.items() if item == known)
+            if support:
+                ax.step([j / 32 for j in range(32)], [dist[j, known] / support for j in range(32)],
+                        where="post", label=label, color=color)
+        ax.set(title=scenario, xlabel="Maximum-score uncertainty", ylabel="Share within target group")
+        ax.legend(fontsize=7)
+        ax = day_axes.flat[i]
+        day_rows = table(stage["artifacts"], f"{prefix}/day_rejection.csv")
+        day_counts = Counter()
+        for row in day_rows:
+            if row["method"] == "maximum":
+                day_counts[row["source_day"][5:], row["known"].lower() == "true", row["rejected"].lower() == "true"] += int(row["count"])
+        days = sorted({day for day, _, _ in day_counts})
+        for known, label, color in ((True, "Known", "#276687"), (False, "Unknown", "#c75236")):
+            supported = [(i, day_counts[day, known, True] / total) for i, day in enumerate(days)
+                         if (total := day_counts[day, known, True] + day_counts[day, known, False])]
+            if supported:
+                ax.scatter([pos for pos, _ in supported], [rate for _, rate in supported], label=label, color=color, s=16)
+        ax.set(title=scenario, xticks=range(len(days)), xticklabels=days, ylabel="Rejected share", ylim=(0, 1))
+        ax.tick_params(axis="x", rotation=45)
+        ax.yaxis.set_major_formatter(PercentFormatter(1))
+        ax.legend(fontsize=7)
+    for score_ax, day_ax in zip(list(score_axes.flat)[len(scenarios):], list(day_axes.flat)[len(scenarios):]):
+        score_ax.set_visible(False)
+        day_ax.set_visible(False)
+    score_fig.suptitle("Known and unknown score distributions")
+    day_fig.suptitle("Per-day rejection at the frozen 5% validation budget")
+    save(figures, "known_unknown_score_distributions", score_fig)
+    save(figures, "per_day_rejection", day_fig)
     for ax in axes:
         ax.legend(fontsize=8)
     fig.suptitle("Open-set discrimination using frozen classifier confidence")
@@ -138,6 +206,7 @@ def open_set(figures, manifest):
 if __name__ == "__main__":
     manifest = json.loads(MANIFEST.read_text())
     figures = manifest.setdefault("extended_figures_sha256", {})
+    archived_classification(figures, manifest)
     hierarchies(figures, manifest)
     sensitivities(figures, manifest)
     open_set(figures, manifest)
