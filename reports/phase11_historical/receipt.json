@@ -1,0 +1,10 @@
+{
+  "status": "validated",
+  "stage": "11C",
+  "windows": 49,
+  "rows_represented": 15322987,
+  "evaluation_windows": 39,
+  "historical_true_drift_labels": false,
+  "unit": "aggregate window",
+  "labels_released_after_end": "pending and excluded"
+}

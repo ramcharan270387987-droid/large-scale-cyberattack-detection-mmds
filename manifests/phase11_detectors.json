@@ -1,0 +1,9 @@
+{
+  "schema": "phase11-detectors-v1",
+  "library": "river==0.22.0",
+  "compatibility": "reports/phase11_validation/compatibility.json",
+  "frozen_synthetic": "reports/phase11_synthetic/frozen.json",
+  "frozen_historical": "reports/phase11_historical/frozen.json",
+  "snapshot_contract": "Trusted internal pickle snapshots only",
+  "phase12_acceptance_gate": false
+}

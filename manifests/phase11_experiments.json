@@ -26,13 +26,85 @@
         "alerts.csv": "7fd0267f31d89478803a781bd43995b411c48de017fd4b42539fe8e6b4fd4f3d",
         "calibration.csv": "411993ff4e0ca6750ae31315012a801f25ab51ce09430835d008dc32e83e5186"
       }
+    },
+    "11C": {
+      "status": "COMPLETE AND VERIFIED",
+      "kernel_version": 2,
+      "worker_status": "COMPLETE",
+      "receipt": "reports/phase11_historical/receipt.json",
+      "windows": 49,
+      "flows_represented": 15322987,
+      "unit": "aggregate replay window",
+      "source_sha256": "f4f78ef09cef954b887d24afed2274c028000a1fb7c01adc40904f9c3e2d0953",
+      "log_sha256": "dd066e23100239e31f16364f5b2c7bf3fdb4cc26e4f694c89b809ea095c2b5cd"
+    },
+    "11D": {
+      "status": "PARTIALLY COMPLETE",
+      "kernel_version": 2,
+      "worker_status": "COMPLETE",
+      "validated_sensitivity_rows": 36,
+      "validated_ablation_rows": 66,
+      "state_parity": "Four detector states passed snapshot/restore and duplicate-batch checks",
+      "remaining": [
+        "Reference-length sensitivity",
+        "Explicit reset-policy sensitivity",
+        "Missing-input and support-threshold sensitivity",
+        "Detector agreement and performance-association summaries"
+      ]
+    },
+    "11E": {
+      "status": "PARTIALLY COMPLETE",
+      "research_regression_tests": 80,
+      "dashboard_regression_tests": 8,
+      "preview_checks": "PASS sections, detector filters and downloads",
+      "figures": 13,
+      "remaining": [
+        "Complete comparison figures and final scientific gate audit"
+      ]
     }
   },
   "pending": [
-    "11B retrieved and validated experiments",
-    "11C historical monitoring",
-    "11D sensitivity, ablations and performance",
-    "11E figures, report, full regressions and finalization"
+    "Complete and validate remaining 11D sensitivity/comparison analyses",
+    "Complete remaining 11E figures and scientific acceptance-gate audit",
+    "Commit and verify Phase 11 completion before starting any Phase 12 work"
   ],
-  "phase12_started": false
+  "phase12_started": false,
+  "final_verdict": "PHASE 11 PARTIALLY READY \u2014 PHASE 12 NOT STARTED",
+  "limitations": [
+    "Retrospective historical corpus without true drift labels",
+    "Historical binary DDM unsupported without within-window binary error order",
+    "Historical KSWIN lacks its 100-window warm-up support",
+    "Simulated label delays with pending end-of-stream labels",
+    "Snapshot bytes do not measure complete resident process memory"
+  ],
+  "artifacts_sha256": {
+    "reports/figures/phase11_adwin_detections.png": "a3502229bad8bc205ba1b2459da87f28adda6961a5c869f1d590ded70f50c116",
+    "reports/figures/phase11_ddm_detections.png": "fea65b8c4f10c268bbd06a08e9629fa468588d95e6175ba560c203dcb1028fd0",
+    "reports/figures/phase11_false_alarms.png": "dec540d34f66d5e59a3846e3c12349c10788ffce54d2bdf221deacec7d3d21a0",
+    "reports/figures/phase11_fixedjs_detections.png": "fb7ced94c86110094e29e758c392bc38d2ee6ff55938885654820dc9801af70d",
+    "reports/figures/phase11_historical_timeline.png": "bf04c3d8430cb53143f9d28b3147507b73e3c9f38d28a0cecb03351039fe0869",
+    "reports/figures/phase11_js_detections.png": "de0628865a390f2c17e7ed9cc99ef9d3c379c73723f0236415c3d001f0399650",
+    "reports/figures/phase11_kswin_detections.png": "baf648f0de3dd041eb456c238b000e25264488d21abfd2f42f25caa1b2bc2dce",
+    "reports/figures/phase11_label_delay.png": "48c0a6c4674c3be49821a2bbc6adfd3b78982c01a5826a8a2a4be9d53c04cb9d",
+    "reports/figures/phase11_mean_delay_observations.png": "570c21826dc203b1c30cc415bf982c135a43adbfad78b1f871f69155c286decc",
+    "reports/figures/phase11_pagehinkley_detections.png": "f5c4fb43b0b21be1420e67a249916988fc32f73c216322a1b4601548b27fa645",
+    "reports/figures/phase11_psi_detections.png": "a1fb00c15c0fcac40795436b91e4979fb486cca65db4a44332a3e374561b8195",
+    "reports/figures/phase11_seconds.png": "c01fa063eb3ed162097adceab0fbda66c4077276d0fb3e68eb0607b0e14dd546",
+    "reports/figures/phase11_window_sensitivity.png": "c5c6de5b6dd0e2821e79e28fafacf5cd6e645a2678482fbc05353c9532043c35",
+    "reports/phase11_historical/frozen.json": "3f680fe7f3a45512e79321987bd02ec4623c89a4075c30a24e4e7a86580ccf03",
+    "reports/phase11_historical/historical_alerts.csv": "ed0aa71786189327ab75414ac1ac255989f3f8f7038c91ded6388926cd0f2e93",
+    "reports/phase11_historical/performance.csv": "d17f675e58d897a25b9600ccfb120d546af92a806bc79a8a8b06b2c9704d1fe0",
+    "reports/phase11_historical/receipt.json": "7983d750e74ad19bf71d2dac0dbd1419005acfd6ff22f1d529f699d2af1e597c",
+    "reports/phase11_results.md": "94fba670f5a9757ab86b55a7fef903bbb5ec0f9e67f52ca807d678d400c3a7e3",
+    "reports/phase11_robustness/ablations.csv": "0b2328dd28ce87add4801d85b139092815d7fb50ead73c97d4cdd0705c7e2ec5",
+    "reports/phase11_robustness/receipt.json": "c52e7cf59f968e5e8950f0a137161a5f8ac26ce37e6f52d2d43fab47e63d5bf9",
+    "reports/phase11_robustness/sensitivity.csv": "497b07640a807c1937f460e98a364107078738373f842905c8eddf96301009cc",
+    "reports/phase11_synthetic/alerts.csv": "7fd0267f31d89478803a781bd43995b411c48de017fd4b42539fe8e6b4fd4f3d",
+    "reports/phase11_synthetic/calibration.csv": "411993ff4e0ca6750ae31315012a801f25ab51ce09430835d008dc32e83e5186",
+    "reports/phase11_synthetic/frozen.json": "639550b31b34aa9c528f96227f2b41da17f66e9336112ce0fed6a9d0836c2742",
+    "reports/phase11_synthetic/receipt.json": "cc4ecd38da732a717cd5853be36c788eeb1e22a5e072d345297cacb29f00037d",
+    "reports/phase11_synthetic/signals.csv": "a2dc6e0b6742905c49cfa2e9ea0de1860dd4c9905bc04b7e04525ff10af4f470",
+    "reports/phase11_synthetic/synthetic_metrics.csv": "9490c589a8e6bca6e878f7d9bd14969ff8a92a9ef95fad571f5b71301b365e75",
+    "reports/phase11_validation/compatibility.json": "38138edb74f88a94d9b3c802bbd964bdefe7d5c1ad443c4a15cbb75220afec51"
+  }
 }

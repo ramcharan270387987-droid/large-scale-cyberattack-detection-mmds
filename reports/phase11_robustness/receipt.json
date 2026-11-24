@@ -1,0 +1,7 @@
+{
+  "status": "validated",
+  "stage": "11D",
+  "sensitivity_rows": 36,
+  "ablation_rows": 66,
+  "ensemble": "At least two distinct label-free detector families within 64 observations with 64-observation cooldown"
+}
