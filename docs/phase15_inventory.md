@@ -1,0 +1,5 @@
+# Phase 15 reusable implementation inventory
+
+Baseline:dashboard/data_loader.py,dashboard/sections and immutable dashboard/data package cover audit,SQL,supervised,clustering,novelty,replay and architecture. dashboard/app.py remains the public baseline entry point. Existing hybrid/phase9/phase10/phase11/phase12/phase13/phase14 previews supply verified aggregate schemas,limitations and section registries. Phase13 exact.py supplies arithmetic semantics;Phase14's content-bound download/evidence identity resolves stale filter/download state. Existing figures and research reports are reused.
+
+Private archived Phase4B LR/RF are already locally cached and checksum-verifiable. Phase5B K-Means requires only its compact saved model components. Source model manifests contain original source versions,feature maps and component SHA256s. Advanced deployment uses new small parameter-only JSON artifacts. Source Spark export/parity runs are bounded synthetic verification,not research fitting. Existing Streamlit requirements are reused. Browser workflow is headless Chromium/Playwright plus AppTest. Existing164tests are retained.
