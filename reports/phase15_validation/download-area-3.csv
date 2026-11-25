@@ -1,0 +1,2 @@
+scenario,model,partition,fit_seconds,rows,accuracy,macro_precision,macro_recall,macro_f1,balanced_accuracy,weighted_f1
+Web,rf_unweighted,validation,11.763399061999962,354346,0.8069203546815824,0.8134545067663208,0.7867932508607389,0.7619724133736427,0.7867932508607389,0.7771329327680145

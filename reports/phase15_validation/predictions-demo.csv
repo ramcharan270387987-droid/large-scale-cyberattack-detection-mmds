@@ -1,0 +1,4 @@
+row_number,status,error,model,label,probability,squared_distance,cluster,threshold,imputed_count
+1,valid,,B-kmeans,REFERENCE-LIKE,,7.702263499416356,6,16.67940564007534,18
+2,valid,,B-kmeans,NOVEL,,16.876330228138364,2,16.67940564007534,0
+3,valid,,B-kmeans,NOVEL,,18.756025988177115,1,16.67940564007534,0

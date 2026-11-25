@@ -57,7 +57,8 @@
         "decisions_equal": 100
       },
       "distribution": "Owner-authorized derived parameters; no raw training records; source mirror declaresApache2.0",
-      "limitations": "Historical source-domain model; uncalibrated score; not validated for arbitrary external feature extraction"
+      "limitations": "Historical source-domain model; uncalibrated score; not validated for arbitrary external feature extraction",
+      "calibration_identity": "none; original model probability, fixed0.5 threshold"
     },
     {
       "id": "B-random_forest",
@@ -113,7 +114,8 @@
         "decisions_equal": 2245
       },
       "distribution": "Owner-authorized derived parameters; no raw training records; source mirror declaresApache2.0",
-      "limitations": "Historical source-domain model; uncalibrated score; not validated for arbitrary external feature extraction"
+      "limitations": "Historical source-domain model; uncalibrated score; not validated for arbitrary external feature extraction",
+      "calibration_identity": "none; original model probability, fixed0.5 threshold"
     },
     {
       "id": "B-kmeans",
@@ -176,7 +178,8 @@
         "decisions_equal": 100
       },
       "distribution": "Owner-authorized derived parameters; no raw training records; source mirror declaresApache2.0",
-      "limitations": "Historical source-domain model; uncalibrated score; not validated for arbitrary external feature extraction"
+      "limitations": "Historical source-domain model; uncalibrated score; not validated for arbitrary external feature extraction",
+      "calibration_identity": "Phase5B frozen0.99reference distance cutoff"
     }
   ],
   "unsupported_executable": [

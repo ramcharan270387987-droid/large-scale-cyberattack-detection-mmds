@@ -88,13 +88,28 @@ def inference():
     else:
         st.caption('Exact ordered feature schema; at most1MiB and500rows. No uploads are sent to external services or used to fit preprocessing. Extra/missing/duplicate columns are rejected. Invalid rows retain their positions.')
         upload=st.file_uploader('Feature CSV',type=['csv']);st.download_button('Download synthetic CSV',(ROOT/'dashboard/data/phase15_demo.csv').read_bytes(),'phase15_demo.csv','text/csv',on_click='ignore')
-        if upload is not None and st.button('Predict CSV'):
+        token=(model['id'],hashlib.sha256(upload.getvalue()).hexdigest()) if upload is not None else None
+        if token:st.caption('Upload ID: '+token[1][:16])
+        saved=st.session_state.get('phase15_batch')
+        if saved and saved['token']!=token:st.session_state.pop('phase15_batch',None)
+        execute=st.button('Predict CSV',disabled=upload is None)
+        if upload is not None and execute:
             try:
-                rows=inputs.parse_csv(upload.getvalue(),model['features']);result=inputs.batch(model,rows);data=pd.DataFrame(result);st.metric('Valid rows scored',sum(r['status']=='valid' for r in result));st.metric('Invalid rows retained',sum(r['status']=='invalid' for r in result));st.dataframe(data,hide_index=True,width='stretch');st.download_button('Download predictions',inputs.safe_csv(result),'predictions.csv','text/csv',key='predictions_'+hashlib.sha256(upload.getvalue()).hexdigest()[:16]+model['id'],on_click='ignore')
-            except ValueError as exc:st.error(str(exc))
+                rows=inputs.parse_csv(upload.getvalue(),model['features']);result=inputs.batch(model,rows);st.session_state['phase15_batch']={'token':token,'result':result,'error':None}
+            except ValueError as exc:st.session_state['phase15_batch']={'token':token,'result':None,'error':str(exc)}
+        saved=st.session_state.get('phase15_batch')
+        if saved and saved['token']==token:
+            if saved['error']:st.error(saved['error'])
+            else:
+                result=saved['result'];data=pd.DataFrame(result);st.metric('Valid rows scored',sum(r['status']=='valid' for r in result));st.metric('Invalid rows retained',sum(r['status']=='invalid' for r in result));st.dataframe(data,hide_index=True,width='stretch');st.download_button('Download predictions',inputs.safe_csv(result),'predictions.csv','text/csv',key='predictions_'+token[1][:16]+model['id'],on_click='ignore')
+                valid=[r for r in inputs.parse_csv(upload.getvalue(),model['features']) if r['status']=='valid']
+                if valid:
+                    selected=st.selectbox('Explain uploaded row',[r['row_number'] for r in valid]);values=next(r['values'] for r in valid if r['row_number']==selected);st.caption('Computed explanation for uploaded logical row '+str(selected));show_prediction(model,portable.predict(model,values),values)
+                else:st.info('No valid uploaded row is available for explanation.')
+
 def replay():
     st.header('Historical replay');st.info('Archived historical replay, not live network capture. Controls select existing observations; no fictional events or retraining occurs.')
-    data=pd.read_csv(ROOT/'reports/phase6_replay_batches.csv');daycol=next(c for c in ('source_day','day') if c in data);days=sorted(data[daycol].unique());day=st.selectbox('Capture',days);selected=data[data[daycol]==day];position=st.slider('Replay position',0,max(1,len(selected)-1),0);row=selected.iloc[min(position,len(selected)-1)];st.dataframe(row.to_frame('Archived microbatch'),width='stretch');st.caption('Capture flow volume: '+str(int(selected['rows'].sum())) if 'rows' in selected else 'Original microbatch fields shown above')
+    data=pd.read_csv(ROOT/'reports/phase6_replay_batches.csv');daycol=next(c for c in ('source_day','day') if c in data);days=sorted(data[daycol].unique());day=st.selectbox('Capture',days);selected=data[data[daycol]==day];position=st.slider('Replay position',0,max(1,len(selected)-1),0);row=selected.iloc[min(position,len(selected)-1)];st.dataframe(row.astype(str).to_frame('Archived microbatch'),width='stretch');st.caption('Capture flow volume: '+str(int(selected['rows'].sum())) if 'rows' in selected else 'Original microbatch fields shown above')
     batch_id=st.selectbox('Microbatch',selected.batch_id.tolist(),index=min(position,len(selected)-1),key='batch_'+str(day)+'_'+str(position));row=selected[selected.batch_id==batch_id].iloc[0]
     windows=pd.read_csv(ROOT/'reports/phase6_window_metrics.csv');window=windows[(windows.source_day==day)&(windows.window_hour==row.window_hour)&windows.scope.eq('intraday')]
     if not window.empty:

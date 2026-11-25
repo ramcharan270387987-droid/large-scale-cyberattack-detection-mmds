@@ -8,21 +8,24 @@
       "status": "PASS",
       "probes": 100,
       "max_absolute_residual": 1.5265566588595902e-16,
-      "decisions_equal": 100
+      "decisions_equal": 100,
+      "portable_sha256": "4e76894c0a8705e8eec97579d32911cbac9a2b8f1dcfbdd6338b3bb2101ab17f"
     },
     {
       "id": "B-random_forest",
       "status": "PASS",
       "probes": 2245,
       "max_absolute_residual": 1.1102230246251565e-16,
-      "decisions_equal": 2245
+      "decisions_equal": 2245,
+      "portable_sha256": "71df65469593e09cd0acbeab15b4e6a347b137920f7322562ca18b94f06c3900"
     },
     {
       "id": "B-kmeans",
       "status": "PASS",
       "probes": 100,
       "max_absolute_residual": 4.3655745685100555e-11,
-      "decisions_equal": 100
+      "decisions_equal": 100,
+      "portable_sha256": "82891bc314c4b6c7c60e1d0d4c287db78cd3c82b0fc306e5b2ba59173d2e8578"
     }
   ],
   "seconds": 28.07939414199791,

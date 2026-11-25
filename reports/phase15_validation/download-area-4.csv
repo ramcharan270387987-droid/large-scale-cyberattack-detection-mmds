@@ -1,0 +1,4 @@
+scenario,seed,detector,label_delay_windows,seconds,updates_per_second,state_bytes,true_episodes,detected_episodes,misses,recall,mean_delay_observations,false_alarms,repeated_episode_alerts,false_per_1000,alert_precision,alerts
+variance,23013,PageHinkley,0,0.0059662439999783,686529.0792691108,394,1,0,1,0.0,,0,0,0.0,,0
+variance,23014,PageHinkley,0,0.0086234930000728,474981.54169840633,394,1,0,1,0.0,,0,0,0.0,,0
+variance,23015,PageHinkley,0,0.0046651559999872,877998.5063760264,394,1,0,1,0.0,,0,0,0.0,,0

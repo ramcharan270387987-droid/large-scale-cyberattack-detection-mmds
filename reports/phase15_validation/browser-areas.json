@@ -1,0 +1,92 @@
+[
+  {
+    "group": "Dataset intelligence & SQL",
+    "entry": "dashboard/data/phase3_attack_families.csv",
+    "filters": [
+      "attack_family"
+    ],
+    "evidence_id": "cb1665cbc580895c",
+    "rows": 1,
+    "download_sha256": "cb1665cbc580895c4c1e76c69b76c0ba8b20d11a5890edc5b3ed1371de5e1780"
+  },
+  {
+    "group": "Supervised & hybrid",
+    "entry": "dashboard/data/phase4_family_recall.csv",
+    "filters": [
+      "protocol",
+      "model"
+    ],
+    "evidence_id": "b1c2be2b58fc1d9a",
+    "rows": 44,
+    "download_sha256": "b1c2be2b58fc1d9a556a642d909b3e9ee5461acc892d30090b74b7159e0a2add"
+  },
+  {
+    "group": "Clustering & novelty",
+    "entry": "dashboard/data/phase5_centroids.csv",
+    "filters": [],
+    "evidence_id": "72f3ea55519908b5",
+    "rows": 522,
+    "download_sha256": "72f3ea55519908b5000b4e691204b72fa0de8b0984b4328cb9966139cfc2eae0"
+  },
+  {
+    "group": "Multiclass & open-set",
+    "entry": "reports/phase9_closed_set_metrics.csv",
+    "filters": [
+      "scenario",
+      "model"
+    ],
+    "evidence_id": "5a7635aeec9ebec7",
+    "rows": 1,
+    "download_sha256": "5a7635aeec9ebec7fce64fa6295c4b846fe2335b62029cb994b0159a4e6f9858"
+  },
+  {
+    "group": "Streaming & drift",
+    "entry": "reports/phase11_synthetic/synthetic_metrics.csv",
+    "filters": [
+      "scenario",
+      "detector"
+    ],
+    "evidence_id": "45a3953e586ff598",
+    "rows": 3,
+    "download_sha256": "45a3953e586ff598c87f79793253cd86167f7bf19c6252c1a8acd82a91fa6680"
+  },
+  {
+    "group": "Adaptive learning",
+    "entry": "reports/phase12_policy_comparison.csv",
+    "filters": [
+      "policy"
+    ],
+    "evidence_id": "e11917578b20df9e",
+    "rows": 3,
+    "download_sha256": "e11917578b20df9e6cd04086a37e569388165860553ae90333dc55068c3afb2f"
+  },
+  {
+    "group": "Explainable AI",
+    "entry": "reports/phase13_global_importance.csv",
+    "filters": [
+      "protocol",
+      "model"
+    ],
+    "evidence_id": "140d4d66aae8a494",
+    "rows": 36,
+    "download_sha256": "140d4d66aae8a494c35c252f306cd549e30d7d9321fbb881e5d6379cb8dadd86"
+  },
+  {
+    "group": "External validation & scalability",
+    "entry": "reports/phase14_dataset_composition.csv",
+    "filters": [
+      "dataset"
+    ],
+    "evidence_id": "66da2f65f66d1ca4",
+    "rows": 2,
+    "download_sha256": "66da2f65f66d1ca4d14480fd98bc9aad21155345fa8859aa78c860814d755835"
+  },
+  {
+    "group": "Frequent & emerging patterns",
+    "entry": "reports/phase10_analysis/capture_gaps.json",
+    "filters": [],
+    "evidence_id": "14f82806feaced28",
+    "rows": 9,
+    "download_sha256": "14f82806feaced2837e2f7cb9dedc2d04eb8f4d7b4c33cad89fd23d06a51f238"
+  }
+]

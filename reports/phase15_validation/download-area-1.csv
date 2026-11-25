@@ -1,0 +1,45 @@
+protocol,model,training_cohort,split,level,category,binary_label,evaluated_rows,tp,fn,fp,recall,benign_false_positive_rate,seen_in_training,training_rows,support_status
+C,random_forest,group_sample,validation,family,Benign,0,351060,,,23666.0,,0.0674129778385461,True,659296,reported
+C,random_forest,group_sample,validation,family,Bot,1,0,0.0,0.0,,,,True,17402,absent
+C,random_forest,group_sample,validation,family,Credential brute force,1,0,0.0,0.0,,,,True,12384,absent
+C,random_forest,group_sample,validation,family,DDoS,1,0,0.0,0.0,,,,True,80477,absent
+C,random_forest,group_sample,validation,family,DoS,1,0,0.0,0.0,,,,True,37445,absent
+C,random_forest,group_sample,validation,family,Infiltration,1,41842,743.0,41099.0,,0.0177572773767984,,True,5516,reported
+C,random_forest,group_sample,validation,family,Web attack,1,0,0.0,0.0,,,,False,0,absent
+C,random_forest,group_sample,validation,original_label,Benign,0,351060,,,23666.0,,0.0674129778385461,True,659296,reported
+C,random_forest,group_sample,validation,original_label,Bot,1,0,0.0,0.0,,,,True,17402,absent
+C,random_forest,group_sample,validation,original_label,Brute Force -Web,1,0,0.0,0.0,,,,False,0,absent
+C,random_forest,group_sample,validation,original_label,Brute Force -XSS,1,0,0.0,0.0,,,,False,0,absent
+C,random_forest,group_sample,validation,original_label,DDOS attack-HOIC,1,0,0.0,0.0,,,,True,44289,absent
+C,random_forest,group_sample,validation,original_label,DDOS attack-LOIC-UDP,1,0,0.0,0.0,,,,True,122,absent
+C,random_forest,group_sample,validation,original_label,DDoS attacks-LOIC-HTTP,1,0,0.0,0.0,,,,True,36066,absent
+C,random_forest,group_sample,validation,original_label,DoS attacks-GoldenEye,1,0,0.0,0.0,,,,True,2663,absent
+C,random_forest,group_sample,validation,original_label,DoS attacks-Hulk,1,0,0.0,0.0,,,,True,28198,absent
+C,random_forest,group_sample,validation,original_label,DoS attacks-SlowHTTPTest,1,0,0.0,0.0,,,,True,5900,absent
+C,random_forest,group_sample,validation,original_label,DoS attacks-Slowloris,1,0,0.0,0.0,,,,True,684,absent
+C,random_forest,group_sample,validation,original_label,FTP-BruteForce,1,0,0.0,0.0,,,,True,6425,absent
+C,random_forest,group_sample,validation,original_label,Infilteration,1,41842,743.0,41099.0,,0.0177572773767984,,True,5516,reported
+C,random_forest,group_sample,validation,original_label,SQL Injection,1,0,0.0,0.0,,,,False,0,absent
+C,random_forest,group_sample,validation,original_label,SSH-Bruteforce,1,0,0.0,0.0,,,,True,5959,absent
+C,random_forest,group_sample,test,family,Benign,0,1457560,,,11969.0,,0.008211668816378,True,659296,reported
+C,random_forest,group_sample,test,family,Bot,1,0,0.0,0.0,,,,True,17402,absent
+C,random_forest,group_sample,test,family,Credential brute force,1,0,0.0,0.0,,,,True,12384,absent
+C,random_forest,group_sample,test,family,DDoS,1,0,0.0,0.0,,,,True,80477,absent
+C,random_forest,group_sample,test,family,DoS,1,0,0.0,0.0,,,,True,37445,absent
+C,random_forest,group_sample,test,family,Infiltration,1,0,0.0,0.0,,,,True,5516,absent
+C,random_forest,group_sample,test,family,Web attack,1,658,16.0,642.0,,0.0243161094224924,,False,0,reported
+C,random_forest,group_sample,test,original_label,Benign,0,1457560,,,11969.0,,0.008211668816378,True,659296,reported
+C,random_forest,group_sample,test,original_label,Bot,1,0,0.0,0.0,,,,True,17402,absent
+C,random_forest,group_sample,test,original_label,Brute Force -Web,1,423,5.0,418.0,,0.0118203309692671,,False,0,reported
+C,random_forest,group_sample,test,original_label,Brute Force -XSS,1,176,10.0,166.0,,0.0568181818181818,,False,0,reported
+C,random_forest,group_sample,test,original_label,DDOS attack-HOIC,1,0,0.0,0.0,,,,True,44289,absent
+C,random_forest,group_sample,test,original_label,DDOS attack-LOIC-UDP,1,0,0.0,0.0,,,,True,122,absent
+C,random_forest,group_sample,test,original_label,DDoS attacks-LOIC-HTTP,1,0,0.0,0.0,,,,True,36066,absent
+C,random_forest,group_sample,test,original_label,DoS attacks-GoldenEye,1,0,0.0,0.0,,,,True,2663,absent
+C,random_forest,group_sample,test,original_label,DoS attacks-Hulk,1,0,0.0,0.0,,,,True,28198,absent
+C,random_forest,group_sample,test,original_label,DoS attacks-SlowHTTPTest,1,0,0.0,0.0,,,,True,5900,absent
+C,random_forest,group_sample,test,original_label,DoS attacks-Slowloris,1,0,0.0,0.0,,,,True,684,absent
+C,random_forest,group_sample,test,original_label,FTP-BruteForce,1,0,0.0,0.0,,,,True,6425,absent
+C,random_forest,group_sample,test,original_label,Infilteration,1,0,0.0,0.0,,,,True,5516,absent
+C,random_forest,group_sample,test,original_label,SQL Injection,1,59,1.0,58.0,,0.0169491525423728,,False,0,low
+C,random_forest,group_sample,test,original_label,SSH-Bruteforce,1,0,0.0,0.0,,,,True,5959,absent

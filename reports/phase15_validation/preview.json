@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "modules": [
+    "Executive overview",
+    "Dataset intelligence & SQL",
+    "Supervised & hybrid",
+    "Clustering & novelty",
+    "Multiclass & open-set",
+    "Streaming & drift",
+    "Adaptive learning",
+    "Explainable AI",
+    "External validation & scalability",
+    "Frequent & emerging patterns",
+    "Interactive inference",
+    "Historical replay",
+    "Evidence & reproducibility"
+  ],
+  "models_executed": 3,
+  "model_unavailable": true,
+  "empty_state": true,
+  "undefined_metric": true
+}

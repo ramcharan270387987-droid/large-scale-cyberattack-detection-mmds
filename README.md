@@ -98,3 +98,5 @@ python -m streamlit run dashboard/advanced_app.py --server.maxUploadSize 1 --bro
 ```
 
 Runtime inference uses compact checksum-verified LR,RF and K-Means parameters;no Spark,Java,Kaggle secrets or private artifact access is required. CSV is limited to1MiB/500rows and exact ordered source features. See [deployment](docs/phase15_deployment_guide.md),[demonstration](docs/phase15_demo_guide.md),[input/model contract](docs/phase15_inference_contract.md),[limitations](docs/phase15_limitations.md) and [results](reports/phase15_results.md). Public deployment requires separate authorization. Phase16has not begun.
+
+Phase15 completion: independent acceptance PASS;180regression tests passed;three archived portable models passed2,445Spark parity probes. Public deployment is prepared only,and Phase16has not begun.

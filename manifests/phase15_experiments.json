@@ -1,8 +1,8 @@
 {
   "schema": "phase15-v1",
-  "complete": false,
+  "complete": true,
   "starting_checkpoint": "51392548c562d098e3d74b9a0bda4c402bd421d7",
-  "protocol_commit": "4f791cf",
+  "protocol_commit": "4f791cfa2e7bd75e92ac80f18fea6177cba9b826",
   "stages": {
     "15A": {
       "status": "validated"
@@ -23,7 +23,64 @@
       "registry": "manifests/phase15_models.json"
     },
     "15E": {
-      "status": "pending"
+      "status": "validated",
+      "acceptance": "reports/phase15_validation/acceptance.json",
+      "tests": 180,
+      "browser": "reports/phase15_validation/browser.json"
     }
-  }
+  },
+  "evidence_sha256": {
+    "README.md": "a2a0de145b6e512f1a3a15633e1162da16a727dc6bc6b0bfeaf1e51263888684",
+    "dashboard/advanced_app.py": "7a0a0ebfaf827706a59cd5a4a54c2eb75dcc2b4446dbb6e070f3e4938834c87d",
+    "dashboard/data/phase15_demo.csv": "050f51616dee9ba353d20537ec5fbcb97f598a9cdea4cdb77e6a9eabfc099081",
+    "dashboard/models/phase15_kmeans.json": "82891bc314c4b6c7c60e1d0d4c287db78cd3c82b0fc306e5b2ba59173d2e8578",
+    "dashboard/models/phase15_lr.json": "4e76894c0a8705e8eec97579d32911cbac9a2b8f1dcfbdd6338b3bb2101ab17f",
+    "dashboard/models/phase15_rf.json": "71df65469593e09cd0acbeab15b4e6a347b137920f7322562ca18b94f06c3900",
+    "docs/phase15_architecture.md": "09c9ef315a2d3482ca7ef8b9e5563234328f504d52c7171543870a494a5c234b",
+    "docs/phase15_demo_guide.md": "3882e5e67a727e1a2b0a0308e5bc9708483f67352837d54c3ef69e5a2e928c40",
+    "docs/phase15_deployment_guide.md": "e1f3d5bf5552c8a52cb31e33fb6d82c60b3523484d2e85d195d9022d9246f63f",
+    "docs/phase15_inference_contract.md": "fbd9ad897c53c5ce90cfc3ec9e01d04506e8261f9f58595910b15e077d1711ad",
+    "docs/phase15_integration_protocol.md": "8dd815eb4cecfc2f3bdced87c68a53d1724d17187487f5a1eb7743e7f37e063e",
+    "docs/phase15_inventory.md": "03bfe11238a4ee61b3ccfe03c5eedcbb015c67abb8e27097cd7214ea0c8d824c",
+    "docs/phase15_limitations.md": "6a4db68e4eccc8dbf6e80108f32849ed3631c33811d9bb202b71849c698c35e9",
+    "manifests/phase15_evidence.json": "9b3fd135924ec5b2c432f439127ad71c6e9b398a713123b49ec10ec24f1a6fbe",
+    "manifests/phase15_models.json": "213ea6cfcf6bd5e9bdeda9e9385c50bd95e3b5f3374ae7f4217f684a422bf24e",
+    "reports/phase15_results.md": "b2caa8122a70c7184fcdaaacd0c9d72fe7ff723505a2a38e61602fa9af780707",
+    "reports/phase15_validation/browser-areas.json": "7364d1d5f245598bfff21d3a8ddad211cd725d4ddd63db95e0b63f4b656dbb05",
+    "reports/phase15_validation/browser.json": "6e6047d0a8a2cdbf69e926ce364a1589ff793d64bf0cfdd1a8f298275e017159",
+    "reports/phase15_validation/download-area-0.csv": "cb1665cbc580895c4c1e76c69b76c0ba8b20d11a5890edc5b3ed1371de5e1780",
+    "reports/phase15_validation/download-area-1.csv": "b1c2be2b58fc1d9a556a642d909b3e9ee5461acc892d30090b74b7159e0a2add",
+    "reports/phase15_validation/download-area-2.csv": "72f3ea55519908b5000b4e691204b72fa0de8b0984b4328cb9966139cfc2eae0",
+    "reports/phase15_validation/download-area-3.csv": "5a7635aeec9ebec7fce64fa6295c4b846fe2335b62029cb994b0159a4e6f9858",
+    "reports/phase15_validation/download-area-4.csv": "45a3953e586ff598c87f79793253cd86167f7bf19c6252c1a8acd82a91fa6680",
+    "reports/phase15_validation/download-area-5.csv": "e11917578b20df9e6cd04086a37e569388165860553ae90333dc55068c3afb2f",
+    "reports/phase15_validation/download-area-6.csv": "140d4d66aae8a494c35c252f306cd549e30d7d9321fbb881e5d6379cb8dadd86",
+    "reports/phase15_validation/download-area-7.csv": "66da2f65f66d1ca4d14480fd98bc9aad21155345fa8859aa78c860814d755835",
+    "reports/phase15_validation/download-area-8.csv": "14f82806feaced2837e2f7cb9dedc2d04eb8f4d7b4c33cad89fd23d06a51f238",
+    "reports/phase15_validation/inference-desktop.png": "239e604e622333b080f35d8a5f4e048fb3f99624e8c3c71be11cafe34a1ff809",
+    "reports/phase15_validation/inference-mobile.png": "9b39dca0b2933ce95cda617b83f3d35aed9d4df9ef7e93fa8cced62d7a5ec122",
+    "reports/phase15_validation/overview-desktop.png": "d6b08d33ce8265abcee0e547c03c7257bb29cbc6572c0c664c869a0e8981f523",
+    "reports/phase15_validation/overview-mobile.png": "2f81728c89578322a1250868700a01e62cba95ae239bf11c107d1f279997dfa8",
+    "reports/phase15_validation/parity.json": "1f8f8d7c7c3b073b9a68993ac838c37e8fdfa2673cb88156f20b0dc49a16dac3",
+    "reports/phase15_validation/predictions-demo.csv": "f783bb82e68a63b8df6d4a8804794422ee59ad09a92e62e3d1696c33c64771a2",
+    "reports/phase15_validation/predictions-mixed.csv": "b88d0e4eddefedd1fb5c13bfd40aafa3311e23085e080c361997c8e26ac4fa2b",
+    "reports/phase15_validation/preview.json": "71f3a315cee1efe85c84994d10b3ba2cc5c70d93633526549e67cb5a5e76f118",
+    "reports/phase15_validation/regression.json": "1f0cafad95db21041c4827e0184b5a8a4abd0ea5aca8f230fc9882e38ed96863",
+    "reports/phase15_validation/replay-desktop.png": "c346bd61c164816406121d65b85a321c59b4449244b050fd1d50ebd4c33e3db0",
+    "scripts/browser_phase15.py": "b63ce599314a24a521fd15901ece2d4a748e2c09dfcba64ecb3dbcdd5c1545b2",
+    "scripts/build_phase15_catalog.py": "6266aee1c6036517a550837ab1d5d4bf83b53e39e1c31ba0fb149892987a3d63",
+    "scripts/export_phase15_models.py": "de144cca1db4b372027f16859722a85c6840b06b15c26652e8e0d5a7a1b080eb",
+    "scripts/freeze_phase15_evidence.py": "f72616ae80e9f54ca305cd0f5c61f4160beca15d6116f856c4ef6f799b3ba15e",
+    "scripts/validate_phase15_preview.py": "4c68933719b59e85c0f329eee492c05093567bf5bc0c30425e5400a65394fac5",
+    "scripts/verify_phase15_completion.py": "d1eec10b7da261b2bf0b7efbd2e59d1dc2168b3d8684f3792ada6c4899ecf1b8",
+    "scripts/write_phase15_report.py": "07a3725aa0706b527c2db26f57b6fc7f3f4576c888bbb1cecafc583dadc5339b",
+    "src/interactive/__init__.py": "b155f453972986a02335b6517723dd446e90b8ac94c0fdeadbd3b02912cbb651",
+    "src/interactive/evidence.py": "c3bdc6c9cba820b34b6ba6d4033d41d79f7ab1f897e62b8b012f0c347a22874c",
+    "src/interactive/inputs.py": "5d94e0351d17a8374d5f979826c08cdb6c3eb7602bdbd7980b815b6e99275757",
+    "src/interactive/portable.py": "7d2a0141189246265c64dd5eb40bdec38db1c32aaaa946cc38330121871c78c2",
+    "tests/test_phase15_inference.py": "a6bee0dd81b4e65494554b9a87713921b5f8d9ddb3b06a85d1c0e239f22eeeb8"
+  },
+  "verdict": "READY FOR PHASE 16",
+  "public_deployment": false,
+  "phase16_started": false
 }

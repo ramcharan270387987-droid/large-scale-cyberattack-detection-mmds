@@ -1,0 +1,37 @@
+model,protocol,method,feature,value,units
+B-random_forest,B,native_split_importance,flow_duration,0.0781070138806609,normalized split importance
+B-random_forest,B,native_split_importance,tot_fwd_pkts,0.0620157472536774,normalized split importance
+B-random_forest,B,native_split_importance,tot_bwd_pkts,0.0819078273245983,normalized split importance
+B-random_forest,B,native_split_importance,totlen_fwd_pkts,0.1500522817463017,normalized split importance
+B-random_forest,B,native_split_importance,totlen_bwd_pkts,0.064422000354955,normalized split importance
+B-random_forest,B,native_split_importance,pkt_len_mean,0.0604911456383039,normalized split importance
+B-random_forest,B,native_split_importance,pkt_len_std,0.0593487654259086,normalized split importance
+B-random_forest,B,native_split_importance,flow_iat_mean,0.0662482749594117,normalized split importance
+B-random_forest,B,native_split_importance,flow_iat_std,0.0119604224184204,normalized split importance
+B-random_forest,B,native_split_importance,fwd_iat_mean,0.0974475796998825,normalized split importance
+B-random_forest,B,native_split_importance,bwd_iat_mean,0.0028809813214295,normalized split importance
+B-random_forest,B,native_split_importance,flow_pkts_s,0.082111037997906,normalized split importance
+B-random_forest,B,native_split_importance,flow_byts_s,0.0618392125272914,normalized split importance
+B-random_forest,B,native_split_importance,down_up_ratio,0.0114426140785872,normalized split importance
+B-random_forest,B,native_split_importance,syn_flag_cnt,0.0005947120374825,normalized split importance
+B-random_forest,B,native_split_importance,ack_flag_cnt,0.0989491488746393,normalized split importance
+B-random_forest,B,native_split_importance,rst_flag_cnt,0.0095582594892527,normalized split importance
+B-random_forest,B,native_split_importance,fin_flag_cnt,0.0006229749712901,normalized split importance
+B-random_forest,B,permutation_PR_decrease,flow_duration,0.1347954148164797,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,tot_fwd_pkts,0.1673509859861134,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,tot_bwd_pkts,0.1803974940226805,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,totlen_fwd_pkts,0.1130779954718286,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,totlen_bwd_pkts,0.0569215578561239,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,pkt_len_mean,-0.0547914419868341,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,pkt_len_std,0.0283715089945532,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_iat_mean,0.0746703653142642,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_iat_std,-0.0156188051975536,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,fwd_iat_mean,0.0564447806467771,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,bwd_iat_mean,0.0141697851433373,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_pkts_s,0.0908181971866366,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_byts_s,-0.0722682139298975,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,down_up_ratio,0.026197866026101,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,syn_flag_cnt,5.228181940316231e-05,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,ack_flag_cnt,-0.131568450603354,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,rst_flag_cnt,0.057978369997975,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,fin_flag_cnt,0.0003818424489372,baseline minus permuted PR area
