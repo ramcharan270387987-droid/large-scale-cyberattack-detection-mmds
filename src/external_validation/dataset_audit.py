@@ -21,7 +21,7 @@ def run(project,input_root,output,scratch):
       try:
         for path in files:
             with path.open(encoding='utf-8-sig',errors='replace',newline='') as f:header=next(csv.reader(f))
-            norm=[x.strip() for x in header];assert len(set(norm))==len(norm),'Duplicate external headers';assert 'Label' in norm
+            norm=[x.strip() for x in header];assert 'Label' in norm
             cols=['c'+str(i) for i in range(len(header))];schema=T.StructType([T.StructField(n,T.StringType()) for n in cols]);raw=spark.read.text(str(path));line=F.col('value');parts=F.from_csv(line,schema.simpleString(),{'mode':'PERMISSIVE'});raw=raw.select(line.alias('_raw'),parts.alias('parsed'),F.size(F.split(line,',',-1)).alias('_fields')).select('_raw','_fields','parsed.*')
             blank=F.length(F.trim('_raw'))==0;repeated=F.trim(F.col('c0'))==norm[0];malformed=(F.col('_fields')!=len(header));counts=raw.agg(F.count('*').alias('lines'),F.sum(blank.cast('long')).alias('blank'),F.sum(repeated.cast('long')).alias('headers'),F.sum((malformed & ~blank).cast('long')).alias('malformed')).first().asDict()
             typed=raw.withColumn('source_day',F.lit(capture(path.name))).withColumn('source_file',F.lit(path.name)).withColumn('record_fingerprint',F.sha2('_raw',256)).withColumn('_parse_ok',~blank & ~repeated & ~malformed)
@@ -30,7 +30,7 @@ def run(project,input_root,output,scratch):
             for name,external in cfg['external_columns'].items():
                 assert external in norm,(name,external);c=cols[norm.index(external)];v=F.expr('try_cast(`'+c+'` as double)');finite=v.isNotNull() & ~F.isnan(v) & (F.abs(v)!=float('inf')) & (v>=0)
                 mapped.append(F.when(finite,v).alias(name));audits.extend([F.sum(F.when(F.trim(c)=='',1).otherwise(0)).alias(name+'_blank'),F.sum(F.isnan(v).cast('long')).alias(name+'_nan'),F.sum((F.abs(v)==float('inf')).cast('long')).alias(name+'_infinite'),F.sum((v<0).cast('long')).alias(name+'_negative')])
-            stats=typed.where('_parse_ok').agg(*audits).first().asDict();results.append(dict(file=path.name,bytes=path.stat().st_size,sha256=digest(path),capture_day=capture(path.name),header=norm,**counts,feature_quality=stats))
+            stats=typed.where('_parse_ok').agg(*audits).first().asDict();results.append(dict(file=path.name,bytes=path.stat().st_size,sha256=digest(path),capture_day=capture(path.name),header=norm,duplicate_header_names=sorted({x for x in norm if norm.count(x)>1}),**counts,feature_quality=stats))
             # Raw typed strings retain all columns, original labels and parse flags privately.
             typed.drop('_raw').write.mode('overwrite').parquet(str(output/'raw_typed'/path.stem))
             frames.append(typed.select('source_day','source_file','record_fingerprint','_parse_ok','original_label','binary_label',*mapped))
@@ -42,7 +42,7 @@ def run(project,input_root,output,scratch):
         dup={}
         for name,g in [('canonical',full_groups),('predictor',common_groups)]:dup[name]=g.agg(F.count('*').alias('groups'),F.sum((F.col('rows')-1)).alias('duplicate_excess_rows'),F.sum((F.col('classes')>1).cast('long')).alias('conflicting_label_groups')).first().asDict()
         exact=eligible.groupBy('record_fingerprint').count().agg(F.sum(F.col('count')-1).alias('duplicate_excess_rows')).first().asDict();quantiles=eligible.approxQuantile(cfg['source_features'],[0,.25,.5,.75,1],.001)
-        receipt=dict(status='validated',dataset=cfg['dataset'],dataset_version=1,files=results,source_bytes=sum(x['bytes'] for x in results),physical_data_rows=total,eligible_rows=good,excluded_rows=total-good,label_and_split_counts=labels,duplicates=dup,exact=exact,feature_quantiles=dict(zip(cfg['source_features'],quantiles)),timestamp_audit='unsupported: MachineLearningCSV has no event timestamp; capture-day filename only',schema='phase14-external-v1',resources=environment(),spark_version=spark.version,master=spark.sparkContext.master,seconds=time.monotonic()-start)
+        receipt=dict(status='validated',dataset=cfg['dataset'],dataset_version=1,files=results,source_bytes=sum(x['bytes'] for x in results),physical_lines_including_headers=total,repeated_header_rows=sum(x['headers'] for x in results),physical_data_rows=total-sum(x['headers'] for x in results),eligible_rows=good,excluded_rows=total-sum(x['headers'] for x in results)-good,label_and_split_counts=labels,duplicates=dup,exact=exact,feature_quantiles=dict(zip(cfg['source_features'],quantiles)),timestamp_audit='unsupported: MachineLearningCSV has no event timestamp; capture-day filename only',schema='phase14-external-v1',resources=environment(),spark_version=spark.version,master=spark.sparkContext.master,seconds=time.monotonic()-start)
         verified_receipt(receipt);atomic_json(output/'external_audit.json',receipt);print('PHASE14B EXTERNAL AUDIT COMPLETE',total,good,flush=True)
       finally:spark.stop()
     receipt['memory']=monitor.summary();atomic_json(output/'external_audit.json',receipt)
