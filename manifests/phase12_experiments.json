@@ -1,8 +1,29 @@
 {
-  "phase": 12, "complete": false, "protocol_commit": "3ff45ef",
+  "phase": 12,
+  "complete": false,
+  "protocol_commit": "3ff45ef",
   "phase11_parent": "96c1885ef97243e4de33757603fe1530994f0f8e",
-  "stage": "12A", "next_stage": "12B",
+  "stage": "12B",
+  "next_stage": "12C",
   "focused_tests_passed": 7,
-  "historical_executed": false, "synthetic_executed": false,
-  "protected_refs": {"work":"16ef2c23bbfe33c497d32863173455185fe868ed", "main":"e6215d6834ce06ba60fe9c7e65ce4a97b611343d"}
+  "historical_executed": false,
+  "synthetic_executed": true,
+  "protected_refs": {
+    "work": "16ef2c23bbfe33c497d32863173455185fe868ed",
+    "main": "e6215d6834ce06ba60fe9c7e65ce4a97b611343d"
+  },
+  "synthetic_runs": 288,
+  "synthetic_models": 344,
+  "synthetic_receipt_sha256": "9adb2ee6ba8135c64a3da11d065e65fde0965770163fd8584c95cfe562a477f6",
+  "baseline_receipt": {
+    "path": "Phase8 baseline B version1",
+    "status": "validated",
+    "sha256": "24ebe6284097ad0565963532acd9a02f85876e5b44a97cbca7f6f3fbaa01101d",
+    "exact_retained_counts": [
+      13191622,
+      1151256,
+      980109
+    ]
+  },
+  "stage12A_remote": "2a21d07de8a3b03449ecf94d6832cd6396377293"
 }

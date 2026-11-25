@@ -80,7 +80,10 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
                 natural_rollbacks+=1
         if policy=='P3' and available and index<len(backend.forward)-1:
             try:
-                selected=operating(backend.hist(current,cal_days,1))
+                threshold_hist=backend.hist(current,cal_days,1)
+                if min(sum(v[c] for v in threshold_hist.values()) for c in (0,1))<backend.min_class:
+                    raise ValueError('Insufficient threshold validation class support')
+                selected=operating(threshold_hist)
                 thresholds.append({'run':tag,'policy':policy,'delay':delay,'window':index,'old_bin':threshold,'new_bin':selected,
                                    'activation_index':index+1,'calibration_days':list(map(str,cal_days))})
                 pending={'model':current,'threshold':selected,'complete':arrival,'earliest':index+1,
