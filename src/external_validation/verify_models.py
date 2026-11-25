@@ -19,7 +19,7 @@ from src.scalability.benchmark_runner import session
 from src.scalability.resource_monitor import environment,Monitor
 
 def run(project,input_root,output,scratch):
-    started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_external_validation.yaml').read_text());design=json.loads((project/'configs/ml_experiments.yaml').read_text());manifest=json.loads((project/'manifests/parquet_layers.json').read_text());clean=json.loads((project/'configs/cleaning.yaml').read_text());spark=session(4,16,scratch);records=[];source_results=[]
+    started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_external_validation.yaml').read_text());design=json.loads((project/'configs/ml_experiments.yaml').read_text());manifest=json.loads((project/'manifests/parquet_layers.json').read_text());clean=json.loads((project/'configs/cleaning.yaml').read_text());spark=session(4,16,scratch);records=[];source_results=[];overlaps=[];seen_preprocessing=set()
     try:
         raw,source_receipt=verified_input(spark,locate_producer(input_root,manifest['independent_mount']['summary_sha256']),manifest,clean);common=cfg['common_features'];source=raw.select('source_day','binary_label','attack_family','original_label','record_fingerprint',*common)
         for n in common:
@@ -36,7 +36,21 @@ def run(project,input_root,output,scratch):
             else:
                 column='chronological_rank' if entry['protocol']=='chronological' else 'grouped_rank';active=target.where('chronological_retained') if entry['protocol']=='chronological' else target;fraction=cfg['target_train_fraction_permyriad']
             train=active.where(F.col(column)==0).where(F.pmod(F.xxhash64(F.lit(cfg['seed']),'predictor_key'),F.lit(10000))<fraction);validation=active.where(F.col(column)==1);training_counts=[r.asDict() for r in train.groupBy('source_day','binary_label').count().collect()];assert sum(x['count'] for x in training_counts)==entry['training_rows'];h,_=histogram(pipeline,validation);expected={int(k):v for k,v in entry['calibration_histogram'].items()};assert h==expected,'Independent calibration histogram differs'
-            records.append(dict(model=entry['model'],original_components_verified=len(hashes),independent_runtime_reload=True,probe_scores=first_scores,calibration_histogram_identical=True,training_day_counts=training_counts,threshold_bin_unchanged=entry['threshold_bin'],model_source=entry['saved']['artifact']))
+            preprocessing_key=hashlib.sha256(json.dumps({'domain':entry['domain'],'protocol':entry['protocol'],'preprocessing':entry['preprocessing']},sort_keys=True).encode()).hexdigest()
+            if preprocessing_key not in seen_preprocessing:
+                seen_preprocessing.add(preprocessing_key);imputer=next(x for x in pipeline.stages if type(x).__name__=='ImputerModel');imputed=imputer.getOutputCols()
+                sets={}
+                for name,population in [('training',train),('validation',validation)]:sets[name]=imputer.transform(population).withColumn('_imputed_key',vector_key(imputed)).select('_imputed_key').distinct().persist(StorageLevel.DISK_ONLY)
+                pair=sets['training'].join(sets['validation'],'_imputed_key').count();overlaps.append(dict(preprocessing_key=preprocessing_key,domain=entry['domain'],protocol=entry['protocol'],first='training',second='validation',imputed_collision_groups=pair))
+                external_tests={'chronological':target.where('chronological_retained AND chronological_rank=2'),'grouped':target.where('grouped_rank=2')}
+                tests={'source_holdout':test,**external_tests} if entry['domain']=='source' else {entry['protocol']:external_tests[entry['protocol']]}
+                for scope,evaluation in tests.items():
+                    keys=imputer.transform(evaluation).withColumn('_imputed_key',vector_key(imputed)).select('_imputed_key').distinct().persist(StorageLevel.DISK_ONLY)
+                    for role,reference in sets.items():overlaps.append(dict(preprocessing_key=preprocessing_key,domain=entry['domain'],protocol=entry['protocol'],first=role,second=scope,imputed_collision_groups=reference.join(keys,'_imputed_key').count(),meaning='Diagnostic preprocessing collision,not exact event duplication'))
+                    keys.unpersist()
+                for reference in sets.values():reference.unpersist()
+                atomic_json(output/'imputed_overlap_audit.json',overlaps)
+            records.append(dict(model=entry['model'],preprocessing_key=preprocessing_key,original_components_verified=len(hashes),independent_runtime_reload=True,probe_scores=first_scores,calibration_histogram_identical=True,training_day_counts=training_counts,threshold_bin_unchanged=entry['threshold_bin'],model_source=entry['saved']['artifact']))
             atomic_json(output/'independent_reload.json',records)
             if entry['domain']=='source':
                 h,groups=histogram(pipeline,test)
