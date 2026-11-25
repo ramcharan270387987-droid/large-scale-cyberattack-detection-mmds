@@ -50,6 +50,14 @@
       "measured_runs": 48,
       "warmups": 16,
       "seconds": 550.44356356
+    },
+    "14E": {
+      "status": "submitted",
+      "worker_status": "SUBMITTED",
+      "kernel_version": "ramcharan2345/mmds-phase-14-execution-optimization/1",
+      "source_commit": "0f1139d3b582d6a09ed2635a5cc543e62dbf213c",
+      "source_sha256": "b961fc440b669f608a54d7ca561d257987e4e5984a37adcbe97a6920507f5d34",
+      "focused_tests": 16
     }
   },
   "protected": {
