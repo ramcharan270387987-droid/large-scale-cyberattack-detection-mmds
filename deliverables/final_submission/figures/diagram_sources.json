@@ -1,0 +1,90 @@
+{
+  "end_to_end": [
+    "Pinned provenance\nand audit",
+    "Typed/canonical\nSpark Parquet",
+    "Leakage-aware\nmodel benchmarks",
+    "Patterns,drift\nand adaptation",
+    "Verified tables\nand model hashes",
+    "Research dashboard\nand submission"
+  ],
+  "data_engineering": [
+    "Private raw CSV",
+    "Typed strings\nand quality flags",
+    "Finite canonical\nfeature mapping",
+    "Feature-ready\nParquet layers",
+    "Row/label/group\nreconciliation",
+    "Versioned receipt\nand content pins"
+  ],
+  "evaluation": [
+    "Prespecified\nprotocol",
+    "Pinned inputs\nand feature contract",
+    "Train-only fitting\nand transforms",
+    "Validation-only\ncalibration",
+    "Retained held-out\nscoring",
+    "Independent numerical\nand artifact checks"
+  ],
+  "leakage_splitting": [
+    "Canonical predictor\nequivalence key",
+    "Assign random or\ncapture-time roles",
+    "Retain earliest role;\npurge later collisions",
+    "Fit preprocessing\nonly on training",
+    "Freeze validation\noperating threshold",
+    "Test denominator\nand collision audit"
+  ],
+  "detection": [
+    "Source feature\ncontract",
+    "Supervised LR/RF\nprobability branch",
+    "Reference K-Means\ndistance branch",
+    "Archived calibration\nand logical gates",
+    "Frozen hybrid\noperating point",
+    "Matched-cohort\nperformance audit"
+  ],
+  "pattern_mining": [
+    "Training reference\ncutpoints",
+    "Six-feature\ntransactions",
+    "FP-Growth\nfrequent itemsets",
+    "Association-rule\nsufficient counts",
+    "Class/family\ncontrast support",
+    "Capture emergence\nwith composition caveat"
+  ],
+  "historical_drift": [
+    "Archived capture\nmicrobatches",
+    "Frozen supervised\nand novelty models",
+    "Window signals\nand support gates",
+    "Drift detectors\nand reference state",
+    "Timestamped\narchived alerts",
+    "Retrospective diagnostics;\nno live capture"
+  ],
+  "adaptive_lifecycle": [
+    "Predict using\nactive model",
+    "Pending labels\nwith simulated delay",
+    "Release labels;\nupdate monitors",
+    "Past-only candidate\nfit and calibration",
+    "Promotion guard\nor retain incumbent",
+    "Future-only activation\nand rollback evidence"
+  ],
+  "explainable_inference": [
+    "Bounded manual\nor uploaded CSV",
+    "Checksum-verified\noriginal parameters",
+    "Stored transform\nand imputation",
+    "Actual model score\nand threshold",
+    "LR logit / centroid\nreconstruction",
+    "New-row explanation\nwith scientific limits"
+  ],
+  "dashboard": [
+    "Immutable archived\nresearch evidence",
+    "Compact LR/RF/K-Means\nportable artifacts",
+    "Schema and\nSHA256 guards",
+    "Unified research\nand inference views",
+    "Session-only\nbounded predictions",
+    "Verified downloads\nand academic demo"
+  ],
+  "external_scalability": [
+    "External track:\nconditional common3",
+    "Frozen source /\ntarget-only models",
+    "Matched target tests;\nseparate sensitivities",
+    "Scale track:\nactual source populations",
+    "Local threads,formats\ncache and partitions",
+    "Bounded Pandas /\ninference / mining"
+  ]
+}
