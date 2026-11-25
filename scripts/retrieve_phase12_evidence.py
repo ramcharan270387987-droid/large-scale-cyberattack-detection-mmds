@@ -31,7 +31,7 @@ def retrieve(version,destination,allow_partial=False):
     for path in (root/'prediction_histograms').glob('*.json'):
         record=json.loads(path.read_text())
         rows=sum(sum(v) for h in record['family_histograms'].values() for v in h.values())
-        scoring.append({'model':record['model'],'day':record['day'],'role':record['role'],'rows':rows,
+        scoring.append({'kernel_version':record.get('origin_kernel_version',version),'model':record['model'],'day':record['day'],'role':record['role'],'rows':rows,
             'prediction_seconds':record['prediction_seconds'],'flows_per_second':rows/record['prediction_seconds'],
             'scope':'first private materialization and histogram aggregation'})
     csv_write(compact/'scoring.csv',scoring)

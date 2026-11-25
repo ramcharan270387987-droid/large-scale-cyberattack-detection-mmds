@@ -134,7 +134,14 @@ def main():
                 'status':'served-forward' if issued else 'accepted-pending' if any(e.get('accepted')=='True' for e in events) else 'rejected',
                 'last_inference_day':max((w['day'] for w in issued),default=None)})
     csv_write(R/'phase12_model_lifecycle.csv',lifecycle)
-    performance=[r|{'scope':'physical-scoring'} for stage in stages for r in read(stage/'scoring.csv')]
+    scoring_rows={}
+    for stage in [*stages,R/'phase12_12E_partial_v1']:
+        if not (stage/'retrieval.json').exists():continue
+        version=json.loads((stage/'retrieval.json').read_text())['kernel_version']
+        for row in read(stage/'scoring.csv'):
+            row['kernel_version']=row.get('kernel_version') or version
+            scoring_rows[(row['kernel_version'],row['model'],row['day'],row['role'])]=row|{'scope':'physical-scoring'}
+    performance=list(scoring_rows.values())
     for r in models:
         performance.append({'scope':'physical-fit','model':r['model'],'backend':r['backend'],'rows':r['rows'],
             **{k:r.get(k) for k in ('fit_seconds','preprocessing_seconds','training_seconds','save_reload_seconds')}})

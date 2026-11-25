@@ -225,6 +225,7 @@ def run(project,input_root,output,scratch,stage):
                 for relative,expected in metadata['receipt']['sha256'].items():
                     if sha256((source/relative).read_bytes()).hexdigest()!=expected:raise ValueError('Resume model hash mismatch')
                 shutil.copytree(source,output/metadata['receipt']['artifact'])
+            if (resume_root/'registries').exists():shutil.copytree(resume_root/'registries',output/'registries')
             source_histograms=resume_root/'prediction_histograms'
             shutil.copytree(source_histograms,output/'prediction_histograms')
             for path in source_histograms.glob('*.json'):

@@ -80,5 +80,18 @@
       "physical_fits": 0
     }
   },
-  "stage12C_remote": "8d8399470e8364b008b9bbbdb137cc575db9f040"
+  "stage12C_remote": "8d8399470e8364b008b9bbbdb137cc575db9f040",
+  "partial_stages": {
+    "12E-v1": {
+      "kernel_version": "ramcharan2345/mmds-phase-12-delayed-label-robustness/1",
+      "status": "ERROR_WITH_COMPLETED_LR_SCOPES",
+      "completed_scopes": 14,
+      "models_verified": 7,
+      "physical_fits": 3,
+      "summary_sha256": "47b39cc6718d3b8a7e1a8ff38be0ceab4e1f86f041102af9482aa4e597d5c996",
+      "reason": "RF audit frame missing scaled_features; actual RF regression test now passes",
+      "resume_ref": "ramcharan2345/mmds-phase-12-robustness-completion"
+    }
+  },
+  "stage12D_remote": "03c38afa2247e28a55c83ba301606654b71f9c30"
 }

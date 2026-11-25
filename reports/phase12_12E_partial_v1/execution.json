@@ -1,0 +1,39 @@
+{
+  "status": "ERROR",
+  "kernel_version": "ramcharan2345/mmds-phase-12-delayed-label-robustness/1",
+  "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-12-delayed-label-robustness",
+  "private_cpu": true,
+  "metadata": {
+    "id": "ramcharan2345/mmds-phase-12-delayed-label-robustness",
+    "id_no": 147282127,
+    "title": "Mmds Phase 12 Delayed Label Robustness",
+    "code_file": "mmds-phase-12-delayed-label-robustness.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "enable_internet": true,
+    "keywords": [],
+    "dataset_sources": [],
+    "kernel_sources": [
+      "ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "ramcharan2345/mmds-phase-12-adaptive-learning-model-refresh"
+    ],
+    "competition_sources": [],
+    "model_sources": [],
+    "docker_image": "gcr.io/kaggle-images/python@sha256:7de5e1496c568335455c8bb1f86f5c36f0591e87e92e9aa9f0eefcd07f227c66",
+    "machine_shape": "None"
+  },
+  "notebook_sha256": "c454c0e3a4216928977b6a8d5770b43de7e8825224bc8f0d34007daea6ff6ce3",
+  "log_sha256": "181f4121f8ba7df9f1b55306eb39385264a1f40ba4a9348aabaf2900550dd9fe",
+  "log_events": 507,
+  "first_log_seconds": 8.146564122,
+  "last_log_seconds": 549.681540882,
+  "observed_log_span_seconds": 541.5349767600001,
+  "runtime_scope": "Kaggle log offsets include environment setup and postprocessing; Phase12 stage monotonic elapsed is separately recorded",
+  "complete_marker": false,
+  "run_complete_markers": 14,
+  "fit_complete_markers": 3,
+  "source_frozen_initial_reload_markers": 4
+}

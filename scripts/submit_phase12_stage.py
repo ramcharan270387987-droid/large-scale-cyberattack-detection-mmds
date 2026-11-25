@@ -41,8 +41,13 @@ def main():
                     folder=resume_root/meta['receipt']['artifact']
                     for file in folder.rglob('*'):
                         if file.is_file():archive.write(file,'resume/'+file.relative_to(resume_root).as_posix())
+                for file in (resume_root/'registries').rglob('*.json'):
+                    archive.write(file,'resume/registries/'+file.relative_to(resume_root/'registries').as_posix())
                 for file in (resume_root/'prediction_histograms').glob('*.json'):
-                    archive.write(file,'resume/prediction_histograms/'+file.name)
+                    record=json.loads(file.read_text())
+                    if record['role']!=2:continue
+                    record['origin_kernel_version']=pin['kernel_version']
+                    archive.writestr('resume/prediction_histograms/'+file.name,json.dumps(record))
         data=buffer.getvalue();packed=lzma.compress(data,preset=9);expected=hashlib.sha256(data).hexdigest()
         from build_phase2_notebook import cell
         code="import base64,hashlib,lzma\nprivate_models=lzma.decompress(base64.b64decode("+repr(base64.b64encode(packed).decode())+"))\nassert hashlib.sha256(private_models).hexdigest()=="+repr(expected)+"\nPath('/kaggle/working/phase12_synthetic_models.zip').write_bytes(private_models)\nimport zipfile,io\nwith zipfile.ZipFile(io.BytesIO(private_models)) as resume_archive:\n for entry in resume_archive.infolist():\n  if entry.filename.startswith('resume/') and not entry.is_dir():\n   relative=Path(entry.filename).relative_to('resume')\n   assert not relative.is_absolute() and '..' not in relative.parts\n   target=Path('/kaggle/temp/phase12_resume')/relative\n   target.parent.mkdir(parents=True,exist_ok=True)\n   target.write_bytes(resume_archive.read(entry))\nprint('SYNTHETIC_MODEL_ARCHIVE_PRESERVED',len(private_models))\n"
