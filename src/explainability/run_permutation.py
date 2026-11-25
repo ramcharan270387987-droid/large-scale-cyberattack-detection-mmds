@@ -22,7 +22,7 @@ def run(project,input_root,archives,inventory,output,scratch):
     design=json_file(project,'configs/ml_experiments.yaml');upstream=json_file(project,'manifests/parquet_layers.json')
     original=json_file(project,'manifests/phase4_models.json');names=registry(design,upstream['feature_columns'])
     spark=spark_session(design,scratch);spark.conf.set('spark.sql.sources.partitionColumnTypeInference.enabled','false')
-    results=[];sample_receipts=[];distributions=[]
+    results=[];sample_receipts=[];distributions=[];model_metadata=[]
     try:
         require(spark.version=='4.3.0','Unexpected Spark runtime')
         raw,receipt=verified_input(spark,locate_producer(input_root,upstream['independent_mount']['summary_sha256']),upstream,json_file(project,'configs/cleaning.yaml'))
@@ -31,11 +31,14 @@ def run(project,input_root,archives,inventory,output,scratch):
         specifications=[(name,[name]) for name in names]+groups
         for protocol in ('A','B'):
             active,split=benchmark_population(prepared,protocol,design,receipt['days'],original,output)
+            reference_bounds=None
             for rank,role in ((0,'training_reference'),(2,'evaluation')):
                 population=active.where(F.col('split_rank')==rank)
                 quantiles=population.approxQuantile(names,[0.,.1,.5,.9,1.],.001)
                 support=population.agg(F.count('*').alias('rows'),*[F.count(F.when(F.col(name).isNull(),1)).alias(name) for name in names]).first()
-                distributions.extend(dict(protocol=protocol,role=role,feature=name,rows=support['rows'],missing=support[name],quantiles=values) for name,values in zip(names,quantiles))
+                if rank==0:reference_bounds={name:(values[0],values[-1]) for name,values in zip(names,quantiles)}
+                outside=population.agg(*[F.count(F.when((F.col(name)<reference_bounds[name][0])|(F.col(name)>reference_bounds[name][1]),1)).alias(name) for name in names]).first()
+                distributions.extend(dict(protocol=protocol,role=role,feature=name,rows=support['rows'],missing=support[name],quantiles=values,outside_training_range=outside[name],training_range=list(reference_bounds[name])) for name,values in zip(names,quantiles))
             atomic_json(output/'feature_distributions.json',distributions)
             selected=sample_groups(active.where('split_rank = 2'),23013,1000).select('source_day','binary_label',*names)
             rows=[r.asDict() for r in selected.collect()]
@@ -59,6 +62,12 @@ def run(project,input_root,archives,inventory,output,scratch):
                 path=archives/entry['id'];hashes={p.relative_to(path).as_posix():sha256(p.read_bytes()).hexdigest() for p in path.rglob('*') if p.is_file()}
                 require(hashes==entry['sha256'],'Archived model hashes differ')
                 model=PipelineModel.load(str(path));tick=monotonic()
+                imputer=next(stage for stage in model.stages if type(stage).__name__=='ImputerModel')
+                metadata=dict(model=entry['id'],feature_order=imputer.getInputCols(),training_imputation=imputer.surrogateDF.first().asDict(),feature_column=model.stages[-1].getFeaturesCol(),stage_types=[type(stage).__name__ for stage in model.stages])
+                scalers=[stage for stage in model.stages if type(stage).__name__=='StandardScalerModel']
+                if scalers:metadata.update(training_std=list(scalers[0].std),with_mean=scalers[0].getWithMean(),with_std=scalers[0].getWithStd())
+                model_metadata.append(metadata)
+                atomic_json(output/'model_metadata.json',model_metadata)
                 scored=model.transform(frame).select('condition','binary_label',F.least(F.floor(vector_to_array('probability')[1]*2048).cast('int'),F.lit(2047)).alias('bin'))
                 aggregate=scored.groupBy('condition','binary_label','bin').count().collect()
                 histograms=defaultdict(lambda:defaultdict(lambda:[0,0]))

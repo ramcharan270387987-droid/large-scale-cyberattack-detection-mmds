@@ -4,7 +4,7 @@
   "protocol_commit": "98e18753783665fd9b3a0805a623047d3af01ede",
   "starting_checkpoint": "be53a63b7f8f330c3561efcdf73f2501d66ccac7",
   "focused_tests": {
-    "passed": 4,
+    "passed": 12,
     "spark": "4.3.0"
   },
   "submitted_source_sha256": "4458efc84faa813c776f0c324202427e12c489d25ac925f0f00e8d956122ffd0",
@@ -30,6 +30,11 @@
       },
       "log_sha256": "f73880bc576ff26a7c5cb0a8fbe7c67ca6cbdf1282860e6bc33d5dae2ba42645",
       "private_local_explanations": "Kaggle version1 mmds_phase13/private_local_explanations.json"
+    },
+    "permutation": {
+      "kernel_version": 2,
+      "worker_status": "SUBMITTED",
+      "submitted_source_sha256": "e1cb508e580c6a9653a2492478c27b2a32e145a057aeaec67489ab48d0418e62"
     }
   }
 }

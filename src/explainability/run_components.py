@@ -89,7 +89,7 @@ def run(project,input_root,archives,inventory,output,scratch):
                 record.update(rows=len(scored),classes=meta['classes'],cutoff_bin=meta['threshold_bin'],rejection_policy_supported=meta['threshold_bin'] is not None,outcomes=[dict(day=k[0],true_family=k[1],binary_label=k[2],predicted_family=k[3],rejected=k[4],rows=v,mean_maximum_score=confidence[k][0]/v,mean_top_two_margin=confidence[k][1]/v) for k,v in counts.items()],interpretation='Conditional family-stage evidence; binary-gate misses remain separate. A has no archived rejection cutoff in its committed receipt.')
             elif kind=='adaptive':
                 estimator=model.stages[-1];imputer=next(s for s in model.stages if type(s).__name__=='ImputerModel');feature_names=imputer.getInputCols()
-                record.update(selected_policies=meta['selected_policies'],frozen_initial=meta['frozen_initial'],feature_order=feature_names,training_days=meta['training_days'])
+                record.update(selected_policies=meta['selected_policies'],frozen_initial=meta['frozen_initial'],feature_order=feature_names,training_days=meta['training_days'],training_imputation=imputer.surrogateDF.first().asDict())
                 if hasattr(estimator,'coefficients'):
                     coefficients=list(estimator.coefficients);intercept=estimator.intercept
                     scaler=next(s for s in model.stages if type(s).__name__=='StandardScalerModel');std=list(scaler.std)
