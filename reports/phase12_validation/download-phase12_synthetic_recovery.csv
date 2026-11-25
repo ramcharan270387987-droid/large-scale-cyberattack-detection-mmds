@@ -1,0 +1,4 @@
+run,mechanism,policy,delay,prechange_recall,recovery_windows,definition
+stationary-seed23013-P6-d3-b6-p8-s8-c2-m50-aFalse,stationary,P6,3,0.0519877675840978,2.0,"first postchange 3-window block ending with pooled recall >= prechange recall-.05; stationary and input shifts are controls, not loss/recovery proof"
+stationary-seed23014-P6-d3-b6-p8-s8-c2-m50-aFalse,stationary,P6,3,0.2731629392971246,2.0,"first postchange 3-window block ending with pooled recall >= prechange recall-.05; stationary and input shifts are controls, not loss/recovery proof"
+stationary-seed23015-P6-d3-b6-p8-s8-c2-m50-aFalse,stationary,P6,3,0.0696095076400679,2.0,"first postchange 3-window block ending with pooled recall >= prechange recall-.05; stationary and input shifts are controls, not loss/recovery proof"

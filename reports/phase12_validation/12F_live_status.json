@@ -1,0 +1,26 @@
+[
+  {
+    "stage": "12C",
+    "version": "ramcharan2345/mmds-phase-12-adaptive-learning-model-refresh/3",
+    "latest": 3,
+    "status": "KernelWorkerStatus.COMPLETE"
+  },
+  {
+    "stage": "12D",
+    "version": "ramcharan2345/mmds-phase12-12d-adaptive-research/1",
+    "latest": 1,
+    "status": "KernelWorkerStatus.COMPLETE"
+  },
+  {
+    "stage": "12E",
+    "version": "ramcharan2345/mmds-phase-12-robustness-completion/1",
+    "latest": 1,
+    "status": "KernelWorkerStatus.COMPLETE"
+  },
+  {
+    "stage": "12E-partial",
+    "version": "ramcharan2345/mmds-phase-12-delayed-label-robustness/1",
+    "latest": 1,
+    "status": "KernelWorkerStatus.ERROR"
+  }
+]

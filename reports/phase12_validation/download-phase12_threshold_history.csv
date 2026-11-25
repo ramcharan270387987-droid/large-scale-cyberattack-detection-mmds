@@ -1,0 +1,2 @@
+run,policy,delay,window,old_bin,new_bin,activation_index,calibration_days,action_seconds
+E-LR-seed23013-sample125-weight1-P3-d3-b3-p2-s2-c2-m200-aFalse,P3,3,5,2047,2047,6,"[""2018-02-21"", ""2018-02-22""]",0.0092284840000047

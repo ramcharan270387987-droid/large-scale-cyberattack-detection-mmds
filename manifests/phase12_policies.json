@@ -72,5 +72,7 @@
     "recall_drop": 0.15,
     "fpr_increase": 0.02
   },
-  "caveat": "requests, valid fitting, acceptance and future activation are distinct"
+  "caveat": "requests, valid fitting, acceptance and future activation are distinct",
+  "config_sha256": "1fc74ad6afadbabc0f01c940a2874f56d8b9c1a7b4d7ef3c9f391dda5d429fd1",
+  "phase11_detector_registry_sha256": "f3966c9914cdb1d4862b0f51a6e59fa6670aaff796cb4762124d404b8f17788c"
 }

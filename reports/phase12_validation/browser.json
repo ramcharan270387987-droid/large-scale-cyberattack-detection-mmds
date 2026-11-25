@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "browser": "Chromium / Playwright",
+  "url": "http://127.0.0.1:8512",
+  "sections": [
+    {
+      "section": "Static versus adaptive comparison",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Model family",
+        "Delay",
+        "Backend",
+        "ADWIN sensitivity",
+        "Cooldown",
+        "Minimum",
+        "Budget"
+      ],
+      "download_records": 1,
+      "charts": 1
+    },
+    {
+      "section": "Drift and retraining eligibility",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Delay",
+        "Window",
+        "Day"
+      ],
+      "download_records": 1,
+      "charts": 1
+    },
+    {
+      "section": "Prediction and label availability",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Delay",
+        "Window",
+        "Day",
+        "Model"
+      ],
+      "download_records": 1,
+      "charts": 1
+    },
+    {
+      "section": "Active model version and coverage",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Model"
+      ],
+      "download_records": 3,
+      "charts": 0
+    },
+    {
+      "section": "Model history",
+      "status": "PASS",
+      "filters": [
+        "Model family",
+        "Backend",
+        "Model"
+      ],
+      "download_records": 1,
+      "charts": 1
+    },
+    {
+      "section": "Model lifecycle decisions",
+      "status": "PASS",
+      "filters": [
+        "Model"
+      ],
+      "download_records": 1,
+      "charts": 0
+    },
+    {
+      "section": "Candidate promotion and rejection",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Delay",
+        "Window",
+        "Model"
+      ],
+      "download_records": 1,
+      "charts": 1
+    },
+    {
+      "section": "Threshold history",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Delay",
+        "Window"
+      ],
+      "download_records": 1,
+      "charts": 0
+    },
+    {
+      "section": "Attack-family performance",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Delay",
+        "Backend",
+        "Family"
+      ],
+      "download_records": 1,
+      "charts": 1
+    },
+    {
+      "section": "Family exposure and forward support",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Delay",
+        "Family",
+        "Exposure period"
+      ],
+      "download_records": 2,
+      "charts": 1
+    },
+    {
+      "section": "Training-window and delay comparisons",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Model family",
+        "Delay",
+        "Backend",
+        "ADWIN sensitivity",
+        "Cooldown",
+        "Minimum",
+        "Budget"
+      ],
+      "download_records": 1,
+      "charts": 1
+    },
+    {
+      "section": "Retention and forgetting",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Delay",
+        "Window",
+        "Model"
+      ],
+      "download_records": 1,
+      "charts": 0
+    },
+    {
+      "section": "Synthetic benchmark",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Model family",
+        "Delay",
+        "Backend",
+        "Mechanism",
+        "ADWIN sensitivity",
+        "Cooldown",
+        "Minimum",
+        "Budget"
+      ],
+      "download_records": 1,
+      "charts": 1
+    },
+    {
+      "section": "Synthetic recovery",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Delay",
+        "Mechanism"
+      ],
+      "download_records": 3,
+      "charts": 0
+    },
+    {
+      "section": "Computational cost",
+      "status": "PASS",
+      "filters": [
+        "Policy",
+        "Backend",
+        "Scope"
+      ],
+      "download_records": 3,
+      "charts": 1
+    },
+    {
+      "section": "Released-label-only diagnostics",
+      "status": "PASS",
+      "filters": [
+        "Scope"
+      ],
+      "download_records": 35,
+      "charts": 0
+    },
+    {
+      "section": "Rollback and controlled faults",
+      "status": "PASS",
+      "filters": [],
+      "download_records": 12,
+      "charts": 0
+    },
+    {
+      "section": "Research limitations",
+      "status": "PASS"
+    },
+    {
+      "section": "Study figures",
+      "status": "PASS",
+      "figure_download": true
+    }
+  ],
+  "screenshots": 4,
+  "screenshot_files": [
+    "preview-desktop.png",
+    "preview-desktop-download.png",
+    "preview-mobile.png",
+    "preview-mobile-results.png"
+  ],
+  "desktop": [
+    1440,
+    1050
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "adwin_sensitivity_download_records": 6,
+  "mobile_horizontal_main_overflow": false,
+  "page_errors": [],
+  "http_errors": [],
+  "seconds": 48.84728852599801,
+  "scope": "isolated local preview; protected public dashboard unchanged"
+}

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "sections": 17,
-  "supported_filter_groups": 360,
+  "sections": 19,
+  "supported_filter_groups": 1656,
   "all_widget_selections": "PASS",
   "empty_state": "PASS"
 }

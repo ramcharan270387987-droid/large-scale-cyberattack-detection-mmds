@@ -7,7 +7,7 @@ from streamlit.testing.v1 import AppTest
 from dashboard import phase12_preview as preview
 
 def main():
-    app=AppTest.from_file('dashboard/phase12_preview.py',default_timeout=45).run();assert not app.exception
+    app=AppTest.from_file(str(preview.ROOT / 'dashboard/phase12_preview.py'),default_timeout=45).run();assert not app.exception
     combinations=0;sections=list(preview.SECTIONS)+['Research limitations','Study figures']
     for section in sections:
         app.selectbox[0].set_value(section).run();assert not app.exception,section

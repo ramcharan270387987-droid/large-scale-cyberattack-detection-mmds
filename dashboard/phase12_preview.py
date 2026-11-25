@@ -14,6 +14,7 @@ SECTIONS={
  'Candidate promotion and rejection':'phase12_training_events.csv',
  'Threshold history':'phase12_threshold_history.csv',
  'Attack-family performance':'phase12_family_metrics.csv',
+ 'Family exposure and forward support':'phase12_family_exposure.csv',
  'Training-window and delay comparisons':'phase12_robustness.csv',
  'Retention and forgetting':'phase12_retention.csv',
  'Synthetic benchmark':'phase12_synthetic_metrics.csv',
@@ -22,13 +23,16 @@ SECTIONS={
  'Released-label-only diagnostics':'phase12_released_only_metrics.csv',
  'Rollback and controlled faults':'phase12_faults.csv',
 }
-FILTERS=('policy','model_family','delay','backend','window','day','model','family','mechanism','scope')
+FILTERS=('policy','model_family','delay','backend','window','day','model','family','mechanism','scope','advanced','cooldown','minimum','budget','exposure_period')
+LABELS={'advanced':'ADWIN sensitivity','exposure_period':'Exposure period'}
 
 def load(section):
     path=ROOT/'reports'/SECTIONS[section]
     data=pd.read_csv(path) if path.exists() and path.stat().st_size else pd.DataFrame()
     if section.startswith('Synthetic') and 'backend' in data:
         data['mechanism']=data['backend'].str.split('-seed').str[0]
+    if section=='Model history':data=data.rename(columns={'family':'model_family'})
+    if section=='Family exposure and forward support':data=data.rename(columns={'period':'exposure_period'})
     return data
 
 def select(data,column,value):return data if value=='All' else data.loc[data[column].eq(value)]
@@ -52,20 +56,22 @@ def main():
         if column in data:
             values=sorted(data[column].dropna().unique().tolist())
             if values:
-                value=st.sidebar.selectbox(column.replace('_',' ').capitalize(),['All']+values,key=section+column)
+                value=st.sidebar.selectbox(LABELS.get(column,column.replace('_',' ').capitalize()),['All']+values,key=section+column)
                 data=select(data,column,value)
     if data.empty:st.info('No supported observations for this filter combination.');return
     st.caption(f'{len(data):,} aggregate evidence rows. Blank values are undefined or unsupported. Percentages in tables are proportions; chart axes identify units.')
     if section=='Drift and retraining eligibility':
         st.info('Seven historical captures cannot support KSWIN warm-up100. DDM has no genuine ordered error stream. JS alerts indicate input distribution changes, without verified historical concept-drift boundaries.')
     if section=='Rollback and controlled faults':st.warning('Controlled fault injections are separate from natural historical rollback counts.')
+    if section=='Attack-family performance' and data['recall'].isna().all():
+        st.info('Recall is undefined for the selected population because it has no evaluated attacks.')
     numeric=[c for c in ('recall','precision','f1','fpr','pr_auc','charged_fit_seconds','training_seconds','score_seconds','new_training_rows') if c in data and pd.api.types.is_numeric_dtype(data[c])]
     if numeric:
         metric=st.selectbox('Chart metric',numeric,key=section+'metric')
         axis=next((c for c in ('day','window','policy','model','fault') if c in data),None)
         if axis:
             chart=data[[axis,metric]].dropna(subset=[metric]).copy()
-            if chart.empty:st.info('Selected metric is undefined for these observations.')
+            if chart.empty:st.caption('Selected metric is undefined for these observations.')
             else:
                 # Keep each evidence row; aggregation is deliberately disabled.
                 import altair as alt
