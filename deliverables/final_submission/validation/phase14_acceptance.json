@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "external": {
+    "status": "PASS",
+    "models": 12,
+    "unique_evaluation_records": 64,
+    "independent_confusion_auc_checks": 64,
+    "validation_threshold_optima": 12,
+    "matched_populations": {
+      "('chronological', 'primary')": 308939,
+      "('chronological', 'exclude_source_collisions')": 287528,
+      "('grouped', 'primary')": 508641,
+      "('grouped', 'exclude_source_collisions')": 218235
+    },
+    "test_threshold_tuning": false
+  },
+  "volume": {
+    "status": "PASS",
+    "measured_runs": 48,
+    "warmups": 16,
+    "populations": [
+      1000860,
+      3998178,
+      7998515,
+      16232943
+    ]
+  },
+  "optimization": {
+    "status": "PASS",
+    "measured_runs": 130,
+    "matrices": 17,
+    "correctness": "All compared matched configurations agree; integer counts exact",
+    "pandas_populations": [
+      100000,
+      500000,
+      1000000
+    ]
+  },
+  "figures": 17,
+  "tests": 164,
+  "protected": {
+    "refs/heads/main": "e6215d6834ce06ba60fe9c7e65ce4a97b611343d",
+    "refs/heads/work": "16ef2c23bbfe33c497d32863173455185fe868ed",
+    "refs/tags/v1.0-mmds-validated-baseline": "3295d05e5f873355ed0c5140f45f4c3b58047043",
+    "refs/tags/v1.0-mmds-validated-baseline^{}": "16ef2c23bbfe33c497d32863173455185fe868ed"
+  },
+  "phase15_started": false
+}

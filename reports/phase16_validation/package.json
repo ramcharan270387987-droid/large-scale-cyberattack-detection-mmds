@@ -1,0 +1,8 @@
+{
+  "path": "deliverables/MMDS_final_submission.zip",
+  "bytes": 8110027,
+  "sha256": "b24574fa733a7775d7635e0a0004ba6b70555e99218f57ec9e36b870f516753c",
+  "payload_files": 85,
+  "zip_files": 87,
+  "exclusions": "Inventory and checksum exclude themselves; ZIP and final gate receipt are outside payload to avoid circular hashes."
+}

@@ -59,6 +59,6 @@ def verify():
   for p in OUT.rglob('*'):
    if p.is_file():assert z.read('MMDS_final_submission/'+p.relative_to(OUT).as_posix())==p.read_bytes()
  assert (OUT/'REPRODUCIBILITY.md').exists() and (OUT/'STREAMLIT_CLOUD_DEPLOYMENT.md').exists()
- result=dict(status='PASS',phases_complete=list(range(1,17)),starting_checkpoint=START,validated_tree_checkpoint=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),research_sources_unchanged=True,tests=180,document_pages=quality['pdf_pages'],slides=24,viva_questions=80,scientific=scientific,package=package,protected=refs,no_training=True,no_kaggle_jobs=True,no_public_deployment=True)
+ result=dict(status='PASS',phases_complete=list(range(1,17)),starting_checkpoint=START,academic_document_checkpoint='481c5d9a1314d7629b4b73f70ef773ee81470b99',validation_scope='Current payload verified by inventory and ZIP SHA256; final remote commit checked separately at delivery',research_sources_unchanged=True,tests=180,document_pages=quality['pdf_pages'],slides=24,viva_questions=80,scientific=scientific,package=package,protected=refs,no_training=True,no_kaggle_jobs=True,no_public_deployment=True)
  (ROOT/'reports/phase16_validation/acceptance.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2));return result
 if __name__=='__main__':verify()

@@ -1,0 +1,233 @@
+[
+  {
+    "claim_id": "RF_A",
+    "phase": 4,
+    "source": "reports/phase4_metrics.csv",
+    "selector": "{\"model\": \"random_forest\", \"protocol\": \"A\", \"split\": \"test\", \"training_cohort\": \"group_sample\"}",
+    "metric": "recall",
+    "value": "0.8281692848511479",
+    "evaluation_rows": "2432292",
+    "interpretation": "Fixed archived operating point;PR/ROC and cohort differ by protocol",
+    "source_sha256": "45b66da86f111a3a9beee12fea97fd5ad66dabc29397b3f8c6abb9e9c962b8ea"
+  },
+  {
+    "claim_id": "RF_B",
+    "phase": 4,
+    "source": "reports/phase4_metrics.csv",
+    "selector": "{\"model\": \"random_forest\", \"protocol\": \"B\", \"split\": \"test\", \"training_cohort\": \"group_sample\"}",
+    "metric": "recall",
+    "value": "0.0019997602205970508",
+    "evaluation_rows": "980109",
+    "interpretation": "Fixed archived operating point;PR/ROC and cohort differ by protocol",
+    "source_sha256": "45b66da86f111a3a9beee12fea97fd5ad66dabc29397b3f8c6abb9e9c962b8ea"
+  },
+  {
+    "claim_id": "RF_C",
+    "phase": 4,
+    "source": "reports/phase4_metrics.csv",
+    "selector": "{\"model\": \"random_forest\", \"protocol\": \"C\", \"split\": \"test\", \"training_cohort\": \"group_sample\"}",
+    "metric": "recall",
+    "value": "0.0243161094224924",
+    "evaluation_rows": "1458218",
+    "interpretation": "Fixed archived operating point;PR/ROC and cohort differ by protocol",
+    "source_sha256": "45b66da86f111a3a9beee12fea97fd5ad66dabc29397b3f8c6abb9e9c962b8ea"
+  },
+  {
+    "claim_id": "E2-B-common-LR_recall",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E2-B-common-LR\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "recall",
+    "value": 0.0,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E2-B-common-LR_fpr",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E2-B-common-LR\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "fpr",
+    "value": 0.0,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E2-B-common-LR_pr_auc",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E2-B-common-LR\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "pr_auc",
+    "value": 0.42030680800667014,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E2-B-common-RF_recall",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E2-B-common-RF\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "recall",
+    "value": 0.1118468381357571,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E2-B-common-RF_fpr",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E2-B-common-RF\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "fpr",
+    "value": 0.04254052008193072,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E2-B-common-RF_pr_auc",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E2-B-common-RF\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "pr_auc",
+    "value": 0.7460938857395666,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E3-chronological-LR_recall",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E3-chronological-LR\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "recall",
+    "value": 0.0,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E3-chronological-LR_fpr",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E3-chronological-LR\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "fpr",
+    "value": 0.001274601478315077,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E3-chronological-LR_pr_auc",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E3-chronological-LR\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "pr_auc",
+    "value": 0.36862898459119414,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E3-chronological-RF_recall",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E3-chronological-RF\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "recall",
+    "value": 0.054364726358538,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E3-chronological-RF_fpr",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E3-chronological-RF\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "fpr",
+    "value": 0.0003896161724107222,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "E3-chronological-RF_pr_auc",
+    "phase": 14,
+    "source": "reports/phase14_14C/external_evaluation.json",
+    "selector": "{\"evaluation_protocol\": \"chronological\", \"model\": \"E3-chronological-RF\", \"operating\": \"validation_budget\", \"sensitivity\": \"primary\"}",
+    "metric": "pr_auc",
+    "value": 0.8725543945976483,
+    "evaluation_rows": 308939,
+    "interpretation": "New common3models;validation-budget threshold;2048-bin PR area",
+    "source_sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854"
+  },
+  {
+    "claim_id": "TIME_pandas",
+    "phase": 14,
+    "source": "reports/phase14_pandas_comparison.csv",
+    "selector": "{\"configuration\": \"pandas-1000000\", \"matrix\": \"Spark_Pandas_end_to_end\"}",
+    "metric": "median_seconds",
+    "value": "0.24224524499999234",
+    "evaluation_rows": "1000000",
+    "interpretation": "Matched four-column CSV parse/filter/group;three repetitions;single machine",
+    "source_sha256": "9de22140e40b8f3f6393ddadba1af9088a08cccee27dd41392e371dc86e78b55"
+  },
+  {
+    "claim_id": "TIME_spark",
+    "phase": 14,
+    "source": "reports/phase14_pandas_comparison.csv",
+    "selector": "{\"configuration\": \"spark-1000000\", \"matrix\": \"Spark_Pandas_end_to_end\"}",
+    "metric": "median_seconds",
+    "value": "0.6164812990000428",
+    "evaluation_rows": "1000000",
+    "interpretation": "Matched four-column CSV parse/filter/group;three repetitions;single machine",
+    "source_sha256": "9de22140e40b8f3f6393ddadba1af9088a08cccee27dd41392e371dc86e78b55"
+  },
+  {
+    "claim_id": "ADAPT_P0",
+    "phase": 12,
+    "source": "reports/phase12_policy_comparison.csv",
+    "selector": "{\"backend\": \"E-LR-seed23013-sample125-weight1\", \"budget\": \"3\", \"cooldown\": \"2\", \"delay\": \"0\", \"minimum\": \"200\", \"policy\": \"P0\", \"sliding\": \"2\"}",
+    "metric": "recall",
+    "value": "0.0018278648722271132",
+    "evaluation_rows": "1997636",
+    "interpretation": "Matched primary historical E;simulated label delay0;not late B cohort",
+    "source_sha256": "2ab9e41689f7388542a6fbbf91c5e9a14b055d6026011da2378535ecfddf6769"
+  },
+  {
+    "claim_id": "ADAPT_P2",
+    "phase": 12,
+    "source": "reports/phase12_policy_comparison.csv",
+    "selector": "{\"backend\": \"E-LR-seed23013-sample125-weight1\", \"budget\": \"3\", \"cooldown\": \"2\", \"delay\": \"0\", \"minimum\": \"200\", \"policy\": \"P2\", \"sliding\": \"2\"}",
+    "metric": "recall",
+    "value": "0.0025029510345399345",
+    "evaluation_rows": "1997636",
+    "interpretation": "Matched primary historical E;simulated label delay0;not late B cohort",
+    "source_sha256": "2ab9e41689f7388542a6fbbf91c5e9a14b055d6026011da2378535ecfddf6769"
+  },
+  {
+    "claim_id": "ADAPT_P6",
+    "phase": 12,
+    "source": "reports/phase12_policy_comparison.csv",
+    "selector": "{\"backend\": \"E-LR-seed23013-sample125-weight1\", \"budget\": \"3\", \"cooldown\": \"2\", \"delay\": \"0\", \"minimum\": \"200\", \"policy\": \"P6\", \"sliding\": \"2\"}",
+    "metric": "recall",
+    "value": "0.0018278648722271132",
+    "evaluation_rows": "1997636",
+    "interpretation": "Matched primary historical E;simulated label delay0;not late B cohort",
+    "source_sha256": "2ab9e41689f7388542a6fbbf91c5e9a14b055d6026011da2378535ecfddf6769"
+  },
+  {
+    "claim_id": "PARITY",
+    "phase": 15,
+    "source": "reports/phase15_validation/parity.json",
+    "selector": "{}",
+    "metric": "synthetic_probes",
+    "value": 2445,
+    "evaluation_rows": 2445,
+    "interpretation": "Numerical compatibility;not prediction accuracy",
+    "source_sha256": "1f8f8d7c7c3b073b9a68993ac838c37e8fdfa2673cb88156f20b0dc49a16dac3"
+  }
+]

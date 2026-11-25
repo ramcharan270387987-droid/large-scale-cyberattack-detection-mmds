@@ -1,0 +1,233 @@
+[
+  {
+    "path": "deliverables/final_submission/figures/end_to_end.png",
+    "sha256": "e2126727f7d06471c7933927d71e0bc1b9f2c9d693c1f00c1e72d6dd1a53cb62",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "end_to_end"
+  },
+  {
+    "path": "deliverables/final_submission/figures/end_to_end.svg",
+    "sha256": "8eefc496a5d981ae99dc08084d4966f24dea0d994152a5d6197531b0e7cad765",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "end_to_end"
+  },
+  {
+    "path": "deliverables/final_submission/figures/data_engineering.png",
+    "sha256": "c9c3fae9e8dae7636431ef785dc5e573469ebae8733280581afe77006b11d6fe",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "data_engineering"
+  },
+  {
+    "path": "deliverables/final_submission/figures/data_engineering.svg",
+    "sha256": "cf8586d3dce88f844a0a6ac77184c2fe5b1f03f7e96f4e500854483d4ece6a0a",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "data_engineering"
+  },
+  {
+    "path": "deliverables/final_submission/figures/evaluation.png",
+    "sha256": "30c1073b4ba9a750d0fc97a6cee9bfd037741f513c343b831bf86a731997b3f7",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "evaluation"
+  },
+  {
+    "path": "deliverables/final_submission/figures/evaluation.svg",
+    "sha256": "5768f3a4b22f13b5398451aedf7874d4cccb284d116533e80c2fe58657bedf79",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "evaluation"
+  },
+  {
+    "path": "deliverables/final_submission/figures/leakage_splitting.png",
+    "sha256": "177668922ff278273d881739b968b070699ebe79974ae8a849d3fee021731b0d",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "leakage_splitting"
+  },
+  {
+    "path": "deliverables/final_submission/figures/leakage_splitting.svg",
+    "sha256": "d44fe11aa4f138ecfb3cd3d86b75b6da3ec8bc7875f77709f188430448150638",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "leakage_splitting"
+  },
+  {
+    "path": "deliverables/final_submission/figures/detection.png",
+    "sha256": "05a89fd1f6f0604d1545ee64d50b424503868e0a38ce7a35ec8b1e2102127f1e",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "detection"
+  },
+  {
+    "path": "deliverables/final_submission/figures/detection.svg",
+    "sha256": "19d13d94463d6cf841784f2b13f9a8bd3b224146f9c0decdc0fabc786451a8a9",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "detection"
+  },
+  {
+    "path": "deliverables/final_submission/figures/pattern_mining.png",
+    "sha256": "84e5faa53788602b15760fc9b3f0b3e347d20b91b2ab27ed2eb1b9ea57ea7957",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "pattern_mining"
+  },
+  {
+    "path": "deliverables/final_submission/figures/pattern_mining.svg",
+    "sha256": "c3fa02b5815b2ddcb260ec9a861b71cb80b54c6fbaf3586803c20cfe66bc3320",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "pattern_mining"
+  },
+  {
+    "path": "deliverables/final_submission/figures/historical_drift.png",
+    "sha256": "34b70e369e565b6702e68f0b3c373e16245ae87804e83fa12748da82cd031362",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "historical_drift"
+  },
+  {
+    "path": "deliverables/final_submission/figures/historical_drift.svg",
+    "sha256": "9414c835355e71a11d7af306791473098cba402da8c198f77428349662b42c6c",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "historical_drift"
+  },
+  {
+    "path": "deliverables/final_submission/figures/adaptive_lifecycle.png",
+    "sha256": "3ea724b055422ad4d3d51f68e0ece40d809464ddf0379b7873a14170f0aa761f",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "adaptive_lifecycle"
+  },
+  {
+    "path": "deliverables/final_submission/figures/adaptive_lifecycle.svg",
+    "sha256": "a0ec5e6b1ebf39c92cf8ccd26acbc7e3eebb55951e98dfa802867d1dd5304e34",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "adaptive_lifecycle"
+  },
+  {
+    "path": "deliverables/final_submission/figures/explainable_inference.png",
+    "sha256": "17b409c6d0a048fa7e536349acd8eb2ca51c46e3c0adc1f7f95ed13d22fa2941",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "explainable_inference"
+  },
+  {
+    "path": "deliverables/final_submission/figures/explainable_inference.svg",
+    "sha256": "066ed8e79a8360a2c04b1a1b13508a4fe40bd32e1192d7cb110936cf14bee32f",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "explainable_inference"
+  },
+  {
+    "path": "deliverables/final_submission/figures/dashboard.png",
+    "sha256": "6adc3c1bc80b7f07ee32313baadda8b61b7a49be566f0a1e0dda06d934fc0a0b",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "dashboard"
+  },
+  {
+    "path": "deliverables/final_submission/figures/dashboard.svg",
+    "sha256": "097162d6a8102cf25fd326d03c674d534ae460bf21d883fa34f32e03164e8634",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "dashboard"
+  },
+  {
+    "path": "deliverables/final_submission/figures/external_scalability.png",
+    "sha256": "a25a04dafb7461d32ee42809643541a1048f2214feceb0076d6c362a4aeaeb63",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "external_scalability"
+  },
+  {
+    "path": "deliverables/final_submission/figures/external_scalability.svg",
+    "sha256": "297bb8d8e7a03b34653b1eacd0ffcec323df6f199d15037db4cd1d6f95952636",
+    "kind": "conceptual",
+    "source": "Diagram node/edge specification in scripts/build_phase16_diagrams.py",
+    "name": "external_scalability"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase5_b_distance_histogram.png",
+    "source": "reports/figures/phase5_b_distance_histogram.png",
+    "sha256": "369ffe07f88c2820f16037abd1a3bbcfc1ccbb29ae08b7921512e32488010c5c",
+    "kind": "validated numerical chart",
+    "name": "phase5_b_distance_histogram"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase6_timeline.png",
+    "source": "reports/figures/phase6_timeline.png",
+    "sha256": "5c82e5b4724d91400d3b81005fe7b9aef69eb0a28a2d7543b49c6ffbd7cc2ffe",
+    "kind": "validated numerical chart",
+    "name": "phase6_timeline"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase10_support_sensitivity.png",
+    "source": "reports/figures/phase10_support_sensitivity.png",
+    "sha256": "c44a21d8bbfbac1a1dec37e836b9d31a5752efed6dd582cab35411f7b57f2e95",
+    "kind": "validated numerical chart",
+    "name": "phase10_support_sensitivity"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase11_adwin_detections.png",
+    "source": "reports/figures/phase11_adwin_detections.png",
+    "sha256": "ea2d3f41f8f61c9dff9c5752f229a043357fb5eee5d74b19cb3b562f2fc2bd73",
+    "kind": "validated numerical chart",
+    "name": "phase11_adwin_detections"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase12_ablations.png",
+    "source": "reports/figures/phase12_ablations.png",
+    "sha256": "2db4ebd458d76d0add3778c13d17778b7c03430882f6ac7367febe97bf9bd3c2",
+    "kind": "validated numerical chart",
+    "name": "phase12_ablations"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase13_linear_shap.png",
+    "source": "reports/figures/phase13_linear_shap.png",
+    "sha256": "3ccc7e4af02b45acc7065367be30badf1e670d372ea1f587c45ef0675bb7dae8",
+    "kind": "validated numerical chart",
+    "name": "phase13_linear_shap"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase14_external_models.png",
+    "source": "reports/figures/phase14_external_models.png",
+    "sha256": "c9660d3e436ef94bc07845897db8d70a617eb50eeef9399ca966a46cfb8ee3ba",
+    "kind": "validated numerical chart",
+    "name": "phase14_external_models"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase14_volume.png",
+    "source": "reports/figures/phase14_volume.png",
+    "sha256": "31835b577c795abe0af85670162ff8f35d334d5b74edd701a5f13c17a84eedea",
+    "kind": "validated numerical chart",
+    "name": "phase14_volume"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase14_workers.png",
+    "source": "reports/figures/phase14_workers.png",
+    "sha256": "3da6702c077d3ffb639e4f81f3fdf36ff89515737a21b6653c3deb9ca997a95f",
+    "kind": "validated numerical chart",
+    "name": "phase14_workers"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase14_storage.png",
+    "source": "reports/figures/phase14_storage.png",
+    "sha256": "329785bbd39a26b8911e920f6ec1914ce88f17d6836148a605a677037a766ae2",
+    "kind": "validated numerical chart",
+    "name": "phase14_storage"
+  },
+  {
+    "path": "deliverables/final_submission/figures/phase14_pandas.png",
+    "source": "reports/figures/phase14_pandas.png",
+    "sha256": "f25bf5ef83eaa8e2d07c980e75854dccd78dbe968b3862be4f30e8eaeefbabcd",
+    "kind": "validated numerical chart",
+    "name": "phase14_pandas"
+  }
+]

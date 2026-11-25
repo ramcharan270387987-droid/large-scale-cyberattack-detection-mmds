@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "phases_complete": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "starting_checkpoint": "cb36ddec061006acfda09deda2168a196cbf4a48",
+  "academic_document_checkpoint": "481c5d9a1314d7629b4b73f70ef773ee81470b99",
+  "validation_scope": "Current payload verified by inventory and ZIP SHA256; final remote commit checked separately at delivery",
+  "research_sources_unchanged": true,
+  "tests": 180,
+  "document_pages": {
+    "project_report.pdf": 61,
+    "manuscript/manuscript.pdf": 6,
+    "academic_presentation.pdf": 24,
+    "viva_handbook.pdf": 9,
+    "speaker_notes.pdf": 4
+  },
+  "slides": 24,
+  "viva_questions": 80,
+  "scientific": {
+    "status": "PASS",
+    "phases": 15,
+    "exact_claim_selectors": 21,
+    "figure_files": 33,
+    "no_cross_protocol_pooling": true
+  },
+  "package": {
+    "path": "deliverables/MMDS_final_submission.zip",
+    "bytes": 8110027,
+    "sha256": "b24574fa733a7775d7635e0a0004ba6b70555e99218f57ec9e36b870f516753c",
+    "payload_files": 85,
+    "zip_files": 87,
+    "exclusions": "Inventory and checksum exclude themselves; ZIP and final gate receipt are outside payload to avoid circular hashes."
+  },
+  "protected": {
+    "refs/heads/main": "e6215d6834ce06ba60fe9c7e65ce4a97b611343d",
+    "refs/heads/work": "16ef2c23bbfe33c497d32863173455185fe868ed",
+    "refs/tags/v1.0-mmds-validated-baseline": "3295d05e5f873355ed0c5140f45f4c3b58047043",
+    "refs/tags/v1.0-mmds-validated-baseline^{}": "16ef2c23bbfe33c497d32863173455185fe868ed"
+  },
+  "no_training": true,
+  "no_kaggle_jobs": true,
+  "no_public_deployment": true
+}

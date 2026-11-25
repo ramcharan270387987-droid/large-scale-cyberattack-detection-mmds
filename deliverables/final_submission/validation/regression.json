@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "total": 180,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 167.381,
+  "log_sha256": "e9d096651e2f9e0a814d0f0f128cb268b98f919ef9366dde5e8be3e26dd99262",
+  "python": "3.12.14",
+  "java": "21",
+  "spark": "4.3.0",
+  "new_research": false
+}

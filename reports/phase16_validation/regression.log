@@ -1,0 +1,880 @@
+2026-11-25 13:51:57.143 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-25 13:51:57.144 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+test_all_routes_and_chart_sources (test_dashboard.DashboardAppTest.test_all_routes_and_chart_sources) ... 2026-11-25 13:52:01.752 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:02.241 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:02.241 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:02.241 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:02.241 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:02.316 DEBUG   streamlit.runtime.caching.cache_data_api: Creating new DataCache (key=d300f63bff6839c90f0dad972267b93a, persist=None, max_entries=None, max_size_bytes=None, ttl=None)
+2026-11-25 13:52:02.316 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.316 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.316 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.389 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.389 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.389 DEBUG   streamlit.runtime.caching.cache_data_api: Creating new DataCache (key=f93e205440e612fd136082f8a4aebd6c, persist=None, max_entries=None, max_size_bytes=None, ttl=None)
+2026-11-25 13:52:02.390 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:02.390 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:02.390 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:02.390 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.390 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.396 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:02.396 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:02.396 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:02.396 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.397 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.452 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.453 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.453 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.453 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.454 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:02.454 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:02.455 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:02.790 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:02.790 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:02.824 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:02.825 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:02.825 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:02.825 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:02.825 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:02.825 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:02.834 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.835 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.836 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.836 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.837 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:02.837 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:02.837 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:02.837 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:02.862 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.862 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.863 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.863 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.864 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:02.864 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:02.866 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:02.866 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:02.867 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:02.867 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:02.867 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:02.871 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.871 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.873 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: dba3c1c53f1e2b939a2459139c5b74fe
+2026-11-25 13:52:02.873 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: dba3c1c53f1e2b939a2459139c5b74fe
+2026-11-25 13:52:02.873 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: dba3c1c53f1e2b939a2459139c5b74fe
+2026-11-25 13:52:02.873 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.873 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.877 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:02.878 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:02.878 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: babfe9e906893d6fef5609c41436a191
+2026-11-25 13:52:02.878 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: babfe9e906893d6fef5609c41436a191
+2026-11-25 13:52:02.879 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: babfe9e906893d6fef5609c41436a191
+2026-11-25 13:52:02.879 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.879 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.902 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3be75e56365c5fa4334c029be4bf1ea1
+2026-11-25 13:52:02.903 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 3be75e56365c5fa4334c029be4bf1ea1
+2026-11-25 13:52:02.903 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 3be75e56365c5fa4334c029be4bf1ea1
+2026-11-25 13:52:02.903 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.903 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.921 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: a705019bbdcfcb13e92c201cccf35650
+2026-11-25 13:52:02.921 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: a705019bbdcfcb13e92c201cccf35650
+2026-11-25 13:52:02.921 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: a705019bbdcfcb13e92c201cccf35650
+2026-11-25 13:52:02.921 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.921 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.926 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 25e8846317b7027e6cbee7631bdcf23e
+2026-11-25 13:52:02.926 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 25e8846317b7027e6cbee7631bdcf23e
+2026-11-25 13:52:02.927 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 25e8846317b7027e6cbee7631bdcf23e
+2026-11-25 13:52:02.927 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.927 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.932 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 39d2553734ba75419a3e19e7dec04743
+2026-11-25 13:52:02.932 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 39d2553734ba75419a3e19e7dec04743
+2026-11-25 13:52:02.932 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 39d2553734ba75419a3e19e7dec04743
+2026-11-25 13:52:02.932 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.932 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.934 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: bd66eda401f23fb58ffd1c2ba90aeb37
+2026-11-25 13:52:02.934 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: bd66eda401f23fb58ffd1c2ba90aeb37
+2026-11-25 13:52:02.934 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: bd66eda401f23fb58ffd1c2ba90aeb37
+2026-11-25 13:52:02.934 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.934 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.944 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 23a8eca249e75caf5fe8d467948d401c
+2026-11-25 13:52:02.944 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 23a8eca249e75caf5fe8d467948d401c
+2026-11-25 13:52:02.944 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 23a8eca249e75caf5fe8d467948d401c
+2026-11-25 13:52:02.944 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.945 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.946 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.947 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.947 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.947 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:02.947 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:02.948 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:02.948 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:03.274 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:03.274 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:03.308 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:03.309 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:03.309 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:03.309 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:03.309 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:03.309 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:03.314 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.314 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.315 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.315 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.316 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:03.316 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:03.316 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:03.316 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:03.344 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.344 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.344 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.344 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.344 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:03.344 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:03.347 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:03.347 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:03.347 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:03.347 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:03.347 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:03.350 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.350 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.350 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: dba3c1c53f1e2b939a2459139c5b74fe
+2026-11-25 13:52:03.350 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: dba3c1c53f1e2b939a2459139c5b74fe
+2026-11-25 13:52:03.351 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3be75e56365c5fa4334c029be4bf1ea1
+2026-11-25 13:52:03.351 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3be75e56365c5fa4334c029be4bf1ea1
+2026-11-25 13:52:03.380 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 39d2553734ba75419a3e19e7dec04743
+2026-11-25 13:52:03.380 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 39d2553734ba75419a3e19e7dec04743
+2026-11-25 13:52:03.386 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: db6da704fac9181d04f20ca055ca90e7
+2026-11-25 13:52:03.386 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: db6da704fac9181d04f20ca055ca90e7
+2026-11-25 13:52:03.386 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: db6da704fac9181d04f20ca055ca90e7
+2026-11-25 13:52:03.386 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.387 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.390 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: c6a1e1ce93c5d854b9564b2279973f52
+2026-11-25 13:52:03.390 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: c6a1e1ce93c5d854b9564b2279973f52
+2026-11-25 13:52:03.390 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: c6a1e1ce93c5d854b9564b2279973f52
+2026-11-25 13:52:03.390 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.390 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.394 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.394 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.394 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.394 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.395 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:03.395 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:03.395 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:03.663 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:03.663 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:03.698 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:03.699 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:03.699 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:03.699 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:03.699 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:03.699 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:03.705 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.705 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.707 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.707 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.707 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:03.708 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:03.708 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:03.708 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:03.734 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.734 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.734 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.734 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.734 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:03.734 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:03.736 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:03.737 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:03.737 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:03.737 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:03.737 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:03.740 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.740 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.741 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:03.741 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:03.761 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 1296c984f207d69e380c1c52bf67e90f
+2026-11-25 13:52:03.761 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 1296c984f207d69e380c1c52bf67e90f
+2026-11-25 13:52:03.761 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 1296c984f207d69e380c1c52bf67e90f
+2026-11-25 13:52:03.761 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.761 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.769 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.769 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.769 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.769 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:03.769 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:03.769 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:03.770 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:04.039 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:04.039 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:04.075 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:04.076 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:04.076 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:04.076 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:04.077 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:04.077 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:04.084 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.084 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.087 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.087 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.087 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:04.087 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:04.088 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:04.088 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:04.112 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.112 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.112 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.112 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.113 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:04.113 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:04.115 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:04.115 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:04.115 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:04.115 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:04.115 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:04.120 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.120 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.121 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 278bb8d97caff232956ff4305ab75550
+2026-11-25 13:52:04.122 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 278bb8d97caff232956ff4305ab75550
+2026-11-25 13:52:04.122 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 278bb8d97caff232956ff4305ab75550
+2026-11-25 13:52:04.122 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.122 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.126 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: d08e3a6fbd6a0efd4742901311ce9007
+2026-11-25 13:52:04.126 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: d08e3a6fbd6a0efd4742901311ce9007
+2026-11-25 13:52:04.126 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: d08e3a6fbd6a0efd4742901311ce9007
+2026-11-25 13:52:04.126 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.126 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.152 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 9340048ca6a3a73814878e5af3900657
+2026-11-25 13:52:04.152 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 9340048ca6a3a73814878e5af3900657
+2026-11-25 13:52:04.152 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 9340048ca6a3a73814878e5af3900657
+2026-11-25 13:52:04.152 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.152 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.175 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: d75d64a941f21335c5b23812516bcdce
+2026-11-25 13:52:04.176 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: d75d64a941f21335c5b23812516bcdce
+2026-11-25 13:52:04.176 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: d75d64a941f21335c5b23812516bcdce
+2026-11-25 13:52:04.176 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.176 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.214 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: ba26f6a188247cf88650c608b05fa62d
+2026-11-25 13:52:04.214 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: ba26f6a188247cf88650c608b05fa62d
+2026-11-25 13:52:04.215 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: ba26f6a188247cf88650c608b05fa62d
+2026-11-25 13:52:04.215 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.215 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.235 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: d205e6d66384c55357046eb63a34dcd5
+2026-11-25 13:52:04.235 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: d205e6d66384c55357046eb63a34dcd5
+2026-11-25 13:52:04.235 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: d205e6d66384c55357046eb63a34dcd5
+2026-11-25 13:52:04.235 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.235 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.259 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.259 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.259 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.259 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.260 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:04.260 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:04.261 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:04.547 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:04.547 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:04.582 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:04.584 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:04.584 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:04.584 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:04.584 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:04.584 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:04.590 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.590 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.594 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.594 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.595 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:04.595 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:04.595 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:04.595 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:04.620 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.620 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.620 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.620 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.621 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:04.621 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:04.623 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:04.623 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:04.624 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:04.624 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:04.624 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:04.628 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.628 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.629 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 6bc4cd334bbecbc913fbd06a8484a663
+2026-11-25 13:52:04.629 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 6bc4cd334bbecbc913fbd06a8484a663
+2026-11-25 13:52:04.629 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 6bc4cd334bbecbc913fbd06a8484a663
+2026-11-25 13:52:04.629 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.629 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.638 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: f2008a538c78f70ae9779ba3dee54920
+2026-11-25 13:52:04.638 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: f2008a538c78f70ae9779ba3dee54920
+2026-11-25 13:52:04.638 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: f2008a538c78f70ae9779ba3dee54920
+2026-11-25 13:52:04.638 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.638 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.679 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.679 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.679 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.679 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:04.680 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:04.680 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:04.681 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:04.960 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:04.960 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:04.994 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:04.995 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:04.995 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:04.995 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:04.995 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:04.995 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:05.000 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.000 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.002 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.002 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.002 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:05.002 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:05.003 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:05.003 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:05.027 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.027 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.027 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.027 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.028 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:05.028 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:05.030 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:05.030 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:05.030 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:05.030 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:05.030 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:05.033 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.033 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.034 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: a9f69a09035d9d0c0bd9ebbdf1bc3d13
+2026-11-25 13:52:05.034 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: a9f69a09035d9d0c0bd9ebbdf1bc3d13
+2026-11-25 13:52:05.034 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: a9f69a09035d9d0c0bd9ebbdf1bc3d13
+2026-11-25 13:52:05.034 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.035 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.081 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: ff2f40c46e36fbba18a50e5d969da20e
+2026-11-25 13:52:05.081 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: ff2f40c46e36fbba18a50e5d969da20e
+2026-11-25 13:52:05.081 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: ff2f40c46e36fbba18a50e5d969da20e
+2026-11-25 13:52:05.081 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.081 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.125 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: f62fd886a4aad37e8e6643c421a1c9c4
+2026-11-25 13:52:05.126 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: f62fd886a4aad37e8e6643c421a1c9c4
+2026-11-25 13:52:05.126 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: f62fd886a4aad37e8e6643c421a1c9c4
+2026-11-25 13:52:05.126 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.126 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.137 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:05.137 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:05.137 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:05.138 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.138 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.158 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 2a45ecaf5a9630d6173954eeb5d7e18a
+2026-11-25 13:52:05.158 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 2a45ecaf5a9630d6173954eeb5d7e18a
+2026-11-25 13:52:05.158 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: 2a45ecaf5a9630d6173954eeb5d7e18a
+2026-11-25 13:52:05.158 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.158 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.161 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: dbe9535e16ed6251a74b4e84eb8cb31c
+2026-11-25 13:52:05.161 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: dbe9535e16ed6251a74b4e84eb8cb31c
+2026-11-25 13:52:05.161 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: dbe9535e16ed6251a74b4e84eb8cb31c
+2026-11-25 13:52:05.162 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.162 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.164 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.165 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.165 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.165 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.166 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:05.166 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:05.167 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:05.462 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:05.462 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:05.493 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:05.494 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:05.495 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:05.495 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:05.495 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:05.495 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:05.499 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.499 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.501 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.501 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.501 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:05.501 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:05.501 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:05.501 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:05.525 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.525 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.525 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.525 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.526 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:05.526 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:05.528 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:05.528 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:05.529 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:05.529 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:05.529 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:05.532 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.532 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.532 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:05.532 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:05.538 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: d4658d1b19ec48a275e955146aacf741
+2026-11-25 13:52:05.538 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: d4658d1b19ec48a275e955146aacf741
+2026-11-25 13:52:05.538 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache MISS: d4658d1b19ec48a275e955146aacf741
+2026-11-25 13:52:05.538 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.538 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.542 DEBUG   streamlit.runtime.memory_media_file_storage: Adding media file feb8756b7870a5e4d54bc3b4a49a3c88
+2026-11-25 13:52:05.548 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.548 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.548 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.548 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.548 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:05.548 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:05.550 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:05.820 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:05.820 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:05.854 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:05.855 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:05.855 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:05.855 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:05.855 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:05.855 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:05.860 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.860 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.861 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.861 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.861 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:05.861 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:05.862 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:05.862 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:05.888 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.888 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.888 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.888 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.889 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:05.889 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:05.891 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:05.891 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:05.891 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:05.891 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:05.891 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:05.895 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.895 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.897 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.897 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:05.898 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:05.898 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+ok
+test_interactive_protocol_novelty_and_alerts (test_dashboard.DashboardAppTest.test_interactive_protocol_novelty_and_alerts) ... 2026-11-25 13:52:05.899 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:06.175 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:06.175 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:06.208 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:06.210 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:06.210 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:06.210 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:06.210 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:06.210 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:06.223 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.223 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.226 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.226 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.226 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:06.226 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:06.227 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:06.227 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:06.260 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.260 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.261 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.262 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.263 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:06.263 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:06.269 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:06.269 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:06.269 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:06.269 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:06.269 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:06.273 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.273 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.274 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:06.274 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:06.302 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 1296c984f207d69e380c1c52bf67e90f
+2026-11-25 13:52:06.302 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 1296c984f207d69e380c1c52bf67e90f
+2026-11-25 13:52:06.305 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.305 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.305 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.305 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.306 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:06.306 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:06.309 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:06.309 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:06.309 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:06.309 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:06.309 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:06.312 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.312 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.313 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:06.313 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:06.337 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 1296c984f207d69e380c1c52bf67e90f
+2026-11-25 13:52:06.338 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 1296c984f207d69e380c1c52bf67e90f
+2026-11-25 13:52:06.341 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.341 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.341 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.341 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.341 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:06.341 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:06.343 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:06.620 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:06.620 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:06.683 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:06.683 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:06.683 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:06.684 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:06.684 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:06.684 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:06.689 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.689 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.691 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.691 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.692 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:06.692 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:06.692 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:06.693 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:06.717 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.717 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.717 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.718 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.718 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:06.718 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:06.720 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:06.720 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:06.720 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:06.721 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:06.721 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:06.723 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.724 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.725 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 6bc4cd334bbecbc913fbd06a8484a663
+2026-11-25 13:52:06.725 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 6bc4cd334bbecbc913fbd06a8484a663
+2026-11-25 13:52:06.731 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: f2008a538c78f70ae9779ba3dee54920
+2026-11-25 13:52:06.731 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: f2008a538c78f70ae9779ba3dee54920
+2026-11-25 13:52:06.766 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.766 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.766 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.766 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.767 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:06.767 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:06.770 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:06.770 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:06.770 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:06.770 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:06.770 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:06.773 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.773 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.774 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 6bc4cd334bbecbc913fbd06a8484a663
+2026-11-25 13:52:06.775 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 6bc4cd334bbecbc913fbd06a8484a663
+2026-11-25 13:52:06.780 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: f2008a538c78f70ae9779ba3dee54920
+2026-11-25 13:52:06.781 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: f2008a538c78f70ae9779ba3dee54920
+2026-11-25 13:52:06.814 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.814 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.814 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.814 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:06.815 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:06.815 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:06.815 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 13:52:07.084 DEBUG   streamlit.components.v2.manifest_scanner: Filtered 221 packages down to 1 candidates for component scanning
+2026-11-25 13:52:07.084 DEBUG   streamlit.components.v2.manifest_scanner: Scanning 1 candidate packages for component manifests using 1 worker threads
+2026-11-25 13:52:07.116 DEBUG   streamlit.components.v2.manifest_scanner: Found 0 component manifests total
+2026-11-25 13:52:07.117 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:07.117 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:07.117 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:07.117 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:07.117 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:07.122 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.122 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.124 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.124 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.124 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:07.124 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 3c9331609ea3b12ab4a210a30287b6eb
+2026-11-25 13:52:07.125 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:07.125 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:07.151 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.151 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.152 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.152 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.152 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:07.152 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:07.154 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:07.155 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:07.155 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:07.155 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:07.155 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:07.158 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.158 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.158 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:07.158 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:07.166 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: d4658d1b19ec48a275e955146aacf741
+2026-11-25 13:52:07.166 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: d4658d1b19ec48a275e955146aacf741
+2026-11-25 13:52:07.168 DEBUG   streamlit.runtime.memory_media_file_storage: Adding media file feb8756b7870a5e4d54bc3b4a49a3c88
+2026-11-25 13:52:07.170 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.170 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.171 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.171 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.171 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:07.171 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-25 13:52:07.173 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-25 13:52:07.173 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-25 13:52:07.173 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-25 13:52:07.173 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-25 13:52:07.173 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-25 13:52:07.177 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.177 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.177 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:07.177 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:07.184 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: d4658d1b19ec48a275e955146aacf741
+2026-11-25 13:52:07.184 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: d4658d1b19ec48a275e955146aacf741
+2026-11-25 13:52:07.185 DEBUG   streamlit.runtime.memory_media_file_storage: Adding media file 28def24ec81d07a91f9b1d8833368220
+2026-11-25 13:52:07.188 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.188 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.188 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.188 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: cae66941d9efbd404e4d88758ea67670
+2026-11-25 13:52:07.188 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-25 13:52:07.188 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+ok
+test_alert_filters_and_csv_roundtrip (test_dashboard.DashboardEvidenceTest.test_alert_filters_and_csv_roundtrip) ... 2026-11-25 13:52:07.194 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:07.194 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 4461e77d86180ac61e02b15e0dfda52a
+2026-11-25 13:52:07.198 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: d4658d1b19ec48a275e955146aacf741
+2026-11-25 13:52:07.198 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: d4658d1b19ec48a275e955146aacf741
+ok
+test_bad_csv_schema (test_dashboard.DashboardEvidenceTest.test_bad_csv_schema) ... ok
+test_experiment_and_novelty_isolation (test_dashboard.DashboardEvidenceTest.test_experiment_and_novelty_isolation) ... 2026-11-25 13:52:07.202 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: d205e6d66384c55357046eb63a34dcd5
+2026-11-25 13:52:07.202 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: d205e6d66384c55357046eb63a34dcd5
+2026-11-25 13:52:07.203 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 6bc4cd334bbecbc913fbd06a8484a663
+2026-11-25 13:52:07.203 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 6bc4cd334bbecbc913fbd06a8484a663
+ok
+test_protocol_and_confusion (test_dashboard.DashboardEvidenceTest.test_protocol_and_confusion) ... 2026-11-25 13:52:07.206 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:07.206 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 0288def8160d4f020726e756e8de5e62
+2026-11-25 13:52:07.208 DEBUG   streamlit.runtime.caching.cache_utils: Cache key: 1296c984f207d69e380c1c52bf67e90f
+2026-11-25 13:52:07.209 DEBUG   streamlit.runtime.caching.storage.in_memory_cache_storage_wrapper: Memory cache HIT: 1296c984f207d69e380c1c52bf67e90f
+ok
+test_research_arithmetic_and_lineage (test_dashboard.DashboardEvidenceTest.test_research_arithmetic_and_lineage) ... ok
+test_sources_and_deterministic_package (test_dashboard.DashboardEvidenceTest.test_sources_and_deterministic_package) ... ok
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/25 13:52:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/11/25 13:52:10 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in standalone/kubernetes and LOCAL_DIRS in YARN).
+test_fingerprint_multiplicity_and_conflicting_labels (test_data_engineering.EngineeringTest.test_fingerprint_multiplicity_and_conflicting_labels) ... [Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 19:>                                                         (0 + 1) / 1]                                                                                ok
+test_invalid_values_and_sentinels (test_data_engineering.EngineeringTest.test_invalid_values_and_sentinels) ... ok
+test_layer_round_trip_and_count_reconciliation (test_data_engineering.EngineeringTest.test_layer_round_trip_and_count_reconciliation) ... [Stage 37:>                                                         (0 + 1) / 1]                                                                                ok
+test_leakage_feature_exclusions (test_data_engineering.EngineeringTest.test_leakage_feature_exclusions) ... ok
+test_mapping_and_timestamp_flags (test_data_engineering.EngineeringTest.test_mapping_and_timestamp_flags) ... [Stage 51:>                                                         (0 + 1) / 1]                                                                                ok
+test_producer_receipt_recovery_from_split_logs (test_data_engineering.EngineeringTest.test_producer_receipt_recovery_from_split_logs) ... ok
+test_schema_normalization_and_safe_union (test_data_engineering.EngineeringTest.test_schema_normalization_and_safe_union) ... ok
+test_sql_dataframe_and_rdd_parity (test_data_engineering.EngineeringTest.test_sql_dataframe_and_rdd_parity) ... [Stage 66:>                                                         (0 + 2) / 2]                                                                                ok
+test_column_name_normalization (test_dataset_audit.AuditHelpersTest.test_column_name_normalization) ... ok
+test_count_reconciliation (test_dataset_audit.AuditHelpersTest.test_count_reconciliation) ... ok
+test_inventory_flags_missing_size_extra_and_duplicate (test_dataset_audit.AuditHelpersTest.test_inventory_flags_missing_size_extra_and_duplicate) ... ok
+test_label_normalization_and_default_mapping (test_dataset_audit.AuditHelpersTest.test_label_normalization_and_default_mapping) ... ok
+test_schema_mismatch (test_dataset_audit.AuditHelpersTest.test_schema_mismatch) ... ok
+test_deterministic_sampling (test_dataset_audit.SparkAuditTest.test_deterministic_sampling) ... ok
+test_exact_duplicates_compare_field_values (test_dataset_audit.SparkAuditTest.test_exact_duplicates_compare_field_values) ... ok
+test_numeric_invalid_values (test_dataset_audit.SparkAuditTest.test_numeric_invalid_values) ... [Stage 10:>                                                         (0 + 2) / 2]                                                                                ok
+test_spark_csv_profiles_and_fingerprints (test_dataset_audit.SparkAuditTest.test_spark_csv_profiles_and_fingerprints) ... ok
+test_timestamp_explicit_dmy_and_shadow (test_dataset_audit.SparkAuditTest.test_timestamp_explicit_dmy_and_shadow) ... ok
+test_exact_itemsets_rules_and_reload (test_phase10_fpgrowth.FPGrowthTests.test_exact_itemsets_rules_and_reload) ... [Stage 0:>                                                          (0 + 2) / 2]                                                                                ok
+test_association (test_phase10_metrics.PatternMetricsTests.test_association) ... ok
+test_contrast_and_temporal (test_phase10_metrics.PatternMetricsTests.test_contrast_and_temporal) ... ok
+test_prohibited_registry (test_phase10_patterns.Phase10DiscretizationTests.test_prohibited_registry) ... ok
+test_reference_fit_and_frozen_outside_values (test_phase10_patterns.Phase10DiscretizationTests.test_reference_fit_and_frozen_outside_values) ... [Stage 0:>                                                          (0 + 2) / 2]                                                                                ok
+test_zero_constant_missing_invalid_and_unique (test_phase10_patterns.Phase10DiscretizationTests.test_zero_constant_missing_invalid_and_unique) ... ok
+test_frozen_registry_round_trip_and_inference (test_phase10_registry.PatternRegistryTests.test_frozen_registry_round_trip_and_inference) ... ok
+test_counts_and_group_mass (test_phase10_support.SupportTests.test_counts_and_group_mass) ... ok
+test_validation_budget_and_ties (test_phase10_support.SupportTests.test_validation_budget_and_ties) ... ok
+test_label_release (test_phase11_drift.DriftContracts.test_label_release) ... ok
+test_synthetic_determinism (test_phase11_drift.DriftContracts.test_synthetic_determinism) ... ok
+test_unique_episode_matching (test_phase11_drift.DriftContracts.test_unique_episode_matching) ... ok
+test_agreement_confusion (test_phase11_finalization.FinalDriftTests.test_agreement_confusion) ... ok
+test_arrival_and_valid_clocks (test_phase11_finalization.FinalDriftTests.test_arrival_and_valid_clocks) ... ok
+test_binary_error_contract (test_phase11_finalization.FinalDriftTests.test_binary_error_contract) ... ok
+test_descriptive_correlation (test_phase11_finalization.FinalDriftTests.test_descriptive_correlation) ... ok
+test_failed_batch_restores_state_before_retry (test_phase11_finalization.FinalDriftTests.test_failed_batch_restores_state_before_retry) ... ok
+test_frozen_primary_preserved (test_phase11_finalization.FinalDriftTests.test_frozen_primary_preserved) ... ok
+test_invalid_update_is_unavailable (test_phase11_finalization.FinalDriftTests.test_invalid_update_is_unavailable) ... ok
+test_legacy_emissions_have_separate_availability (test_phase11_finalization.FinalDriftTests.test_legacy_emissions_have_separate_availability) ... ok
+test_legacy_snapshot_counters_remain_unknown (test_phase11_finalization.FinalDriftTests.test_legacy_snapshot_counters_remain_unknown) ... ok
+test_native_eligibility (test_phase11_finalization.FinalDriftTests.test_native_eligibility) ... ok
+test_reference_histogram_stability (test_phase11_finalization.FinalDriftTests.test_reference_histogram_stability) ... ok
+test_reset_reconstruction (test_phase11_finalization.FinalDriftTests.test_reset_reconstruction) ... ok
+test_snapshot_idempotence (test_phase11_finalization.FinalDriftTests.test_snapshot_idempotence) ... ok
+test_support_is_not_negative (test_phase11_finalization.FinalDriftTests.test_support_is_not_negative) ... ok
+test_tolerance_one_to_one (test_phase11_finalization.FinalDriftTests.test_tolerance_one_to_one) ... ok
+test_zero_agreement_edges (test_phase11_finalization.FinalDriftTests.test_zero_agreement_edges) ... ok
+test_final_manifest_gate_if_closed (test_phase11_finalization.FinalEvidenceTests.test_final_manifest_gate_if_closed) ... ok
+test_historical_agreement_excludes_native_warmup (test_phase11_finalization.FinalEvidenceTests.test_historical_agreement_excludes_native_warmup) ... ok
+test_paired_outcomes_release_before_analysis (test_phase11_finalization.FinalEvidenceTests.test_paired_outcomes_release_before_analysis) ... ok
+test_registry_actual_parameters (test_phase11_finalization.FinalEvidenceTests.test_registry_actual_parameters) ... ok
+test_suppression_and_native_label_clock (test_phase11_finalization.FinalEvidenceTests.test_suppression_and_native_label_clock) ... ok
+test_atomic_operating_point_recovery (test_phase12_adaptation.Phase12Tests.test_atomic_operating_point_recovery) ... ok
+test_atomic_registry_and_actual_rollback (test_phase12_adaptation.Phase12Tests.test_atomic_registry_and_actual_rollback) ... ok
+test_capture_only_policy_preserved (test_phase12_adaptation.Phase12Tests.test_capture_only_policy_preserved) ... ok
+test_chronological_roles_and_feature_order (test_phase12_adaptation.Phase12Tests.test_chronological_roles_and_feature_order) ... ok
+test_completed_batch_replay_is_idempotent (test_phase12_adaptation.Phase12Tests.test_completed_batch_replay_is_idempotent) ... ok
+test_controlled_faults_restore_saved_model (test_phase12_adaptation.Phase12Tests.test_controlled_faults_restore_saved_model) ... ok
+test_explicit_no_positive_operating_point (test_phase12_adaptation.Phase12Tests.test_explicit_no_positive_operating_point) ... ok
+test_guard_rejection (test_phase12_adaptation.Phase12Tests.test_guard_rejection) ... ok
+test_label_release_and_pending (test_phase12_adaptation.Phase12Tests.test_label_release_and_pending) ... ok
+test_missing_signal_and_final_arrival_suppression (test_phase12_adaptation.Phase12Tests.test_missing_signal_and_final_arrival_suppression) ... ok
+test_partition_role_normalization (test_phase12_adaptation.Phase12Tests.test_partition_role_normalization) ... ok
+test_preprocessing_uses_training_only (test_phase12_adaptation.Phase12Tests.test_preprocessing_uses_training_only) ... ok
+test_receipt_and_feature_contract (test_phase12_adaptation.Phase12Tests.test_receipt_and_feature_contract) ... ok
+test_runtime_prediction_precedes_label_use (test_phase12_adaptation.Phase12Tests.test_runtime_prediction_precedes_label_use) ... ok
+test_simultaneous_alerts_do_not_duplicate_batch_action (test_phase12_adaptation.Phase12Tests.test_simultaneous_alerts_do_not_duplicate_batch_action) ... ok
+test_synthetic_definitions_and_roles (test_phase12_adaptation.Phase12Tests.test_synthetic_definitions_and_roles) ... ok
+test_synthetic_replay_persistence_and_future_activation (test_phase12_adaptation.Phase12Tests.test_synthetic_replay_persistence_and_future_activation) ... ok
+test_threshold_ties_and_confusion (test_phase12_adaptation.Phase12Tests.test_threshold_ties_and_confusion) ... ok
+test_trigger_support_budget_cooldown (test_phase12_adaptation.Phase12Tests.test_trigger_support_budget_cooldown) ... ok
+test_verified_resume_preserves_completed_scopes (test_phase12_adaptation.Phase12Tests.test_verified_resume_preserves_completed_scopes) ... ok
+test_window_future_exclusion (test_phase12_adaptation.Phase12Tests.test_window_future_exclusion) ... ok
+test_figures_hashes_and_preview_gate (test_phase12_evidence.Phase12EvidenceTests.test_figures_hashes_and_preview_gate) ... ok
+test_frozen_initial_model_and_release_termination (test_phase12_evidence.Phase12EvidenceTests.test_frozen_initial_model_and_release_termination) ... /workspace/work/phase14-recovery-00f/tests/test_phase12_evidence.py:6: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/work/phase14-recovery-00f/reports/phase12_policy_comparison.csv' mode='r' encoding='UTF-8'>
+  def read(path):return list(csv.DictReader((ROOT/path).open()))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_kaggle_receipts_and_leakage (test_phase12_evidence.Phase12EvidenceTests.test_kaggle_receipts_and_leakage) ... ok
+test_pooled_counts_and_matched_cohorts (test_phase12_evidence.Phase12EvidenceTests.test_pooled_counts_and_matched_cohorts) ... /workspace/work/phase14-recovery-00f/tests/test_phase12_evidence.py:6: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/work/phase14-recovery-00f/reports/phase12_prequential_metrics.csv' mode='r' encoding='UTF-8'>
+  def read(path):return list(csv.DictReader((ROOT/path).open()))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_random_forest_validates_both_vectors_and_reloads (test_phase12_spark_backend.Phase12SparkBackendTests.test_random_forest_validates_both_vectors_and_reloads) ... [Stage 0:>                                                          (0 + 2) / 2][Stage 0:=============================>                             (1 + 1) / 2]                                                                                PASS: 30 source tables, 36 supervised results, 147 novelty rows and 102 alert decisions.
+Built 30 aggregate tables, 682,936 bytes.
+FIT_COMPLETE E-RF-seed23013-sample10000-weight1 216fb0625a14d12ea017 ['2018-02-14', '2018-02-15'] 10.370041160000255
+ok
+test_logical_and_weighted_components (test_phase13_components.ComponentTests.test_logical_and_weighted_components) ... ok
+test_open_set_order_ties_and_registry (test_phase13_components.ComponentTests.test_open_set_order_ties_and_registry) ... ok
+test_identity_schema_background_and_shap_guard (test_phase13_contract.ExplanationContractTests.test_identity_schema_background_and_shap_guard) ... ok
+test_distance_and_importance (test_phase13_exact.ExactExplanationTests.test_distance_and_importance) ... ok
+test_linear_raw_and_centered (test_phase13_exact.ExactExplanationTests.test_linear_raw_and_centered) ... ok
+test_saturation_and_invalid_schema (test_phase13_exact.ExactExplanationTests.test_saturation_and_invalid_schema) ... ok
+test_grouped_and_capture_reproducibility (test_phase13_permutation.PermutationTests.test_grouped_and_capture_reproducibility) ... ok
+test_histogram_metrics_and_undefined (test_phase13_permutation.PermutationTests.test_histogram_metrics_and_undefined) ... ok
+test_average_ties_and_reverse_order (test_phase13_rankings.RankingTests.test_average_ties_and_reverse_order) ... ok
+test_duplicate_representatives_are_repartition_invariant (test_phase13_sampling.ExplanationSamplingTests.test_duplicate_representatives_are_repartition_invariant) ... [Stage 0:>                                                          (0 + 2) / 2]                                                                                ok
+test_closed_form_matches_all_coalition_orders (test_phase13_shap.LinearShapTests.test_closed_form_matches_all_coalition_orders) ... ok
+test_training_imputation_scaling_and_probability_parity (test_phase13_spark.SparkExplanationTests.test_training_imputation_scaling_and_probability_parity) ... [Stage 0:>                                                          (0 + 2) / 2]                                                                                ok
+test_numerical_equivalence_preserves_exact_integer_counts (test_phase14_benchmark_evidence.BenchmarkEvidenceTests.test_numerical_equivalence_preserves_exact_integer_counts) ... ok
+test_optimization_acceptance_requires_complete_matrix (test_phase14_benchmark_evidence.BenchmarkEvidenceTests.test_optimization_acceptance_requires_complete_matrix) ... ok
+test_recovered_volume_repetitions_and_checksums (test_phase14_benchmark_evidence.BenchmarkEvidenceTests.test_recovered_volume_repetitions_and_checksums) ... ok
+test_capture_is_not_invented_time (test_phase14_external_validation.ExternalContractTests.test_capture_is_not_invented_time) ... ok
+test_labels_preserve_unknown_attack (test_phase14_external_validation.ExternalContractTests.test_labels_preserve_unknown_attack) ... ok
+test_order_and_unsupported_exact (test_phase14_external_validation.ExternalContractTests.test_order_and_unsupported_exact) ... ok
+test_receipt_requires_reconciliation_and_pins (test_phase14_external_validation.ExternalContractTests.test_receipt_requires_reconciliation_and_pins) ... ok
+test_non_utf8_labels_are_preserved_without_guessing_families (test_phase14_external_validation.LabelByteTests.test_non_utf8_labels_are_preserved_without_guessing_families) ... ok
+test_correctness_rejects_count_changes (test_phase14_scalability.ScalabilityContractTests.test_correctness_rejects_count_changes) ... ok
+test_frozen_nested_matrix_and_repetitions (test_phase14_scalability.ScalabilityContractTests.test_frozen_nested_matrix_and_repetitions) ... ok
+test_speedup_requires_matched_positive_times (test_phase14_scalability.ScalabilityContractTests.test_speedup_requires_matched_positive_times) ... ok
+[Stage 0:>                                                          (0 + 2) / 2]                                                                                test_capture_partition_contract_requires_strings (test_phase14_spark_contracts.Phase14SparkContracts.test_capture_partition_contract_requires_strings) ... ok
+test_controls_keep_training_only_imputation_and_scale (test_phase14_spark_contracts.Phase14SparkContracts.test_controls_keep_training_only_imputation_and_scale) ... ok
+test_matched_csv_parquet_preserve_binary_identity_and_nulls (test_phase14_spark_contracts.Phase14SparkContracts.test_matched_csv_parquet_preserve_binary_identity_and_nulls) ... ok
+test_materialization_changes_with_features_at_fixed_count (test_phase14_spark_contracts.Phase14SparkContracts.test_materialization_changes_with_features_at_fixed_count) ... ok
+test_new_histogram_consumes_actual_probability_column (test_phase14_spark_contracts.Phase14SparkContracts.test_new_histogram_consumes_actual_probability_column) ... ok
+test_validation_rows_cannot_fit_preprocessing (test_phase14_spark_contracts.Phase14SparkContracts.test_validation_rows_cannot_fit_preprocessing) ... ok
+test_actual_spark_parity_receipt (test_phase15_inference.InteractiveContractTests.test_actual_spark_parity_receipt) ... ok
+test_all_evidence_checksums (test_phase15_inference.InteractiveContractTests.test_all_evidence_checksums) ... ok
+test_csv_alignment_and_invalid_row_retention (test_phase15_inference.InteractiveContractTests.test_csv_alignment_and_invalid_row_retention) ... ok
+test_csv_column_contract (test_phase15_inference.InteractiveContractTests.test_csv_column_contract) ... ok
+test_empty_and_bad_encoding (test_phase15_inference.InteractiveContractTests.test_empty_and_bad_encoding) ... ok
+test_feature_order_enforced (test_phase15_inference.InteractiveContractTests.test_feature_order_enforced) ... ok
+test_invalid_manual_domain (test_phase15_inference.InteractiveContractTests.test_invalid_manual_domain) ... ok
+test_lr_explanation_reconstruction (test_phase15_inference.InteractiveContractTests.test_lr_explanation_reconstruction) ... ok
+test_manual_missing_uses_training_values (test_phase15_inference.InteractiveContractTests.test_manual_missing_uses_training_values) ... ok
+test_missing_and_corrupt_artifacts_fail_closed (test_phase15_inference.InteractiveContractTests.test_missing_and_corrupt_artifacts_fail_closed) ... ok
+test_novelty_decomposition (test_phase15_inference.InteractiveContractTests.test_novelty_decomposition) ... ok
+test_registry_and_original_identity (test_phase15_inference.InteractiveContractTests.test_registry_and_original_identity) ... ok
+test_repeated_predictions_identical (test_phase15_inference.InteractiveContractTests.test_repeated_predictions_identical) ... ok
+test_safe_export (test_phase15_inference.InteractiveContractTests.test_safe_export) ... ok
+test_unsupported_model_rejected (test_phase15_inference.InteractiveContractTests.test_unsupported_model_rejected) ... ok
+test_upload_budgets (test_phase15_inference.InteractiveContractTests.test_upload_budgets) ... ok
+test_aggregate_csv_and_charts_are_deterministic (test_phase3_analytics.AnalyticsTest.test_aggregate_csv_and_charts_are_deterministic) ... ok
+test_benchmark_equivalence (test_phase3_analytics.AnalyticsTest.test_benchmark_equivalence) ... ok
+test_distributions_and_exploratory_rules (test_phase3_analytics.AnalyticsTest.test_distributions_and_exploratory_rules) ... ok
+test_sensitivity_duplicate_counts_preserve_label_rows (test_phase3_analytics.AnalyticsTest.test_sensitivity_duplicate_counts_preserve_label_rows) ... ok
+test_sql_grouping_and_reconciliation (test_phase3_analytics.AnalyticsTest.test_sql_grouping_and_reconciliation) ... ok
+test_groups_deterministic_and_purged (test_phase4_supervised.SparkSupervisedTest.test_groups_deterministic_and_purged) ... [Stage 0:>                                                          (0 + 2) / 2]                                                                                ok
+test_train_only_finite_and_model_reload (test_phase4_supervised.SparkSupervisedTest.test_train_only_finite_and_model_reload) ... ok
+test_auc_edges_and_ties (test_phase4_supervised.SupervisedMetricsTest.test_auc_edges_and_ties) ... ok
+test_confusion (test_phase4_supervised.SupervisedMetricsTest.test_confusion) ... ok
+test_family_support (test_phase4_supervised.SupervisedMetricsTest.test_family_support) ... ok
+test_registry_chronology_and_selection (test_phase4_supervised.SupervisedMetricsTest.test_registry_chronology_and_selection) ... ok
+test_divergence_and_zero_bins (test_phase5_clustering.ClusteringMathTest.test_divergence_and_zero_bins) ... ok
+test_feature_exclusions (test_phase5_clustering.ClusteringMathTest.test_feature_exclusions) ... ok
+test_permutation_and_degeneracy (test_phase5_clustering.ClusteringMathTest.test_permutation_and_degeneracy) ... ok
+test_support_and_reconciliation (test_phase5_clustering.ClusteringMathTest.test_support_and_reconciliation) ... ok
+test_group_sampling_is_stable_and_train_only (test_phase5_clustering.ClusteringSparkTest.test_group_sampling_is_stable_and_train_only) ... [Stage 0:>                                                          (0 + 2) / 2]                                                                                ok
+test_label_free_transform_distance_calibration_and_reload (test_phase5_clustering.ClusteringSparkTest.test_label_free_transform_distance_calibration_and_reload) ... ok
+test_alert_labels_support_and_reference (test_phase6_streaming.Phase6StreamingTest.test_alert_labels_support_and_reference) ... ok
+test_fixed_bins_and_retrospective_support (test_phase6_streaming.Phase6StreamingTest.test_fixed_bins_and_retrospective_support) ... [Stage 0:>                                                          (0 + 2) / 2][Stage 0:=============================>                             (1 + 1) / 2]                                                                                ok
+test_frozen_preprocessing_check_hash_order_and_spark_metadata (test_phase6_streaming.Phase6StreamingTest.test_frozen_preprocessing_check_hash_order_and_spark_metadata) ... ok
+test_partial_and_duplicate_sink_writes (test_phase6_streaming.Phase6StreamingTest.test_partial_and_duplicate_sink_writes) ... ok
+test_replay_order_and_timestamp_quarantine (test_phase6_streaming.Phase6StreamingTest.test_replay_order_and_timestamp_quarantine) ... ok
+test_structured_streaming_checkpoint_and_multifile (test_phase6_streaming.Phase6StreamingTest.test_structured_streaming_checkpoint_and_multifile) ... PHASE6 stream batch 0 committed sink sequences 0–0 rows 1
+PHASE6 stream batch 1 committed sink sequences 1–1 rows 2
+PHASE6 stream batch 2 committed sink sequences 2–2 rows 3
+PHASE6 stream batch 0 committed sink sequences 0–1 rows 3
+PHASE6 stream batch 1 committed sink sequences 2–2 rows 3
+ok
+test_isotonic_pools_decreasing_blocks (test_phase8_hybrid_detection.CalibrationTests.test_isotonic_pools_decreasing_blocks) ... ok
+test_novelty_ties_and_fusion (test_phase8_hybrid_detection.CalibrationTests.test_novelty_ties_and_fusion) ... ok
+test_platt_calibrates_bin_midpoints (test_phase8_hybrid_detection.CalibrationTests.test_platt_calibrates_bin_midpoints) ... ok
+test_weighted_reliability_math (test_phase8_hybrid_detection.CalibrationTests.test_weighted_reliability_math) ... ok
+test_hypothetical_ppv_and_operational_rate (test_phase8_hybrid_detection.DesignAndDecisionTests.test_hypothetical_ppv_and_operational_rate) ... ok
+test_rolling_boundaries_and_minimum_support (test_phase8_hybrid_detection.DesignAndDecisionTests.test_rolling_boundaries_and_minimum_support) ... ok
+test_triage_preserves_review_and_abstentions (test_phase8_hybrid_detection.DesignAndDecisionTests.test_triage_preserves_review_and_abstentions) ... ok
+test_weights_are_train_class_ratios (test_phase8_hybrid_detection.DesignAndDecisionTests.test_weights_are_train_class_ratios) ... ok
+test_learned_fusion_rejects_other_roles (test_phase8_hybrid_detection.SparkRoleTests.test_learned_fusion_rejects_other_roles) ... [Stage 0:>                                                          (0 + 2) / 2]                                                                                ok
+test_role_hash_keeps_groups_and_is_repartition_invariant (test_phase8_hybrid_detection.SparkRoleTests.test_role_hash_keeps_groups_and_is_repartition_invariant) ... ok
+test_confusion_and_single_class (test_phase8_hybrid_detection.ThresholdTests.test_confusion_and_single_class) ... ok
+test_model_selection_tie_breaks_on_cost (test_phase8_hybrid_detection.ThresholdTests.test_model_selection_tie_breaks_on_cost) ... ok
+test_tied_bins_excluded_as_a_group (test_phase8_hybrid_detection.ThresholdTests.test_tied_bins_excluded_as_a_group) ... ok
+test_earlier_group_disjoint_fit_and_calibration_keep_exact_test (test_phase9_c_cohort.EarlierCohortTests.test_earlier_group_disjoint_fit_and_calibration_keep_exact_test) ... [Stage 0:>                                                          (0 + 2) / 4]                                                                                ok
+test_complete_traffic_accounting_and_conditional_denominators (test_phase9_checkpoint.HierarchyCheckpointTests.test_complete_traffic_accounting_and_conditional_denominators) ... ok
+test_rejects_inconsistent_error_category (test_phase9_checkpoint.HierarchyCheckpointTests.test_rejects_inconsistent_error_category) ... ok
+test_zero_attack_support_is_undefined (test_phase9_checkpoint.HierarchyCheckpointTests.test_zero_attack_support_is_undefined) ... ok
+test_holdout_group_is_exclusively_unknown_and_test_only (test_phase9_holdout_cohort.HoldoutCohortTests.test_holdout_group_is_exclusively_unknown_and_test_only) ... [Stage 0:>                  (0 + 2) / 2][Stage 1:>                  (0 + 0) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                ok
+test_conservative_ties (test_phase9_multiclass.Phase9Contracts.test_conservative_ties) ... ok
+test_multiclass_denominators (test_phase9_multiclass.Phase9Contracts.test_multiclass_denominators) ... ok
+test_probability_semantics (test_phase9_multiclass.Phase9Contracts.test_probability_semantics) ... ok
+test_training_vocabulary (test_phase9_multiclass.Phase9Contracts.test_training_vocabulary) ... ok
+test_mismatched_day_counts_fail (test_phase9_open_set_evidence.OpenSetEvidenceTests.test_mismatched_day_counts_fail) ... ok
+test_tied_rows_and_zero_known_support_reconcile (test_phase9_open_set_evidence.OpenSetEvidenceTests.test_tied_rows_and_zero_known_support_reconcile) ... ok
+test_no_known_support_leaves_discrimination_undefined (test_phase9_rejection_curves.Phase9RejectionCurveTests.test_no_known_support_leaves_discrimination_undefined) ... ok
+test_rejecting_tied_bin_keeps_both_target_populations (test_phase9_rejection_curves.Phase9RejectionCurveTests.test_rejecting_tied_bin_keeps_both_target_populations) ... ok
+test_spark_workloads (test_spark_environment.SparkEnvironmentTest.test_spark_workloads) ... Apache Spark 4.3.0, PySpark 4.3.0
+[Stage 0:>                                                          (0 + 2) / 2][Stage 0:=============================>                             (1 + 1) / 2]                                                                                Spark stopped after 3.23 s
+ok
+
+----------------------------------------------------------------------
+Ran 180 tests in 167.381s
+
+OK
