@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "fresh_process": true,
+  "compared_to_independent_process": true,
+  "controlled_spark_rollback": {
+    "status": "PASS",
+    "injected": true,
+    "source": "bf1d002296d424894374",
+    "destination": "9827e6a728bb61755e3d",
+    "restored_saved_pipeline_probes_identical": true,
+    "seconds": 0.9149944739911007
+  },
+  "stage": "12D",
+  "spark_version": "4.3.0",
+  "models": [
+    {
+      "model": "9827e6a728bb61755e3d",
+      "hashes_verified": 16,
+      "probe_scores": [
+        [
+          0.9282456154109235,
+          0.07175438458907646
+        ],
+        [
+          0.9164870973895943,
+          0.08351290261040567
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "reload_seconds": 6.121819347012206
+    },
+    {
+      "model": "bf1d002296d424894374",
+      "hashes_verified": 16,
+      "probe_scores": [
+        [
+          0.9238442433796388,
+          0.07615575662036123
+        ],
+        [
+          0.916886659149161,
+          0.08311334085083899
+        ],
+        [
+          0.9981629779420786,
+          0.0018370220579213559
+        ]
+      ],
+      "reload_seconds": 1.5669138320081402
+    },
+    {
+      "model": "6debd2b84c7f699c3f51",
+      "hashes_verified": 16,
+      "probe_scores": [
+        [
+          0.9309955625283135,
+          0.0690044374716865
+        ],
+        [
+          0.925323461423043,
+          0.074676538576957
+        ],
+        [
+          0.9934662359504438,
+          0.00653376404955619
+        ]
+      ],
+      "reload_seconds": 1.1338773919997038
+    },
+    {
+      "model": "9f5b562a6f8da00304f4",
+      "hashes_verified": 16,
+      "probe_scores": [
+        [
+          0.9248109787077299,
+          0.07518902129227012
+        ],
+        [
+          0.9188712275768439,
+          0.08112877242315608
+        ],
+        [
+          0.8817652651751343,
+          0.11823473482486568
+        ]
+      ],
+      "reload_seconds": 1.104254742997
+    }
+  ],
+  "seconds": 15.218944861000637
+}

@@ -89,3 +89,14 @@ def role_support(rows):
 def validate_coverage(original,retained,flagged,expected_flagged):
     if retained!=original or flagged!=expected_flagged:
         raise ValueError('Capture-only population coverage differs from verified source')
+
+
+def validate_chronology(initial,calibration,forward):
+    if not initial or not calibration or not forward:raise ValueError('Empty chronological role')
+    all_days=[*initial,*calibration,*forward]
+    if all_days!=sorted(all_days) or len(set(all_days))!=len(all_days):
+        raise ValueError('Chronological populations overlap or arrive out of order')
+
+
+def require_feature_order(expected,actual):
+    if list(expected)!=list(actual):raise ValueError('Feature order/schema mismatch')

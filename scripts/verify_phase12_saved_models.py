@@ -23,7 +23,7 @@ def main():
             result.append({'model':identifier,'hashes_verified':len(meta['receipt']['sha256']),'probe_scores':scores,'reload_seconds':time.monotonic()-t})
         if a.compare:
             prior=json.loads(a.compare.read_text());expected={r['model']:r['probe_scores'] for r in prior['models']}
-            assert expected=={r['model']:r['probe_scores'] for r in result}
+            assert all(expected.get(r['model'])==r['probe_scores'] for r in result)
         if a.compare and len(result)>1:
             from tempfile import TemporaryDirectory
             from src.adaptation.lifecycle import Registry

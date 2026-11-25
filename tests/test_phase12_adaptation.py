@@ -146,3 +146,20 @@ class Phase12Tests(unittest.TestCase):
             count=backend.physical_fits
             second=run(backend,'P1',0,Path(root)/'registry',period=8,sliding=8,minimum=50,budget=2)
             self.assertEqual(first,second);self.assertEqual(backend.physical_fits,count)
+    def test_chronological_roles_and_feature_order(self):
+        from src.adaptation.lifecycle import validate_chronology,require_feature_order
+        validate_chronology([0,1],[2],[3,4])
+        with self.assertRaises(ValueError):validate_chronology([0,1],[2],[4,3])
+        with self.assertRaises(ValueError):validate_chronology([0,1],[1],[3,4])
+        names=json.loads((Path(__file__).resolve().parents[1]/'configs/ml_experiments.yaml').read_text())['numerical_features']
+        require_feature_order(names,names)
+        with self.assertRaises(ValueError):require_feature_order(names,[names[1],names[0],*names[2:]])
+    def test_explicit_no_positive_operating_point(self):
+        hist={0:[0,20],2047:[1000,0]};threshold=operating(hist)
+        self.assertEqual(threshold,2048)
+        self.assertEqual((evaluate(hist,threshold)['tp'],evaluate(hist,threshold)['fp']),(0,0))
+    def test_simultaneous_alerts_do_not_duplicate_batch_action(self):
+        with tempfile.TemporaryDirectory() as root:
+            registry=Registry(root)
+            accepted=[registry.request('policy-P2-capture-20') for detector in ('JS','ADWIN')]
+            self.assertEqual(accepted,[True,False])

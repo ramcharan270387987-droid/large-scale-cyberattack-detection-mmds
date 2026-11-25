@@ -2,11 +2,12 @@
 import time
 import json,os
 from pathlib import Path
-from src.adaptation.lifecycle import Registry, digest, eligible, released, training_window
+from src.adaptation.lifecycle import Registry, digest, eligible, released, training_window, validate_chronology
 from src.adaptation.evaluation import evaluate, guarded, merge, operating, js
 
 
 def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown=2, minimum=200, advanced=False):
+    validate_chronology(backend.initial,backend.calibration,backend.forward)
     registry=Registry(root)
     tag=f'{backend.name}-{policy}-d{delay}-b{budget}-p{period}-s{sliding}-c{cooldown}-m{minimum}-a{advanced}'
     completed=Path(root)/'completed_run.json'
@@ -93,17 +94,19 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
                                'decision':'released-performance-degradation','activation_index':None,'activation_time':None})
                 natural_rollbacks+=1
         if policy=='P3' and available and index<len(backend.forward)-1:
+            threshold_started=time.monotonic()
             try:
                 threshold_hist=backend.hist(current,cal_days,1)
                 if min(sum(v[c] for v in threshold_hist.values()) for c in (0,1))<backend.min_class:
                     raise ValueError('Insufficient threshold validation class support')
                 selected=operating(threshold_hist)
-                thresholds.append({'run':tag,'policy':policy,'delay':delay,'window':index,'old_bin':threshold,'new_bin':selected,
+                threshold_seconds=time.monotonic()-threshold_started
+                thresholds.append({'run':tag,'policy':policy,'delay':delay,'window':index,'action_seconds':threshold_seconds,'old_bin':threshold,'new_bin':selected,
                                    'activation_index':index+1,'calibration_days':list(map(str,cal_days))})
-                pending={'model':current,'threshold':selected,'complete':arrival,'earliest':index+1,
+                pending={'model':current,'threshold':selected,'complete':arrival+threshold_seconds,'earliest':index+1,
                          'event':len(events),'metrics':evaluate(backend.hist(current,cal_days,1),selected)}
                 events.append({'run':tag,'policy':policy,'delay':delay,'window':index,'action':'threshold','model':current,
-                               'decision':'validation-only','activation_index':None,'activation_time':None})
+                               'decision':'validation-only','measured_action_seconds':threshold_seconds,'decision_complete':arrival+threshold_seconds,'activation_index':None,'activation_time':None})
             except ValueError as exc:
                 thresholds.append({'run':tag,'policy':policy,'delay':delay,'window':index,'reason':str(exc)})
         if not ok: continue

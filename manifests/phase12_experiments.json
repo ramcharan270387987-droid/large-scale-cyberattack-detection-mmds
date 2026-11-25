@@ -3,8 +3,8 @@
   "complete": false,
   "protocol_commit": "3ff45ef",
   "phase11_parent": "96c1885ef97243e4de33757603fe1530994f0f8e",
-  "stage": "12C",
-  "next_stage": "12D",
+  "stage": "12D",
+  "next_stage": "12E",
   "focused_tests_passed": 7,
   "historical_executed": true,
   "synthetic_executed": true,
@@ -67,6 +67,18 @@
       "elapsed_seconds": 666.215498616,
       "retained_rows": 16232943,
       "physical_fits": 9
+    },
+    "12D": {
+      "kernel_version": "ramcharan2345/mmds-phase12-12d-adaptive-research/1",
+      "status": "COMPLETE",
+      "runs": 5,
+      "models_verified": 4,
+      "source_commit": "8d8399470e8364b008b9bbbdb137cc575db9f040",
+      "summary_sha256": "aaf81f20551f7f13a2a9df69ce77382515a69fd15b8a61fe1be9dc7d2ef094b8",
+      "elapsed_seconds": 257.9960923990001,
+      "retained_rows": 16232943,
+      "physical_fits": 0
     }
-  }
+  },
+  "stage12C_remote": "8d8399470e8364b008b9bbbdb137cc575db9f040"
 }

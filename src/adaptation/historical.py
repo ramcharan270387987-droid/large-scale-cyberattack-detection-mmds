@@ -5,7 +5,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 from hashlib import sha256
 import shutil
-from src.adaptation.lifecycle import digest,role_support,validate_coverage
+from src.adaptation.lifecycle import digest,role_support,validate_coverage,require_feature_order
 from src.adaptation.evaluation import BINS,merge
 
 
@@ -118,7 +118,7 @@ class SparkBackend:
         from src.streaming.model_scoring import probe
         from pyspark.ml.functions import vector_to_array
         meta=self.meta[key]
-        if meta['features']!=self.names:raise ValueError('Feature schema mismatch')
+        require_feature_order(self.names,meta['features'])
         target=self.output/meta['receipt']['artifact']
         for relative,expected in meta['receipt']['sha256'].items():
             if sha256((target/relative).read_bytes()).hexdigest()!=expected:raise ValueError('Model hash mismatch')
@@ -221,6 +221,7 @@ def run(project,input_root,output,scratch,stage):
             summary['reused_model_receipts']=[r for b in backends.values() for r in getattr(b,'reuse_receipts',[])]
             summary['physical_fits']=sum(b.physical_fits for b in backends.values())
             summary['distribution_construction_seconds']={b.name:b.distribution_construction_seconds for b in backends.values()}
+            summary['input_references']={b.name:{'quantile_edges':b.edges,'reference_counts':b.reference,'capture_counts':b.signal,'feature':'flow_duration','version':'fixed-initial-fit-'+b.name,'reset_policy':'never on model refresh'} for b in backends.values()}
             atomic_json(output/'phase12_summary.json',summary)
             print('RUN_COMPLETE',result['summary'],flush=True)
         for backend in backends.values():

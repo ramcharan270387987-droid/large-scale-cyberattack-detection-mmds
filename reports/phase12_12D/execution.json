@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase12-12d-adaptive-research/1",
+  "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase12-12d-adaptive-research",
+  "private_cpu": true,
+  "metadata": {
+    "id": "ramcharan2345/mmds-phase12-12d-adaptive-research",
+    "id_no": 147280067,
+    "title": "MMDS Phase12 12D Adaptive Research",
+    "code_file": "mmds-phase12-12d-adaptive-research.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "enable_internet": true,
+    "keywords": [],
+    "dataset_sources": [],
+    "kernel_sources": [
+      "ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "ramcharan2345/mmds-phase-12-adaptive-learning-model-refresh"
+    ],
+    "competition_sources": [],
+    "model_sources": [],
+    "docker_image": "gcr.io/kaggle-images/python@sha256:7de5e1496c568335455c8bb1f86f5c36f0591e87e92e9aa9f0eefcd07f227c66",
+    "machine_shape": "None"
+  },
+  "notebook_sha256": "f4824ecc2e4377ea3bccb02bb2f8d08c83e0427287f219c0eb5461036cb4b7ae",
+  "log_sha256": "a369d2e23f27c537509435cae1498e1f0ad6df080722df8f4c552ed1d45cea8f",
+  "log_events": 285,
+  "first_log_seconds": 8.220872214,
+  "last_log_seconds": 325.933178449,
+  "observed_log_span_seconds": 317.712306235,
+  "runtime_scope": "Kaggle log offsets include environment setup and postprocessing; Phase12 stage monotonic elapsed is separately recorded",
+  "complete_marker": true,
+  "run_complete_markers": 5,
+  "fit_complete_markers": 0,
+  "source_frozen_initial_reload_markers": 4
+}
