@@ -58,10 +58,13 @@ def main():
     # Family, coverage, and exposure are derived without pooling incompatible populations.
     grouped=defaultdict(list)
     for row in tables['family_windows']:grouped[(row['run'],row['family'])].append(row)
-    model_by_id={r['model']:r for r in models};sample_cohorts={}
+    model_by_id={r['model']:r for r in models};sample_cohorts={};all_families=set()
     for stage in stages:
         receipt=json.loads((stage/'receipt.json').read_text()) if (stage/'receipt.json').exists() else {}
         sample_cohorts.update(receipt.get('sample_cohorts',{}))
+        all_families.update(row['attack_family'] for row in receipt.get('cohorts',[]))
+    for run in summaries:
+        for family in sorted(all_families):grouped.setdefault((run,family),[])
     families=[]
     for (run,family),rows in grouped.items():
         s=summaries[run];initial=model_by_id[s['initial_model']]
@@ -79,7 +82,10 @@ def main():
                          'post_fitting_attack_evaluation_support':sum(int(r['tp'])+int(r['fn']) for r in rows if json.loads(model_by_id[r['model']].get('family_support','{}')).get(family,0)>0),
                          'evaluation_support':sum(sum(int(r[k]) for k in ('tp','fp','tn','fn')) for r in rows),'attack_evaluation_support':tp+fn,
                          'benign_evaluation_support':sum(int(r['tn'])+int(r['fp']) for r in rows),'tp':tp,'fn':fn,
-                         'recall':tp/(tp+fn) if tp+fn else None,'served_versions':sorted({r['model'] for r in rows}),
+                         'recall':tp/(tp+fn) if tp+fn else None,
+                         'fp':sum(int(r['fp']) for r in rows),'tn':sum(int(r['tn']) for r in rows),
+                         'fpr':sum(int(r['fp']) for r in rows)/sum(int(r['fp'])+int(r['tn']) for r in rows) if sum(int(r['fp'])+int(r['tn']) for r in rows) else None,
+                         'served_versions':sorted({r['model'] for r in rows}),
                          'interpretation':'capture/family confounded; exposure must precede activation, no later appearance implies unsupported forward learning'})
     csv_write(R/'phase12_family_metrics.csv',families)
     exposures=[]
@@ -98,6 +104,7 @@ def main():
                 available=initial_support>0 or (first_release is not None and int(row['window'])>first_release)
                 after=available if basis=='labels-available-before-arrival' else represented
                 by_state['after' if after else 'before'].append(row)
+            if not rows:by_state['unsupported-no-forward-rows']=[]
             for state,subset in by_state.items():
                 count={k:sum(int(r[k]) for r in subset) for k in ('tp','fp','tn','fn')}
                 positives=count['tp']+count['fn'];benign=count['tn']+count['fp']

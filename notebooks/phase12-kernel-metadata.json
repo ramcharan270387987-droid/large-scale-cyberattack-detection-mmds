@@ -1,0 +1,16 @@
+{
+  "id": "ramcharan2345/mmds-phase-12-adaptive-learning-model-refresh",
+  "title": "MMDS Phase 12 Adaptive Learning Model Refresh",
+  "code_file": "phase12_adaptive_learning.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [
+    "ramcharan2345/mmds-phase-2-spark-data-engineering/1"
+  ]
+}

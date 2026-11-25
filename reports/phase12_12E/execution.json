@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase-12-robustness-completion/1",
+  "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-12-robustness-completion",
+  "private_cpu": true,
+  "metadata": {
+    "id": "ramcharan2345/mmds-phase-12-robustness-completion",
+    "id_no": 147286091,
+    "title": "Mmds Phase 12 Robustness Completion",
+    "code_file": "mmds-phase-12-robustness-completion.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "enable_internet": true,
+    "keywords": [],
+    "dataset_sources": [],
+    "kernel_sources": [
+      "ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "ramcharan2345/mmds-phase-12-adaptive-learning-model-refresh"
+    ],
+    "competition_sources": [],
+    "model_sources": [],
+    "docker_image": "gcr.io/kaggle-images/python@sha256:7de5e1496c568335455c8bb1f86f5c36f0591e87e92e9aa9f0eefcd07f227c66",
+    "machine_shape": "None"
+  },
+  "notebook_sha256": "649e4125de75f7f531333533307ade92157fe899e87860111af13f39bb7198cb",
+  "log_sha256": "83e9afc986e4aa2b195c2e20272fbaa4cc78e8dc8ae2a22450b368dd29be815b",
+  "log_events": 975,
+  "first_log_seconds": 8.083061686,
+  "last_log_seconds": 1367.783428237,
+  "observed_log_span_seconds": 1359.700366551,
+  "runtime_scope": "Kaggle log offsets include environment setup and postprocessing; Phase12 stage monotonic elapsed is separately recorded",
+  "complete_marker": true,
+  "run_complete_markers": 12,
+  "fit_complete_markers": 21,
+  "source_frozen_initial_reload_markers": 2
+}

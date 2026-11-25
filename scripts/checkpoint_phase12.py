@@ -12,6 +12,7 @@ def main():
     m.setdefault('historical_stages',{})[a.stage]={'kernel_version':a.version,'status':'COMPLETE','runs':receipt['runs'],'models_verified':retrieval['models_verified'],
        'source_commit':receipt['source_commit'],'summary_sha256':retrieval['summary_sha256'],'elapsed_seconds':receipt['elapsed_seconds'],
        'retained_rows':receipt['retained_rows'],'physical_fits':receipt['physical_fits']}
+    if receipt.get('resumed_from'):m['historical_stages'][a.stage]['resumed_from']=receipt['resumed_from']
     m.update(stage=a.stage,next_stage={'12C':'12D','12D':'12E','12E':'12F'}[a.stage],historical_executed=True,complete=False)
     (ROOT/'manifests/phase12_experiments.json').write_text(json.dumps(m,indent=2)+'\n')
     if a.stage=='12C':

@@ -90,7 +90,10 @@ def main():
     if not families.empty:
         subset=families[families.run.isin(set(p0.run)) & ~families.family.eq('Benign')]
         fig,ax=plt.subplots(figsize=(11,5));subset.pivot_table(index='family',columns='policy',values='recall',aggfunc='first').mul(100).plot.bar(ax=ax,rot=25)
-        ax.set(ylabel='Attack-family recall (%)',title='Historical E · family/day confounding remains');save(fig,'attack_families')
+        missing=sorted(subset.loc[subset.recall.isna(),'family'].unique())
+        ax.set(ylabel='Attack-family recall (%)',title='Historical E · family/day confounding remains')
+        if missing:fig.text(.02,-.03,'No forward evaluation support: '+', '.join(missing),fontsize=8)
+        save(fig,'attack_families')
     retention=read('retention')
     if not retention.empty:
         fig,axes=plt.subplots(1,2,figsize=(10,4));axes[0].scatter(retention.incumbent_recall*100,retention.candidate_recall*100,c=retention.accepted.map({True:1,False:0}));axes[1].scatter(retention.incumbent_fpr*100,retention.candidate_fpr*100)

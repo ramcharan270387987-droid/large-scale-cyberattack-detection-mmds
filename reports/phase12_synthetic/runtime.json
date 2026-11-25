@@ -1,6 +1,6 @@
 {
   "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
-  "numpy": "2.3.5",
+  "numpy": "2.5.5",
   "sklearn": "1.8.0",
   "actual_runs": 288,
   "physical_models": 344,
@@ -14,5 +14,19 @@
     "src/adaptation/lifecycle.py": "3a7da49bcb652e90568d166ba3c07bdf452205ad46550217bf7ef1badf28e7ed"
   },
   "raw_receipt_sha256": "bae8b1d2f5bf133cfdeb31d21e6acf303a44cdc0bd8c46098665965d6f6a7a87",
-  "clock_accounting_recheck": "all 288 TP/FP/TN/FN/retraining/promotion/rollback outcomes equal prior run; original model-build duration plus validation overhead charged on reuse"
+  "clock_accounting_recheck": "all 288 TP/FP/TN/FN/retraining/promotion/rollback outcomes equal prior run; original model-build duration plus validation overhead charged on reuse",
+  "dependency_versions": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.8.0",
+    "river": "0.22.0",
+    "pyspark": "4.3.0"
+  },
+  "independent_reload_versions": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0"
+  },
+  "scipy": "1.18.1",
+  "fitting_environment_scope": "Original fitting command used the pinned /tmp scientific dependency prefix; independent reload also passed in the base runtime."
 }

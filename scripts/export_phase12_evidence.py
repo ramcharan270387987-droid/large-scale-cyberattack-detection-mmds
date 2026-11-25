@@ -35,6 +35,14 @@ def export(payload,dest):
     model_rows=payload['models'];model_rows=list(model_rows.values()) if isinstance(model_rows,dict) else model_rows
     for run in runs:
         summary=run['summary']
+        summary['trigger_kind']={'P0':'never','P1':'periodic','P2':'ADWIN' if summary.get('advanced') else 'fixed input JS','P3':'threshold recalibration','P4':'periodic','P5':'periodic','P6':'fixed input JS'}[summary['policy']]
+        summary['guarded']=summary['policy']=='P6'
+        summary['window_kind']='initial frozen' if summary['policy']=='P0' else 'threshold calibration' if summary['policy']=='P3' else 'sliding' if summary['policy']=='P4' or summary['population']=='synthetic' else 'expanding'
+        summary['training_window_length']=summary['sliding'] if summary['window_kind']=='sliding' else None
+        summary['positive_rate']=(summary['tp']+summary['fp'])/summary['rows'] if summary['rows'] else None
+        summary['missed_attacks']=summary['fn']
+        summary['runner_period_argument']=summary['period']
+        summary['trigger_period_captures']=1 if summary['policy']=='P5' else summary['period'] if summary['policy'] in ('P1','P4') else None
         for event in run['events']:
             if event.get('action')!='fit':continue
             matching=[m for m in model_rows if m['backend']==summary['backend'] and list(map(str,m['training_days']))==event['training_days']]

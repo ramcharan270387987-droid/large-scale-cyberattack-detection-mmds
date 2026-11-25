@@ -28,6 +28,13 @@ def main():
                 if widget.label=='Figure':widget.set_value(sorted((preview.ROOT/'reports/figures').glob('phase12_*.png'))[-1])
                 else:widget.select_index(len(widget.options)-1)
                 app.run();assert not app.exception,(section,key)
+    app.selectbox[0].set_value('Synthetic benchmark').run()
+    next(w for w in app.selectbox if w.key=='Synthetic benchmarkpolicy').set_value('P2').run()
+    next(w for w in app.selectbox if w.key=='Synthetic benchmarkadvanced').set_value(True).run()
+    assert not app.exception and app.dataframe[0].value['advanced'].eq(True).all()
+    app.selectbox[0].set_value('Attack-family performance').run()
+    next(w for w in app.selectbox if w.key=='Attack-family performancefamily').set_value('Benign').run()
+    assert not app.exception and app.dataframe[0].value['recall'].isna().all() and len(app.info)==1
     empty=AppTest.from_string('''
 import pandas as pd
 from dashboard import phase12_preview as preview

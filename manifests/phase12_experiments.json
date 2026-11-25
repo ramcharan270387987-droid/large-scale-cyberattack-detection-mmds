@@ -3,8 +3,8 @@
   "complete": false,
   "protocol_commit": "3ff45ef",
   "phase11_parent": "96c1885ef97243e4de33757603fe1530994f0f8e",
-  "stage": "12D",
-  "next_stage": "12E",
+  "stage": "12E",
+  "next_stage": "12F",
   "focused_tests_passed": 7,
   "historical_executed": true,
   "synthetic_executed": true,
@@ -78,6 +78,24 @@
       "elapsed_seconds": 257.9960923990001,
       "retained_rows": 16232943,
       "physical_fits": 0
+    },
+    "12E": {
+      "kernel_version": "ramcharan2345/mmds-phase-12-robustness-completion/1",
+      "status": "COMPLETE",
+      "runs": 26,
+      "models_verified": 29,
+      "source_commit": "b234a5339e7da028736954a8673b637d0bd95ccb",
+      "summary_sha256": "d210aefbccdbb089e4a37bf34a66eebf8524b0137acaf790fee04b409970525e",
+      "elapsed_seconds": 1274.545868023,
+      "retained_rows": 16232943,
+      "physical_fits": 24,
+      "resumed_from": {
+        "kernel_version": "ramcharan2345/mmds-phase-12-delayed-label-robustness/1",
+        "worker_status": "ERROR",
+        "completed_scopes": 14,
+        "summary_sha256": "47b39cc6718d3b8a7e1a8ff38be0ceab4e1f86f041102af9482aa4e597d5c996",
+        "reason": "RF vector-validation integration fix; completed LR experiments unchanged"
+      }
     }
   },
   "stage12C_remote": "8d8399470e8364b008b9bbbdb137cc575db9f040",
@@ -90,7 +108,9 @@
       "physical_fits": 3,
       "summary_sha256": "47b39cc6718d3b8a7e1a8ff38be0ceab4e1f86f041102af9482aa4e597d5c996",
       "reason": "RF audit frame missing scaled_features; actual RF regression test now passes",
-      "resume_ref": "ramcharan2345/mmds-phase-12-robustness-completion"
+      "resume_ref": "ramcharan2345/mmds-phase-12-robustness-completion",
+      "recovered_by": "ramcharan2345/mmds-phase-12-robustness-completion/1",
+      "recovery_status": "RECOVERED_WITHOUT_REPEATING_COMPLETED_SCOPES"
     }
   },
   "stage12D_remote": "03c38afa2247e28a55c83ba301606654b71f9c30"

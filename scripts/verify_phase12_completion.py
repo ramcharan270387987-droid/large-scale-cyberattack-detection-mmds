@@ -34,10 +34,18 @@ def verify():
         prefix='reports/phase12_'+stage+'/'
         receipt=load(prefix+'receipt.json');retrieved=load(prefix+'retrieval.json');execution=load(prefix+'execution.json')
         assert receipt['status']=='validated' and retrieved['status']==execution['status']=='COMPLETE'
+        resumed=receipt.get('resumed_from',{}).get('completed_scopes',0)
+        assert execution['run_complete_markers']+resumed==receipt['runs']
+        if resumed:
+            partial=load('reports/phase12_12E_partial_v1/execution.json')
+            assert partial['status']=='ERROR' and partial['run_complete_markers']==resumed
+            assert execution['fit_complete_markers']+partial['fit_complete_markers']==receipt['physical_fits']
+        else:assert execution['fit_complete_markers']==receipt['physical_fits']
         assert execution['private_cpu'] and receipt['retained_rows']==16232943 and receipt['capture_only_rows']==14
         assert not any(receipt['cross_role_groups'].values())
         assert receipt['spark_version']=='4.3.0'
         if stage!='12C':assert receipt['frozen_reference_reload']['calibration_histogram_identical']
+    assert load('reports/phase12_validation/metric_audit.json')['status']=='PASS'
     synthetic=read('reports/phase12_synthetic_metrics.csv');assert len(synthetic)==288
     assert {r['backend'].split('-seed')[1] for r in synthetic}=={'23013','23014','23015'}
     archive=load('reports/phase12_validation/synthetic_private_retrieval.json');assert archive['status']=='PASS' and archive['models']==344

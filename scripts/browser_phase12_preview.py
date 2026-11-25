@@ -33,6 +33,7 @@ def main():
             data=pd.read_csv(path)
             if section.startswith('Synthetic') and 'backend' in data:data['mechanism']=data.backend.str.split('-seed').str[0]
             if section=='Model history':data=data.rename(columns={'family':'model_family'})
+            if section=='Family exposure and forward support':data=data.rename(columns={'period':'exposure_period'})
             assert not data.empty,('unexpected unsupported whole section',section)
             page.get_by_test_id('stDataFrame').wait_for()
             if section=='Static versus adaptive comparison':
@@ -50,8 +51,17 @@ def main():
             downloaded=event.value;target=DEST/('download-'+filename);downloaded.save_as(str(target))
             with target.open() as stream:actual=list(csv.DictReader(stream))
             assert len(actual)==len(data),(section,len(actual),len(data))
+            if section=='Static versus adaptive comparison':
+                shot=DEST/'preview-desktop-download.png';page.screenshot(path=str(shot),full_page=True);screens.append(shot.name)
             results.append({'section':section,'status':'PASS','filters':exercised,'download_records':len(actual),
                             'charts':page.get_by_test_id('stVegaLiteChart').count()})
+        choose(page,'Evidence','Study figures');page.get_by_test_id('stImage').wait_for()
+        choose(page,'Evidence','Synthetic benchmark');page.get_by_test_id('stDataFrame').wait_for()
+        choose(page,'Policy','P2');choose(page,'ADWIN sensitivity',True)
+        with page.expect_download() as probe:page.get_by_role('button',name='Download filtered CSV',exact=True).click()
+        probe.value.save_as(str(DEST/'download-adwin-true.csv'))
+        adwin_rows=list(csv.DictReader((DEST/'download-adwin-true.csv').open()))
+        assert len(adwin_rows)==6 and all(r['advanced']=='True' for r in adwin_rows)
         choose(page,'Evidence','Research limitations');page.get_by_text('Frozen before new fitting.',exact=False).wait_for()
         results.append({'section':'Research limitations','status':'PASS'})
         choose(page,'Evidence','Study figures');page.get_by_test_id('stImage').wait_for()
@@ -65,12 +75,14 @@ def main():
         overflow=m.evaluate("() => {const e=document.querySelector('[data-testid=stMain]');return e.scrollWidth>e.clientWidth+2}")
         assert not overflow,'Mobile main content overflow'
         shot=DEST/'preview-mobile.png';m.screenshot(path=str(shot),full_page=True);screens.append(shot.name)
+        m.get_by_role('button',name='Download filtered CSV',exact=True).scroll_into_view_if_needed()
+        shot=DEST/'preview-mobile-results.png';m.screenshot(path=str(shot),full_page=True);screens.append(shot.name)
         mobile.close();context.close();browser.close()
     assert not errors,errors
     assert not http,http
     receipt={'status':'PASS','browser':'Chromium / Playwright','url':'http://127.0.0.1:8512','sections':results,
              'screenshots':len(screens),'screenshot_files':screens,'desktop':[1440,1050],'mobile':[390,844],
-             'mobile_horizontal_main_overflow':False,'page_errors':errors,'http_errors':http,'seconds':time.monotonic()-start,
+             'adwin_sensitivity_download_records':len(adwin_rows),'mobile_horizontal_main_overflow':False,'page_errors':errors,'http_errors':http,'seconds':time.monotonic()-start,
              'scope':'isolated local preview; protected public dashboard unchanged'}
     (DEST/'browser.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps(receipt))
 if __name__=='__main__':main()
