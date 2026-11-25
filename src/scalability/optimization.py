@@ -12,7 +12,7 @@ from src.scalability.resource_monitor import Monitor,environment
 from src.patterns.discretization import transform
 
 def run(project,input_root,output,scratch):
-    started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());names=json.loads((project/'configs/ml_experiments.yaml').read_text())['numerical_features'];producers=list(input_root.rglob('benchmark_populations.json'));assert len(producers)==1,'Attach accepted14D output';producer=producers[0];datasets=json.loads(producer.read_text());dataset=datasets[0];path=producer.parent/dataset['path'];spark=session(4,16,scratch);runs=[];formats=[];references={}
+    started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());names=json.loads((project/'configs/ml_experiments.yaml').read_text())['numerical_features'];producers=list(input_root.rglob('benchmark_populations.json'));assert len(producers)==1,'Attach accepted14D output';producer=producers[0];datasets=json.loads(producer.read_text());dataset=datasets[0];path=producer.parent/dataset['path'];startup_start=time.monotonic();spark=session(4,16,scratch);spark_initialization_seconds=time.monotonic()-startup_start;runs=[];formats=[];references={}
     try:
         frame=spark.read.parquet(str(path))
         if dict(frame.dtypes).get('record_fingerprint')=='binary':frame=frame.withColumn('record_fingerprint',F.hex('record_fingerprint'))
@@ -76,7 +76,13 @@ def run(project,input_root,output,scratch):
             def pandas_query():
                 df=pd.read_csv(csvfile,dtype={c:'float64' for c in columns});f=df.loc[df.flow_duration>1000];a=f.groupby('binary_label',dropna=False).agg(rows=('binary_label','size'),packets=('tot_fwd_pkts','sum')).reset_index();return [dict(binary_label=int(x.binary_label),rows=int(x.rows),packets=float(x.packets)) for x in a.itertuples()]
             def spark_query():return spark.read.schema(dschema).option('header','true').csv(str(csvfile)).where('flow_duration>1000').groupBy('binary_label').agg(F.count('*').alias('rows'),F.sum('tot_fwd_pkts').alias('packets')).collect()
-            ref=canonical(spark_query())
+            ref=canonical(spark_query());load_ref=canonical(checksum(selected,columns[:-1]))
+            def pandas_read_checksum():
+                d=pd.read_csv(csvfile,dtype={c:'float64' for c in columns});return [dict(rows=len(d),attacks=int(d.binary_label.sum()),**{n:float(d[n].sum()) for n in columns[:-1]})]
+            def spark_read_checksum():return checksum(spark.read.schema(dschema).option('header','true').csv(str(csvfile)),columns[:-1])
+            for rep in range(1,4):
+                timed('Spark_Pandas_input_loading','pandas-'+str(size),rep,pandas_read_checksum,rows=rowcount,reference=load_ref)
+                timed('Spark_Pandas_input_loading','spark-'+str(size),rep,spark_read_checksum,rows=rowcount,reference=load_ref)
             for rep in range(1,4):
                 timed('Spark_Pandas_end_to_end','pandas-'+str(size),rep,pandas_query,rows=rowcount,reference=ref)
                 timed('Spark_Pandas_end_to_end','spark-'+str(size),rep,spark_query,rows=rowcount,reference=ref)
@@ -101,6 +107,6 @@ def run(project,input_root,output,scratch):
         def mining():
             model=FPGrowth(itemsCol='items',minSupport=.05,minConfidence=.7,numPartitions=16).fit(transactions);counts=canonical(model.freqItemsets.groupBy(F.size('items').alias('length')).count().collect());rules=model.associationRules.count();model.write().save(str(output/'fpgrowth_model'));return dict(itemset_counts=counts,rules=rules,transactions=transaction_count)
         timed('pattern_mining','Phase10A3-frozen6-support.05-one_budgeted_fit',1,mining,rows=transaction_count);transactions.unpersist(blocking=True)
-        atomic_json(output/'receipt.json',dict(status='validated',stage='14E',input_population=dataset,resources=environment(spark),spark_version=spark.version,measured_runs=len(runs),seconds=time.monotonic()-started,unsupported={'shuffle_bytes':'No enabled event-log parser; not measured','spill_bytes':'No enabled event-log parser; not measured','task_imbalance':'No task metrics retrieved','cache_eviction':'Not observed independently','RDD':'Optional not run','mining_repetitions':'One fit;boundedsecondary budget,not stable scalability evidence'},replay='Reused Phase6 verified49microbatches,15,322,987flows;not newly timed'))
+        atomic_json(output/'receipt.json',dict(status='validated',stage='14E',input_population=dataset,resources=environment(spark),spark_version=spark.version,measured_runs=len(runs),spark_initialization_seconds=spark_initialization_seconds,seconds=time.monotonic()-started,unsupported={'shuffle_bytes':'No enabled event-log parser; not measured','spill_bytes':'No enabled event-log parser; not measured','task_imbalance':'No task metrics retrieved','cache_eviction':'Not observed independently','RDD':'Optional not run','mining_repetitions':'One fit;boundedsecondary budget,not stable scalability evidence'},replay='Reused Phase6 verified49microbatches,15,322,987flows;not newly timed'))
         print('PHASE14E OPTIMIZATION COMPLETE',len(runs),flush=True)
     finally:spark.stop()

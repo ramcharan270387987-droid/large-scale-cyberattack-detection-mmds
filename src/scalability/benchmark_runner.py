@@ -28,7 +28,7 @@ def workload(frame,name,preprocessor=None,names=None):
 def session(workers,partitions,scratch):
     s=spark_session({'spark':{'master':f'local[{workers}]','driver_memory':'8g','shuffle_partitions':partitions,'input_partition_bytes':67108864}},scratch);s.conf.set('spark.sql.adaptive.enabled','false');s.conf.set('spark.sql.ansi.enabled','false');s.conf.set('spark.sql.sources.partitionColumnTypeInference.enabled','false');s.conf.set('spark.sql.files.minPartitionNum','16');assert s.sparkContext.master==f'local[{workers}]';return s
 def run(project,input_root,output,scratch):
-    started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());source_cfg=json.loads((project/'configs/ml_experiments.yaml').read_text());names=source_cfg['numerical_features'];manifest=json.loads((project/'manifests/parquet_layers.json').read_text());clean=json.loads((project/'configs/cleaning.yaml').read_text());runs=[];datasets=[];references={};spark=session(4,16,scratch)
+    started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());source_cfg=json.loads((project/'configs/ml_experiments.yaml').read_text());names=source_cfg['numerical_features'];manifest=json.loads((project/'manifests/parquet_layers.json').read_text());clean=json.loads((project/'configs/cleaning.yaml').read_text());runs=[];datasets=[];references={};startup=[];startup_start=time.monotonic();spark=session(4,16,scratch);startup.append(dict(workers=4,seconds=time.monotonic()-startup_start,application_id=spark.sparkContext.applicationId,scope='first SparkContext and JVM in notebook run'))
     try:
         raw,source_receipt=verified_input(spark,locate_producer(input_root,manifest['independent_mount']['summary_sha256']),manifest,clean);assert source_receipt['rows']==16232943
         raw=raw.select('record_fingerprint','source_day','attack_family','binary_label',*names)
@@ -40,7 +40,8 @@ def run(project,input_root,output,scratch):
         atomic_json(output/'benchmark_populations.json',datasets);pipeline=PipelineModel.load('/kaggle/temp/phase14_archives/B-logistic_regression');prep=PipelineModel(stages=pipeline.stages[:-1]);atomic_json(output/'preparation.json',dict(seconds=time.monotonic()-prepare,source=source_receipt,resources=environment(spark)))
         def execute(dataset,kind,workers,repeat,warmup=False):
             path=output/dataset['path'];
-            if shutil.disk_usage(output).free<3*1024**3:raise RuntimeError('Scratch reserve below3GiB; stop before next configuration')
+            if shutil.disk_usage(output).free<3*1024**3:
+                runs.append(dict(workload=kind,requested_rows=dataset['requested_rows'],workers=workers,repetition=repeat,warmup=warmup,status='RESOURCE_LIMIT',error='Scratch reserve below3GiB; stopped before action',seconds=None));atomic_json(output/'scalability_runs.json',runs);raise RuntimeError('Scratch reserve below3GiB')
             t=time.monotonic();status='PASS';result=None;error=None;data=None
             with Monitor() as m:
                 try:
@@ -58,12 +59,12 @@ def run(project,input_root,output,scratch):
                 for rep in range(1,4):execute(dataset,kind,4,rep)
         spark.stop()
         for workers in (1,2):
-            spark=session(workers,16,scratch/str(workers));pipeline=PipelineModel.load('/kaggle/temp/phase14_archives/B-logistic_regression');prep=PipelineModel(stages=pipeline.stages[:-1])
+            startup_start=time.monotonic();spark=session(workers,16,scratch/str(workers));startup.append(dict(workers=workers,seconds=time.monotonic()-startup_start,application_id=spark.sparkContext.applicationId,scope='new SparkContext in shared notebook JVM; JIT/OS cache not reset'));pipeline=PipelineModel.load('/kaggle/temp/phase14_archives/B-logistic_regression');prep=PipelineModel(stages=pipeline.stages[:-1])
             for kind in ('analytics','feature_transform'):
                 execute(datasets[0],kind,workers,0,True)
                 for rep in range(1,4):execute(datasets[0],kind,workers,rep)
             spark.stop()
-        atomic_json(output/'receipt.json',dict(status='validated',stage='14D',source=source_receipt,populations=len(datasets),measured_runs=sum(not r['warmup'] for r in runs),warmups=sum(r['warmup'] for r in runs),all_correct=all(r['status']=='PASS' for r in runs),resources=environment(spark),seconds=time.monotonic()-started,model_provenance='ArchivedPhase4B group-sample LR, hash-verified upload manifest; no refit',limits='Single node CPU; no filesystem cache eviction or multi-node claim'))
+        atomic_json(output/'receipt.json',dict(status='validated',stage='14D',source=source_receipt,populations=len(datasets),spark_initializations=startup,measured_runs=sum(not r['warmup'] for r in runs),warmups=sum(r['warmup'] for r in runs),all_correct=all(r['status']=='PASS' for r in runs),resources=environment(spark),seconds=time.monotonic()-started,model_provenance='ArchivedPhase4B group-sample LR, hash-verified upload manifest; no refit',limits='Single node CPU; no filesystem cache eviction or multi-node claim'))
         print('PHASE14D SCALABILITY COMPLETE',len(runs),flush=True)
     finally:
         try:spark.stop()
