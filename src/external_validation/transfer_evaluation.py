@@ -36,7 +36,7 @@ def role(frame,column,rank,retained=None):
 
 def run(project,input_root,output,scratch):
     start=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_external_validation.yaml').read_text());common=cfg['common_features'];design=json.loads((project/'configs/ml_experiments.yaml').read_text());upstream=json.loads((project/'manifests/parquet_layers.json').read_text());clean=json.loads((project/'configs/cleaning.yaml').read_text())
-    spark=spark_session({'spark':{'master':'local[4]','driver_memory':'8g','shuffle_partitions':16,'input_partition_bytes':67108864}},scratch);spark.conf.set('spark.sql.ansi.enabled','false');models={};records=[];registry=[];collisions=[];distributions=[];population=[];failures=[]
+    spark=spark_session({'spark':{'master':'local[4]','driver_memory':'8g','shuffle_partitions':16,'input_partition_bytes':67108864}},scratch);spark.conf.set('spark.sql.ansi.enabled','false');spark.conf.set('spark.sql.sources.partitionColumnTypeInference.enabled','false');models={};records=[];registry=[];collisions=[];distributions=[];population=[];failures=[]
     with Monitor() as mon:
       try:
         raw,source_receipt=verified_input(spark,locate_producer(input_root,upstream['independent_mount']['summary_sha256']),upstream,clean)

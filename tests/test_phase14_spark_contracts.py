@@ -30,3 +30,9 @@ class Phase14SparkContracts(unittest.TestCase):
         self.assertEqual(a['rows'],b['rows']);self.assertNotEqual(a['vector_sum'],b['vector_sum'])
     def test_validation_rows_cannot_fit_preprocessing(self):
         with self.assertRaisesRegex(ValueError,'train rows only'):fit_preprocessing(self.train.withColumn('split_rank',F.lit(1)),self.names)
+    def test_capture_partition_contract_requires_strings(self):
+        with tempfile.TemporaryDirectory() as directory:
+            self.train.withColumn('source_day',F.lit('2018-02-14')).write.partitionBy('source_day').parquet(str(Path(directory)/'partitions'))
+            self.spark.conf.set('spark.sql.sources.partitionColumnTypeInference.enabled','false')
+            restored=self.spark.read.parquet(str(Path(directory)/'partitions'))
+            self.assertEqual(dict(restored.dtypes)['source_day'],'string')

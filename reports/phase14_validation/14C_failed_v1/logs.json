@@ -1,0 +1,144 @@
+[{"stream_name":"stderr","time":11.358179216,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.358333808,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.358350893,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.358362654,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.310944411,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.311004845,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.311009906,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.311013653,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.864585585,"data":"Python 3.13.18\n"}
+,{"stream_name":"stdout","time":15.270809268,"data":"Collecting pyspark==4.3.0\n"}
+,{"stream_name":"stdout","time":15.408412809,"data":"  Downloading pyspark-4.3.0.tar.gz (455.9 MB)\n"}
+,{"stream_name":"stdout","time":15.473872399,"data":"Collecting pyspark==4.3.0\n"}
+,{"stream_name":"stdout","time":15.473905231,"data":"  Downloading pyspark-4.3.0.tar.gz (455.9 MB)\n"}
+,{"stream_name":"stdout","time":20.283262984,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 455.9/455.9 MB 71.1 MB/s  0:00:04\n"}
+,{"stream_name":"stdout","time":20.48533409,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 455.9/455.9 MB 71.1 MB/s  0:00:04\n"}
+,{"stream_name":"stdout","time":29.995720117,"data":"  Installing build dependencies: started\n"}
+,{"stream_name":"stdout","time":30.198626419,"data":"  Installing build dependencies: started\n"}
+,{"stream_name":"stdout","time":35.14425414,"data":"  Installing build dependencies: finished with status 'done'\n"}
+,{"stream_name":"stdout","time":35.145336922,"data":"  Getting requirements to build wheel: started\n"}
+,{"stream_name":"stdout","time":35.347420478,"data":"  Installing build dependencies: finished with status 'done'\n"}
+,{"stream_name":"stdout","time":35.347454399,"data":"  Getting requirements to build wheel: started\n"}
+,{"stream_name":"stdout","time":35.929067388,"data":"  Getting requirements to build wheel: finished with status 'done'\n"}
+,{"stream_name":"stdout","time":35.930699038,"data":"  Preparing metadata (pyproject.toml): started\n"}
+,{"stream_name":"stdout","time":36.131926768,"data":"  Getting requirements to build wheel: finished with status 'done'\n"}
+,{"stream_name":"stdout","time":36.131980328,"data":"  Preparing metadata (pyproject.toml): started\n"}
+,{"stream_name":"stdout","time":36.360322955,"data":"  Preparing metadata (pyproject.toml): finished with status 'done'\n"}
+,{"stream_name":"stdout","time":36.367242132,"data":"Requirement already satisfied: py4j\u003c0.10.9.10,\u003e=0.10.9.7 in /usr/local/lib/python3.13/dist-packages (from pyspark==4.3.0) (0.10.9.9)\n"}
+,{"stream_name":"stdout","time":36.369249439,"data":"Building wheels for collected packages: pyspark\n"}
+,{"stream_name":"stdout","time":36.370616146,"data":"  Building wheel for pyspark (pyproject.toml): started\n"}
+,{"stream_name":"stdout","time":36.563136539,"data":"  Preparing metadata (pyproject.toml): finished with status 'done'\n"}
+,{"stream_name":"stdout","time":36.563178377,"data":"Requirement already satisfied: py4j\u003c0.10.9.10,\u003e=0.10.9.7 in /usr/local/lib/python3.13/dist-packages (from pyspark==4.3.0) (0.10.9.9)\n"}
+,{"stream_name":"stdout","time":36.563203687,"data":"Building wheels for collected packages: pyspark\n"}
+,{"stream_name":"stdout","time":36.563209285,"data":"  Building wheel for pyspark (pyproject.toml): started\n"}
+,{"stream_name":"stdout","time":65.050076375,"data":"  Building wheel for pyspark (pyproject.toml): finished with status 'done'\n"}
+,{"stream_name":"stdout","time":65.260222704,"data":"  Building wheel for pyspark (pyproject.toml): finished with status 'done'\n"}
+,{"stream_name":"stdout","time":67.150301334,"data":"  Created wheel for pyspark: filename=pyspark-4.3.0-py2.py3-none-any.whl size=456587423 sha256=b52d87d2a9618680ca3b93b88e08a8afb71552be43b56278dc5df3e725e11e10\n"}
+,{"stream_name":"stdout","time":67.150696323,"data":"  Stored in directory: /root/.cache/pip/wheels/7f/4f/4d/1da12ee3fcd3848886924c18ae45041bf907b428f04d6af2d3\n"}
+,{"stream_name":"stdout","time":67.162107889,"data":"Successfully built pyspark\n"}
+,{"stream_name":"stdout","time":67.353193747,"data":"  Created wheel for pyspark: filename=pyspark-4.3.0-py2.py3-none-any.whl size=456587423 sha256=b52d87d2a9618680ca3b93b88e08a8afb71552be43b56278dc5df3e725e11e10\n"}
+,{"stream_name":"stdout","time":67.353230223,"data":"  Stored in directory: /root/.cache/pip/wheels/7f/4f/4d/1da12ee3fcd3848886924c18ae45041bf907b428f04d6af2d3\n"}
+,{"stream_name":"stdout","time":67.353237473,"data":"Successfully built pyspark\n"}
+,{"stream_name":"stdout","time":68.446304583,"data":"Installing collected packages: pyspark\n"}
+,{"stream_name":"stdout","time":68.446598421,"data":"  Attempting uninstall: pyspark\n"}
+,{"stream_name":"stdout","time":68.469102819,"data":"    Found existing installation: pyspark 4.0.4\n"}
+,{"stream_name":"stdout","time":68.6117791,"data":"    Uninstalling pyspark-4.0.4:\n"}
+,{"stream_name":"stdout","time":68.649198404,"data":"Installing collected packages: pyspark\n"}
+,{"stream_name":"stdout","time":68.64924006,"data":"  Attempting uninstall: pyspark\n"}
+,{"stream_name":"stdout","time":68.649245082,"data":"    Found existing installation: pyspark 4.0.4\n"}
+,{"stream_name":"stdout","time":68.64932122,"data":"    Uninstalling pyspark-4.0.4:\n"}
+,{"stream_name":"stdout","time":73.386125176,"data":"      Successfully uninstalled pyspark-4.0.4\n"}
+,{"stream_name":"stdout","time":73.589324105,"data":"      Successfully uninstalled pyspark-4.0.4\n"}
+,{"stream_name":"stderr","time":80.947118652,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":80.947153265,"data":"dataproc-spark-connect 1.1.0 requires pyspark[connect]~=4.0.0, but you have pyspark 4.3.0 which is incompatible.\n"}
+,{"stream_name":"stdout","time":81.084685217,"data":"Successfully installed pyspark-4.3.0\n"}
+,{"stream_name":"stderr","time":81.151064241,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":81.15109886,"data":"dataproc-spark-connect 1.1.0 requires pyspark[connect]~=4.0.0, but you have pyspark 4.3.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":81.151106345,"data":"\n"}
+,{"stream_name":"stderr","time":81.151112023,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":81.15113574,"data":"dataproc-spark-connect 1.1.0 requires pyspark[connect]~=4.0.0, but you have pyspark 4.3.0 which is incompatible.\n"}
+,{"stream_name":"stdout","time":81.287361763,"data":"Successfully installed pyspark-4.3.0\n"}
+,{"stream_name":"stderr","time":81.890100381,"data":"openjdk version \"21.0.12.1\" 2026-08-18\n"}
+,{"stream_name":"stderr","time":81.890137221,"data":"OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\n"}
+,{"stream_name":"stderr","time":81.89014396,"data":"OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)\n"}
+,{"stream_name":"stderr","time":81.922466354,"data":"openjdk version \"21.0.12.1\" 2026-08-18\n"}
+,{"stream_name":"stderr","time":81.922497827,"data":"OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\n"}
+,{"stream_name":"stderr","time":81.922503845,"data":"OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)\n"}
+,{"stream_name":"stderr","time":81.922508786,"data":"\n"}
+,{"stream_name":"stderr","time":81.922513252,"data":"openjdk version \"21.0.12.1\" 2026-08-18\n"}
+,{"stream_name":"stderr","time":81.922518018,"data":"OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\n"}
+,{"stream_name":"stderr","time":81.922523212,"data":"OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)\n"}
+,{"stream_name":"stdout","time":82.239620133,"data":"PHASE14 SOURCE ea8fc04edb230323d3eae6192f5392ad4ebf33c8\n"}
+,{"stream_name":"stderr","time":84.658584451,"data":"WARNING: Using incubator modules: jdk.incubator.vector\n"}
+,{"stream_name":"stderr","time":84.862775757,"data":"WARNING: Using incubator modules: jdk.incubator.vector\n"}
+,{"stream_name":"stderr","time":84.862816006,"data":"\n"}
+,{"stream_name":"stderr","time":84.862822995,"data":"WARNING: Using incubator modules: jdk.incubator.vector\n"}
+,{"stream_name":"stderr","time":87.332721138,"data":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties\n"}
+,{"stream_name":"stderr","time":87.335159607,"data":"Setting default log level to \"WARN\".\n"}
+,{"stream_name":"stderr","time":87.335193292,"data":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n"}
+,{"stream_name":"stderr","time":87.541349651,"data":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties\n"}
+,{"stream_name":"stderr","time":87.541445125,"data":"Setting default log level to \"WARN\".\n"}
+,{"stream_name":"stderr","time":87.541460652,"data":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n"}
+,{"stream_name":"stderr","time":87.541466634,"data":"\n"}
+,{"stream_name":"stderr","time":87.541471097,"data":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties\n"}
+,{"stream_name":"stderr","time":87.541475691,"data":"Setting default log level to \"WARN\".\n"}
+,{"stream_name":"stderr","time":87.541480423,"data":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n"}
+,{"stream_name":"stderr","time":88.005396748,"data":"26/11/25 09:46:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n"}
+,{"stream_name":"stderr","time":88.084208067,"data":"26/11/25 09:46:47 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in standalone/kubernetes and LOCAL_DIRS in YARN).\n"}
+,{"stream_name":"stderr","time":88.209053349,"data":"26/11/25 09:46:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n"}
+,{"stream_name":"stderr","time":88.209123571,"data":"26/11/25 09:46:47 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in standalone/kubernetes and LOCAL_DIRS in YARN).\n"}
+,{"stream_name":"stderr","time":88.209133391,"data":"\n"}
+,{"stream_name":"stderr","time":88.211196881,"data":"26/11/25 09:46:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n"}
+,{"stream_name":"stderr","time":88.21123849599999,"data":"26/11/25 09:46:47 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in standalone/kubernetes and LOCAL_DIRS in YARN).\n"}
+,{"stream_name":"stderr","time":102.740003226,"data":"\r[Stage 0:\u003e                                                          (0 + 1) / 1]\r\r[Stage 0:\u003e                                                          (0 + 1) / 1]\r\n"}
+,{"stream_name":"stderr","time":103.203098679,"data":"\r[Stage 0:\u003e                                                          (0 + 1) / 1]\r\r                                                                                \r\r                                                                                \r\n"}
+,{"stream_name":"stderr","time":105.996165836,"data":"\r                                                                                \rTraceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":105.996938961,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":105.996989001,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":105.99699807,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":105.997005298,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":105.997011773,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":105.99701763,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":105.99702283,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":105.997028597,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":105.997034313,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":105.997040062,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":105.997045904,"data":"Exception encountered at \"In [4]\":\n"}
+,{"stream_name":"stderr","time":105.997051717,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":105.997057425,"data":"ValueError                                Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":105.997063105,"data":"/tmp/ipykernel_16/430579609.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":105.997068938,"data":"      1 from src.external_validation.transfer_evaluation import run\n"}
+,{"stream_name":"stderr","time":105.997074918,"data":"----\u003e 2 run(project,Path('/kaggle/input'),Path('/kaggle/working/mmds_phase14'),Path('/kaggle/temp/phase14/spark'))\n"}
+,{"stream_name":"stderr","time":105.997093104,"data":"\n"}
+,{"stream_name":"stderr","time":105.99709648,"data":"/kaggle/temp/mmds_phase8/code/src/external_validation/transfer_evaluation.py in run(project, input_root, output, scratch)\n"}
+,{"stream_name":"stderr","time":105.997099697,"data":"     40     with Monitor() as mon:\n"}
+,{"stream_name":"stderr","time":105.997102821,"data":"     41       try:\n"}
+,{"stream_name":"stderr","time":105.99710707,"data":"---\u003e 42         raw,source_receipt=verified_input(spark,locate_producer(input_root,upstream['independent_mount']['summary_sha256']),upstream,clean)\n"}
+,{"stream_name":"stderr","time":105.997112061,"data":"     43         for n in cfg['source_features']:\n"}
+,{"stream_name":"stderr","time":105.997116801,"data":"     44             v=F.col(n);raw=raw.withColumn(n,F.when(v.isNotNull() \u0026 ~F.isnan(v) \u0026 (F.abs(v)!=float('inf')) \u0026 (v\u003e=0),v))\n"}
+,{"stream_name":"stderr","time":105.997122276,"data":"\n"}
+,{"stream_name":"stderr","time":105.997126473,"data":"/kaggle/temp/mmds_phase8/code/src/ml/train_supervised.py in verified_input(spark, receipt, manifest, clean_policy)\n"}
+,{"stream_name":"stderr","time":105.997131314,"data":"     50     types = dict(frame.dtypes)\n"}
+,{"stream_name":"stderr","time":105.99713665,"data":"     51     require(all(types.get(name) == \"double\" for name in manifest[\"feature_columns\"]), \"Input feature types differ\")\n"}
+,{"stream_name":"stderr","time":105.997141531,"data":"---\u003e 52     require(types[\"binary_label\"] == \"tinyint\" and types[\"source_day\"] == \"string\", \"Label or day type differs\")\n"}
+,{"stream_name":"stderr","time":105.997146617,"data":"     53     label_totals, day_totals = Counter(), Counter()\n"}
+,{"stream_name":"stderr","time":105.997150565,"data":"     54     ineligible = 0\n"}
+,{"stream_name":"stderr","time":105.997154428,"data":"\n"}
+,{"stream_name":"stderr","time":105.997158495,"data":"/kaggle/temp/mmds_phase8/code/src/sql/traffic_analytics.py in require(condition, message)\n"}
+,{"stream_name":"stderr","time":105.997162921,"data":"     38 def require(condition, message):\n"}
+,{"stream_name":"stderr","time":105.997166767,"data":"     39     if not condition:\n"}
+,{"stream_name":"stderr","time":105.997170863,"data":"---\u003e 40         raise ValueError(message)\n"}
+,{"stream_name":"stderr","time":105.997175839,"data":"     41 \n"}
+,{"stream_name":"stderr","time":105.997180248,"data":"     42 \n"}
+,{"stream_name":"stderr","time":105.99719561,"data":"\n"}
+,{"stream_name":"stderr","time":105.9972003,"data":"ValueError: Label or day type differs\n"}
+,{"stream_name":"stderr","time":105.997204706,"data":"\n"}
+,{"stream_name":"stderr","time":111.40830101,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":111.408341257,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":111.624154128,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":111.624186915,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":112.66139623,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":112.77751166,"data":"[NbConvertApp] Writing 522448 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":116.394778558,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":117.315576094,"data":"[NbConvertApp] Writing 1312344 bytes to __results__.html\n"}
+]

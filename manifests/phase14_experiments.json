@@ -34,6 +34,13 @@
       "status": "ERROR",
       "reason": "PySpark quantile probability type ClassCastException after processed layer writes",
       "log_sha256": "73f7687f89156bac96ed4db709b2717380ded8f5d15d623d8a126e559395bf14"
+    },
+    {
+      "stage": "14C",
+      "kernel_version": "ramcharan2345/mmds-phase-14-external-validation/1",
+      "status": "ERROR",
+      "reason": "Producer StringType capture partition inferred as DateType; stopped before fitting or scoring",
+      "log_sha256": "0302af8929088af6e0ef81dbf6f6b4eeb896baeb794ae2f927414529012b0d6d"
     }
   ]
 }

@@ -26,7 +26,7 @@ def workload(frame,name,preprocessor=None,names=None):
         data=preprocessor.transform(frame);values=vector_to_array('scaled_features');return data.select('binary_label',F.aggregate(values,F.lit(0.),lambda a,b:a+b).alias('vector_sum')).agg(F.count('*').alias('rows'),F.sum('binary_label').alias('attacks'),F.sum('vector_sum').alias('vector_sum')).collect()
     raise ValueError('Unregistered benchmark workload')
 def session(workers,partitions,scratch):
-    s=spark_session({'spark':{'master':f'local[{workers}]','driver_memory':'8g','shuffle_partitions':partitions,'input_partition_bytes':67108864}},scratch);s.conf.set('spark.sql.adaptive.enabled','false');s.conf.set('spark.sql.ansi.enabled','false');assert s.sparkContext.master==f'local[{workers}]';return s
+    s=spark_session({'spark':{'master':f'local[{workers}]','driver_memory':'8g','shuffle_partitions':partitions,'input_partition_bytes':67108864}},scratch);s.conf.set('spark.sql.adaptive.enabled','false');s.conf.set('spark.sql.ansi.enabled','false');s.conf.set('spark.sql.sources.partitionColumnTypeInference.enabled','false');s.conf.set('spark.sql.files.minPartitionNum','16');assert s.sparkContext.master==f'local[{workers}]';return s
 def run(project,input_root,output,scratch):
     started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());source_cfg=json.loads((project/'configs/ml_experiments.yaml').read_text());names=source_cfg['numerical_features'];manifest=json.loads((project/'manifests/parquet_layers.json').read_text());clean=json.loads((project/'configs/cleaning.yaml').read_text());runs=[];datasets=[];references={};spark=session(4,16,scratch)
     try:
@@ -36,18 +36,21 @@ def run(project,input_root,output,scratch):
             v=F.col(n);raw=raw.withColumn(n,F.when(v.isNotNull() & ~F.isnan(v) & (F.abs(v)!=float('inf')),v))
         prepare=time.monotonic()
         for requested,fraction in zip(cfg['volumes'],cfg['fractions']):
-            frame=raw if fraction==1 else raw.where(F.pmod(F.xxhash64(F.lit(cfg['seed']),'record_fingerprint'),F.lit(1000000))<int(fraction*1000000));path=output/'populations'/str(requested);t=time.monotonic();frame.repartition(16).write.mode('overwrite').option('compression','snappy').parquet(str(path));saved=spark.read.parquet(str(path));counts=canonical(saved.groupBy('source_day','binary_label','attack_family').count().collect());rows=sum(r['count'] for r in counts);datasets.append(dict(requested_rows=requested,actual_rows=rows,fraction=fraction,source_receipt=source_receipt['receipt_sha256'],selection='nested seeded fingerprint hash threshold; original multiplicities retained',path=str(path.relative_to(output)),bytes=sum(p.stat().st_size for p in path.rglob('*.parquet')),files=len(list(path.rglob('*.parquet'))),composition=counts,preparation_seconds=time.monotonic()-t,partitions=16))
+            frame=raw if fraction==1 else raw.where(F.pmod(F.xxhash64(F.lit(cfg['seed']),'record_fingerprint'),F.lit(1000000))<int(fraction*1000000));path=output/'populations'/str(requested);t=time.monotonic();frame.repartition(16).write.mode('overwrite').option('compression','snappy').parquet(str(path));saved=spark.read.parquet(str(path));counts=canonical(saved.groupBy('source_day','binary_label','attack_family').count().collect());rows=sum(r['count'] for r in counts);datasets.append(dict(requested_rows=requested,actual_rows=rows,fraction=fraction,source_receipt=source_receipt['receipt_sha256'],selection='nested seeded fingerprint hash threshold; original multiplicities retained',path=str(path.relative_to(output)),bytes=sum(p.stat().st_size for p in path.rglob('*.parquet')),files=len(list(path.rglob('*.parquet'))),composition=counts,preparation_seconds=time.monotonic()-t,partitions=16,input_partitions=saved._jdf.rdd().getNumPartitions()))
         atomic_json(output/'benchmark_populations.json',datasets);pipeline=PipelineModel.load('/kaggle/temp/phase14_archives/B-logistic_regression');prep=PipelineModel(stages=pipeline.stages[:-1]);atomic_json(output/'preparation.json',dict(seconds=time.monotonic()-prepare,source=source_receipt,resources=environment(spark)))
         def execute(dataset,kind,workers,repeat,warmup=False):
-            path=output/dataset['path'];t=time.monotonic();status='PASS';result=None;error=None
+            path=output/dataset['path'];
+            if shutil.disk_usage(output).free<3*1024**3:raise RuntimeError('Scratch reserve below3GiB; stop before next configuration')
+            t=time.monotonic();status='PASS';result=None;error=None;data=None
             with Monitor() as m:
-                try:result=canonical(workload(spark.read.parquet(str(path)),kind,prep,names))
+                try:
+                    data=spark.read.parquet(str(path));result=canonical(workload(data,kind,prep,names))
                 except Exception as exc:status='FAILED';error=type(exc).__name__+': '+str(exc)[:2000]
             elapsed=time.monotonic()-t;key=(dataset['requested_rows'],kind)
             if status=='PASS':
                 if key in references and not equivalent(result,references[key]):status='FAILED';error='Output differs from matched reference'
                 else:references.setdefault(key,result)
-            row=dict(matrix='volume' if workers==4 else 'workers',workload=kind,requested_rows=dataset['requested_rows'],actual_rows=dataset['actual_rows'],format='parquet',workers=workers,partitions=16,aqe=False,cache='none explicit; OS cache uncontrolled',repetition=repeat,warmup=warmup,status=status,error=error,seconds=elapsed,rows_per_second=dataset['actual_rows']/elapsed,input_bytes=dataset['bytes'],result=result,output_sha256=hashlib.sha256(json.dumps(result,sort_keys=True).encode()).hexdigest() if result else None,**m.summary());runs.append(row);atomic_json(output/'scalability_runs.json',runs);print('PHASE14D RUN',dataset['requested_rows'],kind,workers,repeat,status,round(elapsed,3),flush=True)
+            row=dict(matrix='volume' if workers==4 else 'workers',workload=kind,requested_rows=dataset['requested_rows'],actual_rows=dataset['actual_rows'],format='parquet',workers=workers,partitions=16,input_partitions=data._jdf.rdd().getNumPartitions() if data is not None else None,storage_files=dataset['files'],aqe=False,cache='none explicit; OS cache uncontrolled',repetition=repeat,warmup=warmup,status=status,error=error,seconds=elapsed,rows_per_second=dataset['actual_rows']/elapsed,input_bytes=dataset['bytes'],result=result,output_sha256=hashlib.sha256(json.dumps(result,sort_keys=True).encode()).hexdigest() if result else None,**m.summary());runs.append(row);atomic_json(output/'scalability_runs.json',runs);print('PHASE14D RUN',dataset['requested_rows'],kind,workers,repeat,status,round(elapsed,3),flush=True)
             if status!='PASS':raise ValueError(error)
         for dataset in datasets:
             for kind in cfg['core_workloads']:

@@ -16,7 +16,7 @@ def digest(path):
 def vector_key(names):return F.sha2(F.to_json(F.struct(*[F.col(n).alias(n) for n in names]),{'ignoreNullFields':'false'}),256)
 def run(project,input_root,output,scratch):
     start=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_external_validation.yaml').read_text());files=sorted(p for p in input_root.rglob('*.csv') if 'WorkingHours' in p.name or 'workingHours' in p.name);assert len(files)==8,[(p.name) for p in files]
-    spark=spark_session({'spark':{'master':'local[4]','driver_memory':'8g','shuffle_partitions':16,'input_partition_bytes':67108864}},scratch);spark.conf.set('spark.sql.ansi.enabled','false');results=[];frames=[]
+    spark=spark_session({'spark':{'master':'local[4]','driver_memory':'8g','shuffle_partitions':16,'input_partition_bytes':67108864}},scratch);spark.conf.set('spark.sql.ansi.enabled','false');spark.conf.set('spark.sql.sources.partitionColumnTypeInference.enabled','false');results=[];frames=[]
     with Monitor() as monitor:
       try:
         for path in files:

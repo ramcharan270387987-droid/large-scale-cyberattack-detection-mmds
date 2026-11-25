@@ -33,8 +33,19 @@ def run(project,input_root,output,scratch):
         full_reference=canonical(checksum(frame,names));query=lambda f:f.where('flow_duration>1000').groupBy('binary_label').agg(F.count('*').alias('rows'),F.sum('tot_fwd_pkts').alias('packets')).collect();query_reference=canonical(query(frame))
         for fmt,reader in readers.items():
             base=parquetpath if fmt=='parquet' else csvpath;formats.append(dict(format=fmt,actual_rows=actual,bytes=sum(p.stat().st_size for p in base.rglob('*') if p.is_file() and not p.name.startswith('.')),files=len([p for p in base.rglob('*') if p.is_file() and not p.name.startswith('.')]),compression='snappy' if fmt=='parquet' else 'none',conversion_seconds=conversion if fmt=='csv' else parquet_conversion,metadata_encoding='record_fingerprint losslesshex in both formats; identical numerical/label rows',schema=schema.jsonValue()))
+            count_ref=[{'rows':actual}]
+            project_ref=canonical(checksum(frame,['flow_duration','tot_fwd_pkts','tot_bwd_pkts']))
+            aggregate=lambda f:f.groupBy('binary_label').agg(F.count('*').alias('rows'),F.sum('tot_fwd_pkts').alias('packets')).collect()
+            aggregate_ref=canonical(aggregate(frame))
+            digest=lambda f:f.agg(F.count('*').alias('rows'),F.sum(F.xxhash64(*f.columns).cast('decimal(38,0)')).alias('canonical_row_hash_sum')).collect()
+            # Decimal sums are exact but converted to strings for compact JSON.
+            def row_digest(f):return [dict(rows=int(x.rows),canonical_row_hash_sum=str(x.canonical_row_hash_sum)) for x in digest(f)]
+            timed('storage_logical_identity',fmt,1,lambda:row_digest(reader()),reference=row_digest(frame))
             for rep in range(1,4):
                 timed('storage_full_read',fmt,rep,lambda:checksum(reader(),names),reference=full_reference)
+                timed('storage_count_metadata_optimization_allowed',fmt,rep,lambda:[dict(rows=reader().count())],reference=count_ref)
+                timed('storage_projection_checksum',fmt,rep,lambda:checksum(reader(),['flow_duration','tot_fwd_pkts','tot_bwd_pkts']),reference=project_ref)
+                timed('storage_aggregation',fmt,rep,lambda:aggregate(reader()),reference=aggregate_ref)
                 timed('storage_projection_filter_query',fmt,rep,lambda:query(reader()),reference=query_reference)
         atomic_json(output/'storage_files.json',formats)
         for partitions in cfg['partition_grid']:
@@ -85,7 +96,8 @@ def run(project,input_root,output,scratch):
             for rep in range(1,4):
                 value=timed('archived_inference',family,rep,inference,reference=ref)
                 if ref is None:ref=value
-        transactions=transform(frame.orderBy(F.xxhash64(F.lit(cfg['seed']),'record_fingerprint')).limit(100000),bounds).select('items').persist(StorageLevel.DISK_ONLY);transaction_count=transactions.count();assert transaction_count<=100000
+        transaction_start=time.monotonic();transactions=transform(frame.orderBy(F.xxhash64(F.lit(cfg['seed']),'record_fingerprint')).limit(100000),bounds).select('items').persist(StorageLevel.DISK_ONLY);transaction_count=transactions.count();assert transaction_count<=100000
+        atomic_json(output/'transactions.json',dict(rows=transaction_count,features=list(bounds),seconds=time.monotonic()-transaction_start,contract='Phase10A3 frozen6features,original cutpoints,one item perfeature',cached_storage=str(transactions.storageLevel)))
         def mining():
             model=FPGrowth(itemsCol='items',minSupport=.05,minConfidence=.7,numPartitions=16).fit(transactions);counts=canonical(model.freqItemsets.groupBy(F.size('items').alias('length')).count().collect());rules=model.associationRules.count();model.write().save(str(output/'fpgrowth_model'));return dict(itemset_counts=counts,rules=rules,transactions=transaction_count)
         timed('pattern_mining','Phase10A3-frozen6-support.05-one_budgeted_fit',1,mining,rows=transaction_count);transactions.unpersist(blocking=True)
