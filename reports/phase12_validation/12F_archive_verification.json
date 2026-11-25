@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "stage": "12C-v3",
+      "models": 9,
+      "verified_components": 144
+    },
+    {
+      "stage": "12D",
+      "models": 4,
+      "verified_components": 64
+    },
+    {
+      "stage": "12E",
+      "models": 7,
+      "verified_components": 112
+    },
+    {
+      "stage": "12E-resume",
+      "models": 29,
+      "verified_components": 452
+    }
+  ]
+}

@@ -1,43 +1,43 @@
 run,model,initial,served_windows,parent_models,threshold_bins,promotion_calibration_populations,decisions,status,last_inference_day
 E-LR-seed23013-sample125-weight1-P0-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1196],[],[],served-forward,2018-03-02
-E-LR-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,6debd2b84c7f699c3f51,False,"[4, 5]","[""bf1d002296d424894374""]",[618],"[""[\""2018-02-22\"", \""2018-02-23\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
-E-LR-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
+E-LR-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,9f5b562a6f8da00304f4,False,[6],"[""6debd2b84c7f699c3f51""]",[606],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
+E-LR-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
+E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,a7607f5daf4f340adc39,False,[6],"[""738a19688a1076f3f333""]",[371],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,738a19688a1076f3f333,False,"[2, 3, 4, 5]","[""9827e6a728bb61755e3d""]",[729],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
-E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P5-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,[0],[],[1196],[],[],served-forward,2018-02-20
 E-LR-seed23013-sample125-weight1-P5-d0-b3-p2-s2-c2-m200-aFalse,40966bed6a4cf7e0636c,False,"[3, 4]","[""cf6b6ecd72c04a293335""]",[647],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-02-28
-E-LR-seed23013-sample125-weight1-P5-d0-b3-p2-s2-c2-m200-aFalse,88c99b60026fd79b3eb2,False,"[5, 6]","[""40966bed6a4cf7e0636c""]",[603],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P5-d0-b3-p2-s2-c2-m200-aFalse,cf6b6ecd72c04a293335,False,"[1, 2]","[""9827e6a728bb61755e3d""]",[517],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-02-22
-E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
+E-LR-seed23013-sample125-weight1-P5-d0-b3-p2-s2-c2-m200-aFalse,88c99b60026fd79b3eb2,False,"[5, 6]","[""40966bed6a4cf7e0636c""]",[603],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
+E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P3-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],"[361, 363, 377, 1196, 2047]","["""", """", """", """", """", """"]","[""validation-only"", ""validation-only"", ""validation-only"", ""validation-only"", ""validation-only"", ""validation-only""]",served-forward,2018-03-02
-E-LR-seed23013-sample125-weight1-P6-d0-b3-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,[],"[""9827e6a728bb61755e3d""]",[],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""validation-fpr""]",rejected,
 E-LR-seed23013-sample125-weight1-P6-d0-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1196],[],[],served-forward,2018-03-02
-E-LR-seed23013-sample125-weight1-P1-d0-b6-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
+E-LR-seed23013-sample125-weight1-P6-d0-b3-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,[],"[""9827e6a728bb61755e3d""]",[],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""validation-fpr""]",rejected,
 E-LR-seed23013-sample125-weight1-P1-d0-b6-p2-s2-c2-m200-aFalse,6debd2b84c7f699c3f51,False,"[4, 5]","[""bf1d002296d424894374""]",[618],"[""[\""2018-02-22\"", \""2018-02-23\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
-E-LR-seed23013-sample125-weight1-P1-d0-b6-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
+E-LR-seed23013-sample125-weight1-P1-d0-b6-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P1-d0-b6-p2-s2-c2-m200-aFalse,9f5b562a6f8da00304f4,False,[6],"[""6debd2b84c7f699c3f51""]",[606],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
-E-LR-seed23013-sample125-weight1-P2-d0-b6-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
+E-LR-seed23013-sample125-weight1-P1-d0-b6-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
 E-LR-seed23013-sample125-weight1-P2-d0-b6-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
+E-LR-seed23013-sample125-weight1-P2-d0-b6-p2-s2-c2-m200-aFalse,bf1d002296d424894374,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P0-d1-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1196],[],[],served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,40966bed6a4cf7e0636c,False,"[4, 5]","[""cf6b6ecd72c04a293335""]",[647],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
-E-LR-seed23013-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,88c99b60026fd79b3eb2,False,[6],"[""40966bed6a4cf7e0636c""]",[603],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,cf6b6ecd72c04a293335,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[517],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
+E-LR-seed23013-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,88c99b60026fd79b3eb2,False,[6],"[""40966bed6a4cf7e0636c""]",[603],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P2-d1-b3-p2-s2-c2-m200-aFalse,cf6b6ecd72c04a293335,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[517],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P2-d1-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P3-d1-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],"[361, 363, 1196, 2047]","["""", """", """", """", """"]","[""validation-only"", ""validation-only"", ""validation-only"", ""validation-only"", ""validation-only""]",served-forward,2018-03-02
-E-LR-seed23013-sample125-weight1-P4-d1-b3-p2-s2-c2-m200-aFalse,1a6dddfaa3af6a4e6d5f,False,"[4, 5]","[""68dd468242b9e48169e1""]",[1639],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
+E-LR-seed23013-sample125-weight1-P4-d1-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P4-d1-b3-p2-s2-c2-m200-aFalse,f3e850ad614264f0cfaf,False,[6],"[""1a6dddfaa3af6a4e6d5f""]",[121],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P4-d1-b3-p2-s2-c2-m200-aFalse,68dd468242b9e48169e1,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[555],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
-E-LR-seed23013-sample125-weight1-P4-d1-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
+E-LR-seed23013-sample125-weight1-P4-d1-b3-p2-s2-c2-m200-aFalse,1a6dddfaa3af6a4e6d5f,False,"[4, 5]","[""68dd468242b9e48169e1""]",[1639],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
 E-LR-seed23013-sample125-weight1-P5-d1-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight1-P5-d1-b3-p2-s2-c2-m200-aFalse,40966bed6a4cf7e0636c,False,"[4, 5]","[""cf6b6ecd72c04a293335""]",[647],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
-E-LR-seed23013-sample125-weight1-P5-d1-b3-p2-s2-c2-m200-aFalse,88c99b60026fd79b3eb2,False,[6],"[""40966bed6a4cf7e0636c""]",[603],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P5-d1-b3-p2-s2-c2-m200-aFalse,cf6b6ecd72c04a293335,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[517],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
+E-LR-seed23013-sample125-weight1-P5-d1-b3-p2-s2-c2-m200-aFalse,88c99b60026fd79b3eb2,False,[6],"[""40966bed6a4cf7e0636c""]",[603],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P6-d1-b3-p2-s2-c2-m200-aFalse,cf6b6ecd72c04a293335,False,[],"[""9827e6a728bb61755e3d""]",[],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""validation-fpr""]",rejected,
 E-LR-seed23013-sample125-weight1-P6-d1-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1196],[],[],served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P0-d3-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1196],[],[],served-forward,2018-03-02
@@ -46,41 +46,41 @@ E-LR-seed23013-sample125-weight1-P1-d3-b3-p2-s2-c2-m200-aFalse,40966bed6a4cf7e06
 E-LR-seed23013-sample125-weight1-P1-d3-b3-p2-s2-c2-m200-aFalse,cf6b6ecd72c04a293335,False,"[4, 5]","[""9827e6a728bb61755e3d""]",[517],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
 E-LR-seed23013-sample125-weight1-P2-d3-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1196],[],[],served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P3-d3-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],"[1196, 2047]","["""", """", """"]","[""validation-only"", ""validation-only"", ""validation-only""]",served-forward,2018-03-02
-E-LR-seed23013-sample125-weight1-P4-d3-b3-p2-s2-c2-m200-aFalse,1a6dddfaa3af6a4e6d5f,False,[6],"[""68dd468242b9e48169e1""]",[1639],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
-E-LR-seed23013-sample125-weight1-P4-d3-b3-p2-s2-c2-m200-aFalse,68dd468242b9e48169e1,False,"[4, 5]","[""9827e6a728bb61755e3d""]",[555],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
 E-LR-seed23013-sample125-weight1-P4-d3-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3]",[],[1196],[],[],served-forward,2018-02-23
+E-LR-seed23013-sample125-weight1-P4-d3-b3-p2-s2-c2-m200-aFalse,68dd468242b9e48169e1,False,"[4, 5]","[""9827e6a728bb61755e3d""]",[555],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
+E-LR-seed23013-sample125-weight1-P4-d3-b3-p2-s2-c2-m200-aFalse,1a6dddfaa3af6a4e6d5f,False,[6],"[""68dd468242b9e48169e1""]",[1639],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P5-d3-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3]",[],[1196],[],[],served-forward,2018-02-23
 E-LR-seed23013-sample125-weight1-P5-d3-b3-p2-s2-c2-m200-aFalse,40966bed6a4cf7e0636c,False,[6],"[""cf6b6ecd72c04a293335""]",[647],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P5-d3-b3-p2-s2-c2-m200-aFalse,cf6b6ecd72c04a293335,False,"[4, 5]","[""9827e6a728bb61755e3d""]",[517],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
 E-LR-seed23013-sample125-weight1-P6-d3-b3-p2-s2-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1196],[],[],served-forward,2018-03-02
 E-RF-seed23013-sample125-weight1-P0-d0-b3-p2-s2-c2-m200-aFalse,0a60cdae4000dd2d55ed,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1428],[],[],served-forward,2018-03-02
-E-RF-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,8bf75be76e34e7d2835a,False,"[2, 3]","[""0a60cdae4000dd2d55ed""]",[1208],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
 E-RF-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,834bda0523f4958858e2,False,[6],"[""84ede92c0e1fcdcb3cbf""]",[1400],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
-E-RF-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,0a60cdae4000dd2d55ed,True,"[0, 1]",[],[1428],[],[],served-forward,2018-02-21
 E-RF-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,84ede92c0e1fcdcb3cbf,False,"[4, 5]","[""8bf75be76e34e7d2835a""]",[1659],"[""[\""2018-02-22\"", \""2018-02-23\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
-E-RF-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,c82c4963cbb5f895cdd3,False,"[2, 3, 4, 5]","[""0a60cdae4000dd2d55ed""]",[1482],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
-E-RF-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,0a60cdae4000dd2d55ed,True,"[0, 1]",[],[1428],[],[],served-forward,2018-02-21
+E-RF-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,0a60cdae4000dd2d55ed,True,"[0, 1]",[],[1428],[],[],served-forward,2018-02-21
+E-RF-seed23013-sample125-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,8bf75be76e34e7d2835a,False,"[2, 3]","[""0a60cdae4000dd2d55ed""]",[1208],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
 E-RF-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,f66bbb720f796685f4a4,False,[6],"[""c82c4963cbb5f895cdd3""]",[1075],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
+E-RF-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,0a60cdae4000dd2d55ed,True,"[0, 1]",[],[1428],[],[],served-forward,2018-02-21
+E-RF-seed23013-sample125-weight1-P4-d0-b3-p2-s2-c2-m200-aFalse,c82c4963cbb5f895cdd3,False,"[2, 3, 4, 5]","[""0a60cdae4000dd2d55ed""]",[1482],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
 E-LR-seed23014-sample125-weight1-P0-d1-b3-p2-s2-c2-m200-aFalse,96a46267160de7daf218,True,"[0, 1, 2, 3, 4, 5, 6]",[],[122],[],[],served-forward,2018-03-02
 E-LR-seed23014-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,96a46267160de7daf218,True,"[0, 1]",[],[122],[],[],served-forward,2018-02-21
 E-LR-seed23014-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,7ee12017ae5a742bf813,False,"[2, 3]","[""96a46267160de7daf218""]",[735],"[""[\""2018-02-16\"", \""2018-02-20\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
-E-LR-seed23014-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,b98ed28546849c9a13ed,False,[6],"[""e39841291cc776892ef1""]",[661],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23014-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,e39841291cc776892ef1,False,"[4, 5]","[""7ee12017ae5a742bf813""]",[731],"[""[\""2018-02-21\"", \""2018-02-22\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
+E-LR-seed23014-sample125-weight1-P1-d1-b3-p2-s2-c2-m200-aFalse,b98ed28546849c9a13ed,False,[6],"[""e39841291cc776892ef1""]",[661],"[""[\""2018-02-23\"", \""2018-02-28\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample62-weight1-P0-d0-b3-p2-s2-c2-m200-aFalse,09651a2353c9995ee48d,True,"[0, 1, 2, 3, 4, 5, 6]",[],[368],[],[],served-forward,2018-03-02
 E-LR-seed23013-sample62-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,a78ea505e5300b07f651,False,"[2, 3]","[""09651a2353c9995ee48d""]",[1105],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
-E-LR-seed23013-sample62-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,09651a2353c9995ee48d,True,"[0, 1]",[],[368],[],[],served-forward,2018-02-21
-E-LR-seed23013-sample62-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,e92d133d5db6a1be75f1,False,[6],"[""6ce4d4292da6161ac940""]",[946],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample62-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,6ce4d4292da6161ac940,False,"[4, 5]","[""a78ea505e5300b07f651""]",[991],"[""[\""2018-02-22\"", \""2018-02-23\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
+E-LR-seed23013-sample62-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,e92d133d5db6a1be75f1,False,[6],"[""6ce4d4292da6161ac940""]",[946],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
+E-LR-seed23013-sample62-weight1-P1-d0-b3-p2-s2-c2-m200-aFalse,09651a2353c9995ee48d,True,"[0, 1]",[],[368],[],[],served-forward,2018-02-21
 E-LR-seed23013-sample125-weight5-P0-d0-b3-p2-s2-c2-m200-aFalse,76a672678158a5656d6e,True,"[0, 1, 2, 3, 4, 5, 6]",[],[1995],[],[],served-forward,2018-03-02
 E-LR-seed23013-sample125-weight5-P1-d0-b3-p2-s2-c2-m200-aFalse,be351a59134cb2d15d1c,False,"[2, 3]","[""76a672678158a5656d6e""]",[1454],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
-E-LR-seed23013-sample125-weight5-P1-d0-b3-p2-s2-c2-m200-aFalse,0897dd04fbf23c673a8e,False,[6],"[""e13d80b4694755e16867""]",[1416],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight5-P1-d0-b3-p2-s2-c2-m200-aFalse,e13d80b4694755e16867,False,"[4, 5]","[""be351a59134cb2d15d1c""]",[1425],"[""[\""2018-02-22\"", \""2018-02-23\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
 E-LR-seed23013-sample125-weight5-P1-d0-b3-p2-s2-c2-m200-aFalse,76a672678158a5656d6e,True,"[0, 1]",[],[1995],[],[],served-forward,2018-02-21
-E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s3-c2-m200-aFalse,29180b9f0338c7860aa7,False,"[4, 5]","[""13887684bb3fedcdb954""]",[1451],"[""[\""2018-02-22\"", \""2018-02-23\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
-E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s3-c2-m200-aFalse,13887684bb3fedcdb954,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[689],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
+E-LR-seed23013-sample125-weight5-P1-d0-b3-p2-s2-c2-m200-aFalse,0897dd04fbf23c673a8e,False,[6],"[""e13d80b4694755e16867""]",[1416],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s3-c2-m200-aFalse,a04a95582b182fc511ca,False,[6],"[""29180b9f0338c7860aa7""]",[260],"[""[\""2018-02-28\"", \""2018-03-01\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
+E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s3-c2-m200-aFalse,29180b9f0338c7860aa7,False,"[4, 5]","[""13887684bb3fedcdb954""]",[1451],"[""[\""2018-02-22\"", \""2018-02-23\""]""]","[""valid-unguarded""]",served-forward,2018-03-01
 E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s3-c2-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
-E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c0-m200-aFalse,bf1d002296d424894374,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
+E-LR-seed23013-sample125-weight1-P4-d0-b3-p2-s3-c2-m200-aFalse,13887684bb3fedcdb954,False,"[2, 3]","[""9827e6a728bb61755e3d""]",[689],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-02-23
 E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c0-m200-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
-E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c2-m400-aFalse,bf1d002296d424894374,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
+E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c0-m200-aFalse,bf1d002296d424894374,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-02
 E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c2-m400-aFalse,9827e6a728bb61755e3d,True,"[0, 1]",[],[1196],[],[],served-forward,2018-02-21
+E-LR-seed23013-sample125-weight1-P2-d0-b3-p2-s2-c2-m400-aFalse,bf1d002296d424894374,False,"[2, 3, 4, 5, 6]","[""9827e6a728bb61755e3d""]",[678],"[""[\""2018-02-20\"", \""2018-02-21\""]""]","[""valid-unguarded""]",served-forward,2018-03-02

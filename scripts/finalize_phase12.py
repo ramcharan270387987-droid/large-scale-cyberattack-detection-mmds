@@ -16,6 +16,12 @@ def main():
     tables={}
     for target,source in mapping.items():
         rows=[r for stage in stages for r in read(stage/(source+'.csv'))]
+        if target=='policy_comparison':
+            for row in rows:
+                tp,tn,fp,fn=(int(row[key]) for key in ('tp','tn','fp','fn'))
+                total=tp+tn+fp+fn
+                row['positive_rate']=(tp+fp)/total if total else None
+                row['missed_attacks']=fn
         if target=='model_registry':rows=list({r['model']:r for r in rows}.values())
         tables[target]=rows;csv_write(R/f'phase12_{target}.csv',rows)
     policies=tables['policy_comparison'];windows=tables['prequential_metrics'];models=tables['model_registry']

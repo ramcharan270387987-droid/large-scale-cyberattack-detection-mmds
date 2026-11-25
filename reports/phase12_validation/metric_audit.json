@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "policy_scopes": 35,
+  "checks": 85,
+  "unique_retrieved_histograms": 159,
+  "definitions": "Tie-grouped2048-bin step PR area; trapezoidal ROC area; counts at issued bin threshold; pooled integer confusion rates.",
+  "cross_runtime_histograms_identical": true,
+  "source": "actual retrieved private Kaggle outputs, no raw dataset downloaded"
+}

@@ -8,7 +8,7 @@ def csv_write(path,rows):
     if not rows:return
     fields=list(dict.fromkeys(k for r in rows for k in r))
     with path.open('w',newline='') as f:
-        writer=csv.DictWriter(f,fieldnames=fields);writer.writeheader()
+        writer=csv.DictWriter(f,fieldnames=fields,lineterminator="\n");writer.writeheader()
         for r in rows:
             writer.writerow({k:json.dumps(v,sort_keys=True) if isinstance(v,(dict,list)) else v for k,v in r.items()})
 
