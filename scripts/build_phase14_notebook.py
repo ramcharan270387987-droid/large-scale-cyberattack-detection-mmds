@@ -8,7 +8,7 @@ def notebook(stage):
     note=build('baseline','B');note['cells'][0]['source']=[f'# Phase14 {stage}: private research CPU execution']
     paths=list((ROOT/'src/external_validation').glob('*.py'))+list((ROOT/'src/scalability').glob('*.py'))+list((ROOT/'configs').glob('phase14_*.yaml'))
     sources={str(p.relative_to(ROOT)):p.read_text() for p in paths};
-    for relative in ('src/patterns/discretization.py','reports/phase10_stageB/registry.json')+ (('reports/phase14_14B/label_byte_catalog.json',) if stage=='14C' else ()):
+    for relative in ('src/patterns/discretization.py','src/explainability/sampling.py','reports/phase10_stageB/registry.json')+ (('reports/phase14_14B/label_byte_catalog.json',) if stage=='14C' else ()):
         sources[relative]=(ROOT/relative).read_text()
     sources['manifests/phase14_experiments.json']=(ROOT/'manifests/phase14_experiments.json').read_text()
     code='phase14_sources='+repr(sources)+'\nfor name,source in phase14_sources.items():\n target=project/name\n target.parent.mkdir(parents=True,exist_ok=True)\n target.write_text(source)\n'
@@ -27,7 +27,7 @@ if __name__=='__main__':
     if a.stage in ('14C','14E','14V'):
         dependency='14B' if a.stage=='14C' else '14C' if a.stage=='14V' else '14D'
         pin=manifest['stages'].get(dependency)
-        if not pin or pin.get('status')!='validated':raise ValueError('Required producer stage is not validated: '+dependency)
+        if not pin or (pin.get('status')!='validated' and not (a.stage=='14V' and pin.get('status')=='executed_pending_independent_validation')):raise ValueError('Required producer stage is not validated: '+dependency)
         kernels.append(pin['kernel_version'])
         if a.stage=='14V':kernels.append(manifest['stages']['14B']['kernel_version'])
     metadata=dict(id='ramcharan2345/'+slug,title=slug.replace('-',' ').title(),code_file=file.name,language='python',kernel_type='notebook',is_private=True,enable_gpu=False,enable_tpu=False,enable_internet=True,dataset_sources=['shadman1028/cicids2017-official-flow-feature-csv-files/1'] if a.stage=='14B' else [],kernel_sources=kernels,competition_sources=[])

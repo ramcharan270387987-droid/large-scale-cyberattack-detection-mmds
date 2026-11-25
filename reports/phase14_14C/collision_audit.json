@@ -1,0 +1,14 @@
+[
+  {
+    "key": "canonical_key",
+    "rows": 169234,
+    "groups": 11628,
+    "meaning": "Feature collision, not proof of same network event"
+  },
+  {
+    "key": "predictor_key",
+    "rows": 1405737,
+    "groups": 158604,
+    "meaning": "Feature collision, not proof of same network event"
+  }
+]

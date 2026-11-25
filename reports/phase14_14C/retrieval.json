@@ -1,0 +1,57 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase-14-external-validation/2",
+  "log_sha256": "eea1da93e9512bd55acbacd4df2195971f5da8e5e2072365feca077ed5059026",
+  "log_events": 1033,
+  "files": [
+    {
+      "file": "mmds_phase14/collision_audit.json",
+      "sha256": "11978f0ee7e323a8ba5564aefe43f936cf929136bfcef2103066dba05d01e76e",
+      "bytes": 297,
+      "private_only": false
+    },
+    {
+      "file": "mmds_phase14/distribution_shift.json",
+      "sha256": "c6eac0e49e85f0afea6789657fbb83e68c01e622b09320ff21c378a1d1014666",
+      "bytes": 5424,
+      "private_only": false
+    },
+    {
+      "file": "mmds_phase14/external_evaluation.json",
+      "sha256": "fb542752706317ae9a5dc20f51ccaee943b821c9e21ff319fdf8f73080103854",
+      "bytes": 2283775,
+      "private_only": false
+    },
+    {
+      "file": "mmds_phase14/external_full_column_audit.json",
+      "sha256": "e369283f2adf3a8c5b622a8a7ad1f4a81e09314d6790517f94d1ef845dc77fcd",
+      "bytes": 15540,
+      "private_only": false
+    },
+    {
+      "file": "mmds_phase14/failure_analysis.json",
+      "sha256": "dc8963c9b7b99bb9bf20a747016cc5885cab0214142952c113f17fc385bfb61f",
+      "bytes": 28106,
+      "private_only": true
+    },
+    {
+      "file": "mmds_phase14/models.json",
+      "sha256": "3141290b495e925eafeae7c1cd8c5c7b5c799908f6653fccd10b50509645b326",
+      "bytes": 417718,
+      "private_only": false
+    },
+    {
+      "file": "mmds_phase14/populations.json",
+      "sha256": "dadc6bc972b9c2f8c77b845565c7021273ea9db25dce03c4aa1a4082472f16f1",
+      "bytes": 18659,
+      "private_only": false
+    },
+    {
+      "file": "mmds_phase14/receipt.json",
+      "sha256": "60c2956bbb04944cf268cba60c29552636acdade977fa3c739c168cfb4a3853a",
+      "bytes": 28010,
+      "private_only": false
+    }
+  ],
+  "export_only": false
+}

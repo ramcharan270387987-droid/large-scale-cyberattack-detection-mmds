@@ -2,8 +2,8 @@
   "schema": "phase14-v1",
   "complete": false,
   "starting_checkpoint": "ab6e9401b0c9b92e624e5b2b16ec91050a081eb0",
-  "stage": "14B",
-  "next_stage": "14C external transfer and target baselines",
+  "stage": "14C",
+  "next_stage": "14C independent private-model and compatibility validation,then14D",
   "stages": {
     "14A": {
       "status": "validated",
@@ -19,6 +19,17 @@
       "audit_sha256": "0111288049579bb58d3f33892d6cf2b38c42a09cbcb4cfaf00c1128b0f54de4b",
       "log_sha256": "1f844a1df2b62fb8539560a423b20a7ceea3fe36db981db07f864cf86587cf4e",
       "private_cpu": true
+    },
+    "14C": {
+      "status": "executed_pending_independent_validation",
+      "worker_status": "COMPLETE",
+      "kernel_version": "ramcharan2345/mmds-phase-14-external-validation/2",
+      "source_commit": "91398fcc4b8ec95ae3d88646f8d31a7af652a9be",
+      "source_sha256": "2b9db951daa5fda6ca375ce5720e527b3487d5b5b7bb5d0c3e665c18041efbc8",
+      "models": 12,
+      "evaluation_records": 64,
+      "seconds": 1480.847870713,
+      "metric_audit_sha256": "c5bf152d0497ec8e5054e3ab3b71b8284acc3358cf20e9657f7a8a913367cf20"
     }
   },
   "protected": {

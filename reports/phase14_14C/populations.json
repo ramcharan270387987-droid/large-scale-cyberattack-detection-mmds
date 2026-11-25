@@ -1,0 +1,857 @@
+[
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS Slowhttptest",
+    "count": 5499
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 2,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "DDoS",
+    "count": 127376
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "Heartbleed",
+    "count": 11
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS Hulk",
+    "count": 231073
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 440031
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS GoldenEye",
+    "count": 10293
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS slowloris",
+    "count": 5796
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 2,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "Bot",
+    "count": 1225
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 2,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "PortScan",
+    "count": 674
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 2,
+    "source_day": "2017-07-07",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 179664
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-03",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 529918
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � XSS",
+    "count": 622
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Infiltration",
+    "count": 34
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � Brute Force",
+    "count": 1341
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 159277
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-04",
+    "binary_label": 1,
+    "attack_family": "FTP-Patator",
+    "count": 7938
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-04",
+    "binary_label": 1,
+    "attack_family": "SSH-Patator",
+    "count": 5897
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 0,
+    "source_day": "2017-07-04",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 432074
+  },
+  {
+    "dataset": "external",
+    "protocol": "chronological",
+    "chronological_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � Sql Injection",
+    "count": 12
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS slowloris",
+    "count": 893
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS Hulk",
+    "count": 28162
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS Slowhttptest",
+    "count": 3952
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "DDoS",
+    "count": 19093
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "Bot",
+    "count": 247
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS Hulk",
+    "count": 46329
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "Heartbleed",
+    "count": 9
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS Hulk",
+    "count": 156582
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS GoldenEye",
+    "count": 1582
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "Bot",
+    "count": 1429
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "DDoS",
+    "count": 18974
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 302426
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-05",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 59513
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS GoldenEye",
+    "count": 7153
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS slowloris",
+    "count": 4082
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS Slowhttptest",
+    "count": 769
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-07",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 285199
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "Bot",
+    "count": 290
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "PortScan",
+    "count": 33225
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-05",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 78092
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS Slowhttptest",
+    "count": 778
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "PortScan",
+    "count": 116395
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-07",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 71115
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS GoldenEye",
+    "count": 1558
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "PortScan",
+    "count": 9310
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "DoS slowloris",
+    "count": 821
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-07",
+    "binary_label": 1,
+    "attack_family": "DDoS",
+    "count": 89960
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-07",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 58008
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-05",
+    "binary_label": 1,
+    "attack_family": "Heartbleed",
+    "count": 2
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-03",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 96410
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-03",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 362264
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-03",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 71244
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � XSS",
+    "count": 104
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � XSS",
+    "count": 445
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Infiltration",
+    "count": 28
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � Brute Force",
+    "count": 238
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � Brute Force",
+    "count": 223
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � Brute Force",
+    "count": 1046
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Infiltration",
+    "count": 6
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-06",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 82347
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � Sql Injection",
+    "count": 11
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-06",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 315937
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 58468
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � XSS",
+    "count": 103
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-04",
+    "binary_label": 1,
+    "attack_family": "FTP-Patator",
+    "count": 5355
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-04",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 75648
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-04",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 58761
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-04",
+    "binary_label": 1,
+    "attack_family": "SSH-Patator",
+    "count": 4214
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-04",
+    "binary_label": 1,
+    "attack_family": "SSH-Patator",
+    "count": 860
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-04",
+    "binary_label": 1,
+    "attack_family": "FTP-Patator",
+    "count": 1633
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-04",
+    "binary_label": 1,
+    "attack_family": "SSH-Patator",
+    "count": 823
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-04",
+    "binary_label": 1,
+    "attack_family": "FTP-Patator",
+    "count": 950
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 0,
+    "source_day": "2017-07-04",
+    "binary_label": 0,
+    "attack_family": "BENIGN",
+    "count": 297665
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 2,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � Sql Injection",
+    "count": 6
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Web Attack � Sql Injection",
+    "count": 4
+  },
+  {
+    "dataset": "external",
+    "protocol": "grouped",
+    "grouped_rank": 1,
+    "source_day": "2017-07-06",
+    "binary_label": 1,
+    "attack_family": "Infiltration",
+    "count": 2
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-22",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 1048213
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-21",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 360833
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-20",
+    "binary_label": 1,
+    "attack_family": "DDoS",
+    "count": 576191
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 1,
+    "source_day": "2018-02-28",
+    "binary_label": 1,
+    "attack_family": "Infiltration",
+    "count": 23061
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-16",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 446772
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-20",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 7372557
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-21",
+    "binary_label": 1,
+    "attack_family": "DDoS",
+    "count": 687742
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-14",
+    "binary_label": 1,
+    "attack_family": "Credential brute force",
+    "count": 380949
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-15",
+    "binary_label": 1,
+    "attack_family": "DoS",
+    "count": 52498
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 1,
+    "source_day": "2018-02-23",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 469607
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-22",
+    "binary_label": 1,
+    "attack_family": "Web attack",
+    "count": 362
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 2,
+    "source_day": "2018-03-01",
+    "binary_label": 1,
+    "attack_family": "Infiltration",
+    "count": 26507
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-16",
+    "binary_label": 1,
+    "attack_family": "DoS",
+    "count": 601802
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 1,
+    "source_day": "2018-02-23",
+    "binary_label": 1,
+    "attack_family": "Web attack",
+    "count": 262
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-15",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 996077
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 2,
+    "source_day": "2018-03-02",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 346453
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 0,
+    "source_day": "2018-02-14",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 667626
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 1,
+    "source_day": "2018-02-28",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 182919
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 2,
+    "source_day": "2018-03-01",
+    "binary_label": 0,
+    "attack_family": "Benign",
+    "count": 87464
+  },
+  {
+    "dataset": "source",
+    "protocol": "B-common",
+    "split_rank": 2,
+    "source_day": "2018-03-02",
+    "binary_label": 1,
+    "attack_family": "Bot",
+    "count": 3514
+  }
+]

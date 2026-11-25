@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "models": 12,
+  "unique_evaluation_records": 64,
+  "independent_confusion_auc_checks": 64,
+  "validation_threshold_optima": 12,
+  "matched_populations": {
+    "('chronological', 'primary')": 308939,
+    "('chronological', 'exclude_source_collisions')": 287528,
+    "('grouped', 'primary')": 508641,
+    "('grouped', 'exclude_source_collisions')": 218235
+  },
+  "test_threshold_tuning": false
+}

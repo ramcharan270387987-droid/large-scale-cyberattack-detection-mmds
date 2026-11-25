@@ -36,3 +36,9 @@ class Phase14SparkContracts(unittest.TestCase):
             self.spark.conf.set('spark.sql.sources.partitionColumnTypeInference.enabled','false')
             restored=self.spark.read.parquet(str(Path(directory)/'partitions'))
             self.assertEqual(dict(restored.dtypes)['source_day'],'string')
+    def test_matched_csv_parquet_preserve_binary_identity_and_nulls(self):
+        from src.scalability.optimization import storage_ready,logical_digest
+        original=self.spark.createDataFrame([(b'\x00\x01','BENIGN',0,1.25),(b'\xff','Web Attack � XSS',1,None),(b'\x00\x01','BENIGN',0,1.25)],'record_fingerprint BINARY, attack_family STRING,binary_label TINYINT,value DOUBLE');ready=storage_ready(original);self.assertEqual(dict(ready.dtypes)['record_fingerprint'],'string')
+        with tempfile.TemporaryDirectory() as directory:
+            csv=Path(directory)/'csv';parquet=Path(directory)/'parquet';ready.write.option('header','true').csv(str(csv));ready.write.parquet(str(parquet))
+            a=self.spark.read.schema(ready.schema).option('header','true').csv(str(csv));b=self.spark.read.schema(ready.schema).parquet(str(parquet));self.assertEqual(logical_digest(a),logical_digest(b));self.assertEqual(logical_digest(a),logical_digest(ready));self.assertNotEqual(logical_digest(a),logical_digest(ready.withColumn('value',F.lit(99.))))

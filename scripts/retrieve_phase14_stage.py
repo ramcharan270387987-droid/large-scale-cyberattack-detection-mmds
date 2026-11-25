@@ -12,7 +12,8 @@ def retrieve(reference,destination,export=False):
         candidates=[x for x in archive.infolist() if x.filename.startswith(prefix) and x.filename.endswith('.json') and len(Path(x.filename).parts)==2]
         assert candidates,'No compact evidence'
         for entry in candidates:
-            assert entry.file_size<8*1024*1024;data=archive.read(entry);json.loads(data);(destination/Path(entry.filename).name).write_bytes(data);checked.append(dict(file=entry.filename,sha256=hashlib.sha256(data).hexdigest(),bytes=len(data)))
+            assert entry.file_size<8*1024*1024;data=archive.read(entry);json.loads(data);private=Path(entry.filename).name in ('failure_analysis.json','failure_analysis_verified.json')
+            target=(Path('/tmp/mmds-phase14/'+('14V-private' if Path(entry.filename).name=='failure_analysis_verified.json' else '14C-private'))/Path(entry.filename).name) if private else (destination/Path(entry.filename).name);target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data);checked.append(dict(file=entry.filename,sha256=hashlib.sha256(data).hexdigest(),bytes=len(data),private_only=private))
         if export:
             record=json.loads((destination/'export_receipt.json').read_text());assert record['status']=='validated' and record['experiment_reexecuted'] is False
             for file in record['files']:assert hashlib.sha256((destination/file['file']).read_bytes()).hexdigest()==file['sha256']

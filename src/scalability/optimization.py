@@ -11,11 +11,18 @@ from src.scalability.benchmark_runner import session,canonical,equivalent,checks
 from src.scalability.resource_monitor import Monitor,environment
 from src.patterns.discretization import transform
 
+def storage_ready(frame):
+    return frame.withColumn('record_fingerprint',F.hex('record_fingerprint')) if dict(frame.dtypes).get('record_fingerprint')=='binary' else frame
+
+def logical_digest(frame):
+    rows=frame.agg(F.count('*').alias('rows'),F.sum(F.xxhash64(*frame.columns).cast('decimal(38,0)')).alias('canonical_row_hash_sum')).collect()
+    return [dict(rows=int(x.rows),canonical_row_hash_sum=str(x.canonical_row_hash_sum)) for x in rows]
+
 def run(project,input_root,output,scratch):
     started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());names=json.loads((project/'configs/ml_experiments.yaml').read_text())['numerical_features'];producers=list(input_root.rglob('benchmark_populations.json'));assert len(producers)==1,'Attach accepted14D output';producer=producers[0];datasets=json.loads(producer.read_text());dataset=datasets[0];path=producer.parent/dataset['path'];startup_start=time.monotonic();spark=session(4,16,scratch);spark_initialization_seconds=time.monotonic()-startup_start;runs=[];formats=[];references={}
     try:
         frame=spark.read.parquet(str(path))
-        if dict(frame.dtypes).get('record_fingerprint')=='binary':frame=frame.withColumn('record_fingerprint',F.hex('record_fingerprint'))
+        frame=storage_ready(frame)
         schema=frame.schema;actual=frame.count();assert actual==dataset['actual_rows'];bounds=json.loads((project/'reports/phase10_stageB/registry.json').read_text());output.joinpath('event_logs').mkdir(exist_ok=True)
         def timed(matrix,configuration,rep,fn,rows=actual,reference=None):
             t=time.monotonic();error=None;result=None;status='PASS'
@@ -37,9 +44,7 @@ def run(project,input_root,output,scratch):
             project_ref=canonical(checksum(frame,['flow_duration','tot_fwd_pkts','tot_bwd_pkts']))
             aggregate=lambda f:f.groupBy('binary_label').agg(F.count('*').alias('rows'),F.sum('tot_fwd_pkts').alias('packets')).collect()
             aggregate_ref=canonical(aggregate(frame))
-            digest=lambda f:f.agg(F.count('*').alias('rows'),F.sum(F.xxhash64(*f.columns).cast('decimal(38,0)')).alias('canonical_row_hash_sum')).collect()
-            # Decimal sums are exact but converted to strings for compact JSON.
-            def row_digest(f):return [dict(rows=int(x.rows),canonical_row_hash_sum=str(x.canonical_row_hash_sum)) for x in digest(f)]
+            row_digest=logical_digest
             timed('storage_logical_identity',fmt,1,lambda:row_digest(reader()),reference=row_digest(frame))
             for rep in range(1,4):
                 timed('storage_full_read',fmt,rep,lambda:checksum(reader(),names),reference=full_reference)
