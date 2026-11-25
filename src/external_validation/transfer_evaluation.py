@@ -23,6 +23,12 @@ def histogram(model,frame):
     for row in rows:
         h.setdefault(int(row.bin),[0,0])[int(row.binary_label)]+=row['count']
     return h,[r.asDict() for r in rows]
+def control_pipeline(train,preprocessor,family):
+    if family not in ('duration','majority'):raise ValueError('Unsupported control')
+    scale=max(1.,train.approxQuantile('flow_duration',[.99],.001)[0]) if family=='duration' else 1.
+    value=f'LEAST(1D,GREATEST(0D,flow_duration_imputed/{scale!r}))' if family=='duration' else '0D'
+    return PipelineModel(stages=[preprocessor.stages[0],SQLTransformer(statement=f'SELECT *,1D-({value}) AS _p0,({value}) AS _p1 FROM __THIS__'),VectorAssembler(inputCols=['_p0','_p1'],outputCol='probability')])
+
 def support(frame):return {int(r.binary_label):int(r['count']) for r in frame.groupBy('binary_label').count().collect()}
 def role(frame,column,rank,retained=None):
     result=frame.where(F.col(column)==rank)
@@ -37,7 +43,18 @@ def run(project,input_root,output,scratch):
         for n in cfg['source_features']:
             v=F.col(n);raw=raw.withColumn(n,F.when(v.isNotNull() & ~F.isnan(v) & (F.abs(v)!=float('inf')) & (v>=0),v))
         source=raw.withColumn('predictor_key',vector_key(common)).withColumn('canonical_key',vector_key(cfg['source_features']));source=source.withColumn('split_rank',F.when(F.col('source_day').isin(design['protocols']['B']['train']),0).when(F.col('source_day').isin(design['protocols']['B']['validation']),1).otherwise(2));first=source.groupBy('predictor_key').agg(F.min('split_rank').alias('earliest'));source=source.join(first,'predictor_key').where('split_rank=earliest').persist(StorageLevel.DISK_ONLY)
-        producer=list(input_root.rglob('external_audit.json'));assert len(producer)==1,'Attach accepted14B output';audit=json.loads(producer[0].read_text());assert audit['status']=='validated' and audit['dataset']==cfg['dataset'];target=spark.read.parquet(str(producer[0].parent/'feature_ready')).where('eligible').persist(StorageLevel.DISK_ONLY)
+        producer=list(input_root.rglob('external_audit.json'));assert len(producer)==1,'Attach accepted14B output';audit=json.loads(producer[0].read_text());assert audit['status']=='validated' and audit['dataset']==cfg['dataset']
+        from src.external_validation.supplemental_audit import all_columns
+        atomic_json(output/'external_full_column_audit.json',all_columns(spark,producer[0].parent,audit))
+        target=spark.read.parquet(str(producer[0].parent/'feature_ready')).where('eligible')
+        label_catalog=json.loads((project/'reports/phase14_14B/label_byte_catalog.json').read_text())
+        assert label_catalog['rows']==audit['physical_data_rows']
+        mapping={x['observed_utf8_label']:x['original_label'] for x in label_catalog['labels']};hexes={x['observed_utf8_label']:x['original_label_hex'] for x in label_catalog['labels']}
+        from itertools import chain
+        mapping_expr=F.create_map(*[F.lit(x) for x in chain.from_iterable(mapping.items())]);hex_expr=F.create_map(*[F.lit(x) for x in chain.from_iterable(hexes.items())])
+        target=target.withColumn('observed_utf8_label',F.col('original_label')).withColumn('original_label_hex',hex_expr[F.col('original_label')]).withColumn('original_label',mapping_expr[F.col('original_label')]).withColumn('attack_family',F.col('original_label')).persist(StorageLevel.DISK_ONLY)
+        assert target.where('original_label IS NULL OR original_label_hex IS NULL').limit(1).count()==0
+
         source_keys=source.where('split_rank IN (0,1)').select('predictor_key').distinct();target_tests={}
         for protocol,column,retained in [('chronological','chronological_rank','chronological_retained'),('grouped','grouped_rank',None)]:
             active=target.where(retained) if retained else target
@@ -77,10 +94,7 @@ def run(project,input_root,output,scratch):
                 identifier=f'{experiment}-{protocol}-{family}';prep=lrprep if family=='LR' else treeprep;t=time.monotonic();params=cfg['models'].get(family,{})
                 estimator=(LogisticRegression(labelCol='binary_label',featuresCol='scaled_features',standardization=False,tol=1e-5,**params) if family=='LR' else RandomForestClassifier(labelCol='binary_label',featuresCol='features',seed=cfg['seed'],maxBins=24,maxMemoryInMB=192,**params)).fit(prep.transform(train)) if family in ('LR','RF') else None;fit_seconds=time.monotonic()-t
                 if estimator is not None:pipeline=PipelineModel(stages=[*prep.stages,estimator])
-                else:
-                    scale=max(1.,train.approxQuantile('flow_duration',[.99],.001)[0]) if family=='duration' else 1.
-                    value=f'LEAST(1D,GREATEST(0D,flow_duration_imputed/{scale!r}))' if family=='duration' else '0D'
-                    pipeline=PipelineModel(stages=[treeprep.stages[0],SQLTransformer(statement=f'SELECT *,1D-({value}) AS _p0,({value}) AS _p1 FROM __THIS__'),VectorAssembler(inputCols=['_p0','_p1'],outputCol='probability')]);fit_seconds=time.monotonic()-t
+                else:pipeline=control_pipeline(train,treeprep,family);fit_seconds=time.monotonic()-t
                 timings={};saved=capture(pipeline,identifier,output,probes,timings=timings);cal,_=histogram(pipeline,validation);threshold,validation_metrics=choose(curves(cal,2048),cfg['validation_fpr_ceiling']);models[identifier]=pipeline
                 record=dict(model=identifier,experiment=experiment,domain=domain,protocol=protocol,features=common,training_support=classes,training_rows=sum(classes.values()),sample_permyriad=fraction,preprocessing=preprocessing,preprocessing_seconds=prep_seconds,fit_seconds=fit_seconds,threshold_bin=threshold,validation_metrics=validation_metrics,calibration_histogram=cal,saved=saved,timings=timings);registry.append(record);atomic_json(output/'models.json',registry)
                 protocols=target_tests if domain=='source' else {protocol:target_tests[protocol]}
@@ -110,7 +124,7 @@ def run(project,input_root,output,scratch):
                     atomic_json(output/'external_evaluation.json',records)
                 print('PHASE14C MODEL COMPLETE',identifier,sum(classes.values()),flush=True)
             train.unpersist()
-        atomic_json(output/'receipt.json',dict(status='validated',source=source_receipt,external_input_sha256=hashlib.sha256(producer[0].read_bytes()).hexdigest(),models=len(registry),evaluation_records=len(records),resources=environment(),spark_version=spark.version,master=spark.sparkContext.master,seconds=time.monotonic()-start,unsupported=['E1 exact18-feature archive transfer: unverified extraction semantics','E4/E5 optional not executed','Exact cross-dataset event overlap: original identifiers absent']))
+        atomic_json(output/'receipt.json',dict(status='validated',source=source_receipt,external_input_sha256=hashlib.sha256(producer[0].read_bytes()).hexdigest(),models=len(registry),evaluation_records=len(records),resources=environment(spark),spark_version=spark.version,master=spark.sparkContext.master,seconds=time.monotonic()-start,unsupported=['E1 exact18-feature archive transfer: unverified extraction semantics','E4/E5 optional not executed','Exact cross-dataset event overlap: original identifiers absent']))
         print('PHASE14C EXTERNAL VALIDATION COMPLETE',len(records),flush=True)
       finally:spark.stop()
     receipt=json.loads((output/'receipt.json').read_text());receipt['memory']=mon.summary();atomic_json(output/'receipt.json',receipt)

@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase14-compact-evidence/2",
+  "log_sha256": "4588d20f0e5e2b55e18c408b6f1d7306f084d672effb6dcda4760991325c6213",
+  "log_events": 18,
+  "files": [
+    {
+      "file": "phase14_compact/export_receipt.json",
+      "sha256": "94619751bc42d68c96e0bade00ca52b5b23f8b0d20133c562c452c153257e565",
+      "bytes": 547
+    },
+    {
+      "file": "phase14_compact/external_audit.json",
+      "sha256": "0111288049579bb58d3f33892d6cf2b38c42a09cbcb4cfaf00c1128b0f54de4b",
+      "bytes": 65526
+    },
+    {
+      "file": "phase14_compact/label_byte_catalog.json",
+      "sha256": "ffb6f2a490e11f32685899df2a8f259eb668479890a9b7f30eca6418010620bb",
+      "bytes": 5001
+    }
+  ],
+  "export_only": true
+}

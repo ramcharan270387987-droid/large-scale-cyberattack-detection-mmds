@@ -14,7 +14,9 @@ from src.patterns.discretization import transform
 def run(project,input_root,output,scratch):
     started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());names=json.loads((project/'configs/ml_experiments.yaml').read_text())['numerical_features'];producers=list(input_root.rglob('benchmark_populations.json'));assert len(producers)==1,'Attach accepted14D output';producer=producers[0];datasets=json.loads(producer.read_text());dataset=datasets[0];path=producer.parent/dataset['path'];spark=session(4,16,scratch);runs=[];formats=[];references={}
     try:
-        frame=spark.read.parquet(str(path));schema=frame.schema;actual=frame.count();assert actual==dataset['actual_rows'];bounds=json.loads((project/'reports/phase10_stageB/registry.json').read_text());output.joinpath('event_logs').mkdir(exist_ok=True)
+        frame=spark.read.parquet(str(path))
+        if dict(frame.dtypes).get('record_fingerprint')=='binary':frame=frame.withColumn('record_fingerprint',F.hex('record_fingerprint'))
+        schema=frame.schema;actual=frame.count();assert actual==dataset['actual_rows'];bounds=json.loads((project/'reports/phase10_stageB/registry.json').read_text());output.joinpath('event_logs').mkdir(exist_ok=True)
         def timed(matrix,configuration,rep,fn,rows=actual,reference=None):
             t=time.monotonic();error=None;result=None;status='PASS'
             with Monitor() as mon:
@@ -25,11 +27,12 @@ def run(project,input_root,output,scratch):
             elapsed=time.monotonic()-t;r=dict(matrix=matrix,configuration=configuration,repetition=rep,actual_rows=rows,seconds=elapsed,rows_per_second=rows/elapsed if rows else None,workers=4,cache_os='uncontrolled',status=status,error=error,result=result,**mon.summary());runs.append(r);atomic_json(output/'optimization_runs.json',runs);print('PHASE14E RUN',matrix,configuration,rep,status,round(elapsed,3),flush=True)
             if status!='PASS':raise ValueError(error)
             return result
+        t=time.monotonic();parquetpath=output/'matched_parquet';frame.write.mode('overwrite').option('compression','snappy').parquet(str(parquetpath));parquet_conversion=time.monotonic()-t
         t=time.monotonic();csvpath=output/'matched_csv';frame.write.mode('overwrite').option('header','true').csv(str(csvpath));conversion=time.monotonic()-t
-        readers={'parquet':lambda:spark.read.schema(schema).parquet(str(path)),'csv':lambda:spark.read.schema(schema).option('header','true').csv(str(csvpath))}
+        readers={'parquet':lambda:spark.read.schema(schema).parquet(str(parquetpath)),'csv':lambda:spark.read.schema(schema).option('header','true').csv(str(csvpath))}
         full_reference=canonical(checksum(frame,names));query=lambda f:f.where('flow_duration>1000').groupBy('binary_label').agg(F.count('*').alias('rows'),F.sum('tot_fwd_pkts').alias('packets')).collect();query_reference=canonical(query(frame))
         for fmt,reader in readers.items():
-            base=path if fmt=='parquet' else csvpath;formats.append(dict(format=fmt,actual_rows=actual,bytes=sum(p.stat().st_size for p in base.rglob('*') if p.is_file() and not p.name.startswith('.')),files=len([p for p in base.rglob('*') if p.is_file() and not p.name.startswith('.')]),compression='snappy' if fmt=='parquet' else 'none',conversion_seconds=conversion if fmt=='csv' else 0.,schema=schema.jsonValue()))
+            base=parquetpath if fmt=='parquet' else csvpath;formats.append(dict(format=fmt,actual_rows=actual,bytes=sum(p.stat().st_size for p in base.rglob('*') if p.is_file() and not p.name.startswith('.')),files=len([p for p in base.rglob('*') if p.is_file() and not p.name.startswith('.')]),compression='snappy' if fmt=='parquet' else 'none',conversion_seconds=conversion if fmt=='csv' else parquet_conversion,metadata_encoding='record_fingerprint losslesshex in both formats; identical numerical/label rows',schema=schema.jsonValue()))
             for rep in range(1,4):
                 timed('storage_full_read',fmt,rep,lambda:checksum(reader(),names),reference=full_reference)
                 timed('storage_projection_filter_query',fmt,rep,lambda:query(reader()),reference=query_reference)
@@ -86,6 +89,6 @@ def run(project,input_root,output,scratch):
         def mining():
             model=FPGrowth(itemsCol='items',minSupport=.05,minConfidence=.7,numPartitions=16).fit(transactions);counts=canonical(model.freqItemsets.groupBy(F.size('items').alias('length')).count().collect());rules=model.associationRules.count();model.write().save(str(output/'fpgrowth_model'));return dict(itemset_counts=counts,rules=rules,transactions=transaction_count)
         timed('pattern_mining','Phase10A3-frozen6-support.05-one_budgeted_fit',1,mining,rows=transaction_count);transactions.unpersist(blocking=True)
-        atomic_json(output/'receipt.json',dict(status='validated',stage='14E',input_population=dataset,resources=environment(),spark_version=spark.version,measured_runs=len(runs),seconds=time.monotonic()-started,unsupported={'shuffle_bytes':'No enabled event-log parser; not measured','spill_bytes':'No enabled event-log parser; not measured','task_imbalance':'No task metrics retrieved','cache_eviction':'Not observed independently','RDD':'Optional not run','mining_repetitions':'One fit;boundedsecondary budget,not stable scalability evidence'},replay='Reused Phase6 verified49microbatches,15,322,987flows;not newly timed'))
+        atomic_json(output/'receipt.json',dict(status='validated',stage='14E',input_population=dataset,resources=environment(spark),spark_version=spark.version,measured_runs=len(runs),seconds=time.monotonic()-started,unsupported={'shuffle_bytes':'No enabled event-log parser; not measured','spill_bytes':'No enabled event-log parser; not measured','task_imbalance':'No task metrics retrieved','cache_eviction':'Not observed independently','RDD':'Optional not run','mining_repetitions':'One fit;boundedsecondary budget,not stable scalability evidence'},replay='Reused Phase6 verified49microbatches,15,322,987flows;not newly timed'))
         print('PHASE14E OPTIMIZATION COMPLETE',len(runs),flush=True)
     finally:spark.stop()

@@ -1,0 +1,16 @@
+observed_utf8_label,original_label,original_label_hex,decoding,count,binary_label,family_mapping
+BENIGN,BENIGN,42454e49474e,UTF-8 strict,2273097,0,external original category; no forced source-family mapping
+Bot,Bot,426f74,UTF-8 strict,1966,1,external original category; no forced source-family mapping
+DDoS,DDoS,44446f53,UTF-8 strict,128027,1,external original category; no forced source-family mapping
+DoS GoldenEye,DoS GoldenEye,446f5320476f6c64656e457965,UTF-8 strict,10293,1,external original category; no forced source-family mapping
+DoS Hulk,DoS Hulk,446f532048756c6b,UTF-8 strict,231073,1,external original category; no forced source-family mapping
+DoS Slowhttptest,DoS Slowhttptest,446f5320536c6f776874747074657374,UTF-8 strict,5499,1,external original category; no forced source-family mapping
+DoS slowloris,DoS slowloris,446f5320736c6f776c6f726973,UTF-8 strict,5796,1,external original category; no forced source-family mapping
+FTP-Patator,FTP-Patator,4654502d50617461746f72,UTF-8 strict,7938,1,external original category; no forced source-family mapping
+Heartbleed,Heartbleed,4865617274626c656564,UTF-8 strict,11,1,external original category; no forced source-family mapping
+Infiltration,Infiltration,496e66696c74726174696f6e,UTF-8 strict,36,1,external original category; no forced source-family mapping
+PortScan,PortScan,506f72745363616e,UTF-8 strict,158930,1,external original category; no forced source-family mapping
+SSH-Patator,SSH-Patator,5353482d50617461746f72,UTF-8 strict,5897,1,external original category; no forced source-family mapping
+Web Attack � Brute Force,Web Attack � Brute Force,5765622041747461636b20efbfbd20427275746520466f726365,UTF-8 strict,1507,1,external original category; no forced source-family mapping
+Web Attack � Sql Injection,Web Attack � Sql Injection,5765622041747461636b20efbfbd2053716c20496e6a656374696f6e,UTF-8 strict,21,1,external original category; no forced source-family mapping
+Web Attack � XSS,Web Attack � XSS,5765622041747461636b20efbfbd20585353,UTF-8 strict,652,1,external original category; no forced source-family mapping

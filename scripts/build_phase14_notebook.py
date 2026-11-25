@@ -8,7 +8,7 @@ def notebook(stage):
     note=build('baseline','B');note['cells'][0]['source']=[f'# Phase14 {stage}: private research CPU execution']
     paths=list((ROOT/'src/external_validation').glob('*.py'))+list((ROOT/'src/scalability').glob('*.py'))+list((ROOT/'configs').glob('phase14_*.yaml'))
     sources={str(p.relative_to(ROOT)):p.read_text() for p in paths};
-    for relative in ('src/patterns/discretization.py','reports/phase10_stageB/registry.json'):
+    for relative in ('src/patterns/discretization.py','reports/phase10_stageB/registry.json')+ (('reports/phase14_14B/label_byte_catalog.json',) if stage=='14C' else ()):
         sources[relative]=(ROOT/relative).read_text()
     sources['manifests/phase14_experiments.json']=(ROOT/'manifests/phase14_experiments.json').read_text()
     code='phase14_sources='+repr(sources)+'\nfor name,source in phase14_sources.items():\n target=project/name\n target.parent.mkdir(parents=True,exist_ok=True)\n target.write_text(source)\n'
@@ -36,11 +36,19 @@ if __name__=='__main__':
         for entry in models:
             if entry['id'] not in ('B-logistic_regression','B-random_forest'):continue
             folder=Path('/tmp/mmds-independent-models')/entry['id']
+            if not folder.exists():
+                from kaggle_web_api import download_archive
+                original=json.loads((ROOT/'manifests/phase4_models.json').read_text());model=next(x for x in original['protocols']['B']['models'] if x['training_cohort']=='group_sample' and x['model']==entry['algorithm'])
+                with download_archive(entry['version'],32*1024*1024) as archive:
+                    for relative,expected in entry['sha256'].items():
+                        content=archive.read('mmds_phase4/models/'+Path(model['path']).name+'/'+relative);assert hashlib.sha256(content).hexdigest()==expected
+                        target=folder/relative;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(content)
             for relative,expected in entry['sha256'].items():
                 content=(folder/relative).read_bytes();assert hashlib.sha256(content).hexdigest()==expected
                 files[entry['id']+'/'+relative]=base64.b64encode(content).decode()
             pins.append(entry)
         packed=base64.b64encode(lzma.compress(json.dumps(files).encode())).decode()
         code="import base64,lzma,json,hashlib\nprivate_files=json.loads(lzma.decompress(base64.b64decode("+repr(packed)+")))\nfor relative,encoded in private_files.items():\n target=Path('/kaggle/temp/phase14_archives')/relative\n target.parent.mkdir(parents=True,exist_ok=True)\n target.write_bytes(base64.b64decode(encoded))\n"
+        code+='model_pins='+repr(pins)+'\nfor pin in model_pins:\n for relative,expected in pin["sha256"].items():\n  assert hashlib.sha256((Path("/kaggle/temp/phase14_archives")/pin["id"]/relative).read_bytes()).hexdigest()==expected\nPath("/kaggle/working/archived_model_pins.json").write_text(json.dumps(model_pins,indent=2))\n'
         note['cells'].insert(-1,cell('code','private-archived-models',code));file.write_text(json.dumps(note,indent=1)+'\n');(a.directory/'model-pins.json').write_text(json.dumps(pins,indent=2)+'\n')
     (a.directory/'kernel-metadata.json').write_text(json.dumps(metadata,indent=2)+'\n');print('PREPARED',a.stage,hashlib.sha256(file.read_bytes()).hexdigest())

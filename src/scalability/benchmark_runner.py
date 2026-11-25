@@ -37,7 +37,7 @@ def run(project,input_root,output,scratch):
         prepare=time.monotonic()
         for requested,fraction in zip(cfg['volumes'],cfg['fractions']):
             frame=raw if fraction==1 else raw.where(F.pmod(F.xxhash64(F.lit(cfg['seed']),'record_fingerprint'),F.lit(1000000))<int(fraction*1000000));path=output/'populations'/str(requested);t=time.monotonic();frame.repartition(16).write.mode('overwrite').option('compression','snappy').parquet(str(path));saved=spark.read.parquet(str(path));counts=canonical(saved.groupBy('source_day','binary_label','attack_family').count().collect());rows=sum(r['count'] for r in counts);datasets.append(dict(requested_rows=requested,actual_rows=rows,fraction=fraction,source_receipt=source_receipt['receipt_sha256'],selection='nested seeded fingerprint hash threshold; original multiplicities retained',path=str(path.relative_to(output)),bytes=sum(p.stat().st_size for p in path.rglob('*.parquet')),files=len(list(path.rglob('*.parquet'))),composition=counts,preparation_seconds=time.monotonic()-t,partitions=16))
-        atomic_json(output/'benchmark_populations.json',datasets);pipeline=PipelineModel.load('/kaggle/temp/phase14_archives/B-logistic_regression');prep=PipelineModel(stages=pipeline.stages[:-1]);atomic_json(output/'preparation.json',dict(seconds=time.monotonic()-prepare,source=source_receipt,resources=environment()))
+        atomic_json(output/'benchmark_populations.json',datasets);pipeline=PipelineModel.load('/kaggle/temp/phase14_archives/B-logistic_regression');prep=PipelineModel(stages=pipeline.stages[:-1]);atomic_json(output/'preparation.json',dict(seconds=time.monotonic()-prepare,source=source_receipt,resources=environment(spark)))
         def execute(dataset,kind,workers,repeat,warmup=False):
             path=output/dataset['path'];t=time.monotonic();status='PASS';result=None;error=None
             with Monitor() as m:
@@ -60,7 +60,7 @@ def run(project,input_root,output,scratch):
                 execute(datasets[0],kind,workers,0,True)
                 for rep in range(1,4):execute(datasets[0],kind,workers,rep)
             spark.stop()
-        atomic_json(output/'receipt.json',dict(status='validated',stage='14D',source=source_receipt,populations=len(datasets),measured_runs=sum(not r['warmup'] for r in runs),warmups=sum(r['warmup'] for r in runs),all_correct=all(r['status']=='PASS' for r in runs),resources=environment(),seconds=time.monotonic()-started,model_provenance='ArchivedPhase4B group-sample LR, hash-verified upload manifest; no refit',limits='Single node CPU; no filesystem cache eviction or multi-node claim'))
+        atomic_json(output/'receipt.json',dict(status='validated',stage='14D',source=source_receipt,populations=len(datasets),measured_runs=sum(not r['warmup'] for r in runs),warmups=sum(r['warmup'] for r in runs),all_correct=all(r['status']=='PASS' for r in runs),resources=environment(spark),seconds=time.monotonic()-started,model_provenance='ArchivedPhase4B group-sample LR, hash-verified upload manifest; no refit',limits='Single node CPU; no filesystem cache eviction or multi-node claim'))
         print('PHASE14D SCALABILITY COMPLETE',len(runs),flush=True)
     finally:
         try:spark.stop()

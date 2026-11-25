@@ -1,0 +1,143 @@
+{
+  "status": "validated",
+  "scope": "Raw label byte catalog only; no private flow rows exported",
+  "files": 8,
+  "rows": 2830743,
+  "labels": [
+    {
+      "observed_utf8_label": "BENIGN",
+      "original_label": "BENIGN",
+      "original_label_hex": "42454e49474e",
+      "decoding": "UTF-8 strict",
+      "count": 2273097,
+      "binary_label": 0,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "Bot",
+      "original_label": "Bot",
+      "original_label_hex": "426f74",
+      "decoding": "UTF-8 strict",
+      "count": 1966,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "DDoS",
+      "original_label": "DDoS",
+      "original_label_hex": "44446f53",
+      "decoding": "UTF-8 strict",
+      "count": 128027,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "DoS GoldenEye",
+      "original_label": "DoS GoldenEye",
+      "original_label_hex": "446f5320476f6c64656e457965",
+      "decoding": "UTF-8 strict",
+      "count": 10293,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "DoS Hulk",
+      "original_label": "DoS Hulk",
+      "original_label_hex": "446f532048756c6b",
+      "decoding": "UTF-8 strict",
+      "count": 231073,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "DoS Slowhttptest",
+      "original_label": "DoS Slowhttptest",
+      "original_label_hex": "446f5320536c6f776874747074657374",
+      "decoding": "UTF-8 strict",
+      "count": 5499,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "DoS slowloris",
+      "original_label": "DoS slowloris",
+      "original_label_hex": "446f5320736c6f776c6f726973",
+      "decoding": "UTF-8 strict",
+      "count": 5796,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "FTP-Patator",
+      "original_label": "FTP-Patator",
+      "original_label_hex": "4654502d50617461746f72",
+      "decoding": "UTF-8 strict",
+      "count": 7938,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "Heartbleed",
+      "original_label": "Heartbleed",
+      "original_label_hex": "4865617274626c656564",
+      "decoding": "UTF-8 strict",
+      "count": 11,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "Infiltration",
+      "original_label": "Infiltration",
+      "original_label_hex": "496e66696c74726174696f6e",
+      "decoding": "UTF-8 strict",
+      "count": 36,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "PortScan",
+      "original_label": "PortScan",
+      "original_label_hex": "506f72745363616e",
+      "decoding": "UTF-8 strict",
+      "count": 158930,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "SSH-Patator",
+      "original_label": "SSH-Patator",
+      "original_label_hex": "5353482d50617461746f72",
+      "decoding": "UTF-8 strict",
+      "count": 5897,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "Web Attack \ufffd Brute Force",
+      "original_label": "Web Attack \ufffd Brute Force",
+      "original_label_hex": "5765622041747461636b20efbfbd20427275746520466f726365",
+      "decoding": "UTF-8 strict",
+      "count": 1507,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "Web Attack \ufffd Sql Injection",
+      "original_label": "Web Attack \ufffd Sql Injection",
+      "original_label_hex": "5765622041747461636b20efbfbd2053716c20496e6a656374696f6e",
+      "decoding": "UTF-8 strict",
+      "count": 21,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    },
+    {
+      "observed_utf8_label": "Web Attack \ufffd XSS",
+      "original_label": "Web Attack \ufffd XSS",
+      "original_label_hex": "5765622041747461636b20efbfbd20585353",
+      "decoding": "UTF-8 strict",
+      "count": 652,
+      "binary_label": 1,
+      "family_mapping": "external original category; no forced source-family mapping"
+    }
+  ]
+}
