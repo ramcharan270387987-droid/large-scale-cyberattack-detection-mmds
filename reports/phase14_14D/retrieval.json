@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase-14-scalability-benchmark/1",
+  "log_sha256": "d1c4443693549218f96dad3580dfecfa5cde00400b8c86d322c53bf9be25e1da",
+  "private_cpu": true,
+  "source_commit": "74e909ac3771dcaf5730437d3567f24c4fa4913b",
+  "pulled_notebook_sha256": "b4556dcb95e847dc930bc7dc46b62571d9ffbcf9bd7045c8f4314fe400f773f1",
+  "embedded_source_files_verified": 16,
+  "files": [
+    {
+      "file": "execution-logs.json",
+      "sha256": "d1c4443693549218f96dad3580dfecfa5cde00400b8c86d322c53bf9be25e1da"
+    },
+    {
+      "file": "scalability_runs.json",
+      "sha256": "b23c16b2b8ea5760ffb7b2e5bb61f2b3b36acfa545b0ae90d9a77c6e87234b29"
+    },
+    {
+      "file": "receipt.json",
+      "sha256": "0cb14c75651d2217580606bb09a2d0b7a57165c3603ac54957b8825e7e17a049"
+    },
+    {
+      "file": "independent_validation.json",
+      "sha256": "292918c4fc7b1af186ba42a562b7d944e6fc31f85c2f47b7f497b549d6753341"
+    },
+    {
+      "file": "benchmark_populations.json",
+      "sha256": "5dc539e7eddd53ef4335e232b76c5700c4606603b814daec08f21d09091ebf3d"
+    },
+    {
+      "file": "preparation.json",
+      "sha256": "8f33d994416d7af06ad7d641f55737369ea1777367c44c4bc8c76b03c31bca99"
+    },
+    {
+      "file": "archived_model_pins.json",
+      "sha256": "2d67cc2758a94bcf69ffcd8f66805a1ccbb31a1a35b58c63897fe997e4ea9a75"
+    }
+  ]
+}

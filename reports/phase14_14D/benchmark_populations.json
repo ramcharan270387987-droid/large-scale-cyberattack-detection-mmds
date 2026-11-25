@@ -1,0 +1,542 @@
+[
+  {
+    "requested_rows": 1000000,
+    "actual_rows": 1000860,
+    "fraction": 0.06160312396834018,
+    "source_receipt": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "selection": "nested seeded fingerprint hash threshold; original multiplicities retained",
+    "path": "populations/1000000",
+    "bytes": 84948297,
+    "files": 16,
+    "composition": [
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 14658
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 22106
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 27736
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 33483
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 41044
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 454840
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 46587
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 61803
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 64746
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 65090
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 1,
+        "attack_family": "Bot",
+        "count": 17644
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "attack_family": "Credential brute force",
+        "count": 22683
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 35414
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 42256
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 3119
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 37576
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 4350
+      },
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 5671
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 23
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 31
+      }
+    ],
+    "preparation_seconds": 111.38022121099999,
+    "partitions": 16,
+    "input_partitions": 16
+  },
+  {
+    "requested_rows": 4000000,
+    "actual_rows": 3998178,
+    "fraction": 0.24641249587336073,
+    "source_receipt": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "selection": "nested seeded fingerprint hash threshold; original multiplicities retained",
+    "path": "populations/4000000",
+    "bytes": 332435015,
+    "files": 16,
+    "composition": [
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 110367
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 134169
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 163973
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 1815688
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 186856
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 245863
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 258393
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 258998
+      },
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 58726
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 88812
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 1,
+        "attack_family": "Bot",
+        "count": 70397
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "attack_family": "Credential brute force",
+        "count": 92821
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 142295
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 169150
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 12869
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 148869
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 16894
+      },
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 22824
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 126
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 88
+      }
+    ],
+    "preparation_seconds": 22.944082062999996,
+    "partitions": 16,
+    "input_partitions": 16
+  },
+  {
+    "requested_rows": 8000000,
+    "actual_rows": 7998515,
+    "fraction": 0.49282499174672145,
+    "source_receipt": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "selection": "nested seeded fingerprint hash threshold; original multiplicities retained",
+    "path": "populations/8000000",
+    "bytes": 654982201,
+    "files": 16,
+    "composition": [
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 117336
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 177707
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 220382
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 268826
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 328781
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 3630993
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 375694
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 491529
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 516473
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 516531
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 1,
+        "attack_family": "Bot",
+        "count": 140602
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "attack_family": "Credential brute force",
+        "count": 187420
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 284281
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 339095
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 25763
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 297017
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 33853
+      },
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 45778
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 177
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 277
+      }
+    ],
+    "preparation_seconds": 35.702722626000025,
+    "partitions": 16,
+    "input_partitions": 16
+  },
+  {
+    "requested_rows": 16232943,
+    "actual_rows": 16232943,
+    "fraction": 1.0,
+    "source_receipt": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "selection": "nested seeded fingerprint hash threshold; original multiplicities retained",
+    "path": "populations/16232943",
+    "bytes": 1313054488,
+    "files": 16,
+    "composition": [
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 1048009
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 1048213
+      },
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 238037
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 360833
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 446772
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 544200
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 667626
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 7372557
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 762384
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 996077
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 1,
+        "attack_family": "Bot",
+        "count": 286191
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "attack_family": "Credential brute force",
+        "count": 380949
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 576191
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 687742
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 52498
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 601802
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 68871
+      },
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 93063
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 362
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 566
+      }
+    ],
+    "preparation_seconds": 57.57078013800003,
+    "partitions": 16,
+    "input_partitions": 22
+  }
+]

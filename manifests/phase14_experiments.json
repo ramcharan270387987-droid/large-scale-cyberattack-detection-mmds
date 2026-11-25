@@ -2,8 +2,8 @@
   "schema": "phase14-v1",
   "complete": false,
   "starting_checkpoint": "ab6e9401b0c9b92e624e5b2b16ec91050a081eb0",
-  "stage": "14C",
-  "next_stage": "14D data-volume and CPU worker benchmark",
+  "stage": "14D",
+  "next_stage": "14E format optimization Pandas inference and bounded mining",
   "stages": {
     "14A": {
       "status": "validated",
@@ -41,6 +41,15 @@
       "kernel_version": "ramcharan2345/mmds-phase-14-frozen-model-verification/1",
       "fitting_performed": false,
       "source_sha256": "30fb70270afca2a122368ffa55b1a4e241a6cc5c840d0bbe706784ec70638aec"
+    },
+    "14D": {
+      "status": "validated",
+      "worker_status": "COMPLETE",
+      "kernel_version": "ramcharan2345/mmds-phase-14-scalability-benchmark/1",
+      "recovered_without_rerun": true,
+      "measured_runs": 48,
+      "warmups": 16,
+      "seconds": 550.44356356
     }
   },
   "protected": {
