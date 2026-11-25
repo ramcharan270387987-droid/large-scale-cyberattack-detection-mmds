@@ -19,7 +19,7 @@ def logical_digest(frame):
     return [dict(rows=int(x.rows),canonical_row_hash_sum=str(x.canonical_row_hash_sum)) for x in rows]
 
 def run(project,input_root,output,scratch):
-    started=time.monotonic();output.mkdir(parents=True,exist_ok=True);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());names=json.loads((project/'configs/ml_experiments.yaml').read_text())['numerical_features'];producers=list(input_root.rglob('benchmark_populations.json'));assert len(producers)==1,'Attach accepted14D output';producer=producers[0];datasets=json.loads(producer.read_text());dataset=datasets[0];path=producer.parent/dataset['path'];startup_start=time.monotonic();spark=session(4,16,scratch);spark_initialization_seconds=time.monotonic()-startup_start;runs=[];formats=[];references={}
+    started=time.monotonic();output.mkdir(parents=True,exist_ok=True);pins=json.loads(Path('/kaggle/working/archived_model_pins.json').read_text());assert {x['id'] for x in pins}=={'B-logistic_regression','B-random_forest'};atomic_json(output/'archived_model_pins.json',pins);cfg=json.loads((project/'configs/phase14_scalability.yaml').read_text());names=json.loads((project/'configs/ml_experiments.yaml').read_text())['numerical_features'];producers=list(input_root.rglob('benchmark_populations.json'));assert len(producers)==1,'Attach accepted14D output';producer=producers[0];datasets=json.loads(producer.read_text());dataset=datasets[0];path=producer.parent/dataset['path'];startup_start=time.monotonic();spark=session(4,16,scratch);spark_initialization_seconds=time.monotonic()-startup_start;runs=[];formats=[];references={}
     try:
         frame=spark.read.parquet(str(path))
         frame=storage_ready(frame)
@@ -31,7 +31,7 @@ def run(project,input_root,output,scratch):
                     value=fn();result=canonical(value) if isinstance(value,list) else value
                     if reference is not None and not equivalent(result,reference):raise ValueError('Output mismatch against matched configuration')
                 except Exception as exc:status='FAILED';error=type(exc).__name__+': '+str(exc)[:2000]
-            elapsed=time.monotonic()-t;r=dict(matrix=matrix,configuration=configuration,repetition=rep,actual_rows=rows,seconds=elapsed,rows_per_second=rows/elapsed if rows else None,workers=4,cache_os='uncontrolled',status=status,error=error,result=result,**mon.summary());runs.append(r);atomic_json(output/'optimization_runs.json',runs);print('PHASE14E RUN',matrix,configuration,rep,status,round(elapsed,3),flush=True)
+            elapsed=time.monotonic()-t;r=dict(matrix=matrix,configuration=configuration,repetition=rep,actual_rows=rows,seconds=elapsed,rows_per_second=rows/elapsed if rows else None,workers=None if matrix.startswith('Spark_Pandas') and configuration.startswith('pandas-') else 4,spark_context_workers=4,engine='pandas' if matrix.startswith('Spark_Pandas') and configuration.startswith('pandas-') else 'Spark',cache_os='uncontrolled',status=status,error=error,result=result,**mon.summary());runs.append(r);atomic_json(output/'optimization_runs.json',runs);print('PHASE14E RUN',matrix,configuration,rep,status,round(elapsed,3),flush=True)
             if status!='PASS':raise ValueError(error)
             return result
         t=time.monotonic();parquetpath=output/'matched_parquet';frame.write.mode('overwrite').option('compression','snappy').parquet(str(parquetpath));parquet_conversion=time.monotonic()-t

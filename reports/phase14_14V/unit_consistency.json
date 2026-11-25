@@ -1,0 +1,28 @@
+[
+  {
+    "dataset": "source",
+    "eligible_rows": 16137169,
+    "within_one_percent_microsecond_identity": 16137169,
+    "fraction": 1.0,
+    "quantiles": [
+      999999.9984541906,
+      1000000.0,
+      1000000.0014597506
+    ],
+    "definition": "duration * packets_per_second / (forward_count+reverse_count); expected1000000 for microseconds",
+    "label_information_used": false
+  },
+  {
+    "dataset": "external",
+    "eligible_rows": 2827761,
+    "within_one_percent_microsecond_identity": 2827761,
+    "fraction": 1.0,
+    "quantiles": [
+      999999.9971521404,
+      1000000.0,
+      1000000.0027901598
+    ],
+    "definition": "duration * packets_per_second / (forward_count+reverse_count); expected1000000 for microseconds",
+    "label_information_used": false
+  }
+]

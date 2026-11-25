@@ -1,0 +1,116 @@
+[
+  {
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "domain": "source",
+    "protocol": "B-common",
+    "first": "training",
+    "second": "validation",
+    "imputed_collision_groups": 0
+  },
+  {
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "domain": "source",
+    "protocol": "B-common",
+    "first": "training",
+    "second": "source_holdout",
+    "imputed_collision_groups": 0,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "domain": "source",
+    "protocol": "B-common",
+    "first": "validation",
+    "second": "source_holdout",
+    "imputed_collision_groups": 0,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "domain": "source",
+    "protocol": "B-common",
+    "first": "training",
+    "second": "chronological",
+    "imputed_collision_groups": 236,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "domain": "source",
+    "protocol": "B-common",
+    "first": "validation",
+    "second": "chronological",
+    "imputed_collision_groups": 725,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "domain": "source",
+    "protocol": "B-common",
+    "first": "training",
+    "second": "grouped",
+    "imputed_collision_groups": 1,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "domain": "source",
+    "protocol": "B-common",
+    "first": "validation",
+    "second": "grouped",
+    "imputed_collision_groups": 760,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "83e8215b52e15efb5342509cef7671a3deaa7f4020e742616998f92d85e00222",
+    "domain": "target",
+    "protocol": "chronological",
+    "first": "training",
+    "second": "validation",
+    "imputed_collision_groups": 0
+  },
+  {
+    "preprocessing_key": "83e8215b52e15efb5342509cef7671a3deaa7f4020e742616998f92d85e00222",
+    "domain": "target",
+    "protocol": "chronological",
+    "first": "training",
+    "second": "chronological",
+    "imputed_collision_groups": 0,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "83e8215b52e15efb5342509cef7671a3deaa7f4020e742616998f92d85e00222",
+    "domain": "target",
+    "protocol": "chronological",
+    "first": "validation",
+    "second": "chronological",
+    "imputed_collision_groups": 0,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "5824dc7f878640fbd553becccf96f84573e924507e3c33c12c0b3d66afc101a0",
+    "domain": "target",
+    "protocol": "grouped",
+    "first": "training",
+    "second": "validation",
+    "imputed_collision_groups": 0
+  },
+  {
+    "preprocessing_key": "5824dc7f878640fbd553becccf96f84573e924507e3c33c12c0b3d66afc101a0",
+    "domain": "target",
+    "protocol": "grouped",
+    "first": "training",
+    "second": "grouped",
+    "imputed_collision_groups": 0,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  },
+  {
+    "preprocessing_key": "5824dc7f878640fbd553becccf96f84573e924507e3c33c12c0b3d66afc101a0",
+    "domain": "target",
+    "protocol": "grouped",
+    "first": "validation",
+    "second": "grouped",
+    "imputed_collision_groups": 0,
+    "meaning": "Diagnostic preprocessing collision,not exact event duplication"
+  }
+]

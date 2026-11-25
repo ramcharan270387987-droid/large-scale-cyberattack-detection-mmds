@@ -3,7 +3,7 @@
   "complete": false,
   "starting_checkpoint": "ab6e9401b0c9b92e624e5b2b16ec91050a081eb0",
   "stage": "14C",
-  "next_stage": "14C independent private-model and compatibility validation,then14D",
+  "next_stage": "14D data-volume and CPU worker benchmark",
   "stages": {
     "14A": {
       "status": "validated",
@@ -21,7 +21,7 @@
       "private_cpu": true
     },
     "14C": {
-      "status": "executed_pending_independent_validation",
+      "status": "validated",
       "worker_status": "COMPLETE",
       "kernel_version": "ramcharan2345/mmds-phase-14-external-validation/2",
       "source_commit": "91398fcc4b8ec95ae3d88646f8d31a7af652a9be",
@@ -29,7 +29,18 @@
       "models": 12,
       "evaluation_records": 64,
       "seconds": 1480.847870713,
-      "metric_audit_sha256": "c5bf152d0497ec8e5054e3ab3b71b8284acc3358cf20e9657f7a8a913367cf20"
+      "metric_audit_sha256": "c5bf152d0497ec8e5054e3ab3b71b8284acc3358cf20e9657f7a8a913367cf20",
+      "independent_kernel_version": "ramcharan2345/mmds-phase-14-frozen-model-verification/1",
+      "independent_calibration_histograms": 12,
+      "independent_local_models": 12,
+      "conditional_unit_checks_passed": true
+    },
+    "14V": {
+      "status": "validated",
+      "worker_status": "COMPLETE",
+      "kernel_version": "ramcharan2345/mmds-phase-14-frozen-model-verification/1",
+      "fitting_performed": false,
+      "source_sha256": "30fb70270afca2a122368ffa55b1a4e241a6cc5c840d0bbe706784ec70638aec"
     }
   },
   "protected": {

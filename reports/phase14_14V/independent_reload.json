@@ -1,0 +1,1450 @@
+[
+  {
+    "model": "E2-B-common-LR",
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "original_components_verified": 16,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.8490276494432265,
+        0.1509723505567735
+      ],
+      [
+        0.8489947368354777,
+        0.15100526316452234
+      ],
+      [
+        0.8500613068734687,
+        0.1499386931265313
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "count": 9084
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "count": 7169
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "count": 14369
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "count": 645
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "count": 1599
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "count": 8398
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "count": 6312
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "count": 13366
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "count": 98868
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "count": 5435
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "count": 2
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "count": 4352
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2018-02-14",
+          "binary_label": 0,
+          "count": 9084
+        },
+        {
+          "source_day": "2018-02-20",
+          "binary_label": 1,
+          "count": 7169
+        },
+        {
+          "source_day": "2018-02-22",
+          "binary_label": 0,
+          "count": 14369
+        },
+        {
+          "source_day": "2018-02-15",
+          "binary_label": 1,
+          "count": 645
+        },
+        {
+          "source_day": "2018-02-14",
+          "binary_label": 1,
+          "count": 1599
+        },
+        {
+          "source_day": "2018-02-21",
+          "binary_label": 1,
+          "count": 8398
+        },
+        {
+          "source_day": "2018-02-16",
+          "binary_label": 1,
+          "count": 6312
+        },
+        {
+          "source_day": "2018-02-15",
+          "binary_label": 0,
+          "count": 13366
+        },
+        {
+          "source_day": "2018-02-20",
+          "binary_label": 0,
+          "count": 98868
+        },
+        {
+          "source_day": "2018-02-16",
+          "binary_label": 0,
+          "count": 5435
+        },
+        {
+          "source_day": "2018-02-22",
+          "binary_label": 1,
+          "count": 2
+        },
+        {
+          "source_day": "2018-02-21",
+          "binary_label": 0,
+          "count": 4352
+        }
+      ],
+      "sampled_predictor_groups": 68856,
+      "eligible_training_groups": 5521039,
+      "eligible_training_rows": 13191622,
+      "observed_group_fraction": 0.012471565587564225,
+      "observed_flow_fraction": 0.01285656911636795
+    },
+    "threshold_bin_unchanged": 312,
+    "model_source": "models/E2-B-common-LR"
+  },
+  {
+    "model": "E2-B-common-RF",
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "original_components_verified": 14,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.9215712710559165,
+        0.0784287289440835
+      ],
+      [
+        0.973698914670142,
+        0.02630108532985806
+      ],
+      [
+        0.9898666849653005,
+        0.010133315034699534
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "count": 9084
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "count": 7169
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "count": 14369
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "count": 645
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "count": 1599
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "count": 8398
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "count": 6312
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "count": 13366
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "count": 98868
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "count": 5435
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "count": 2
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "count": 4352
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2018-02-14",
+          "binary_label": 0,
+          "count": 9084
+        },
+        {
+          "source_day": "2018-02-20",
+          "binary_label": 1,
+          "count": 7169
+        },
+        {
+          "source_day": "2018-02-22",
+          "binary_label": 0,
+          "count": 14369
+        },
+        {
+          "source_day": "2018-02-15",
+          "binary_label": 1,
+          "count": 645
+        },
+        {
+          "source_day": "2018-02-14",
+          "binary_label": 1,
+          "count": 1599
+        },
+        {
+          "source_day": "2018-02-21",
+          "binary_label": 1,
+          "count": 8398
+        },
+        {
+          "source_day": "2018-02-16",
+          "binary_label": 1,
+          "count": 6312
+        },
+        {
+          "source_day": "2018-02-15",
+          "binary_label": 0,
+          "count": 13366
+        },
+        {
+          "source_day": "2018-02-20",
+          "binary_label": 0,
+          "count": 98868
+        },
+        {
+          "source_day": "2018-02-16",
+          "binary_label": 0,
+          "count": 5435
+        },
+        {
+          "source_day": "2018-02-22",
+          "binary_label": 1,
+          "count": 2
+        },
+        {
+          "source_day": "2018-02-21",
+          "binary_label": 0,
+          "count": 4352
+        }
+      ],
+      "sampled_predictor_groups": 68856,
+      "eligible_training_groups": 5521039,
+      "eligible_training_rows": 13191622,
+      "observed_group_fraction": 0.012471565587564225,
+      "observed_flow_fraction": 0.01285656911636795
+    },
+    "threshold_bin_unchanged": 1068,
+    "model_source": "models/E2-B-common-RF"
+  },
+  {
+    "model": "E2-B-common-majority",
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "original_components_verified": 10,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "count": 9084
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "count": 7169
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "count": 14369
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "count": 645
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "count": 1599
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "count": 8398
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "count": 6312
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "count": 13366
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "count": 98868
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "count": 5435
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "count": 2
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "count": 4352
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2018-02-14",
+          "binary_label": 0,
+          "count": 9084
+        },
+        {
+          "source_day": "2018-02-20",
+          "binary_label": 1,
+          "count": 7169
+        },
+        {
+          "source_day": "2018-02-22",
+          "binary_label": 0,
+          "count": 14369
+        },
+        {
+          "source_day": "2018-02-15",
+          "binary_label": 1,
+          "count": 645
+        },
+        {
+          "source_day": "2018-02-14",
+          "binary_label": 1,
+          "count": 1599
+        },
+        {
+          "source_day": "2018-02-21",
+          "binary_label": 1,
+          "count": 8398
+        },
+        {
+          "source_day": "2018-02-16",
+          "binary_label": 1,
+          "count": 6312
+        },
+        {
+          "source_day": "2018-02-15",
+          "binary_label": 0,
+          "count": 13366
+        },
+        {
+          "source_day": "2018-02-20",
+          "binary_label": 0,
+          "count": 98868
+        },
+        {
+          "source_day": "2018-02-16",
+          "binary_label": 0,
+          "count": 5435
+        },
+        {
+          "source_day": "2018-02-22",
+          "binary_label": 1,
+          "count": 2
+        },
+        {
+          "source_day": "2018-02-21",
+          "binary_label": 0,
+          "count": 4352
+        }
+      ],
+      "sampled_predictor_groups": 68856,
+      "eligible_training_groups": 5521039,
+      "eligible_training_rows": 13191622,
+      "observed_group_fraction": 0.012471565587564225,
+      "observed_flow_fraction": 0.01285656911636795
+    },
+    "threshold_bin_unchanged": 2048,
+    "model_source": "models/E2-B-common-majority"
+  },
+  {
+    "model": "E2-B-common-duration",
+    "preprocessing_key": "adb22d55e16ea37de20b810b0910dacb1bdcf1be80f16967a34cf8166f2bc821",
+    "original_components_verified": 10,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.9998504245663974,
+        0.00014957543360262846
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.9915240305092861,
+        0.008475969490713914
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "count": 9084
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "count": 7169
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "count": 14369
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "count": 645
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "count": 1599
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "count": 8398
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "count": 6312
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "count": 13366
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "count": 98868
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "count": 5435
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "count": 2
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "count": 4352
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2018-02-14",
+          "binary_label": 0,
+          "count": 9084
+        },
+        {
+          "source_day": "2018-02-20",
+          "binary_label": 1,
+          "count": 7169
+        },
+        {
+          "source_day": "2018-02-22",
+          "binary_label": 0,
+          "count": 14369
+        },
+        {
+          "source_day": "2018-02-15",
+          "binary_label": 1,
+          "count": 645
+        },
+        {
+          "source_day": "2018-02-14",
+          "binary_label": 1,
+          "count": 1599
+        },
+        {
+          "source_day": "2018-02-21",
+          "binary_label": 1,
+          "count": 8398
+        },
+        {
+          "source_day": "2018-02-16",
+          "binary_label": 1,
+          "count": 6312
+        },
+        {
+          "source_day": "2018-02-15",
+          "binary_label": 0,
+          "count": 13366
+        },
+        {
+          "source_day": "2018-02-20",
+          "binary_label": 0,
+          "count": 98868
+        },
+        {
+          "source_day": "2018-02-16",
+          "binary_label": 0,
+          "count": 5435
+        },
+        {
+          "source_day": "2018-02-22",
+          "binary_label": 1,
+          "count": 2
+        },
+        {
+          "source_day": "2018-02-21",
+          "binary_label": 0,
+          "count": 4352
+        }
+      ],
+      "sampled_predictor_groups": 68856,
+      "eligible_training_groups": 5521039,
+      "eligible_training_rows": 13191622,
+      "observed_group_fraction": 0.012471565587564225,
+      "observed_flow_fraction": 0.01285656911636795
+    },
+    "threshold_bin_unchanged": 2048,
+    "model_source": "models/E2-B-common-duration"
+  },
+  {
+    "model": "E3-chronological-LR",
+    "preprocessing_key": "83e8215b52e15efb5342509cef7671a3deaa7f4020e742616998f92d85e00222",
+    "original_components_verified": 16,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.8688351796310356,
+        0.13116482036896437
+      ],
+      [
+        0.868888496355724,
+        0.13111150364427604
+      ],
+      [
+        0.8670299095620343,
+        0.1329700904379657
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 1,
+        "count": 30046
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 1,
+        "count": 1411
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 0,
+        "count": 44137
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 0,
+        "count": 43742
+      },
+      {
+        "source_day": "2017-07-03",
+        "binary_label": 0,
+        "count": 53577
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 1,
+          "count": 30046
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 1,
+          "count": 1411
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 0,
+          "count": 44137
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 0,
+          "count": 43742
+        },
+        {
+          "source_day": "2017-07-03",
+          "binary_label": 0,
+          "count": 53577
+        }
+      ],
+      "sampled_predictor_groups": 82497,
+      "eligible_training_groups": 826607,
+      "eligible_training_rows": 1668530,
+      "observed_group_fraction": 0.09980196151254465,
+      "observed_flow_fraction": 0.10363193949164834
+    },
+    "threshold_bin_unchanged": 1064,
+    "model_source": "models/E3-chronological-LR"
+  },
+  {
+    "model": "E3-chronological-RF",
+    "preprocessing_key": "83e8215b52e15efb5342509cef7671a3deaa7f4020e742616998f92d85e00222",
+    "original_components_verified": 14,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.9715477728160709,
+        0.028452227183929202
+      ],
+      [
+        0.5418857192183916,
+        0.4581142807816084
+      ],
+      [
+        0.9425710129424977,
+        0.05742898705750235
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 1,
+        "count": 30046
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 1,
+        "count": 1411
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 0,
+        "count": 44137
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 0,
+        "count": 43742
+      },
+      {
+        "source_day": "2017-07-03",
+        "binary_label": 0,
+        "count": 53577
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 1,
+          "count": 30046
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 1,
+          "count": 1411
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 0,
+          "count": 44137
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 0,
+          "count": 43742
+        },
+        {
+          "source_day": "2017-07-03",
+          "binary_label": 0,
+          "count": 53577
+        }
+      ],
+      "sampled_predictor_groups": 82497,
+      "eligible_training_groups": 826607,
+      "eligible_training_rows": 1668530,
+      "observed_group_fraction": 0.09980196151254465,
+      "observed_flow_fraction": 0.10363193949164834
+    },
+    "threshold_bin_unchanged": 1959,
+    "model_source": "models/E3-chronological-RF"
+  },
+  {
+    "model": "E3-chronological-majority",
+    "preprocessing_key": "83e8215b52e15efb5342509cef7671a3deaa7f4020e742616998f92d85e00222",
+    "original_components_verified": 10,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 1,
+        "count": 30046
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 1,
+        "count": 1411
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 0,
+        "count": 44137
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 0,
+        "count": 43742
+      },
+      {
+        "source_day": "2017-07-03",
+        "binary_label": 0,
+        "count": 53577
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 1,
+          "count": 30046
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 1,
+          "count": 1411
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 0,
+          "count": 44137
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 0,
+          "count": 43742
+        },
+        {
+          "source_day": "2017-07-03",
+          "binary_label": 0,
+          "count": 53577
+        }
+      ],
+      "sampled_predictor_groups": 82497,
+      "eligible_training_groups": 826607,
+      "eligible_training_rows": 1668530,
+      "observed_group_fraction": 0.09980196151254465,
+      "observed_flow_fraction": 0.10363193949164834
+    },
+    "threshold_bin_unchanged": 2048,
+    "model_source": "models/E3-chronological-majority"
+  },
+  {
+    "model": "E3-chronological-duration",
+    "preprocessing_key": "83e8215b52e15efb5342509cef7671a3deaa7f4020e742616998f92d85e00222",
+    "original_components_verified": 10,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.9997306616473574,
+        0.00026933835264260087
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.9915013772358134,
+        0.008498622764186572
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 1,
+        "count": 30046
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 1,
+        "count": 1411
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 0,
+        "count": 44137
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 0,
+        "count": 43742
+      },
+      {
+        "source_day": "2017-07-03",
+        "binary_label": 0,
+        "count": 53577
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 1,
+          "count": 30046
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 1,
+          "count": 1411
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 0,
+          "count": 44137
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 0,
+          "count": 43742
+        },
+        {
+          "source_day": "2017-07-03",
+          "binary_label": 0,
+          "count": 53577
+        }
+      ],
+      "sampled_predictor_groups": 82497,
+      "eligible_training_groups": 826607,
+      "eligible_training_rows": 1668530,
+      "observed_group_fraction": 0.09980196151254465,
+      "observed_flow_fraction": 0.10363193949164834
+    },
+    "threshold_bin_unchanged": 2048,
+    "model_source": "models/E3-chronological-duration"
+  },
+  {
+    "model": "E3-grouped-LR",
+    "preprocessing_key": "5824dc7f878640fbd553becccf96f84573e924507e3c33c12c0b3d66afc101a0",
+    "original_components_verified": 16,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.8171724947545103,
+        0.18282750524548974
+      ],
+      [
+        0.8172083603621854,
+        0.18279163963781464
+      ],
+      [
+        0.8157951291545884,
+        0.1842048708454116
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2017-07-07",
+        "binary_label": 0,
+        "count": 41226
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 1,
+        "count": 30046
+      },
+      {
+        "source_day": "2017-07-06",
+        "binary_label": 0,
+        "count": 44634
+      },
+      {
+        "source_day": "2017-07-06",
+        "binary_label": 1,
+        "count": 208
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 1,
+        "count": 1411
+      },
+      {
+        "source_day": "2017-07-07",
+        "binary_label": 1,
+        "count": 28517
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 0,
+        "count": 44137
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 0,
+        "count": 43742
+      },
+      {
+        "source_day": "2017-07-03",
+        "binary_label": 0,
+        "count": 53577
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2017-07-07",
+          "binary_label": 0,
+          "count": 41226
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 1,
+          "count": 30046
+        },
+        {
+          "source_day": "2017-07-06",
+          "binary_label": 0,
+          "count": 44634
+        },
+        {
+          "source_day": "2017-07-06",
+          "binary_label": 1,
+          "count": 208
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 1,
+          "count": 1411
+        },
+        {
+          "source_day": "2017-07-07",
+          "binary_label": 1,
+          "count": 28517
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 0,
+          "count": 44137
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 0,
+          "count": 43742
+        },
+        {
+          "source_day": "2017-07-03",
+          "binary_label": 0,
+          "count": 53577
+        }
+      ],
+      "sampled_predictor_groups": 128534,
+      "eligible_training_groups": 903881,
+      "eligible_training_rows": 1954152,
+      "observed_group_fraction": 0.14220234743290322,
+      "observed_flow_fraction": 0.14712161592342868
+    },
+    "threshold_bin_unchanged": 844,
+    "model_source": "models/E3-grouped-LR"
+  },
+  {
+    "model": "E3-grouped-RF",
+    "preprocessing_key": "5824dc7f878640fbd553becccf96f84573e924507e3c33c12c0b3d66afc101a0",
+    "original_components_verified": 14,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.9826492152089535,
+        0.017350784791046535
+      ],
+      [
+        0.6747988589758732,
+        0.32520114102412684
+      ],
+      [
+        0.8768277407999966,
+        0.12317225920000335
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2017-07-07",
+        "binary_label": 0,
+        "count": 41226
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 1,
+        "count": 30046
+      },
+      {
+        "source_day": "2017-07-06",
+        "binary_label": 0,
+        "count": 44634
+      },
+      {
+        "source_day": "2017-07-06",
+        "binary_label": 1,
+        "count": 208
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 1,
+        "count": 1411
+      },
+      {
+        "source_day": "2017-07-07",
+        "binary_label": 1,
+        "count": 28517
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 0,
+        "count": 44137
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 0,
+        "count": 43742
+      },
+      {
+        "source_day": "2017-07-03",
+        "binary_label": 0,
+        "count": 53577
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2017-07-07",
+          "binary_label": 0,
+          "count": 41226
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 1,
+          "count": 30046
+        },
+        {
+          "source_day": "2017-07-06",
+          "binary_label": 0,
+          "count": 44634
+        },
+        {
+          "source_day": "2017-07-06",
+          "binary_label": 1,
+          "count": 208
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 1,
+          "count": 1411
+        },
+        {
+          "source_day": "2017-07-07",
+          "binary_label": 1,
+          "count": 28517
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 0,
+          "count": 44137
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 0,
+          "count": 43742
+        },
+        {
+          "source_day": "2017-07-03",
+          "binary_label": 0,
+          "count": 53577
+        }
+      ],
+      "sampled_predictor_groups": 128534,
+      "eligible_training_groups": 903881,
+      "eligible_training_rows": 1954152,
+      "observed_group_fraction": 0.14220234743290322,
+      "observed_flow_fraction": 0.14712161592342868
+    },
+    "threshold_bin_unchanged": 910,
+    "model_source": "models/E3-grouped-RF"
+  },
+  {
+    "model": "E3-grouped-majority",
+    "preprocessing_key": "5824dc7f878640fbd553becccf96f84573e924507e3c33c12c0b3d66afc101a0",
+    "original_components_verified": 10,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2017-07-07",
+        "binary_label": 0,
+        "count": 41226
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 1,
+        "count": 30046
+      },
+      {
+        "source_day": "2017-07-06",
+        "binary_label": 0,
+        "count": 44634
+      },
+      {
+        "source_day": "2017-07-06",
+        "binary_label": 1,
+        "count": 208
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 1,
+        "count": 1411
+      },
+      {
+        "source_day": "2017-07-07",
+        "binary_label": 1,
+        "count": 28517
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 0,
+        "count": 44137
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 0,
+        "count": 43742
+      },
+      {
+        "source_day": "2017-07-03",
+        "binary_label": 0,
+        "count": 53577
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2017-07-07",
+          "binary_label": 0,
+          "count": 41226
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 1,
+          "count": 30046
+        },
+        {
+          "source_day": "2017-07-06",
+          "binary_label": 0,
+          "count": 44634
+        },
+        {
+          "source_day": "2017-07-06",
+          "binary_label": 1,
+          "count": 208
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 1,
+          "count": 1411
+        },
+        {
+          "source_day": "2017-07-07",
+          "binary_label": 1,
+          "count": 28517
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 0,
+          "count": 44137
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 0,
+          "count": 43742
+        },
+        {
+          "source_day": "2017-07-03",
+          "binary_label": 0,
+          "count": 53577
+        }
+      ],
+      "sampled_predictor_groups": 128534,
+      "eligible_training_groups": 903881,
+      "eligible_training_rows": 1954152,
+      "observed_group_fraction": 0.14220234743290322,
+      "observed_flow_fraction": 0.14712161592342868
+    },
+    "threshold_bin_unchanged": 2048,
+    "model_source": "models/E3-grouped-majority"
+  },
+  {
+    "model": "E3-grouped-duration",
+    "preprocessing_key": "5824dc7f878640fbd553becccf96f84573e924507e3c33c12c0b3d66afc101a0",
+    "original_components_verified": 10,
+    "independent_runtime_reload": true,
+    "probe_scores": [
+      [
+        0.9997358469794613,
+        0.00026415302053874105
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.9914989534149022,
+        0.008501046585097708
+      ]
+    ],
+    "calibration_histogram_identical": true,
+    "training_day_counts": [
+      {
+        "source_day": "2017-07-07",
+        "binary_label": 0,
+        "count": 41226
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 1,
+        "count": 30046
+      },
+      {
+        "source_day": "2017-07-06",
+        "binary_label": 0,
+        "count": 44634
+      },
+      {
+        "source_day": "2017-07-06",
+        "binary_label": 1,
+        "count": 208
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 1,
+        "count": 1411
+      },
+      {
+        "source_day": "2017-07-07",
+        "binary_label": 1,
+        "count": 28517
+      },
+      {
+        "source_day": "2017-07-05",
+        "binary_label": 0,
+        "count": 44137
+      },
+      {
+        "source_day": "2017-07-04",
+        "binary_label": 0,
+        "count": 43742
+      },
+      {
+        "source_day": "2017-07-03",
+        "binary_label": 0,
+        "count": 53577
+      }
+    ],
+    "sampling": {
+      "day_counts": [
+        {
+          "source_day": "2017-07-07",
+          "binary_label": 0,
+          "count": 41226
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 1,
+          "count": 30046
+        },
+        {
+          "source_day": "2017-07-06",
+          "binary_label": 0,
+          "count": 44634
+        },
+        {
+          "source_day": "2017-07-06",
+          "binary_label": 1,
+          "count": 208
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 1,
+          "count": 1411
+        },
+        {
+          "source_day": "2017-07-07",
+          "binary_label": 1,
+          "count": 28517
+        },
+        {
+          "source_day": "2017-07-05",
+          "binary_label": 0,
+          "count": 44137
+        },
+        {
+          "source_day": "2017-07-04",
+          "binary_label": 0,
+          "count": 43742
+        },
+        {
+          "source_day": "2017-07-03",
+          "binary_label": 0,
+          "count": 53577
+        }
+      ],
+      "sampled_predictor_groups": 128534,
+      "eligible_training_groups": 903881,
+      "eligible_training_rows": 1954152,
+      "observed_group_fraction": 0.14220234743290322,
+      "observed_flow_fraction": 0.14712161592342868
+    },
+    "threshold_bin_unchanged": 2048,
+    "model_source": "models/E3-grouped-duration"
+  }
+]

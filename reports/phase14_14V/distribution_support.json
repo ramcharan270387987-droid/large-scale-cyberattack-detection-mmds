@@ -1,0 +1,344 @@
+[
+  {
+    "feature": "flow_duration",
+    "domain": "source_training",
+    "condition": "all",
+    "source_minimum": 0.0,
+    "source_maximum": 120000000.0,
+    "quantiles": [
+      0.0,
+      532.0,
+      22550.0,
+      2923465.0,
+      120000000.0
+    ],
+    "median": 22550.0,
+    "interquartile_range": 2922933.0,
+    "rows": 13191622,
+    "missing": 14,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "flow_duration",
+    "domain": "external_all",
+    "condition": "all",
+    "source_minimum": 0.0,
+    "source_maximum": 120000000.0,
+    "quantiles": [
+      0.0,
+      155.0,
+      31306.0,
+      3168511.0,
+      119999998.0
+    ],
+    "median": 31306.0,
+    "interquartile_range": 3168356.0,
+    "rows": 2830743,
+    "missing": 115,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "flow_duration",
+    "domain": "source_training",
+    "condition": "benign",
+    "source_minimum": 0.0,
+    "source_maximum": 120000000.0,
+    "quantiles": [
+      0.0,
+      464.0,
+      30154.0,
+      3853354.0,
+      120000000.0
+    ],
+    "median": 30154.0,
+    "interquartile_range": 3852890.0,
+    "rows": 10892078,
+    "missing": 14,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "flow_duration",
+    "domain": "external_all",
+    "condition": "benign",
+    "source_minimum": 0.0,
+    "source_maximum": 120000000.0,
+    "quantiles": [
+      0.0,
+      174.0,
+      30990.0,
+      446868.0,
+      119999998.0
+    ],
+    "median": 30990.0,
+    "interquartile_range": 446694.0,
+    "rows": 2273097,
+    "missing": 115,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "flow_duration",
+    "domain": "source_training",
+    "condition": "attack",
+    "source_minimum": 0.0,
+    "source_maximum": 120000000.0,
+    "quantiles": [
+      0.0,
+      1244.0,
+      13882.0,
+      1037262.0,
+      119999998.0
+    ],
+    "median": 13882.0,
+    "interquartile_range": 1036018.0,
+    "rows": 2299544,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "flow_duration",
+    "domain": "external_all",
+    "condition": "attack",
+    "source_minimum": 0.0,
+    "source_maximum": 120000000.0,
+    "quantiles": [
+      0.0,
+      49.0,
+      311276.0,
+      84140095.0,
+      119995180.0
+    ],
+    "median": 311276.0,
+    "interquartile_range": 84140046.0,
+    "rows": 557646,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_fwd_pkts",
+    "domain": "source_training",
+    "condition": "all",
+    "source_minimum": 1.0,
+    "source_maximum": 309629.0,
+    "quantiles": [
+      1.0,
+      1.0,
+      2.0,
+      5.0,
+      309629.0
+    ],
+    "median": 2.0,
+    "interquartile_range": 4.0,
+    "rows": 13191622,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_fwd_pkts",
+    "domain": "external_all",
+    "condition": "all",
+    "source_minimum": 1.0,
+    "source_maximum": 309629.0,
+    "quantiles": [
+      1.0,
+      2.0,
+      2.0,
+      5.0,
+      219759.0
+    ],
+    "median": 2.0,
+    "interquartile_range": 3.0,
+    "rows": 2830743,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_fwd_pkts",
+    "domain": "source_training",
+    "condition": "benign",
+    "source_minimum": 1.0,
+    "source_maximum": 309629.0,
+    "quantiles": [
+      1.0,
+      1.0,
+      2.0,
+      7.0,
+      12639.0
+    ],
+    "median": 2.0,
+    "interquartile_range": 6.0,
+    "rows": 10892078,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_fwd_pkts",
+    "domain": "external_all",
+    "condition": "benign",
+    "source_minimum": 1.0,
+    "source_maximum": 309629.0,
+    "quantiles": [
+      1.0,
+      2.0,
+      2.0,
+      4.0,
+      219759.0
+    ],
+    "median": 2.0,
+    "interquartile_range": 2.0,
+    "rows": 2273097,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_fwd_pkts",
+    "domain": "source_training",
+    "condition": "attack",
+    "source_minimum": 1.0,
+    "source_maximum": 309629.0,
+    "quantiles": [
+      1.0,
+      2.0,
+      2.0,
+      3.0,
+      309629.0
+    ],
+    "median": 2.0,
+    "interquartile_range": 1.0,
+    "rows": 2299544,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_fwd_pkts",
+    "domain": "external_all",
+    "condition": "attack",
+    "source_minimum": 1.0,
+    "source_maximum": 309629.0,
+    "quantiles": [
+      1.0,
+      1.0,
+      3.0,
+      6.0,
+      5523.0
+    ],
+    "median": 3.0,
+    "interquartile_range": 5.0,
+    "rows": 557646,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_bwd_pkts",
+    "domain": "source_training",
+    "condition": "all",
+    "source_minimum": 0.0,
+    "source_maximum": 38418.0,
+    "quantiles": [
+      0.0,
+      0.0,
+      1.0,
+      4.0,
+      38418.0
+    ],
+    "median": 1.0,
+    "interquartile_range": 4.0,
+    "rows": 13191622,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_bwd_pkts",
+    "domain": "external_all",
+    "condition": "all",
+    "source_minimum": 0.0,
+    "source_maximum": 38418.0,
+    "quantiles": [
+      0.0,
+      1.0,
+      2.0,
+      4.0,
+      291922.0
+    ],
+    "median": 2.0,
+    "interquartile_range": 3.0,
+    "rows": 2830743,
+    "missing": 0,
+    "outside_source_range": 55
+  },
+  {
+    "feature": "tot_bwd_pkts",
+    "domain": "source_training",
+    "condition": "benign",
+    "source_minimum": 0.0,
+    "source_maximum": 38418.0,
+    "quantiles": [
+      0.0,
+      1.0,
+      1.0,
+      5.0,
+      38418.0
+    ],
+    "median": 1.0,
+    "interquartile_range": 4.0,
+    "rows": 10892078,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_bwd_pkts",
+    "domain": "external_all",
+    "condition": "benign",
+    "source_minimum": 0.0,
+    "source_maximum": 38418.0,
+    "quantiles": [
+      0.0,
+      1.0,
+      2.0,
+      2.0,
+      291922.0
+    ],
+    "median": 2.0,
+    "interquartile_range": 1.0,
+    "rows": 2273097,
+    "missing": 0,
+    "outside_source_range": 55
+  },
+  {
+    "feature": "tot_bwd_pkts",
+    "domain": "source_training",
+    "condition": "attack",
+    "source_minimum": 0.0,
+    "source_maximum": 38418.0,
+    "quantiles": [
+      0.0,
+      0.0,
+      0.0,
+      4.0,
+      109.0
+    ],
+    "median": 0.0,
+    "interquartile_range": 4.0,
+    "rows": 2299544,
+    "missing": 0,
+    "outside_source_range": 0
+  },
+  {
+    "feature": "tot_bwd_pkts",
+    "domain": "external_all",
+    "condition": "attack",
+    "source_minimum": 0.0,
+    "source_maximum": 38418.0,
+    "quantiles": [
+      0.0,
+      1.0,
+      1.0,
+      6.0,
+      5525.0
+    ],
+    "median": 1.0,
+    "interquartile_range": 5.0,
+    "rows": 557646,
+    "missing": 0,
+    "outside_source_range": 0
+  }
+]
