@@ -104,6 +104,7 @@ class Phase12Tests(unittest.TestCase):
         self.assertEqual(sum(lookup.get((day,0),0) for day in ('2018-02-20','2018-02-21')),1700)
 
     def test_capture_only_policy_preserved(self):
-        source=(Path(__file__).resolve().parents[1]/'src/adaptation/historical.py').read_text()
-        self.assertIn("prepared=predictor_input(raw,names,design['version'])",source)
-        self.assertIn("capture_only_rows",source)
+        from src.adaptation.lifecycle import validate_coverage
+        validate_coverage(16232943,16232943,14,14)
+        with self.assertRaises(ValueError):validate_coverage(16232943,16232929,14,14)
+        with self.assertRaises(ValueError):validate_coverage(16232943,16232943,0,14)

@@ -5,7 +5,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 from hashlib import sha256
 import shutil
-from src.adaptation.lifecycle import digest,role_support
+from src.adaptation.lifecycle import digest,role_support,validate_coverage
 from src.adaptation.evaluation import BINS,merge
 
 
@@ -183,6 +183,7 @@ def run(project,input_root,output,scratch,stage):
         summary['cross_role_groups']={key:crossing_groups(frame,key).count() for key in ('record_fingerprint','split_feature_key','predictor_key')}
         if any(summary['cross_role_groups'].values()):raise ValueError('Prohibited role leakage')
         summary['retained_rows']=sum(r['count'] for r in summary['cohorts']); summary['purged_rows']=16232943-summary['retained_rows']
+        validate_coverage(summary['input']['rows'],summary['retained_rows'],summary['capture_only_rows'],summary['input']['temporally_flagged'])
         summary['features']=names
         specs=[]
         if stage=='12C':specs=[('LR',23013,125,1,p,0,{}) for p in ('P0','P1','P4','P5')]

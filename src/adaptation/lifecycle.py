@@ -80,3 +80,8 @@ def digest(value):
 def role_support(rows):
     """Normalize Spark partition types at the model-support boundary."""
     return {(r['source_day'],int(r['split_rank'])):int(r['count']) for r in rows}
+
+
+def validate_coverage(original,retained,flagged,expected_flagged):
+    if retained!=original or flagged!=expected_flagged:
+        raise ValueError('Capture-only population coverage differs from verified source')
