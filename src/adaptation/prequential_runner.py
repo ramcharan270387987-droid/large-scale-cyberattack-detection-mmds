@@ -109,6 +109,8 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
         started=time.monotonic()
         try:
             candidate=backend.fit(days)
+            fit_call_seconds=time.monotonic()-started
+            record.update(model=candidate,fit_succeeded=True,charged_fit_seconds=backend.meta[candidate]['fit_seconds'])
             cal=backend.hist(candidate,cal_days,1)
             if min(sum(v[c] for v in cal.values()) for c in (0,1))<backend.min_class:
                 raise ValueError('Insufficient validation class support')
@@ -122,10 +124,11 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
                               'candidate_fpr':rc['fpr'],'incumbent_fpr':ri['fpr'],'accepted':accept})
             cost=backend.meta[candidate]['fit_seconds']
             elapsed=time.monotonic()-started
+            completion_duration=max(cost,fit_call_seconds)+max(0,elapsed-fit_call_seconds)
             record.update(model=candidate,decision=why,accepted=accept,failed=False,threshold_bin=selected,
                           candidate_metrics=candidate_metrics,incumbent_metrics=before,
                           measured_action_seconds=elapsed,charged_fit_seconds=cost,
-                          training_complete=arrival+max(elapsed,cost))
+                          actual_fit_call_seconds=fit_call_seconds,training_complete=arrival+completion_duration)
             registry.register(candidate,backend.meta[candidate])
             registered_metrics[candidate]=candidate_metrics
             if accept:
@@ -146,8 +149,9 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
              'pending_label_windows':len(arrived)-len(released(arrived,delay,len(arrived)-1)),
              'alerts':sum(t['alert'] for t in triggers),'eligible_triggers':sum(t['eligible'] for t in triggers),
              'suppressed_triggers':sum(t['requested'] and not t['eligible'] for t in triggers),
-             'retrainings':attempts,'successful_retrainings':sum(e.get('failed') is False for e in events),
-             'failed_retrainings':sum(e.get('failed') is True for e in events),
+             'retrainings':attempts,'successful_retrainings':sum(e.get('fit_succeeded',False) for e in events),
+             'failed_retrainings':sum(e.get('action')=='fit' and not e.get('fit_succeeded',False) for e in events),
+             'failed_actions':sum(e.get('failed') is True for e in events),
              'promotions':sum(e.get('accepted',False) for e in events),
              'rejections':sum(e.get('accepted') is False and e.get('action')=='fit' for e in events),
              'threshold_updates':len([t for t in thresholds if 'new_bin' in t]),'rollbacks':natural_rollbacks,

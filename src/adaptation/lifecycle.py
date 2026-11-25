@@ -75,3 +75,8 @@ class Registry:
 
 def digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()[:20]
+
+
+def role_support(rows):
+    """Normalize Spark partition types at the model-support boundary."""
+    return {(r['source_day'],int(r['split_rank'])):int(r['count']) for r in rows}

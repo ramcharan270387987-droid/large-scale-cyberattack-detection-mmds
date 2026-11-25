@@ -97,6 +97,13 @@ class Phase12Tests(unittest.TestCase):
         self.assertEqual(eligible(True,1000,100,5,0,2,0,3,True),(False,'end-of-replay'))
     def test_partition_role_normalization(self):
         # Partition inference can be disabled by the inherited receipt reader.
-        rows=[('2018-02-20','0',800),('2018-02-21',0,900)]
-        lookup={(day,int(role)):count for day,role,count in rows}
+        from src.adaptation.lifecycle import role_support
+        rows=[{'source_day':'2018-02-20','split_rank':'0','count':800},
+              {'source_day':'2018-02-21','split_rank':0,'count':900}]
+        lookup=role_support(rows)
         self.assertEqual(sum(lookup.get((day,0),0) for day in ('2018-02-20','2018-02-21')),1700)
+
+    def test_capture_only_policy_preserved(self):
+        source=(Path(__file__).resolve().parents[1]/'src/adaptation/historical.py').read_text()
+        self.assertIn("prepared=predictor_input(raw,names,design['version'])",source)
+        self.assertIn("capture_only_rows",source)

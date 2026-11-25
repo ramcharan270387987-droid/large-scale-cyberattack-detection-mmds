@@ -60,7 +60,7 @@ def validate(root):
             for day in backend.forward:
                 x,y,role=backend.data[day];y=y.copy();y[role==1]=0;backend.data[day]=(x,y,role)
         result=run(backend,'P1',0,root/(name+'-registry'),budget=2,period=8,sliding=8,minimum=50)
-        assert result['summary']['promotions']==0 and result['summary']['failed_retrainings']==2
+        assert result['summary']['promotions']==0 and result['summary']['failed_actions']==2
         assert len({w['model'] for w in result['windows']})==1
         rows.append({'fault':name,'observed':'two rejected actions, incumbent served every window','pass':True})
     (root/'fault_receipt.json').write_text(json.dumps(rows,indent=2)+'\n')

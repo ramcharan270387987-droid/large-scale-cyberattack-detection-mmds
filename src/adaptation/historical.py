@@ -5,7 +5,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 from hashlib import sha256
 import shutil
-from src.adaptation.lifecycle import digest
+from src.adaptation.lifecycle import digest,role_support
 from src.adaptation.evaluation import BINS,merge
 
 
@@ -22,7 +22,7 @@ class SparkBackend:
         self.forward=['2018-02-20','2018-02-21','2018-02-22','2018-02-23','2018-02-28','2018-03-01','2018-03-02']
         self.train=group_sample(prepared.where('split_rank=0'),{'seed':seed,'group_sample_permyriad':sample}).where('sampled').drop('sampled')
         self.sample_cohorts=[r.asDict() for r in self.train.groupBy('source_day','binary_label','attack_family').count().collect()]
-        self.counts={(r.source_day,int(r.split_rank)):r['count'] for r in self.train.groupBy('source_day','split_rank').count().collect()}
+        self.counts=role_support(self.train.groupBy('source_day','split_rank').count().collect())
         values=self.train.where(F.col('source_day').isin(self.initial)).select('flow_duration')
         self.edges=sorted(set(values.approxQuantile('flow_duration',[i/10 for i in range(1,10)],.001)))
         def bincol():
@@ -48,25 +48,31 @@ class SparkBackend:
         from src.ml.preprocessing import fit_preprocessing,verify_vectors
         from src.ml.model_registry import capture
         from src.streaming.model_scoring import probe
-        if days==self.initial and getattr(self,'frozen_reference',None) and self.name=='E-LR-seed23013-sample125-weight1':
-            previous_root,previous=self.frozen_reference
-            key=previous['runs'][0]['summary']['initial_model']
+        previous_root,previous=(self.frozen_reference if getattr(self,'frozen_reference',None) else (None,{}))
+        matching=[m for m in previous.get('models',{}).values() if m['backend']==self.name and m['training_days']==days]
+        if matching:
+            metadata=matching[0];key=metadata['model']
             if key in self.models:return key
-            metadata=previous['models'][key]
             target=self.output/metadata['receipt']['artifact']
             shutil.copytree(previous_root/metadata['receipt']['artifact'],target)
             started=time.monotonic()
             loaded=PipelineModel.load(str(target))
             self.models[key]=loaded;self.meta[key]=metadata
             self.verify(key)
-            expected=json.loads((previous_root/'prediction_histograms'/f'{key}-2018-02-16-r1.json').read_text())
-            actual=self.score(key,'2018-02-16',1)
-            expected_hist=merge(expected['family_histograms'].values())
-            if merge(actual.values())!=expected_hist:raise ValueError('Frozen initial calibration prediction mismatch')
-            self.frozen_reload={'model':key,'source_stage':'12C','source_summary_sha256':sha256((previous_root/'phase12_summary.json').read_bytes()).hexdigest(),
-                                'independent_new_runtime_reload':True,'calibration_histogram_identical':True,'seconds':time.monotonic()-started}
+            expected_path=previous_root/'prediction_histograms'/f'{key}-2018-02-16-r1.json'
+            compared=False
+            if expected_path.exists():
+                expected=json.loads(expected_path.read_text())
+                actual=self.score(key,'2018-02-16',1)
+                if merge(actual.values())!=merge(expected['family_histograms'].values()):raise ValueError('Frozen calibration prediction mismatch')
+                compared=True
+            receipt={'model':key,'source_stage':'12C','source_summary_sha256':sha256((previous_root/'phase12_summary.json').read_bytes()).hexdigest(),
+                     'independent_new_runtime_reload':True,'calibration_histogram_identical':compared,'seconds':time.monotonic()-started}
+            self.reuse_receipts=getattr(self,'reuse_receipts',[])+[receipt]
+            if days==self.initial:self.frozen_reload=receipt
+            print('REUSE_VERIFIED_MODEL',key,days,flush=True)
             return key
-        key=digest([self.name,days,getattr(self,'namespace','local-smoke')])
+        key=digest([self.name,days,getattr(self,'namespace','local-smoke'),self.source_commit])
         if key in self.models:return key
         start=time.monotonic()
         train=self.train.where(F.col('source_day').isin(days)).persist()
@@ -92,14 +98,15 @@ class SparkBackend:
             collisions=(fitting.unionByName(other).groupBy('vector_key').agg(F.min('role').alias('low'),F.max('role').alias('high')).where('low=0 and high>0').count())
             families={r.attack_family:r['count'] for r in train.groupBy('attack_family').count().collect()}
             vectors.unpersist()
+            elapsed_fit=time.monotonic()-start
+            if elapsed_fit>1800:raise ValueError('Candidate exceeded1800second cap')
             self.models[key]=loaded; self.physical_fits+=1
             self.meta[key]={'model':key,'family':self.family,'backend':self.name,'training_days':days,'rows':sum(support.values()),
                 'classes':support,'family_support':families,'features':self.names,'preprocessing':details,
                 'preprocessing_seconds':preprocessing,'training_seconds':training,'save_reload_seconds':persistence,**timings,
-                'fit_seconds':time.monotonic()-start,'receipt':receipt,'independent_reload':True,
+                'fit_seconds':elapsed_fit,'receipt':receipt,'independent_reload':True,
                 'imputed_cross_role_groups':collisions,'imputed_policy':'diagnostic, no outcome-dependent mask',
                 'source_commit':self.source_commit,'preprocessing_fit_role':0}
-            if self.meta[key]['fit_seconds']>1800:raise ValueError('Candidate exceeded1800second cap')
             (self.output/'model_metadata.json').write_text(json.dumps(self.meta,allow_nan=False))
             print('FIT_COMPLETE',self.name,key,days,self.meta[key]['fit_seconds'],flush=True)
             return key
@@ -157,6 +164,7 @@ def run(project,input_root,output,scratch,stage):
     load=lambda p:json.loads((project/p).read_text())
     config=load('configs/phase12_adaptation.yaml'); config['spark']={'master':'local[4]','driver_memory':'8g','shuffle_partitions':48,'input_partition_bytes':67108864}
     spark=spark_session(config,scratch); spark.conf.set('spark.sql.sources.partitionColumnTypeInference.enabled','false'); spark.sparkContext.setLogLevel('WARN')
+    if spark.version!='4.3.0':raise ValueError('Unexpected Spark runtime version')
     start=time.monotonic(); summary={'stage':stage,'status':'running','source_commit':load('phase12_source.json')['commit'],'config':config,'runs':[],'models':{}}
     atomic_json(output/'phase12_summary.json',summary)
     try:
@@ -164,7 +172,9 @@ def run(project,input_root,output,scratch,stage):
         receipt=locate_producer(input_root,parquet['independent_mount']['summary_sha256'])
         raw,summary['input']=verified_input(spark,receipt,parquet,load('configs/cleaning.yaml'))
         names=registry(design,parquet['feature_columns'])
-        prepared=predictor_input(raw.where('temporal_eligibility'),names,design['version'])
+        prepared=predictor_input(raw,names,design['version'])
+        summary['capture_only_rows']=raw.where('not temporal_eligibility').count()
+        summary['timestamp_policy']='retain flagged observations at trusted capture-day resolution; no fabricated intraday order'
         assigned=assign_population(prepared,'A',design,summary['input']['days'])
         # Physical partitioning prunes repeated per-capture candidate/scoring reads.
         cache=scratch/'assigned'; assigned.write.partitionBy('source_day','split_rank').parquet(str(cache))
@@ -205,6 +215,7 @@ def run(project,input_root,output,scratch,stage):
             summary['runs'].append(result);summary['models'].update(backend.meta)
             summary.setdefault('sample_cohorts',{})[backend.name]=backend.sample_cohorts
             if getattr(backend,'frozen_reload',None):summary['frozen_reference_reload']=backend.frozen_reload
+            summary['reused_model_receipts']=[r for b in backends.values() for r in getattr(b,'reuse_receipts',[])]
             summary['physical_fits']=sum(b.physical_fits for b in backends.values())
             atomic_json(output/'phase12_summary.json',summary)
             print('RUN_COMPLETE',result['summary'],flush=True)
