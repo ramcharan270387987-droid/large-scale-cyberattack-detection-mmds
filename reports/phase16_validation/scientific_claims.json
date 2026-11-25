@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "phases": 15,
+  "exact_claim_selectors": 21,
+  "figure_files": 33,
+  "no_cross_protocol_pooling": true
+}

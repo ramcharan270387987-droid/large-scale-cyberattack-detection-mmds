@@ -1,3 +1,7 @@
+## Final academic submission — Phase 16
+
+The [submission index](deliverables/final_submission/README.md) links the actual report, IEEE paper, presentation, viva materials, evidence tables and architecture figures. See [reproducibility and local startup](deliverables/final_submission/REPRODUCIBILITY.md) and the [separate Streamlit Cloud guide](deliverables/final_submission/STREAMLIT_CLOUD_DEPLOYMENT.md). Public deployment is not part of the completed submission work. Final acceptance evidence is under reports/phase16_validation.
+
 # large-scale-cyberattack-detection-mmds
 Large-Scale Cyberattack Detection and Evolving Attack Pattern Mining using Apache Spark, PySpark, Spark MLlib and Kaggle.
 

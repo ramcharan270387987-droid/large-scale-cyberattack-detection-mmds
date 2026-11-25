@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "artifact_sha256": {
+    "project_report.pdf": "e1f9c741fc35f0b5fbdf54a2b53c1f7f852b4527a79084e98cf85c00d5d8df50",
+    "manuscript/manuscript.pdf": "7c1f8a7941d154c26828b119fc822d322a56a258c2787cf3eaedead7f3e4b634",
+    "academic_presentation.pdf": "9dea2b206b909568f5ba3b5b59d7b0c13f94ec34033606866254eae0bcc25002",
+    "viva_handbook.pdf": "df0d9587d6a7f8a037664ac32995baa140470ff38678eb26f6691a9166f2002c",
+    "speaker_notes.pdf": "62daab31de8ed36f5f9a7e266eba9043f784c6f0488021c2e2b364529426c9b2"
+  },
+  "pdf_pages": {
+    "project_report.pdf": 61,
+    "manuscript/manuscript.pdf": 6,
+    "academic_presentation.pdf": 24,
+    "viva_handbook.pdf": 9,
+    "speaker_notes.pdf": 4
+  },
+  "report_images": 16,
+  "report_tables": 67,
+  "presentation_slides": 24,
+  "slides_with_notes": 24,
+  "viva_questions": 80,
+  "out_of_page_text_blocks": [],
+  "short_pages": [
+    [
+      "speaker_notes.pdf",
+      4,
+      170
+    ]
+  ],
+  "rendering": "LibreOffice DOCX/PPTX exports; genuine IEEEtran compiled with pdfLaTeX and BibTeX",
+  "visual_review": {
+    "status": "PASS",
+    "reviewed": "Report full contact sheet and representative full-size body page; all six manuscript pages in contact sheet; all 24 slide layouts; representative viva page; numbered contents stable against 184 PDF bookmarks",
+    "observations": [
+      "No visible clipping or overlapping text in reviewed renders",
+      "Compact dense numerical charts retain full-resolution originals; report tables carry exact values",
+      "Administrative placeholders are explicit; no invented credentials or institutional approval"
+    ],
+    "review_date": "2026-11-25"
+  },
+  "fonts": "Times/Calibri with LibreOffice font substitution permitted; inspect rendered artifacts"
+}

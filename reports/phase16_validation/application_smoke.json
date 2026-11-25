@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "pages": [
+    "Executive overview",
+    "Interactive inference",
+    "Historical replay",
+    "Evidence & reproducibility"
+  ],
+  "models": [
+    "B-logistic_regression",
+    "B-random_forest",
+    "B-kmeans"
+  ],
+  "synthetic_csv_rows_per_model": 3,
+  "fitting": false,
+  "kaggle_jobs": false,
+  "prior_full_browser_receipt": "reports/phase15_validation/browser.json"
+}

@@ -1,0 +1,242 @@
+[
+  [
+    "Leakage-aware cyberattack detection",
+    [
+      "Final MMDS academic project \u2022 Phases 1\u201316",
+      "[EDIT STUDENT / INSTITUTION / SUPERVISOR]",
+      "Generalization, evolving patterns and auditable inference"
+    ],
+    "end_to_end",
+    "Introduce the study as an evidence-led evaluation, not a production intrusion prevention product. State that all research experiments are already completed and this submission consolidates their accepted artifacts. Replace the marked administrative fields before submission. The central question is how conclusions change when the population, timing, threshold and feature contract are made explicit."
+  ],
+  [
+    "Motivation and problem",
+    [
+      "Random-split success can hide temporal failure",
+      "Ranking quality differs from threshold recall",
+      "False positives impose an operational burden"
+    ],
+    null,
+    "Explain why a favorable score is insufficient. Correlated flows, capture differences and rare attacks can change the meaning of the evaluation. A frozen operating point is the actual decision rule. This work treats provenance, split assignment and validation calibration as parts of the method. It does not promise autonomous defense or prospective live effectiveness."
+  ],
+  [
+    "Research objectives",
+    [
+      "Audit populations and leakage boundaries",
+      "Evaluate supervised, novelty and evolving patterns",
+      "Preserve reproducibility and usable inference"
+    ],
+    "evaluation",
+    "Describe the objectives as testable engineering and evaluation contracts. The project audits released rows, prevents cross-role reuse, records operating thresholds and checks model reconstruction. Pattern, drift and adaptive analyses extend the study without turning retrospective evidence into live-monitoring claims. Successful completion means traceable evidence, including negative findings, rather than a minimum accuracy selected after seeing results."
+  ],
+  [
+    "Research gaps and contribution",
+    [
+      "Separate protocol, denominator and threshold",
+      "Retain unsupported methods and negative findings",
+      "Connect archived models to faithful demonstration"
+    ],
+    null,
+    "The claimed contribution is integrated experimental discipline in this project. Spark, random forests, FP-growth and SHAP are established methods. Do not claim invention of these algorithms or state-of-the-art intrusion detection. Explain that a reviewer can follow a reported result to its source CSV or JSON, exact selector, cohort count, accepted checkpoint and file hash."
+  ],
+  [
+    "Proposed system",
+    [
+      "Private research execution \u2192 approved aggregates",
+      "Training-only transforms and frozen decisions",
+      "Immutable evidence \u2192 bounded interactive app"
+    ],
+    "end_to_end",
+    "Walk through the information boundaries. Private source data and fitted research artifacts remain distinct from the compact public demonstration. Git stores approved aggregates and bounded model parameters, never credentials or raw private flows. The application does real supported inference but does not train models, contact Kaggle, or turn an upload into a new empirical generalization result."
+  ],
+  [
+    "Architecture and contracts",
+    [
+      "Input audit \u2192 role assignment \u2192 fitted pipelines",
+      "Independent numerical and acceptance checks",
+      "Documents and app consume verified outputs"
+    ],
+    "data_engineering",
+    "Point to each boundary in the diagram. An accurate model applied with a different preprocessing contract is not the same model. An accurate table with a different cohort label is not the same result. Typed layers, ordered features, training medians, model identities and evidence hashes make these distinctions concrete. Architecture arrows describe flow; they contain no invented measurements."
+  ],
+  [
+    "Dataset and cohort accounting",
+    [
+      "Source: 16,232,943 flows",
+      "13,484,708 benign; 2,748,235 attacks",
+      "Strict timestamp subset: 16,232,929"
+    ],
+    null,
+    "Explain the fourteen-row timestamp distinction rather than treating two counts as inconsistent totals. Purged split roles, the historical replay, adaptive evaluation and external mirror each have separate inclusion rules. The final report documents these populations independently. No external result is combined with the source denominator, and sampled model fitting is not described as fitting every training row."
+  ],
+  [
+    "Spark data engineering",
+    [
+      "Typed, finite and auditable numerical layers",
+      "Training-only imputation and scaling",
+      "Materialized actions and verified artifacts"
+    ],
+    "data_engineering",
+    "Discuss malformed fields, nonfinite values and zero-denominator behavior. These are part of reproducibility because they can change both features and eligible rows. Spark lazy evaluation means timing a plan without consuming its action is inadequate. The experiments record bounded workload definitions and warm-ups. The portable dashboard reconstructs accepted transforms instead of installing Spark for user inference."
+  ],
+  [
+    "Leakage-aware experimental protocols",
+    [
+      "A: grouped random; B: chronological",
+      "C: unseen-family evaluation",
+      "B purge: 909,956; C purge: 859,101"
+    ],
+    "leakage_splitting",
+    "Explain the difference between grouping duplicates and generalizing to future captures. Duplicate-predictor purging is performed across assigned roles. The protocols have different attack composition and cannot be averaged into one score. Thresholds are selected from validation information and then frozen. Unseen-family diagnostics also depend on the upstream binary route, which may already miss an attack."
+  ],
+  [
+    "Supervised results: generalization gap",
+    [
+      "RF recall A: 0.8282",
+      "RF recall B: about 0.0020; C: 0.0243",
+      "Different test cohorts; no pooled headline score"
+    ],
+    null,
+    "Lead with the negative finding. Good grouped-random recall does not establish chronological detection. Keep the evaluation populations and trained cohort definitions attached to these values. A different threshold may alter recall and false positives, but selecting it on the test set would answer a different question. The study therefore preserves the archived validation-calibrated operating points."
+  ],
+  [
+    "Hybrid and open-set detection",
+    [
+      "Hybrid methods do not consistently dominate",
+      "Selected B OR-fusion attack recall: zero",
+      "Family stage cannot recover binary-stage misses"
+    ],
+    null,
+    "Describe the hybrid route as combining supervised decisions and a calibrated novelty route. A low false-positive count with zero attack recall is not evidence of useful detection. Family classification is conditional on routing. The dashboard intentionally presents these methods as research evidence, not supported portable inference. This is a scope boundary derived from actual accepted artifacts, not an unfinished interface promise."
+  ],
+  [
+    "Clustering and novelty",
+    [
+      "K-Means distance is a novelty score",
+      "Training imputation \u2192 signed log \u2192 standardization",
+      "Distance is not an attack probability"
+    ],
+    "detection",
+    "Use this slide to distinguish representation distance from calibrated risk. The accepted K-Means pipeline preserves its training means, scales and centers in portable inference. A far-away observation can be benign and an attack can resemble a cluster. Novelty performance must therefore be measured on its own cohort at its own calibrated threshold, rather than inferred from a visually appealing cluster plot."
+  ],
+  [
+    "Frequent and emerging patterns",
+    [
+      "Support 0.05: 298 itemsets, 629 rules",
+      "Primary export: 500 rules; 20 count checks",
+      "Association and emergence do not imply causality"
+    ],
+    "phase10_support_sensitivity",
+    "Explain the six-item transaction representation and the role of minimum support. At support 0.01 the archive has 759 itemsets and 1,428 rules, showing search-space sensitivity. Export limits differ from mined totals. Emerging rules compare capture populations and can reflect prevalence changes. Confidence is conditional association under the observed representation, not a probability that a feature causes an attack."
+  ],
+  [
+    "Historical streaming and drift",
+    [
+      "49 historical batches; 45 supported windows",
+      "ADWIN: 24/27 controlled target episodes",
+      "Zero stationary alarms / 11,520 eligible checks"
+    ],
+    "phase11_adwin_detections",
+    "Separate historical replay from controlled detector evaluation. There is no authoritative historical concept-drift label set. ADWIN episode counts have explicit controlled targets. DDM uses a different error-stream target population and should not be ranked directly against feature-stream episode totals. These distinctions prevent a retrospective capture shift from being advertised as proven live detection of a changed attack concept."
+  ],
+  [
+    "Adaptive learning: mixed trade-offs",
+    [
+      "Primary evaluation: 1,997,636 rows",
+      "P0: TP 463 / FP 4,691",
+      "P2: TP 634 / FP 9,835; P6 retains P0"
+    ],
+    "phase12_ablations",
+    "Explain predict-before-label-release ordering and future-only candidate activation. P2 gains 171 true positives but adds 5,144 false positives in the primary evaluation. That is a measurable trade-off, not an unconditional improvement. P6 retains its incumbent and matches P0. Label delays are simulated; a prospective deployment would require real label arrival, adjudication and a separately validated operating budget."
+  ],
+  [
+    "Explainable AI boundaries",
+    [
+      "Exact linear SHAP: 48 variants",
+      "Contributions reconstruct log-odds",
+      "Direct archived PySpark tree SHAP unsupported"
+    ],
+    "explainable_inference",
+    "Distinguish a model explanation from a causal explanation. Linear contributions add in the declared link space and are checked by reconstructing the output. They are not additive probabilities. Unsupported direct interventional tree explanations remain documented and unavailable in the product. The examiner can inspect the accepted reconstruction receipts rather than relying on an attractive but unvalidated explanation graphic."
+  ],
+  [
+    "External validation: conditional transfer",
+    [
+      "Three common features; exact 18-feature transfer unsupported",
+      "Source LR: zero attack recall",
+      "Source RF: recall 0.11185; FPR 0.04254"
+    ],
+    null,
+    "Use the chronological external test denominator: 308,939 rows, including 129,275 attacks and 179,664 benign. The mirror has 2,830,743 eligible rows overall, which is not this test population. Source RF transfers some ranking but exceeds its source-validation FPR ceiling. Target RF calibrated recall is 0.05436 at FPR 0.00039. Do not conceal feature compatibility or mirror-provenance limitations."
+  ],
+  [
+    "Measured scalability and optimization",
+    [
+      "Four workers were not consistently faster",
+      "1M rows: Pandas 0.242s; Spark 0.616s",
+      "Single-machine sensitivity \u2260 multi-node scaling"
+    ],
+    "phase14_pandas",
+    "State the workload and local environment before interpreting timings. The matched one-million-row end-to-end workload favors Pandas. Spark startup, parsing, scheduling and action costs matter. Volume tests use actual retained populations and separate warm-ups. Parquet improves the measured storage/read workload, but neither result establishes a universal speedup or production throughput. All timings are archived measurements rather than newly executed research."
+  ],
+  [
+    "Integrated dashboard",
+    [
+      "13 modules across nine navigation areas",
+      "203 evidence tables; LR, RF and K-Means",
+      "Immutable research evidence and session uploads"
+    ],
+    "@overview-desktop",
+    "Introduce the interface as a navigation and faithful inference layer. It displays protocols, model identities, historical replay and limitations. Research-only algorithms remain clearly scoped. Input predictions use archived training transforms and are isolated from immutable evidence caches. Browser and focused application checks cover the demonstration; public hosting has not been performed and would be a separate administrative action."
+  ],
+  [
+    "Actual inference demonstration",
+    [
+      "Manual entry or synthetic CSV only",
+      "1 MiB / 500-row limits; invalid-row diagnostics",
+      "2,445 accepted Spark parity probes"
+    ],
+    "@inference-desktop",
+    "Open the local application, inspect its model/provenance panel, and select a supported model. Use the packaged synthetic demonstration CSV rather than private records. Show the prediction, threshold or distance and an appropriate supported explanation. Demonstrate one invalid row and the safe diagnostic export. The parity evidence establishes implementation fidelity, not better detection accuracy on uploaded data."
+  ],
+  [
+    "Research contributions",
+    [
+      "Auditable cohort and operating-point evaluation",
+      "Integrated pattern, drift and adaptive evidence",
+      "Faithful bounded inference and reproducible package"
+    ],
+    null,
+    "Restate the contribution at the supported level. The project integrates experiments with explicit populations, training-only transforms, thresholds, source hashes and checkpoint identities. Negative results are retained as evidence about generalization. The final package provides editable academic artifacts and a local demonstration. It does not claim a new algorithm, state-of-the-art ranking, prospective deployment validation or acceptance by a publication venue."
+  ],
+  [
+    "Scientific and technical limitations",
+    [
+      "Capture dependence and conditional external features",
+      "Retrospective replay and simulated label arrival",
+      "Unsupported tree SHAP; no multi-node proof"
+    ],
+    null,
+    "Invite difficult questions directly. Low chronological recall is a substantive limitation of the evaluated operating points. False-positive trade-offs constrain adaptation. Mirror extraction identity and compatibility remain conditional. Historical changes lack authoritative concept-drift labels. The dashboard is not a sensor or autonomous response service. These limits define the next experiments that would be necessary before operational claims, rather than details to hide in an appendix."
+  ],
+  [
+    "Conclusion and future work",
+    [
+      "Generalization requires explicit protocol evidence",
+      "Preserve negative results and operating costs",
+      "Future: prospective labels and compatible provenance"
+    ],
+    null,
+    "Conclude that reproducibility is necessary but not sufficient for operational effectiveness. The accepted models and numerical pipelines can be reconstructed, while several detection claims remain weak under harder protocols. Future work should obtain more compatible cross-source measurements, prospective labels, independently calibrated budgets and real multi-node execution. These are proposed future investigations, not completed results or pending hidden jobs."
+  ],
+  [
+    "Questions and evidence navigation",
+    [
+      "Report \u2192 chapter, protocol and denominator",
+      "Master results \u2192 exact selector and source hash",
+      "Repository \u2192 accepted checkpoint and validator"
+    ],
+    null,
+    "For questions, navigate from the claim to its source instead of improvising a stronger conclusion. Keep the report, evidence matrix, master results and local dashboard open. If asked for unsupported tree explanations or exact 18-feature external transfer, state the limitation clearly. Close by identifying the editable administrative placeholders and the separate, optional public deployment action before an institutional submission."
+  ]
+]

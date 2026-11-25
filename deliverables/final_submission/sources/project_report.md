@@ -11,7 +11,7 @@ Institution/programme/year:[editable]
 
 
 ## Abstract
-This project evaluates leakage-aware cyberattack detection and evolving traffic patterns on an exact16,232,943-flow source release and a2,830,743-flow external mirror. Spark engineering,supervised and novelty models,open-set diagnostics,frequent patterns,historical drift,delayed-label adaptation and explainable inference are assessed with versioned evidence. Strong grouped-random results coexist with weak chronological recall;hybrid/adaptive policies show mixed trade-offs. External evaluation uses three conditionally compatible predictors and preserves source-only versus target-trained distinctions. Forty-eight volume/worker measurements plus16warmups and130optimization measurements show workload-dependent performance;at1Mmatched rows Pandas takes0.242s versusSpark0.616s for the measured query. A separate dashboard executes archived LR,RF and K-Means with2,445Spark parity probes. The contribution is an auditable experimental and software chain,not a production detector or state-of-the-art claim.
+This project evaluates leakage-aware cyberattack detection and evolving traffic patterns on a 16,232,943-flow source release and a 2,830,743-flow external mirror. Spark engineering, supervised and novelty models, open-set diagnostics, frequent patterns, historical drift, delayed-label adaptation and explainable inference are assessed with versioned evidence. Strong grouped-random results coexist with weak chronological recall; hybrid and adaptive policies show mixed trade-offs. External evaluation uses three conditionally compatible predictors and preserves source-only versus target-trained distinctions. Forty-eight volume/worker measurements, 16 warm-ups and 130 optimization measurements show workload-dependent performance: at one million matched rows, Pandas takes 0.242 seconds versus Spark 0.616 seconds for the measured query. A separate dashboard executes archived LR, RF and K-Means with 2,445 Spark parity probes. The contribution is an auditable experimental and software chain, not a production detector or a state-of-the-art claim.
 
 
 Keywords:Apache Spark;intrusion detection;temporal generalization;concept drift;adaptive learning;explainability;reproducibility
@@ -56,7 +56,7 @@ Network intrusion research often reports high held-out accuracy without asking w
 
 The work combines Spark engineering, supervised and novelty models, family rejection, pattern mining, retrospective drift analysis, delayed-label adaptive policies and a validated demonstration application. Its central result is not that a complex detector solves cyberattack detection. It is that numerical correctness, random-split ranking, future operating-point recall and deployable model compatibility are distinct claims that require different evidence.
 
-The report follows that distinction throughout. The source corpus contains16,232,943flows; purged chronological test cohorts, the15,322,987-flow historical replay, the1,997,636-row adaptive primary evaluation and the308,939-row primary external test are not interchangeable denominators. All comparisons retain their declared feature sets, training budgets, calibration rules and label availability.
+The report follows that distinction throughout. The source corpus contains 16,232,943 flows; purged chronological test cohorts, the 15,322,987-flow historical replay, the 1,997,636-row adaptive primary evaluation and the 308,939-row primary external test are not interchangeable denominators. All comparisons retain their declared feature sets, training budgets, calibration rules and label availability.
 
 
 ## 2. Problem statement
@@ -1861,7 +1861,7 @@ Evidence source:reports/phase15_results.md
 
 The master results table is deliberately long-form: each row has a claim identifier, source path, exact selector, metric, denominator and interpretation. It allows comparisons only when the experiment supports them. Source A/B/C random forests share an algorithm family but have different fits and test populations. External E2/E3 comparisons share target rows but use different training domains and frozen calibration. Adaptive primary policies share issued forward observations, while late-period B and synthetic streams remain separate.
 
-The main scientific pattern is a separation between random-split success and difficult future evaluation. The full-cohort Phase4random forest recall falls from approximately82.8%on grouped-random A to about0.2%on chronological B. This does not establish a single causal reason: family exposure, feature distributions, calibration and cohort purging all change. Phase13provides descriptive decomposition and distribution evidence, not causal identification.
+The main scientific pattern is a separation between random-split success and difficult future evaluation. The full-cohort Phase 4 random forest recall falls from approximately 82.8%on grouped-random A to about 0.2%on chronological B. This does not establish a single causal reason: family exposure, feature distributions, calibration and cohort purging all change. Phase 13 provides descriptive decomposition and distribution evidence, not causal identification.
 
 Common-feature external evaluation preserves similarly important negatives. Source-only LR detects no primary chronological target attacks. Source RF's target benignFPR exceeds its source-validation ceiling. Target RF improves ranking and fixed-half recall but can sacrifice substantial recall under a stricter selected operating bin. These observations support careful operating-point and compatibility analysis, not a universal model ranking.
 
@@ -1870,7 +1870,7 @@ Computational evidence is also conditional. Four local threads are not consisten
 
 ## 25. Research contributions
 
-The first contribution is an auditable data and evaluation chain across the exact16,232,943-flow source release, with predictor-equivalence role separation, training-only transforms and retained denominators. The second is a coherent negative-result account of temporal/family generalization, calibration, novelty, fusion and delayed-label adaptation.
+The first contribution is an auditable data and evaluation chain across the exact 16,232,943-flow source release, with predictor-equivalence role separation, training-only transforms and retained denominators. The second is a coherent negative-result account of temporal/family generalization, calibration, novelty, fusion and delayed-label adaptation.
 
 The third contribution is model-level numerical assurance: exact LR logits, centroid distance, hybrid paths, validated linear SHAP and portable LR/RF/K-Means execution have explicit reconstruction or parity checks. The fourth is a matched computational study that forces consumed numeric/model outputs and distinguishes workload scale, threads, format and cache. The fifth is a demonstration-ready research application and an academic package whose figures, tables and claims are content-addressed.
 
@@ -1881,9 +1881,9 @@ These contributions are supported within this project. There is no claimed new c
 
 The source mirror's upstream description and extraction revision are incomplete. The external mirror has explicit institutional provenance but no independently authenticated official-byte chain. Both are historical laboratory releases with capture-specific compositions. Exact cross-dataset event identity is not established, and common-vector collisions are not proof of duplicate events.
 
-Repeated flows, finite capture days, group-aware sampling, approximate binned AUC, retrospective label release and bounded enriched cases limit statistical interpretation. Flow rows are not independent replications. Descriptive seed/repetition/capture-deletion ranges are not universal confidence guarantees. The secondary grouped target training budget is larger than an independent10%within-role sample because it shares a keyed hash with role assignment.
+Repeated flows, finite capture days, group-aware sampling, approximate binned AUC, retrospective label release and bounded enriched cases limit statistical interpretation. Flow rows are not independent replications. Descriptive seed/repetition/capture-deletion ranges are not universal confidence guarantees. The secondary grouped target training budget is larger than an independent 10%within-role sample because it shares a keyed hash with role assignment.
 
-Direct interventional tree SHAP and original18-feature external transfer remain unsupported. Novelty is not probability; association is not causation; historical replay is not live monitoring. Single-machine SparkContexts can share a warmed JVM and uncontrolled filesystem cache. Sampled RSS can miss transients, and Pandas process-tree memory can include a resident Spark JVM. Public deployment, authentication/tenant hardening and prospective operational validation remain future work.
+Direct interventional tree SHAP and original 18-feature external transfer remain unsupported. Novelty is not probability; association is not causation; historical replay is not live monitoring. Single-machine SparkContexts can share a warmed JVM and uncontrolled filesystem cache. Sampled RSS can miss transients, and Pandas process-tree memory can include a resident Spark JVM. Public deployment, authentication/tenant hardening and prospective operational validation remain future work.
 
 
 ## 27. Conclusion
@@ -1897,7 +1897,7 @@ The final application computes genuine archived-model predictions and supported 
 
 Future research could authenticate upstream extractor revisions, obtain prospective captures with legitimate ground truth, evaluate a prespecified common-feature transfer model on new untouched data and study calibrated operating policies under realistic analyst costs. Any new model selection would need fresh protocols and independent cohorts.
 
-Engineering extensions could add a separately authorized hosted service, stronger access controls and tenant isolation, carefully monitored model lifecycle management and genuine multi-node benchmarks. These are proposals only. They are not implemented Phase17work or evidence already established by this submission.
+Engineering extensions could add a separately authorized hosted service, stronger access controls and tenant isolation, carefully monitored model lifecycle management and genuine multi-node benchmarks. These are proposals only. They are not implemented Phase 17 work or evidence already established by this submission.
 
 
 ## 29. References
@@ -1931,8 +1931,10 @@ Engineering extensions could add a separately authorized hosted service, stronge
 
 Administrative fields on the title page are editable placeholders. Replace them with approved institutional details;no certificate,signature or approval is fabricated.
 
-See the accompanying phase completion matrix and master results table for exact hashes and selectors. Reproduce verification from the repository using the established Python3.12.14,Java21,Spark4.3.0environment. Kaggle research archives require the owner-authorized KAGGLE_API_TOKEN secret scoped to www.kaggle.com and api.kaggle.com;never place its value in a document or source file. The deployed application uses compact public parameter artifacts and requires no Kaggle credential.
+See the accompanying phase completion matrix and master results table for exact hashes and selectors. Reproduce verification from the repository using the established Python 3.12.14,Java 21,Spark 4.3.0 environment. Kaggle research archives require the owner-authorized KAGGLE_API_TOKEN secret scoped to www.kaggle.com and api.kaggle.com;never place its value in a document or source file. The deployed application uses compact public parameter artifacts and requires no Kaggle credential.
 
 Run:python -m unittest discover -s tests -v. Launch the separate advanced app with python -m streamlit run dashboard/advanced_app.py --server.maxUploadSize 1. The final reproducibility and deployment guides contain the exact environment paths,checkpoint and private-artifact boundaries. Research reruns are not required for the academic submission.
 
-The submission inventory and SHA256file bind the documents,figures,tables,screenshots and demonstration fixture. The ZIP excludes credentials,private raw data,caches and full model archives. Publication and public advanced deployment have not been claimed.
+The submission inventory and SHA256 file bind the documents,figures,tables,screenshots and demonstration fixture. The ZIP excludes credentials,private raw data,caches and full model archives. Publication and public advanced deployment have not been claimed.
+
+Mathematical conventions: recall = TP/(TP+FN); benign FPR = FP/(FP+TN); precision = TP/(TP+FP). Undefined denominators remain undefined. A frozen threshold tau produces an alert when score(x) >= tau. Logistic probability is 1/(1+exp(-z)); additive linear SHAP reconstructs z, not the probability. K-Means novelty uses the minimum squared Euclidean distance to an archived center after its training-only transform. FP-growth support is count(A)/N and confidence(A => B) is count(A union B)/count(A). These definitions do not make associations causal or novelty scores probabilities.

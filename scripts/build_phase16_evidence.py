@@ -11,6 +11,8 @@ def main():
  matrix=[]
  for i,(name,report,sha) in enumerate(phases,1):
   p=ROOT/'reports'/report;assert p.exists();subprocess.check_call(['git','cat-file','-e',sha+'^{commit}']);matrix.append(dict(phase=i,title=name,status='COMPLETE AND VERIFIED',objective=objectives[i-1],checkpoint=sha,evidence=str(p.relative_to(ROOT)),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),limitations='See the source report;no cross-protocol pooling or production claim'))
+ annotations=json.loads((OUT/'sources/evidence_annotations.json').read_text());assert len(annotations)==len(matrix)
+ for row,annotation in zip(matrix,annotations):row.update(annotation)
  write('phase_completion_matrix.csv',matrix);(ROOT/'reports/phase16_evidence_matrix.json').write_text(json.dumps(matrix,indent=2)+'\n')
  claims=[]
  def add(key,phase,path,selector,metric,value,rows,interpretation):claims.append(dict(claim_id=key,phase=phase,source=path,selector=json.dumps(selector,sort_keys=True),metric=metric,value=value,evaluation_rows=rows,interpretation=interpretation,source_sha256=hashlib.sha256((ROOT/path).read_bytes()).hexdigest()))

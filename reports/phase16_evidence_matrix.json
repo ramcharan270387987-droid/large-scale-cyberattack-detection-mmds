@@ -7,7 +7,14 @@
     "checkpoint": "d73bff36c2266e81a9145bf034b07039176715a1",
     "evidence": "reports/dataset_audit.md",
     "sha256": "cc9c3a018257818479972e8d24649fabc8fc5c0286a0ea2fc26e88542fcb47ad",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Pinned MMDS source release",
+    "evaluation_population": "16,232,943 full-source rows; strict timestamp subset 16,232,929",
+    "protocols": "Full audit and timestamp eligibility",
+    "algorithms": "Descriptive counts and numerical validation",
+    "main_findings": "13,484,708 benign; 2,748,235 attack",
+    "negative_findings": "Fourteen timestamp flags require a separate inclusion rule",
+    "reproducibility": "Pinned release audit and accepted report hash"
   },
   {
     "phase": 2,
@@ -17,7 +24,14 @@
     "checkpoint": "66334dc02a89ebf3d84e3bc62e1bb4f112e5951e",
     "evidence": "reports/phase2_data_engineering.md",
     "sha256": "b1d12864e97cdd8f19c303dd6b3e899844083dc465f794806d38348f35e72431",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Phase 1 audited source",
+    "evaluation_population": "16,232,943 source flows, layer-specific eligibility",
+    "protocols": "Typed and finite numerical layer construction",
+    "algorithms": "Spark parsing, feature transforms and Parquet",
+    "main_findings": "Reusable verified feature layers",
+    "negative_findings": "Parsing and invalid arithmetic require explicit handling",
+    "reproducibility": "Layer manifests, counts and checksums"
   },
   {
     "phase": 3,
@@ -27,7 +41,14 @@
     "checkpoint": "49b9e4d816df85bec77949b66051b0a1e6181a51",
     "evidence": "reports/phase3_analytics.md",
     "sha256": "fa9002a373f8e1052dfc837f4a552a495df57a2d2f49fb1ac9bd48f71a486493",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Verified source feature layers",
+    "evaluation_population": "Full source and declared SQL groups",
+    "protocols": "Capture/class grouped analytics",
+    "algorithms": "Spark SQL aggregations",
+    "main_findings": "Capture and class composition are measurable confounders",
+    "negative_findings": "Descriptive association is not causality",
+    "reproducibility": "Archived queries and aggregate receipts"
   },
   {
     "phase": 4,
@@ -37,7 +58,14 @@
     "checkpoint": "6e552768b6825335cdc2be8cc75727657f724340",
     "evidence": "reports/phase4_supervised_results.md",
     "sha256": "bb601e6a29a75cb1dc854ad988b23b0dc0562c7c1a35f558ac67bf8053c6d013",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "MMDS source training roles",
+    "evaluation_population": "A test 2,432,292; B 980,109; C 1,458,218",
+    "protocols": "Grouped-random A; chronological B; unseen-family C",
+    "algorithms": "LR, RF and boosting baselines",
+    "main_findings": "RF group-sample recall A 0.8282",
+    "negative_findings": "RF recall B about 0.0020; C 0.0243",
+    "reproducibility": "Role/purge receipts, training cohorts and frozen thresholds"
   },
   {
     "phase": 5,
@@ -47,7 +75,14 @@
     "checkpoint": "ddc003f3e2f8f11b45496026e70371132a367a3b",
     "evidence": "reports/phase5_clustering_results.md",
     "sha256": "4ecdd48e99b64307a9c6659f5935fb9da312cec2a73a1a50480d19a94676f674",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "MMDS reference roles",
+    "evaluation_population": "Protocol-specific retained scoring populations",
+    "protocols": "Training reference novelty with calibrated cutoffs",
+    "algorithms": "K-Means and novelty diagnostics",
+    "main_findings": "Archived distances and supported portable reconstruction",
+    "negative_findings": "Distance is not attack probability",
+    "reproducibility": "Training imputation, signed-log, scaling and centers"
   },
   {
     "phase": 6,
@@ -57,7 +92,14 @@
     "checkpoint": "c7dc703d7ced871b496b1b5ced4b606ba78d7668",
     "evidence": "reports/phase6_streaming_results.md",
     "sha256": "dc7ba4bbd7b54f7931c0be110583ba5d12ac8b94ec6c510e76a331aabbc42cdb",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Retained B-role union",
+    "evaluation_population": "15,322,987 rows, 49 batches",
+    "protocols": "Historical ordered microbatch replay",
+    "algorithms": "Archived detection and window summaries",
+    "main_findings": "Reproducible historical observations",
+    "negative_findings": "Replay is not live network monitoring",
+    "reproducibility": "Batch receipts and window metrics"
   },
   {
     "phase": 7,
@@ -67,7 +109,14 @@
     "checkpoint": "16ef2c23bbfe33c497d32863173455185fe868ed",
     "evidence": "reports/dashboard_final_qa.md",
     "sha256": "085cd11298264d063694ee9b0e9853fc357609ee5482e8fbe5177e608813e6c6",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Approved aggregate research artifacts",
+    "evaluation_population": "Baseline dashboard acceptance cases",
+    "protocols": "UI and data integrity QA",
+    "algorithms": "Streamlit evidence presentation",
+    "main_findings": "Validated baseline evidence service",
+    "negative_findings": "Presentation does not create new model validity",
+    "reproducibility": "Baseline checkpoint and dashboard QA"
   },
   {
     "phase": 8,
@@ -77,7 +126,14 @@
     "checkpoint": "beb558748b24309b1f752b2d744614f31b1d9351",
     "evidence": "reports/phase8_hybrid_results.md",
     "sha256": "1cf46d66d0fc0b6f8356b1dba3f8eeed475c3fea6ca062809aa90fc5b8272c8c",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Matched source scoring roles",
+    "evaluation_population": "Separate A/B/C evaluation cohorts",
+    "protocols": "Validation-calibrated hybrid comparison",
+    "algorithms": "Supervised/novelty fusion policies",
+    "main_findings": "Matched operating-point analysis completed",
+    "negative_findings": "No consistent dominance; selected B OR-fusion recall zero",
+    "reproducibility": "Fusion registries and independent scoring checks"
   },
   {
     "phase": 9,
@@ -87,7 +143,14 @@
     "checkpoint": "d5ab1d87e4b32bfdc484cec1b05b4ecc3e73b5b0",
     "evidence": "reports/phase9_research_report.md",
     "sha256": "3387d0be8b93bacb861b660ed69cda68572bfb0f9f24333a35eb29157ad6d368",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Source family labels and binary routing",
+    "evaluation_population": "Protocol-specific routed and oracle-gated diagnostics",
+    "protocols": "Closed-set and unknown-family rejection",
+    "algorithms": "Multiclass pipelines and rejection rules",
+    "main_findings": "Family diagnostics separated from end-to-end binary misses",
+    "negative_findings": "Family stage cannot recover binary misses",
+    "reproducibility": "Family support and rejection curve checks"
   },
   {
     "phase": 10,
@@ -97,7 +160,14 @@
     "checkpoint": "901a9f33954653cf6b327aa366700d7b91d997da",
     "evidence": "reports/phase10_results.md",
     "sha256": "f8d8366263116089ce4dad84d39e20b4537a0e78ffe43be88be65ee7b4b8715c",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Full verified MMDS feature layer",
+    "evaluation_population": "16,232,943; separate chronological detection test 980,109",
+    "protocols": "Frozen six-feature bins; support sensitivity",
+    "algorithms": "FP-growth, association and emerging pattern counts",
+    "main_findings": "Support .05: 298 itemsets, 629 rules; 500 exported, 20 recounted",
+    "negative_findings": "Association is not causal; primary detection produces no alerts",
+    "reproducibility": "Signature counts, rule registry and independent predicates"
   },
   {
     "phase": 11,
@@ -107,7 +177,14 @@
     "checkpoint": "96c1885ef97243e4de33757603fe1530994f0f8e",
     "evidence": "reports/phase11_results.md",
     "sha256": "f1fc816937dd790160ee57b756542d09df7a8b9c4137c0b16b77fc8bf44c33f6",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Controlled synthetic streams and separate historical replay",
+    "evaluation_population": "ADWIN 27 target episodes; 11,520 eligible stationary checks; 45/49 historical windows",
+    "protocols": "Distinct feature-stream and error-stream targets",
+    "algorithms": "ADWIN, Page-Hinkley, KSWIN, DDM and distribution monitors",
+    "main_findings": "ADWIN 24/27 controlled detections, zero stationary alarms",
+    "negative_findings": "Historical concept labels absent; DDM denominator differs",
+    "reproducibility": "Episode targets, applicability, delay and alarm receipts"
   },
   {
     "phase": 12,
@@ -117,7 +194,14 @@
     "checkpoint": "be53a63b7f8f330c3561efcdf73f2501d66ccac7",
     "evidence": "reports/phase12_results.md",
     "sha256": "1740ff2c97ed385cd2ef952d36b76364550bab63cd3af1d64ca027767fcebf16",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Historical E cohorts plus separate controlled experiments",
+    "evaluation_population": "Primary 1,997,636; 288 synthetic experiments; 33 unique historical pipelines",
+    "protocols": "Predict before simulated label release; future-only activation",
+    "algorithms": "Frozen, rolling and guarded adaptive policies",
+    "main_findings": "P2 TP 634 versus P0 463",
+    "negative_findings": "P2 FP 9,835 versus P0 4,691; P6 retains P0",
+    "reproducibility": "Activation order, budgets, delay and incumbent receipts"
   },
   {
     "phase": 13,
@@ -127,7 +211,14 @@
     "checkpoint": "ab6e9401b0c9b92e624e5b2b16ec91050a081eb0",
     "evidence": "reports/phase13_research_report.md",
     "sha256": "9b1a6a281021069fae9fce0f0788c77bd2c39f51b277b5255a77b54744ab7e33",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Checksum-verified archived source models",
+    "evaluation_population": "48 linear SHAP variants plus declared explanation probes",
+    "protocols": "Link-space additive reconstruction",
+    "algorithms": "Exact linear SHAP and supported model diagnostics",
+    "main_findings": "Linear log-odds reconstruction verified",
+    "negative_findings": "Direct interventional archived PySpark tree SHAP unsupported",
+    "reproducibility": "Model identities, background and reconstruction checks"
   },
   {
     "phase": 14,
@@ -137,7 +228,14 @@
     "checkpoint": "51392548c562d098e3d74b9a0bda4c402bd421d7",
     "evidence": "reports/phase14_research_report.md",
     "sha256": "c6f36ccf729b8eff7d468c7c4877a3060c72823ceea3e1061082642ca3a56538",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Pinned CICIDS2017 mirror v1, eight CSVs, 884,645,759 bytes",
+    "evaluation_population": "2,830,743 eligible; chronological primary test 308,939; matched timing 1M",
+    "protocols": "Conditional common3 source/target models; local volume/worker/storage workloads",
+    "algorithms": "LR/RF external baselines and Spark/Pandas measured actions",
+    "main_findings": "Source RF recall .11185/FPR .04254; Pandas .242s vs Spark .616s at 1M",
+    "negative_findings": "Source LR zero recall; exact18 transfer unsupported; four workers not consistently faster",
+    "reproducibility": "64 external records, 48 measured+16 warmups, 130 optimization measurements"
   },
   {
     "phase": 15,
@@ -147,6 +245,13 @@
     "checkpoint": "cb36ddec061006acfda09deda2168a196cbf4a48",
     "evidence": "reports/phase15_results.md",
     "sha256": "b2caa8122a70c7184fcdaaacd0c9d72fe7ff723505a2a38e61602fa9af780707",
-    "limitations": "See the source report;no cross-protocol pooling or production claim"
+    "limitations": "See the source report;no cross-protocol pooling or production claim",
+    "dataset_provenance": "Approved research aggregates and original compact source models",
+    "evaluation_population": "2,445 Spark parity probes; 13 modules across nine areas",
+    "protocols": "Numerical parity, input bounds, browser and regression acceptance",
+    "algorithms": "Portable LR, RF and K-Means",
+    "main_findings": "203 evidence tables; actual manual/CSV inference",
+    "negative_findings": "Hybrid/multiclass research-only; no new predictive-validity claim",
+    "reproducibility": "Compact registry, checksums, browser receipts and 180 tests"
   }
 ]

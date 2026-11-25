@@ -1,0 +1,65 @@
+\begin{thebibliography}{10}
+
+\bibitem{spark}
+M.~Zaharia {\em et~al.}, ``{Apache Spark: A Unified Engine for Big Data
+  Processing},'' {\em Communications of the ACM}, vol.~59, no.~11, pp.~56--65,
+  2016.
+
+\bibitem{mllib}
+X.~Meng, J.~Bradley, B.~Yavuz, E.~Sparks, S.~Venkataraman, D.~Liu, J.~Freeman,
+  D.~Tsai, M.~Amde, S.~Owen, D.~Xin, R.~Xin, M.~J. Franklin, R.~Zadeh,
+  M.~Zaharia, and A.~Talwalkar, ``{MLlib: Machine Learning in Apache Spark},''
+  {\em Journal of Machine Learning Research}, vol.~17, no.~34, pp.~1--7, 2016.
+
+\bibitem{forest}
+L.~Breiman, ``{Random Forests},'' {\em Machine Learning}, vol.~45, pp.~5--32,
+  2001.
+
+\bibitem{boosting}
+J.~H. Friedman, ``{Greedy Function Approximation: A Gradient Boosting
+  Machine},'' {\em The Annals of Statistics}, vol.~29, no.~5, pp.~1189--1232,
+  2001.
+
+\bibitem{fpgrowth}
+J.~Han, J.~Pei, and Y.~Yin, ``{Mining Frequent Patterns without Candidate
+  Generation},'' in {\em Proceedings of the 2000 ACM SIGMOD International
+  Conference on Management of Data}, pp.~1--12, 2000.
+
+\bibitem{adwin}
+A.~Bifet and R.~Gavalda, ``{Learning from Time-Changing Data with Adaptive
+  Windowing},'' in {\em Proceedings of the 2007 SIAM International Conference
+  on Data Mining}, pp.~443--448, 2007.
+
+\bibitem{drift}
+J.~Gama, I.~Zliobaite, A.~Bifet, M.~Pechenizkiy, and A.~Bouchachia, ``{A Survey
+  on Concept Drift Adaptation},'' {\em ACM Computing Surveys}, vol.~46, no.~4,
+  pp.~44:1--44:37, 2014.
+
+\bibitem{pr}
+T.~Saito and M.~Rehmsmeier, ``{The Precision-Recall Plot Is More Informative
+  than the ROC Plot When Evaluating Binary Classifiers on Imbalanced
+  Datasets},'' {\em PLOS ONE}, vol.~10, no.~3, p.~e0118432, 2015.
+
+\bibitem{shap}
+S.~M. Lundberg and S.-I. Lee, ``{A Unified Approach to Interpreting Model
+  Predictions},'' in {\em Advances in Neural Information Processing Systems},
+  vol.~30, pp.~4765--4774, 2017.
+
+\bibitem{tesseract}
+F.~Pendlebury, F.~Pierazzi, R.~Jordaney, J.~Kinder, and L.~Cavallaro,
+  ``{TESSERACT: Eliminating Experimental Bias in Malware Classification across
+  Space and Time},'' in {\em 28th USENIX Security Symposium}, pp.~729--746,
+  2019.
+
+\bibitem{cicids}
+I.~Sharafaldin, A.~H. Lashkari, and A.~A. Ghorbani, ``{Toward Generating a New
+  Intrusion Detection Dataset and Intrusion Traffic Characterization},'' in
+  {\em Proceedings of the 4th International Conference on Information Systems
+  Security and Privacy}, pp.~108--116, 2018.
+
+\bibitem{unb}
+{Canadian Institute for Cybersecurity}, ``{CIC-IDS2017 Dataset
+  Documentation}.'' University of New Brunswick, 2017.
+\newblock Dataset collection year; accessed 25 November 2026.
+
+\end{thebibliography}
