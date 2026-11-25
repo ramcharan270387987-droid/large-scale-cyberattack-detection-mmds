@@ -1,5 +1,5 @@
 """Matched storage/partition/cache/Pandas and bounded archived-model/mining costs."""
-import json,time,hashlib,statistics
+import json,time,hashlib,statistics,shutil
 from pathlib import Path
 from pyspark import StorageLevel
 from pyspark.sql import functions as F
@@ -28,7 +28,10 @@ def run(project,input_root,output,scratch):
             t=time.monotonic();error=None;result=None;status='PASS'
             with Monitor() as mon:
                 try:
+                    if shutil.disk_usage(output).free<3*1024**3:raise RuntimeError('Scratch reserve below3GiB; stopped before action')
                     value=fn();result=canonical(value) if isinstance(value,list) else value
+                    mon.sample()
+                    if mon.summary()['tree_rss_sampled_peak']>20*1024**3:raise RuntimeError('Observed process tree RSS exceeds20GiB; stop subsequent workloads')
                     if reference is not None and not equivalent(result,reference):raise ValueError('Output mismatch against matched configuration')
                 except Exception as exc:status='FAILED';error=type(exc).__name__+': '+str(exc)[:2000]
             elapsed=time.monotonic()-t;r=dict(matrix=matrix,configuration=configuration,repetition=rep,actual_rows=rows,seconds=elapsed,rows_per_second=rows/elapsed if rows else None,workers=None if matrix.startswith('Spark_Pandas') and configuration.startswith('pandas-') else 4,spark_context_workers=4,engine='pandas' if matrix.startswith('Spark_Pandas') and configuration.startswith('pandas-') else 'Spark',cache_os='uncontrolled',status=status,error=error,result=result,**mon.summary());runs.append(r);atomic_json(output/'optimization_runs.json',runs);print('PHASE14E RUN',matrix,configuration,rep,status,round(elapsed,3),flush=True)
