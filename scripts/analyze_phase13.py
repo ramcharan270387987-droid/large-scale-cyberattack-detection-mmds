@@ -83,7 +83,9 @@ def main():
     costs=[]
     for stage in ('supervised','permutation','components','diagnostics'):
         r=load('reports/phase13_'+stage+'/receipt.json');costs.append(dict(stage=stage,scope='whole stage including input verification and Spark work',seconds=r['seconds'],driver_peak_rss_bytes=r['driver_peak_rss_bytes']))
-    for r in supervised:costs.append(dict(stage='model reload',model=r['model'],scope='saved pipeline load',seconds=r['reload_seconds']))
+    for r in supervised:
+        costs.append(dict(stage='model reload',model=r['model'],scope='saved pipeline load',seconds=r['reload_seconds']))
+        if 'explanation_seconds' in r:costs.append(dict(stage='LR explanation',model=r['model'],scope='primary bounded exact explanation scoring',seconds=r['explanation_seconds']))
     for r in components:costs.append(dict(stage=r['kind'],model=r['model'],scope='bounded scoring and explanation',seconds=r['seconds']))
     write('cost',costs)
     shap=load('reports/phase13_components/shap_compatibility.json')

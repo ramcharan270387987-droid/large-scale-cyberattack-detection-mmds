@@ -23,19 +23,28 @@
     "supervised": {
       "kernel_version": 1,
       "worker_status": "COMPLETE",
-      "status": "global and exact numerical evidence validated; corrected conditional strata pending",
+      "status": "validated",
+      "private_cpu": true,
+      "completion_marker": "PHASE13 archived supervised explanations complete",
+      "log_sha256": "f73880bc576ff26a7c5cb0a8fbe7c67ca6cbdf1282860e6bc33d5dae2ba42645",
+      "log_events": 546,
+      "last_log_seconds": 568.76273629,
+      "submitted_source_sha256": "4458efc84faa813c776f0c324202427e12c489d25ac925f0f00e8d956122ffd0",
       "artifacts": {
         "reports/phase13_supervised/receipt.json": "08e128d13a4c9a033237c5fde31ccdebaee752e179ea3aaa90018d6ec2b060f7",
         "reports/phase13_supervised/explanations.json": "044cfbb7f4ffa8013a58858326252a7371abdc177eeca2c55eae8911d10deafd"
-      },
-      "log_sha256": "f73880bc576ff26a7c5cb0a8fbe7c67ca6cbdf1282860e6bc33d5dae2ba42645",
-      "private_local_explanations": "Kaggle version1 mmds_phase13/private_local_explanations.json"
+      }
     },
     "permutation": {
       "kernel_version": 2,
       "worker_status": "COMPLETE",
-      "submitted_source_sha256": "e1cb508e580c6a9653a2492478c27b2a32e145a057aeaec67489ab48d0418e62",
       "status": "validated",
+      "private_cpu": true,
+      "completion_marker": "PHASE13 permutation complete",
+      "log_sha256": "e31bd33ac21b6f774c7ff9ea466947a3c6c2e87b5740a49e7ad57ceb0fd1d7e1",
+      "log_events": 738,
+      "last_log_seconds": 659.485663101,
+      "submitted_source_sha256": "e1cb508e580c6a9653a2492478c27b2a32e145a057aeaec67489ab48d0418e62",
       "artifacts": {
         "reports/phase13_permutation/permutation.json": "5103b6f5ae0b5f4389b7f0566b523347ea1f119a553a9bd7617193b2446c2dae",
         "reports/phase13_permutation/model_metadata.json": "3ca1116a6bcfa4651a4f9235423bca0fe6af3fb26c47158be2ec7ce687c9050c",
@@ -59,6 +68,11 @@
         "reports/phase13_components/components.json": "1a26fea48bf5bb05964180271ed4d50075f68857e1e24bfa5d8cb63d40f5022c",
         "reports/phase13_components/linear_shap_stability.json": "9f8bbbd7b4c51c68e3ff3c6356ea59f63d57cae94eb2e3be3870a374f26e9ced"
       }
+    },
+    "diagnostics": {
+      "kernel_version": 4,
+      "worker_status": "SUBMITTED",
+      "submitted_source_sha256": "67649fcf543a4c52bb5cc368919afa6217c8c7e8cd9d1e3ff9ca43fd6d8d47ee"
     }
   }
 }

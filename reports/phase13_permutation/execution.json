@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase-13-explainable-ai/2",
+  "private_cpu": true,
+  "completion_marker": "PHASE13 permutation complete",
+  "log_sha256": "e31bd33ac21b6f774c7ff9ea466947a3c6c2e87b5740a49e7ad57ceb0fd1d7e1",
+  "log_events": 738,
+  "last_log_seconds": 659.485663101,
+  "submitted_source_sha256": "e1cb508e580c6a9653a2492478c27b2a32e145a057aeaec67489ab48d0418e62",
+  "artifacts": {
+    "reports/phase13_permutation/permutation.json": "5103b6f5ae0b5f4389b7f0566b523347ea1f119a553a9bd7617193b2446c2dae",
+    "reports/phase13_permutation/model_metadata.json": "3ca1116a6bcfa4651a4f9235423bca0fe6af3fb26c47158be2ec7ce687c9050c",
+    "reports/phase13_permutation/receipt.json": "939c859f409a3c730e805bc29494f0de2a83519a7f7c6db2cbfca8bc0257b543",
+    "reports/phase13_permutation/feature_distributions.json": "af356e8f588488d9090c41b6f4586309553fb115e8a90f15927ec76df5b62d33"
+  }
+}

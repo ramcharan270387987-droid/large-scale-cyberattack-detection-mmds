@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase-13-explainable-ai/1",
+  "private_cpu": true,
+  "completion_marker": "PHASE13 archived supervised explanations complete",
+  "log_sha256": "f73880bc576ff26a7c5cb0a8fbe7c67ca6cbdf1282860e6bc33d5dae2ba42645",
+  "log_events": 546,
+  "last_log_seconds": 568.76273629,
+  "submitted_source_sha256": "4458efc84faa813c776f0c324202427e12c489d25ac925f0f00e8d956122ffd0",
+  "artifacts": {
+    "reports/phase13_supervised/receipt.json": "08e128d13a4c9a033237c5fde31ccdebaee752e179ea3aaa90018d6ec2b060f7",
+    "reports/phase13_supervised/explanations.json": "044cfbb7f4ffa8013a58858326252a7371abdc177eeca2c55eae8911d10deafd"
+  }
+}
