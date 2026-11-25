@@ -1,0 +1,11 @@
+# Phase 14 external inference contract
+
+The persisted external pipelines accept the ordered double predictors `flow_duration`, `tot_fwd_pkts`, `tot_bwd_pkts`. Duration is conditionally compatible in microseconds; counts follow first-packet biflow direction. These semantics are supported by documentation and the label-free duration/rate identity, not authenticated extractor equivalence. Fifteen other source predictors remain unverified for transfer. Exact archived 18-feature external transfer must fail the compatibility gate; it cannot silently fill features or substitute a newly fitted pipeline.
+
+E2 identifies newly source-trained common-feature models with source-only imputation, scaling and calibration. E3 identifies target-trained models with target-training preprocessing. The model registry binds source versions, training support, feature order, pipeline-component SHA256s and calibration histograms. Missing/nonfinite/negative numerical values follow the finite-mask and train-only imputation policy. Invalid feature order/schema is rejected by the existing contract tests. No target-test labels fit a transform, choose a model or select a threshold.
+
+Probability coordinate1 is the binary attack score. The operating rule uses the saved 2048-bin whole-score mapping, saturating probability1 to bin2047; threshold bin2048 means never positive. Fixed0.5 uses bin1024 and remains a distinct comparison. Validation-budget thresholds maximize recall subject to benign validationFPR<=1%, with the frozen tie rules. This is not a future FPR guarantee. Undefined metrics remain null.
+
+External original labels remain separate from the source family taxonomy. Conditional common-vector collisions are not authenticated duplicate network events. Primary and conservative source-exposure-excluded populations have separate denominators. The secondary grouped target sampling deviation remains disclosed; actual sampled groups/flows, rather than nominal fractions, describe training effort.
+
+Saved pipeline reload and probability parity were independently verified in a second Kaggle runtime and separate local processes. Phase14 adds no deployed service, user upload flow or live inference dashboard. The isolated preview displays verified archived aggregate results. Interactive production inference belongs to the later Phase15 scope.

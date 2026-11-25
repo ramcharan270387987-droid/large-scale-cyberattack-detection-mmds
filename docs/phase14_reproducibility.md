@@ -13,3 +13,9 @@ Stage14Bversion1 failed a quantile probability type bug after producing private 
 All benchmarks force numerical/model columns through actions and validate counts/results. OS cache is uncontrolled. Primary runs retain three repetitions and a distinct warmup. One bounded FP-Growth fit is cost evidence, not a stable scaling estimate. Local[1]/[2]/[4] are single-machine configurations. No deployment or Phase15/16 work is included.
 
 Storage benchmarks encode binary record fingerprints as lossless hexadecimal in both newly materialized matchedCSV and matchedParquet representations. Numerical predictors, labels and logical record multiplicities are unchanged. Both conversion times are separate from read/query timings.
+
+## Accepted continuation
+
+Stage14Dversion1 was recovered without rerunning its48measurements and16warmups. Its populations,logs,source equality and independent repetition/checksum acceptance are persisted under reports/phase14_14D. Stage14E attaches this exact version and the pinned original producer,using the original LR/RF artifacts. The optimization runner enforces the existing3GiBscratch and20GiBsampled-process-tree limits before proceeding to subsequent workloads.
+
+14E retains all three prescribed timing repetitions. It does not discard a separate per-condition warmup:input materialization/reference calculations occur before measured operations,and execution order is retained. The primary14Dmatrix has its explicitly separated warmups. OS cache and shared-JVM conditioning remain uncontrolled. SparkContext initialization is recorded separately;Python/Pandas import/setup overhead is not an independently isolated engine-startup measurement. Paired CSV loading/checksum,end-to-end query and already-loaded compute timings have distinct scopes. A single FP-Growth fit is a bounded cost measurement,not repeated scaling evidence.
