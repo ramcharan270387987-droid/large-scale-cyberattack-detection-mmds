@@ -37,7 +37,16 @@ class Registry:
         return json.loads(p.read_text())['model'] if p.exists() else None
 
     def request(self, identifier):
-        if identifier in self.seen: return False
+        requests=self.root / 'requests'
+        requests.mkdir(exist_ok=True)
+        marker=requests / (digest(identifier)+'.json')
+        try:
+            with marker.open('x') as stream:
+                json.dump({'request':identifier},stream)
+                stream.flush()
+                os.fsync(stream.fileno())
+        except FileExistsError:
+            return False
         self.seen.add(identifier)
         return True
 

@@ -87,7 +87,9 @@ class SparkBackend:
         from pyspark.ml import PipelineModel
         from src.streaming.model_scoring import probe
         from pyspark.ml.functions import vector_to_array
-        meta=self.meta[key]; target=self.output/meta['receipt']['artifact']
+        meta=self.meta[key]
+        if meta['features']!=self.names:raise ValueError('Feature schema mismatch')
+        target=self.output/meta['receipt']['artifact']
         for relative,expected in meta['receipt']['sha256'].items():
             if sha256((target/relative).read_bytes()).hexdigest()!=expected:raise ValueError('Model hash mismatch')
         loaded=PipelineModel.load(str(target))

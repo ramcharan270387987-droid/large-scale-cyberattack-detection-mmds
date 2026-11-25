@@ -79,6 +79,7 @@ class SyntheticBackend:
                         'reload_probe':after.tolist(),'independent_reload':True,'preprocessing_fit_role':0}
         return key
     def verify(self,key):
+        if self.meta[key]['features']!=18: raise ValueError('Feature schema mismatch')
         p=Path(self.meta[key]['archive'])
         if hashlib.sha256(p.read_bytes()).hexdigest()!=self.meta[key]['sha256']: raise ValueError('Hash mismatch')
         loaded=pickle.loads(p.read_bytes()); probes=np.vstack([np.zeros(18),np.arange(18),np.full(18,np.nan)])

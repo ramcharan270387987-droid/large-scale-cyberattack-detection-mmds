@@ -29,6 +29,7 @@ class Phase12Tests(unittest.TestCase):
             self.assertEqual(Registry(root).active,'a')
             with self.assertRaises(ValueError): r.register('a',{'probe':[.4]})
             self.assertTrue(r.request('batch')); self.assertFalse(r.request('batch'))
+            self.assertFalse(Registry(root).request('batch'))
     def test_threshold_ties_and_confusion(self):
         hist={0:[990,0],1500:[10,20]}
         threshold=operating(hist); m=evaluate(hist,threshold)

@@ -307,5 +307,10 @@
       "attack_family": "Bot",
       "count": "143274"
     }
-  ]
+  ],
+  "reconciled_retained_counts": {
+    "0": 13191622,
+    "1": 1151256,
+    "2": 980109
+  }
 }
