@@ -1,0 +1,133 @@
+{
+  "status": "validated",
+  "stage": "13C-permutation",
+  "input": {
+    "path": "/kaggle/input/notebooks/ramcharan2345/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "samples": [
+    {
+      "protocol": "A",
+      "rows": 1000,
+      "by_day": [
+        {
+          "day": "2018-02-14",
+          "rows": 63
+        },
+        {
+          "day": "2018-02-15",
+          "rows": 73
+        },
+        {
+          "day": "2018-02-16",
+          "rows": 51
+        },
+        {
+          "day": "2018-02-20",
+          "rows": 501
+        },
+        {
+          "day": "2018-02-21",
+          "rows": 45
+        },
+        {
+          "day": "2018-02-22",
+          "rows": 74
+        },
+        {
+          "day": "2018-02-23",
+          "rows": 79
+        },
+        {
+          "day": "2018-02-28",
+          "rows": 27
+        },
+        {
+          "day": "2018-03-01",
+          "rows": 24
+        },
+        {
+          "day": "2018-03-02",
+          "rows": 63
+        }
+      ],
+      "split": {
+        "purged_rows": 0,
+        "prepurge_predictor_groups": {
+          "groups": 0,
+          "rows": 0
+        }
+      }
+    },
+    {
+      "protocol": "B",
+      "rows": 1000,
+      "by_day": [
+        {
+          "day": "2018-03-01",
+          "rows": 211
+        },
+        {
+          "day": "2018-03-02",
+          "rows": 789
+        }
+      ],
+      "split": {
+        "purged_rows": 909956,
+        "prepurge_predictor_groups": {
+          "groups": 136985,
+          "rows": 2773438
+        }
+      }
+    }
+  ],
+  "conditions_per_model": 121,
+  "rows_per_condition": 1000,
+  "models": 6,
+  "threshold": 0.5,
+  "auc_definition": "2048 whole-score bins; step PR and trapezoidal ROC",
+  "resources": {
+    "spark_version": "4.3.0",
+    "master": "local[4]",
+    "driver_memory": "8g",
+    "shuffle_partitions": 48,
+    "input_partition_bytes": 67108864,
+    "default_parallelism": 4,
+    "cpu_affinity": 4,
+    "scratch_output_free_bytes_start": 20938559488,
+    "memory.max": "32212254720",
+    "cpu.max": "400000 100000"
+  },
+  "driver_peak_rss_bytes": 4902531072,
+  "seconds": 575.94894048,
+  "sha256": {
+    "phase8_split_diagnostics.csv": "c3a0ea358281f0867acd084b4093d63529d09567fdf80e708702223d6e9fd7e2",
+    "model_metadata.json": "3ca1116a6bcfa4651a4f9235423bca0fe6af3fb26c47158be2ec7ce687c9050c",
+    "feature_distributions.json": "af356e8f588488d9090c41b6f4586309553fb115e8a90f15927ec76df5b62d33",
+    "permutation.json": "5103b6f5ae0b5f4389b7f0566b523347ea1f119a553a9bd7617193b2446c2dae"
+  }
+}
