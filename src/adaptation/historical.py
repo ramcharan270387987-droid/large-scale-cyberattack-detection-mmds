@@ -23,6 +23,7 @@ class SparkBackend:
         self.train=group_sample(prepared.where('split_rank=0'),{'seed':seed,'group_sample_permyriad':sample}).where('sampled').drop('sampled')
         self.sample_cohorts=[r.asDict() for r in self.train.groupBy('source_day','binary_label','attack_family').count().collect()]
         self.counts=role_support(self.train.groupBy('source_day','split_rank').count().collect())
+        distribution_start=time.monotonic()
         values=self.train.where(F.col('source_day').isin(self.initial)).select('flow_duration')
         self.edges=sorted(set(values.approxQuantile('flow_duration',[i/10 for i in range(1,10)],.001)))
         def bincol():
@@ -35,6 +36,7 @@ class SparkBackend:
         ref=[0]*(len(self.edges)+1)
         for r in self.train.where(F.col('source_day').isin(self.initial)).groupBy(bincol().alias('bin')).count().collect():ref[r.bin]=r['count']
         self.reference=ref
+        self.distribution_construction_seconds=time.monotonic()-distribution_start
     def clock(self,day): return datetime.fromisoformat(day).replace(tzinfo=timezone.utc).timestamp()+86400
     def support(self,days,role):
         if role==0:return sum(self.counts.get((d,0),0) for d in days)
@@ -218,6 +220,7 @@ def run(project,input_root,output,scratch,stage):
             if getattr(backend,'frozen_reload',None):summary['frozen_reference_reload']=backend.frozen_reload
             summary['reused_model_receipts']=[r for b in backends.values() for r in getattr(b,'reuse_receipts',[])]
             summary['physical_fits']=sum(b.physical_fits for b in backends.values())
+            summary['distribution_construction_seconds']={b.name:b.distribution_construction_seconds for b in backends.values()}
             atomic_json(output/'phase12_summary.json',summary)
             print('RUN_COMPLETE',result['summary'],flush=True)
         for backend in backends.values():

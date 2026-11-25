@@ -31,6 +31,8 @@ class Registry:
         self.root.mkdir(parents=True, exist_ok=True)
         self.seen = set()
         self.active = self._read_active()
+        pointer=self.root / 'active.json'
+        self.active_threshold=json.loads(pointer.read_text()).get('threshold_bin') if pointer.exists() else None
 
     def _read_active(self):
         p = self.root / 'active.json'
@@ -61,16 +63,18 @@ class Registry:
                 f.flush()
                 os.fsync(f.fileno())
 
-    def activate(self, identifier, fail_before_replace=False):
+    def activate(self, identifier, fail_before_replace=False, *, threshold=None):
         if not (self.root / (identifier + '.json')).exists(): raise ValueError('Unknown model')
+        if threshold is not None and (not isinstance(threshold,int) or not 0<=threshold<=2048):raise ValueError('Invalid operating threshold')
         temporary = self.root / 'active.pending'
         with temporary.open('w') as f:
-            json.dump({'model': identifier}, f)
+            json.dump({'model': identifier,'threshold_bin':threshold}, f)
             f.flush()
             os.fsync(f.fileno())
         if fail_before_replace: raise RuntimeError('Injected interrupted pointer update')
         os.replace(temporary, self.root / 'active.json')
         self.active = identifier
+        self.active_threshold=threshold
 
 
 def digest(value):

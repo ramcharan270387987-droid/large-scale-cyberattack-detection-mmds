@@ -46,7 +46,9 @@ def main():
         for policy,group in w.groupby('policy'):
             axes[0].plot(group.window,group.recall*100,'o-',label=policy)
             axes[1].plot(group.window,group.model.map(versions),'o-',label=policy)
-            axes[2].plot(group.window,group.label_release_index,'o-',label=policy)
+        released=windows[windows.run.str.startswith('E-LR-seed23013-sample125-weight1-') & windows.policy.eq('P0')]
+        for delay,group in released.groupby('delay'):
+            axes[2].plot(group.window,group.label_release_index,'o-',label='delay '+str(delay))
         for ax in axes:ax.legend(ncol=7,fontsize=7);ax.set_xlabel('Historical capture index')
         axes[0].set_ylabel('Forward recall (%)');axes[1].set_ylabel('Saved model categorical index');axes[2].set_ylabel('Label release arrival index')
         axes[0].set_title('Historical E · recall, active versions and label clocks')

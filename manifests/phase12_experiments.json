@@ -3,10 +3,10 @@
   "complete": false,
   "protocol_commit": "3ff45ef",
   "phase11_parent": "96c1885ef97243e4de33757603fe1530994f0f8e",
-  "stage": "12B",
-  "next_stage": "12C",
+  "stage": "12C",
+  "next_stage": "12D",
   "focused_tests_passed": 7,
-  "historical_executed": false,
+  "historical_executed": true,
   "synthetic_executed": true,
   "protected_refs": {
     "work": "16ef2c23bbfe33c497d32863173455185fe868ed",
@@ -54,6 +54,19 @@
       "models_verified": 9,
       "primary_eligible": false,
       "reason": "14 capture-only rows omitted; replacement primary version3 retains inherited policy"
+    }
+  },
+  "historical_stages": {
+    "12C": {
+      "kernel_version": "ramcharan2345/mmds-phase-12-adaptive-learning-model-refresh/3",
+      "status": "COMPLETE",
+      "runs": 4,
+      "models_verified": 9,
+      "source_commit": "01f17db7df40fc86943d6c9e53d96f2f2dd50af8",
+      "summary_sha256": "9c430adc186d576118813c72c2ff9dc98b318cebd5f57be17743e118cbb2c647",
+      "elapsed_seconds": 666.215498616,
+      "retained_rows": 16232943,
+      "physical_fits": 9
     }
   }
 }

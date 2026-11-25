@@ -108,3 +108,41 @@ class Phase12Tests(unittest.TestCase):
         validate_coverage(16232943,16232943,14,14)
         with self.assertRaises(ValueError):validate_coverage(16232943,16232929,14,14)
         with self.assertRaises(ValueError):validate_coverage(16232943,16232943,0,14)
+    def test_runtime_prediction_precedes_label_use(self):
+        from src.adaptation.synthetic_benchmark import SyntheticBackend
+        from src.adaptation.prequential_runner import run
+        with tempfile.TemporaryDirectory() as root:
+            backend=SyntheticBackend('stationary',23013,root)
+            score,fit,hist=backend.score,backend.fit,backend.hist
+            arrival=[None];delay=3
+            def score_checked(key,day,role):
+                if role==2:arrival[0]=day
+                return score(key,day,role)
+            def fit_checked(days):
+                if days!=backend.initial:
+                    self.assertIsNotNone(arrival[0]);self.assertLessEqual(max(days),arrival[0]-delay)
+                return fit(days)
+            def hist_checked(key,days,role):
+                if role==1 and days!=backend.calibration:
+                    self.assertIsNotNone(arrival[0]);self.assertLessEqual(max(days),arrival[0]-delay)
+                return hist(key,days,role)
+            backend.score=score_checked;backend.fit=fit_checked;backend.hist=hist_checked
+            result=run(backend,'P1',delay,Path(root)/'registry',period=8,sliding=8,minimum=50,budget=2)
+            self.assertEqual(result['summary']['retrainings'],2)
+    def test_atomic_operating_point_recovery(self):
+        with tempfile.TemporaryDirectory() as root:
+            registry=Registry(root);registry.register('a',{'features':18});registry.register('b',{'features':18})
+            registry.activate('a',threshold=1700)
+            with self.assertRaises(RuntimeError):registry.activate('b',True,threshold=1800)
+            restored=Registry(root)
+            self.assertEqual((restored.active,restored.active_threshold),('a',1700))
+            with self.assertRaises(ValueError):registry.activate('a',threshold=-1)
+    def test_completed_batch_replay_is_idempotent(self):
+        from src.adaptation.synthetic_benchmark import SyntheticBackend
+        from src.adaptation.prequential_runner import run
+        with tempfile.TemporaryDirectory() as root:
+            backend=SyntheticBackend('stationary',23013,root)
+            first=run(backend,'P1',0,Path(root)/'registry',period=8,sliding=8,minimum=50,budget=2)
+            count=backend.physical_fits
+            second=run(backend,'P1',0,Path(root)/'registry',period=8,sliding=8,minimum=50,budget=2)
+            self.assertEqual(first,second);self.assertEqual(backend.physical_fits,count)

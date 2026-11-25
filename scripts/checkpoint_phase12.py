@@ -1,5 +1,5 @@
 """Record a verified stage without marking later stages complete."""
-import argparse,json,hashlib
+import argparse,json,hashlib,csv
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -15,7 +15,9 @@ def main():
     m.update(stage=a.stage,next_stage={'12C':'12D','12D':'12E','12E':'12F'}[a.stage],historical_executed=True,complete=False)
     (ROOT/'manifests/phase12_experiments.json').write_text(json.dumps(m,indent=2)+'\n')
     if a.stage=='12C':
-        reference={'kernel_version':a.version,'initial_model':receipt.get('initial_model'),'summary_sha256':retrieval['summary_sha256']}
+        policies=list(csv.DictReader((prefix/'policy_comparison.csv').open()))
+        initial=next(row['initial_model'] for row in policies if row['policy']=='P0')
+        reference={'kernel_version':a.version,'initial_model':initial,'summary_sha256':retrieval['summary_sha256']}
         (ROOT/'manifests/phase12_frozen_reference.json').write_text(json.dumps(reference,indent=2)+'\n')
     print('VERIFIED_STAGE',a.stage,a.version)
 if __name__=='__main__':main()

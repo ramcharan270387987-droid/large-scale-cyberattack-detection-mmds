@@ -19,6 +19,22 @@ def main():
         if target=='model_registry':rows=list({r['model']:r for r in rows}.values())
         tables[target]=rows;csv_write(R/f'phase12_{target}.csv',rows)
     policies=tables['policy_comparison'];windows=tables['prequential_metrics'];models=tables['model_registry']
+    design=json.loads((ROOT/'configs/phase12_adaptation.yaml').read_text())
+    for model in models:
+        family=model['family'];model['hyperparameters']=(design['lr']|{'standardization':False} if family=='LR' else design['rf'])|{'seed':int(model['backend'].split('-seed')[1].split('-')[0]),'positive_class_weight':int(model['backend'].split('-weight')[1])}
+        model['feature_registry_version']='phase4-v1'
+        model['training_population']='E permanent fitting predictor groups, sampled by predictor key'
+        model['training_sample_policy']=model['backend'].split('-sample')[-1].split('-weight')[0]+'/10000'
+        model['training_date_range']=[min(json.loads(model['training_days'])),max(json.loads(model['training_days']))]
+        model['lifecycle_table']='reports/phase12_model_lifecycle.csv'
+        for stage in stages:
+            raw=read(stage/'models.csv')
+            if any(r['model']==model['model'] for r in raw):
+                version=json.loads((stage/'retrieval.json').read_text())['kernel_version']
+                receipt=json.loads(model['receipt'])
+                model['archive_location']=version+'/'+receipt['artifact']
+                break
+    csv_write(R/'phase12_model_registry.csv',models)
     summaries={r['run']:r for r in policies}
     baselines={(r['backend'],r['delay']):r for r in policies if r['policy']=='P0'}
     comparisons=[]

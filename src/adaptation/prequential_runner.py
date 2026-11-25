@@ -1,5 +1,7 @@
 """Backend-independent predict-before-release replay, with measured activation clocks."""
 import time
+import json,os
+from pathlib import Path
 from src.adaptation.lifecycle import Registry, digest, eligible, released, training_window
 from src.adaptation.evaluation import evaluate, guarded, merge, operating, js
 
@@ -7,12 +9,17 @@ from src.adaptation.evaluation import evaluate, guarded, merge, operating, js
 def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown=2, minimum=200, advanced=False):
     registry=Registry(root)
     tag=f'{backend.name}-{policy}-d{delay}-b{budget}-p{period}-s{sliding}-c{cooldown}-m{minimum}-a{advanced}'
+    completed=Path(root)/'completed_run.json'
+    if completed.exists():
+        saved=json.loads(completed.read_text())
+        if saved['summary']['run']!=tag:raise ValueError('Replay identity conflict')
+        return saved
     current=backend.fit(backend.initial)
     initial=current
     threshold=operating(backend.hist(current,backend.calibration,1))
     initial_threshold=threshold
     current_meta=backend.meta[current]
-    registry.register(current,current_meta); registry.activate(current)
+    registry.register(current,current_meta); registry.activate(current,threshold=threshold)
     windows=[]; triggers=[]; events=[]; thresholds=[]; predictions=[]; family=[]; retention=[]
     arrived=[]; used=set(); attempts=0; last=-999; pending=None; previous=None; previous_threshold=None
     promoted_metrics=evaluate(backend.hist(current,backend.calibration,1),threshold)
@@ -28,17 +35,18 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
             previous,previous_threshold=(None,None) if pending.get('rollback') else (current,threshold)
             current,threshold=pending['model'],pending['threshold']
             promoted_metrics=pending['metrics']
-            t=time.monotonic(); registry.activate(current); registry_seconds+=time.monotonic()-t
+            t=time.monotonic(); registry.activate(current,threshold=threshold); registry_seconds+=time.monotonic()-t
             events[pending['event']]['activation_index']=index
             events[pending['event']]['activation_time']=arrival
             pending=None
         # No label release or training occurs before this scoring call.
         started=time.monotonic()
         hists=backend.score(current,day,2)
-        score_seconds+=time.monotonic()-started
+        window_score_seconds=time.monotonic()-started
+        score_seconds+=window_score_seconds
         aggregate=merge(hists.values()); metric=evaluate(aggregate,threshold)
         row={'run':tag,'policy':policy,'delay':delay,'window':index,'day':str(day),'model':current,
-             'threshold_bin':threshold,'arrival_time':arrival,'prediction_time':arrival,
+             'threshold_bin':threshold,'score_call_seconds':window_score_seconds,'arrival_time':arrival,'prediction_time':arrival,
              'label_release_index':index+delay,'fit_last_day':str(max(backend.meta[current]['training_days'])),
              'staleness_seconds':arrival-backend.clock(max(backend.meta[current]['training_days'])),**metric}
         windows.append(row); predictions.append((aggregate,threshold))
@@ -163,4 +171,10 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
              'coverage':1.0,'auc_caveat':'Descriptive pooled raw scores across versions; cross-version calibration is not guaranteed.'}
     benign=pooled['fp']+pooled['tn']
     summary['false_alarms_per_million_benign']=1e6*pooled['fp']/benign if benign else None
-    return {'summary':summary,'windows':windows,'triggers':triggers,'events':events,'thresholds':thresholds,'family':family,'retention':retention}
+    result={'summary':summary,'windows':windows,'triggers':triggers,'events':events,'thresholds':thresholds,'family':family,'retention':retention}
+    temporary=completed.with_suffix('.pending')
+    with temporary.open('w') as stream:
+        json.dump(result,stream,allow_nan=False)
+        stream.flush();os.fsync(stream.fileno())
+    os.replace(temporary,completed)
+    return result
