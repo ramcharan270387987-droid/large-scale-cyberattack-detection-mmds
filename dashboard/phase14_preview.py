@@ -98,7 +98,7 @@ def main():
     if section=='External confusion matrices':
         values=list(data.index);chosen=st.selectbox('Matrix context',values,format_func=lambda i:f"{data.loc[i,'model']} · {data.loc[i,'evaluation_protocol']} · {data.loc[i,'operating']} · {data.loc[i,'sensitivity']}");row=data.loc[chosen];st.table(pd.DataFrame([[int(row.tn),int(row.fp)],[int(row.fn),int(row.tp)]],index=['Actual benign','Actual attack'],columns=['Predicted benign','Predicted attack']));st.caption(f'Confusion population: {int(row.rows):,} retained flows')
     else:chart(data,section)
-    st.dataframe(data,hide_index=True,width='stretch');st.download_button('Download filtered CSV',csv_bytes(data),SECTIONS[section],'text/csv',on_click='ignore')
+    st.dataframe(data,hide_index=True,width='stretch');st.download_button('Download filtered CSV',csv_bytes(data),SECTIONS[section],'text/csv',key='csv_'+evidence_id(data),on_click='ignore')
     if section=='Caching':
         path=ROOT/'reports/phase14_cache_break_even.csv'
         if path.exists():

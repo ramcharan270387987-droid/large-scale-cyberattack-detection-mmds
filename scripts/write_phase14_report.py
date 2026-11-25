@@ -95,7 +95,7 @@ Input-loading includes parsing plus the same consumed numeric checksum. End-to-e
 
 Archived Phase4B18-feature LR/RF inference forces actual probability sums and positive decisions,with three repetitions. These are internal source benchmark models,not the unsupported external18-feature transfer. The bounded Phase10A3 FP-Growth cost uses at most100ktransactions and original6feature discretization/minSupport.05;one fit is explicitly budgeted cost evidence,not stable mining scalability. Source/target fitting costs come from completed14C;Phase6replay reuses49microbatches and15,322,987flows rather than retiming completed work.
 
-Kaggle observes fourCPUquota threads,8GiBdriver heap and30GiBcontainer memory on virtualizedIntelXeon2.20GHz hardware. RSS is sampled every0.2seconds,with Python,JVM and process-tree peaks separate;configured heap is not measuredRSS. CPU process-tree deltas are reported only when process membership is stable. Actual shuffle/spill/task imbalance/eviction metrics remain unavailable. Resource limits reserve3GiBscratch and stop subsequent heavy work above20GiBsampled treeRSS. Whole-stage receipts and raw repetitions record observed versions and resources. Local Python3.12validation and KagglePython3.13execution are not claimed identical.
+Kaggle observes fourCPUquota threads,8GiBdriver heap and30GiBcontainer memory on virtualizedIntelXeon2.20GHz hardware. RSS is sampled every0.2seconds,with Python,JVM and process-tree peaks separate;configured heap is not measuredRSS. CPU process-tree deltas are reported only when process membership is stable. Pandas actions share the resident Spark JVM;their process-tree RSS is an environment peak,not isolated Pandas memory or incremental engine allocation. Actual shuffle/spill/task imbalance/eviction metrics remain unavailable. Resource limits reserve3GiBscratch and stop subsequent heavy work above20GiBsampled treeRSS. Whole-stage receipts and raw repetitions record observed versions and resources. Local Python3.12validation and KagglePython3.13execution are not claimed identical.
 
 ## Persistence,figures and laboratory
 
@@ -116,5 +116,12 @@ The study combines auditable common-feature external validation with matched num
     import re
     text=re.sub(r'\b(Phase)(1[0-6])\b',r'\1 \2',text)
     text=re.sub(r'\b(All|all|Only|only|uses|has|total|There are|at|to|from|and|plus|of|with|contains|preserves|adds)(?=\d)',r'\1 ',text)
+    text=re.sub(r',(?=[A-Za-z])',', ',text)
+    text=re.sub(r';(?=\S)','; ',text)
+    text=re.sub(r'\b(Stage|Recovered|including|pinned|records|cover|within|is|are|as|original|archived|Canonical|canonical|common|leaves|trains|target|source|first|at|all|plus|three|independent|minimum|maximum)(?=\d)',r'\1 ',text)
+    text=re.sub(r'(?<=\d)(?=(?:rows|flows|benign|attacks|attack|eligible|data|headers|header|features|feature|negative|infinite|NaN|physical|with|for|of|and|plus|component|saved|pipelines|pipeline|trees|iterations|warmups|partitions|queries|threads|transactions|bytes|records|measurements|budget|supported|external|microbatches|seconds|version|July|source|controls)\b)', ' ',text)
+    text=re.sub(r'(14[DEVF])(?=version)',r'\1 ',text)
+    text=re.sub(r'\b(version|July|Spark|Python|GiB|MiB|iteration|depth|seed|regParam|minInstances|maxBins|partitions)(?=\d)',r'\1 ',text)
+    text=text.replace('atab6e940','at ab6e940').replace('ate0347bc','at e0347bc').replace('officialCSE-CIC2018corpus','official CSE-CIC2018 corpus').replace('CICIDS2017mirror','CICIDS2017 mirror').replace('declaresCCBY4.0','declares CC BY 4.0').replace('literalUTF8','literal UTF8').replace('U+FFFDbytes','U+FFFD bytes')
     (ROOT/'reports/phase14_research_report.md').write_text(text);print('Wrote scientific report')
 if __name__=='__main__':main()

@@ -1,0 +1,2 @@
+model,evaluation_protocol,sample_kind,threshold_bin,max_logit_residual,day,family,outcome,rows,mean_score,high_confidence_errors,mean_signed_contributions,attribution_visible,suppression
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-06,Web Attack � XSS,FN,8,0.1908952122489714,0,"[0.05340682469083032, -5.271328365534647e-05, -1.2649197296771565e-05]",True,Aggregated stratum >=5

@@ -1,0 +1,19 @@
+feature,domain,condition,source_minimum,source_maximum,quantiles,median,interquartile_range,rows,missing,outside_source_range
+flow_duration,source_training,all,0.0,120000000.0,"[0.0, 532.0, 22550.0, 2923465.0, 120000000.0]",22550.0,2922933.0,13191622,14,0
+flow_duration,external_all,all,0.0,120000000.0,"[0.0, 155.0, 31306.0, 3168511.0, 119999998.0]",31306.0,3168356.0,2830743,115,0
+flow_duration,source_training,benign,0.0,120000000.0,"[0.0, 464.0, 30154.0, 3853354.0, 120000000.0]",30154.0,3852890.0,10892078,14,0
+flow_duration,external_all,benign,0.0,120000000.0,"[0.0, 174.0, 30990.0, 446868.0, 119999998.0]",30990.0,446694.0,2273097,115,0
+flow_duration,source_training,attack,0.0,120000000.0,"[0.0, 1244.0, 13882.0, 1037262.0, 119999998.0]",13882.0,1036018.0,2299544,0,0
+flow_duration,external_all,attack,0.0,120000000.0,"[0.0, 49.0, 311276.0, 84140095.0, 119995180.0]",311276.0,84140046.0,557646,0,0
+tot_fwd_pkts,source_training,all,1.0,309629.0,"[1.0, 1.0, 2.0, 5.0, 309629.0]",2.0,4.0,13191622,0,0
+tot_fwd_pkts,external_all,all,1.0,309629.0,"[1.0, 2.0, 2.0, 5.0, 219759.0]",2.0,3.0,2830743,0,0
+tot_fwd_pkts,source_training,benign,1.0,309629.0,"[1.0, 1.0, 2.0, 7.0, 12639.0]",2.0,6.0,10892078,0,0
+tot_fwd_pkts,external_all,benign,1.0,309629.0,"[1.0, 2.0, 2.0, 4.0, 219759.0]",2.0,2.0,2273097,0,0
+tot_fwd_pkts,source_training,attack,1.0,309629.0,"[1.0, 2.0, 2.0, 3.0, 309629.0]",2.0,1.0,2299544,0,0
+tot_fwd_pkts,external_all,attack,1.0,309629.0,"[1.0, 1.0, 3.0, 6.0, 5523.0]",3.0,5.0,557646,0,0
+tot_bwd_pkts,source_training,all,0.0,38418.0,"[0.0, 0.0, 1.0, 4.0, 38418.0]",1.0,4.0,13191622,0,0
+tot_bwd_pkts,external_all,all,0.0,38418.0,"[0.0, 1.0, 2.0, 4.0, 291922.0]",2.0,3.0,2830743,0,55
+tot_bwd_pkts,source_training,benign,0.0,38418.0,"[0.0, 1.0, 1.0, 5.0, 38418.0]",1.0,4.0,10892078,0,0
+tot_bwd_pkts,external_all,benign,0.0,38418.0,"[0.0, 1.0, 2.0, 2.0, 291922.0]",2.0,1.0,2273097,0,55
+tot_bwd_pkts,source_training,attack,0.0,38418.0,"[0.0, 0.0, 0.0, 4.0, 109.0]",0.0,4.0,2299544,0,0
+tot_bwd_pkts,external_all,attack,0.0,38418.0,"[0.0, 1.0, 1.0, 6.0, 5525.0]",1.0,5.0,557646,0,0

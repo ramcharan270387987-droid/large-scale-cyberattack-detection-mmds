@@ -1,0 +1,3 @@
+dataset,reference,rows,capture_period,provenance,license
+MMDS source release,saisathwikregula/mmds-dataset-23013/1,16232943,February–March2018,Pinned10file source audit andPhase2producer;upstream mirror description absent,Apache2.0 declared in mirror metadata;full upstream chain unverified
+CICIDS2017 mirror,shadman1028/cicids2017-official-flow-feature-csv-files/1,2830743,3–7July2017,UNBcollection documentation;8rawstylefiles;observedSHA256s;no official digest chain,Mirror declaresCCBY4.0;official research use requires citation

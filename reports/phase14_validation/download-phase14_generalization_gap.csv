@@ -1,0 +1,2 @@
+dataset,evaluation_protocol,sensitivity,operating,model_family,metric,rows,source_value,target_trained_value,target_minus_source,relative_change,interpretation
+CICIDS2017 mirror,grouped,primary,validation_budget,majority,roc_auc,508641,0.5,0.5,0.0,0.0,"Matched external test observations; target-trained versus source-only common3,not a causal shift effect"

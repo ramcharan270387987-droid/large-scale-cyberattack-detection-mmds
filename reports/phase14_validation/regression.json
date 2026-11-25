@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "original_tests": 161,
+  "added_tests": 3,
+  "total": 164,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 231.651,
+  "python": "3.12.14",
+  "spark": "4.3.0",
+  "command": "python -m unittest discover -s tests -v",
+  "log_sha256": "8996f211869bfbfb1532986afebcef26b31856f72da72891ca5a08b5d8f46b24",
+  "warnings": "Existing CSV ResourceWarnings, native Hadoop fallback and Spark local.dir warning; no failing tests"
+}

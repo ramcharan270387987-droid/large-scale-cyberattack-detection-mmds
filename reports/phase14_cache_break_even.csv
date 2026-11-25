@@ -1,0 +1,2 @@
+actual_rows,uncached_query_seconds,warm_query_seconds,materialization_seconds,break_even_queries,interpretation
+1000860,0.42830292900003997,0.2911107869999796,3.1056420649999836,23,Materialization/(uncached minus warm);undefined when caching does not reduce query time;OS cache uncontrolled

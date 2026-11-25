@@ -1,0 +1,96 @@
+dataset,protocol,chronological_rank,source_day,binary_label,attack_family,count,grouped_rank,split_rank
+external,chronological,0,2017-07-05,1,DoS Slowhttptest,5499,,
+external,chronological,2,2017-07-07,1,DDoS,127376,,
+external,chronological,0,2017-07-05,1,Heartbleed,11,,
+external,chronological,0,2017-07-05,1,DoS Hulk,231073,,
+external,chronological,0,2017-07-05,0,BENIGN,440031,,
+external,chronological,0,2017-07-05,1,DoS GoldenEye,10293,,
+external,chronological,0,2017-07-05,1,DoS slowloris,5796,,
+external,chronological,2,2017-07-07,1,Bot,1225,,
+external,chronological,2,2017-07-07,1,PortScan,674,,
+external,chronological,2,2017-07-07,0,BENIGN,179664,,
+external,chronological,0,2017-07-03,0,BENIGN,529918,,
+external,chronological,1,2017-07-06,1,Web Attack � XSS,622,,
+external,chronological,1,2017-07-06,1,Infiltration,34,,
+external,chronological,1,2017-07-06,1,Web Attack � Brute Force,1341,,
+external,chronological,1,2017-07-06,0,BENIGN,159277,,
+external,chronological,0,2017-07-04,1,FTP-Patator,7938,,
+external,chronological,0,2017-07-04,1,SSH-Patator,5897,,
+external,chronological,0,2017-07-04,0,BENIGN,432074,,
+external,chronological,1,2017-07-06,1,Web Attack � Sql Injection,12,,
+external,grouped,,2017-07-05,1,DoS slowloris,893,2,
+external,grouped,,2017-07-05,1,DoS Hulk,28162,1,
+external,grouped,,2017-07-05,1,DoS Slowhttptest,3952,0,
+external,grouped,,2017-07-07,1,DDoS,19093,2,
+external,grouped,,2017-07-07,1,Bot,247,1,
+external,grouped,,2017-07-05,1,DoS Hulk,46329,2,
+external,grouped,,2017-07-05,1,Heartbleed,9,0,
+external,grouped,,2017-07-05,1,DoS Hulk,156582,0,
+external,grouped,,2017-07-05,1,DoS GoldenEye,1582,2,
+external,grouped,,2017-07-07,1,Bot,1429,0,
+external,grouped,,2017-07-07,1,DDoS,18974,1,
+external,grouped,,2017-07-05,0,BENIGN,302426,0,
+external,grouped,,2017-07-05,0,BENIGN,59513,1,
+external,grouped,,2017-07-05,1,DoS GoldenEye,7153,0,
+external,grouped,,2017-07-05,1,DoS slowloris,4082,0,
+external,grouped,,2017-07-05,1,DoS Slowhttptest,769,2,
+external,grouped,,2017-07-07,0,BENIGN,285199,0,
+external,grouped,,2017-07-07,1,Bot,290,2,
+external,grouped,,2017-07-07,1,PortScan,33225,2,
+external,grouped,,2017-07-05,0,BENIGN,78092,2,
+external,grouped,,2017-07-05,1,DoS Slowhttptest,778,1,
+external,grouped,,2017-07-07,1,PortScan,116395,0,
+external,grouped,,2017-07-07,0,BENIGN,71115,2,
+external,grouped,,2017-07-05,1,DoS GoldenEye,1558,1,
+external,grouped,,2017-07-07,1,PortScan,9310,1,
+external,grouped,,2017-07-05,1,DoS slowloris,821,1,
+external,grouped,,2017-07-07,1,DDoS,89960,0,
+external,grouped,,2017-07-07,0,BENIGN,58008,1,
+external,grouped,,2017-07-05,1,Heartbleed,2,2,
+external,grouped,,2017-07-03,0,BENIGN,96410,2,
+external,grouped,,2017-07-03,0,BENIGN,362264,0,
+external,grouped,,2017-07-03,0,BENIGN,71244,1,
+external,grouped,,2017-07-06,1,Web Attack � XSS,104,1,
+external,grouped,,2017-07-06,1,Web Attack � XSS,445,0,
+external,grouped,,2017-07-06,1,Infiltration,28,0,
+external,grouped,,2017-07-06,1,Web Attack � Brute Force,238,2,
+external,grouped,,2017-07-06,1,Web Attack � Brute Force,223,1,
+external,grouped,,2017-07-06,1,Web Attack � Brute Force,1046,0,
+external,grouped,,2017-07-06,1,Infiltration,6,2,
+external,grouped,,2017-07-06,0,BENIGN,82347,2,
+external,grouped,,2017-07-06,1,Web Attack � Sql Injection,11,0,
+external,grouped,,2017-07-06,0,BENIGN,315937,0,
+external,grouped,,2017-07-06,0,BENIGN,58468,1,
+external,grouped,,2017-07-06,1,Web Attack � XSS,103,2,
+external,grouped,,2017-07-04,1,FTP-Patator,5355,0,
+external,grouped,,2017-07-04,0,BENIGN,75648,2,
+external,grouped,,2017-07-04,0,BENIGN,58761,1,
+external,grouped,,2017-07-04,1,SSH-Patator,4214,0,
+external,grouped,,2017-07-04,1,SSH-Patator,860,2,
+external,grouped,,2017-07-04,1,FTP-Patator,1633,2,
+external,grouped,,2017-07-04,1,SSH-Patator,823,1,
+external,grouped,,2017-07-04,1,FTP-Patator,950,1,
+external,grouped,,2017-07-04,0,BENIGN,297665,0,
+external,grouped,,2017-07-06,1,Web Attack � Sql Injection,6,2,
+external,grouped,,2017-07-06,1,Web Attack � Sql Injection,4,1,
+external,grouped,,2017-07-06,1,Infiltration,2,1,
+source,B-common,,2018-02-22,0,Benign,1048213,,0
+source,B-common,,2018-02-21,0,Benign,360833,,0
+source,B-common,,2018-02-20,1,DDoS,576191,,0
+source,B-common,,2018-02-28,1,Infiltration,23061,,1
+source,B-common,,2018-02-16,0,Benign,446772,,0
+source,B-common,,2018-02-20,0,Benign,7372557,,0
+source,B-common,,2018-02-21,1,DDoS,687742,,0
+source,B-common,,2018-02-14,1,Credential brute force,380949,,0
+source,B-common,,2018-02-15,1,DoS,52498,,0
+source,B-common,,2018-02-23,0,Benign,469607,,1
+source,B-common,,2018-02-22,1,Web attack,362,,0
+source,B-common,,2018-03-01,1,Infiltration,26507,,2
+source,B-common,,2018-02-16,1,DoS,601802,,0
+source,B-common,,2018-02-23,1,Web attack,262,,1
+source,B-common,,2018-02-15,0,Benign,996077,,0
+source,B-common,,2018-03-02,0,Benign,346453,,2
+source,B-common,,2018-02-14,0,Benign,667626,,0
+source,B-common,,2018-02-28,0,Benign,182919,,1
+source,B-common,,2018-03-01,0,Benign,87464,,2
+source,B-common,,2018-03-02,1,Bot,3514,,2

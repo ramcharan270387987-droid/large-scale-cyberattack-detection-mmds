@@ -1,0 +1,2 @@
+matrix,configuration,workers,actual_rows,repetitions,median_seconds,min_seconds,max_seconds,spread_seconds,rows_per_second,python_rss_sampled_peak,jvm_rss_sampled_peak,tree_rss_sampled_peak,correctness
+cache,warm_materialized,4,1000860,3,0.2911107869999796,0.2419018620000201,0.3972852759999909,0.1553834139999708,3438072.53009855,206786560,2152132608,2358919168,PASS

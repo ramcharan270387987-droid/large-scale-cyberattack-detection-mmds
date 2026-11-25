@@ -1,0 +1,3 @@
+dataset,eligible_rows,within_one_percent_microsecond_identity,fraction,quantiles,definition,label_information_used
+source,16137169,16137169,1.0,"[999999.9984541906, 1000000.0, 1000000.0014597506]",duration * packets_per_second / (forward_count+reverse_count); expected1000000 for microseconds,False
+external,2827761,2827761,1.0,"[999999.9971521404, 1000000.0, 1000000.0027901598]",duration * packets_per_second / (forward_count+reverse_count); expected1000000 for microseconds,False

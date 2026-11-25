@@ -1,0 +1,258 @@
+[
+  {
+    "section": "External dataset overview",
+    "status": "PASS",
+    "filters": [
+      "Dataset"
+    ],
+    "download_rows": 2,
+    "evidence_id": "66da2f65f66d1ca4",
+    "download_sha256": "66da2f65f66d1ca4d14480fd98bc9aad21155345fa8859aa78c860814d755835"
+  },
+  {
+    "section": "Dataset provenance",
+    "status": "PASS",
+    "filters": [
+      "Dataset"
+    ],
+    "download_rows": 1,
+    "evidence_id": "17af01804eccfe63",
+    "download_sha256": "17af01804eccfe639ac4bac7c53658102ca06d37b4c051c46be689f575661154"
+  },
+  {
+    "section": "Feature compatibility",
+    "status": "PASS",
+    "filters": [],
+    "download_rows": 18,
+    "evidence_id": "dedde279337bffa1",
+    "download_sha256": "dedde279337bffa1166cf749c7078130d0893f222155120803dd78d41330055d"
+  },
+  {
+    "section": "External model comparison",
+    "status": "PASS",
+    "filters": [
+      "Dataset",
+      "Evaluation protocol",
+      "Sensitivity",
+      "Operating",
+      "Model"
+    ],
+    "download_rows": 1,
+    "evidence_id": "f70e8b60bae436d1",
+    "download_sha256": "f70e8b60bae436d126a3ac0d506592d9a1eed5b82b3f88b7a704ed9704bdb92a"
+  },
+  {
+    "section": "Frozen versus target-trained",
+    "status": "PASS",
+    "filters": [
+      "Dataset",
+      "Evaluation protocol",
+      "Sensitivity",
+      "Operating",
+      "Model family",
+      "Metric"
+    ],
+    "download_rows": 1,
+    "evidence_id": "b9193de4fa493d22",
+    "download_sha256": "b9193de4fa493d226d2af558aefd8fdf69bc4451ffa8a55e50a738ccc2b16450"
+  },
+  {
+    "section": "Source versus external generalization",
+    "status": "PASS",
+    "filters": [
+      "Evaluation protocol",
+      "Operating",
+      "Domain",
+      "Model"
+    ],
+    "download_rows": 1,
+    "evidence_id": "b17d5e3321303948",
+    "download_sha256": "b17d5e3321303948184d4c600ba265d5440c0a6a224ca1636b7f503fe5d26892"
+  },
+  {
+    "section": "External confusion matrices",
+    "status": "PASS",
+    "filters": [
+      "Dataset",
+      "Evaluation protocol",
+      "Sensitivity",
+      "Operating",
+      "Model"
+    ],
+    "download_rows": 1,
+    "evidence_id": "f70e8b60bae436d1",
+    "download_sha256": "f70e8b60bae436d126a3ac0d506592d9a1eed5b82b3f88b7a704ed9704bdb92a"
+  },
+  {
+    "section": "Attack-family performance",
+    "status": "PASS",
+    "filters": [
+      "Evaluation protocol",
+      "Sensitivity",
+      "Operating",
+      "Model",
+      "Attack family"
+    ],
+    "download_rows": 1,
+    "evidence_id": "5453d654f376e4a0",
+    "download_sha256": "5453d654f376e4a0e1fdf683eedbb1134a568a6df24bec90734ed7ba066e5b23"
+  },
+  {
+    "section": "Distribution differences",
+    "status": "PASS",
+    "filters": [
+      "Domain",
+      "Condition",
+      "Feature"
+    ],
+    "download_rows": 1,
+    "evidence_id": "df8edd5a88af392e",
+    "download_sha256": "df8edd5a88af392ef30b1b8b463c66ee766bbf35931d91a8eacfa096110ed8f5"
+  },
+  {
+    "section": "Distribution shift indices",
+    "status": "PASS",
+    "filters": [
+      "Condition",
+      "Feature"
+    ],
+    "download_rows": 1,
+    "evidence_id": "1dd77878ff54c9b3",
+    "download_sha256": "1dd77878ff54c9b3b93d482cb6510fe30c688e99775a07b510290195af360737"
+  },
+  {
+    "section": "Failure analysis",
+    "status": "PASS",
+    "filters": [
+      "Evaluation protocol",
+      "Model",
+      "Attack family",
+      "Case selection"
+    ],
+    "download_rows": 1,
+    "evidence_id": "437e7f78de8c88f0",
+    "download_sha256": "437e7f78de8c88f092fa131d7587b4cdf5ec8d8413c3dedfde70b2fb53af3e04"
+  },
+  {
+    "section": "Data-volume scaling",
+    "status": "PASS",
+    "filters": [
+      "Workload",
+      "Storage format",
+      "Worker count",
+      "Partition count",
+      "Cache configuration",
+      "Requested data size"
+    ],
+    "download_rows": 1,
+    "evidence_id": "7a62ba8f4eea7779",
+    "download_sha256": "7a62ba8f4eea77794610bea8f50d446931333f54841a0810c042532c682e9f9f"
+  },
+  {
+    "section": "Worker scaling",
+    "status": "PASS",
+    "filters": [
+      "Workload",
+      "Storage format",
+      "Worker count",
+      "Partition count",
+      "Cache configuration"
+    ],
+    "download_rows": 1,
+    "evidence_id": "11e1cd0a2de68028",
+    "download_sha256": "11e1cd0a2de68028d4026e700e6e6c4d6e2f1dd9208d55576e07db5c85135f17"
+  },
+  {
+    "section": "Speedup and efficiency",
+    "status": "PASS",
+    "filters": [
+      "Workload",
+      "Storage format",
+      "Worker count",
+      "Partition count",
+      "Cache configuration"
+    ],
+    "download_rows": 1,
+    "evidence_id": "11e1cd0a2de68028",
+    "download_sha256": "11e1cd0a2de68028d4026e700e6e6c4d6e2f1dd9208d55576e07db5c85135f17"
+  },
+  {
+    "section": "CSV versus Parquet",
+    "status": "PASS",
+    "filters": [
+      "Storage format"
+    ],
+    "download_rows": 1,
+    "evidence_id": "2d255e9a9e9938a4",
+    "download_sha256": "2d255e9a9e9938a41bf31dc434ea1d876c4ff8226c10b4099e07c3516b3cd2d5"
+  },
+  {
+    "section": "Partitioning",
+    "status": "PASS",
+    "filters": [
+      "Experiment matrix",
+      "Worker count",
+      "Configuration"
+    ],
+    "download_rows": 1,
+    "evidence_id": "48e2fbb12da0c3a4",
+    "download_sha256": "48e2fbb12da0c3a4e1230cc89b281af676b1071d14dda987303e82d362b94d18"
+  },
+  {
+    "section": "Caching",
+    "status": "PASS",
+    "filters": [
+      "Experiment matrix",
+      "Worker count",
+      "Configuration"
+    ],
+    "download_rows": 1,
+    "evidence_id": "5cf369285e814683",
+    "download_sha256": "5cf369285e8146838f62d4c2d794689980bc3c484b2aada4a72274e55e41f580"
+  },
+  {
+    "section": "Spark versus Pandas",
+    "status": "PASS",
+    "filters": [
+      "Experiment matrix",
+      "Worker count",
+      "Configuration"
+    ],
+    "download_rows": 1,
+    "evidence_id": "44aad11f20fc2d04",
+    "download_sha256": "44aad11f20fc2d0422454db61b2de5b1f1107b9fdf51869a83958bebefc41308"
+  },
+  {
+    "section": "Resource consumption",
+    "status": "PASS",
+    "filters": [
+      "Workload",
+      "Worker count",
+      "Configuration",
+      "Repetition",
+      "Warmup"
+    ],
+    "download_rows": 1,
+    "evidence_id": "4750c0efa23251a5",
+    "download_sha256": "4750c0efa23251a5cc9967a53cb4d62a288ba80bda65555c01b1f52101b484d2"
+  },
+  {
+    "section": "Benchmark repetitions",
+    "status": "PASS",
+    "filters": [
+      "Experiment matrix",
+      "Workload",
+      "Storage format",
+      "Worker count",
+      "Partition count",
+      "Cache configuration",
+      "Requested data size",
+      "Repetition",
+      "Warmup",
+      "Status"
+    ],
+    "download_rows": 1,
+    "evidence_id": "bf4f4071ad442efc",
+    "download_sha256": "bf4f4071ad442efcf0cee92534b4b756f3d0bb0d1f13df5b93d94720fdd0e59c"
+  }
+]

@@ -1,0 +1,2 @@
+matrix,configuration,workers,actual_rows,repetitions,median_seconds,min_seconds,max_seconds,spread_seconds,rows_per_second,python_rss_sampled_peak,jvm_rss_sampled_peak,tree_rss_sampled_peak,correctness
+Spark_Pandas_input_loading,spark-500000,4.0,500000,3,0.4505028219999758,0.4146121279999875,0.4905994449999866,0.0759873169999991,1109870.9610303547,249524224,2908180480,3157704704,PASS

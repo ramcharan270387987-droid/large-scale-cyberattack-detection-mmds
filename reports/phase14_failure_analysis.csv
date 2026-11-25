@@ -1,0 +1,73 @@
+model,evaluation_protocol,sample_kind,threshold_bin,max_logit_residual,day,family,outcome,rows,mean_score,high_confidence_errors,mean_signed_contributions,attribution_visible,suppression
+E2-B-common-LR,chronological,representative_groups,312,4.440892098500626e-16,2017-07-07,BENIGN,TN,63,0.12636010129698227,0,"[-0.2468449350540049, 0.0005072668694269812, -0.0035600055794346793]",True,Aggregated stratum >=5
+E2-B-common-LR,chronological,representative_groups,312,4.440892098500626e-16,2017-07-07,DDoS,FN,37,0.14349910297663707,3,"[-0.06793609251270305, 0.0001368276704261164, -0.0005402434932703798]",True,Aggregated stratum >=5
+E2-B-common-LR,chronological,enriched_groups,312,0.0,2017-07-07,PortScan,FN,8,0.14730311562298543,0,"[-0.029501878941733395, 0.00012656559514415768, -0.000573079393664107]",True,Aggregated stratum >=5
+E2-B-common-LR,chronological,enriched_groups,312,0.0,2017-07-07,Bot,FN,8,0.15052908432668513,0,"[-0.003287892532003069, 0.00011470007059939293, -0.0005501562179175426]",True,Aggregated stratum >=5
+E2-B-common-LR,chronological,enriched_groups,312,0.0,2017-07-07,DDoS,FN,8,0.12406918808919809,3,"[-0.2620576868436427, 0.00015820699393019713, -0.0008710806783694425]",True,Aggregated stratum >=5
+E2-B-common-LR,chronological,enriched_groups,312,0.0,2017-07-07,BENIGN,TN,8,0.137843980266799,0,"[-0.13343732861238258, 0.0003361898621016689, -0.002819550616827406]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,representative_groups,312,2.220446049250313e-16,2017-07-04,BENIGN,TN,18,0.13171205534096866,0,"[-0.18897489197108847, 0.0002513733348002021, -0.001395766701013025]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,representative_groups,312,2.220446049250313e-16,2017-07-03,BENIGN,TN,20,0.13683395078815538,0,"[-0.13064512240627119, 0.00019617667247344442, -0.0009444348407584484]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,representative_groups,312,2.220446049250313e-16,2017-07-05,BENIGN,TN,14,0.12817804351302864,0,"[-0.23290669127012825, 0.00022600999132885301, -0.0011527082661129467]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,representative_groups,312,2.220446049250313e-16,2017-07-05,DoS Hulk,FN,10,0.10260274643293435,7,"[-0.48410950667780667, 0.00018668425283763262, -0.0010636353546405824]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,representative_groups,312,2.220446049250313e-16,2017-07-07,BENIGN,TN,13,0.12001110511026176,0,"[-0.30544603198796716, 0.0007131484495622732, -0.005896546130500843]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,representative_groups,312,2.220446049250313e-16,2017-07-07,DDoS,FN,9,0.14703200072744446,0,"[-0.0314258176090667, 0.0001335970170966109, -0.0003871469681641967]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,representative_groups,312,2.220446049250313e-16,2017-07-06,BENIGN,TN,15,0.12441093158014035,0,"[-0.27156846822619374, 0.0002700066029742031, -0.0011981179856870932]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,representative_groups,312,2.220446049250313e-16,2017-07-04,FTP-Patator,FN,1,,0,,False,Values suppressed for strata<5; counts retained
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-07,PortScan,FN,8,0.14365680621353905,0,"[-0.06537243842025076, 5.9327622723823926e-05, -0.00022923175746564277]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-05,DoS Hulk,FN,8,0.08527007302437752,7,"[-0.6768107780722195, 0.00022148979150227595, -0.0010544660843419568]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-04,FTP-Patator,FN,8,0.14168227949233625,0,"[-0.07218958281030002, 0.0002847725890743548, -0.0027507810895877134]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-05,DoS GoldenEye,FN,8,0.13938225496714404,0,"[-0.09406567045977274, 0.0001819380430197267, -0.0007106184481434926]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-05,DoS slowloris,FN,8,0.11119167147609599,4,"[-0.4093142652441625, 0.00022148979150227597, -0.0002980012847053356]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-06,Web Attack � Brute Force,FN,8,0.14560493781695322,0,"[-0.042671954268769664, 9.492419635811827e-05, -0.0001833854059725142]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-06,Web Attack � Sql Injection,FN,6,0.14932051914468886,0,"[-0.013025276508270211, 6.855636403641874e-05, -0.0003667708119450285]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-07,Bot,FN,8,0.15067118431783455,0,"[-0.0022485418681637837, 9.492419635811828e-05, -0.0004584635149312855]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-07,DDoS,FN,8,0.13119927419573246,2,"[-0.18504111496321465, 0.0001582069939301971, -0.00045846351493128554]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-05,Heartbleed,FN,2,,1,,False,Values suppressed for strata<5; counts retained
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-04,SSH-Patator,FN,8,0.1387561102789971,0,"[-0.0937208953434206, 0.0006644693745068279, -0.005868332991120454]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-06,Web Attack � XSS,FN,8,0.14559406733124095,0,"[-0.042758679664603554, 9.492419635811827e-05, -0.0001833854059725142]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-05,BENIGN,TN,4,,0,,False,Values suppressed for strata<5; counts retained
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-07,BENIGN,TN,3,,0,,False,Values suppressed for strata<5; counts retained
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-03,BENIGN,TN,1,,0,,False,Values suppressed for strata<5; counts retained
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-05,DoS Slowhttptest,FN,8,0.08467438582883748,8,"[-0.6668758439904032, 0.00022940014119878578, -0.00025215493321220704]",True,Aggregated stratum >=5
+E2-B-common-LR,grouped,enriched_groups,312,4.440892098500626e-16,2017-07-06,Infiltration,FN,6,0.09623476883354597,4,"[-0.5158369709360823, 0.005953856538239751, -0.034659841728805194]",True,Aggregated stratum >=5
+E3-chronological-LR,chronological,representative_groups,1064,2.220446049250313e-16,2017-07-07,BENIGN,TN,63,0.22629755323188083,0,"[0.5235706815834179, -0.0002399018785233651, -0.00021972239212244746]",True,Aggregated stratum >=5
+E3-chronological-LR,chronological,representative_groups,1064,2.220446049250313e-16,2017-07-07,DDoS,FN,37,0.15372997169193445,0,"[0.14409591289854987, -6.470995278339632e-05, -3.334365354809499e-05]",True,Aggregated stratum >=5
+E3-chronological-LR,chronological,enriched_groups,1064,2.220446049250313e-16,2017-07-07,PortScan,FN,8,0.13883312792960534,0,"[0.06257498806745006, -5.985670632464157e-05, -3.537027469264664e-05]",True,Aggregated stratum >=5
+E3-chronological-LR,chronological,enriched_groups,1064,2.220446049250313e-16,2017-07-07,BENIGN,FP,8,0.519685287619221,0,"[1.970482182723307, -0.00030302457576849787, -0.00023061419099605613]",True,Aggregated stratum >=5
+E3-chronological-LR,chronological,enriched_groups,1064,2.220446049250313e-16,2017-07-07,Bot,FN,8,0.13190020887950527,0,"[0.006973787546328459, -5.424514010670642e-05, -3.3955463704940774e-05]",True,Aggregated stratum >=5
+E3-chronological-LR,chronological,enriched_groups,1064,2.220446049250313e-16,2017-07-07,DDoS,FN,8,0.22798314828744032,0,"[0.5558377030700752, -7.482088290580198e-05, -5.37628175328229e-05]",True,Aggregated stratum >=5
+E3-chronological-LR,chronological,enriched_groups,1064,2.220446049250313e-16,2017-07-07,BENIGN,TN,8,0.18371845710868595,0,"[0.28302737131296957, -0.00015899437617482916, -0.0001740217514878215]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,representative_groups,844,2.220446049250313e-16,2017-07-04,BENIGN,TN,18,0.22700853021000167,0,"[0.23603509288953375, -0.0001395925844947138, -9.627444609209471e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,representative_groups,844,2.220446049250313e-16,2017-07-03,BENIGN,TN,20,0.21184745575751368,0,"[0.16317952761389326, -0.00010894078622104936, -6.514336607837357e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,representative_groups,844,2.220446049250313e-16,2017-07-05,BENIGN,TN,14,0.23894869146228886,0,"[0.2909071778538138, -0.00012550781822701546, -7.950924015113558e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,representative_groups,844,2.220446049250313e-16,2017-07-05,DoS Hulk,FN,10,0.29769545781290385,0,"[0.6046667426849718, -0.00010366945785551473, -7.336534432127506e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,representative_groups,844,2.220446049250313e-16,2017-07-07,BENIGN,TN,13,0.2548812985671239,0,"[0.38151090751277905, -0.00039602543874401333, -0.0004067203438500395]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,representative_groups,844,2.220446049250313e-16,2017-07-07,DDoS,FN,9,0.18878755292009197,0,"[0.03925175297690041, -7.418906588530244e-05, -2.670386095985108e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,representative_groups,844,2.220446049250313e-16,2017-07-06,BENIGN,TN,15,0.2482697032648508,0,"[0.33919685284669854, -0.00014994000684187447, -8.264142233890756e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,representative_groups,844,2.220446049250313e-16,2017-07-04,FTP-Patator,FN,1,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-07,PortScan,FN,8,0.19683072414732278,0,"[0.08165206189031662, -3.294580228459155e-05, -1.5811496620964456e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,DoS Hulk,TP,8,0.41383955676496104,0,"[1.1496596970957342, -0.00017131817187987606, -5.850253749756849e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,DoS slowloris,TP,7,0.4142225347925767,0,"[1.151097204180413, -5.773359638442711e-05, -2.8912450964049293e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,DoS Hulk,FN,8,0.3468636891445287,0,"[0.8453561909978735, -0.00012299766186247513, -7.273288445643648e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-04,FTP-Patator,FN,8,0.19659401413543032,0,"[0.09016687194028254, -0.00015813985096603943, -0.0001897379594515735]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,DoS GoldenEye,FN,8,0.20116703654776524,0,"[0.11749073664286351, -0.00010103379367274742, -4.9015639524989807e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-06,BENIGN,FP,3,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-07,BENIGN,FP,1,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-04,BENIGN,FP,2,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-03,BENIGN,FP,2,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,DoS slowloris,FN,8,0.28186219290306175,0,"[0.5112453279385817, -0.00012299766186247513, -2.0554945607253788e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-06,Web Attack � Brute Force,FN,8,0.19087862019907176,0,"[0.05329850216899676, -5.271328365534647e-05, -1.2649197296771565e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-06,Web Attack � Sql Injection,FN,6,0.18524992873762955,0,"[0.01626894619953947, -3.807070486219468e-05, -2.529839459354313e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,DoS GoldenEye,TP,3,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-07,Bot,FN,8,0.18319970441148556,0,"[0.0028084936743831687, -5.271328365534648e-05, -3.1622993241928906e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-07,DDoS,FN,8,0.22433200228030095,0,"[0.23112169189866433, -8.785547275891079e-05, -3.1622993241928906e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,DoS Slowhttptest,TP,3,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,Heartbleed,FN,2,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-04,SSH-Patator,FN,8,0.20080720372861632,0,"[0.11706010257415013, -0.0003689929855874254, -0.0004047743134966901]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-04,SSH-Patator,TP,1,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-06,Web Attack � XSS,FN,8,0.19089521224897144,0,"[0.05340682469083032, -5.271328365534647e-05, -1.2649197296771565e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,BENIGN,TN,4,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-07,BENIGN,TN,3,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-03,BENIGN,TN,1,,0,,False,Values suppressed for strata<5; counts retained
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-05,DoS Slowhttptest,FN,8,0.34144078763414115,0,"[0.8329471716599413, -0.00012739043550042068, -1.7392646283060897e-05]",True,Aggregated stratum >=5
+E3-grouped-LR,grouped,enriched_groups,844,2.220446049250313e-16,2017-07-06,Infiltration,FN,6,0.3022650207637908,0,"[0.6442952610306638, -0.0033062942914936764, -0.0023906982890898256]",True,Aggregated stratum >=5

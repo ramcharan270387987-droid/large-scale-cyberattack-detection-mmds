@@ -1,0 +1,464 @@
+{
+  "schema": "phase14-figures-v1",
+  "unique_figures": 17,
+  "topic_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "figures": [
+    {
+      "file": "reports/figures/phase14_composition.png",
+      "sha256": "e37cfb9ac9de91cf9197cf4a992c3aa3a931d0925b1d5fbe627c600ff2183637",
+      "sources": [
+        "reports/phase14_dataset_composition.csv"
+      ],
+      "topics": [
+        1,
+        2
+      ],
+      "note": "Exact observed releases; class shares are flow-weighted,not independent repetitions",
+      "title": "Source and external dataset populations"
+    },
+    {
+      "file": "reports/figures/phase14_composition.svg",
+      "sha256": "7c1a510d86cb415cef05e8c06be1d89f50c792f514883a19b3a5af48d7d08f56",
+      "sources": [
+        "reports/phase14_dataset_composition.csv"
+      ],
+      "topics": [
+        1,
+        2
+      ],
+      "note": "Exact observed releases; class shares are flow-weighted,not independent repetitions",
+      "title": "Source and external dataset populations"
+    },
+    {
+      "file": "reports/figures/phase14_compatibility.png",
+      "sha256": "f4fd810222c854087ec435562ea15495a7fbca755cc253b318a05d26bb9aeb1a",
+      "sources": [
+        "reports/phase14_feature_mapping.csv"
+      ],
+      "topics": [
+        3
+      ],
+      "note": "Three documented duration/count predictors; exact18-feature archived transfer unsupported; no guessed zeros/conversions",
+      "title": "Feature compatibility and selected common contract"
+    },
+    {
+      "file": "reports/figures/phase14_compatibility.svg",
+      "sha256": "1591b9042daa4f533840e1e5be298f5daf5d2b0b87bb6aa75aa78cb5a8b2f224",
+      "sources": [
+        "reports/phase14_feature_mapping.csv"
+      ],
+      "topics": [
+        3
+      ],
+      "note": "Three documented duration/count predictors; exact18-feature archived transfer unsupported; no guessed zeros/conversions",
+      "title": "Feature compatibility and selected common contract"
+    },
+    {
+      "file": "reports/figures/phase14_distributions.png",
+      "sha256": "a6c58e2a4746234908f4730afc6fc3f8a70c8e7f3e8e6bf7966e27a0cd73d808",
+      "sources": [
+        "reports/phase14_distribution_support.csv"
+      ],
+      "topics": [
+        4
+      ],
+      "note": "Source training population versus all eligible external flows;symlog magnitude axes;extractor/capture differences remain",
+      "title": "Compatible-feature distributions across collections"
+    },
+    {
+      "file": "reports/figures/phase14_distributions.svg",
+      "sha256": "790dfc97b6ddd67575155c403c85ac7d999816223e47eced8e967b8251b4ec6a",
+      "sources": [
+        "reports/phase14_distribution_support.csv"
+      ],
+      "topics": [
+        4
+      ],
+      "note": "Source training population versus all eligible external flows;symlog magnitude axes;extractor/capture differences remain",
+      "title": "Compatible-feature distributions across collections"
+    },
+    {
+      "file": "reports/figures/phase14_external_models.png",
+      "sha256": "c9660d3e436ef94bc07845897db8d70a617eb50eeef9399ca966a46cfb8ee3ba",
+      "sources": [
+        "reports/phase14_external_model_comparison.csv"
+      ],
+      "topics": [
+        5,
+        6,
+        7
+      ],
+      "note": "Primary chronological external test N=308,939;3features;source-only andtarget-only validation thresholds",
+      "title": "Frozen source-only versus target-trained common-feature models"
+    },
+    {
+      "file": "reports/figures/phase14_external_models.svg",
+      "sha256": "ce04f2f026c87d69fa3a78d12cea8c7b6a69920a8e6646de04622cfea6ed6e6a",
+      "sources": [
+        "reports/phase14_external_model_comparison.csv"
+      ],
+      "topics": [
+        5,
+        6,
+        7
+      ],
+      "note": "Primary chronological external test N=308,939;3features;source-only andtarget-only validation thresholds",
+      "title": "Frozen source-only versus target-trained common-feature models"
+    },
+    {
+      "file": "reports/figures/phase14_roc_pr.png",
+      "sha256": "fbccdfefa1b8c4f6bd626815b84c6426b9e6c07e9918b0ead77ee1b29c7611fa",
+      "sources": [
+        "reports/phase14_external_curves.csv",
+        "reports/phase14_external_model_comparison.csv"
+      ],
+      "topics": [
+        8
+      ],
+      "note": "2048-bin tied-score ROC trapezoids/stepPR;horizontalPR line is each matched population attack prevalence",
+      "title": "External whole-score ROC and precision\u2013recall curves"
+    },
+    {
+      "file": "reports/figures/phase14_roc_pr.svg",
+      "sha256": "d6cb63217797dfb01a1af678338bda06a10db9f0727a15094b3e8526f5e86f37",
+      "sources": [
+        "reports/phase14_external_curves.csv",
+        "reports/phase14_external_model_comparison.csv"
+      ],
+      "topics": [
+        8
+      ],
+      "note": "2048-bin tied-score ROC trapezoids/stepPR;horizontalPR line is each matched population attack prevalence",
+      "title": "External whole-score ROC and precision\u2013recall curves"
+    },
+    {
+      "file": "reports/figures/phase14_families.png",
+      "sha256": "9877b21e252f8ef81853bb89d8b1bc0f61bbe1f3540f2dee2dcfc26648d64d13",
+      "sources": [
+        "reports/phase14_external_family_metrics.csv"
+      ],
+      "topics": [
+        9
+      ],
+      "note": "Chronological retained test only;original external categories;unsupported families absent rather than zero-imputed",
+      "title": "Observed external attack-family detection"
+    },
+    {
+      "file": "reports/figures/phase14_families.svg",
+      "sha256": "a4951ee88c82dec4aa2644d346b64fe8a5230b583dc6906c6a8c8a3270afeb83",
+      "sources": [
+        "reports/phase14_external_family_metrics.csv"
+      ],
+      "topics": [
+        9
+      ],
+      "note": "Chronological retained test only;original external categories;unsupported families absent rather than zero-imputed",
+      "title": "Observed external attack-family detection"
+    },
+    {
+      "file": "reports/figures/phase14_calibration.png",
+      "sha256": "64791882699bb62b9374519a0c0a93f1aaf8eff67ad64489416203428e82281d",
+      "sources": [
+        "reports/phase14_calibration.csv"
+      ],
+      "topics": [
+        10
+      ],
+      "note": "Primary chronology;20reliability bins;midpoint approximation error<=1/4096 per score;no refitting on test labels",
+      "title": "External reliability without target-test calibration"
+    },
+    {
+      "file": "reports/figures/phase14_calibration.svg",
+      "sha256": "d1a9f6971a5b7a57fc3341fbce2966ad1963306699703a3fab40b4fd0cfdd82f",
+      "sources": [
+        "reports/phase14_calibration.csv"
+      ],
+      "topics": [
+        10
+      ],
+      "note": "Primary chronology;20reliability bins;midpoint approximation error<=1/4096 per score;no refitting on test labels",
+      "title": "External reliability without target-test calibration"
+    },
+    {
+      "file": "reports/figures/phase14_failures.png",
+      "sha256": "79cd418d8b14c21c61cc12e09854dcb7a67403896f421253378832c02f386db6",
+      "sources": [
+        "reports/phase14_failure_analysis.csv"
+      ],
+      "topics": [
+        11
+      ],
+      "note": "At most8cases per family/outcome;aggregates<5suppressed;enriched cases do not estimate prevalence;no treeSHAP",
+      "title": "Bounded external LR failure explanations"
+    },
+    {
+      "file": "reports/figures/phase14_failures.svg",
+      "sha256": "8a8c3fffee69606a86789fd217544f03736d3d2e802a1c5b6d9500b89377ea92",
+      "sources": [
+        "reports/phase14_failure_analysis.csv"
+      ],
+      "topics": [
+        11
+      ],
+      "note": "At most8cases per family/outcome;aggregates<5suppressed;enriched cases do not estimate prevalence;no treeSHAP",
+      "title": "Bounded external LR failure explanations"
+    },
+    {
+      "file": "reports/figures/phase14_volume.png",
+      "sha256": "31835b577c795abe0af85670162ff8f35d334d5b74edd701a5f13c17a84eedea",
+      "sources": [
+        "reports/phase14_scalability_summary.csv"
+      ],
+      "topics": [
+        12,
+        13,
+        14
+      ],
+      "note": "local[4];16shuffle partitions;snappyParquet;no explicitSpark cache;3measured repetitions;OS cache uncontrolled",
+      "title": "Observed data-volume scaling on one CPU machine"
+    },
+    {
+      "file": "reports/figures/phase14_volume.svg",
+      "sha256": "0e3bef405c914da03dc2576b1dc35b5c6e6728b66b36307da315c63820042feb",
+      "sources": [
+        "reports/phase14_scalability_summary.csv"
+      ],
+      "topics": [
+        12,
+        13,
+        14
+      ],
+      "note": "local[4];16shuffle partitions;snappyParquet;no explicitSpark cache;3measured repetitions;OS cache uncontrolled",
+      "title": "Observed data-volume scaling on one CPU machine"
+    },
+    {
+      "file": "reports/figures/phase14_workers.png",
+      "sha256": "3da6702c077d3ffb639e4f81f3fdf36ff89515737a21b6653c3deb9ca997a95f",
+      "sources": [
+        "reports/phase14_worker_scaling.csv"
+      ],
+      "topics": [
+        15,
+        16,
+        17
+      ],
+      "note": "Same approximate1Mpopulation;3repetitions;newSparkContexts in sharedJVM;single machine,not multiple nodes",
+      "title": "Local CPU parallelism and measured efficiency"
+    },
+    {
+      "file": "reports/figures/phase14_workers.svg",
+      "sha256": "9547008f1c24079aa62547adee7d52459a5d8ea75109ac00070fbbe87b73dade",
+      "sources": [
+        "reports/phase14_worker_scaling.csv"
+      ],
+      "topics": [
+        15,
+        16,
+        17
+      ],
+      "note": "Same approximate1Mpopulation;3repetitions;newSparkContexts in sharedJVM;single machine,not multiple nodes",
+      "title": "Local CPU parallelism and measured efficiency"
+    },
+    {
+      "file": "reports/figures/phase14_storage.png",
+      "sha256": "329785bbd39a26b8911e920f6ec1914ce88f17d6836148a605a677037a766ae2",
+      "sources": [
+        "reports/phase14_storage_comparison.csv"
+      ],
+      "topics": [
+        18,
+        19
+      ],
+      "note": "N=1,000,860;binary IDs losslesslyhex in both;conversion separate;3repetitions;OS cache uncontrolled",
+      "title": "CSV and Parquet on identical logical source rows"
+    },
+    {
+      "file": "reports/figures/phase14_storage.svg",
+      "sha256": "5258d581a12ef549d2ac53a3c2635238f44bd0eca06ec2856c693e88e53f78aa",
+      "sources": [
+        "reports/phase14_storage_comparison.csv"
+      ],
+      "topics": [
+        18,
+        19
+      ],
+      "note": "N=1,000,860;binary IDs losslesslyhex in both;conversion separate;3repetitions;OS cache uncontrolled",
+      "title": "CSV and Parquet on identical logical source rows"
+    },
+    {
+      "file": "reports/figures/phase14_partitions.png",
+      "sha256": "9fa3b509e56ca07a5270be943266fa6b391c8db32e5b85aa8e8f81d92d7c12cb",
+      "sources": [
+        "reports/phase14_partition_comparison.csv"
+      ],
+      "topics": [
+        20
+      ],
+      "note": "Matched approximate1Mpopulation;4/16/48partitions;AQEdisabled;3repetitions;shuffle/spill bytes not independently retrieved",
+      "title": "Repartition construction and subsequent query cost"
+    },
+    {
+      "file": "reports/figures/phase14_partitions.svg",
+      "sha256": "efdf5bdc2b00e0f213aeb3b206b7a1e90436ae2c721f8b184d236bc6de69123a",
+      "sources": [
+        "reports/phase14_partition_comparison.csv"
+      ],
+      "topics": [
+        20
+      ],
+      "note": "Matched approximate1Mpopulation;4/16/48partitions;AQEdisabled;3repetitions;shuffle/spill bytes not independently retrieved",
+      "title": "Repartition construction and subsequent query cost"
+    },
+    {
+      "file": "reports/figures/phase14_cache.png",
+      "sha256": "973828c9ea8746fdd297e2690cffdb137034dc59bf47d84fa84f19669d821853",
+      "sources": [
+        "reports/phase14_cache_comparison.csv"
+      ],
+      "topics": [
+        21
+      ],
+      "note": "Same rows/query;MEMORY_AND_DISK;first materialization1measurement,warm/uncached3queries;break-even separately tabulated",
+      "title": "Cache materialization versus repeated query cost"
+    },
+    {
+      "file": "reports/figures/phase14_cache.svg",
+      "sha256": "d91fc4ff4dccf29f33959951e9d3d6229678f5049286b6f3f9521ccc48633aa3",
+      "sources": [
+        "reports/phase14_cache_comparison.csv"
+      ],
+      "topics": [
+        21
+      ],
+      "note": "Same rows/query;MEMORY_AND_DISK;first materialization1measurement,warm/uncached3queries;break-even separately tabulated",
+      "title": "Cache materialization versus repeated query cost"
+    },
+    {
+      "file": "reports/figures/phase14_pandas.png",
+      "sha256": "f25bf5ef83eaa8e2d07c980e75854dccd78dbe968b3862be4f30e8eaeefbabcd",
+      "sources": [
+        "reports/phase14_pandas_comparison.csv"
+      ],
+      "topics": [
+        22
+      ],
+      "note": "100k/500k/at most1Mactual rows;3repetitions;loadedSpark data materialized before compute;startup separate;no universal superiority claim",
+      "title": "Bounded matched Spark and Pandas workloads"
+    },
+    {
+      "file": "reports/figures/phase14_pandas.svg",
+      "sha256": "2223a73baca14568984b0f0cb3eb9b453307cce98e397fa4bd6ee3f44a5ea1e0",
+      "sources": [
+        "reports/phase14_pandas_comparison.csv"
+      ],
+      "topics": [
+        22
+      ],
+      "note": "100k/500k/at most1Mactual rows;3repetitions;loadedSpark data materialized before compute;startup separate;no universal superiority claim",
+      "title": "Bounded matched Spark and Pandas workloads"
+    },
+    {
+      "file": "reports/figures/phase14_cost.png",
+      "sha256": "12a60db2a32c1a9403340658e8013b3f5ef498ccf3ae3fa67b8bb7ade4d6bb12",
+      "sources": [
+        "reports/phase14_model_cost.csv",
+        "reports/phase14_optimization_summary.csv"
+      ],
+      "topics": [
+        23
+      ],
+      "note": "Common3model fits once each;archived18feature inference3repetitions;FP-Growth100ktransactions,one budgeted fit;timings are batch costs",
+      "title": "Measured model fitting,inference and pattern-mining cost"
+    },
+    {
+      "file": "reports/figures/phase14_cost.svg",
+      "sha256": "695f6496216329de13e978e2b5b72df49b795bfd27b87e125a2adccede00a640",
+      "sources": [
+        "reports/phase14_model_cost.csv",
+        "reports/phase14_optimization_summary.csv"
+      ],
+      "topics": [
+        23
+      ],
+      "note": "Common3model fits once each;archived18feature inference3repetitions;FP-Growth100ktransactions,one budgeted fit;timings are batch costs",
+      "title": "Measured model fitting,inference and pattern-mining cost"
+    },
+    {
+      "file": "reports/figures/phase14_variability.png",
+      "sha256": "718a4fbed3aaac971937905f65be0122395e2e21663a62bc5fdb685d8de776b9",
+      "sources": [
+        "reports/phase14_scalability_runs.csv"
+      ],
+      "topics": [
+        24
+      ],
+      "note": "Dots=all3measured runs;black segment=median;grayX=warmup;sharedKaggle infrastructure,no significance claim",
+      "title": "Individual repetitions and separate warmups"
+    },
+    {
+      "file": "reports/figures/phase14_variability.svg",
+      "sha256": "c90e9fa13d07a6c308318091cabcfdb2f72c5a4feedaaeb758798e01f25fee50",
+      "sources": [
+        "reports/phase14_scalability_runs.csv"
+      ],
+      "topics": [
+        24
+      ],
+      "note": "Dots=all3measured runs;black segment=median;grayX=warmup;sharedKaggle infrastructure,no significance claim",
+      "title": "Individual repetitions and separate warmups"
+    },
+    {
+      "file": "reports/figures/phase14_source_external_gap.png",
+      "sha256": "2aa07f969faac2569ba0859cd99dd88760153c817b6a7f85193370991393f59c",
+      "sources": [
+        "reports/phase14_source_reference.csv",
+        "reports/phase14_external_model_comparison.csv"
+      ],
+      "topics": [
+        5,
+        6
+      ],
+      "note": "Different retained source/external populations and prevalences;descriptive gaps,not causal domain-shift estimates;E0archived18results separate",
+      "title": "Same frozen common-feature models across collections"
+    },
+    {
+      "file": "reports/figures/phase14_source_external_gap.svg",
+      "sha256": "ca936648dc020dcc259aae709baaf5c17f3d946640efcd087e01200064765743",
+      "sources": [
+        "reports/phase14_source_reference.csv",
+        "reports/phase14_external_model_comparison.csv"
+      ],
+      "topics": [
+        5,
+        6
+      ],
+      "note": "Different retained source/external populations and prevalences;descriptive gaps,not causal domain-shift estimates;E0archived18results separate",
+      "title": "Same frozen common-feature models across collections"
+    }
+  ]
+}

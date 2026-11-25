@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "committed_retrieval_artifacts_verified": 16,
+  "not_committed_artifacts": [],
+  "remote_model_components_verified": 150,
+  "remote_models": 12
+}

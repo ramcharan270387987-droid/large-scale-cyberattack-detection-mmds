@@ -1,0 +1,2 @@
+stage,workload,configuration,actual_rows,workers,repetition,warmup,python_rss_sampled_peak,jvm_rss_sampled_peak,tree_rss_sampled_peak,cpu_seconds_process_tree,cpu_percent_one_core_basis,cpu_measurement_limit
+14E,storage_projection_filter_query,parquet,1000860,4.0,3,False,206569472,1938251776,2144821248,1.3599999999999994,358.0099359603412,CPU delta unavailable when process membership changes

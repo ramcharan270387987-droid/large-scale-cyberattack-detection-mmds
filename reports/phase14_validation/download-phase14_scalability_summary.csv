@@ -1,0 +1,2 @@
+workload,requested_rows,format,workers,partitions,cache,actual_rows,repetitions,median_seconds,min_seconds,max_seconds,spread_seconds,rows_per_second,python_rss_sampled_peak,jvm_rss_sampled_peak,tree_rss_sampled_peak,correctness
+ingest_checksum,16232943,parquet,4,16,none explicit; OS cache uncontrolled,16232943,3,3.937763666999899,3.768809937000015,3.9480469360000825,0.1792369990000679,4122376.143606288,212709376,3585454080,3798163456,PASS

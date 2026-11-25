@@ -1,0 +1,2 @@
+model,experiment,evaluation_protocol,sensitivity,operating,threshold_bin,family,tp,tn,fp,fn,rows,accuracy,precision,recall,specificity,f1,balanced_accuracy,fpr,fnr,f2,mcc,roc_auc,pr_auc,support_status
+E3-grouped-majority,E3,grouped,primary,validation_budget,2048,Web Attack � XSS,0,0,0,103,103,0.0,,0.0,,0.0,,,1.0,0.0,,,,observed
