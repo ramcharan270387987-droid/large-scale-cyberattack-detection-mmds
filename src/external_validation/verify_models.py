@@ -26,6 +26,13 @@ def run(project,input_root,output,scratch):
             v=F.col(n);source=source.withColumn(n,F.when(v.isNotNull() & ~F.isnan(v) & (F.abs(v)!=float('inf')) & (v>=0),v))
         source=source.withColumn('predictor_key',vector_key(common)).withColumn('split_rank',F.when(F.col('source_day').isin(design['protocols']['B']['train']),0).when(F.col('source_day').isin(design['protocols']['B']['validation']),1).otherwise(2));first=source.groupBy('predictor_key').agg(F.min('split_rank').alias('earliest'));source=source.join(first,'predictor_key').where('split_rank=earliest').persist(StorageLevel.DISK_ONLY)
         audit_paths=list(input_root.rglob('external_audit.json'));assert len(audit_paths)==1;target=spark.read.parquet(str(audit_paths[0].parent/'feature_ready')).where('eligible').persist(StorageLevel.DISK_ONLY)
+        unit_checks=[]
+        for name,frame in [('source',raw),('external',target)]:
+            count=F.col('tot_fwd_pkts')+F.col('tot_bwd_pkts');ratio=F.col('flow_duration')*F.col('flow_pkts_s')/count;eligible=(F.col('flow_duration')>0) & (F.col('flow_pkts_s')>0) & (count>0) & (F.abs(ratio)!=float('inf')) & ~F.isnan(ratio)
+            values=frame.where(eligible).select(ratio.alias('implied_units_per_second'));support=values.count();q=values.approxQuantile('implied_units_per_second',[.01,.5,.99],.001);matches=values.where(F.abs(F.col('implied_units_per_second')/1000000.-1)<=.01).count()
+            unit_checks.append(dict(dataset=name,eligible_rows=support,within_one_percent_microsecond_identity=matches,fraction=matches/support if support else None,quantiles=q,definition='duration * packets_per_second / (forward_count+reverse_count); expected1000000 for microseconds',label_information_used=False))
+        atomic_json(output/'unit_consistency.json',unit_checks)
+        assert all(r['eligible_rows']>=1000 and r['fraction']>=.95 for r in unit_checks),'Duration/rate unit consistency not established;do not silently reinterpret units'
         model_paths=list(input_root.rglob('models.json'));assert len(model_paths)==1,'Attach completed external validation model output';registry=json.loads(model_paths[0].read_text());assert len(registry)==12
         populations=json.loads((model_paths[0].parent/'populations.json').read_text());test=source.where('split_rank=2');assert test.count()==sum(r['count'] for r in populations if r['dataset']=='source' and r['split_rank']==2)
         probes=spark.createDataFrame([(None,None,None),(0.,0.,0.),(1000000.,10.,5.)],','.join(n+' DOUBLE' for n in common))
