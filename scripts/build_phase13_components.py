@@ -50,7 +50,7 @@ for version,entries in requests.items():
     content=(local[entry['id']]/name).read_bytes() if entry['id'] in local else opened.read(prefix+'/'+name)
     if sha256(content).hexdigest()!=expected:raise ValueError('Component identity mismatch')
     files[entry['id']+'/'+name]=base64.b64encode(content).decode()
-sources={name:(ROOT/name).read_text() for name in ('src/explainability/components.py','src/explainability/run_components.py')}
+sources={name:(ROOT/name).read_text() for name in ('src/explainability/components.py','src/explainability/run_components.py','src/explainability/sampling.py')}
 payload=base64.b64encode(lzma.compress(json.dumps(files).encode())).decode()
 code=f'''extra=json.loads(lzma.decompress(base64.b64decode({payload!r})))
 for name,encoded in extra.items():

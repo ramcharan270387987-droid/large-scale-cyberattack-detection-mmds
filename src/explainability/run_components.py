@@ -19,6 +19,8 @@ from src.streaming.model_scoring import probe
 from src.explainability.exact import linear,verify_linear,distance,importance
 from src.explainability.components import reject,fusion
 
+from src.explainability.sampling import sample_groups
+
 
 def run(project,input_root,archives,inventory,output,scratch):
     start=monotonic();output.mkdir(parents=True,exist_ok=True);scratch.mkdir(parents=True,exist_ok=True)
@@ -38,8 +40,7 @@ def run(project,input_root,archives,inventory,output,scratch):
         for protocol in ('A','B','C'):
             active,split=benchmark_population(prepared,protocol,design,receipt['days'],original,output)
             populations[protocol]=active
-            samples[protocol]=(active.where('split_rank = 2').dropDuplicates(['predictor_key'])
-                .orderBy(F.xxhash64(F.lit(23013),'predictor_key'),'record_fingerprint').limit(1000)).persist(StorageLevel.DISK_ONLY)
+            samples[protocol]=sample_groups(active.where('split_rank = 2'),23013,1000).persist(StorageLevel.DISK_ONLY)
             samples[protocol].count()
         for entry in inventory:
             model=models[entry['id']];kind=entry['kind'];meta=entry['metadata'];protocol=entry['protocol'];tick=monotonic()
@@ -106,21 +107,33 @@ def run(project,input_root,archives,inventory,output,scratch):
             scaler=next(s for s in pipeline.stages if type(s).__name__=='StandardScalerModel');std=list(scaler.std)
             background_vectors={}
             for seed in (23013,23014):
-                background=populations[protocol].where('split_rank = 0').dropDuplicates(['predictor_key']).orderBy(F.xxhash64(F.lit(seed),'predictor_key')).limit(64)
+                background=sample_groups(populations[protocol].where('split_rank = 0'),seed,64)
                 background_vectors[seed]=[r.x for r in pipeline.transform(background).select(vector_to_array(estimator.getFeaturesCol()).alias('x')).collect()]
             for sample_seed in (23013,23014):
-                selected=populations[protocol].where('split_rank = 2').dropDuplicates(['predictor_key']).orderBy(F.xxhash64(F.lit(sample_seed),'predictor_key')).limit(1000)
-                values=pipeline.transform(selected).select(vector_to_array(estimator.getFeaturesCol()).alias('x'),vector_to_array('rawPrediction').alias('raw'),vector_to_array('probability').alias('p')).collect()
+                selected=sample_groups(populations[protocol].where('split_rank = 2'),sample_seed,1000)
+                values=pipeline.transform(selected).select('source_day','attack_family','binary_label','multiplicity',vector_to_array(estimator.getFeaturesCol()).alias('x'),vector_to_array('rawPrediction').alias('raw'),vector_to_array('probability').alias('p')).collect()
                 for sample_size in (100,500,1000):
                     sample=values[:sample_size]
                     for background_seed in (23013,23014):
                         for background_size in (32,64):
                             background=background_vectors[background_seed][:background_size]
                             reference=[sum(v[i] for v in background)/len(background) for i in range(len(coefficients))]
-                            explanations=[];maximum=0.;tick=monotonic()
+                            explanations=[];maximum=0.;tick=monotonic();case_strata={}
                             for row in sample:
                                 explanation=linear(coefficients,intercept,row.x,reference);verify_linear(explanation,row.raw[1],row.p[1]);maximum=max(maximum,abs(explanation['logit']-row.raw[1]));explanations.append(explanation['contributions'])
-                            stability.append(dict(protocol=protocol,method='exact interventional linear SHAP',output_space='log-odds',dependence_assumption='interventional empirical training background; no conditional dependence attribution',prediction_parity_verified=True,sample_seed=sample_seed,sample_size=len(sample),background_seed=background_seed,background_size=len(background),feature_order=feature_order,reference_mean=reference,reference_baseline=intercept+sum(c*v for c,v in zip(coefficients,reference)),mean_absolute_contributions=[sum(abs(v[i]) for v in explanations)/len(explanations) for i in range(len(coefficients))],mean_signed_contributions=[sum(v[i] for v in explanations)/len(explanations) for i in range(len(coefficients))],max_logit_residual=maximum,seconds=monotonic()-tick,raw_unit_coefficients=[c/s if s else None for c,s in zip(coefficients,std)],training_std=std))
+                                if sample_seed==23013 and sample_size==1000 and background_seed==23013 and background_size==64:
+                                    predicted=row.p[1]>=.5
+                                    outcome='TP' if row.binary_label and predicted else 'FN' if row.binary_label else 'FP' if predicted else 'TN'
+                                    key=(row.source_day,row.attack_family,outcome)
+                                    stat=case_strata.setdefault(key,dict(rows=0,high_confidence_errors=0,mean_score=0.,mean_margin=0.,mean_abs=[0.]*len(coefficients)))
+                                    stat['rows']+=1;stat['mean_score']+=row.p[1];stat['mean_margin']+=row.p[1]-.5
+                                    stat['high_confidence_errors']+=int((outcome=='FN' and row.p[1]<=.1) or (outcome=='FP' and row.p[1]>=.9))
+                                    for i,value in enumerate(explanation['contributions']):stat['mean_abs'][i]+=abs(value)
+                            for stat in case_strata.values():
+                                stat['mean_score']/=stat['rows'];stat['mean_margin']/=stat['rows'];stat['mean_abs']=[x/stat['rows'] for x in stat['mean_abs']]
+                            flow_mass=sum(row.multiplicity for row in sample)
+
+                            stability.append(dict(protocol=protocol,method='exact interventional linear SHAP',output_space='log-odds',dependence_assumption='interventional empirical training background; no conditional dependence attribution',prediction_parity_verified=True,sample_seed=sample_seed,sample_size=len(sample),background_seed=background_seed,background_size=len(background),feature_order=feature_order,reference_mean=reference,reference_baseline=intercept+math.fsum(c*v for c,v in zip(coefficients,reference)),case_strata=[dict(day=k[0],family=k[1],outcome=k[2],**v) for k,v in case_strata.items()],flow_weighted_mean_absolute_contributions=[sum(abs(value[i])*row.multiplicity for value,row in zip(explanations,sample))/flow_mass for i in range(len(coefficients))],represented_flow_mass=flow_mass,mean_absolute_contributions=[sum(abs(v[i]) for v in explanations)/len(explanations) for i in range(len(coefficients))],mean_signed_contributions=[sum(v[i] for v in explanations)/len(explanations) for i in range(len(coefficients))],max_logit_residual=maximum,seconds=monotonic()-tick,raw_unit_coefficients=[c/s if s else None for c,s in zip(coefficients,std)],training_std=std))
         atomic_json(output/'linear_shap_stability.json',stability)
         # Evaluate installed SHAP against the exact archived Spark RF representation.
         shap_record=dict(status='unsupported',method='optional direct TreeExplainer compatibility')
@@ -128,7 +141,7 @@ def run(project,input_root,archives,inventory,output,scratch):
             import shap,numpy as np
             rf_entry=next(e for e in inventory if e['kind']=='hybrid' and e['protocol']=='C')
             rf=models[rf_entry['id']];estimator=rf.stages[-1]
-            background=populations['C'].where("split_rank = 0 AND source_day < '2018-02-22'").dropDuplicates(['predictor_key']).orderBy(F.xxhash64(F.lit(23013),'predictor_key')).limit(16)
+            background=sample_groups(populations['C'].where("split_rank = 0 AND source_day < '2018-02-22'"),23013,16)
             transformed=rf.transform(background).select(vector_to_array(estimator.getFeaturesCol()).alias('x')).collect()
             data=rf.transform(samples['C'].limit(16)).select(vector_to_array(estimator.getFeaturesCol()).alias('x'),vector_to_array('probability').alias('p')).collect()
             values=np.array([r.x for r in data]);reference=np.array([r.x for r in transformed]);tick=monotonic()

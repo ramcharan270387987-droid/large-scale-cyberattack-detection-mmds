@@ -18,5 +18,18 @@
     "stability",
     "computational evaluation",
     "figures preview and final regression"
-  ]
+  ],
+  "stages": {
+    "supervised": {
+      "kernel_version": 1,
+      "worker_status": "COMPLETE",
+      "status": "global and exact numerical evidence validated; corrected conditional strata pending",
+      "artifacts": {
+        "reports/phase13_supervised/receipt.json": "08e128d13a4c9a033237c5fde31ccdebaee752e179ea3aaa90018d6ec2b060f7",
+        "reports/phase13_supervised/explanations.json": "044cfbb7f4ffa8013a58858326252a7371abdc177eeca2c55eae8911d10deafd"
+      },
+      "log_sha256": "f73880bc576ff26a7c5cb0a8fbe7c67ca6cbdf1282860e6bc33d5dae2ba42645",
+      "private_local_explanations": "Kaggle version1 mmds_phase13/private_local_explanations.json"
+    }
+  }
 }

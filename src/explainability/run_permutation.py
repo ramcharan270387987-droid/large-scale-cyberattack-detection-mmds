@@ -14,6 +14,8 @@ from src.ml.train_supervised import verified_input
 from src.sql.traffic_analytics import locate_producer,require
 from src.explainability.permutation import permute,evaluate
 
+from src.explainability.sampling import sample_groups
+
 
 def run(project,input_root,archives,inventory,output,scratch):
     start=monotonic();output.mkdir(parents=True,exist_ok=True);scratch.mkdir(parents=True,exist_ok=True)
@@ -35,9 +37,7 @@ def run(project,input_root,archives,inventory,output,scratch):
                 support=population.agg(F.count('*').alias('rows'),*[F.count(F.when(F.col(name).isNull(),1)).alias(name) for name in names]).first()
                 distributions.extend(dict(protocol=protocol,role=role,feature=name,rows=support['rows'],missing=support[name],quantiles=values) for name,values in zip(names,quantiles))
             atomic_json(output/'feature_distributions.json',distributions)
-            selected=(active.where('split_rank = 2').dropDuplicates(['predictor_key'])
-                      .orderBy(F.xxhash64(F.lit(23013),'predictor_key'),'record_fingerprint').limit(1000)
-                      .select('source_day','binary_label',*names))
+            selected=sample_groups(active.where('split_rank = 2'),23013,1000).select('source_day','binary_label',*names)
             rows=[r.asDict() for r in selected.collect()]
             require(len(rows)==1000,'Unexpected matched explanation sample size')
             sample_receipts.append(dict(protocol=protocol,rows=len(rows),by_day=[dict(day=day,rows=sum(r['source_day']==day for r in rows)) for day in sorted({r['source_day'] for r in rows})],split=split))
