@@ -1,0 +1,2 @@
+model,policies,rows,mean_score,mean_paired_score_change,max_absolute_score_change,changed_fixed_half_decisions,population
+adaptive-bf1d002296d424894374,P1-LR;P2-LR,32,0.099591273072968,0.0205337777184264,0.2484322458682624,0,matched reference-derived probes from initial training days; retrospective model comparison; no issued-decision attribution

@@ -1,0 +1,11 @@
+model,method,top5_fraction,top_features,feature_count
+A-logistic_regression,absolute_scaled_coefficient,0.7335338780622073,"[""ack_flag_cnt"", ""rst_flag_cnt"", ""pkt_len_mean"", ""syn_flag_cnt"", ""flow_duration""]",18
+A-logistic_regression,linear_SHAP_mean_absolute,0.9007086051133047,"[""ack_flag_cnt"", ""rst_flag_cnt"", ""pkt_len_mean"", ""flow_duration"", ""syn_flag_cnt""]",18
+A-logistic_regression,absolute_raw_unit_coefficient,0.9992645514697782,"[""ack_flag_cnt"", ""syn_flag_cnt"", ""rst_flag_cnt"", ""fin_flag_cnt"", ""down_up_ratio""]",18
+A-random_forest,native_split_importance,0.570867739249171,"[""fwd_iat_mean"", ""flow_pkts_s"", ""totlen_fwd_pkts"", ""flow_iat_mean"", ""flow_duration""]",18
+A-gradient_boosted_trees,native_split_importance,0.7342133670722869,"[""fwd_iat_mean"", ""totlen_fwd_pkts"", ""tot_fwd_pkts"", ""flow_iat_mean"", ""flow_iat_std""]",18
+B-logistic_regression,absolute_scaled_coefficient,0.6244025120425076,"[""pkt_len_mean"", ""flow_byts_s"", ""pkt_len_std"", ""flow_duration"", ""ack_flag_cnt""]",18
+B-logistic_regression,linear_SHAP_mean_absolute,0.8392208157901861,"[""pkt_len_mean"", ""flow_duration"", ""pkt_len_std"", ""rst_flag_cnt"", ""ack_flag_cnt""]",18
+B-logistic_regression,absolute_raw_unit_coefficient,0.9972362916676265,"[""syn_flag_cnt"", ""fin_flag_cnt"", ""ack_flag_cnt"", ""rst_flag_cnt"", ""down_up_ratio""]",18
+B-random_forest,native_split_importance,0.5104678756433282,"[""totlen_fwd_pkts"", ""ack_flag_cnt"", ""fwd_iat_mean"", ""flow_pkts_s"", ""tot_bwd_pkts""]",18
+B-gradient_boosted_trees,native_split_importance,0.8192169726893057,"[""tot_bwd_pkts"", ""ack_flag_cnt"", ""totlen_fwd_pkts"", ""fwd_iat_mean"", ""flow_duration""]",18

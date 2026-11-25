@@ -1,0 +1,289 @@
+model,protocol,method,feature,value,units
+A-logistic_regression,A,absolute_scaled_coefficient,flow_duration,0.21893573945720465,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,tot_fwd_pkts,0.033926155607644295,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,tot_bwd_pkts,0.002908947666697675,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,totlen_fwd_pkts,0.028382859854910233,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,totlen_bwd_pkts,0.0010682323226017172,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,pkt_len_mean,0.33783932660100696,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,pkt_len_std,0.006682537282281606,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,flow_iat_mean,0.03784969621292684,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,flow_iat_std,0.09230271255991071,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,fwd_iat_mean,0.04171377005068665,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,bwd_iat_mean,0.016827809341042027,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,flow_pkts_s,0.1911204322503146,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,flow_byts_s,0.10934142934216814,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,down_up_ratio,0.06399728305368631,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,syn_flag_cnt,0.28812792814204863,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,ack_flag_cnt,0.6055004815071301,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,rst_flag_cnt,0.41801635461493525,log-odds per scaled unit
+A-logistic_regression,A,absolute_scaled_coefficient,fin_flag_cnt,0.05260695834107492,log-odds per scaled unit
+A-random_forest,A,native_split_importance,flow_duration,0.08105967665769179,normalized split importance
+A-random_forest,A,native_split_importance,tot_fwd_pkts,0.05121029536467747,normalized split importance
+A-random_forest,A,native_split_importance,tot_bwd_pkts,0.07936652024408121,normalized split importance
+A-random_forest,A,native_split_importance,totlen_fwd_pkts,0.1280578502643492,normalized split importance
+A-random_forest,A,native_split_importance,totlen_bwd_pkts,0.0465217396021467,normalized split importance
+A-random_forest,A,native_split_importance,pkt_len_mean,0.0696051952123036,normalized split importance
+A-random_forest,A,native_split_importance,pkt_len_std,0.03721990062869542,normalized split importance
+A-random_forest,A,native_split_importance,flow_iat_mean,0.0847239780596514,normalized split importance
+A-random_forest,A,native_split_importance,flow_iat_std,0.02376530816764866,normalized split importance
+A-random_forest,A,native_split_importance,fwd_iat_mean,0.1485828303115913,normalized split importance
+A-random_forest,A,native_split_importance,bwd_iat_mean,0.007940022192018519,normalized split importance
+A-random_forest,A,native_split_importance,flow_pkts_s,0.12844340395588738,normalized split importance
+A-random_forest,A,native_split_importance,flow_byts_s,0.05286345774391453,normalized split importance
+A-random_forest,A,native_split_importance,down_up_ratio,0.007973356728062384,normalized split importance
+A-random_forest,A,native_split_importance,syn_flag_cnt,0.0003883854687734745,normalized split importance
+A-random_forest,A,native_split_importance,ack_flag_cnt,0.035757636894877015,normalized split importance
+A-random_forest,A,native_split_importance,rst_flag_cnt,0.0162936756054958,normalized split importance
+A-random_forest,A,native_split_importance,fin_flag_cnt,0.0002267668981342781,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,flow_duration,0.02703419735576855,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,tot_fwd_pkts,0.09968025403414996,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,tot_bwd_pkts,0.05522076067527951,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,totlen_fwd_pkts,0.19264049041299314,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,totlen_bwd_pkts,0.014504644201957304,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,pkt_len_mean,0.019431320174945952,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,pkt_len_std,0.011030620287699642,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,flow_iat_mean,0.08468494650972742,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,flow_iat_std,0.06280931085634042,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,fwd_iat_mean,0.2943983652590758,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,bwd_iat_mean,0.0036449596053326314,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,flow_pkts_s,0.029906156494087812,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,flow_byts_s,0.02153572869042957,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,down_up_ratio,0.003488000014053678,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,syn_flag_cnt,0.0023378444989426003,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,ack_flag_cnt,0.02867864603479734,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,rst_flag_cnt,0.04857612370895901,normalized split importance
+A-gradient_boosted_trees,A,native_split_importance,fin_flag_cnt,0.00039763118545956694,normalized split importance
+B-logistic_regression,B,absolute_scaled_coefficient,flow_duration,0.8852168829523376,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,tot_fwd_pkts,0.10991900173640909,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,tot_bwd_pkts,0.01209622751847114,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,totlen_fwd_pkts,0.06828791267348731,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,totlen_bwd_pkts,0.0020208612240548065,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,pkt_len_mean,1.780591224500976,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,pkt_len_std,0.923384841756616,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,flow_iat_mean,0.09328298989681266,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,flow_iat_std,0.38031640864136457,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,fwd_iat_mean,0.09485773269568075,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,bwd_iat_mean,0.42173284043500003,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,flow_pkts_s,0.6303179128463633,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,flow_byts_s,1.112350263625203,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,down_up_ratio,0.035025609080342794,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,syn_flag_cnt,0.7260335062130642,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,ack_flag_cnt,0.7615032677887672,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,rst_flag_cnt,0.5938143723566249,log-odds per scaled unit
+B-logistic_regression,B,absolute_scaled_coefficient,fin_flag_cnt,0.11848661645584345,log-odds per scaled unit
+B-random_forest,B,native_split_importance,flow_duration,0.07810701388066098,normalized split importance
+B-random_forest,B,native_split_importance,tot_fwd_pkts,0.06201574725367744,normalized split importance
+B-random_forest,B,native_split_importance,tot_bwd_pkts,0.08190782732459835,normalized split importance
+B-random_forest,B,native_split_importance,totlen_fwd_pkts,0.15005228174630172,normalized split importance
+B-random_forest,B,native_split_importance,totlen_bwd_pkts,0.06442200035495507,normalized split importance
+B-random_forest,B,native_split_importance,pkt_len_mean,0.06049114563830391,normalized split importance
+B-random_forest,B,native_split_importance,pkt_len_std,0.059348765425908626,normalized split importance
+B-random_forest,B,native_split_importance,flow_iat_mean,0.0662482749594117,normalized split importance
+B-random_forest,B,native_split_importance,flow_iat_std,0.011960422418420463,normalized split importance
+B-random_forest,B,native_split_importance,fwd_iat_mean,0.09744757969988256,normalized split importance
+B-random_forest,B,native_split_importance,bwd_iat_mean,0.0028809813214295205,normalized split importance
+B-random_forest,B,native_split_importance,flow_pkts_s,0.08211103799790603,normalized split importance
+B-random_forest,B,native_split_importance,flow_byts_s,0.061839212527291465,normalized split importance
+B-random_forest,B,native_split_importance,down_up_ratio,0.011442614078587212,normalized split importance
+B-random_forest,B,native_split_importance,syn_flag_cnt,0.0005947120374825553,normalized split importance
+B-random_forest,B,native_split_importance,ack_flag_cnt,0.09894914887463935,normalized split importance
+B-random_forest,B,native_split_importance,rst_flag_cnt,0.00955825948925279,normalized split importance
+B-random_forest,B,native_split_importance,fin_flag_cnt,0.0006229749712901726,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,flow_duration,0.10278018282023525,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,tot_fwd_pkts,0.005017589984870909,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,tot_bwd_pkts,0.2339302773742976,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,totlen_fwd_pkts,0.15919712437755826,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,totlen_bwd_pkts,0.027452293578463044,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,pkt_len_mean,0.018163734698595824,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,pkt_len_std,0.0053939156650885615,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,flow_iat_mean,0.08532863814951952,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,flow_iat_std,0.03942685523415636,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,fwd_iat_mean,0.11143762140075865,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,bwd_iat_mean,0.0,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,flow_pkts_s,0.0,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,flow_byts_s,0.0,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,down_up_ratio,0.0,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,syn_flag_cnt,0.0,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,ack_flag_cnt,0.21187176671645613,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,rst_flag_cnt,0.0,normalized split importance
+B-gradient_boosted_trees,B,native_split_importance,fin_flag_cnt,0.0,normalized split importance
+A-logistic_regression,A,linear_SHAP_mean_absolute,flow_duration,0.18148978254188147,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,tot_fwd_pkts,0.00011184414985841029,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,tot_bwd_pkts,9.798186262177892e-05,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,totlen_fwd_pkts,0.00032806431916180536,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,totlen_bwd_pkts,1.1519598064784034e-05,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,pkt_len_mean,0.23867866546393032,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,pkt_len_std,0.006192520293612811,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,flow_iat_mean,0.022546234086596523,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,flow_iat_std,0.05107831004713737,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,fwd_iat_mean,0.02500984165978023,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,bwd_iat_mean,0.005408399172060536,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,flow_pkts_s,0.0010853505778617534,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,flow_byts_s,0.002653560960670131,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,down_up_ratio,0.03228087884704377,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,syn_flag_cnt,0.07925112075322809,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,ack_flag_cnt,0.4294680084817269,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,rst_flag_cnt,0.4201289313249044,absolute log-odds
+A-logistic_regression,A,linear_SHAP_mean_absolute,fin_flag_cnt,0.0019069979020790839,absolute log-odds
+A-logistic_regression,A,absolute_raw_unit_coefficient,flow_duration,7.038015800571246e-09,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,tot_fwd_pkts,2.232975290410002e-05,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,tot_bwd_pkts,1.9544579388975156e-05,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,totlen_fwd_pkts,5.700125031303701e-07,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,totlen_bwd_pkts,4.9702722218734495e-09,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,pkt_len_mean,0.003257910997441823,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,pkt_len_std,4.108512127312048e-05,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,flow_iat_mean,2.7153682549583846e-09,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,flow_iat_std,2.5400970302272238e-08,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,fwd_iat_mean,2.9501171128423563e-09,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,bwd_iat_mean,3.8184815409080355e-09,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,flow_pkts_s,6.36706177500365e-07,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,flow_byts_s,2.1431029840817146e-08,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,down_up_ratio,0.06359589503819582,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,syn_flag_cnt,1.1850634878987276,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,ack_flag_cnt,1.2747404017637567,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,rst_flag_cnt,1.0641226691781673,log-odds per raw unit
+A-logistic_regression,A,absolute_raw_unit_coefficient,fin_flag_cnt,0.953498951039542,log-odds per raw unit
+B-logistic_regression,B,linear_SHAP_mean_absolute,flow_duration,0.7762841782380404,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,tot_fwd_pkts,0.0004103744346804146,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,tot_bwd_pkts,0.0009404989815823007,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,totlen_fwd_pkts,0.0006500221962275666,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,totlen_bwd_pkts,0.0001100463659640384,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,pkt_len_mean,1.3231149307547028,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,pkt_len_std,0.7722988354888974,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,flow_iat_mean,0.05979379933484628,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,flow_iat_std,0.21625511968643227,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,fwd_iat_mean,0.06286002057435176,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,bwd_iat_mean,0.11181402580414482,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,flow_pkts_s,0.0035239914605899522,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,flow_byts_s,0.023083234588478913,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,down_up_ratio,0.016053251429487204,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,syn_flag_cnt,0.2427916572528734,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,ack_flag_cnt,0.5019795078131338,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,rst_flag_cnt,0.6936173460915784,absolute log-odds
+B-logistic_regression,B,linear_SHAP_mean_absolute,fin_flag_cnt,0.0409324035263087,absolute log-odds
+B-logistic_regression,B,absolute_raw_unit_coefficient,flow_duration,2.8934480529058235e-08,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,tot_fwd_pkts,6.147586235685889e-05,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,tot_bwd_pkts,7.76357580190525e-05,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,totlen_fwd_pkts,1.1758666960518943e-06,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,totlen_bwd_pkts,8.98434975887964e-09,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,pkt_len_mean,0.017550755154678296,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,pkt_len_std,0.005647680853804329,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,flow_iat_mean,7.366641227462248e-09,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,flow_iat_std,1.0310235563966391e-07,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,fwd_iat_mean,7.350688082654048e-09,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,bwd_iat_mean,9.116094502410714e-08,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,flow_pkts_s,2.2172874388201374e-06,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,flow_byts_s,2.1931597413413128e-07,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,down_up_ratio,0.03011867059941241,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,syn_flag_cnt,3.053983110099072,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,ack_flag_cnt,1.6192887348810467,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,rst_flag_cnt,1.510120769827883,log-odds per raw unit
+B-logistic_regression,B,absolute_raw_unit_coefficient,fin_flag_cnt,2.208831218957683,log-odds per raw unit
+A-gradient_boosted_trees,A,permutation_PR_decrease,flow_duration,-0.0026055335903311847,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,tot_fwd_pkts,0.14100993415712149,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,tot_bwd_pkts,-0.007377914470867035,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,totlen_fwd_pkts,0.406344671592652,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,totlen_bwd_pkts,0.005605514410986445,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,pkt_len_mean,0.00844099211075248,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,pkt_len_std,0.060543480657620684,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,flow_iat_mean,0.030939880778199202,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,flow_iat_std,0.02795533857167924,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,fwd_iat_mean,0.2360156063933683,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,bwd_iat_mean,0.003385863188652268,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,flow_pkts_s,0.003937157406947296,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,flow_byts_s,0.012494462180764887,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,down_up_ratio,0.0019022591577719794,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,syn_flag_cnt,0.0001160528465908861,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,ack_flag_cnt,0.002851988604884744,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,rst_flag_cnt,0.030020224238393418,baseline minus permuted PR area
+A-gradient_boosted_trees,A,permutation_PR_decrease,fin_flag_cnt,6.71455154525787e-05,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,flow_duration,0.06301213502966474,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,tot_fwd_pkts,0.0008302551588449206,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,tot_bwd_pkts,0.0009763926444747254,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,totlen_fwd_pkts,0.0010866735934697187,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,totlen_bwd_pkts,-2.0471312486225468e-05,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,pkt_len_mean,0.1442022626354279,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,pkt_len_std,0.010907792712534633,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,flow_iat_mean,0.004664686917535761,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,flow_iat_std,0.01583715088064706,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,fwd_iat_mean,0.003973952323952812,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,bwd_iat_mean,0.009071011698493836,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,flow_pkts_s,0.007199570349786873,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,flow_byts_s,0.011454811396842438,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,down_up_ratio,-0.006405260026706679,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,syn_flag_cnt,0.06846360439309641,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,ack_flag_cnt,0.17024100901222944,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,rst_flag_cnt,0.14344509433168354,baseline minus permuted PR area
+A-logistic_regression,A,permutation_PR_decrease,fin_flag_cnt,0.006256659409475969,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,flow_duration,0.007475131224014516,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,tot_fwd_pkts,0.020458806337448416,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,tot_bwd_pkts,0.009893158998390494,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,totlen_fwd_pkts,0.0424812923198894,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,totlen_bwd_pkts,0.06222440338457558,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,pkt_len_mean,0.0262278802585267,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,pkt_len_std,0.04174951382254244,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,flow_iat_mean,0.017976664267770486,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,flow_iat_std,-0.0004248349216181557,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,fwd_iat_mean,0.03715031632633178,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,bwd_iat_mean,0.006208302822902671,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,flow_pkts_s,0.01757531003426664,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,flow_byts_s,0.007376758621558436,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,down_up_ratio,0.0002722769268945398,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,syn_flag_cnt,-0.0003101069180517409,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,ack_flag_cnt,-0.005187735727840333,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,rst_flag_cnt,0.03905462140986693,baseline minus permuted PR area
+A-random_forest,A,permutation_PR_decrease,fin_flag_cnt,0.0001772121670288914,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,flow_duration,0.011509619494041437,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,tot_fwd_pkts,-0.009737456148456197,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,tot_bwd_pkts,0.018546455615040803,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,totlen_fwd_pkts,-0.04575460503452989,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,totlen_bwd_pkts,-0.0997121966558451,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,pkt_len_mean,0.013800778777656453,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,pkt_len_std,-0.00429468219172401,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,flow_iat_mean,0.0009131248334513972,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,flow_iat_std,-0.0032569094522935846,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,fwd_iat_mean,0.002015121915720943,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,bwd_iat_mean,0.0,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,flow_pkts_s,0.0,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,flow_byts_s,0.0,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,down_up_ratio,0.0,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,syn_flag_cnt,0.0,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,ack_flag_cnt,0.0014222617863766291,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,rst_flag_cnt,0.0,baseline minus permuted PR area
+B-gradient_boosted_trees,B,permutation_PR_decrease,fin_flag_cnt,0.0,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,flow_duration,0.25996904056306025,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,tot_fwd_pkts,0.0037888822204543335,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,tot_bwd_pkts,-8.376873440089454e-05,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,totlen_fwd_pkts,0.005702970880204068,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,totlen_bwd_pkts,0.0014192427803074354,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,pkt_len_mean,0.3807143757257132,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,pkt_len_std,0.20352316719549543,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,flow_iat_mean,0.026722164946139288,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,flow_iat_std,0.04414249450536082,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,fwd_iat_mean,0.033512646474996854,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,bwd_iat_mean,0.05428284406706959,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,flow_pkts_s,0.01488142315189552,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,flow_byts_s,0.006394110320173081,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,down_up_ratio,0.02594016603701066,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,syn_flag_cnt,0.0709178651963347,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,ack_flag_cnt,-0.006350447740395023,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,rst_flag_cnt,0.30520772525608236,baseline minus permuted PR area
+B-logistic_regression,B,permutation_PR_decrease,fin_flag_cnt,0.01229454463247929,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_duration,0.13479541481647975,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,tot_fwd_pkts,0.1673509859861134,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,tot_bwd_pkts,0.18039749402268052,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,totlen_fwd_pkts,0.11307799547182869,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,totlen_bwd_pkts,0.05692155785612396,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,pkt_len_mean,-0.05479144198683413,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,pkt_len_std,0.02837150899455328,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_iat_mean,0.07467036531426426,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_iat_std,-0.015618805197553617,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,fwd_iat_mean,0.05644478064677716,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,bwd_iat_mean,0.014169785143337369,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_pkts_s,0.0908181971866366,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,flow_byts_s,-0.07226821392989753,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,down_up_ratio,0.026197866026101007,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,syn_flag_cnt,5.228181940316231e-05,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,ack_flag_cnt,-0.131568450603354,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,rst_flag_cnt,0.05797836999797501,baseline minus permuted PR area
+B-random_forest,B,permutation_PR_decrease,fin_flag_cnt,0.00038184244893724184,baseline minus permuted PR area

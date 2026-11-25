@@ -1,5 +1,5 @@
 """Write A–Z scientific report from verified Phase13 aggregate evidence."""
-import csv,json,statistics,hashlib
+import csv,json,statistics,hashlib,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def load(p):return json.loads((ROOT/p).read_text())
@@ -54,7 +54,7 @@ A/B maximum original logit residuals are {s[0]['max_logit_residual']:.3g} and {s
 
 ## G. RF/GBT and coefficient rankings
 
-{chr(10).join(tops)}
+{chr(10).join('- '+item for item in tops)}
 
 Absolute scaled coefficients, raw-unit coefficients, mean absolute contributions and native split importance have different units and meanings. Native importance is global split usage; it is not local SHAP. Correlated predictors and cardinality can change how importance is distributed.
 
@@ -136,6 +136,9 @@ Each completed Kaggle stage was validated and checkpointed on research-v2 before
 
 This verdict records Phase13 completion only. Phase14 has not begun.
 '''
+    for number in range(1,15):text=text.replace('Phase'+str(number)+' ', 'Phase '+str(number)+' ').replace('Phase'+str(number)+'.','Phase '+str(number)+'.')
+    text=re.sub(r'\b(All|all|original|corrected|fixed|from|crossing|probe|sizes|each|plus|define|most|and|contain|with|same|maximum-score|residual|provides|prespecified)(?=\d)',r'\1 ',text)
+    text=text.replace('at0.5','at 0.5').replace('At0.5','At 0.5').replace('predictor-group-selected','predictor group selected')
     (ROOT/'reports/phase13_research_report.md').write_text(text)
     print('Wrote A–Z report')
 if __name__=='__main__':main()

@@ -1,6 +1,6 @@
 {
   "schema": "phase13-v1",
-  "complete": false,
+  "complete": true,
   "protocol_commit": "98e18753783665fd9b3a0805a623047d3af01ede",
   "starting_checkpoint": "be53a63b7f8f330c3561efcdf73f2501d66ccac7",
   "focused_tests": {
@@ -8,17 +8,7 @@
     "spark": "4.3.0"
   },
   "submitted_source_sha256": "4458efc84faa813c776f0c324202427e12c489d25ac925f0f00e8d956122ffd0",
-  "pending": [
-    "archived supervised execution and validation",
-    "SHAP compatibility",
-    "permutation",
-    "chronological distributions",
-    "novelty hybrid and open-set",
-    "adaptive evolution",
-    "stability",
-    "computational evaluation",
-    "figures preview and final regression"
-  ],
+  "pending": [],
   "stages": {
     "supervised": {
       "kernel_version": 1,
@@ -87,5 +77,8 @@
         "reports/phase13_diagnostics/adaptive_reference_probes.json": "03dd5c202e094ece4886ca456064dbc010fec6a7053580889aa3aed0e5cf8433"
       }
     }
-  }
+  },
+  "verdict": "READY FOR PHASE 14",
+  "acceptance": "reports/phase13_validation/acceptance.json",
+  "report": "reports/phase13_research_report.md"
 }

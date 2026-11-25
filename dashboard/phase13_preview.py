@@ -55,7 +55,7 @@ def main():
     if section=='Explanation stability':st.info('Descriptive seed, background, sample-size, weighting and capture-deletion sensitivity; these are not independent-flow confidence intervals.')
     numeric=[c for c in ('contribution','value','mean','mean_absolute','mean_contribution','js_bits','mean_squared_contribution','rows','mean_paired_score_change','raw_unit_coefficient','spearman','seconds') if c in data]
     if numeric:
-        metric=st.selectbox('Chart metric',numeric,key=section+'metric');axis=next((c for c in ('feature','day','model','protocol','stage','comparison') if c in data),None)
+        metric=st.selectbox('Chart metric',numeric,key=section+'chart_metric');axis=next((c for c in ('feature','day','model','protocol','stage','comparison') if c in data),None)
         if axis:
             chart=data[[axis,metric]].dropna(subset=[metric])
             if chart.empty:st.caption('Selected metric is undefined for these observations.')

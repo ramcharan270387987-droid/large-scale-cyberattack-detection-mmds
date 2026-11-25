@@ -1,0 +1,329 @@
+{
+  "figures": [
+    {
+      "file": "reports/figures/phase13_lr_coefficients.png",
+      "sha256": "8022557fae8cf69b7e085e2d74fc89230a04f35b35ff332602ffb95fb0abea28",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "LR absolute scaled coefficients"
+    },
+    {
+      "file": "reports/figures/phase13_lr_coefficients.svg",
+      "sha256": "1ea2ff10c785584e611403d5f1a72758ffa5baf02615c654d49624b8ee96e378",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "LR absolute scaled coefficients"
+    },
+    {
+      "file": "reports/figures/phase13_lr_contributions.png",
+      "sha256": "0d461cdb5a086981d9e7d975701260c8659469c872d618a8f03b8ddfaf26501f",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "LR mean absolute centered contributions (log-odds)"
+    },
+    {
+      "file": "reports/figures/phase13_lr_contributions.svg",
+      "sha256": "ae4f7238549cab6eb1ff552a1790b2279a31982fb0b117f9bc9ecefb053ce0ea",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "LR mean absolute centered contributions (log-odds)"
+    },
+    {
+      "file": "reports/figures/phase13_rf_importance.png",
+      "sha256": "55d9cf85c212f78f913df4e592ca7cb7062762f93d5766ded697f08b8299df6a",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "Random forest native feature importance"
+    },
+    {
+      "file": "reports/figures/phase13_rf_importance.svg",
+      "sha256": "7616349573378a260fd59ce3e05a1d555f9f3749d8a92045d40c5942cdca14fc",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "Random forest native feature importance"
+    },
+    {
+      "file": "reports/figures/phase13_gbt_importance.png",
+      "sha256": "b3eecf725d7c2a18425bceea34b278964197808b333d40366a575aa54afc944d",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "GBT native feature importance"
+    },
+    {
+      "file": "reports/figures/phase13_gbt_importance.svg",
+      "sha256": "afdb1e73ee227c80d5f1e91cee7711704cde88aab55a1dc3d303a086ad771631",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "GBT native feature importance"
+    },
+    {
+      "file": "reports/figures/phase13_rank_comparison.png",
+      "sha256": "47176031741882781bcabb6dd88b279dbd123c48166518cf9daa05d9a96a3551",
+      "sources": [
+        "reports/phase13_rank_agreement.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "Agreement across explanation semantics"
+    },
+    {
+      "file": "reports/figures/phase13_rank_comparison.svg",
+      "sha256": "4563f6ff755cc6ae5db5de172787db82de0a33439ca03ab4aef7f467463b8e42",
+      "sources": [
+        "reports/phase13_rank_agreement.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution",
+      "title": "Agreement across explanation semantics"
+    },
+    {
+      "file": "reports/figures/phase13_linear_shap.png",
+      "sha256": "3ccc7e4af02b45acc7065367be30badf1e670d372ea1f587c45ef0675bb7dae8",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution; interventional training background64",
+      "title": "Validated linear SHAP summary"
+    },
+    {
+      "file": "reports/figures/phase13_linear_shap.svg",
+      "sha256": "bf20e9c79502c4f21e463e80161dfaffce0b6b983e4db02ec3fbcf9995b241da",
+      "sources": [
+        "reports/phase13_global_importance.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution; interventional training background64",
+      "title": "Validated linear SHAP summary"
+    },
+    {
+      "file": "reports/figures/phase13_local_contributions.png",
+      "sha256": "c9077e02cd0caa39265695d20461192fde65b42265d71d5ecc7e1e0828286de7",
+      "sources": [
+        "reports/phase13_synthetic_local.csv"
+      ],
+      "scope": "Archived initial adaptive LR; fixed synthetic input; contributions add to baseline in log-odds",
+      "title": "Exact local contribution decomposition: fixed synthetic probe1"
+    },
+    {
+      "file": "reports/figures/phase13_local_contributions.svg",
+      "sha256": "ee8ceb66c38149be1e63bbee4758d9f80ee45ae5fa02d142090b0bab94be657f",
+      "sources": [
+        "reports/phase13_synthetic_local.csv"
+      ],
+      "scope": "Archived initial adaptive LR; fixed synthetic input; contributions add to baseline in log-odds",
+      "title": "Exact local contribution decomposition: fixed synthetic probe1"
+    },
+    {
+      "file": "reports/figures/phase13_permutation.png",
+      "sha256": "b449bc7d6aadd73326f7c05229d564d7bf8132e91abe6f985e43047ec81bc926",
+      "sources": [
+        "reports/phase13_permutation_summary.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution; all3 seeds; averaged across six models",
+      "title": "Permutation importance: mean decrease in PR area"
+    },
+    {
+      "file": "reports/figures/phase13_permutation.svg",
+      "sha256": "c84351f13d1287f2bac74375fa5a493cdf4e4d53524958f01a07a3a2a3912249",
+      "sources": [
+        "reports/phase13_permutation_summary.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution; all3 seeds; averaged across six models",
+      "title": "Permutation importance: mean decrease in PR area"
+    },
+    {
+      "file": "reports/figures/phase13_distribution_shift.png",
+      "sha256": "01751e7c2048a6a76aa2d3c24b0b88b11c03c34b371366a5a000e0085812a234",
+      "sources": [
+        "reports/phase13_distribution_shift.csv"
+      ],
+      "scope": "Full eligible populations; training-only quantile cuts; JS divergence in bits",
+      "title": "Chronological evaluation versus training-bin distributions"
+    },
+    {
+      "file": "reports/figures/phase13_distribution_shift.svg",
+      "sha256": "880521726bd666304579d1a6cc1c8bb95407793192d58041a1789199f2380d3a",
+      "sources": [
+        "reports/phase13_distribution_shift.csv"
+      ],
+      "scope": "Full eligible populations; training-only quantile cuts; JS divergence in bits",
+      "title": "Chronological evaluation versus training-bin distributions"
+    },
+    {
+      "file": "reports/figures/phase13_false_negative.png",
+      "sha256": "8b9b818b03ce7d9f78922ee794256790c55e87107ba452514e5706b6f20c91bc",
+      "sources": [
+        "reports/phase13_enriched_cases.csv"
+      ],
+      "scope": "At most8 cases per day/family/outcome; enriched cases; no prevalence interpretation",
+      "title": "FN signed LR contribution comparison"
+    },
+    {
+      "file": "reports/figures/phase13_false_negative.svg",
+      "sha256": "c211ce4fd4c6367a3a12cc916716d3a8109aa26f024da3440af63deb7e8ffa2c",
+      "sources": [
+        "reports/phase13_enriched_cases.csv"
+      ],
+      "scope": "At most8 cases per day/family/outcome; enriched cases; no prevalence interpretation",
+      "title": "FN signed LR contribution comparison"
+    },
+    {
+      "file": "reports/figures/phase13_false_positive.png",
+      "sha256": "95c1504238579e920360898a6ed267f7ee7fef0c089d01e61e592019b22344e9",
+      "sources": [
+        "reports/phase13_enriched_cases.csv"
+      ],
+      "scope": "At most8 cases per day/family/outcome; enriched cases; no prevalence interpretation",
+      "title": "FP signed LR contribution comparison"
+    },
+    {
+      "file": "reports/figures/phase13_false_positive.svg",
+      "sha256": "accb5891ed0c13c6b9d2aaf89c14aac52af0f3e728fcd02ac21787dd6bc52ed1",
+      "sources": [
+        "reports/phase13_enriched_cases.csv"
+      ],
+      "scope": "At most8 cases per day/family/outcome; enriched cases; no prevalence interpretation",
+      "title": "FP signed LR contribution comparison"
+    },
+    {
+      "file": "reports/figures/phase13_family_contributions.png",
+      "sha256": "f3ae744b8543816d131ca6a8a714600c7803269154477f6d7b6ff92b33b5c8dc",
+      "sources": [
+        "reports/phase13_case_contributions.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution; support varies by family",
+      "title": "Family-conditioned centered LR contributions"
+    },
+    {
+      "file": "reports/figures/phase13_family_contributions.svg",
+      "sha256": "a16552ee4208466a549d65afbecbf2941f7f055b95e7bdd16cd853c4f9afe2b7",
+      "sources": [
+        "reports/phase13_case_contributions.csv"
+      ],
+      "scope": "Primary predictor-group sample \u22641,000 per protocol; descriptive model attribution; support varies by family",
+      "title": "Family-conditioned centered LR contributions"
+    },
+    {
+      "file": "reports/figures/phase13_novelty.png",
+      "sha256": "36c952112c8bc43a85cc07629db72a88757a664583d6d8ae000fc02456e3e0d8",
+      "sources": [
+        "reports/phase13_novelty.csv"
+      ],
+      "scope": "1,000 predictor groups per B/C; squared model-space units; novelty is not attack probability",
+      "title": "K-Means assigned-centroid distance decomposition"
+    },
+    {
+      "file": "reports/figures/phase13_novelty.svg",
+      "sha256": "67c24afbac0554297d42bc773a1ce3220acb11222d6383c11ecb9dfa5510ff15",
+      "sources": [
+        "reports/phase13_novelty.csv"
+      ],
+      "scope": "1,000 predictor groups per B/C; squared model-space units; novelty is not attack probability",
+      "title": "K-Means assigned-centroid distance decomposition"
+    },
+    {
+      "file": "reports/figures/phase13_hybrid.png",
+      "sha256": "bd530185b6e6f6f3a849b315ee6752fe2fafbe4a8b8b81f5bc89bc2067f14f21",
+      "sources": [
+        "reports/phase13_hybrid.csv"
+      ],
+      "scope": "Exact reconstructed B OR and C blend rules; matched1,000-group samples",
+      "title": "Archived hybrid decision paths"
+    },
+    {
+      "file": "reports/figures/phase13_hybrid.svg",
+      "sha256": "586ab686a41184bc2555a769cf36190e02da8efc6ec6565157d4a2ae3d9d9cb3",
+      "sources": [
+        "reports/phase13_hybrid.csv"
+      ],
+      "scope": "Exact reconstructed B OR and C blend rules; matched1,000-group samples",
+      "title": "Archived hybrid decision paths"
+    },
+    {
+      "file": "reports/figures/phase13_open_set.png",
+      "sha256": "fee4c8e854d10a1f114edc9ee00c9db07de8f09f965b93a6542eca2de06c0c07",
+      "sources": [
+        "reports/phase13_family_rejection.csv"
+      ],
+      "scope": "Conditional family-stage sample; A rejection unsupported; binary misses remain separate",
+      "title": "Family-stage predictions and rejection paths"
+    },
+    {
+      "file": "reports/figures/phase13_open_set.svg",
+      "sha256": "703d4f54075606ddfc8925f7df33976cc04e3dec18fa56c186e0c92c83c94001",
+      "sources": [
+        "reports/phase13_family_rejection.csv"
+      ],
+      "scope": "Conditional family-stage sample; A rejection unsupported; binary misses remain separate",
+      "title": "Family-stage predictions and rejection paths"
+    },
+    {
+      "file": "reports/figures/phase13_adaptive_coefficients.png",
+      "sha256": "aef8d6fe0e73836bca5233381e89619645a89fefe0f3a0e83c73a2aaa81c39c0",
+      "sources": [
+        "reports/phase13_adaptive_coefficients.csv"
+      ],
+      "scope": "Frozen initial versus prespecified activated P1/P2 and P4; no historical decision reassignment",
+      "title": "Adaptive LR coefficient evolution in common raw units"
+    },
+    {
+      "file": "reports/figures/phase13_adaptive_coefficients.svg",
+      "sha256": "61228d0c1c5ef2b9aa4a56135e0fd68f5201b0dfa05d6f98c7681aa4e0906ece",
+      "sources": [
+        "reports/phase13_adaptive_coefficients.csv"
+      ],
+      "scope": "Frozen initial versus prespecified activated P1/P2 and P4; no historical decision reassignment",
+      "title": "Adaptive LR coefficient evolution in common raw units"
+    },
+    {
+      "file": "reports/figures/phase13_stability.png",
+      "sha256": "61fefdcdf5f92b5e20e4f9b01d3cb1fd47bb308b82e0dedb65c543c23e8e72c6",
+      "sources": [
+        "reports/phase13_stability.csv"
+      ],
+      "scope": "All sample/background variants, flow weighting and capture deletion; descriptive sensitivity",
+      "title": "Explanation rank stability"
+    },
+    {
+      "file": "reports/figures/phase13_stability.svg",
+      "sha256": "a6049c19623f01d0f74ccfe3ad987ec5f439431b6921c5c1c4c7cd822fb731b8",
+      "sources": [
+        "reports/phase13_stability.csv"
+      ],
+      "scope": "All sample/background variants, flow weighting and capture deletion; descriptive sensitivity",
+      "title": "Explanation rank stability"
+    },
+    {
+      "file": "reports/figures/phase13_cost.png",
+      "sha256": "ff7b6a8767f0ce3af76f386e38b812715407c3146151a8b04a520aa08b67e8bb",
+      "sources": [
+        "reports/phase13_cost.csv"
+      ],
+      "scope": "Private Kaggle single-driver CPU; includes verification and scoring; no deployment-latency claim",
+      "title": "Measured whole-stage computational cost"
+    },
+    {
+      "file": "reports/figures/phase13_cost.svg",
+      "sha256": "37b8747c51d66dc8dc66ebe97802a7c6e52e3ca6b9f5433fc913031e726b1aa3",
+      "sources": [
+        "reports/phase13_cost.csv"
+      ],
+      "scope": "Private Kaggle single-driver CPU; includes verification and scoring; no deployment-latency claim",
+      "title": "Measured whole-stage computational cost"
+    }
+  ],
+  "unique_figures": 18
+}

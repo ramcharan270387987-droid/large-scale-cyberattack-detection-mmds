@@ -1,0 +1,10 @@
+model,protocol,policy,operating_bin,day,family,binary_label,supervised_positive,novelty_positive,hybrid_positive,rows
+hybrid-B,B,or,1024,2018-03-02,Benign,0,False,False,False,626
+hybrid-B,B,or,1024,2018-03-01,Infiltration,1,False,False,False,62
+hybrid-B,B,or,1024,2018-03-01,Benign,0,False,False,False,149
+hybrid-B,B,or,1024,2018-03-02,Bot,1,False,False,False,163
+hybrid-C,C,blend_0_5,1132,2018-02-23,Benign,0,False,False,False,490
+hybrid-C,C,blend_0_5,1132,2018-02-22,Benign,0,False,False,False,501
+hybrid-C,C,blend_0_5,1132,2018-02-22,Benign,0,False,False,True,4
+hybrid-C,C,blend_0_5,1132,2018-02-23,Benign,0,False,False,True,3
+hybrid-C,C,blend_0_5,1132,2018-02-23,Web attack,1,False,False,False,2

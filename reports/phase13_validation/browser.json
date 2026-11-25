@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "sections": [
+    {
+      "section": "Global feature importance",
+      "filters": [
+        "Model",
+        "Protocol",
+        "Method",
+        "Feature"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Local synthetic explanation",
+      "filters": [
+        "Model",
+        "Synthetic probe",
+        "Policies",
+        "Feature"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "False-positive and false-negative cases",
+      "filters": [
+        "Protocol",
+        "Capture day",
+        "Attack family",
+        "Outcome",
+        "Feature"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Family and capture contributions",
+      "filters": [
+        "Protocol",
+        "Capture day",
+        "Attack family",
+        "Outcome",
+        "Feature"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Permutation importance",
+      "filters": [
+        "Model",
+        "Protocol",
+        "Scope",
+        "Metric",
+        "Feature"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Chronological feature distributions",
+      "filters": [
+        "Protocol",
+        "Feature"
+      ],
+      "download_records": 2,
+      "status": "PASS"
+    },
+    {
+      "section": "Reference-bin distribution shift",
+      "filters": [
+        "Protocol",
+        "Feature"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "K-Means novelty decomposition",
+      "filters": [
+        "Model",
+        "Protocol",
+        "Capture day",
+        "Attack family",
+        "Feature"
+      ],
+      "download_records": 2,
+      "status": "PASS"
+    },
+    {
+      "section": "Hybrid decision explanation",
+      "filters": [
+        "Model",
+        "Protocol",
+        "Capture day",
+        "Attack family"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Open-set family explanation",
+      "filters": [
+        "Model",
+        "Protocol",
+        "Capture day"
+      ],
+      "download_records": 10,
+      "status": "PASS"
+    },
+    {
+      "section": "Adaptive coefficient comparison",
+      "filters": [
+        "Model",
+        "Policies",
+        "Feature"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Adaptive matched probes",
+      "filters": [
+        "Model",
+        "Policies"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Issued adaptive historical predictions",
+      "filters": [
+        "Model",
+        "Capture day"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Threshold-only adaptation history",
+      "filters": [],
+      "download_records": 6,
+      "status": "PASS"
+    },
+    {
+      "section": "Explanation stability",
+      "filters": [
+        "Protocol"
+      ],
+      "download_records": 27,
+      "status": "PASS"
+    },
+    {
+      "section": "Ranking agreement",
+      "filters": [
+        "Model"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    },
+    {
+      "section": "Computational cost",
+      "filters": [
+        "Model",
+        "Scope"
+      ],
+      "download_records": 1,
+      "status": "PASS"
+    }
+  ],
+  "screenshots": 2,
+  "screenshot_files": [
+    "preview-desktop.png",
+    "preview-mobile.png"
+  ],
+  "mobile_horizontal_main_overflow": false,
+  "page_errors": [],
+  "http_errors": [],
+  "seconds": 37.58842412300146,
+  "browser": "Chromium / Playwright",
+  "url": "http://127.0.0.1:8513",
+  "scope": "isolated local archived-evidence preview"
+}

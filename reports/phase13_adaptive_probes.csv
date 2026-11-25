@@ -1,0 +1,5 @@
+model,policies,rows,mean_score,mean_paired_score_change,max_absolute_score_change,changed_fixed_half_decisions,population
+adaptive-9827e6a728bb61755e3d,P0;P6,32,0.07905749535454161,0.0,0.0,0,matched reference-derived probes from initial training days; retrospective model comparison; no issued-decision attribution
+adaptive-bf1d002296d424894374,P1-LR;P2-LR,32,0.09959127307296801,0.020533777718426408,0.2484322458682624,0,matched reference-derived probes from initial training days; retrospective model comparison; no issued-decision attribution
+adaptive-738a19688a1076f3f333,P4-LR,32,0.09409258008798527,0.01503508473344366,0.273450249174477,0,matched reference-derived probes from initial training days; retrospective model comparison; no issued-decision attribution
+adaptive-8bf75be76e34e7d2835a,P1-RF,32,0.05395756239517724,-0.025099932959364368,0.6001513667752257,1,matched reference-derived probes from initial training days; retrospective model comparison; no issued-decision attribution

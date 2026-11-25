@@ -1,0 +1,23 @@
+stage,scope,seconds,driver_peak_rss_bytes,model
+supervised,whole stage including input verification and Spark work,476.418772705,5016915968,
+permutation,whole stage including input verification and Spark work,575.94894048,4902531072,
+components,whole stage including input verification and Spark work,826.610115815,6908755968,
+diagnostics,whole stage including input verification and Spark work,549.7510404090001,5391552512,
+model reload,saved pipeline load,2.70076506099997,,A-logistic_regression
+LR explanation,primary bounded exact explanation scoring,0.8466714689999435,,A-logistic_regression
+model reload,saved pipeline load,1.5549705959999756,,A-random_forest
+model reload,saved pipeline load,1.1051891649999561,,A-gradient_boosted_trees
+model reload,saved pipeline load,1.1483636090000573,,B-logistic_regression
+LR explanation,primary bounded exact explanation scoring,0.6505804749999697,,B-logistic_regression
+model reload,saved pipeline load,1.2363235200000418,,B-random_forest
+model reload,saved pipeline load,0.9637956200000417,,B-gradient_boosted_trees
+novelty,bounded scoring and explanation,5.428207111000006,,novelty-B
+hybrid,bounded scoring and explanation,4.637696948999974,,hybrid-B
+novelty,bounded scoring and explanation,2.333771544000001,,novelty-C
+hybrid,bounded scoring and explanation,3.53763600100001,,hybrid-C
+family,bounded scoring and explanation,0.4063676870000563,,family-A
+family,bounded scoring and explanation,0.42571549399997366,,family-B
+adaptive,bounded scoring and explanation,0.4569832370000313,,adaptive-9827e6a728bb61755e3d
+adaptive,bounded scoring and explanation,0.4306594720000021,,adaptive-bf1d002296d424894374
+adaptive,bounded scoring and explanation,0.48608309099995495,,adaptive-738a19688a1076f3f333
+adaptive,bounded scoring and explanation,0.04711691299996801,,adaptive-8bf75be76e34e7d2835a

@@ -1,0 +1,2 @@
+protocol,feature,training_cuts,missing_bucket,training_counts,evaluation_counts,training_rows,evaluation_rows,js_bits
+B,totlen_fwd_pkts,"[0.0, 43.0, 1144.0]",-1,"{""2"": 5192698, ""1"": 2604281, ""3"": 1290007, ""0"": 4104636}","{""1"": 137791, ""0"": 141660, ""3"": 134585, ""2"": 566073}",13191622,980109,0.0410014892808755

@@ -1,0 +1,2 @@
+model,protocol,scope,feature,metric,repetitions,defined_repetitions,mean,minimum,maximum,spread
+B-random_forest,B,within_capture,totlen_fwd_pkts,roc_auc,3,3,0.0026341696535244,-0.0113376344086021,0.0158537634408603,0.0271913978494624

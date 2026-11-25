@@ -1,0 +1,11 @@
+model,protocol,rejection_policy_supported,cutoff_bin,day,true_family,binary_label,predicted_family,rejected,rows,mean_maximum_score,mean_top_two_margin
+family-B,B,True,1140.0,2018-03-02,Benign,0,Web attack,False,183,0.7189066936931605,0.4967575682624527
+family-B,B,True,1140.0,2018-03-02,Benign,0,Credential brute force,True,127,0.4016284218555576,0.1065122256710669
+family-B,B,True,1140.0,2018-03-02,Benign,0,DDoS,False,93,0.8630429770590241,0.7774818613207628
+family-B,B,True,1140.0,2018-03-02,Benign,0,DoS,True,132,0.3596371181588184,0.0620026709570806
+family-B,B,True,1140.0,2018-03-02,Bot,1,DDoS,False,158,0.5216889420081247,0.1796271225228625
+family-B,B,True,1140.0,2018-03-02,Benign,0,DoS,False,43,0.597548982276391,0.2834947675917247
+family-B,B,True,1140.0,2018-03-02,Bot,1,Web attack,False,5,0.5866449844101098,0.2474548430634596
+family-B,B,True,1140.0,2018-03-02,Benign,0,DDoS,True,9,0.4135298200494611,0.0380950916311585
+family-B,B,True,1140.0,2018-03-02,Benign,0,Credential brute force,False,24,0.6696939715200513,0.4866490477869162
+family-B,B,True,1140.0,2018-03-02,Benign,0,Web attack,True,15,0.3726528701726537,0.0591782274340776

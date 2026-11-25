@@ -1,0 +1,2 @@
+protocol,day,family,outcome,rows,high_confidence_errors,mean_score,mean_margin,feature,mean_absolute
+B,2018-03-02,Bot,FN,163,0,0.3166676061448893,-0.1833323938551104,totlen_fwd_pkts,0.0001944320154289

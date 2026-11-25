@@ -6,9 +6,12 @@ def load(name):return json.loads((ROOT/name).read_text())
 def table(name):return list(csv.DictReader((ROOT/'reports'/('phase13_'+name+'.csv')).open()))
 def verify():
     manifest=load('manifests/phase13_experiments.json');models=load('manifests/phase13_models.json')
+    assert manifest['complete'] and not manifest['pending'] and manifest['verdict']=='READY FOR PHASE 14'
+    report=(ROOT/'reports/phase13_research_report.md').read_text();assert all('## '+letter+'.' in report for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     for stage in ('supervised','permutation','components','diagnostics'):
         prefix='reports/phase13_'+stage+'/';r=load(prefix+'receipt.json');e=load(prefix+'execution.json');assert r['status']=='validated' and e['status']=='COMPLETE' and e['private_cpu'];assert manifest['stages'][stage]['worker_status']=='COMPLETE'
         for path,expected in e['artifacts'].items():assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==expected,path
+        assert r['resources']['master']=='local[4]' and r['resources']['driver_memory']=='8g' and r['resources']['shuffle_partitions']==48 and r['resources']['spark_version']=='4.3.0'
         assert r['seconds']<=1800,(stage,r['seconds'])
     sup=load('reports/phase13_supervised/explanations.json');assert len(sup)==6
     for r in sup:

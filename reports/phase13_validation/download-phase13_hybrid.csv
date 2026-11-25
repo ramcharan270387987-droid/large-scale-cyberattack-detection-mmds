@@ -1,0 +1,2 @@
+model,protocol,policy,operating_bin,day,family,binary_label,supervised_positive,novelty_positive,hybrid_positive,rows
+hybrid-C,C,blend_0_5,1132,2018-02-23,Web attack,1,False,False,False,2

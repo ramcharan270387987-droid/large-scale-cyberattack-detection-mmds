@@ -1,0 +1,2 @@
+protocol,day,family,outcome,rows,high_confidence_errors,mean_probability,max_logit_residual,feature,mean_contribution
+B,2018-03-02,Bot,TP,8,0,0.6027006576389045,4.440892098500626e-16,totlen_fwd_pkts,0.0004212542438605

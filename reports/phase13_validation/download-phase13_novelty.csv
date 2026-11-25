@@ -1,0 +1,3 @@
+model,protocol,day,family,binary_label,novel,rows,feature,mean_squared_contribution,mean_distance,threshold
+novelty-C,C,2018-02-23,Web attack,1,False,1,totlen_fwd_pkts,0.017350383414053,1.961167538374099,17.880003619372005
+novelty-C,C,2018-02-23,Web attack,1,True,1,totlen_fwd_pkts,2.1317226605367883,20.42810702682373,17.880003619372005

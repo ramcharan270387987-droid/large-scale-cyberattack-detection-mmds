@@ -1,0 +1,23 @@
+model,comparison,first,second,shared_features,spearman,top_k,top_jaccard
+A-logistic_regression,within model,absolute_scaled_coefficient,linear_SHAP_mean_absolute,18,0.8059855521155831,5,1.0
+A-logistic_regression,within model,absolute_scaled_coefficient,absolute_raw_unit_coefficient,18,0.5087719298245614,5,0.42857142857142855
+A-logistic_regression,within model,absolute_scaled_coefficient,permutation_PR_decrease,18,0.7708978328173375,5,1.0
+A-logistic_regression,within model,linear_SHAP_mean_absolute,absolute_raw_unit_coefficient,18,0.3746130030959752,5,0.42857142857142855
+A-logistic_regression,within model,linear_SHAP_mean_absolute,permutation_PR_decrease,18,0.7750257997936016,5,1.0
+A-logistic_regression,within model,absolute_raw_unit_coefficient,permutation_PR_decrease,18,0.3746130030959752,5,0.42857142857142855
+A-random_forest,within model,native_split_importance,permutation_PR_decrease,18,0.5128998968008256,5,0.25
+A-gradient_boosted_trees,within model,native_split_importance,permutation_PR_decrease,18,0.6140350877192983,5,0.6666666666666666
+B-logistic_regression,within model,absolute_scaled_coefficient,linear_SHAP_mean_absolute,18,0.7420020639834881,5,0.6666666666666666
+B-logistic_regression,within model,absolute_scaled_coefficient,absolute_raw_unit_coefficient,18,0.28173374613003094,5,0.1111111111111111
+B-logistic_regression,within model,absolute_scaled_coefficient,permutation_PR_decrease,18,0.5211558307533539,5,0.42857142857142855
+B-logistic_regression,within model,linear_SHAP_mean_absolute,absolute_raw_unit_coefficient,18,0.23219814241486067,5,0.25
+B-logistic_regression,within model,linear_SHAP_mean_absolute,permutation_PR_decrease,18,0.7750257997936016,5,0.6666666666666666
+B-logistic_regression,within model,absolute_raw_unit_coefficient,permutation_PR_decrease,18,0.029927760577915376,5,0.25
+B-random_forest,within model,native_split_importance,permutation_PR_decrease,18,0.40144478844169246,5,0.42857142857142855
+B-gradient_boosted_trees,within model,native_split_importance,permutation_PR_decrease,18,0.307776560788609,5,0.6666666666666666
+A,cross model; distinct semantics,A-logistic_regression,A-random_forest,18,-0.1393188854489164,5,0.1111111111111111
+A,cross model; distinct semantics,A-logistic_regression,A-gradient_boosted_trees,18,-0.09803921568627451,5,0.0
+A,cross model; distinct semantics,A-random_forest,A-gradient_boosted_trees,18,0.717234262125903,5,0.42857142857142855
+B,cross model; distinct semantics,B-logistic_regression,B-random_forest,18,-0.19298245614035087,5,0.1111111111111111
+B,cross model; distinct semantics,B-logistic_regression,B-gradient_boosted_trees,18,-0.2689820157628747,5,0.25
+B,cross model; distinct semantics,B-random_forest,B-gradient_boosted_trees,18,0.7537875461497162,5,0.6666666666666666
