@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "physical_data_rows": 24,
+  "eligible_rows": 16,
+  "excluded_rows": 8,
+  "headers": 8,
+  "source": "bounded synthetic8file fixture,not external experiment"
+}

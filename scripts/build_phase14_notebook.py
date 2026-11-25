@@ -7,7 +7,10 @@ ROOT=Path(__file__).resolve().parents[1]
 def notebook(stage):
     note=build('baseline','B');note['cells'][0]['source']=[f'# Phase14 {stage}: private research CPU execution']
     paths=list((ROOT/'src/external_validation').glob('*.py'))+list((ROOT/'src/scalability').glob('*.py'))+list((ROOT/'configs').glob('phase14_*.yaml'))
-    sources={str(p.relative_to(ROOT)):p.read_text() for p in paths};sources['manifests/phase14_experiments.json']=(ROOT/'manifests/phase14_experiments.json').read_text()
+    sources={str(p.relative_to(ROOT)):p.read_text() for p in paths};
+    for relative in ('src/patterns/discretization.py','reports/phase10_stageB/registry.json'):
+        sources[relative]=(ROOT/relative).read_text()
+    sources['manifests/phase14_experiments.json']=(ROOT/'manifests/phase14_experiments.json').read_text()
     code='phase14_sources='+repr(sources)+'\nfor name,source in phase14_sources.items():\n target=project/name\n target.parent.mkdir(parents=True,exist_ok=True)\n target.write_text(source)\n'
     code+='source_commit='+repr(subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip())+'\nprint("PHASE14 SOURCE",source_commit,flush=True)\n'
     note['cells'].insert(-1,cell('code','phase14-source',code))
@@ -20,6 +23,24 @@ if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('stage',choices=['14B','14C','14D','14E']);p.add_argument('directory',type=Path);a=p.parse_args();a.directory.mkdir(parents=True,exist_ok=True)
     note=notebook(a.stage);file=a.directory/'phase14.ipynb';file.write_text(json.dumps(note,indent=1)+'\n')
     slugs={'14B':'mmds-phase-14-external-audit','14C':'mmds-phase-14-external-validation','14D':'mmds-phase-14-scalability-benchmark','14E':'mmds-phase-14-execution-optimization'};slug=slugs[a.stage];kernels=['ramcharan2345/mmds-phase-2-spark-data-engineering/1']
-    if a.stage=='14C':kernels.append('ramcharan2345/mmds-phase-14-external-audit/1')
+    manifest=json.loads((ROOT/'manifests/phase14_experiments.json').read_text())
+    if a.stage in ('14C','14E'):
+        dependency='14B' if a.stage=='14C' else '14D'
+        pin=manifest['stages'].get(dependency)
+        if not pin or pin.get('status')!='validated':raise ValueError('Required producer stage is not validated: '+dependency)
+        kernels.append(pin['kernel_version'])
     metadata=dict(id='ramcharan2345/'+slug,title=slug.replace('-',' ').title(),code_file=file.name,language='python',kernel_type='notebook',is_private=True,enable_gpu=False,enable_tpu=False,enable_internet=True,dataset_sources=['shadman1028/cicids2017-official-flow-feature-csv-files/1'] if a.stage=='14B' else [],kernel_sources=kernels,competition_sources=[])
+    if a.stage in ('14D','14E'):
+        import base64,lzma
+        models=json.loads((ROOT/'manifests/phase13_models.json').read_text())['supervised'];files={};pins=[]
+        for entry in models:
+            if entry['id'] not in ('B-logistic_regression','B-random_forest'):continue
+            folder=Path('/tmp/mmds-independent-models')/entry['id']
+            for relative,expected in entry['sha256'].items():
+                content=(folder/relative).read_bytes();assert hashlib.sha256(content).hexdigest()==expected
+                files[entry['id']+'/'+relative]=base64.b64encode(content).decode()
+            pins.append(entry)
+        packed=base64.b64encode(lzma.compress(json.dumps(files).encode())).decode()
+        code="import base64,lzma,json,hashlib\nprivate_files=json.loads(lzma.decompress(base64.b64decode("+repr(packed)+")))\nfor relative,encoded in private_files.items():\n target=Path('/kaggle/temp/phase14_archives')/relative\n target.parent.mkdir(parents=True,exist_ok=True)\n target.write_bytes(base64.b64decode(encoded))\n"
+        note['cells'].insert(-1,cell('code','private-archived-models',code));file.write_text(json.dumps(note,indent=1)+'\n');(a.directory/'model-pins.json').write_text(json.dumps(pins,indent=2)+'\n')
     (a.directory/'kernel-metadata.json').write_text(json.dumps(metadata,indent=2)+'\n');print('PREPARED',a.stage,hashlib.sha256(file.read_bytes()).hexdigest())

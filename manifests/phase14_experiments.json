@@ -4,10 +4,26 @@
   "starting_checkpoint": "ab6e9401b0c9b92e624e5b2b16ec91050a081eb0",
   "stage": "14A",
   "next_stage": "14B actual external audit",
-  "stages": {},
+  "stages": {
+    "14A": {
+      "status": "validated",
+      "verified_remote": "3f71a5d67f3de6688c094cdeab5271cf9609bead",
+      "focused_tests": 4
+    }
+  },
   "protected": {
     "work": "16ef2c23bbfe33c497d32863173455185fe868ed",
     "main": "e6215d6834ce06ba60fe9c7e65ce4a97b611343d",
     "tag": "3295d05e5f873355ed0c5140f45f4c3b58047043"
-  }
+  },
+  "protocol_commit": "e0347bc57d650acaec2de83bdee2ad7ca5e8c23a",
+  "failed_versions": [
+    {
+      "stage": "14B",
+      "kernel_version": "ramcharan2345/mmds-phase-14-external-audit/1",
+      "status": "ERROR",
+      "reason": "PySpark quantile probability type ClassCastException after processed layer writes",
+      "log_sha256": "73f7687f89156bac96ed4db709b2717380ded8f5d15d623d8a126e559395bf14"
+    }
+  ]
 }
