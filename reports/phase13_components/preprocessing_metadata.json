@@ -1,0 +1,1619 @@
+[
+  {
+    "model": "novelty-B",
+    "feature_order": [
+      "flow_duration_valid",
+      "tot_fwd_pkts_valid",
+      "tot_bwd_pkts_valid",
+      "totlen_fwd_pkts_valid",
+      "totlen_bwd_pkts_valid",
+      "pkt_len_mean_valid",
+      "pkt_len_std_valid",
+      "flow_iat_mean_valid",
+      "flow_iat_std_valid",
+      "fwd_iat_mean_valid",
+      "bwd_iat_mean_valid",
+      "flow_pkts_s_valid",
+      "flow_byts_s_valid",
+      "down_up_ratio_valid",
+      "syn_flag_cnt_valid",
+      "ack_flag_cnt_valid",
+      "rst_flag_cnt_valid",
+      "fin_flag_cnt_valid"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_SQLTransformer_c1b46ce0d74d/metadata/part-00000-a8d654ae-ad50-4736-8af3-d221a4522fe2-c000.txt",
+        "sha256": "c2f875fe3ca0ba7a7f2525d5b085a87f21af7e6c5ab95792418c2f1885fb8277",
+        "stage_class": "org.apache.spark.ml.feature.SQLTransformer",
+        "parameters": {
+          "statement": "SELECT *, signum(CASE WHEN flow_duration IS NOT NULL AND NOT isnan(flow_duration) AND abs(flow_duration) < CAST('Infinity' AS DOUBLE) THEN flow_duration END) * log1p(abs(CASE WHEN flow_duration IS NOT NULL AND NOT isnan(flow_duration) AND abs(flow_duration) < CAST('Infinity' AS DOUBLE) THEN flow_duration END)) AS flow_duration_valid, signum(CASE WHEN tot_fwd_pkts IS NOT NULL AND NOT isnan(tot_fwd_pkts) AND abs(tot_fwd_pkts) < CAST('Infinity' AS DOUBLE) THEN tot_fwd_pkts END) * log1p(abs(CASE WHEN tot_fwd_pkts IS NOT NULL AND NOT isnan(tot_fwd_pkts) AND abs(tot_fwd_pkts) < CAST('Infinity' AS DOUBLE) THEN tot_fwd_pkts END)) AS tot_fwd_pkts_valid, signum(CASE WHEN tot_bwd_pkts IS NOT NULL AND NOT isnan(tot_bwd_pkts) AND abs(tot_bwd_pkts) < CAST('Infinity' AS DOUBLE) THEN tot_bwd_pkts END) * log1p(abs(CASE WHEN tot_bwd_pkts IS NOT NULL AND NOT isnan(tot_bwd_pkts) AND abs(tot_bwd_pkts) < CAST('Infinity' AS DOUBLE) THEN tot_bwd_pkts END)) AS tot_bwd_pkts_valid, signum(CASE WHEN totlen_fwd_pkts IS NOT NULL AND NOT isnan(totlen_fwd_pkts) AND abs(totlen_fwd_pkts) < CAST('Infinity' AS DOUBLE) THEN totlen_fwd_pkts END) * log1p(abs(CASE WHEN totlen_fwd_pkts IS NOT NULL AND NOT isnan(totlen_fwd_pkts) AND abs(totlen_fwd_pkts) < CAST('Infinity' AS DOUBLE) THEN totlen_fwd_pkts END)) AS totlen_fwd_pkts_valid, signum(CASE WHEN totlen_bwd_pkts IS NOT NULL AND NOT isnan(totlen_bwd_pkts) AND abs(totlen_bwd_pkts) < CAST('Infinity' AS DOUBLE) THEN totlen_bwd_pkts END) * log1p(abs(CASE WHEN totlen_bwd_pkts IS NOT NULL AND NOT isnan(totlen_bwd_pkts) AND abs(totlen_bwd_pkts) < CAST('Infinity' AS DOUBLE) THEN totlen_bwd_pkts END)) AS totlen_bwd_pkts_valid, signum(CASE WHEN pkt_len_mean IS NOT NULL AND NOT isnan(pkt_len_mean) AND abs(pkt_len_mean) < CAST('Infinity' AS DOUBLE) THEN pkt_len_mean END) * log1p(abs(CASE WHEN pkt_len_mean IS NOT NULL AND NOT isnan(pkt_len_mean) AND abs(pkt_len_mean) < CAST('Infinity' AS DOUBLE) THEN pkt_len_mean END)) AS pkt_len_mean_valid, signum(CASE WHEN pkt_len_std IS NOT NULL AND NOT isnan(pkt_len_std) AND abs(pkt_len_std) < CAST('Infinity' AS DOUBLE) THEN pkt_len_std END) * log1p(abs(CASE WHEN pkt_len_std IS NOT NULL AND NOT isnan(pkt_len_std) AND abs(pkt_len_std) < CAST('Infinity' AS DOUBLE) THEN pkt_len_std END)) AS pkt_len_std_valid, signum(CASE WHEN flow_iat_mean IS NOT NULL AND NOT isnan(flow_iat_mean) AND abs(flow_iat_mean) < CAST('Infinity' AS DOUBLE) THEN flow_iat_mean END) * log1p(abs(CASE WHEN flow_iat_mean IS NOT NULL AND NOT isnan(flow_iat_mean) AND abs(flow_iat_mean) < CAST('Infinity' AS DOUBLE) THEN flow_iat_mean END)) AS flow_iat_mean_valid, signum(CASE WHEN flow_iat_std IS NOT NULL AND NOT isnan(flow_iat_std) AND abs(flow_iat_std) < CAST('Infinity' AS DOUBLE) THEN flow_iat_std END) * log1p(abs(CASE WHEN flow_iat_std IS NOT NULL AND NOT isnan(flow_iat_std) AND abs(flow_iat_std) < CAST('Infinity' AS DOUBLE) THEN flow_iat_std END)) AS flow_iat_std_valid, signum(CASE WHEN fwd_iat_mean IS NOT NULL AND NOT isnan(fwd_iat_mean) AND abs(fwd_iat_mean) < CAST('Infinity' AS DOUBLE) THEN fwd_iat_mean END) * log1p(abs(CASE WHEN fwd_iat_mean IS NOT NULL AND NOT isnan(fwd_iat_mean) AND abs(fwd_iat_mean) < CAST('Infinity' AS DOUBLE) THEN fwd_iat_mean END)) AS fwd_iat_mean_valid, signum(CASE WHEN bwd_iat_mean IS NOT NULL AND NOT isnan(bwd_iat_mean) AND abs(bwd_iat_mean) < CAST('Infinity' AS DOUBLE) THEN bwd_iat_mean END) * log1p(abs(CASE WHEN bwd_iat_mean IS NOT NULL AND NOT isnan(bwd_iat_mean) AND abs(bwd_iat_mean) < CAST('Infinity' AS DOUBLE) THEN bwd_iat_mean END)) AS bwd_iat_mean_valid, signum(CASE WHEN flow_pkts_s IS NOT NULL AND NOT isnan(flow_pkts_s) AND abs(flow_pkts_s) < CAST('Infinity' AS DOUBLE) THEN flow_pkts_s END) * log1p(abs(CASE WHEN flow_pkts_s IS NOT NULL AND NOT isnan(flow_pkts_s) AND abs(flow_pkts_s) < CAST('Infinity' AS DOUBLE) THEN flow_pkts_s END)) AS flow_pkts_s_valid, signum(CASE WHEN flow_byts_s IS NOT NULL AND NOT isnan(flow_byts_s) AND abs(flow_byts_s) < CAST('Infinity' AS DOUBLE) THEN flow_byts_s END) * log1p(abs(CASE WHEN flow_byts_s IS NOT NULL AND NOT isnan(flow_byts_s) AND abs(flow_byts_s) < CAST('Infinity' AS DOUBLE) THEN flow_byts_s END)) AS flow_byts_s_valid, signum(CASE WHEN down_up_ratio IS NOT NULL AND NOT isnan(down_up_ratio) AND abs(down_up_ratio) < CAST('Infinity' AS DOUBLE) THEN down_up_ratio END) * log1p(abs(CASE WHEN down_up_ratio IS NOT NULL AND NOT isnan(down_up_ratio) AND abs(down_up_ratio) < CAST('Infinity' AS DOUBLE) THEN down_up_ratio END)) AS down_up_ratio_valid, signum(CASE WHEN syn_flag_cnt IS NOT NULL AND NOT isnan(syn_flag_cnt) AND abs(syn_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN syn_flag_cnt END) * log1p(abs(CASE WHEN syn_flag_cnt IS NOT NULL AND NOT isnan(syn_flag_cnt) AND abs(syn_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN syn_flag_cnt END)) AS syn_flag_cnt_valid, signum(CASE WHEN ack_flag_cnt IS NOT NULL AND NOT isnan(ack_flag_cnt) AND abs(ack_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN ack_flag_cnt END) * log1p(abs(CASE WHEN ack_flag_cnt IS NOT NULL AND NOT isnan(ack_flag_cnt) AND abs(ack_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN ack_flag_cnt END)) AS ack_flag_cnt_valid, signum(CASE WHEN rst_flag_cnt IS NOT NULL AND NOT isnan(rst_flag_cnt) AND abs(rst_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN rst_flag_cnt END) * log1p(abs(CASE WHEN rst_flag_cnt IS NOT NULL AND NOT isnan(rst_flag_cnt) AND abs(rst_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN rst_flag_cnt END)) AS rst_flag_cnt_valid, signum(CASE WHEN fin_flag_cnt IS NOT NULL AND NOT isnan(fin_flag_cnt) AND abs(fin_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN fin_flag_cnt END) * log1p(abs(CASE WHEN fin_flag_cnt IS NOT NULL AND NOT isnan(fin_flag_cnt) AND abs(fin_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN fin_flag_cnt END)) AS fin_flag_cnt_valid FROM __THIS__"
+        },
+        "defaults": {}
+      },
+      {
+        "file": "stages/1_Imputer_ded6c4fea5cf/metadata/part-00000-8e883650-80b9-4d1a-a475-fc501557da88-c000.txt",
+        "sha256": "6282b8ca24229c2232c480a74a042661120568614ef32325223e4d1c5ac5dd14",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration_valid",
+            "tot_fwd_pkts_valid",
+            "tot_bwd_pkts_valid",
+            "totlen_fwd_pkts_valid",
+            "totlen_bwd_pkts_valid",
+            "pkt_len_mean_valid",
+            "pkt_len_std_valid",
+            "flow_iat_mean_valid",
+            "flow_iat_std_valid",
+            "fwd_iat_mean_valid",
+            "bwd_iat_mean_valid",
+            "flow_pkts_s_valid",
+            "flow_byts_s_valid",
+            "down_up_ratio_valid",
+            "syn_flag_cnt_valid",
+            "ack_flag_cnt_valid",
+            "rst_flag_cnt_valid",
+            "fin_flag_cnt_valid"
+          ],
+          "outputCols": [
+            "flow_duration_filled",
+            "tot_fwd_pkts_filled",
+            "tot_bwd_pkts_filled",
+            "totlen_fwd_pkts_filled",
+            "totlen_bwd_pkts_filled",
+            "pkt_len_mean_filled",
+            "pkt_len_std_filled",
+            "flow_iat_mean_filled",
+            "flow_iat_std_filled",
+            "fwd_iat_mean_filled",
+            "bwd_iat_mean_filled",
+            "flow_pkts_s_filled",
+            "flow_byts_s_filled",
+            "down_up_ratio_filled",
+            "syn_flag_cnt_filled",
+            "ack_flag_cnt_filled",
+            "rst_flag_cnt_filled",
+            "fin_flag_cnt_filled"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_ded6c4fea5cf__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/2_VectorAssembler_09b31eb4789b/metadata/part-00000-7bf6b8c7-cfe0-4be3-8aad-57fe393e6647-c000.txt",
+        "sha256": "7761b8b94869ce3c7868118827c1538608bfa271171e0f5cc7b7c0b7f59dda53",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_filled",
+            "tot_fwd_pkts_filled",
+            "tot_bwd_pkts_filled",
+            "totlen_fwd_pkts_filled",
+            "totlen_bwd_pkts_filled",
+            "pkt_len_mean_filled",
+            "pkt_len_std_filled",
+            "flow_iat_mean_filled",
+            "flow_iat_std_filled",
+            "fwd_iat_mean_filled",
+            "bwd_iat_mean_filled",
+            "flow_pkts_s_filled",
+            "flow_byts_s_filled",
+            "down_up_ratio_filled",
+            "syn_flag_cnt_filled",
+            "ack_flag_cnt_filled",
+            "rst_flag_cnt_filled",
+            "fin_flag_cnt_filled"
+          ],
+          "outputCol": "unscaled"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_09b31eb4789b__output"
+        }
+      },
+      {
+        "file": "stages/3_StandardScaler_140d8fdfd488/metadata/part-00000-b0ea8d09-fb66-4124-bcb2-765abceea562-c000.txt",
+        "sha256": "bf39baf525e8a513c90ac1deab4bbb394a4382de91a4a3cb4e4e891eea40cbf8",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "unscaled",
+          "outputCol": "features",
+          "withMean": true,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_140d8fdfd488__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/4_KMeans_827890df35c6/metadata/part-00000-c17af254-4358-4e37-b28e-62545b7ff7f7-c000.txt",
+        "sha256": "8e82b0ef89fcfa118bcacd2b0b2862cc88104fdbf882126fd209e411efa73fc8",
+        "stage_class": "org.apache.spark.ml.clustering.KMeansModel",
+        "parameters": {
+          "distanceMeasure": "euclidean",
+          "featuresCol": "features",
+          "initMode": "k-means||",
+          "initSteps": 2,
+          "k": 12,
+          "maxIter": 16,
+          "predictionCol": "cluster",
+          "seed": 23013,
+          "tol": 0.0001
+        },
+        "defaults": {
+          "distanceMeasure": "euclidean",
+          "featuresCol": "features",
+          "initMode": "k-means||",
+          "initSteps": 2,
+          "intermediateStorageLevel": "MEMORY_AND_DISK",
+          "k": 2,
+          "maxBlockSizeInMB": 0.0,
+          "maxIter": 20,
+          "predictionCol": "prediction",
+          "seed": 3692790944593854868,
+          "solver": "auto",
+          "tol": 0.0001
+        }
+      }
+    ]
+  },
+  {
+    "model": "hybrid-B",
+    "feature_order": [
+      "flow_duration",
+      "tot_fwd_pkts",
+      "tot_bwd_pkts",
+      "totlen_fwd_pkts",
+      "totlen_bwd_pkts",
+      "pkt_len_mean",
+      "pkt_len_std",
+      "flow_iat_mean",
+      "flow_iat_std",
+      "fwd_iat_mean",
+      "bwd_iat_mean",
+      "flow_pkts_s",
+      "flow_byts_s",
+      "down_up_ratio",
+      "syn_flag_cnt",
+      "ack_flag_cnt",
+      "rst_flag_cnt",
+      "fin_flag_cnt"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_Imputer_520c45376147/metadata/part-00000-34f271d2-472e-4f15-8a81-02c08244db07-c000.txt",
+        "sha256": "151438fbb507931cff0ccf93d39dc6690190965445a660cd04b2d6dbb63538b6",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration",
+            "tot_fwd_pkts",
+            "tot_bwd_pkts",
+            "totlen_fwd_pkts",
+            "totlen_bwd_pkts",
+            "pkt_len_mean",
+            "pkt_len_std",
+            "flow_iat_mean",
+            "flow_iat_std",
+            "fwd_iat_mean",
+            "bwd_iat_mean",
+            "flow_pkts_s",
+            "flow_byts_s",
+            "down_up_ratio",
+            "syn_flag_cnt",
+            "ack_flag_cnt",
+            "rst_flag_cnt",
+            "fin_flag_cnt"
+          ],
+          "outputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_520c45376147__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/1_VectorAssembler_e0d3121dd3af/metadata/part-00000-164315b2-3461-4b67-9660-fc8992696802-c000.txt",
+        "sha256": "e9ecc566330487869483ab9fe3c3c22ca803ac87db395c24962512c922f07b04",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "outputCol": "features"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_e0d3121dd3af__output"
+        }
+      },
+      {
+        "file": "stages/2_StandardScaler_55c8c510f4e4/metadata/part-00000-534152b3-0433-437d-b1da-68b021387e20-c000.txt",
+        "sha256": "41f83414093f062609e3cfc4f6dafd7f634aeed6b2992cca1d9cd314af7c568f",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "features",
+          "outputCol": "scaled_features",
+          "withMean": false,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_55c8c510f4e4__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/3_LogisticRegression_279bf7ac1f37/metadata/part-00000-7df835fb-b274-4a09-b62d-e2163bac3419-c000.txt",
+        "sha256": "588638bf32149d7a513d37a1f755a3ae652990bb552cc2eba518e53bdb4b5743",
+        "stage_class": "org.apache.spark.ml.classification.LogisticRegressionModel",
+        "parameters": {
+          "featuresCol": "scaled_features",
+          "labelCol": "binary_label",
+          "maxIter": 12,
+          "regParam": 0.05,
+          "standardization": false,
+          "weightCol": "class_weight"
+        },
+        "defaults": {
+          "aggregationDepth": 2,
+          "elasticNetParam": 0.0,
+          "family": "auto",
+          "featuresCol": "features",
+          "fitIntercept": true,
+          "labelCol": "label",
+          "maxBlockSizeInMB": 0.0,
+          "maxIter": 100,
+          "predictionCol": "prediction",
+          "probabilityCol": "probability",
+          "rawPredictionCol": "rawPrediction",
+          "regParam": 0.0,
+          "standardization": true,
+          "threshold": 0.5,
+          "tol": 1e-06
+        }
+      }
+    ]
+  },
+  {
+    "model": "novelty-C",
+    "feature_order": [
+      "flow_duration_valid",
+      "tot_fwd_pkts_valid",
+      "tot_bwd_pkts_valid",
+      "totlen_fwd_pkts_valid",
+      "totlen_bwd_pkts_valid",
+      "pkt_len_mean_valid",
+      "pkt_len_std_valid",
+      "flow_iat_mean_valid",
+      "flow_iat_std_valid",
+      "fwd_iat_mean_valid",
+      "bwd_iat_mean_valid",
+      "flow_pkts_s_valid",
+      "flow_byts_s_valid",
+      "down_up_ratio_valid",
+      "syn_flag_cnt_valid",
+      "ack_flag_cnt_valid",
+      "rst_flag_cnt_valid",
+      "fin_flag_cnt_valid"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_SQLTransformer_de35da705442/metadata/part-00000-65a40e82-9196-455e-8074-c37a6c2bd711-c000.txt",
+        "sha256": "6d1f231457c948d2f6446014349f659e2e7a9d718039ae040ce58598b33bd503",
+        "stage_class": "org.apache.spark.ml.feature.SQLTransformer",
+        "parameters": {
+          "statement": "SELECT *, signum(CASE WHEN flow_duration IS NOT NULL AND NOT isnan(flow_duration) AND abs(flow_duration) < CAST('Infinity' AS DOUBLE) THEN flow_duration END) * log1p(abs(CASE WHEN flow_duration IS NOT NULL AND NOT isnan(flow_duration) AND abs(flow_duration) < CAST('Infinity' AS DOUBLE) THEN flow_duration END)) AS flow_duration_valid, signum(CASE WHEN tot_fwd_pkts IS NOT NULL AND NOT isnan(tot_fwd_pkts) AND abs(tot_fwd_pkts) < CAST('Infinity' AS DOUBLE) THEN tot_fwd_pkts END) * log1p(abs(CASE WHEN tot_fwd_pkts IS NOT NULL AND NOT isnan(tot_fwd_pkts) AND abs(tot_fwd_pkts) < CAST('Infinity' AS DOUBLE) THEN tot_fwd_pkts END)) AS tot_fwd_pkts_valid, signum(CASE WHEN tot_bwd_pkts IS NOT NULL AND NOT isnan(tot_bwd_pkts) AND abs(tot_bwd_pkts) < CAST('Infinity' AS DOUBLE) THEN tot_bwd_pkts END) * log1p(abs(CASE WHEN tot_bwd_pkts IS NOT NULL AND NOT isnan(tot_bwd_pkts) AND abs(tot_bwd_pkts) < CAST('Infinity' AS DOUBLE) THEN tot_bwd_pkts END)) AS tot_bwd_pkts_valid, signum(CASE WHEN totlen_fwd_pkts IS NOT NULL AND NOT isnan(totlen_fwd_pkts) AND abs(totlen_fwd_pkts) < CAST('Infinity' AS DOUBLE) THEN totlen_fwd_pkts END) * log1p(abs(CASE WHEN totlen_fwd_pkts IS NOT NULL AND NOT isnan(totlen_fwd_pkts) AND abs(totlen_fwd_pkts) < CAST('Infinity' AS DOUBLE) THEN totlen_fwd_pkts END)) AS totlen_fwd_pkts_valid, signum(CASE WHEN totlen_bwd_pkts IS NOT NULL AND NOT isnan(totlen_bwd_pkts) AND abs(totlen_bwd_pkts) < CAST('Infinity' AS DOUBLE) THEN totlen_bwd_pkts END) * log1p(abs(CASE WHEN totlen_bwd_pkts IS NOT NULL AND NOT isnan(totlen_bwd_pkts) AND abs(totlen_bwd_pkts) < CAST('Infinity' AS DOUBLE) THEN totlen_bwd_pkts END)) AS totlen_bwd_pkts_valid, signum(CASE WHEN pkt_len_mean IS NOT NULL AND NOT isnan(pkt_len_mean) AND abs(pkt_len_mean) < CAST('Infinity' AS DOUBLE) THEN pkt_len_mean END) * log1p(abs(CASE WHEN pkt_len_mean IS NOT NULL AND NOT isnan(pkt_len_mean) AND abs(pkt_len_mean) < CAST('Infinity' AS DOUBLE) THEN pkt_len_mean END)) AS pkt_len_mean_valid, signum(CASE WHEN pkt_len_std IS NOT NULL AND NOT isnan(pkt_len_std) AND abs(pkt_len_std) < CAST('Infinity' AS DOUBLE) THEN pkt_len_std END) * log1p(abs(CASE WHEN pkt_len_std IS NOT NULL AND NOT isnan(pkt_len_std) AND abs(pkt_len_std) < CAST('Infinity' AS DOUBLE) THEN pkt_len_std END)) AS pkt_len_std_valid, signum(CASE WHEN flow_iat_mean IS NOT NULL AND NOT isnan(flow_iat_mean) AND abs(flow_iat_mean) < CAST('Infinity' AS DOUBLE) THEN flow_iat_mean END) * log1p(abs(CASE WHEN flow_iat_mean IS NOT NULL AND NOT isnan(flow_iat_mean) AND abs(flow_iat_mean) < CAST('Infinity' AS DOUBLE) THEN flow_iat_mean END)) AS flow_iat_mean_valid, signum(CASE WHEN flow_iat_std IS NOT NULL AND NOT isnan(flow_iat_std) AND abs(flow_iat_std) < CAST('Infinity' AS DOUBLE) THEN flow_iat_std END) * log1p(abs(CASE WHEN flow_iat_std IS NOT NULL AND NOT isnan(flow_iat_std) AND abs(flow_iat_std) < CAST('Infinity' AS DOUBLE) THEN flow_iat_std END)) AS flow_iat_std_valid, signum(CASE WHEN fwd_iat_mean IS NOT NULL AND NOT isnan(fwd_iat_mean) AND abs(fwd_iat_mean) < CAST('Infinity' AS DOUBLE) THEN fwd_iat_mean END) * log1p(abs(CASE WHEN fwd_iat_mean IS NOT NULL AND NOT isnan(fwd_iat_mean) AND abs(fwd_iat_mean) < CAST('Infinity' AS DOUBLE) THEN fwd_iat_mean END)) AS fwd_iat_mean_valid, signum(CASE WHEN bwd_iat_mean IS NOT NULL AND NOT isnan(bwd_iat_mean) AND abs(bwd_iat_mean) < CAST('Infinity' AS DOUBLE) THEN bwd_iat_mean END) * log1p(abs(CASE WHEN bwd_iat_mean IS NOT NULL AND NOT isnan(bwd_iat_mean) AND abs(bwd_iat_mean) < CAST('Infinity' AS DOUBLE) THEN bwd_iat_mean END)) AS bwd_iat_mean_valid, signum(CASE WHEN flow_pkts_s IS NOT NULL AND NOT isnan(flow_pkts_s) AND abs(flow_pkts_s) < CAST('Infinity' AS DOUBLE) THEN flow_pkts_s END) * log1p(abs(CASE WHEN flow_pkts_s IS NOT NULL AND NOT isnan(flow_pkts_s) AND abs(flow_pkts_s) < CAST('Infinity' AS DOUBLE) THEN flow_pkts_s END)) AS flow_pkts_s_valid, signum(CASE WHEN flow_byts_s IS NOT NULL AND NOT isnan(flow_byts_s) AND abs(flow_byts_s) < CAST('Infinity' AS DOUBLE) THEN flow_byts_s END) * log1p(abs(CASE WHEN flow_byts_s IS NOT NULL AND NOT isnan(flow_byts_s) AND abs(flow_byts_s) < CAST('Infinity' AS DOUBLE) THEN flow_byts_s END)) AS flow_byts_s_valid, signum(CASE WHEN down_up_ratio IS NOT NULL AND NOT isnan(down_up_ratio) AND abs(down_up_ratio) < CAST('Infinity' AS DOUBLE) THEN down_up_ratio END) * log1p(abs(CASE WHEN down_up_ratio IS NOT NULL AND NOT isnan(down_up_ratio) AND abs(down_up_ratio) < CAST('Infinity' AS DOUBLE) THEN down_up_ratio END)) AS down_up_ratio_valid, signum(CASE WHEN syn_flag_cnt IS NOT NULL AND NOT isnan(syn_flag_cnt) AND abs(syn_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN syn_flag_cnt END) * log1p(abs(CASE WHEN syn_flag_cnt IS NOT NULL AND NOT isnan(syn_flag_cnt) AND abs(syn_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN syn_flag_cnt END)) AS syn_flag_cnt_valid, signum(CASE WHEN ack_flag_cnt IS NOT NULL AND NOT isnan(ack_flag_cnt) AND abs(ack_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN ack_flag_cnt END) * log1p(abs(CASE WHEN ack_flag_cnt IS NOT NULL AND NOT isnan(ack_flag_cnt) AND abs(ack_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN ack_flag_cnt END)) AS ack_flag_cnt_valid, signum(CASE WHEN rst_flag_cnt IS NOT NULL AND NOT isnan(rst_flag_cnt) AND abs(rst_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN rst_flag_cnt END) * log1p(abs(CASE WHEN rst_flag_cnt IS NOT NULL AND NOT isnan(rst_flag_cnt) AND abs(rst_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN rst_flag_cnt END)) AS rst_flag_cnt_valid, signum(CASE WHEN fin_flag_cnt IS NOT NULL AND NOT isnan(fin_flag_cnt) AND abs(fin_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN fin_flag_cnt END) * log1p(abs(CASE WHEN fin_flag_cnt IS NOT NULL AND NOT isnan(fin_flag_cnt) AND abs(fin_flag_cnt) < CAST('Infinity' AS DOUBLE) THEN fin_flag_cnt END)) AS fin_flag_cnt_valid FROM __THIS__"
+        },
+        "defaults": {}
+      },
+      {
+        "file": "stages/1_Imputer_5f45b06a8ef8/metadata/part-00000-1036018f-36e2-483e-8cc0-faf518e5e67c-c000.txt",
+        "sha256": "757957c77896c481bfbb67d4f44d5b59d75415d16553799068c7c13915847962",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration_valid",
+            "tot_fwd_pkts_valid",
+            "tot_bwd_pkts_valid",
+            "totlen_fwd_pkts_valid",
+            "totlen_bwd_pkts_valid",
+            "pkt_len_mean_valid",
+            "pkt_len_std_valid",
+            "flow_iat_mean_valid",
+            "flow_iat_std_valid",
+            "fwd_iat_mean_valid",
+            "bwd_iat_mean_valid",
+            "flow_pkts_s_valid",
+            "flow_byts_s_valid",
+            "down_up_ratio_valid",
+            "syn_flag_cnt_valid",
+            "ack_flag_cnt_valid",
+            "rst_flag_cnt_valid",
+            "fin_flag_cnt_valid"
+          ],
+          "outputCols": [
+            "flow_duration_filled",
+            "tot_fwd_pkts_filled",
+            "tot_bwd_pkts_filled",
+            "totlen_fwd_pkts_filled",
+            "totlen_bwd_pkts_filled",
+            "pkt_len_mean_filled",
+            "pkt_len_std_filled",
+            "flow_iat_mean_filled",
+            "flow_iat_std_filled",
+            "fwd_iat_mean_filled",
+            "bwd_iat_mean_filled",
+            "flow_pkts_s_filled",
+            "flow_byts_s_filled",
+            "down_up_ratio_filled",
+            "syn_flag_cnt_filled",
+            "ack_flag_cnt_filled",
+            "rst_flag_cnt_filled",
+            "fin_flag_cnt_filled"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_5f45b06a8ef8__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/2_VectorAssembler_676a48355ddb/metadata/part-00000-e14a109c-8af8-4654-8154-6e9161cd951a-c000.txt",
+        "sha256": "7b960351421f31b84e2e0e38f691e7ce874de3903721b6a00b857f398a995229",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_filled",
+            "tot_fwd_pkts_filled",
+            "tot_bwd_pkts_filled",
+            "totlen_fwd_pkts_filled",
+            "totlen_bwd_pkts_filled",
+            "pkt_len_mean_filled",
+            "pkt_len_std_filled",
+            "flow_iat_mean_filled",
+            "flow_iat_std_filled",
+            "fwd_iat_mean_filled",
+            "bwd_iat_mean_filled",
+            "flow_pkts_s_filled",
+            "flow_byts_s_filled",
+            "down_up_ratio_filled",
+            "syn_flag_cnt_filled",
+            "ack_flag_cnt_filled",
+            "rst_flag_cnt_filled",
+            "fin_flag_cnt_filled"
+          ],
+          "outputCol": "unscaled"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_676a48355ddb__output"
+        }
+      },
+      {
+        "file": "stages/3_StandardScaler_243daebf2f5b/metadata/part-00000-9698ab33-c95f-4830-81ac-9682bb640777-c000.txt",
+        "sha256": "6fb8b912fa0aaf33c40e738c5c860fefc80db86402b48b31028c440aa9eff021",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "unscaled",
+          "outputCol": "features",
+          "withMean": true,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_243daebf2f5b__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/4_KMeans_66e40960aec2/metadata/part-00000-db49e59c-444c-443d-8273-1424303b6238-c000.txt",
+        "sha256": "df1f0c73cd78654cdecf72fb888de40dfd16bd7a2913c4e67a85ddb35e4b91ea",
+        "stage_class": "org.apache.spark.ml.clustering.KMeansModel",
+        "parameters": {
+          "distanceMeasure": "euclidean",
+          "featuresCol": "features",
+          "initMode": "k-means||",
+          "initSteps": 2,
+          "k": 12,
+          "maxIter": 16,
+          "predictionCol": "cluster",
+          "seed": 23013,
+          "tol": 0.0001
+        },
+        "defaults": {
+          "distanceMeasure": "euclidean",
+          "featuresCol": "features",
+          "initMode": "k-means||",
+          "initSteps": 2,
+          "intermediateStorageLevel": "MEMORY_AND_DISK",
+          "k": 2,
+          "maxBlockSizeInMB": 0.0,
+          "maxIter": 20,
+          "predictionCol": "prediction",
+          "seed": -6891582054577785520,
+          "solver": "auto",
+          "tol": 0.0001
+        }
+      }
+    ]
+  },
+  {
+    "model": "hybrid-C",
+    "feature_order": [
+      "flow_duration",
+      "tot_fwd_pkts",
+      "tot_bwd_pkts",
+      "totlen_fwd_pkts",
+      "totlen_bwd_pkts",
+      "pkt_len_mean",
+      "pkt_len_std",
+      "flow_iat_mean",
+      "flow_iat_std",
+      "fwd_iat_mean",
+      "bwd_iat_mean",
+      "flow_pkts_s",
+      "flow_byts_s",
+      "down_up_ratio",
+      "syn_flag_cnt",
+      "ack_flag_cnt",
+      "rst_flag_cnt",
+      "fin_flag_cnt"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_Imputer_a89f80bbe855/metadata/part-00000-27807547-3794-4cd5-a8cd-c6b6059d7ea8-c000.txt",
+        "sha256": "6199dba4fc1d4f8d34f17e38909dfeaacf544f37bbaaac9cee5ad3dd69b143e6",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration",
+            "tot_fwd_pkts",
+            "tot_bwd_pkts",
+            "totlen_fwd_pkts",
+            "totlen_bwd_pkts",
+            "pkt_len_mean",
+            "pkt_len_std",
+            "flow_iat_mean",
+            "flow_iat_std",
+            "fwd_iat_mean",
+            "bwd_iat_mean",
+            "flow_pkts_s",
+            "flow_byts_s",
+            "down_up_ratio",
+            "syn_flag_cnt",
+            "ack_flag_cnt",
+            "rst_flag_cnt",
+            "fin_flag_cnt"
+          ],
+          "outputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_a89f80bbe855__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/1_VectorAssembler_651edb87a219/metadata/part-00000-a869d3d0-31c7-429d-b359-1f2346dba47a-c000.txt",
+        "sha256": "f1574486fc99f3731a4d2214d621eb64265ad0664e95a40ab1f7cabb46603ff6",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "outputCol": "features"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_651edb87a219__output"
+        }
+      },
+      {
+        "file": "stages/2_StandardScaler_68a9b5ec7d3f/metadata/part-00000-6f26447f-b3fd-4b3f-9bd4-96143ba0faf4-c000.txt",
+        "sha256": "de75507538abe5abcf01bd94cb163f6548ec64bd182d1f959a88bc1636de0aef",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "features",
+          "outputCol": "scaled_features",
+          "withMean": false,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_68a9b5ec7d3f__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/3_RandomForestClassifier_ead193a0e214/metadata/part-00000-742ec5f7-5cc9-4101-8173-6526862aff14-c000.txt",
+        "sha256": "da37d60ce44f580a795127bc9939c101d7a358497a93e7579ec6352171b39039",
+        "stage_class": "org.apache.spark.ml.classification.RandomForestClassificationModel",
+        "parameters": {
+          "featuresCol": "features",
+          "labelCol": "binary_label",
+          "maxBins": 24,
+          "maxDepth": 5,
+          "maxMemoryInMB": 192,
+          "minInstancesPerNode": 30,
+          "numTrees": 12,
+          "seed": 23013,
+          "weightCol": "class_weight"
+        },
+        "defaults": {
+          "bootstrap": true,
+          "cacheNodeIds": false,
+          "checkpointInterval": 10,
+          "featureSubsetStrategy": "auto",
+          "featuresCol": "features",
+          "impurity": "gini",
+          "labelCol": "label",
+          "leafCol": "",
+          "maxBins": 32,
+          "maxDepth": 5,
+          "maxMemoryInMB": 256,
+          "minInfoGain": 0.0,
+          "minInstancesPerNode": 1,
+          "minWeightFractionPerNode": 0.0,
+          "numTrees": 20,
+          "predictionCol": "prediction",
+          "probabilityCol": "probability",
+          "pruneTree": true,
+          "rawPredictionCol": "rawPrediction",
+          "seed": 7643998916580468889,
+          "subsamplingRate": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "model": "family-A",
+    "feature_order": [
+      "flow_duration",
+      "tot_fwd_pkts",
+      "tot_bwd_pkts",
+      "totlen_fwd_pkts",
+      "totlen_bwd_pkts",
+      "pkt_len_mean",
+      "pkt_len_std",
+      "flow_iat_mean",
+      "flow_iat_std",
+      "fwd_iat_mean",
+      "bwd_iat_mean",
+      "flow_pkts_s",
+      "flow_byts_s",
+      "down_up_ratio",
+      "syn_flag_cnt",
+      "ack_flag_cnt",
+      "rst_flag_cnt",
+      "fin_flag_cnt"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_Imputer_945cc28a31f5/metadata/part-00000-2ff8d4bd-894b-4e91-913f-0009e3c4fa26-c000.txt",
+        "sha256": "597d377c4e769ffa8adeba5374e194c84152e3a583828ac12b8d54fa4dbb3170",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration",
+            "tot_fwd_pkts",
+            "tot_bwd_pkts",
+            "totlen_fwd_pkts",
+            "totlen_bwd_pkts",
+            "pkt_len_mean",
+            "pkt_len_std",
+            "flow_iat_mean",
+            "flow_iat_std",
+            "fwd_iat_mean",
+            "bwd_iat_mean",
+            "flow_pkts_s",
+            "flow_byts_s",
+            "down_up_ratio",
+            "syn_flag_cnt",
+            "ack_flag_cnt",
+            "rst_flag_cnt",
+            "fin_flag_cnt"
+          ],
+          "outputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_945cc28a31f5__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/1_VectorAssembler_b84cc6f02bae/metadata/part-00000-b4494b3d-36d1-4feb-b84c-426a6accc4e0-c000.txt",
+        "sha256": "1e61d352a7eb225449ce44a85b4ae9bebad009f555a7f82b913fea9f7ab37a92",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "outputCol": "features"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_b84cc6f02bae__output"
+        }
+      },
+      {
+        "file": "stages/2_StandardScaler_6f62a42734de/metadata/part-00000-a6a2213c-046c-449d-b2c9-2f8a869fd095-c000.txt",
+        "sha256": "22d0d233bf1ad09c76236902201353d7cd0aa88a6027ae0ae2ad349ce21523e1",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "features",
+          "outputCol": "scaled_features",
+          "withMean": false,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_6f62a42734de__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/3_RandomForestClassifier_ee573c13dcfe/metadata/part-00000-ff55ecb0-7542-43a5-96ba-4bd4ff460922-c000.txt",
+        "sha256": "cb0ec07dafca09eb12e6b040b6b9543c55b6d82338fdfb937f5cc81477463e21",
+        "stage_class": "org.apache.spark.ml.classification.RandomForestClassificationModel",
+        "parameters": {
+          "featuresCol": "features",
+          "maxBins": 24,
+          "maxDepth": 5,
+          "maxMemoryInMB": 192,
+          "minInstancesPerNode": 30,
+          "numTrees": 12,
+          "seed": 23013,
+          "weightCol": "class_weight"
+        },
+        "defaults": {
+          "bootstrap": true,
+          "cacheNodeIds": false,
+          "checkpointInterval": 10,
+          "featureSubsetStrategy": "auto",
+          "featuresCol": "features",
+          "impurity": "gini",
+          "labelCol": "label",
+          "leafCol": "",
+          "maxBins": 32,
+          "maxDepth": 5,
+          "maxMemoryInMB": 256,
+          "minInfoGain": 0.0,
+          "minInstancesPerNode": 1,
+          "minWeightFractionPerNode": 0.0,
+          "numTrees": 20,
+          "predictionCol": "prediction",
+          "probabilityCol": "probability",
+          "pruneTree": true,
+          "rawPredictionCol": "rawPrediction",
+          "seed": 3333729863860150615,
+          "subsamplingRate": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "model": "family-B",
+    "feature_order": [
+      "flow_duration",
+      "tot_fwd_pkts",
+      "tot_bwd_pkts",
+      "totlen_fwd_pkts",
+      "totlen_bwd_pkts",
+      "pkt_len_mean",
+      "pkt_len_std",
+      "flow_iat_mean",
+      "flow_iat_std",
+      "fwd_iat_mean",
+      "bwd_iat_mean",
+      "flow_pkts_s",
+      "flow_byts_s",
+      "down_up_ratio",
+      "syn_flag_cnt",
+      "ack_flag_cnt",
+      "rst_flag_cnt",
+      "fin_flag_cnt"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_Imputer_9de99867d643/metadata/part-00000-f0e1c766-42e5-44f6-b237-a88589a536a8-c000.txt",
+        "sha256": "b983f5b3b734732610d17d7578ed910eb2b0dd27a75324c7d06a89efc711c4e9",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration",
+            "tot_fwd_pkts",
+            "tot_bwd_pkts",
+            "totlen_fwd_pkts",
+            "totlen_bwd_pkts",
+            "pkt_len_mean",
+            "pkt_len_std",
+            "flow_iat_mean",
+            "flow_iat_std",
+            "fwd_iat_mean",
+            "bwd_iat_mean",
+            "flow_pkts_s",
+            "flow_byts_s",
+            "down_up_ratio",
+            "syn_flag_cnt",
+            "ack_flag_cnt",
+            "rst_flag_cnt",
+            "fin_flag_cnt"
+          ],
+          "outputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_9de99867d643__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/1_VectorAssembler_b0456538a85d/metadata/part-00000-b9524804-9f02-4004-b849-9da6865cb858-c000.txt",
+        "sha256": "e7669bafdfd7e5cd1c668407c39c146b39e47a6d54506889bd0cd216bc799af9",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "outputCol": "features"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_b0456538a85d__output"
+        }
+      },
+      {
+        "file": "stages/2_StandardScaler_cf05d2239eaa/metadata/part-00000-64a3e3b1-7423-43ea-a83c-a2ac66ee6c03-c000.txt",
+        "sha256": "1728e17f2d00117e1619fd7705285aa250f7c12c3c58a7778d82198feb3e7559",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "features",
+          "outputCol": "scaled_features",
+          "withMean": false,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_cf05d2239eaa__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/3_LogisticRegression_0ae8582fea57/metadata/part-00000-4e44258b-fea6-411b-aec6-09866216916f-c000.txt",
+        "sha256": "6f546c865b1ff10415f8366819a8667ae9c05c9ec0e61179aea72ad978066402",
+        "stage_class": "org.apache.spark.ml.classification.LogisticRegressionModel",
+        "parameters": {
+          "family": "multinomial",
+          "featuresCol": "scaled_features",
+          "maxIter": 12,
+          "regParam": 0.05,
+          "standardization": false,
+          "weightCol": "class_weight"
+        },
+        "defaults": {
+          "aggregationDepth": 2,
+          "elasticNetParam": 0.0,
+          "family": "auto",
+          "featuresCol": "features",
+          "fitIntercept": true,
+          "labelCol": "label",
+          "maxBlockSizeInMB": 0.0,
+          "maxIter": 100,
+          "predictionCol": "prediction",
+          "probabilityCol": "probability",
+          "rawPredictionCol": "rawPrediction",
+          "regParam": 0.0,
+          "standardization": true,
+          "threshold": 0.5,
+          "tol": 1e-06
+        }
+      }
+    ]
+  },
+  {
+    "model": "adaptive-9827e6a728bb61755e3d",
+    "feature_order": [
+      "flow_duration",
+      "tot_fwd_pkts",
+      "tot_bwd_pkts",
+      "totlen_fwd_pkts",
+      "totlen_bwd_pkts",
+      "pkt_len_mean",
+      "pkt_len_std",
+      "flow_iat_mean",
+      "flow_iat_std",
+      "fwd_iat_mean",
+      "bwd_iat_mean",
+      "flow_pkts_s",
+      "flow_byts_s",
+      "down_up_ratio",
+      "syn_flag_cnt",
+      "ack_flag_cnt",
+      "rst_flag_cnt",
+      "fin_flag_cnt"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_Imputer_22a3f27a0793/metadata/part-00000-f55b9403-68a0-4c3a-ad73-f78a13ea6c5a-c000.txt",
+        "sha256": "94b47bb86e00eb63217bcb6621215c9fb0368c1d93f9c9e8e20b373e7a78cc95",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration",
+            "tot_fwd_pkts",
+            "tot_bwd_pkts",
+            "totlen_fwd_pkts",
+            "totlen_bwd_pkts",
+            "pkt_len_mean",
+            "pkt_len_std",
+            "flow_iat_mean",
+            "flow_iat_std",
+            "fwd_iat_mean",
+            "bwd_iat_mean",
+            "flow_pkts_s",
+            "flow_byts_s",
+            "down_up_ratio",
+            "syn_flag_cnt",
+            "ack_flag_cnt",
+            "rst_flag_cnt",
+            "fin_flag_cnt"
+          ],
+          "outputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_22a3f27a0793__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/1_VectorAssembler_470fe1d18bb2/metadata/part-00000-603f00d6-26b1-4f11-a6b8-e17aefddae58-c000.txt",
+        "sha256": "114ba723ecdaff2f9b2a07e7c86077cc7285413d1920d0f156803bc0402ca937",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "outputCol": "features"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_470fe1d18bb2__output"
+        }
+      },
+      {
+        "file": "stages/2_StandardScaler_5d00aa7446d4/metadata/part-00000-8d32ff24-561f-4500-87e1-491b6e15730a-c000.txt",
+        "sha256": "ae6c2e5827fdc28f5ab9e437e60c130fef6a4ee2b60b74a3df6e2c67f83fd5b8",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "features",
+          "outputCol": "scaled_features",
+          "withMean": false,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_5d00aa7446d4__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/3_LogisticRegression_e676c85e29d9/metadata/part-00000-8f192dc2-cde5-4dca-ab41-7f836c20eed5-c000.txt",
+        "sha256": "06160b8b8b3b867d8e4069dce50ab49081c6dcb43e710c65cdee8bdc067476e8",
+        "stage_class": "org.apache.spark.ml.classification.LogisticRegressionModel",
+        "parameters": {
+          "featuresCol": "scaled_features",
+          "labelCol": "binary_label",
+          "maxIter": 12,
+          "regParam": 0.05,
+          "standardization": false,
+          "weightCol": "weight"
+        },
+        "defaults": {
+          "aggregationDepth": 2,
+          "elasticNetParam": 0.0,
+          "family": "auto",
+          "featuresCol": "features",
+          "fitIntercept": true,
+          "labelCol": "label",
+          "maxBlockSizeInMB": 0.0,
+          "maxIter": 100,
+          "predictionCol": "prediction",
+          "probabilityCol": "probability",
+          "rawPredictionCol": "rawPrediction",
+          "regParam": 0.0,
+          "standardization": true,
+          "threshold": 0.5,
+          "tol": 1e-06
+        }
+      }
+    ]
+  },
+  {
+    "model": "adaptive-bf1d002296d424894374",
+    "feature_order": [
+      "flow_duration",
+      "tot_fwd_pkts",
+      "tot_bwd_pkts",
+      "totlen_fwd_pkts",
+      "totlen_bwd_pkts",
+      "pkt_len_mean",
+      "pkt_len_std",
+      "flow_iat_mean",
+      "flow_iat_std",
+      "fwd_iat_mean",
+      "bwd_iat_mean",
+      "flow_pkts_s",
+      "flow_byts_s",
+      "down_up_ratio",
+      "syn_flag_cnt",
+      "ack_flag_cnt",
+      "rst_flag_cnt",
+      "fin_flag_cnt"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_Imputer_bc7a828199df/metadata/part-00000-9e534549-afa7-4cf5-9bae-fbd1365b1b76-c000.txt",
+        "sha256": "5bc92fc24cbbf90976a8079ad3428eb3f286f4d3ec830c2fda428c437f7e31bf",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration",
+            "tot_fwd_pkts",
+            "tot_bwd_pkts",
+            "totlen_fwd_pkts",
+            "totlen_bwd_pkts",
+            "pkt_len_mean",
+            "pkt_len_std",
+            "flow_iat_mean",
+            "flow_iat_std",
+            "fwd_iat_mean",
+            "bwd_iat_mean",
+            "flow_pkts_s",
+            "flow_byts_s",
+            "down_up_ratio",
+            "syn_flag_cnt",
+            "ack_flag_cnt",
+            "rst_flag_cnt",
+            "fin_flag_cnt"
+          ],
+          "outputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_bc7a828199df__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/1_VectorAssembler_1a8169061601/metadata/part-00000-bd8cf0c2-8b02-4fef-b2a9-4d248c39441a-c000.txt",
+        "sha256": "c6addb217a732760354c976e7c493bb72701d6060f747cdf6d46166003686759",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "outputCol": "features"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_1a8169061601__output"
+        }
+      },
+      {
+        "file": "stages/2_StandardScaler_6d96f76a9dbc/metadata/part-00000-416195fa-6d08-45b2-9116-e627127b95df-c000.txt",
+        "sha256": "cb6a10b9e85255d9545f01a3ff332599289aee748fb8e204cab3f321f3d758b9",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "features",
+          "outputCol": "scaled_features",
+          "withMean": false,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_6d96f76a9dbc__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/3_LogisticRegression_d8b1aef4cd8f/metadata/part-00000-c79fab47-d1fe-438c-8709-e3daf2a9ce02-c000.txt",
+        "sha256": "8b18a111dd820bddff4286b8368ed4fc1ffe6309364410fcac654d5210f2ab30",
+        "stage_class": "org.apache.spark.ml.classification.LogisticRegressionModel",
+        "parameters": {
+          "featuresCol": "scaled_features",
+          "labelCol": "binary_label",
+          "maxIter": 12,
+          "regParam": 0.05,
+          "standardization": false,
+          "weightCol": "weight"
+        },
+        "defaults": {
+          "aggregationDepth": 2,
+          "elasticNetParam": 0.0,
+          "family": "auto",
+          "featuresCol": "features",
+          "fitIntercept": true,
+          "labelCol": "label",
+          "maxBlockSizeInMB": 0.0,
+          "maxIter": 100,
+          "predictionCol": "prediction",
+          "probabilityCol": "probability",
+          "rawPredictionCol": "rawPrediction",
+          "regParam": 0.0,
+          "standardization": true,
+          "threshold": 0.5,
+          "tol": 1e-06
+        }
+      }
+    ]
+  },
+  {
+    "model": "adaptive-738a19688a1076f3f333",
+    "feature_order": [
+      "flow_duration",
+      "tot_fwd_pkts",
+      "tot_bwd_pkts",
+      "totlen_fwd_pkts",
+      "totlen_bwd_pkts",
+      "pkt_len_mean",
+      "pkt_len_std",
+      "flow_iat_mean",
+      "flow_iat_std",
+      "fwd_iat_mean",
+      "bwd_iat_mean",
+      "flow_pkts_s",
+      "flow_byts_s",
+      "down_up_ratio",
+      "syn_flag_cnt",
+      "ack_flag_cnt",
+      "rst_flag_cnt",
+      "fin_flag_cnt"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_Imputer_42a71f178514/metadata/part-00000-ef1cd92f-cba0-49d8-90b5-13118b791e31-c000.txt",
+        "sha256": "d62c71bae6e25c57d85607fe846fba2dd86f5de79ff157baff8a4184e155b926",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration",
+            "tot_fwd_pkts",
+            "tot_bwd_pkts",
+            "totlen_fwd_pkts",
+            "totlen_bwd_pkts",
+            "pkt_len_mean",
+            "pkt_len_std",
+            "flow_iat_mean",
+            "flow_iat_std",
+            "fwd_iat_mean",
+            "bwd_iat_mean",
+            "flow_pkts_s",
+            "flow_byts_s",
+            "down_up_ratio",
+            "syn_flag_cnt",
+            "ack_flag_cnt",
+            "rst_flag_cnt",
+            "fin_flag_cnt"
+          ],
+          "outputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_42a71f178514__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/1_VectorAssembler_060d6842f2f8/metadata/part-00000-786bab0a-1505-401b-9d70-48eb35c6191d-c000.txt",
+        "sha256": "9b8a005aac94e167be44d814f1b8fe8f75319afa5bfb6b2db4f607556cf31d67",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "outputCol": "features"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_060d6842f2f8__output"
+        }
+      },
+      {
+        "file": "stages/2_StandardScaler_24848beccde9/metadata/part-00000-e727decc-696c-4cd1-9363-e2b5fd147abe-c000.txt",
+        "sha256": "2e630589c607ddd7f1efadcbc555f3712e75e14a7458fc76afba72769591b8d9",
+        "stage_class": "org.apache.spark.ml.feature.StandardScalerModel",
+        "parameters": {
+          "inputCol": "features",
+          "outputCol": "scaled_features",
+          "withMean": false,
+          "withStd": true
+        },
+        "defaults": {
+          "outputCol": "StandardScaler_24848beccde9__output",
+          "withMean": false,
+          "withStd": true
+        }
+      },
+      {
+        "file": "stages/3_LogisticRegression_33fb0ecad87a/metadata/part-00000-028ada6a-7d04-4f6f-bc58-de273d293e75-c000.txt",
+        "sha256": "be8f7883ff5a1463ee39f7f326c56e36b83b52f2d43ff4678266f3ff00d1e6bc",
+        "stage_class": "org.apache.spark.ml.classification.LogisticRegressionModel",
+        "parameters": {
+          "featuresCol": "scaled_features",
+          "labelCol": "binary_label",
+          "maxIter": 12,
+          "regParam": 0.05,
+          "standardization": false,
+          "weightCol": "weight"
+        },
+        "defaults": {
+          "aggregationDepth": 2,
+          "elasticNetParam": 0.0,
+          "family": "auto",
+          "featuresCol": "features",
+          "fitIntercept": true,
+          "labelCol": "label",
+          "maxBlockSizeInMB": 0.0,
+          "maxIter": 100,
+          "predictionCol": "prediction",
+          "probabilityCol": "probability",
+          "rawPredictionCol": "rawPrediction",
+          "regParam": 0.0,
+          "standardization": true,
+          "threshold": 0.5,
+          "tol": 1e-06
+        }
+      }
+    ]
+  },
+  {
+    "model": "adaptive-8bf75be76e34e7d2835a",
+    "feature_order": [
+      "flow_duration",
+      "tot_fwd_pkts",
+      "tot_bwd_pkts",
+      "totlen_fwd_pkts",
+      "totlen_bwd_pkts",
+      "pkt_len_mean",
+      "pkt_len_std",
+      "flow_iat_mean",
+      "flow_iat_std",
+      "fwd_iat_mean",
+      "bwd_iat_mean",
+      "flow_pkts_s",
+      "flow_byts_s",
+      "down_up_ratio",
+      "syn_flag_cnt",
+      "ack_flag_cnt",
+      "rst_flag_cnt",
+      "fin_flag_cnt"
+    ],
+    "stage_metadata": [
+      {
+        "file": "stages/0_Imputer_06661c5a1ece/metadata/part-00000-37bb800b-bfc2-4dcd-96c1-5f411790cefb-c000.txt",
+        "sha256": "96ea4b72ccdc5a002e34d3246b211fff61b3485586a2268d1faca22c83365853",
+        "stage_class": "org.apache.spark.ml.feature.ImputerModel",
+        "parameters": {
+          "inputCols": [
+            "flow_duration",
+            "tot_fwd_pkts",
+            "tot_bwd_pkts",
+            "totlen_fwd_pkts",
+            "totlen_bwd_pkts",
+            "pkt_len_mean",
+            "pkt_len_std",
+            "flow_iat_mean",
+            "flow_iat_std",
+            "fwd_iat_mean",
+            "bwd_iat_mean",
+            "flow_pkts_s",
+            "flow_byts_s",
+            "down_up_ratio",
+            "syn_flag_cnt",
+            "ack_flag_cnt",
+            "rst_flag_cnt",
+            "fin_flag_cnt"
+          ],
+          "outputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "relativeError": 0.001,
+          "strategy": "median"
+        },
+        "defaults": {
+          "missingValue": "NaN",
+          "outputCol": "Imputer_06661c5a1ece__output",
+          "relativeError": 0.001,
+          "strategy": "mean"
+        }
+      },
+      {
+        "file": "stages/1_VectorAssembler_679b4770e3fb/metadata/part-00000-948b5d1b-e23b-4833-99db-e54375c08137-c000.txt",
+        "sha256": "faa34891d0a0a16886cafefe96391e91ff6b5ed3d8e173b1d16a71029e30e67e",
+        "stage_class": "org.apache.spark.ml.feature.VectorAssembler",
+        "parameters": {
+          "handleInvalid": "error",
+          "inputCols": [
+            "flow_duration_imputed",
+            "tot_fwd_pkts_imputed",
+            "tot_bwd_pkts_imputed",
+            "totlen_fwd_pkts_imputed",
+            "totlen_bwd_pkts_imputed",
+            "pkt_len_mean_imputed",
+            "pkt_len_std_imputed",
+            "flow_iat_mean_imputed",
+            "flow_iat_std_imputed",
+            "fwd_iat_mean_imputed",
+            "bwd_iat_mean_imputed",
+            "flow_pkts_s_imputed",
+            "flow_byts_s_imputed",
+            "down_up_ratio_imputed",
+            "syn_flag_cnt_imputed",
+            "ack_flag_cnt_imputed",
+            "rst_flag_cnt_imputed",
+            "fin_flag_cnt_imputed"
+          ],
+          "outputCol": "features"
+        },
+        "defaults": {
+          "handleInvalid": "error",
+          "outputCol": "VectorAssembler_679b4770e3fb__output"
+        }
+      },
+      {
+        "file": "stages/2_RandomForestClassifier_887a630c74b9/metadata/part-00000-d371451e-d2a8-4b4e-b427-0d09d0895446-c000.txt",
+        "sha256": "41a073fb04795faacc3ff98bc8f1ddd7e4fcc6d28f2e80443b1d36dd4b5c35a5",
+        "stage_class": "org.apache.spark.ml.classification.RandomForestClassificationModel",
+        "parameters": {
+          "featuresCol": "features",
+          "labelCol": "binary_label",
+          "maxBins": 24,
+          "maxDepth": 5,
+          "minInstancesPerNode": 30,
+          "numTrees": 12,
+          "seed": 23013,
+          "weightCol": "weight"
+        },
+        "defaults": {
+          "bootstrap": true,
+          "cacheNodeIds": false,
+          "checkpointInterval": 10,
+          "featureSubsetStrategy": "auto",
+          "featuresCol": "features",
+          "impurity": "gini",
+          "labelCol": "label",
+          "leafCol": "",
+          "maxBins": 32,
+          "maxDepth": 5,
+          "maxMemoryInMB": 256,
+          "minInfoGain": 0.0,
+          "minInstancesPerNode": 1,
+          "minWeightFractionPerNode": 0.0,
+          "numTrees": 20,
+          "predictionCol": "prediction",
+          "probabilityCol": "probability",
+          "pruneTree": true,
+          "rawPredictionCol": "rawPrediction",
+          "seed": -4971325612477795385,
+          "subsamplingRate": 1.0
+        }
+      }
+    ]
+  }
+]

@@ -17,6 +17,8 @@ SECTIONS={
  'Open-set family explanation':'phase13_family_rejection.csv',
  'Adaptive coefficient comparison':'phase13_adaptive_coefficients.csv',
  'Adaptive matched probes':'phase13_adaptive_probes.csv',
+ 'Issued adaptive historical predictions':'phase13_adaptive_history.csv',
+ 'Threshold-only adaptation history':'phase13_threshold_history.csv',
  'Explanation stability':'phase13_stability.csv',
  'Ranking agreement':'phase13_rank_agreement.csv',
  'Computational cost':'phase13_cost.csv',

@@ -1,0 +1,41 @@
+{
+  "status": "validated derived aggregates",
+  "models": 16,
+  "permutation_conditions": 726,
+  "linear_shap_variants": 48,
+  "tree_shap_status": "unsupported",
+  "primary_samples": [
+    {
+      "protocol": "A",
+      "sample_size": 1000,
+      "background_size": 64,
+      "represented_flow_mass": 1239
+    },
+    {
+      "protocol": "B",
+      "sample_size": 1000,
+      "background_size": 64,
+      "represented_flow_mass": 1050
+    }
+  ],
+  "tables": {
+    "phase13_top_features.csv": "75f98b42eb3ee899707254d0059ad458bcd9f92f1e83c13be8bebe9933562dce",
+    "phase13_global_importance.csv": "b30ced19a8e925603742c7a6c04a235b31c524bcfb08095383cef1ea8a3dd68f",
+    "phase13_permutation_summary.csv": "3b609890d463b718d3a517592e8493b562e2b59f4dffff850573de0928b565be",
+    "phase13_hybrid.csv": "3239b0ff43156e3d5131770158848359a4a2457f14cac6c922cd6107dbc34f48",
+    "phase13_novelty.csv": "bd1281a54942153b5fd890cd20449fa4071f0e8731828b96d1c641e2d939e708",
+    "phase13_cost.csv": "ca645f69fbd2cb8a315b71a2eeff9dca6f62135a23c2b157165dbebec087902d",
+    "phase13_adaptive_history.csv": "2e9a1dea87ba0f9be33679cd557110dfa3e21cd620798d03b0b4273ffe6954bb",
+    "phase13_case_contributions.csv": "615496a3aef06a1b3f813c4544e43919c815d1187926313b69a6abd7f36dc311",
+    "phase13_adaptive_probes.csv": "e550a111f9def9095f421476340aa406e664e4fb269516005d9faaa78aa15035",
+    "phase13_distribution_shift.csv": "342de1855b465924476ea891231b4c9a1a7ab27ac234cd9fb1516f5f89dc8bb8",
+    "phase13_threshold_history.csv": "72c48c599263d6dab521077414e759e0ca28a25d7e7bb59e13dba60406301815",
+    "phase13_rank_agreement.csv": "71acb9748ebb1056e812e476c1fc13c8431bf75b1382ee853e5099c18615061f",
+    "phase13_stability.csv": "e8918316441e2ac1332c2f122b42ebe5ec4594e9c885bda08a5f029b4bfc965d",
+    "phase13_synthetic_local.csv": "a2990f7ae9528d6aebd4bfb318f00c81c06dd2c2350b4dff60165d609d8b9bd1",
+    "phase13_adaptive_coefficients.csv": "07aadd4ea2638d6755458677414709439ef420a8294e47ca29df190113520934",
+    "phase13_feature_distributions.csv": "4dfc7921c2925ff6ca46b31f045d031cdc0d123a2f601431674e3f4b6bcf042f",
+    "phase13_family_rejection.csv": "bc5b9668185e85e2f7f3ac255dd109313868caf96add9f65d4683b9631ee548e",
+    "phase13_enriched_cases.csv": "d8a93cc8b17ce85eddc0deae3e67fef83984694e288cb1cd9227733d544e442a"
+  }
+}

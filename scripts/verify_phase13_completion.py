@@ -46,11 +46,13 @@ def verify():
     for r in shift:assert 0<=r['js_bits']<=1 and sum(r['training_counts'].values())==r['training_rows'] and sum(r['evaluation_counts'].values())==r['evaluation_rows']
     probes=load('reports/phase13_diagnostics/adaptive_reference_probes.json');assert len(probes)==4 and all(r['rows']==32 for r in probes)
     for r in probes:assert all(0<=p<=1 for p in r['probabilities']) and r.get('max_logit_residual',0)<=1e-8
+    explanations=load('manifests/phase13_explanations.json');assert len(explanations['entries'])==16
+    for path,expected in explanations['evidence_sha256'].items():assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==expected,path
     analysis=load('reports/phase13_analysis.json')
     for name,expected in analysis['tables'].items():assert hashlib.sha256((ROOT/'reports'/name).read_bytes()).hexdigest()==expected,name
     figures=load('manifests/phase13_figures.json');assert figures['unique_figures']>=17
     for r in figures['figures']:assert hashlib.sha256((ROOT/r['file']).read_bytes()).hexdigest()==r['sha256'] and all((ROOT/p).exists() for p in r['sources'])
-    browser=load('reports/phase13_validation/browser.json');assert browser['status']=='PASS' and len(browser['sections'])==15 and browser['screenshots']>=2 and not browser['page_errors'] and not browser['http_errors'] and not browser['mobile_horizontal_main_overflow']
+    browser=load('reports/phase13_validation/browser.json');assert browser['status']=='PASS' and len(browser['sections'])==17 and browser['screenshots']>=2 and not browser['page_errors'] and not browser['http_errors'] and not browser['mobile_horizontal_main_overflow']
     preview=load('reports/phase13_validation/preview.json');assert preview['status']=='PASS' and preview['empty_state'] and preview['undefined_metric']
     tests=load('reports/phase13_validation/regression.json');assert tests['status']=='PASS' and tests['original_tests']==135 and tests['phase13_tests']==12 and tests['total']==147 and tests['skipped']==0
     changed=subprocess.check_output(['git','diff','--name-only',manifest['starting_checkpoint']],cwd=ROOT,text=True).splitlines()

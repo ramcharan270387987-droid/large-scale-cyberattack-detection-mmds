@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase-13-explainable-ai/4",
+  "private_cpu": true,
+  "completion_marker": "PHASE13 diagnostics complete",
+  "log_sha256": "01fe0705eabdec918a7736e0e524aae19136b1f40ce82cc6f2b32f659a9fc80b",
+  "log_events": 730,
+  "last_log_seconds": 633.544444407,
+  "submitted_source_sha256": "67649fcf543a4c52bb5cc368919afa6217c8c7e8cd9d1e3ff9ca43fd6d8d47ee",
+  "artifacts": {
+    "reports/phase13_diagnostics/distribution_shift.json": "780010b3e30fd73ee584d5bc737e1e2a68d3f7a0dc4f63e5b00019cea7c8fee6",
+    "reports/phase13_diagnostics/receipt.json": "7b61742b656e7c2395aefeebd95a19cc71c761753da1a41c5152823eee69e2d3",
+    "reports/phase13_diagnostics/error_support.json": "c863a5d145774a68ce476dd100c589d58d68f3817c77c04a2e79bdbdf51ec303",
+    "reports/phase13_diagnostics/error_cases.json": "b0addb5b35062276e140c0cfe9b7b2a0ac996d1f08569bbccf28ea3b8299f4d5",
+    "reports/phase13_diagnostics/adaptive_reference_probes.json": "03dd5c202e094ece4886ca456064dbc010fec6a7053580889aa3aed0e5cf8433"
+  }
+}

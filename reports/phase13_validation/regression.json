@@ -7,5 +7,16 @@
   "seconds": 135.931,
   "spark": "4.3.0",
   "log_sha256": "17f6d7b8a5bd8932343909f09d42fc8daaa407afaccb896301e837bc5d4e14f2",
-  "command": "python -m unittest discover -s tests -v"
+  "command": "python -m unittest discover -s tests -v",
+  "preserved_original_sources": true,
+  "phase13_test_files": [
+    "test_phase13_components.py",
+    "test_phase13_contract.py",
+    "test_phase13_exact.py",
+    "test_phase13_permutation.py",
+    "test_phase13_rankings.py",
+    "test_phase13_sampling.py",
+    "test_phase13_shap.py",
+    "test_phase13_spark.py"
+  ]
 }

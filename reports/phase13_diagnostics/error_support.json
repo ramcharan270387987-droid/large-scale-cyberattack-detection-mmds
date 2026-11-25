@@ -1,0 +1,206 @@
+[
+  {
+    "protocol": "A",
+    "strata": [
+      {
+        "source_day": "2018-02-14",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 102061
+      },
+      {
+        "source_day": "2018-02-22",
+        "attack_family": "Web attack",
+        "outcome": "FN",
+        "count": 71
+      },
+      {
+        "source_day": "2018-02-22",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 160165
+      },
+      {
+        "source_day": "2018-02-23",
+        "attack_family": "Web attack",
+        "outcome": "FN",
+        "count": 83
+      },
+      {
+        "source_day": "2018-02-23",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 160309
+      },
+      {
+        "source_day": "2018-02-23",
+        "attack_family": "Benign",
+        "outcome": "FP",
+        "count": 1
+      },
+      {
+        "source_day": "2018-02-15",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 154897
+      },
+      {
+        "source_day": "2018-02-15",
+        "attack_family": "DoS",
+        "outcome": "FN",
+        "count": 7694
+      },
+      {
+        "source_day": "2018-03-02",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 116688
+      },
+      {
+        "source_day": "2018-02-28",
+        "attack_family": "Infiltration",
+        "outcome": "FN",
+        "count": 10049
+      },
+      {
+        "source_day": "2018-02-28",
+        "attack_family": "Benign",
+        "outcome": "FP",
+        "count": 1
+      },
+      {
+        "source_day": "2018-02-28",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 82459
+      },
+      {
+        "source_day": "2018-02-16",
+        "attack_family": "DoS",
+        "outcome": "FN",
+        "count": 81017
+      },
+      {
+        "source_day": "2018-02-16",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 66879
+      },
+      {
+        "source_day": "2018-02-20",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 1134348
+      },
+      {
+        "source_day": "2018-03-01",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 36151
+      },
+      {
+        "source_day": "2018-03-01",
+        "attack_family": "Infiltration",
+        "outcome": "FN",
+        "count": 14358
+      },
+      {
+        "source_day": "2018-03-02",
+        "attack_family": "Bot",
+        "outcome": "FN",
+        "count": 39807
+      },
+      {
+        "source_day": "2018-02-21",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 54210
+      },
+      {
+        "source_day": "2018-02-21",
+        "attack_family": "DDoS",
+        "outcome": "TP",
+        "count": 229
+      },
+      {
+        "source_day": "2018-02-21",
+        "attack_family": "DDoS",
+        "outcome": "FN",
+        "count": 102723
+      },
+      {
+        "source_day": "2018-02-20",
+        "attack_family": "Benign",
+        "outcome": "FP",
+        "count": 3
+      },
+      {
+        "source_day": "2018-02-20",
+        "attack_family": "DDoS",
+        "outcome": "FN",
+        "count": 85886
+      },
+      {
+        "source_day": "2018-02-20",
+        "attack_family": "DDoS",
+        "outcome": "TP",
+        "count": 95
+      },
+      {
+        "source_day": "2018-02-14",
+        "attack_family": "Credential brute force",
+        "outcome": "FN",
+        "count": 22108
+      }
+    ],
+    "eligible_rows": 2432292
+  },
+  {
+    "protocol": "B",
+    "strata": [
+      {
+        "source_day": "2018-03-02",
+        "attack_family": "Benign",
+        "outcome": "FP",
+        "count": 33
+      },
+      {
+        "source_day": "2018-03-02",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 605329
+      },
+      {
+        "source_day": "2018-03-01",
+        "attack_family": "Benign",
+        "outcome": "FP",
+        "count": 18
+      },
+      {
+        "source_day": "2018-03-01",
+        "attack_family": "Benign",
+        "outcome": "TN",
+        "count": 166204
+      },
+      {
+        "source_day": "2018-03-01",
+        "attack_family": "Infiltration",
+        "outcome": "FN",
+        "count": 65251
+      },
+      {
+        "source_day": "2018-03-02",
+        "attack_family": "Bot",
+        "outcome": "TP",
+        "count": 177
+      },
+      {
+        "source_day": "2018-03-02",
+        "attack_family": "Bot",
+        "outcome": "FN",
+        "count": 143097
+      }
+    ],
+    "eligible_rows": 980109
+  }
+]

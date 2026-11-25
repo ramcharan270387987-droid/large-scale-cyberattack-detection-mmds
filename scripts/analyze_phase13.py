@@ -38,6 +38,12 @@ def main():
         values={r['feature']:r['mean'] for r in perm if r['model']==model and r['metric']=='pr_auc' and r['scope']=='global' and '+' not in r['feature'] and r['mean'] is not None}
         add(model,model[0],'permutation_PR_decrease',values,'baseline minus permuted PR area')
     write('global_importance',global_rows)
+    concentration=[]
+    for model,methods in maps.items():
+        for method,values in methods.items():
+            if method=='permutation_PR_decrease':continue
+            ranked=sorted(values.items(),key=lambda item:(-item[1],item[0]));total=sum(values.values());concentration.append(dict(model=model,method=method,top5_fraction=sum(v for _,v in ranked[:5])/total if total else None,top_features=[name for name,_ in ranked[:5]],feature_count=len(values)))
+    write('top_features',concentration)
     ranks=[]
     for model,methods in maps.items():
         for (a,x),(b,y) in itertools.combinations(methods.items(),2):ranks.append(dict(model=model,comparison='within model',first=a,second=b,**agreement(x,y)))
@@ -80,6 +86,10 @@ def main():
     for r in ref:
         changes=[b-a for a,b in zip(initial['probabilities'],r['probabilities'])];paired.append(dict(model=r['model'],policies=';'.join(r['selected_policies']),rows=r['rows'],mean_score=statistics.mean(r['probabilities']),mean_paired_score_change=statistics.mean(changes),max_absolute_score_change=max(map(abs,changes)),changed_fixed_half_decisions=sum((a>=.5)!=(b>=.5) for a,b in zip(initial['probabilities'],r['probabilities'])),population=r['population']))
     write('adaptive_probes',paired)
+    for target,source in (('adaptive_history','phase12_prequential_metrics.csv'),('threshold_history','phase12_threshold_history.csv')):
+        historical=list(csv.DictReader((ROOT/'reports'/source).open()))
+        selected=[r for r in historical if r['run'].startswith('E-LR-seed23013-sample125-weight1-') and '-d0-b3-p2-s2-c2-m200-' in r['run']]
+        write(target,selected)
     costs=[]
     for stage in ('supervised','permutation','components','diagnostics'):
         r=load('reports/phase13_'+stage+'/receipt.json');costs.append(dict(stage=stage,scope='whole stage including input verification and Spark work',seconds=r['seconds'],driver_peak_rss_bytes=r['driver_peak_rss_bytes']))
