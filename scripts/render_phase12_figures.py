@@ -56,8 +56,9 @@ def main():
     if not triggers.empty:
         fig,axes=plt.subplots(2,1,figsize=(10,6))
         data=triggers[triggers.run.isin(set(p0.run))]
+        shared=data.groupby('window',as_index=False).js.first()
+        axes[0].plot(shared.window,shared.js,'o-',label='Shared model-independent input JS')
         for policy,group in data.groupby('policy'):
-            axes[0].plot(group.window,group.js,'o-',label=policy)
             selected=group[group.eligible.eq(True)];axes[1].scatter(selected.window,[policy]*len(selected),label=policy)
         axes[0].axhline(.1,color='red',ls='--',label='Frozen JS .1');axes[0].set(ylabel='JS divergence (bits)',title='Historical E · fixed input reference and eligible requests');axes[0].legend(ncol=4,fontsize=7)
         axes[1].set(xlabel='Historical capture index',ylabel='Eligible refresh policy')
@@ -93,7 +94,9 @@ def main():
     retention=read('retention')
     if not retention.empty:
         fig,axes=plt.subplots(1,2,figsize=(10,4));axes[0].scatter(retention.incumbent_recall*100,retention.candidate_recall*100,c=retention.accepted.map({True:1,False:0}));axes[1].scatter(retention.incumbent_fpr*100,retention.candidate_fpr*100)
-        for ax,metric in zip(axes,['recall','FPR']):ax.set(xlabel='Incumbent retention '+metric+' (%)',ylabel='Candidate retention '+metric+' (%)');ax.plot([0,100],[0,100],ls='--',alpha=.3)
+        for ax,metric in zip(axes,['recall','FPR']):
+            limit=100 if metric=='recall' else max(1,1.1*max(retention.incumbent_fpr.max(),retention.candidate_fpr.max())*100)
+            ax.set(xlabel='Incumbent retention '+metric+' (%)',ylabel='Candidate retention '+metric+' (%)');ax.plot([0,limit],[0,limit],ls='--',alpha=.3)
         fig.suptitle('Fixed historical retention diagnostics · separate from forward generalization');save(fig,'retention')
     synthetic=read('synthetic_metrics');sw=pd.read_csv(R/'phase12_synthetic/windows.csv')
     fig,axes=plt.subplots(3,2,figsize=(12,11))

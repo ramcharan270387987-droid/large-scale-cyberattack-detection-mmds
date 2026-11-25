@@ -100,3 +100,23 @@ def validate_chronology(initial,calibration,forward):
 
 def require_feature_order(expected,actual):
     if list(expected)!=list(actual):raise ValueError('Feature order/schema mismatch')
+
+
+def completed_scope_matches(summary,backend,policy,delay,options):
+    expected={'budget':3,'period':2,'sliding':2,'cooldown':2,'minimum':200,'advanced':False}|options
+    return summary['backend']==backend and summary['policy']==policy and summary['delay']==delay and all(summary.get(k)==v for k,v in expected.items())
+
+
+def validate_completed_scopes(runs):
+    identifiers=set()
+    for run in runs:
+        summary=run['summary']
+        if summary['run'] in identifiers:raise ValueError('Duplicate completed scope')
+        identifiers.add(summary['run'])
+        if len(run['windows'])!=summary['windows']:raise ValueError('Incomplete issued windows')
+        for key in ('tp','fp','tn','fn','rows'):
+            if sum(w[key] for w in run['windows'])!=summary[key]:raise ValueError('Completed scope confusion mismatch')
+        for event in run['events']:
+            if event.get('activation_index') is not None and event['activation_index']<=event['window']:
+                raise ValueError('Completed scope violates future-only activation')
+    return identifiers

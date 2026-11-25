@@ -5,8 +5,8 @@ import pandas as pd
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1];DEST=ROOT/'reports/phase12_validation'
 module=ast.parse((ROOT/'dashboard/phase12_preview.py').read_text())
-values={node.targets[0].id:ast.literal_eval(node.value) for node in module.body if isinstance(node,ast.Assign) and isinstance(node.targets[0],ast.Name) and node.targets[0].id in ('SECTIONS','FILTERS')}
-SECTIONS=values['SECTIONS'];FILTERS=values['FILTERS']
+values={node.targets[0].id:ast.literal_eval(node.value) for node in module.body if isinstance(node,ast.Assign) and isinstance(node.targets[0],ast.Name) and node.targets[0].id in ('SECTIONS','FILTERS','LABELS')}
+SECTIONS=values['SECTIONS'];FILTERS=values['FILTERS'];LABELS=values['LABELS']
 
 def choose(page,label,value):
     combo=page.get_by_role('combobox',name=re.compile(re.escape(label)+r'$'))
@@ -32,6 +32,7 @@ def main():
             assert path.exists(),('missing delivered evidence',section)
             data=pd.read_csv(path)
             if section.startswith('Synthetic') and 'backend' in data:data['mechanism']=data.backend.str.split('-seed').str[0]
+            if section=='Model history':data=data.rename(columns={'family':'model_family'})
             assert not data.empty,('unexpected unsupported whole section',section)
             page.get_by_test_id('stDataFrame').wait_for()
             if section=='Static versus adaptive comparison':
@@ -42,7 +43,7 @@ def main():
                 choices=sorted(data[column].dropna().unique().tolist())
                 if not choices:continue
                 value=choices[-1]
-                label=column.replace('_',' ').capitalize()
+                label=LABELS.get(column,column.replace('_',' ').capitalize())
                 choose(page,label,value);data=data.loc[data[column].eq(value)];exercised.append(label)
             page.get_by_test_id('stDataFrame').wait_for()
             with page.expect_download() as event:page.get_by_role('button',name='Download filtered CSV',exact=True).click()

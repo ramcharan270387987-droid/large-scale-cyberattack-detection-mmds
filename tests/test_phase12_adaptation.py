@@ -163,3 +163,16 @@ class Phase12Tests(unittest.TestCase):
             registry=Registry(root)
             accepted=[registry.request('policy-P2-capture-20') for detector in ('JS','ADWIN')]
             self.assertEqual(accepted,[True,False])
+    def test_verified_resume_preserves_completed_scopes(self):
+        import copy
+        from src.adaptation.synthetic_benchmark import SyntheticBackend
+        from src.adaptation.prequential_runner import run
+        from src.adaptation.lifecycle import completed_scope_matches,validate_completed_scopes
+        with tempfile.TemporaryDirectory() as root:
+            backend=SyntheticBackend('stationary',23013,root);backend.forward=backend.forward[:2]
+            result=run(backend,'P0',0,Path(root)/'registry')
+            self.assertEqual(validate_completed_scopes([result]),{result['summary']['run']})
+            self.assertTrue(completed_scope_matches(result['summary'],backend.name,'P0',0,{}))
+            self.assertFalse(completed_scope_matches(result['summary'],backend.name,'P0',1,{}))
+            corrupt=copy.deepcopy(result);corrupt['windows'].pop()
+            with self.assertRaises(ValueError):validate_completed_scopes([corrupt])

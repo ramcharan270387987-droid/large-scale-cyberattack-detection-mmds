@@ -10,6 +10,8 @@ def build_stage(stage):
     sources['configs/phase12_adaptation.yaml']=(ROOT/'configs/phase12_adaptation.yaml').read_text()
     if stage!='12C':
         sources['phase12_frozen_reference.json']=(ROOT/'manifests/phase12_frozen_reference.json').read_text()
+    if stage=='12E' and (ROOT/'manifests/phase12_resume.json').exists():
+        sources['phase12_resume.json']=(ROOT/'manifests/phase12_resume.json').read_text()
     sources['phase12_source.json']=json.dumps({'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         'stage':stage,'sha256':{p:hashlib.sha256(v.encode()).hexdigest() for p,v in sources.items()}})
     note['cells'].insert(-1,cell('code','phase12-sources','sources='+repr(sources)+'''\nfor name, content in sources.items():

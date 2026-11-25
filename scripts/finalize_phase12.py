@@ -74,10 +74,40 @@ def main():
         first=min((c['source_day'] for c in forward if c['count']>0),default=None)
         families.append({'run':run,'policy':s['policy'],'delay':s['delay'],'backend':s['backend'],'family':family,
                          'initial_training_support':support,'newly_released_training_support':sum(c['count'] for c in forward),
-                         'first_forward_fit_exposure_capture':first,'evaluation_support':tp+fn,'tp':tp,'fn':fn,
+                         'first_forward_fit_exposure_capture':first,
+                         'first_active_trained_family_index':min((int(w['window']) for w in windows if w['run']==run and json.loads(model_by_id[w['model']].get('family_support','{}')).get(family,0)>0),default=None),
+                         'post_fitting_attack_evaluation_support':sum(int(r['tp'])+int(r['fn']) for r in rows if json.loads(model_by_id[r['model']].get('family_support','{}')).get(family,0)>0),
+                         'evaluation_support':sum(sum(int(r[k]) for k in ('tp','fp','tn','fn')) for r in rows),'attack_evaluation_support':tp+fn,
+                         'benign_evaluation_support':sum(int(r['tn'])+int(r['fp']) for r in rows),'tp':tp,'fn':fn,
                          'recall':tp/(tp+fn) if tp+fn else None,'served_versions':sorted({r['model'] for r in rows}),
                          'interpretation':'capture/family confounded; exposure must precede activation, no later appearance implies unsupported forward learning'})
     csv_write(R/'phase12_family_metrics.csv',families)
+    exposures=[]
+    for (run,family),rows in grouped.items():
+        summary=summaries[run]
+        cohort=sample_cohorts.get(summary['backend'],[])
+        eligible=[c for c in cohort if c['attack_family']==family and c['count']>0]
+        initial_support=json.loads(model_by_id[summary['initial_model']].get('family_support','{}')).get(family,0)
+        forward_days=sorted({w['day'] for w in windows if w['run']==run})
+        releases=[forward_days.index(c['source_day'])+int(summary['delay']) for c in eligible if c['source_day'] in forward_days]
+        first_release=min(releases,default=None)
+        for basis in ('labels-available-before-arrival','family-represented-in-active-training'):
+            by_state=defaultdict(list)
+            for row in rows:
+                represented=json.loads(model_by_id[row['model']].get('family_support','{}')).get(family,0)>0
+                available=initial_support>0 or (first_release is not None and int(row['window'])>first_release)
+                after=available if basis=='labels-available-before-arrival' else represented
+                by_state['after' if after else 'before'].append(row)
+            for state,subset in by_state.items():
+                count={k:sum(int(r[k]) for r in subset) for k in ('tp','fp','tn','fn')}
+                positives=count['tp']+count['fn'];benign=count['tn']+count['fp']
+                exposures.append({'run':run,'policy':summary['policy'],'delay':summary['delay'],'family':family,
+                    'exposure_basis':basis,'period':state,'first_forward_release_after_prediction_index':first_release,
+                    'initial_fitting_support':initial_support,'rows':sum(count.values()),**count,
+                    'recall':count['tp']/positives if positives else None,'fpr':count['fp']/benign if benign else None,
+                    'versions':sorted({r['model'] for r in subset}),'windows':sorted({int(r['window']) for r in subset}),
+                    'interpretation':'No after rows means post-exposure forward learning is unsupported.'})
+    csv_write(R/'phase12_family_exposure.csv',exposures)
     coverage=[]
     for run,s in summaries.items():
         grouped_windows=defaultdict(list)

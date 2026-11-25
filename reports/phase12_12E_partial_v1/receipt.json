@@ -1,0 +1,936 @@
+{
+  "stage": "12E",
+  "status": "running",
+  "source_commit": "03c38afa2247e28a55c83ba301606654b71f9c30",
+  "config": {
+    "version": "phase12-v1",
+    "seed": 23013,
+    "seeds": [
+      23013,
+      23014,
+      23015
+    ],
+    "delays": [
+      0,
+      1,
+      3
+    ],
+    "predictors": 18,
+    "fpr_budget": 0.01,
+    "score_bins": 2048,
+    "historical": {
+      "role_permyriad": [
+        7000,
+        1500,
+        1500
+      ],
+      "initial_days": [
+        "2018-02-14",
+        "2018-02-15"
+      ],
+      "calibration_day": "2018-02-16",
+      "sample_permyriad": 125,
+      "min_class": 100,
+      "min_new_rows": 200,
+      "max_candidates": 3,
+      "natural_max_candidates": 6,
+      "sliding_captures": 2,
+      "max_fit_seconds": 1800
+    },
+    "synthetic": {
+      "windows": 48,
+      "rows_per_window": 512,
+      "initial_windows": 4,
+      "calibration_windows": 2,
+      "change_window": 22,
+      "return_window": 36,
+      "min_class": 10,
+      "min_new_rows": 50,
+      "max_candidates": 6,
+      "period": 8,
+      "sliding_windows": 8,
+      "seconds_per_window": 60
+    },
+    "trigger": {
+      "detector": "fixed-reference-js",
+      "threshold": 0.1,
+      "bins": 10,
+      "min_support": 100,
+      "cooldown": 2,
+      "reference": "initial-fit-flow_duration",
+      "advanced": {
+        "detector": "ADWIN",
+        "delta": 0.01,
+        "clock": 32,
+        "grace_period": 10
+      }
+    },
+    "guard": {
+      "recall_tolerance": 0.01,
+      "pr_auc_tolerance": 0.02,
+      "fpr_tolerance": 0.001,
+      "retention_recall_tolerance": 0.05,
+      "retention_fpr_tolerance": 0.005
+    },
+    "rollback": {
+      "released_windows": 2,
+      "min_class": 100,
+      "recall_drop": 0.15,
+      "fpr_increase": 0.02
+    },
+    "lr": {
+      "maxIter": 12,
+      "regParam": 0.05
+    },
+    "rf": {
+      "numTrees": 12,
+      "maxDepth": 5,
+      "maxBins": 24,
+      "minInstancesPerNode": 30
+    },
+    "policies": {
+      "P0": {
+        "trigger": "never",
+        "window": "expanding"
+      },
+      "P1": {
+        "trigger": "periodic",
+        "period": 2,
+        "window": "expanding"
+      },
+      "P2": {
+        "trigger": "js",
+        "window": "expanding"
+      },
+      "P3": {
+        "trigger": "threshold",
+        "window": "latest-two-calibration"
+      },
+      "P4": {
+        "trigger": "periodic",
+        "period": 2,
+        "window": "sliding"
+      },
+      "P5": {
+        "trigger": "periodic",
+        "period": 1,
+        "window": "expanding"
+      },
+      "P6": {
+        "trigger": "js",
+        "window": "expanding",
+        "guarded": true
+      }
+    },
+    "spark": {
+      "master": "local[4]",
+      "driver_memory": "8g",
+      "shuffle_partitions": 48,
+      "input_partition_bytes": 67108864
+    }
+  },
+  "input": {
+    "path": "/kaggle/input/mmds-phase-2-spark-data-engineering/mmds_phase2/phase2-v1/feature_ready",
+    "days": [
+      "2018-02-14",
+      "2018-02-15",
+      "2018-02-16",
+      "2018-02-20",
+      "2018-02-21",
+      "2018-02-22",
+      "2018-02-23",
+      "2018-02-28",
+      "2018-03-01",
+      "2018-03-02"
+    ],
+    "totals": {
+      "0": 13484708,
+      "1": 2748235
+    },
+    "rows": 16232943,
+    "temporally_flagged": 14,
+    "policy_version": "phase2-v1",
+    "receipt_sha256": "1fa00cd2b9c853ee33eaacee8ca7632dbb41f739573326280d6ffbfb2ccff25a",
+    "producer": {
+      "url": "https://www.kaggle.com/code/ramcharan2345/mmds-phase-2-spark-data-engineering",
+      "kernel_version": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "capture_only_rows": 14,
+  "timestamp_policy": "retain flagged observations at trusted capture-day resolution; no fabricated intraday order",
+  "cohorts": [
+    {
+      "source_day": "2018-02-28",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "Infiltration",
+      "count": 49614
+    },
+    {
+      "source_day": "2018-02-28",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 383867
+    },
+    {
+      "source_day": "2018-03-02",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 535453
+    },
+    {
+      "source_day": "2018-02-16",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 312800
+    },
+    {
+      "source_day": "2018-02-16",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "DoS",
+      "count": 443215
+    },
+    {
+      "source_day": "2018-02-21",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 252415
+    },
+    {
+      "source_day": "2018-02-21",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "DDoS",
+      "count": 482072
+    },
+    {
+      "source_day": "2018-02-23",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 727885
+    },
+    {
+      "source_day": "2018-02-15",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 690970
+    },
+    {
+      "source_day": "2018-02-22",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 728375
+    },
+    {
+      "source_day": "2018-02-22",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "Web attack",
+      "count": 239
+    },
+    {
+      "source_day": "2018-02-23",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "Web attack",
+      "count": 395
+    },
+    {
+      "source_day": "2018-02-15",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "DoS",
+      "count": 36726
+    },
+    {
+      "source_day": "2018-02-14",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 463618
+    },
+    {
+      "source_day": "2018-03-02",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "Bot",
+      "count": 205917
+    },
+    {
+      "source_day": "2018-02-20",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 5161803
+    },
+    {
+      "source_day": "2018-03-01",
+      "split_rank": 0,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 169193
+    },
+    {
+      "source_day": "2018-03-01",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "Infiltration",
+      "count": 66628
+    },
+    {
+      "source_day": "2018-02-20",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "DDoS",
+      "count": 403700
+    },
+    {
+      "source_day": "2018-02-14",
+      "split_rank": 0,
+      "binary_label": 1,
+      "attack_family": "Credential brute force",
+      "count": 341040
+    },
+    {
+      "source_day": "2018-02-28",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "Infiltration",
+      "count": 10049
+    },
+    {
+      "source_day": "2018-02-28",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 82460
+    },
+    {
+      "source_day": "2018-02-28",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "Infiltration",
+      "count": 9208
+    },
+    {
+      "source_day": "2018-02-15",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "DoS",
+      "count": 7694
+    },
+    {
+      "source_day": "2018-02-28",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 77873
+    },
+    {
+      "source_day": "2018-03-02",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 116688
+    },
+    {
+      "source_day": "2018-02-15",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 154897
+    },
+    {
+      "source_day": "2018-03-02",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 110243
+    },
+    {
+      "source_day": "2018-02-23",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 160310
+    },
+    {
+      "source_day": "2018-02-23",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "Web attack",
+      "count": 88
+    },
+    {
+      "source_day": "2018-02-22",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 159673
+    },
+    {
+      "source_day": "2018-02-22",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 160165
+    },
+    {
+      "source_day": "2018-02-22",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "Web attack",
+      "count": 71
+    },
+    {
+      "source_day": "2018-02-23",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 159814
+    },
+    {
+      "source_day": "2018-02-23",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "Web attack",
+      "count": 83
+    },
+    {
+      "source_day": "2018-02-14",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 102061
+    },
+    {
+      "source_day": "2018-02-14",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 101947
+    },
+    {
+      "source_day": "2018-02-15",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 150210
+    },
+    {
+      "source_day": "2018-02-22",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "Web attack",
+      "count": 52
+    },
+    {
+      "source_day": "2018-02-21",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 54208
+    },
+    {
+      "source_day": "2018-02-16",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "DoS",
+      "count": 81017
+    },
+    {
+      "source_day": "2018-02-16",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 67093
+    },
+    {
+      "source_day": "2018-02-15",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "DoS",
+      "count": 8078
+    },
+    {
+      "source_day": "2018-02-16",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "DoS",
+      "count": 77570
+    },
+    {
+      "source_day": "2018-02-21",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "DDoS",
+      "count": 102718
+    },
+    {
+      "source_day": "2018-02-16",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 66879
+    },
+    {
+      "source_day": "2018-03-02",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "Bot",
+      "count": 39807
+    },
+    {
+      "source_day": "2018-02-21",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "DDoS",
+      "count": 102952
+    },
+    {
+      "source_day": "2018-02-21",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 54210
+    },
+    {
+      "source_day": "2018-03-02",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "Bot",
+      "count": 40467
+    },
+    {
+      "source_day": "2018-02-20",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 1134351
+    },
+    {
+      "source_day": "2018-02-20",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 1076403
+    },
+    {
+      "source_day": "2018-03-01",
+      "split_rank": 2,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 36151
+    },
+    {
+      "source_day": "2018-03-01",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "Infiltration",
+      "count": 14358
+    },
+    {
+      "source_day": "2018-03-01",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "Infiltration",
+      "count": 12077
+    },
+    {
+      "source_day": "2018-02-20",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "DDoS",
+      "count": 85981
+    },
+    {
+      "source_day": "2018-03-01",
+      "split_rank": 1,
+      "binary_label": 0,
+      "attack_family": "Benign",
+      "count": 32693
+    },
+    {
+      "source_day": "2018-02-20",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "DDoS",
+      "count": 86510
+    },
+    {
+      "source_day": "2018-02-14",
+      "split_rank": 2,
+      "binary_label": 1,
+      "attack_family": "Credential brute force",
+      "count": 22108
+    },
+    {
+      "source_day": "2018-02-14",
+      "split_rank": 1,
+      "binary_label": 1,
+      "attack_family": "Credential brute force",
+      "count": 17801
+    }
+  ],
+  "cross_role_groups": {
+    "record_fingerprint": 0,
+    "split_feature_key": 0,
+    "predictor_key": 0
+  },
+  "retained_rows": 16232943,
+  "purged_rows": 0,
+  "features": [
+    "flow_duration",
+    "tot_fwd_pkts",
+    "tot_bwd_pkts",
+    "totlen_fwd_pkts",
+    "totlen_bwd_pkts",
+    "pkt_len_mean",
+    "pkt_len_std",
+    "flow_iat_mean",
+    "flow_iat_std",
+    "fwd_iat_mean",
+    "bwd_iat_mean",
+    "flow_pkts_s",
+    "flow_byts_s",
+    "down_up_ratio",
+    "syn_flag_cnt",
+    "ack_flag_cnt",
+    "rst_flag_cnt",
+    "fin_flag_cnt"
+  ],
+  "sample_cohorts": {
+    "E-LR-seed23013-sample125-weight1": [
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 511
+      },
+      {
+        "source_day": "2018-02-28",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 4158
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 5859
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 4059
+      },
+      {
+        "source_day": "2018-02-16",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 3816
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 6596
+      },
+      {
+        "source_day": "2018-02-21",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 3230
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 7840
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 7555
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 7968
+      },
+      {
+        "source_day": "2018-02-22",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 2
+      },
+      {
+        "source_day": "2018-02-23",
+        "binary_label": 1,
+        "attack_family": "Web attack",
+        "count": 4
+      },
+      {
+        "source_day": "2018-02-15",
+        "binary_label": 1,
+        "attack_family": "DoS",
+        "count": 456
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 4999
+      },
+      {
+        "source_day": "2018-03-02",
+        "binary_label": 1,
+        "attack_family": "Bot",
+        "count": 3906
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 61712
+      },
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 0,
+        "attack_family": "Benign",
+        "count": 1808
+      },
+      {
+        "source_day": "2018-03-01",
+        "binary_label": 1,
+        "attack_family": "Infiltration",
+        "count": 671
+      },
+      {
+        "source_day": "2018-02-20",
+        "binary_label": 1,
+        "attack_family": "DDoS",
+        "count": 5033
+      },
+      {
+        "source_day": "2018-02-14",
+        "binary_label": 1,
+        "attack_family": "Credential brute force",
+        "count": 823
+      }
+    ]
+  },
+  "frozen_reference_reload": {
+    "model": "9827e6a728bb61755e3d",
+    "source_stage": "12C",
+    "source_summary_sha256": "9c430adc186d576118813c72c2ff9dc98b318cebd5f57be17743e118cbb2c647",
+    "independent_new_runtime_reload": true,
+    "calibration_histogram_identical": true,
+    "seconds": 9.028779081999971
+  },
+  "reused_model_receipts": [
+    {
+      "model": "9827e6a728bb61755e3d",
+      "source_stage": "12C",
+      "source_summary_sha256": "9c430adc186d576118813c72c2ff9dc98b318cebd5f57be17743e118cbb2c647",
+      "independent_new_runtime_reload": true,
+      "calibration_histogram_identical": true,
+      "seconds": 9.028779081999971
+    },
+    {
+      "model": "cf6b6ecd72c04a293335",
+      "source_stage": "12C",
+      "source_summary_sha256": "9c430adc186d576118813c72c2ff9dc98b318cebd5f57be17743e118cbb2c647",
+      "independent_new_runtime_reload": true,
+      "calibration_histogram_identical": true,
+      "seconds": 4.844616476999931
+    },
+    {
+      "model": "40966bed6a4cf7e0636c",
+      "source_stage": "12C",
+      "source_summary_sha256": "9c430adc186d576118813c72c2ff9dc98b318cebd5f57be17743e118cbb2c647",
+      "independent_new_runtime_reload": true,
+      "calibration_histogram_identical": true,
+      "seconds": 4.244506291999983
+    },
+    {
+      "model": "88c99b60026fd79b3eb2",
+      "source_stage": "12C",
+      "source_summary_sha256": "9c430adc186d576118813c72c2ff9dc98b318cebd5f57be17743e118cbb2c647",
+      "independent_new_runtime_reload": true,
+      "calibration_histogram_identical": true,
+      "seconds": 4.202729266999995
+    }
+  ],
+  "physical_fits": 3,
+  "distribution_construction_seconds": {
+    "E-LR-seed23013-sample125-weight1": 5.110261204999972
+  },
+  "input_references": {
+    "E-LR-seed23013-sample125-weight1": {
+      "quantile_edges": [
+        356.0,
+        842.0,
+        1629.0,
+        35779.0,
+        206077.0,
+        533519.0,
+        2401539.0,
+        6426839.0,
+        63474169.0
+      ],
+      "reference_counts": [
+        1394,
+        1365,
+        1385,
+        1382,
+        1383,
+        1380,
+        1382,
+        1382,
+        1383,
+        1397
+      ],
+      "capture_counts": {
+        "2018-02-28": [
+          200545,
+          44998,
+          51846,
+          57317,
+          60058,
+          21047,
+          48787,
+          31357,
+          40455,
+          56661
+        ],
+        "2018-03-02": [
+          154210,
+          196795,
+          58370,
+          198533,
+          54966,
+          25902,
+          111671,
+          106607,
+          48917,
+          92604
+        ],
+        "2018-02-16": [
+          160899,
+          35812,
+          38353,
+          241356,
+          117763,
+          375,
+          1381,
+          441493,
+          4785,
+          6357
+        ],
+        "2018-02-21": [
+          668,
+          25221,
+          296488,
+          708734,
+          13604,
+          37,
+          106,
+          14,
+          82,
+          3621
+        ],
+        "2018-02-23": [
+          231423,
+          76532,
+          81288,
+          91416,
+          75246,
+          35233,
+          80334,
+          144928,
+          71442,
+          160733
+        ],
+        "2018-02-15": [
+          242166,
+          96359,
+          93831,
+          87408,
+          108650,
+          42142,
+          86857,
+          93661,
+          98701,
+          98800
+        ],
+        "2018-02-22": [
+          229811,
+          78982,
+          82900,
+          94377,
+          75996,
+          33062,
+          88993,
+          135031,
+          72907,
+          156516
+        ],
+        "2018-02-14": [
+          445700,
+          54223,
+          59702,
+          67819,
+          52528,
+          118398,
+          68727,
+          67922,
+          56652,
+          56904
+        ],
+        "2018-02-20": [
+          1789694,
+          641022,
+          685559,
+          705065,
+          586584,
+          290955,
+          1031900,
+          758688,
+          731491,
+          727790
+        ],
+        "2018-03-01": [
+          105312,
+          24341,
+          28021,
+          27187,
+          25458,
+          11626,
+          32214,
+          23611,
+          16208,
+          37122
+        ]
+      },
+      "feature": "flow_duration",
+      "version": "fixed-initial-fit-E-LR-seed23013-sample125-weight1",
+      "reset_policy": "never on model refresh"
+    }
+  },
+  "runs": 14,
+  "unique_models": 7,
+  "validation": "pooled counts, matched cohorts and future activations verified"
+}

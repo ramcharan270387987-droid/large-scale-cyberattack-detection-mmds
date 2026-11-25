@@ -1,0 +1,8 @@
+{
+  "kernel_version": "ramcharan2345/mmds-phase-12-delayed-label-robustness/1",
+  "worker_status": "ERROR",
+  "summary_sha256": "47b39cc6718d3b8a7e1a8ff38be0ceab4e1f86f041102af9482aa4e597d5c996",
+  "completed_scopes": 14,
+  "local_resume_directory": "/tmp/mmds-phase12/12E/results/mmds_phase12",
+  "invariant": "Completed LR scopes retained; only failed/unexecuted RF and bounded sensitivities remain."
+}

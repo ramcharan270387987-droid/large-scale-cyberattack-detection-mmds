@@ -5,7 +5,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 from hashlib import sha256
 import shutil
-from src.adaptation.lifecycle import digest,role_support,validate_coverage,require_feature_order
+from src.adaptation.lifecycle import digest,role_support,validate_coverage,require_feature_order,completed_scope_matches,validate_completed_scopes
 from src.adaptation.evaluation import BINS,merge
 
 
@@ -56,7 +56,7 @@ class SparkBackend:
             metadata=matching[0];key=metadata['model']
             if key in self.models:return key
             target=self.output/metadata['receipt']['artifact']
-            shutil.copytree(previous_root/metadata['receipt']['artifact'],target)
+            if not target.exists():shutil.copytree(previous_root/metadata['receipt']['artifact'],target)
             started=time.monotonic()
             loaded=PipelineModel.load(str(target))
             self.models[key]=loaded;self.meta[key]=metadata
@@ -82,7 +82,7 @@ class SparkBackend:
             support={r.binary_label:r['count'] for r in train.groupBy('binary_label').count().collect()}
             if min(support.get(0,0),support.get(1,0))<100:raise ValueError('Insufficient training class support')
             t=time.monotonic(); unscaled,scaled,details=fit_preprocessing(train,self.names); prep=scaled if self.family=='LR' else unscaled
-            vectors=prep.transform(train).withColumn('weight',F.when(F.col('binary_label')==1,self.weight).otherwise(1.)).persist()
+            vectors=scaled.transform(train).withColumn('weight',F.when(F.col('binary_label')==1,self.weight).otherwise(1.)).persist()
             verify_vectors(vectors,len(details['active'])); preprocessing=time.monotonic()-t
             t=time.monotonic()
             estimator=(LogisticRegression(featuresCol='scaled_features',labelCol='binary_label',weightCol='weight',maxIter=12,regParam=.05,standardization=False)
@@ -205,21 +205,54 @@ def run(project,input_root,output,scratch,stage):
             candidates=[p for p in input_root.rglob('phase12_summary.json') if sha256(p.read_bytes()).hexdigest()==expected_reference['summary_sha256']]
             if len(candidates)!=1:raise ValueError('Missing pinned frozen Stage12C initial model')
             frozen_reference=(candidates[0].parent,json.loads(candidates[0].read_text()))
+        prior_physical_fits=0;cached_histograms={}
+        resume_config=project/'phase12_resume.json'
+        if stage=='12E' and resume_config.exists():
+            pin=json.loads(resume_config.read_text());resume_root=Path('/kaggle/temp/phase12_resume')
+            previous_path=resume_root/'phase12_summary.json'
+            if sha256(previous_path.read_bytes()).hexdigest()!=pin['summary_sha256']:raise ValueError('Resume summary hash mismatch')
+            previous=json.loads(previous_path.read_text());validate_completed_scopes(previous['runs'])
+            if previous['input']['receipt_sha256']!=summary['input']['receipt_sha256'] or previous['retained_rows']!=summary['retained_rows']:
+                raise ValueError('Resume source population mismatch')
+            summary['runs']=previous['runs'];summary['models']=previous['models']
+            summary['sample_cohorts']=previous.get('sample_cohorts',{})
+            prior_physical_fits=previous['physical_fits']
+            summary['resumed_from']={'kernel_version':pin['kernel_version'],'worker_status':'ERROR','completed_scopes':len(previous['runs']),
+                'summary_sha256':pin['summary_sha256'],'reason':'RF vector-validation integration fix; completed LR experiments unchanged'}
+            for model,metadata in previous['models'].items():
+                source=resume_root/metadata['receipt']['artifact']
+                if not source.exists():source=frozen_reference[0]/metadata['receipt']['artifact']
+                for relative,expected in metadata['receipt']['sha256'].items():
+                    if sha256((source/relative).read_bytes()).hexdigest()!=expected:raise ValueError('Resume model hash mismatch')
+                shutil.copytree(source,output/metadata['receipt']['artifact'])
+            source_histograms=resume_root/'prediction_histograms'
+            shutil.copytree(source_histograms,output/'prediction_histograms')
+            for path in source_histograms.glob('*.json'):
+                record=json.loads(path.read_text())
+                if record['day']=='2018-02-16' and record['role']==1:continue
+                cached_histograms[(record['model'],record['day'],record['role'])]={family:{int(index):counts for index,counts in hist.items()} for family,hist in record['family_histograms'].items()}
+            print('RESUMED_VERIFIED_SCOPES',len(previous['runs']),flush=True)
         backends={}
         for family,seed,sample,weight,policy,delay,opts in specs:
             key=(family,seed,sample,weight)
+            backend_name=f'E-{family}-seed{seed}-sample{sample}-weight{weight}'
+            if any(completed_scope_matches(r['summary'],backend_name,policy,delay,opts) for r in summary['runs']):
+                print('PRESERVED_COMPLETED_SCOPE',backend_name,policy,delay,opts,flush=True)
+                continue
             if key not in backends:
                 backends[key]=SparkBackend(spark,frame,names,output,scratch,config,family=family,seed=seed,sample=sample,weight=weight)
                 backends[key].source_commit=summary['source_commit']
                 backends[key].namespace=stage
                 backends[key].frozen_reference=frozen_reference
+                backends[key].scored.update(cached_histograms)
             backend=backends[key]
             result=replay(backend,policy,delay,output/'registries'/digest([key,policy,delay,opts]),**opts)
             summary['runs'].append(result);summary['models'].update(backend.meta)
             summary.setdefault('sample_cohorts',{})[backend.name]=backend.sample_cohorts
             if getattr(backend,'frozen_reload',None):summary['frozen_reference_reload']=backend.frozen_reload
             summary['reused_model_receipts']=[r for b in backends.values() for r in getattr(b,'reuse_receipts',[])]
-            summary['physical_fits']=sum(b.physical_fits for b in backends.values())
+            summary['physical_fits_this_version']=sum(b.physical_fits for b in backends.values())
+            summary['physical_fits']=prior_physical_fits+summary['physical_fits_this_version']
             summary['distribution_construction_seconds']={b.name:b.distribution_construction_seconds for b in backends.values()}
             summary['input_references']={b.name:{'quantile_edges':b.edges,'reference_counts':b.reference,'capture_counts':b.signal,'feature':'flow_duration','version':'fixed-initial-fit-'+b.name,'reset_policy':'never on model refresh'} for b in backends.values()}
             atomic_json(output/'phase12_summary.json',summary)
