@@ -1,0 +1,7 @@
+{
+  "status": "unsupported",
+  "method": "optional direct TreeExplainer compatibility",
+  "reason_type": "NotImplementedError",
+  "reason": "Predict with pyspark isn't implemented. Don't run 'interventional' as feature_perturbation.",
+  "interpretation": "No SHAP values reported without archived-model compatibility and prediction parity."
+}

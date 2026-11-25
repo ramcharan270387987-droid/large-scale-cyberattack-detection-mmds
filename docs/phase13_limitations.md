@@ -1,0 +1,15 @@
+# Phase 13 scientific limitations
+
+Attribution describes an archived decision function. It does not establish which network mechanism caused an attack or whether intervening on a feature prevents an attack. Correlated packet, size and timing variables allow several plausible explanations; native split importance, coefficients, centered contributions and permutation effects answer different questions.
+
+The analysis uses bounded deterministic predictor-group samples from a finite set of capture days. Different training and evaluation captures can differ in attack composition, predictor support and preprocessing. A large distribution distance or attribution change is descriptive evidence of shift, not proof of concept drift. Capture deletion, repeated seeds and weighting sensitivity do not constitute independent-flow confidence intervals. Rare-case enrichment has explicitly separate support and no prevalence interpretation.
+
+Linear SHAP is in log-odds under an empirical training-background interventional game. It does not supply additive probability explanations or conditional causal credit. Group permutation reduces some within-group distortion but can still create invalid cross-group combinations. Small within-capture strata can produce little perturbation. A low or negative importance can reflect redundancy, sampling or an already weak model. Bounded-sample PR and ROC estimates can be noisy and differ from full-population validation metrics.
+
+Full eligible denominators and sampled case counts are separate. Corrected deterministic metadata representatives are essential where the same predictor group has conflicting capture or label metadata; version 1's conditional strata are superseded. Its exact numeric reconstruction and global coefficient/native maps remain valid. Historical private per-row explanations remain in Kaggle and are not a public reusable record dataset.
+
+Novelty measures distance rather than probability of attack. Family results are conditional on their stated population; unknown families and zero known-family support cannot yield invented closed-set recall. The absence of an archived A rejection cutoff is an explicit unsupported policy. High family confidence cannot recover attacks missed by the binary gate.
+
+Adaptive comparisons hold probes fixed to isolate model and preprocessing changes. They do not overwrite the original future-only activation history. Synthetic and reference-derived probes are not a generalization benchmark. Threshold-only adaptation can change decisions without changing coefficients; guarded refresh with no activation retains the incumbent. Negative Phase 12 retention and recall findings remain part of the interpretation.
+
+Runtime is private single-driver CPU batch performance under bounded memory, not deployed latency or multi-node scalability. Optional direct tree SHAP depends on the installed library's compatibility with the exact archived Spark representation and requires verified prediction parity. The isolated Streamlit laboratory displays archived evidence and fixed synthetic examples; it performs no live network inference or autonomous retraining.

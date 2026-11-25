@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase-13-explainable-ai/3",
+  "private_cpu": true,
+  "completion_marker": "PHASE13 components complete",
+  "log_sha256": "73df89d704b4d511de5acd3e139a906fa661e35757e22f235517aa592be78f47",
+  "log_events": 871,
+  "last_log_seconds": 921.591409117,
+  "submitted_source_sha256": "8149ceaaea8d189e5abc66c58c10153298bb6144811c5f750fa6aaafe4cd6c31",
+  "artifacts": {
+    "reports/phase13_components/shap_compatibility.json": "2ae865731473bd8ac0913d9fa2b82313a245332e4111250afd69863bda5b7937",
+    "reports/phase13_components/receipt.json": "bc26101a99cd0647bd14145097d309f2b67797344b2c178533432c67b6b9d29d",
+    "reports/phase13_components/components.json": "1a26fea48bf5bb05964180271ed4d50075f68857e1e24bfa5d8cb63d40f5022c",
+    "reports/phase13_components/linear_shap_stability.json": "9f8bbbd7b4c51c68e3ff3c6356ea59f63d57cae94eb2e3be3870a374f26e9ced"
+  }
+}
