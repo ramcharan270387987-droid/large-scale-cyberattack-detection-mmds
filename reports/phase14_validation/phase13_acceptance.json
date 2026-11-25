@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archived_models": 16,
+  "permutation_conditions": 726,
+  "linear_shap_variants": 48,
+  "tree_shap": "unsupported",
+  "error_case_rows": 237,
+  "distribution_comparisons": 36,
+  "figures": 18,
+  "tests": 147,
+  "protected_refs": {
+    "refs/heads/main": "e6215d6834ce06ba60fe9c7e65ce4a97b611343d",
+    "refs/heads/work": "16ef2c23bbfe33c497d32863173455185fe868ed",
+    "refs/tags/v1.0-mmds-validated-baseline": "3295d05e5f873355ed0c5140f45f4c3b58047043"
+  },
+  "phase14_started": false,
+  "public_deployment": false
+}

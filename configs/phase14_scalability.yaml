@@ -1,0 +1,51 @@
+{
+  "schema": "phase14-scale-v1",
+  "seed": 23013,
+  "volumes": [
+    1000000,
+    4000000,
+    8000000,
+    16232943
+  ],
+  "fractions": [
+    0.06160312396834018,
+    0.24641249587336073,
+    0.49282499174672145,
+    1.0
+  ],
+  "workers": [
+    1,
+    2,
+    4
+  ],
+  "primary_workers": 4,
+  "primary_partitions": 16,
+  "partition_grid": [
+    4,
+    16,
+    48
+  ],
+  "repetitions": 3,
+  "warmups": 1,
+  "core_workloads": [
+    "ingest_checksum",
+    "analytics",
+    "feature_transform"
+  ],
+  "secondary_rows": 1000000,
+  "pandas_rows": [
+    100000,
+    500000,
+    1000000
+  ],
+  "pandas_columns": [
+    "flow_duration",
+    "tot_fwd_pkts",
+    "tot_bwd_pkts",
+    "binary_label"
+  ],
+  "stage_seconds_limit": 2400,
+  "driver_memory": "8g",
+  "resource_sample_seconds": 0.2,
+  "aqe": false
+}

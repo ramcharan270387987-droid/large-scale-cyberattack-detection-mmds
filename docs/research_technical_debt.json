@@ -1,0 +1,13 @@
+{
+ "schema":"research-debt-v1",
+ "source":"Independent Phase12/13 audit,25 November2026",
+ "items":[
+  {"id":"E1","phase":13,"severity":"medium","description":"Mixed chart units","scientific_impact":"Unlike method magnitudes can be miscompared","engineering_impact":"Ambiguous preview","mitigation":"Correct source tables and explicit audit finding","resolution":"Facet compatible methods/units and add lineage tooltips","future_phase":15,"status":"open"},
+  {"id":"E2","phase":13,"severity":"medium","description":"Insufficiently labeled pooling","scientific_impact":"Weighting obscured","engineering_impact":"Publication figure ambiguity","mitigation":"Traceable unpooled tables","resolution":"Label model/protocol/weighting and units","future_phase":15,"status":"open"},
+  {"id":"E3","phase":13,"severity":"low","description":"Browser timing sensitivity","scientific_impact":"No changed research metrics","engineering_impact":"Stale download in first smoke run","mitigation":"Settled audit rerun passed","resolution":"Wait for evidence identity and download readiness","future_phase":15,"status":"open"},
+  {"id":"E4","phase":"12/13","severity":"medium","description":"Receipt-trusting acceptance checks","scientific_impact":"PASS alone insufficient","engineering_impact":"Weak future automation gates","mitigation":"Independent numerical/source audit","resolution":"Fresh execution inputs,identity and Cartesian checks","future_phase":16,"status":"open"},
+  {"id":"E5","phase":"12/13","severity":"low","description":"Dependency reproducibility","scientific_impact":"Passed under recorded environments","engineering_impact":"No full platform lock","mitigation":"Pinned direct dependencies and observed versions","resolution":"Separate full environment locks","future_phase":16,"status":"open"},
+  {"id":"E6","phase":"12/13","severity":"low","description":"One original archive download failed","scientific_impact":"Selected bytes independently verified","engineering_impact":"Transport reproducibility gap","mitigation":"Cache and fresh private notebook payload hash parity","resolution":"Retry bounded original retrieval; canonical source digest","future_phase":16,"status":"open"},
+  {"id":"E7","phase":"12/13","severity":"low","description":"Full-population findings use archived receipts","scientific_impact":"Not all original computations repeated in audit","engineering_impact":"Assurance scope explicit","mitigation":"Bounded fresh probes and full current regressions","resolution":"Preserve archives and distinguish fresh/recorded checks","future_phase":16,"status":"documented limitation"}
+ ]
+}

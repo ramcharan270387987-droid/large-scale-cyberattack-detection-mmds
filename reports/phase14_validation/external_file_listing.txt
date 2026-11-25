@@ -1,0 +1,10 @@
+name                                                              size  creationDate                
+-----------------------------------------------------------  ---------  --------------------------  
+Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv              77123859  2026-05-08 11:53:52.056000  
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv          76906168  2026-05-08 11:53:52.095000  
+Friday-WorkingHours-Morning.pcap_ISCX.csv                     58316725  2026-05-08 11:53:51.539000  
+Monday-WorkingHours.pcap_ISCX.csv                            176927918  2026-05-08 11:53:54.845000  
+Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv   83102436  2026-05-08 11:53:53.693000  
+Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv        52023263  2026-05-08 11:53:52.804000  
+Tuesday-WorkingHours.pcap_ISCX.csv                           135078995  2026-05-08 11:53:54.221000  
+Wednesday-workingHours.pcap_ISCX.csv                         225166395  2026-05-08 11:53:58.214000  

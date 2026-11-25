@@ -1,0 +1,85 @@
+{
+  "schema": "phase14-external-v1",
+  "dataset": "shadman1028/cicids2017-official-flow-feature-csv-files",
+  "dataset_version": 1,
+  "common_features": [
+    "flow_duration",
+    "tot_fwd_pkts",
+    "tot_bwd_pkts"
+  ],
+  "source_features": [
+    "flow_duration",
+    "tot_fwd_pkts",
+    "tot_bwd_pkts",
+    "totlen_fwd_pkts",
+    "totlen_bwd_pkts",
+    "pkt_len_mean",
+    "pkt_len_std",
+    "flow_iat_mean",
+    "flow_iat_std",
+    "fwd_iat_mean",
+    "bwd_iat_mean",
+    "flow_pkts_s",
+    "flow_byts_s",
+    "down_up_ratio",
+    "syn_flag_cnt",
+    "ack_flag_cnt",
+    "rst_flag_cnt",
+    "fin_flag_cnt"
+  ],
+  "external_columns": {
+    "flow_duration": "Flow Duration",
+    "tot_fwd_pkts": "Total Fwd Packets",
+    "tot_bwd_pkts": "Total Backward Packets",
+    "totlen_fwd_pkts": "Total Length of Fwd Packets",
+    "totlen_bwd_pkts": "Total Length of Bwd Packets",
+    "pkt_len_mean": "Packet Length Mean",
+    "pkt_len_std": "Packet Length Std",
+    "flow_iat_mean": "Flow IAT Mean",
+    "flow_iat_std": "Flow IAT Std",
+    "fwd_iat_mean": "Fwd IAT Mean",
+    "bwd_iat_mean": "Bwd IAT Mean",
+    "flow_pkts_s": "Flow Packets/s",
+    "flow_byts_s": "Flow Bytes/s",
+    "down_up_ratio": "Down/Up Ratio",
+    "syn_flag_cnt": "SYN Flag Count",
+    "ack_flag_cnt": "ACK Flag Count",
+    "rst_flag_cnt": "RST Flag Count",
+    "fin_flag_cnt": "FIN Flag Count"
+  },
+  "seed": 23013,
+  "source_train_fraction_permyriad": 125,
+  "target_train_fraction_permyriad": 1000,
+  "minimum_class_training": 50,
+  "score_bins": 2048,
+  "validation_fpr_ceiling": 0.01,
+  "source_protocol": "B",
+  "target_protocols": [
+    "chronological",
+    "grouped"
+  ],
+  "models": {
+    "LR": {
+      "maxIter": 12,
+      "regParam": 0.05
+    },
+    "RF": {
+      "numTrees": 12,
+      "maxDepth": 5,
+      "minInstancesPerNode": 30
+    }
+  },
+  "external_train_days": [
+    "2017-07-03",
+    "2017-07-04",
+    "2017-07-05"
+  ],
+  "external_validation_days": [
+    "2017-07-06"
+  ],
+  "external_test_days": [
+    "2017-07-07"
+  ],
+  "stage_seconds_limit": 2400,
+  "driver_memory": "8g"
+}

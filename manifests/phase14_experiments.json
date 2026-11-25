@@ -1,0 +1,13 @@
+{
+  "schema": "phase14-v1",
+  "complete": false,
+  "starting_checkpoint": "ab6e9401b0c9b92e624e5b2b16ec91050a081eb0",
+  "stage": "14A",
+  "next_stage": "14B actual external audit",
+  "stages": {},
+  "protected": {
+    "work": "16ef2c23bbfe33c497d32863173455185fe868ed",
+    "main": "e6215d6834ce06ba60fe9c7e65ce4a97b611343d",
+    "tag": "3295d05e5f873355ed0c5140f45f4c3b58047043"
+  }
+}
