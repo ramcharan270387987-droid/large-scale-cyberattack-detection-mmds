@@ -1,0 +1,8 @@
+{
+  "phase": 12, "complete": false, "protocol_commit": "3ff45ef",
+  "phase11_parent": "96c1885ef97243e4de33757603fe1530994f0f8e",
+  "stage": "12A", "next_stage": "12B",
+  "focused_tests_passed": 7,
+  "historical_executed": false, "synthetic_executed": false,
+  "protected_refs": {"work":"16ef2c23bbfe33c497d32863173455185fe868ed", "main":"e6215d6834ce06ba60fe9c7e65ce4a97b611343d"}
+}
