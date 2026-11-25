@@ -1,0 +1,9 @@
+# Phase 15 scientific and runtime limitations
+
+Source-domain archived models have weak chronological/external generalization. Their uncalibrated probabilities are not safety or maliciousness guarantees. Exact18feature external transfer remains unsupported;the separate Phase14common3models do not legitimize another extractor's18feature inputs. Reference min/max warnings describe archived source training only.
+
+Portable inference preserves trained parameters and preprocessing and passes bounded Spark parity probes. It does not prove equivalence for every possible floating-point input or prospective deployment accuracy. CSV/manual admissibility is a documented nonnegative finite subset capped at1e12. Blank imputation is training-derived,not learned from uploads. K-Means uses signed-log1p and standardized squared distance;novelty is not attack probability. LR explanations add in log-odds and are not causal. RF local SHAP,hybrid and multiclass/open-set inference remain unsupported in the executable interface;their archived research results remain available.
+
+Synthetic examples are numeric fixtures,not captured or necessarily physically consistent flows. Historical replay is archived evidence,not live monitoring. Phase12label delays/model activations are retrospective simulations. Single-machine worker counts are not cluster nodes,and bounded Pandas comparisons do not establish universal performance rankings. All original negative findings and Phase13/14limitations remain authoritative.
+
+Uploads are bounded,in-memory and not sent externally,cached across sessions,used for fitting or intentionally persisted. Server-level logs/platform retention may still apply;deploy only in an authorized environment. No authentication/tenant service or production security claim is implemented. Public deployment and Phase16are not part of this phase.

@@ -1,0 +1,29 @@
+{
+  "schema": "phase15-v1",
+  "complete": false,
+  "starting_checkpoint": "51392548c562d098e3d74b9a0bda4c402bd421d7",
+  "protocol_commit": "4f791cf",
+  "stages": {
+    "15A": {
+      "status": "validated"
+    },
+    "15B": {
+      "status": "validated",
+      "research_areas": 9,
+      "evidence_tables": 203,
+      "application_modules": 13
+    },
+    "15C": {
+      "status": "validated",
+      "models": 3,
+      "parity": "reports/phase15_validation/parity.json"
+    },
+    "15D": {
+      "status": "validated",
+      "registry": "manifests/phase15_models.json"
+    },
+    "15E": {
+      "status": "pending"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "spark": "4.3.0",
+  "seed": 23013,
+  "models": [
+    {
+      "id": "B-logistic_regression",
+      "status": "PASS",
+      "probes": 100,
+      "max_absolute_residual": 1.5265566588595902e-16,
+      "decisions_equal": 100
+    },
+    {
+      "id": "B-random_forest",
+      "status": "PASS",
+      "probes": 2245,
+      "max_absolute_residual": 1.1102230246251565e-16,
+      "decisions_equal": 2245
+    },
+    {
+      "id": "B-kmeans",
+      "status": "PASS",
+      "probes": 100,
+      "max_absolute_residual": 4.3655745685100555e-11,
+      "decisions_equal": 100
+    }
+  ],
+  "seconds": 28.07939414199791,
+  "private_rows_published": false,
+  "fitting_performed": false
+}

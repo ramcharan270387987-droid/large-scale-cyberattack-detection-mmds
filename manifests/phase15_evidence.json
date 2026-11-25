@@ -1,0 +1,1892 @@
+{
+  "schema": "phase15-evidence-v1",
+  "groups": {
+    "Dataset intelligence & SQL": [
+      {
+        "label": "dashboard/data/phase3 attack families",
+        "path": "dashboard/data/phase3_attack_families.csv",
+        "format": "csv",
+        "sha256": "3bf2e41f52d66c2fcf64b4b25da2e8d2101d03ba4b488dd0d93421b7a6cae675"
+      },
+      {
+        "label": "dashboard/data/phase3 correlations",
+        "path": "dashboard/data/phase3_correlations.csv",
+        "format": "csv",
+        "sha256": "f5ac60cb88cafdfc74a09d738066bbbb5d21860dfbd589eb397a2320269e5628"
+      },
+      {
+        "label": "dashboard/data/phase3 daily traffic",
+        "path": "dashboard/data/phase3_daily_traffic.csv",
+        "format": "csv",
+        "sha256": "bc8e50c43fcd4d584fa080bf4037da250fe4efa165616b3c54d8e8b609bda98e"
+      },
+      {
+        "label": "dashboard/data/phase3 destination ports",
+        "path": "dashboard/data/phase3_destination_ports.csv",
+        "format": "csv",
+        "sha256": "486f0546f39a4c394cc4e2d250d3d87fa300a21f25f7f31ed4675870494b535c"
+      },
+      {
+        "label": "dashboard/data/phase3 duplicate quality",
+        "path": "dashboard/data/phase3_duplicate_quality.csv",
+        "format": "csv",
+        "sha256": "365dfdf830a12fdb84c14dc61e99d658ab27f7a27590e9f4d014e02fb0647003"
+      },
+      {
+        "label": "dashboard/data/phase3 family by day",
+        "path": "dashboard/data/phase3_family_by_day.csv",
+        "format": "csv",
+        "sha256": "804837ff4f147a65a670ed7c8431c81442713e889756f7807ce0de12bbf8e823"
+      },
+      {
+        "label": "dashboard/data/phase3 family feature statistics",
+        "path": "dashboard/data/phase3_family_feature_statistics.csv",
+        "format": "csv",
+        "sha256": "cc5997f4186d5b65ad0e997bb651d3bb551c63ccbe86b591a3bc11511523e92e"
+      },
+      {
+        "label": "dashboard/data/phase3 feature missingness",
+        "path": "dashboard/data/phase3_feature_missingness.csv",
+        "format": "csv",
+        "sha256": "eb75284491a6c66bcf3389c98b905513a5a69fa6a70b767050766deda0adb8c5"
+      },
+      {
+        "label": "dashboard/data/phase3 feature statistics",
+        "path": "dashboard/data/phase3_feature_statistics.csv",
+        "format": "csv",
+        "sha256": "25cd007908e62f343308a6f12a8ece3baac1b67fd989da39972e5e837165fad1"
+      },
+      {
+        "label": "dashboard/data/phase3 original labels",
+        "path": "dashboard/data/phase3_original_labels.csv",
+        "format": "csv",
+        "sha256": "94fc61fc7b14547dbc6410aef8207eb415277a4e0cf29d7dfbe5250ae4e3f9d0"
+      },
+      {
+        "label": "dashboard/data/phase3 protocols",
+        "path": "dashboard/data/phase3_protocols.csv",
+        "format": "csv",
+        "sha256": "b96ae93723c1aa6281563d75c3a03c0d6893a98f99eea2213e7ea8554c6f6383"
+      },
+      {
+        "label": "dashboard/data/phase3 query performance",
+        "path": "dashboard/data/phase3_query_performance.csv",
+        "format": "csv",
+        "sha256": "16d80768b47cb4b6df9b0c32daa9b9aed3ae31a67e157d55b473961f4390cbc2"
+      },
+      {
+        "label": "dashboard/data/phase3 traffic totals",
+        "path": "dashboard/data/phase3_traffic_totals.csv",
+        "format": "csv",
+        "sha256": "7803184f2363e2f5394c2cc5a04fad46c35358ea805797ebe3f37b559979eaac"
+      },
+      {
+        "label": "reports/dataset file statistics",
+        "path": "reports/dataset_file_statistics.csv",
+        "format": "csv",
+        "sha256": "8bd96d22b237be344c3d9bc340d8ad2bd0783ce94abb2713f47d456df53a829a"
+      },
+      {
+        "label": "reports/dataset label distribution",
+        "path": "reports/dataset_label_distribution.csv",
+        "format": "csv",
+        "sha256": "1e5b09b5eee52a55a2a213dea4d32efac6b2bfa6a5d45646c45d05e0823d7963"
+      },
+      {
+        "label": "reports/dataset quality summary",
+        "path": "reports/dataset_quality_summary.csv",
+        "format": "csv",
+        "sha256": "75fea6e0b30be2a382bade16127a31d518c3a7e33582166c2accd95c807abb13"
+      },
+      {
+        "label": "reports/dataset timestamp summary",
+        "path": "reports/dataset_timestamp_summary.csv",
+        "format": "csv",
+        "sha256": "285b9b3fc2b56f1ec0d3bff219697bcff990764116c966c1267577c2f7526172"
+      },
+      {
+        "label": "reports/phase2 count reconciliation",
+        "path": "reports/phase2_count_reconciliation.csv",
+        "format": "csv",
+        "sha256": "555d19585bd9e71ed67ae8750c0b83eb59ff717fd76c4df64627290dad570bcd"
+      },
+      {
+        "label": "reports/phase2 performance",
+        "path": "reports/phase2_performance.csv",
+        "format": "csv",
+        "sha256": "abf95f6fb2009ba58ba9e11a61f00108a738420052359965b767ec8c7110b49b"
+      },
+      {
+        "label": "reports/phase2 quality actions",
+        "path": "reports/phase2_quality_actions.csv",
+        "format": "csv",
+        "sha256": "e0fe526382867b595063a48f59b4047087241d93a1dbbb701dc1a3d76435c9f0"
+      },
+      {
+        "label": "reports/phase3 attack families",
+        "path": "reports/phase3_attack_families.csv",
+        "format": "csv",
+        "sha256": "3bf2e41f52d66c2fcf64b4b25da2e8d2101d03ba4b488dd0d93421b7a6cae675"
+      },
+      {
+        "label": "reports/phase3 candidate patterns",
+        "path": "reports/phase3_candidate_patterns.csv",
+        "format": "csv",
+        "sha256": "3147a6301ac8c89b7dc409d87de1bbf88087a08e58781aafa7516befcea06d2e"
+      },
+      {
+        "label": "reports/phase3 clean sensitivity",
+        "path": "reports/phase3_clean_sensitivity.csv",
+        "format": "csv",
+        "sha256": "e96e5a65de028ae087fb815ef4b27c3b336efa63dc54ec70c893e54f1e6ca72c"
+      },
+      {
+        "label": "reports/phase3 correlations",
+        "path": "reports/phase3_correlations.csv",
+        "format": "csv",
+        "sha256": "f5ac60cb88cafdfc74a09d738066bbbb5d21860dfbd589eb397a2320269e5628"
+      },
+      {
+        "label": "reports/phase3 daily traffic",
+        "path": "reports/phase3_daily_traffic.csv",
+        "format": "csv",
+        "sha256": "bc8e50c43fcd4d584fa080bf4037da250fe4efa165616b3c54d8e8b609bda98e"
+      },
+      {
+        "label": "reports/phase3 destination ports",
+        "path": "reports/phase3_destination_ports.csv",
+        "format": "csv",
+        "sha256": "486f0546f39a4c394cc4e2d250d3d87fa300a21f25f7f31ed4675870494b535c"
+      },
+      {
+        "label": "reports/phase3 duplicate quality",
+        "path": "reports/phase3_duplicate_quality.csv",
+        "format": "csv",
+        "sha256": "365dfdf830a12fdb84c14dc61e99d658ab27f7a27590e9f4d014e02fb0647003"
+      },
+      {
+        "label": "reports/phase3 family by day",
+        "path": "reports/phase3_family_by_day.csv",
+        "format": "csv",
+        "sha256": "804837ff4f147a65a670ed7c8431c81442713e889756f7807ce0de12bbf8e823"
+      },
+      {
+        "label": "reports/phase3 family feature statistics",
+        "path": "reports/phase3_family_feature_statistics.csv",
+        "format": "csv",
+        "sha256": "cc5997f4186d5b65ad0e997bb651d3bb551c63ccbe86b591a3bc11511523e92e"
+      },
+      {
+        "label": "reports/phase3 feature missingness",
+        "path": "reports/phase3_feature_missingness.csv",
+        "format": "csv",
+        "sha256": "eb75284491a6c66bcf3389c98b905513a5a69fa6a70b767050766deda0adb8c5"
+      },
+      {
+        "label": "reports/phase3 feature statistics",
+        "path": "reports/phase3_feature_statistics.csv",
+        "format": "csv",
+        "sha256": "25cd007908e62f343308a6f12a8ece3baac1b67fd989da39972e5e837165fad1"
+      },
+      {
+        "label": "reports/phase3 hourly traffic",
+        "path": "reports/phase3_hourly_traffic.csv",
+        "format": "csv",
+        "sha256": "82e4150a40cd2aba7c4cde9f097cd67b97e33ca6e60c500ddfe67e803dfbfe4b"
+      },
+      {
+        "label": "reports/phase3 original labels",
+        "path": "reports/phase3_original_labels.csv",
+        "format": "csv",
+        "sha256": "94fc61fc7b14547dbc6410aef8207eb415277a4e0cf29d7dfbe5250ae4e3f9d0"
+      },
+      {
+        "label": "reports/phase3 protocols",
+        "path": "reports/phase3_protocols.csv",
+        "format": "csv",
+        "sha256": "b96ae93723c1aa6281563d75c3a03c0d6893a98f99eea2213e7ea8554c6f6383"
+      },
+      {
+        "label": "reports/phase3 query performance",
+        "path": "reports/phase3_query_performance.csv",
+        "format": "csv",
+        "sha256": "16d80768b47cb4b6df9b0c32daa9b9aed3ae31a67e157d55b473961f4390cbc2"
+      },
+      {
+        "label": "reports/phase3 raw sensitivity",
+        "path": "reports/phase3_raw_sensitivity.csv",
+        "format": "csv",
+        "sha256": "f0a5caf126dc61049d1dc3ff109099eb05e092f952636f3e5aff7ade9bc8dc26"
+      },
+      {
+        "label": "reports/phase3 reference thresholds",
+        "path": "reports/phase3_reference_thresholds.csv",
+        "format": "csv",
+        "sha256": "d9afe71324332391709cffb4ede379ca7c3090922b072ed06fd5390dc0759c4b"
+      },
+      {
+        "label": "reports/phase3 tcp flags",
+        "path": "reports/phase3_tcp_flags.csv",
+        "format": "csv",
+        "sha256": "6ea155a13988dc39e0e969449d30ba7e950cf4a8a56ba6caf0709c28bd7765ff"
+      },
+      {
+        "label": "reports/phase3 time windows",
+        "path": "reports/phase3_time_windows.csv",
+        "format": "csv",
+        "sha256": "9e595e273e61f4650ed9fd62e6a491277505edcc3a2319a20f0f93597e4d8234"
+      },
+      {
+        "label": "reports/phase3 traffic totals",
+        "path": "reports/phase3_traffic_totals.csv",
+        "format": "csv",
+        "sha256": "7803184f2363e2f5394c2cc5a04fad46c35358ea805797ebe3f37b559979eaac"
+      }
+    ],
+    "Supervised & hybrid": [
+      {
+        "label": "dashboard/data/phase4 family recall",
+        "path": "dashboard/data/phase4_family_recall.csv",
+        "format": "csv",
+        "sha256": "042538208092970394e59b2f8047338271c64a884ed8ccc6ddb5c7e2d5e1cd0e"
+      },
+      {
+        "label": "dashboard/data/phase4 metrics",
+        "path": "dashboard/data/phase4_metrics.csv",
+        "format": "csv",
+        "sha256": "45b66da86f111a3a9beee12fea97fd5ad66dabc29397b3f8c6abb9e9c962b8ea"
+      },
+      {
+        "label": "dashboard/data/phase4 split diagnostics",
+        "path": "dashboard/data/phase4_split_diagnostics.csv",
+        "format": "csv",
+        "sha256": "c1951d09aa376a6423ee9fa4afa0326f859cd7f031ff89ea3e9d1120d7c22c49"
+      },
+      {
+        "label": "reports/phase4 family recall",
+        "path": "reports/phase4_family_recall.csv",
+        "format": "csv",
+        "sha256": "042538208092970394e59b2f8047338271c64a884ed8ccc6ddb5c7e2d5e1cd0e"
+      },
+      {
+        "label": "reports/phase4 metrics",
+        "path": "reports/phase4_metrics.csv",
+        "format": "csv",
+        "sha256": "45b66da86f111a3a9beee12fea97fd5ad66dabc29397b3f8c6abb9e9c962b8ea"
+      },
+      {
+        "label": "reports/phase4 split diagnostics",
+        "path": "reports/phase4_split_diagnostics.csv",
+        "format": "csv",
+        "sha256": "c1951d09aa376a6423ee9fa4afa0326f859cd7f031ff89ea3e9d1120d7c22c49"
+      },
+      {
+        "label": "reports/phase4 training performance",
+        "path": "reports/phase4_training_performance.csv",
+        "format": "csv",
+        "sha256": "7ac3f40d1d4506a8084c9fa1112bcc50251388f9396ce651126abb3dac811d56"
+      },
+      {
+        "label": "reports/phase8 ablation results",
+        "path": "reports/phase8_ablation_results.csv",
+        "format": "csv",
+        "sha256": "65366bfda3ec883d664e4eaeb027be677b8705090f262f029025d88ead452ccc"
+      },
+      {
+        "label": "reports/phase8 baseline reconciliation",
+        "path": "reports/phase8_baseline_reconciliation.csv",
+        "format": "csv",
+        "sha256": "0612e737cfc2a694cca77d2543aa9864820112dc17a349149f4e0dcf9a72f22f"
+      },
+      {
+        "label": "reports/phase8 calibration metrics",
+        "path": "reports/phase8_calibration_metrics.csv",
+        "format": "csv",
+        "sha256": "2bc1ce8e0fd644348b3b76a70a45f2eb1932d7447fabb7d41ad1fe69605a71f6"
+      },
+      {
+        "label": "reports/phase8 cost sensitive results",
+        "path": "reports/phase8_cost_sensitive_results.csv",
+        "format": "csv",
+        "sha256": "d32fad26ff8aa3242cbc3f5852d88d375c2fe968ee3d2371bc2f64a789b347fa"
+      },
+      {
+        "label": "reports/phase8 error audit",
+        "path": "reports/phase8_error_audit.csv",
+        "format": "csv",
+        "sha256": "f435bbd70474e6799349504f0ecf645ba20a3f4bb485660d2e0342e9ab5b178b"
+      },
+      {
+        "label": "reports/phase8 false positive budgets",
+        "path": "reports/phase8_false_positive_budgets.csv",
+        "format": "csv",
+        "sha256": "1306310dee7d116bf3e0b80aca6356adc4602b9bde50c9f897fff879142f4baf"
+      },
+      {
+        "label": "reports/phase8 family recall",
+        "path": "reports/phase8_family_recall.csv",
+        "format": "csv",
+        "sha256": "5cbaec1e09f8c1861a066fd6ed861ad05766b5f4c71f5bebe9ce53bcec64496b"
+      },
+      {
+        "label": "reports/phase8 fusion selection",
+        "path": "reports/phase8_fusion_selection.csv",
+        "format": "csv",
+        "sha256": "43e2dcc66a1ac8e4dc4b6ce7fcba0a0f7892094896783e4a821726dcdebac35b"
+      },
+      {
+        "label": "reports/phase8 model comparison",
+        "path": "reports/phase8_model_comparison.csv",
+        "format": "csv",
+        "sha256": "8023243a077955cf329a2d59f160c7ef48bcc531d76a9be2399a37ceaf2352ed"
+      },
+      {
+        "label": "reports/phase8 paired disagreement",
+        "path": "reports/phase8_paired_disagreement.csv",
+        "format": "csv",
+        "sha256": "9b7129cfc2d0ac0678f583d789719b4e9b7a3b7f84d10ba77830828b6071ec15"
+      },
+      {
+        "label": "reports/phase8 performance",
+        "path": "reports/phase8_performance.csv",
+        "format": "csv",
+        "sha256": "d387dd29910795d017229e95ef6fbc1cb85f2294212a4100de9a871e4444bd6b"
+      },
+      {
+        "label": "reports/phase8 reference novelty flags",
+        "path": "reports/phase8_reference_novelty_flags.csv",
+        "format": "csv",
+        "sha256": "3102bd51212ad9f0ce9baf7cc29f6a38ccad336cbbc82cba7a5d015c40ff89df"
+      },
+      {
+        "label": "reports/phase8 reliability",
+        "path": "reports/phase8_reliability.csv",
+        "format": "csv",
+        "sha256": "0a4e392b0156538725c579b4954a24a6e84460225c6624b5f109380ea7bcb985"
+      },
+      {
+        "label": "reports/phase8 robustness",
+        "path": "reports/phase8_robustness.csv",
+        "format": "csv",
+        "sha256": "38ec44ab36b3a838a16d4c6606398b3a30ae48b4dc9524c3c62d12994c0bfae7"
+      },
+      {
+        "label": "reports/phase8 score curves",
+        "path": "reports/phase8_score_curves.csv",
+        "format": "csv",
+        "sha256": "126d68d3e0d7777ab9dcbf9e67d29e1ef0426eba62f6189ae4090e2111246371"
+      },
+      {
+        "label": "reports/phase8 split diagnostics",
+        "path": "reports/phase8_split_diagnostics.csv",
+        "format": "csv",
+        "sha256": "43fe8534325bed621e66647b7f3fde12f0688cf86bd88e20607e275f62793db1"
+      },
+      {
+        "label": "reports/phase8 threshold selection",
+        "path": "reports/phase8_threshold_selection.csv",
+        "format": "csv",
+        "sha256": "c7fccd7fb048435b83409ccd2cc195ed04ff7417fb4eea7faae15693a3a4469f"
+      },
+      {
+        "label": "reports/phase8 triage metrics",
+        "path": "reports/phase8_triage_metrics.csv",
+        "format": "csv",
+        "sha256": "11976fb473c7a96a97ad63b30b09df4b52b68db8d330428cffd8b482c1ac973e"
+      }
+    ],
+    "Clustering & novelty": [
+      {
+        "label": "dashboard/data/phase5 centroids",
+        "path": "dashboard/data/phase5_centroids.csv",
+        "format": "csv",
+        "sha256": "80494409a1a800d96c11e2fa71ebae7b52c8b84a05761516d4f1ccb18cdfaed5"
+      },
+      {
+        "label": "dashboard/data/phase5 cluster occupancy",
+        "path": "dashboard/data/phase5_cluster_occupancy.csv",
+        "format": "csv",
+        "sha256": "2b0f0ecf4784bfa61918d3aa81f4b97f6bd89d42a2bd044798b1ab9a98557cfc"
+      },
+      {
+        "label": "dashboard/data/phase5 cluster profiles",
+        "path": "dashboard/data/phase5_cluster_profiles.csv",
+        "format": "csv",
+        "sha256": "3b482b4f014683a38ca5aee9ac9f03d9bfec581c28c0e7a02ed7cbd09985f00d"
+      },
+      {
+        "label": "dashboard/data/phase5 composition",
+        "path": "dashboard/data/phase5_composition.csv",
+        "format": "csv",
+        "sha256": "b96b77f8704aab4a3785364f11283f45a39965550944ed4c0d1f30072d0cbd83"
+      },
+      {
+        "label": "dashboard/data/phase5 model selection",
+        "path": "dashboard/data/phase5_model_selection.csv",
+        "format": "csv",
+        "sha256": "b4d6348a90f5bb52a25a2386a70d5e10714bcb35b2ce8cb55fc5f53e5607e8f4"
+      },
+      {
+        "label": "dashboard/data/phase5 novelty metrics",
+        "path": "dashboard/data/phase5_novelty_metrics.csv",
+        "format": "csv",
+        "sha256": "8396f886a8627a3026b991981f2f3de3b92858639b0047d2217735886c379e44"
+      },
+      {
+        "label": "dashboard/data/phase5 score histogram",
+        "path": "dashboard/data/phase5_score_histogram.csv",
+        "format": "csv",
+        "sha256": "f594d0c3187d47aa4cc0d432eaad8ee787f69e720b19ca586c28d4dc47bef4e9"
+      },
+      {
+        "label": "dashboard/data/phase5 temporal shift",
+        "path": "dashboard/data/phase5_temporal_shift.csv",
+        "format": "csv",
+        "sha256": "dc7201a1a386103bcbb684fc3c11dace867f3f369f9a20d57e10fb4055fa732d"
+      },
+      {
+        "label": "reports/phase5 centroids",
+        "path": "reports/phase5_centroids.csv",
+        "format": "csv",
+        "sha256": "80494409a1a800d96c11e2fa71ebae7b52c8b84a05761516d4f1ccb18cdfaed5"
+      },
+      {
+        "label": "reports/phase5 cluster occupancy",
+        "path": "reports/phase5_cluster_occupancy.csv",
+        "format": "csv",
+        "sha256": "2b0f0ecf4784bfa61918d3aa81f4b97f6bd89d42a2bd044798b1ab9a98557cfc"
+      },
+      {
+        "label": "reports/phase5 cluster profiles",
+        "path": "reports/phase5_cluster_profiles.csv",
+        "format": "csv",
+        "sha256": "3b482b4f014683a38ca5aee9ac9f03d9bfec581c28c0e7a02ed7cbd09985f00d"
+      },
+      {
+        "label": "reports/phase5 cohorts",
+        "path": "reports/phase5_cohorts.csv",
+        "format": "csv",
+        "sha256": "e5c04a7cbcedd5f3eae7c87157c40e177c3570a8fa36ed8ed961a6ecc94baa0e"
+      },
+      {
+        "label": "reports/phase5 composition",
+        "path": "reports/phase5_composition.csv",
+        "format": "csv",
+        "sha256": "b96b77f8704aab4a3785364f11283f45a39965550944ed4c0d1f30072d0cbd83"
+      },
+      {
+        "label": "reports/phase5 duplicate sensitivity",
+        "path": "reports/phase5_duplicate_sensitivity.csv",
+        "format": "csv",
+        "sha256": "816001fb5c3adcbfa853906f976cb0a27076de8b69dd6b7611b2b8456ec74eba"
+      },
+      {
+        "label": "reports/phase5 model selection",
+        "path": "reports/phase5_model_selection.csv",
+        "format": "csv",
+        "sha256": "b4d6348a90f5bb52a25a2386a70d5e10714bcb35b2ce8cb55fc5f53e5607e8f4"
+      },
+      {
+        "label": "reports/phase5 novelty metrics",
+        "path": "reports/phase5_novelty_metrics.csv",
+        "format": "csv",
+        "sha256": "8396f886a8627a3026b991981f2f3de3b92858639b0047d2217735886c379e44"
+      },
+      {
+        "label": "reports/phase5 score histogram",
+        "path": "reports/phase5_score_histogram.csv",
+        "format": "csv",
+        "sha256": "f594d0c3187d47aa4cc0d432eaad8ee787f69e720b19ca586c28d4dc47bef4e9"
+      },
+      {
+        "label": "reports/phase5 temporal shift",
+        "path": "reports/phase5_temporal_shift.csv",
+        "format": "csv",
+        "sha256": "dc7201a1a386103bcbb684fc3c11dace867f3f369f9a20d57e10fb4055fa732d"
+      },
+      {
+        "label": "reports/phase5 transform diagnostics",
+        "path": "reports/phase5_transform_diagnostics.csv",
+        "format": "csv",
+        "sha256": "6d9143ca25dd55f209ba5e2da415efcc6313eb4590039688ccf774ca70b33f54"
+      },
+      {
+        "label": "reports/phase5 window family",
+        "path": "reports/phase5_window_family.csv",
+        "format": "csv",
+        "sha256": "b9c2495c87eda8869201259b9336a1bc922a6eb5e611e456d753236039a6e49c"
+      }
+    ],
+    "Multiclass & open-set": [
+      {
+        "label": "reports/phase9 closed set metrics",
+        "path": "reports/phase9_closed_set_metrics.csv",
+        "format": "csv",
+        "sha256": "5be1a7a667bd2b0928c70946046a044a3a9cada46ed7d0a976f73ca8927c66a1"
+      },
+      {
+        "label": "reports/phase9 family confusion",
+        "path": "reports/phase9_family_confusion.csv",
+        "format": "csv",
+        "sha256": "40c15c368b2d5ea7d5caaaa1dba376e68f852cad6fcbc34776ab381b6798af00"
+      },
+      {
+        "label": "reports/phase9 family support",
+        "path": "reports/phase9_family_support.csv",
+        "format": "csv",
+        "sha256": "4604357c45c162cef1f54473c260032dd58c073f028eb7ac5d368d51933179f5"
+      },
+      {
+        "label": "reports/phase9 open set metrics",
+        "path": "reports/phase9_open_set_metrics.csv",
+        "format": "csv",
+        "sha256": "2b2ac3d5207d84396a27b03dc7fc8edbb75a2ec0746caf6990049baff160f7cb"
+      },
+      {
+        "label": "reports/phase9 per family",
+        "path": "reports/phase9_per_family.csv",
+        "format": "csv",
+        "sha256": "11f398e79208caa0052bbf027047af23d55874432cb40fa030eaa3e07ee45dc4"
+      },
+      {
+        "label": "phase9_hierarchy/B/phase9_hierarchical_counts.csv",
+        "path": "reports/phase9_hierarchy/B/phase9_hierarchical_counts.csv",
+        "format": "csv",
+        "sha256": "d3cc7deab22239d8cc55a48d9e4f6328d72dd2e050d17e826ce1f29dc46dd886"
+      },
+      {
+        "label": "phase9_hierarchy/C/phase9_hierarchical_counts.csv",
+        "path": "reports/phase9_hierarchy/C/phase9_hierarchical_counts.csv",
+        "format": "csv",
+        "sha256": "61067af52b572339e49447976e986e8e3314e835accf37693139b534fef6513b"
+      },
+      {
+        "label": "phase9_open_set_evidence/15/B/day_rejection.csv",
+        "path": "reports/phase9_open_set_evidence/15/B/day_rejection.csv",
+        "format": "csv",
+        "sha256": "2d1c8e19c458061a5383ee75f2af343d061314104f3b5c8dccb81f304aaececf"
+      },
+      {
+        "label": "phase9_open_set_evidence/15/B/rejection_error_groups.csv",
+        "path": "reports/phase9_open_set_evidence/15/B/rejection_error_groups.csv",
+        "format": "csv",
+        "sha256": "1c43e1beddccc11c1dad7f959d0d51b566dde0db1609c87d07a07f76d4f55527"
+      },
+      {
+        "label": "phase9_open_set_evidence/15/Web/day_rejection.csv",
+        "path": "reports/phase9_open_set_evidence/15/Web/day_rejection.csv",
+        "format": "csv",
+        "sha256": "58b21a9e30ad227689f63238b6c906410d10c973da36bdc80b1c96e67740c49b"
+      },
+      {
+        "label": "phase9_open_set_evidence/15/Web/rejection_error_groups.csv",
+        "path": "reports/phase9_open_set_evidence/15/Web/rejection_error_groups.csv",
+        "format": "csv",
+        "sha256": "a12b91a6c898f126a72adf30a503bcaa0621baf28c959a0987f6273d80d371ed"
+      },
+      {
+        "label": "phase9_open_set_evidence/16/Bot/day_rejection.csv",
+        "path": "reports/phase9_open_set_evidence/16/Bot/day_rejection.csv",
+        "format": "csv",
+        "sha256": "f4848f0b6ebeece90a5fb0a95aef7a140838be506c93f7348c956c0140738d6a"
+      },
+      {
+        "label": "phase9_open_set_evidence/16/Bot/rejection_error_groups.csv",
+        "path": "reports/phase9_open_set_evidence/16/Bot/rejection_error_groups.csv",
+        "format": "csv",
+        "sha256": "4d42b71cdeb8961bc9ae19b6953025c88f3dcc7c8e14dba8eeb603378daa7c84"
+      },
+      {
+        "label": "phase9_open_set_evidence/16/DDoS/day_rejection.csv",
+        "path": "reports/phase9_open_set_evidence/16/DDoS/day_rejection.csv",
+        "format": "csv",
+        "sha256": "04980809852d0394e5773a0b360f4318c0c221a2c28ff3864444a612b6a4c43c"
+      },
+      {
+        "label": "phase9_open_set_evidence/16/DDoS/rejection_error_groups.csv",
+        "path": "reports/phase9_open_set_evidence/16/DDoS/rejection_error_groups.csv",
+        "format": "csv",
+        "sha256": "ee218a23a560cb875b3826af009b8b13d7ca5601c70bd0ff84b1098dcead77e4"
+      },
+      {
+        "label": "phase9_open_set_evidence/16/Infiltration/day_rejection.csv",
+        "path": "reports/phase9_open_set_evidence/16/Infiltration/day_rejection.csv",
+        "format": "csv",
+        "sha256": "9de199036ae9c1ddb5dd20403659a607dfb25217748ccdbf86ac4af58752a918"
+      },
+      {
+        "label": "phase9_open_set_evidence/16/Infiltration/rejection_error_groups.csv",
+        "path": "reports/phase9_open_set_evidence/16/Infiltration/rejection_error_groups.csv",
+        "format": "csv",
+        "sha256": "dfbb663f3e6fd17961e2dc27f19d0d77d6ceee1319ab2e8b515ba81c807b286d"
+      }
+    ],
+    "Streaming & drift": [
+      {
+        "label": "Primary synthetic results",
+        "path": "reports/phase11_synthetic/synthetic_metrics.csv",
+        "format": "csv",
+        "sha256": "9490c589a8e6bca6e878f7d9bd14969ff8a92a9ef95fad571f5b71301b365e75"
+      },
+      {
+        "label": "Detector comparison",
+        "path": "reports/phase11_finalization/detector_comparison.csv",
+        "format": "csv",
+        "sha256": "553a9e8711f2820f7263b4b6204b46a73afd2b3ea3f8a0ac34243809f938d35e"
+      },
+      {
+        "label": "Historical alert timeline",
+        "path": "reports/phase11_historical/historical_alerts.csv",
+        "format": "csv",
+        "sha256": "ed0aa71786189327ab75414ac1ac255989f3f8f7038c91ded6388926cd0f2e93"
+      },
+      {
+        "label": "Reference and warm-up",
+        "path": "reports/phase11_finalization/reference.csv",
+        "format": "csv",
+        "sha256": "8c896820ec60fe025a16f5684fa44d44d210520444946ec414719fb5a87f7995"
+      },
+      {
+        "label": "Reset policies",
+        "path": "reports/phase11_finalization/reset.csv",
+        "format": "csv",
+        "sha256": "51c04d273f06eb6156c9ebb206323bdd2e6d0db4c4c7efa599883b7f3d17d434"
+      },
+      {
+        "label": "Missing inputs",
+        "path": "reports/phase11_finalization/missing.csv",
+        "format": "csv",
+        "sha256": "bcdb81a261c5144dd9e94a6eabc3da77882d8dd3ce1b611646b207d5c4d0bf57"
+      },
+      {
+        "label": "Support thresholds",
+        "path": "reports/phase11_finalization/support.csv",
+        "format": "csv",
+        "sha256": "c011da0880426bf649181402f4dd024ee82cd93ad12489ee235be82560e20121"
+      },
+      {
+        "label": "Native support and label clocks",
+        "path": "reports/phase11_finalization/native_support.csv",
+        "format": "csv",
+        "sha256": "5750e41fea03de4f1059379843068b926fb3f3c21eb916ad15c454e37fa9afa1"
+      },
+      {
+        "label": "Detector agreement",
+        "path": "reports/phase11_finalization/agreement.csv",
+        "format": "csv",
+        "sha256": "6e683c72834a29ea3b45bb15181e0373aa3ba51e2b4898f0eed703012e535b27"
+      },
+      {
+        "label": "Episode agreement",
+        "path": "reports/phase11_finalization/episode_agreement.csv",
+        "format": "csv",
+        "sha256": "3ae0152305db1f94ebce4bfb84fa16cb204be10293d259ee3f965db548ce7680"
+      },
+      {
+        "label": "Performance associations",
+        "path": "reports/phase11_finalization/association.csv",
+        "format": "csv",
+        "sha256": "67f7bf394befc710edb233423bbb934257bf5a3cad2e8755890538c2580c44d6"
+      },
+      {
+        "label": "Before and after alerts",
+        "path": "reports/phase11_finalization/before_after.csv",
+        "format": "csv",
+        "sha256": "3d2d3ad3642fb643370c5f585feb881e88ff4dc8760b8e2ef2564722f42b81f1"
+      },
+      {
+        "label": "Ensemble and controls",
+        "path": "reports/phase11_robustness/ablations.csv",
+        "format": "csv",
+        "sha256": "0b2328dd28ce87add4801d85b139092815d7fb50ead73c97d4cdd0705c7e2ec5"
+      },
+      {
+        "label": "Window and magnitude sensitivity",
+        "path": "reports/phase11_robustness/sensitivity.csv",
+        "format": "csv",
+        "sha256": "497b07640a807c1937f460e98a364107078738373f842905c8eddf96301009cc"
+      },
+      {
+        "label": "Label-delay effects",
+        "path": "reports/phase11_synthetic/synthetic_metrics.csv",
+        "format": "csv",
+        "sha256": "9490c589a8e6bca6e878f7d9bd14969ff8a92a9ef95fad571f5b71301b365e75"
+      },
+      {
+        "label": "Compute and state costs",
+        "path": "reports/phase11_finalization/costs.csv",
+        "format": "csv",
+        "sha256": "9d869b714a3606e74a3bc38ed1dfca3da376763a0adc3844747d772680fa7495"
+      },
+      {
+        "label": "Recovery and duplicate costs",
+        "path": "reports/phase11_finalization/engineering_costs.csv",
+        "format": "csv",
+        "sha256": "c3f2f36c0b75919d036d6afcbfa074432be6f76333b99550f6402aa229d42fb6"
+      },
+      {
+        "label": "Distribution reference costs",
+        "path": "reports/phase11_finalization/distribution_state_costs.csv",
+        "format": "csv",
+        "sha256": "afcfd81a555fd98ac28a67076715f2e7862fefb134c997bc574a3dda8f5f23c3"
+      },
+      {
+        "label": "Historical window costs",
+        "path": "reports/phase11_historical/performance.csv",
+        "format": "csv",
+        "sha256": "d17f675e58d897a25b9600ccfb120d546af92a806bc79a8a8b06b2c9704d1fe0"
+      },
+      {
+        "label": "phase6 alerts",
+        "path": "reports/phase6_alerts.csv",
+        "format": "csv",
+        "sha256": "e304ac85815e052a178975fe35cd9a94e95a1aac42fccd4e228405b5f73d9ae9"
+      },
+      {
+        "label": "phase6 performance",
+        "path": "reports/phase6_performance.csv",
+        "format": "csv",
+        "sha256": "9e6038c42604d80ab46c6b5b672e0a623368d5fd4f3d102b1f8a4d1de4593902"
+      },
+      {
+        "label": "phase6 recovery tests",
+        "path": "reports/phase6_recovery_tests.csv",
+        "format": "csv",
+        "sha256": "09ae2d7bc48df8b7647cebc4c04de9b1d133d7f9f142a4e93d29870eb381708f"
+      },
+      {
+        "label": "phase6 replay batches",
+        "path": "reports/phase6_replay_batches.csv",
+        "format": "csv",
+        "sha256": "cc575c54798f81bfd0cb0ff9d66475c936d6bb0bf638b3578168c02d6f142fe5"
+      },
+      {
+        "label": "phase6 shift metrics",
+        "path": "reports/phase6_shift_metrics.csv",
+        "format": "csv",
+        "sha256": "200bf2a89a62db392db44b11b4f22e4fd777b90edb5d9a1daea3f0de3c4d46a6"
+      },
+      {
+        "label": "phase6 window metrics",
+        "path": "reports/phase6_window_metrics.csv",
+        "format": "csv",
+        "sha256": "6f5050993f0f36de76607dce4b30e0c8e2594a2b62f7d90ba7e58749b2bc0116"
+      }
+    ],
+    "Adaptive learning": [
+      {
+        "label": "Static versus adaptive comparison",
+        "path": "reports/phase12_policy_comparison.csv",
+        "format": "csv",
+        "sha256": "2ab9e41689f7388542a6fbbf91c5e9a14b055d6026011da2378535ecfddf6769"
+      },
+      {
+        "label": "Drift and retraining eligibility",
+        "path": "reports/phase12_trigger_events.csv",
+        "format": "csv",
+        "sha256": "6457c965b65334c13577782aa1f9196d0e8a42f964bcfb1f2309272de1e01f8a"
+      },
+      {
+        "label": "Prediction and label availability",
+        "path": "reports/phase12_prequential_metrics.csv",
+        "format": "csv",
+        "sha256": "f01170206b2f7977cb82eb076e02000fc404c50815bbdc7f7201ccffbe69cc1f"
+      },
+      {
+        "label": "Active model version and coverage",
+        "path": "reports/phase12_version_coverage.csv",
+        "format": "csv",
+        "sha256": "222bfcae1aeea5ee1e3b626bcf069b2e8f53a6f9fb3e7b6dc6dbb57ef0e08799"
+      },
+      {
+        "label": "Model history",
+        "path": "reports/phase12_model_registry.csv",
+        "format": "csv",
+        "sha256": "c20365dda84c1115b00681310b522323bc61b1beb9d340e1b9d3a12609ed775c"
+      },
+      {
+        "label": "Model lifecycle decisions",
+        "path": "reports/phase12_model_lifecycle.csv",
+        "format": "csv",
+        "sha256": "be3e39203e447bc82ac39609c478cb1f46936d530672223d6fcf42fa4ac05a3f"
+      },
+      {
+        "label": "Candidate promotion and rejection",
+        "path": "reports/phase12_training_events.csv",
+        "format": "csv",
+        "sha256": "cc3abad658eef0e3cc172aea60daaa81a35d7dca7b70fb535bfe9f24df0e42ba"
+      },
+      {
+        "label": "Threshold history",
+        "path": "reports/phase12_threshold_history.csv",
+        "format": "csv",
+        "sha256": "07ea92db04e12cc51038092e76eee5171db84707b3711e633c605300ddf1c8da"
+      },
+      {
+        "label": "Attack-family performance",
+        "path": "reports/phase12_family_metrics.csv",
+        "format": "csv",
+        "sha256": "bf11ebb1778c5eb3f61ae0057fb944000eb034d5adc9dad9234f928f93f87667"
+      },
+      {
+        "label": "Family exposure and forward support",
+        "path": "reports/phase12_family_exposure.csv",
+        "format": "csv",
+        "sha256": "0e49099acbe0eaaeb129d3050134d42dad7334c00d6036cb2bd5f1045933efa4"
+      },
+      {
+        "label": "Training-window and delay comparisons",
+        "path": "reports/phase12_robustness.csv",
+        "format": "csv",
+        "sha256": "6bedfe979c917afc2ffd3adc11f914119299360cb57c03a58ccd7654ebd3a90f"
+      },
+      {
+        "label": "Retention and forgetting",
+        "path": "reports/phase12_retention.csv",
+        "format": "csv",
+        "sha256": "c13d3d10faf940001330e0e0e73c9cd1f7f6b60038c4f8931db6361e5fa3cc0d"
+      },
+      {
+        "label": "Synthetic benchmark",
+        "path": "reports/phase12_synthetic_metrics.csv",
+        "format": "csv",
+        "sha256": "f2f71f9625f6017d9a916d00f905c3ba192d9b02f972a7fbe81e81ced2c759bb"
+      },
+      {
+        "label": "Synthetic recovery",
+        "path": "reports/phase12_synthetic_recovery.csv",
+        "format": "csv",
+        "sha256": "9448061e266e4e72f79935ad34ca3c011c7a48db3b5bc7e9f44a50c40b669100"
+      },
+      {
+        "label": "Computational cost",
+        "path": "reports/phase12_performance.csv",
+        "format": "csv",
+        "sha256": "5a8151f06703c60841089335c96266a9570376294c5a9aa7b6ebb778b59146f4"
+      },
+      {
+        "label": "Released-label-only diagnostics",
+        "path": "reports/phase12_released_only_metrics.csv",
+        "format": "csv",
+        "sha256": "8a2e658473fa5b4ca37dad65aa9caefb6434737bd2b33e289acd27cdde73b9c1"
+      },
+      {
+        "label": "Rollback and controlled faults",
+        "path": "reports/phase12_faults.csv",
+        "format": "csv",
+        "sha256": "e6045bd2a2bf729441a45764aa010ec8da0c3e87491f2e137c0ed8b02f3f2592"
+      }
+    ],
+    "Explainable AI": [
+      {
+        "label": "Global feature importance",
+        "path": "reports/phase13_global_importance.csv",
+        "format": "csv",
+        "sha256": "b30ced19a8e925603742c7a6c04a235b31c524bcfb08095383cef1ea8a3dd68f"
+      },
+      {
+        "label": "Local synthetic explanation",
+        "path": "reports/phase13_synthetic_local.csv",
+        "format": "csv",
+        "sha256": "a2990f7ae9528d6aebd4bfb318f00c81c06dd2c2350b4dff60165d609d8b9bd1"
+      },
+      {
+        "label": "False-positive and false-negative cases",
+        "path": "reports/phase13_enriched_cases.csv",
+        "format": "csv",
+        "sha256": "d8a93cc8b17ce85eddc0deae3e67fef83984694e288cb1cd9227733d544e442a"
+      },
+      {
+        "label": "Family and capture contributions",
+        "path": "reports/phase13_case_contributions.csv",
+        "format": "csv",
+        "sha256": "615496a3aef06a1b3f813c4544e43919c815d1187926313b69a6abd7f36dc311"
+      },
+      {
+        "label": "Permutation importance",
+        "path": "reports/phase13_permutation_summary.csv",
+        "format": "csv",
+        "sha256": "3b609890d463b718d3a517592e8493b562e2b59f4dffff850573de0928b565be"
+      },
+      {
+        "label": "Chronological feature distributions",
+        "path": "reports/phase13_feature_distributions.csv",
+        "format": "csv",
+        "sha256": "4dfc7921c2925ff6ca46b31f045d031cdc0d123a2f601431674e3f4b6bcf042f"
+      },
+      {
+        "label": "Reference-bin distribution shift",
+        "path": "reports/phase13_distribution_shift.csv",
+        "format": "csv",
+        "sha256": "342de1855b465924476ea891231b4c9a1a7ab27ac234cd9fb1516f5f89dc8bb8"
+      },
+      {
+        "label": "K-Means novelty decomposition",
+        "path": "reports/phase13_novelty.csv",
+        "format": "csv",
+        "sha256": "bd1281a54942153b5fd890cd20449fa4071f0e8731828b96d1c641e2d939e708"
+      },
+      {
+        "label": "Hybrid decision explanation",
+        "path": "reports/phase13_hybrid.csv",
+        "format": "csv",
+        "sha256": "3239b0ff43156e3d5131770158848359a4a2457f14cac6c922cd6107dbc34f48"
+      },
+      {
+        "label": "Open-set family explanation",
+        "path": "reports/phase13_family_rejection.csv",
+        "format": "csv",
+        "sha256": "bc5b9668185e85e2f7f3ac255dd109313868caf96add9f65d4683b9631ee548e"
+      },
+      {
+        "label": "Adaptive coefficient comparison",
+        "path": "reports/phase13_adaptive_coefficients.csv",
+        "format": "csv",
+        "sha256": "07aadd4ea2638d6755458677414709439ef420a8294e47ca29df190113520934"
+      },
+      {
+        "label": "Adaptive matched probes",
+        "path": "reports/phase13_adaptive_probes.csv",
+        "format": "csv",
+        "sha256": "e550a111f9def9095f421476340aa406e664e4fb269516005d9faaa78aa15035"
+      },
+      {
+        "label": "Issued adaptive historical predictions",
+        "path": "reports/phase13_adaptive_history.csv",
+        "format": "csv",
+        "sha256": "2e9a1dea87ba0f9be33679cd557110dfa3e21cd620798d03b0b4273ffe6954bb"
+      },
+      {
+        "label": "Threshold-only adaptation history",
+        "path": "reports/phase13_threshold_history.csv",
+        "format": "csv",
+        "sha256": "72c48c599263d6dab521077414e759e0ca28a25d7e7bb59e13dba60406301815"
+      },
+      {
+        "label": "Explanation stability",
+        "path": "reports/phase13_stability.csv",
+        "format": "csv",
+        "sha256": "e8918316441e2ac1332c2f122b42ebe5ec4594e9c885bda08a5f029b4bfc965d"
+      },
+      {
+        "label": "Ranking agreement",
+        "path": "reports/phase13_rank_agreement.csv",
+        "format": "csv",
+        "sha256": "71acb9748ebb1056e812e476c1fc13c8431bf75b1382ee853e5099c18615061f"
+      },
+      {
+        "label": "Computational cost",
+        "path": "reports/phase13_cost.csv",
+        "format": "csv",
+        "sha256": "ca645f69fbd2cb8a315b71a2eeff9dca6f62135a23c2b157165dbebec087902d"
+      }
+    ],
+    "External validation & scalability": [
+      {
+        "label": "External dataset overview",
+        "path": "reports/phase14_dataset_composition.csv",
+        "format": "csv",
+        "sha256": "35a24115d3232c483b84c74c97fbee52a155ae38a7621f4fa7916bae1641fb18"
+      },
+      {
+        "label": "Dataset provenance",
+        "path": "reports/phase14_dataset_provenance.csv",
+        "format": "csv",
+        "sha256": "99cb5d1327dbedfc0670731f8a2070a8bc096343a57e0a7e386e84ab2979b990"
+      },
+      {
+        "label": "Feature compatibility",
+        "path": "reports/phase14_feature_mapping.csv",
+        "format": "csv",
+        "sha256": "414f42137a94eb10f5c33ab0de59db9f4051550587a59d315b2426e26f04ae68"
+      },
+      {
+        "label": "External model comparison",
+        "path": "reports/phase14_external_model_comparison.csv",
+        "format": "csv",
+        "sha256": "db8a997150bbe5082c3dac9639364b4a9c2ad474e78e12343d35af741e834e9d"
+      },
+      {
+        "label": "Frozen versus target-trained",
+        "path": "reports/phase14_generalization_gap.csv",
+        "format": "csv",
+        "sha256": "04ad6dd121c8adcade4dbbdccc9bf89238dc711c70c1cb98265bcd0d53ec57b1"
+      },
+      {
+        "label": "Source versus external generalization",
+        "path": "reports/phase14_source_reference.csv",
+        "format": "csv",
+        "sha256": "19dfc747a19135bf4c196f3947096cd4a2246c622f822e3450c2d213dddadf4e"
+      },
+      {
+        "label": "External confusion matrices",
+        "path": "reports/phase14_external_model_comparison.csv",
+        "format": "csv",
+        "sha256": "db8a997150bbe5082c3dac9639364b4a9c2ad474e78e12343d35af741e834e9d"
+      },
+      {
+        "label": "Attack-family performance",
+        "path": "reports/phase14_external_family_metrics.csv",
+        "format": "csv",
+        "sha256": "6b1c5f6f2454fa0accf7a51a72eafa3da84866008b8b9d8c58edb4d517e7b469"
+      },
+      {
+        "label": "Distribution differences",
+        "path": "reports/phase14_distribution_support.csv",
+        "format": "csv",
+        "sha256": "9e7f49a33b1aa2b4e83e950e98b38e4217960c2148ef12a4ca0fd8bf456ed575"
+      },
+      {
+        "label": "Distribution shift indices",
+        "path": "reports/phase14_distribution_shift.csv",
+        "format": "csv",
+        "sha256": "f91eab3d7c21022ad55a21c9146fd73a58e8a1526dff612beb36efe1a73fae38"
+      },
+      {
+        "label": "Failure analysis",
+        "path": "reports/phase14_failure_analysis.csv",
+        "format": "csv",
+        "sha256": "9cd554873955a75857e61a89585e43bf8ae99630772161c983b5524df7ac2345"
+      },
+      {
+        "label": "Data-volume scaling",
+        "path": "reports/phase14_scalability_summary.csv",
+        "format": "csv",
+        "sha256": "c3416e52b3dd78a0e4ce461a44cdf08afbeb8c550aa4a3bbe305f00cdae6ef89"
+      },
+      {
+        "label": "Worker scaling",
+        "path": "reports/phase14_worker_scaling.csv",
+        "format": "csv",
+        "sha256": "82537fcc441a34d3e52c3bda3984e2cec4d173356e7f7818f5950a504430629d"
+      },
+      {
+        "label": "Speedup and efficiency",
+        "path": "reports/phase14_worker_scaling.csv",
+        "format": "csv",
+        "sha256": "82537fcc441a34d3e52c3bda3984e2cec4d173356e7f7818f5950a504430629d"
+      },
+      {
+        "label": "CSV versus Parquet",
+        "path": "reports/phase14_storage_comparison.csv",
+        "format": "csv",
+        "sha256": "4dd756eb4cf6e4d42ecc32b717d211d4f3be650285e57a79c4933581e3951040"
+      },
+      {
+        "label": "Partitioning",
+        "path": "reports/phase14_partition_comparison.csv",
+        "format": "csv",
+        "sha256": "c2518b729b325cb37f50fae110c695aed55e82ba88326dfdee05f94763f4639d"
+      },
+      {
+        "label": "Caching",
+        "path": "reports/phase14_cache_comparison.csv",
+        "format": "csv",
+        "sha256": "6e0cf19874c5ebbb34cfd6ee8ef75f982b7b48d7641edcc4b1e690fb525ab7d0"
+      },
+      {
+        "label": "Spark versus Pandas",
+        "path": "reports/phase14_pandas_comparison.csv",
+        "format": "csv",
+        "sha256": "9de22140e40b8f3f6393ddadba1af9088a08cccee27dd41392e371dc86e78b55"
+      },
+      {
+        "label": "Resource consumption",
+        "path": "reports/phase14_resource_usage.csv",
+        "format": "csv",
+        "sha256": "e30e4732a40b530c88877382dd6adec1351d03877fc53cdec6abfa3569cb798d"
+      },
+      {
+        "label": "Benchmark repetitions",
+        "path": "reports/phase14_scalability_runs.csv",
+        "format": "csv",
+        "sha256": "29d78af979b6419de7c3ee06fc71c2467875ba9d34c4428a7676f52100df645d"
+      }
+    ],
+    "Frequent & emerging patterns": [
+      {
+        "label": "capture gaps",
+        "path": "reports/phase10_analysis/capture_gaps.json",
+        "format": "json",
+        "sha256": "ddd631bcf5f306e85b2a65191dbc420324ff6fac2e6a0d1825f3475409f41550"
+      },
+      {
+        "label": "capture sensitivity",
+        "path": "reports/phase10_analysis/capture_sensitivity.json",
+        "format": "json",
+        "sha256": "87f2e6d1b506c8ad464121f3af76afa6ca964f8baa937fa222ba62aa8bd23348"
+      },
+      {
+        "label": "contrast",
+        "path": "reports/phase10_analysis/contrast.json",
+        "format": "json",
+        "sha256": "e3f0fbff2447009b9b59b10a09054033cb6703cb5f00a7f32b3e2dab56e987e1"
+      },
+      {
+        "label": "day mining",
+        "path": "reports/phase10_analysis/day_mining.json",
+        "format": "json",
+        "sha256": "8d82045c03dc50858b119e10b7ba13ad7c50a6cba12397170527237577306df1"
+      },
+      {
+        "label": "direct rule verification",
+        "path": "reports/phase10_analysis/direct_rule_verification.json",
+        "format": "json",
+        "sha256": "2c3726413deee0c39ff12cd150fcd77e47715f7f46dece189866fbdd119005de"
+      },
+      {
+        "label": "discretization duplicate sensitivity",
+        "path": "reports/phase10_analysis/discretization_duplicate_sensitivity.json",
+        "format": "json",
+        "sha256": "b38a287e38a331b086413af1da9f1f84f3b453194b4b43a60b26a35ea83f3d0b"
+      },
+      {
+        "label": "families",
+        "path": "reports/phase10_analysis/families.json",
+        "format": "json",
+        "sha256": "3b26eed71e126957eb5654962145eba789375e5ee4a28945a8774577d9858286"
+      },
+      {
+        "label": "persistence",
+        "path": "reports/phase10_analysis/persistence.json",
+        "format": "json",
+        "sha256": "1d8e4c84b2c7551575c4c6e8da1be33fc6515aafa3226838d640fbd4a57a38a8"
+      },
+      {
+        "label": "similarity",
+        "path": "reports/phase10_analysis/similarity.json",
+        "format": "json",
+        "sha256": "968f5e9182b25a51d4aa10b7bd7969f53ff9f23f726c1803d1136c9ee920b3f9"
+      },
+      {
+        "label": "standardized support",
+        "path": "reports/phase10_analysis/standardized_support.json",
+        "format": "json",
+        "sha256": "e7ac084e638373f846cae322bb1fd072c3193c96134f9ee31b5c1bbd4dff1ad9"
+      },
+      {
+        "label": "temporal",
+        "path": "reports/phase10_analysis/temporal.json",
+        "format": "json",
+        "sha256": "3c4a19c1fd75797b7659c9819188f5bea579f7a179d74d567337bf1ec22f7001"
+      },
+      {
+        "label": "phase10_stageB items_0.01",
+        "path": "reports/phase10_stageB/items_0.01.json",
+        "format": "json",
+        "sha256": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2"
+      },
+      {
+        "label": "phase10_stageB items_0.02",
+        "path": "reports/phase10_stageB/items_0.02.json",
+        "format": "json",
+        "sha256": "05410bd2390a0c36109c09c78521ca59145d4286e1bb7f3761e1c4d331a269d2"
+      },
+      {
+        "label": "phase10_stageB items_0.05",
+        "path": "reports/phase10_stageB/items_0.05.json",
+        "format": "json",
+        "sha256": "55e095bd599f4d378d60625155d156bffb2e1fdad6175dd1847e54c2d0265108"
+      },
+      {
+        "label": "phase10_stageB items_0.1",
+        "path": "reports/phase10_stageB/items_0.1.json",
+        "format": "json",
+        "sha256": "75f715b4d3cf48b1b54d85089703294075d8c5f935e3d23b490af5882aece39b"
+      },
+      {
+        "label": "phase10_stageB progress",
+        "path": "reports/phase10_stageB/progress.json",
+        "format": "json",
+        "sha256": "2114260cbd4de7d9b4d92678f701843ce0946b1c73983dc6f67eddf175dc3095"
+      },
+      {
+        "label": "phase10_stageB rules_0.01",
+        "path": "reports/phase10_stageB/rules_0.01.json",
+        "format": "json",
+        "sha256": "7159f3b560e5345e8cfa1787a381855352ee4e60b9c8fc6a11df940e476f4840"
+      },
+      {
+        "label": "phase10_stageB rules_0.02",
+        "path": "reports/phase10_stageB/rules_0.02.json",
+        "format": "json",
+        "sha256": "40ef057a74e6b9e5d13e5b8029a3592ad48172e575cfe40dd23d5b1dc66ab56e"
+      },
+      {
+        "label": "phase10_stageB rules_0.05",
+        "path": "reports/phase10_stageB/rules_0.05.json",
+        "format": "json",
+        "sha256": "7723876f8eee93f9031a52a0a429c1a199939358b3a587600d3d34359dda9e8c"
+      },
+      {
+        "label": "phase10_stageB rules_0.1",
+        "path": "reports/phase10_stageB/rules_0.1.json",
+        "format": "json",
+        "sha256": "e89f33e40a9c885a0ea26a5c2fe8529b52a1261ad4080be876e14e86154d5a92"
+      },
+      {
+        "label": "phase10_rule_validation confidence_sensitivity",
+        "path": "reports/phase10_rule_validation/confidence_sensitivity.json",
+        "format": "json",
+        "sha256": "3af1875ae4cfbe0f55efedbf7c8dee4ffab08797cab56a4ae34d5ad1c7257444"
+      },
+      {
+        "label": "phase10_rule_validation count_metrics",
+        "path": "reports/phase10_rule_validation/count_metrics.json",
+        "format": "json",
+        "sha256": "43066b917e3b0e57d644a50e0928e1e1659263bffe4fff228eb163270143ad5e"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "path": "reports/figures/phase10_attack_benign_contrast.png",
+      "sha256": "ff954779f104c30b0d5162552053ad50262ef7137e9ce41859acb763ee4e0af1"
+    },
+    {
+      "path": "reports/figures/phase10_benchmarks.png",
+      "sha256": "1b8640df508f264effde7231869b3863b69e31b9bed5bea79129e895dc740974"
+    },
+    {
+      "path": "reports/figures/phase10_bin_sensitivity.png",
+      "sha256": "a7ec7ed6813ffb3fe562921eeea34133a54015304fe31b6927feb7f881bb84ff"
+    },
+    {
+      "path": "reports/figures/phase10_confidence_lift.png",
+      "sha256": "4b57798fb9d12fbc0429084c16d4623994d7c3716ff17b6dbc89515b0fa96b70"
+    },
+    {
+      "path": "reports/figures/phase10_daily_support.png",
+      "sha256": "79f89bfe5b9d5635441a95556758cdc2726317baa39e72be35710b975ce09cb1"
+    },
+    {
+      "path": "reports/figures/phase10_evolution_detection.png",
+      "sha256": "a435d7ec09044225968d66c85dcb9557a554879c2ccec93aa5765ea999ebeee6"
+    },
+    {
+      "path": "reports/figures/phase10_itemset_lengths.png",
+      "sha256": "ad1991cb3603d162e8f58f7585b0c965102c86d4b2c60349b306dcbda1be44ab"
+    },
+    {
+      "path": "reports/figures/phase10_similarity.png",
+      "sha256": "0067fed655c1ca80df6407ffbe1b65cb7a29e6cdf08d7130fcee419584be3aba"
+    },
+    {
+      "path": "reports/figures/phase10_support_sensitivity.png",
+      "sha256": "c44a21d8bbfbac1a1dec37e836b9d31a5752efed6dd582cab35411f7b57f2e95"
+    },
+    {
+      "path": "reports/figures/phase11_adwin_detections.png",
+      "sha256": "ea2d3f41f8f61c9dff9c5752f229a043357fb5eee5d74b19cb3b562f2fc2bd73"
+    },
+    {
+      "path": "reports/figures/phase11_agreement_heatmap.png",
+      "sha256": "a1771abc02679624e44f9cc27b4a1bfdda06b0fc7e33ad54d8f94542c012f39f"
+    },
+    {
+      "path": "reports/figures/phase11_applicability.png",
+      "sha256": "e1a8f618a3d52ff887aa93c8d05ab186092b6a651e424c74ecadc0d7c98159d4"
+    },
+    {
+      "path": "reports/figures/phase11_ddm_detections.png",
+      "sha256": "0e14a8e9e8cdbe486b5f2c3236c24ce145eead4a8485d3562ff0f8c0dc625e3c"
+    },
+    {
+      "path": "reports/figures/phase11_delay_by_scenario.png",
+      "sha256": "b4f27f207ae55ecc597a2c5e51d9ae5e6093454a896c1d7b1ca1efa8963c5412"
+    },
+    {
+      "path": "reports/figures/phase11_ensemble_and_misses.png",
+      "sha256": "92f10a053c60bdeca4b0bafa26f4a1dc6782511e00254c7baf21a6883262212e"
+    },
+    {
+      "path": "reports/figures/phase11_false_alarms.png",
+      "sha256": "74737c49dd8b71fe1a421ab08518922f880db7bc92396af3fb014678cc5651f7"
+    },
+    {
+      "path": "reports/figures/phase11_fixedjs_detections.png",
+      "sha256": "7cdb63005cf361a930ae0651fc6e7e423edf3f568e5997074b4c349e5671bd9f"
+    },
+    {
+      "path": "reports/figures/phase11_historical_timeline.png",
+      "sha256": "bf04c3d8430cb53143f9d28b3147507b73e3c9f38d28a0cecb03351039fe0869"
+    },
+    {
+      "path": "reports/figures/phase11_js_detections.png",
+      "sha256": "be92f073cd271a318f77679a5d17f1598cdf9113646f1fd30666b668fa8203e2"
+    },
+    {
+      "path": "reports/figures/phase11_kswin_detections.png",
+      "sha256": "511b9bab88be65a69572dda8223455fb09a933b9a7fa0c8aa893ed4872196273"
+    },
+    {
+      "path": "reports/figures/phase11_label_delay.png",
+      "sha256": "0c5e9f4f1057b867ff2bd2e553ac2d72a9ce07aab824cdfbde5835e583d365f8"
+    },
+    {
+      "path": "reports/figures/phase11_mean_delay_observations.png",
+      "sha256": "dfe75e8c2c63f37a0f4b98b91952341d0cc01f01fc222d02ac47df260aac262f"
+    },
+    {
+      "path": "reports/figures/phase11_missing_sensitivity.png",
+      "sha256": "ee6f8aa8ff77464d3b4432a5aaef3f4accadd2ed40139826058182d376f3bb29"
+    },
+    {
+      "path": "reports/figures/phase11_pagehinkley_detections.png",
+      "sha256": "8484b3e7139751cf15ee4ed49a6b7ab9dcc02f43db8aa34a24888af1430149c6"
+    },
+    {
+      "path": "reports/figures/phase11_performance_association.png",
+      "sha256": "d2b3f0e6714423552a2e5fc0d0d1dd138382f8d89cbbbabf2dc57135eacc48ce"
+    },
+    {
+      "path": "reports/figures/phase11_psi_detections.png",
+      "sha256": "654d31ae1af80b00dbf092de23b827ca379ec0fe0e89fc1817076b1fa52df2d1"
+    },
+    {
+      "path": "reports/figures/phase11_reference_sensitivity.png",
+      "sha256": "adac7ee5d48bb8c45fa90faaf6fb8d432877d4668d44bf62b89f878b78ce73b7"
+    },
+    {
+      "path": "reports/figures/phase11_reset_sensitivity.png",
+      "sha256": "4494065b6b89c22c7eaea762580ca92f61e1218ba636b8620cd0c760b8d65e70"
+    },
+    {
+      "path": "reports/figures/phase11_seconds.png",
+      "sha256": "c01fa063eb3ed162097adceab0fbda66c4077276d0fb3e68eb0607b0e14dd546"
+    },
+    {
+      "path": "reports/figures/phase11_state_overhead.png",
+      "sha256": "00084763b206b4b9d24501e3ff7d81378a16bb0d932598cb88951c765d2f2b63"
+    },
+    {
+      "path": "reports/figures/phase11_support_sensitivity.png",
+      "sha256": "9d325dad943e5e96f5e7c059e9c6179d6977159d9ddbc3f6e533f51c8c2b2340"
+    },
+    {
+      "path": "reports/figures/phase11_synthetic_mechanisms.png",
+      "sha256": "bbf9a7cda215bd1eaa1c7da6c7309e1161153355a2d871df9d205733fd4b1004"
+    },
+    {
+      "path": "reports/figures/phase11_window_sensitivity.png",
+      "sha256": "c5c6de5b6dd0e2821e79e28fafacf5cd6e645a2678482fbc05353c9532043c35"
+    },
+    {
+      "path": "reports/figures/phase12_ablations.png",
+      "sha256": "2db4ebd458d76d0add3778c13d17778b7c03430882f6ac7367febe97bf9bd3c2"
+    },
+    {
+      "path": "reports/figures/phase12_architecture_and_clocks.png",
+      "sha256": "f88dac66b8873b1d4025db5cb4f42f27c20c6de071336f7699dbb62356ca179b"
+    },
+    {
+      "path": "reports/figures/phase12_attack_families.png",
+      "sha256": "ecf884bc0e4408269204db24dfc4bf6d76ff1599e4480cd0c0d9a38d7c076dff"
+    },
+    {
+      "path": "reports/figures/phase12_candidate_decisions_and_cost.png",
+      "sha256": "1d826f78e04bab2e0ce644275d0e163967dc6e92077b954360508a194c59f59a"
+    },
+    {
+      "path": "reports/figures/phase12_computational_overhead.png",
+      "sha256": "57a14b3a75cee58b742d77fa1c5866e89e2356cabb61c66702d36c1f27e062f6"
+    },
+    {
+      "path": "reports/figures/phase12_drift_and_requests.png",
+      "sha256": "cfe3908900f86943930ba5f9ae0a48b56297e70fab6f7c05c6b750a7f17a0220"
+    },
+    {
+      "path": "reports/figures/phase12_fault_recovery.png",
+      "sha256": "3b5842c28139eead69bff38b6fc4d33a2b3ae42ff488abdd996b9890a20940d1"
+    },
+    {
+      "path": "reports/figures/phase12_historical_policy_metrics.png",
+      "sha256": "1c8a21851e813f1fec02dcfbfce2c434566b646949f99e03a3ddfaa111282936"
+    },
+    {
+      "path": "reports/figures/phase12_historical_versions_and_labels.png",
+      "sha256": "8350ba60b4f3e201d48a32a75d66f417694f7e313a5a48b5dae38ab9ad9c9a6a"
+    },
+    {
+      "path": "reports/figures/phase12_label_delays_and_cost_benefit.png",
+      "sha256": "1aca2758deddd6effc8594449421d8d4382b1dd8858f871080cdc2cc001c0b47"
+    },
+    {
+      "path": "reports/figures/phase12_retention.png",
+      "sha256": "db307a705f12b658c21395c6c8670b5e51cd07756c4c245e8dbcd738162e7137"
+    },
+    {
+      "path": "reports/figures/phase12_synthetic_mechanisms.png",
+      "sha256": "c05103c67b9b4380c30a6496ac68b6fe567d3ea79850da2e5f305b7038ec1acd"
+    },
+    {
+      "path": "reports/figures/phase12_thresholds.png",
+      "sha256": "de89edafe15a3f47ccc3fd959b6eb03f3eb41bf702f896142ab8fe0ebd97c6e3"
+    },
+    {
+      "path": "reports/figures/phase13_adaptive_coefficients.png",
+      "sha256": "aef8d6fe0e73836bca5233381e89619645a89fefe0f3a0e83c73a2aaa81c39c0"
+    },
+    {
+      "path": "reports/figures/phase13_cost.png",
+      "sha256": "ff7b6a8767f0ce3af76f386e38b812715407c3146151a8b04a520aa08b67e8bb"
+    },
+    {
+      "path": "reports/figures/phase13_distribution_shift.png",
+      "sha256": "01751e7c2048a6a76aa2d3c24b0b88b11c03c34b371366a5a000e0085812a234"
+    },
+    {
+      "path": "reports/figures/phase13_false_negative.png",
+      "sha256": "8b9b818b03ce7d9f78922ee794256790c55e87107ba452514e5706b6f20c91bc"
+    },
+    {
+      "path": "reports/figures/phase13_false_positive.png",
+      "sha256": "95c1504238579e920360898a6ed267f7ee7fef0c089d01e61e592019b22344e9"
+    },
+    {
+      "path": "reports/figures/phase13_family_contributions.png",
+      "sha256": "f3ae744b8543816d131ca6a8a714600c7803269154477f6d7b6ff92b33b5c8dc"
+    },
+    {
+      "path": "reports/figures/phase13_gbt_importance.png",
+      "sha256": "b3eecf725d7c2a18425bceea34b278964197808b333d40366a575aa54afc944d"
+    },
+    {
+      "path": "reports/figures/phase13_hybrid.png",
+      "sha256": "bd530185b6e6f6f3a849b315ee6752fe2fafbe4a8b8b81f5bc89bc2067f14f21"
+    },
+    {
+      "path": "reports/figures/phase13_linear_shap.png",
+      "sha256": "3ccc7e4af02b45acc7065367be30badf1e670d372ea1f587c45ef0675bb7dae8"
+    },
+    {
+      "path": "reports/figures/phase13_local_contributions.png",
+      "sha256": "c9077e02cd0caa39265695d20461192fde65b42265d71d5ecc7e1e0828286de7"
+    },
+    {
+      "path": "reports/figures/phase13_lr_coefficients.png",
+      "sha256": "8022557fae8cf69b7e085e2d74fc89230a04f35b35ff332602ffb95fb0abea28"
+    },
+    {
+      "path": "reports/figures/phase13_lr_contributions.png",
+      "sha256": "0d461cdb5a086981d9e7d975701260c8659469c872d618a8f03b8ddfaf26501f"
+    },
+    {
+      "path": "reports/figures/phase13_novelty.png",
+      "sha256": "36c952112c8bc43a85cc07629db72a88757a664583d6d8ae000fc02456e3e0d8"
+    },
+    {
+      "path": "reports/figures/phase13_open_set.png",
+      "sha256": "fee4c8e854d10a1f114edc9ee00c9db07de8f09f965b93a6542eca2de06c0c07"
+    },
+    {
+      "path": "reports/figures/phase13_permutation.png",
+      "sha256": "b449bc7d6aadd73326f7c05229d564d7bf8132e91abe6f985e43047ec81bc926"
+    },
+    {
+      "path": "reports/figures/phase13_rank_comparison.png",
+      "sha256": "47176031741882781bcabb6dd88b279dbd123c48166518cf9daa05d9a96a3551"
+    },
+    {
+      "path": "reports/figures/phase13_rf_importance.png",
+      "sha256": "55d9cf85c212f78f913df4e592ca7cb7062762f93d5766ded697f08b8299df6a"
+    },
+    {
+      "path": "reports/figures/phase13_stability.png",
+      "sha256": "61fefdcdf5f92b5e20e4f9b01d3cb1fd47bb308b82e0dedb65c543c23e8e72c6"
+    },
+    {
+      "path": "reports/figures/phase14_cache.png",
+      "sha256": "973828c9ea8746fdd297e2690cffdb137034dc59bf47d84fa84f19669d821853"
+    },
+    {
+      "path": "reports/figures/phase14_calibration.png",
+      "sha256": "64791882699bb62b9374519a0c0a93f1aaf8eff67ad64489416203428e82281d"
+    },
+    {
+      "path": "reports/figures/phase14_compatibility.png",
+      "sha256": "f4fd810222c854087ec435562ea15495a7fbca755cc253b318a05d26bb9aeb1a"
+    },
+    {
+      "path": "reports/figures/phase14_composition.png",
+      "sha256": "e37cfb9ac9de91cf9197cf4a992c3aa3a931d0925b1d5fbe627c600ff2183637"
+    },
+    {
+      "path": "reports/figures/phase14_cost.png",
+      "sha256": "12a60db2a32c1a9403340658e8013b3f5ef498ccf3ae3fa67b8bb7ade4d6bb12"
+    },
+    {
+      "path": "reports/figures/phase14_distributions.png",
+      "sha256": "a6c58e2a4746234908f4730afc6fc3f8a70c8e7f3e8e6bf7966e27a0cd73d808"
+    },
+    {
+      "path": "reports/figures/phase14_external_models.png",
+      "sha256": "c9660d3e436ef94bc07845897db8d70a617eb50eeef9399ca966a46cfb8ee3ba"
+    },
+    {
+      "path": "reports/figures/phase14_failures.png",
+      "sha256": "79cd418d8b14c21c61cc12e09854dcb7a67403896f421253378832c02f386db6"
+    },
+    {
+      "path": "reports/figures/phase14_families.png",
+      "sha256": "9877b21e252f8ef81853bb89d8b1bc0f61bbe1f3540f2dee2dcfc26648d64d13"
+    },
+    {
+      "path": "reports/figures/phase14_pandas.png",
+      "sha256": "f25bf5ef83eaa8e2d07c980e75854dccd78dbe968b3862be4f30e8eaeefbabcd"
+    },
+    {
+      "path": "reports/figures/phase14_partitions.png",
+      "sha256": "9fa3b509e56ca07a5270be943266fa6b391c8db32e5b85aa8e8f81d92d7c12cb"
+    },
+    {
+      "path": "reports/figures/phase14_roc_pr.png",
+      "sha256": "fbccdfefa1b8c4f6bd626815b84c6426b9e6c07e9918b0ead77ee1b29c7611fa"
+    },
+    {
+      "path": "reports/figures/phase14_source_external_gap.png",
+      "sha256": "2aa07f969faac2569ba0859cd99dd88760153c817b6a7f85193370991393f59c"
+    },
+    {
+      "path": "reports/figures/phase14_storage.png",
+      "sha256": "329785bbd39a26b8911e920f6ec1914ce88f17d6836148a605a677037a766ae2"
+    },
+    {
+      "path": "reports/figures/phase14_variability.png",
+      "sha256": "718a4fbed3aaac971937905f65be0122395e2e21663a62bc5fdb685d8de776b9"
+    },
+    {
+      "path": "reports/figures/phase14_volume.png",
+      "sha256": "31835b577c795abe0af85670162ff8f35d334d5b74edd701a5f13c17a84eedea"
+    },
+    {
+      "path": "reports/figures/phase14_workers.png",
+      "sha256": "3da6702c077d3ffb639e4f81f3fdf36ff89515737a21b6653c3deb9ca997a95f"
+    },
+    {
+      "path": "reports/figures/phase3_attack_family_frequencies.png",
+      "sha256": "c089c244048a1c66d7bf0ebe812c7ac8ad6b6e30f3b6cf1d2bce27f42f8093be"
+    },
+    {
+      "path": "reports/figures/phase3_binary_distribution.png",
+      "sha256": "ed8e129b6442557438b3c0afb0fbfdd0e1af37e7bee30af15ae2710d6494cba4"
+    },
+    {
+      "path": "reports/figures/phase3_daily_attack_prevalence.png",
+      "sha256": "e64a5f9f30dd68d8edb379099c67327b1b2b691fc0a23ea05729036f532fc5ac"
+    },
+    {
+      "path": "reports/figures/phase3_daily_traffic_volume.png",
+      "sha256": "8108ceac20277b28ef1bf93751a093908c8c45fd3f54463a50c4b04e85cd3ddc"
+    },
+    {
+      "path": "reports/figures/phase3_destination_ports.png",
+      "sha256": "c7c9dc436c63e73c9aa4a467eb914249b3c36c9d17fc7a4c69be17199f0b69bb"
+    },
+    {
+      "path": "reports/figures/phase3_family_by_capture_day.png",
+      "sha256": "7b2bdb71dfddc3b783a76d2bd25b2d5e7b5ccbd550eecab33fbfe2da3231f27a"
+    },
+    {
+      "path": "reports/figures/phase3_flow_duration_comparison.png",
+      "sha256": "3d35140f91b1a9a455e443e586ceec7efc3627120d3338f453e498bd1156132d"
+    },
+    {
+      "path": "reports/figures/phase3_packet_byte_distributions.png",
+      "sha256": "3856de59d460476c63f52b4ba067f3232dd67c1b0b32dfc71915d601316845f1"
+    },
+    {
+      "path": "reports/figures/phase3_protocol_distribution.png",
+      "sha256": "59c9d08c93da9165921fffd5da87eaa728938a4031513892f481e47d1c2dd4ec"
+    },
+    {
+      "path": "reports/figures/phase3_temporal_feature_changes.png",
+      "sha256": "b13d6bf08564ba9de043252f15483ccea77a00f4f9508b80681fc76d361dec3b"
+    },
+    {
+      "path": "reports/figures/phase5_b_binary_novelty.png",
+      "sha256": "0e126bb2fb6c3901dfeb5949b831ca2298eeca3d9d5f941218ba4ec7483a91cc"
+    },
+    {
+      "path": "reports/figures/phase5_b_centroid_profiles.png",
+      "sha256": "ee8f8d10f2c09f5bc86209d38a21c8ba9298b514975390592acd741e9aed89a8"
+    },
+    {
+      "path": "reports/figures/phase5_b_cluster_attack_share.png",
+      "sha256": "62f2e30625c8c5fb820f0815e81e132c29b02fc19bf29780afcfc144d15bb023"
+    },
+    {
+      "path": "reports/figures/phase5_b_cluster_sizes.png",
+      "sha256": "edd591b303877a61e5e54f3d550d2210eaa307501b39f8ef6f54a5a87eadc4ee"
+    },
+    {
+      "path": "reports/figures/phase5_b_daily_novelty.png",
+      "sha256": "d5ec18e20c6a2722c40fd7d528cab36dcab386938a227e52d6602a427e201527"
+    },
+    {
+      "path": "reports/figures/phase5_b_daily_occupancy.png",
+      "sha256": "362d60a2ff25867628cc2e2969a58c615af60b9c659224a5926e19a600861aaa"
+    },
+    {
+      "path": "reports/figures/phase5_b_distance_histogram.png",
+      "sha256": "369ffe07f88c2820f16037abd1a3bbcfc1ccbb29ae08b7921512e32488010c5c"
+    },
+    {
+      "path": "reports/figures/phase5_b_family_heatmap.png",
+      "sha256": "f1bdbee0f42c2caaac9494f57bd30431a6b577dcd2e92397046d7bde518e0920"
+    },
+    {
+      "path": "reports/figures/phase5_b_supervised_comparison.png",
+      "sha256": "48dcbde9ce35a58a1acb8c201f6c00868419bf9eb92a5b294cb56a3379d3cdc4"
+    },
+    {
+      "path": "reports/figures/phase5_b_temporal_shift.png",
+      "sha256": "0e9df48509b64d6cc5ddf5009bad47ed5cecdf14b20e9a8b9d556c7fb80160f0"
+    },
+    {
+      "path": "reports/figures/phase5_c_binary_novelty.png",
+      "sha256": "e6289ce6538d6f3b0c77f7f34b7f0a97c9cedc2d45352f046610505088559169"
+    },
+    {
+      "path": "reports/figures/phase5_c_centroid_profiles.png",
+      "sha256": "660ac8008b0333e7c715dd3cf20cd43532aadc71c92caa729deb8be2a045dade"
+    },
+    {
+      "path": "reports/figures/phase5_c_cluster_attack_share.png",
+      "sha256": "b8d19bfc2c4e2d2c8223c736fda7129cffaeef7169f81d13119b14f6acef1526"
+    },
+    {
+      "path": "reports/figures/phase5_c_cluster_sizes.png",
+      "sha256": "7cc557ecc8b433ec4e8f93b6a3cfc9ca516d330500f49ea52220fcd0a7e0330a"
+    },
+    {
+      "path": "reports/figures/phase5_c_daily_novelty.png",
+      "sha256": "2f4b772e91d1fa5b0e8fc491d2a175c41f2ed48ba953b5bede9f40250ad50c5d"
+    },
+    {
+      "path": "reports/figures/phase5_c_daily_occupancy.png",
+      "sha256": "b58a81bdd2af406abe1bc5b633c3dff894199cd37deb0bcca4827ad0374c1284"
+    },
+    {
+      "path": "reports/figures/phase5_c_distance_histogram.png",
+      "sha256": "6a6c3cf76e7b799fc903e616d18dea0c1cc788e3dc8c797e178622ba52f51d10"
+    },
+    {
+      "path": "reports/figures/phase5_c_family_heatmap.png",
+      "sha256": "002f01a6b39e37689961ffaf502d07f1a8380f6a97fffc189d1cfe0fa20aa6e4"
+    },
+    {
+      "path": "reports/figures/phase5_c_supervised_comparison.png",
+      "sha256": "2d33944cd7766dc3afa77703d7d812b14aa812423472701d501d188acfe3c6c8"
+    },
+    {
+      "path": "reports/figures/phase5_c_temporal_shift.png",
+      "sha256": "902293fe1dd1006dad442eb432f775760d6f3625785b88e57e016a72879f79ae"
+    },
+    {
+      "path": "reports/figures/phase5_g_binary_novelty.png",
+      "sha256": "3109ac7482c86218ba48c60f307e9509672a7cac9ebf5756c46f07b56ac2cfa7"
+    },
+    {
+      "path": "reports/figures/phase5_g_centroid_profiles.png",
+      "sha256": "bb410a5a6a6e459c240dbc9d9ce1765e951434731129a69e8a5c275308bbfa57"
+    },
+    {
+      "path": "reports/figures/phase5_g_cluster_attack_share.png",
+      "sha256": "4805a4ed7a2f16b33330e49c92bf88661e9c224218652f274a1c85cd4c26c25c"
+    },
+    {
+      "path": "reports/figures/phase5_g_cluster_sizes.png",
+      "sha256": "764cbb97f4d707956a55c81ade7cb11b460609e0bf1b912eaffab1411436522f"
+    },
+    {
+      "path": "reports/figures/phase5_g_daily_novelty.png",
+      "sha256": "85145fa6bb3bb77404be774c2bee0a7059d780430479a5bbf4b2b969507454a7"
+    },
+    {
+      "path": "reports/figures/phase5_g_daily_occupancy.png",
+      "sha256": "9afdc2cb13165f54365a4bb9bec4cddef4af29b3670028c9a15bc75b36955652"
+    },
+    {
+      "path": "reports/figures/phase5_g_distance_histogram.png",
+      "sha256": "137d2841e8cafe0020a50a2507ebe9780b2cccbfd51702911b2822bc7e019802"
+    },
+    {
+      "path": "reports/figures/phase5_g_family_heatmap.png",
+      "sha256": "5f201753896c3238a6ca0f485243cbf1d34acb031060bc7ab56cc8fa10df2655"
+    },
+    {
+      "path": "reports/figures/phase5_g_temporal_shift.png",
+      "sha256": "5d3a46d1c748ac370dded6d7bc779de7405ff593f52e6ef5878e1ce4355bcf90"
+    },
+    {
+      "path": "reports/figures/phase6_alerts.png",
+      "sha256": "0f602fe1874d6f95aec1e0c59f156dcc7a4df5669299ad5b0759cac8f9683cc0"
+    },
+    {
+      "path": "reports/figures/phase6_batch_latency.png",
+      "sha256": "eeff309362a0920fdf433402b8fe4299dd6908cd986d6abba627f3a62564baa4"
+    },
+    {
+      "path": "reports/figures/phase6_batch_rows.png",
+      "sha256": "31e4f5ecd53990b8f7158ba7ed28c51f7b2645851b0ecbe2ae66f016e0ecee4b"
+    },
+    {
+      "path": "reports/figures/phase6_cluster_shift.png",
+      "sha256": "4b3c0bbe108819657426eb851a4c75ded5802f22f7b0816a11274740bb711534"
+    },
+    {
+      "path": "reports/figures/phase6_input_shift.png",
+      "sha256": "927a7ce22ea706e5ba0ce2bc2ab3b7b1e816598945bd4bc4cb2b15a388bb5216"
+    },
+    {
+      "path": "reports/figures/phase6_novelty.png",
+      "sha256": "5bc584c8ad8e0001f813a9a6eedecc03a9d71a2ab801ed1f7be58ce51262a21b"
+    },
+    {
+      "path": "reports/figures/phase6_occupancy.png",
+      "sha256": "79a48d174506be59c6c97f1243e2abb2c1b52126b70ef9dcec445997e161a4f8"
+    },
+    {
+      "path": "reports/figures/phase6_performance.png",
+      "sha256": "a9ec03fd9e699ba8312aa0d5ae45839f21c63d044a92a56d2b740bc5420bd368"
+    },
+    {
+      "path": "reports/figures/phase6_predicted_attack.png",
+      "sha256": "84f730486424495358ecf2a207b3e9e98f343316cd3dae2e0227f88a725c1a25"
+    },
+    {
+      "path": "reports/figures/phase6_score_shift.png",
+      "sha256": "d994229d4401eb00951a2aa2804a2096df47c85ddf4085ba61001a93bb41da56"
+    },
+    {
+      "path": "reports/figures/phase6_timeline.png",
+      "sha256": "5c82e5b4724d91400d3b81005fe7b9aef69eb0a28a2d7543b49c6ffbd7cc2ffe"
+    },
+    {
+      "path": "reports/figures/phase8_ablation.png",
+      "sha256": "86ec78729dbc657da77c16532945330b40f97d003111578862e325fab7b52e1d"
+    },
+    {
+      "path": "reports/figures/phase8_brier.png",
+      "sha256": "6137101455237df44f5c2a9a21302593ab507de573057f3395c13eaa5ced0156"
+    },
+    {
+      "path": "reports/figures/phase8_class_weights.png",
+      "sha256": "9a34d6fa6f2fd941b8e3f18b9925e149c5e97f3801c2ea5b29bcce97e06f9211"
+    },
+    {
+      "path": "reports/figures/phase8_false_alarms.png",
+      "sha256": "2e4dcbdf443ef66f4fec6d3febb0ab3668a0d20313ffb9a75d9d9fe123f880b4"
+    },
+    {
+      "path": "reports/figures/phase8_family_recall.png",
+      "sha256": "54bf547b0376f71d54d2785976e711b617ac067202f8178c6dbccc3543bec8e1"
+    },
+    {
+      "path": "reports/figures/phase8_fusion_weights.png",
+      "sha256": "0483aabd8ca3ba14830515576a5dbad9ee0e8eb54a159d5c0ae6f8bca9123c8b"
+    },
+    {
+      "path": "reports/figures/phase8_overhead.png",
+      "sha256": "95cc5bb68668c5073d72162dc033de94b232cf70cf194ccc0b87fbb471ce34af"
+    },
+    {
+      "path": "reports/figures/phase8_precision_recall.png",
+      "sha256": "787bd119c7da5cc4798407e1c72f0d77d5d6dc7055e9b0b86cc512823219403d"
+    },
+    {
+      "path": "reports/figures/phase8_reliability.png",
+      "sha256": "bb5ba61348f82a67e2da8609eb22696bcd4d9c4b0e35206119aa297f869a0c55"
+    },
+    {
+      "path": "reports/figures/phase8_review_workload.png",
+      "sha256": "2d6882b5d40ca6372f1272eb11e499a2a434d83c294202742fb4bc1a5a8c96cf"
+    },
+    {
+      "path": "reports/figures/phase8_risk_coverage.png",
+      "sha256": "70b2429f6fdab1b6bc79f794efc180df7643cdbdc6c2fa1b1fc76a28e25e20bf"
+    },
+    {
+      "path": "reports/figures/phase8_roc.png",
+      "sha256": "497c3f4eab0c6f5fdfb187e70b825008ce2dc390bf8e1dccd5fef1f5eac904ca"
+    },
+    {
+      "path": "reports/figures/phase8_rolling_folds.png",
+      "sha256": "cbdd574374353d57fe995c0ece8b15c29f3e5cb44c9b0b0e314742e8b203bfab"
+    },
+    {
+      "path": "reports/figures/phase8_threshold_fpr.png",
+      "sha256": "62e70ba67c1d9808ffcb35c93101b03fba2250b21c7a2afc60c83ec834e9b0f7"
+    },
+    {
+      "path": "reports/figures/phase8_threshold_recall.png",
+      "sha256": "bd8f01078f2e1df92786ffb6c8fdc5535643220476ca77886822678a2fecc5ff"
+    },
+    {
+      "path": "reports/figures/phase8_validation_budgets.png",
+      "sha256": "4490ab08781aac85d600978731126a23b19f67fa3707b11b2f3a83ad740afbe1"
+    },
+    {
+      "path": "reports/figures/phase9_capture_family_support.png",
+      "sha256": "36a8512c2d59cb95ef1d30951ac47c3431cccef8466f3e77974f4e7bae3780ea"
+    },
+    {
+      "path": "reports/figures/phase9_confusion_A.png",
+      "sha256": "316476b936785ae5a399aad3d93988e6ea0b57464fabeff92078bc84783e5b73"
+    },
+    {
+      "path": "reports/figures/phase9_confusion_Bot.png",
+      "sha256": "99f4655fe285a74340436235459c12aea8a10c3a236b2c7443be476ba1a7e065"
+    },
+    {
+      "path": "reports/figures/phase9_confusion_DDoS.png",
+      "sha256": "c4b3cd4b0022b39efbe36aae70967019a52a59c9badc80801a77b3f0d4d2b91c"
+    },
+    {
+      "path": "reports/figures/phase9_confusion_Infiltration.png",
+      "sha256": "1538667a3da75f330ae11e8b519e6882b93b8766cb53e39c31833e578c396389"
+    },
+    {
+      "path": "reports/figures/phase9_confusion_Web.png",
+      "sha256": "79ebcd184e2229ec566b31a26c52dba6413fb04ba5191a328277d787d21ec64e"
+    },
+    {
+      "path": "reports/figures/phase9_grouped_random_family_precision_recall.png",
+      "sha256": "12ecd28e2ef6daed67417c0e402e973367267bf6defffcfd3b19bc95f9625acd"
+    },
+    {
+      "path": "reports/figures/phase9_grouped_random_sensitivity.png",
+      "sha256": "4a96b5d98c7f2e41d72432ec44404c2c7e8954e9db9b044eedc646521969d926"
+    },
+    {
+      "path": "reports/figures/phase9_hierarchical_attack_outcomes.png",
+      "sha256": "642651c9a130b2461064079ea516b3ffbc26595c78e22ec08ae9936e6dea20e4"
+    },
+    {
+      "path": "reports/figures/phase9_known_unknown_score_distributions.png",
+      "sha256": "456857cc6961630c2d6d19dc235010e8cddc79673d4d2981790b73cd7e7fe35d"
+    },
+    {
+      "path": "reports/figures/phase9_macro_f1_runtime.png",
+      "sha256": "011b2c542bff04d7aa5ae0edfe1f92a4e2a69a0e5c65d308e0ee0b9c16f15454"
+    },
+    {
+      "path": "reports/figures/phase9_open_set_tradeoffs.png",
+      "sha256": "010fa5ba7d114f2b033e2c18efbce6aea35dab6be49a9e6d69322f53dff74e07"
+    },
+    {
+      "path": "reports/figures/phase9_per_day_rejection.png",
+      "sha256": "44846c5ca66c002e32c3e0b3ca70d15a8e51ce851daba7e2468fe465e2602e85"
+    },
+    {
+      "path": "reports/figures/phase9_risk_coverage_roc_pr.png",
+      "sha256": "61a3ea2023945e2e2a4c6496269b167d6fc6c10016f5ea74bd61c89b415d5794"
+    },
+    {
+      "path": "reports/figures/phase9_worker_resources.png",
+      "sha256": "9fb2fe6fb96e6bd8a83f8bdf6854dc2de40624d5f89d55a7f2377e41ed15074e"
+    }
+  ],
+  "source_checkpoint": "51392548c562d098e3d74b9a0bda4c402bd421d7"
+}

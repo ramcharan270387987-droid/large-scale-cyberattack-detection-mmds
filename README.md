@@ -87,3 +87,14 @@ Random Forest test recall fell from 82.82% on grouped-random traffic to 0.20% on
 [Chronological model comparison screenshot](docs/screenshots/chronological.jpg)
 
 [Final dashboard QA and responsive screenshots](reports/dashboard_final_qa.md)
+
+## Phase 15 integrated advanced research application
+
+The separate advanced application integrates Phase1–14evidence with genuine archived-model inference. The public baseline `dashboard/app.py` is preserved.
+
+```bash
+pip install -r dashboard/requirements.txt
+python -m streamlit run dashboard/advanced_app.py --server.maxUploadSize 1 --browser.gatherUsageStats false
+```
+
+Runtime inference uses compact checksum-verified LR,RF and K-Means parameters;no Spark,Java,Kaggle secrets or private artifact access is required. CSV is limited to1MiB/500rows and exact ordered source features. See [deployment](docs/phase15_deployment_guide.md),[demonstration](docs/phase15_demo_guide.md),[input/model contract](docs/phase15_inference_contract.md),[limitations](docs/phase15_limitations.md) and [results](reports/phase15_results.md). Public deployment requires separate authorization. Phase16has not begun.
