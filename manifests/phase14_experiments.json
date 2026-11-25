@@ -2,8 +2,8 @@
   "schema": "phase14-v1",
   "complete": false,
   "starting_checkpoint": "ab6e9401b0c9b92e624e5b2b16ec91050a081eb0",
-  "stage": "14D",
-  "next_stage": "14E format optimization Pandas inference and bounded mining",
+  "stage": "14E",
+  "next_stage": "14F final consolidation figures preview regression and acceptance",
   "stages": {
     "14A": {
       "status": "validated",
@@ -52,12 +52,14 @@
       "seconds": 550.44356356
     },
     "14E": {
-      "status": "submitted",
-      "worker_status": "SUBMITTED",
+      "status": "validated",
+      "worker_status": "COMPLETE",
       "kernel_version": "ramcharan2345/mmds-phase-14-execution-optimization/1",
       "source_commit": "0f1139d3b582d6a09ed2635a5cc543e62dbf213c",
       "source_sha256": "b961fc440b669f608a54d7ca561d257987e4e5984a37adcbe97a6920507f5d34",
-      "focused_tests": 16
+      "focused_tests": 16,
+      "measured_runs": 130,
+      "seconds": 175.39700968100004
     }
   },
   "protected": {

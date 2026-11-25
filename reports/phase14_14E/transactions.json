@@ -1,0 +1,14 @@
+{
+  "rows": 100000,
+  "features": [
+    "flow_duration",
+    "tot_fwd_pkts",
+    "tot_bwd_pkts",
+    "totlen_fwd_pkts",
+    "totlen_bwd_pkts",
+    "pkt_len_mean"
+  ],
+  "seconds": 2.937404742999945,
+  "contract": "Phase10A3 frozen6features,original cutpoints,one item perfeature",
+  "cached_storage": "Disk Serialized 1x Replicated"
+}

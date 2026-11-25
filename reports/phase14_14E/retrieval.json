@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETE",
+  "kernel_version": "ramcharan2345/mmds-phase-14-execution-optimization/1",
+  "private_cpu": true,
+  "source_commit": "0f1139d3b582d6a09ed2635a5cc543e62dbf213c",
+  "embedded_source_files_verified": 17,
+  "log_sha256": "f667188ea11242b99b1cf68b8827c15b9e996962faef1b20bf898b0fc6673268",
+  "submitted_source_sha256": "b961fc440b669f608a54d7ca561d257987e4e5984a37adcbe97a6920507f5d34",
+  "files": [
+    {
+      "file": "model_reload_logistic_regression.json",
+      "sha256": "b5aec973bc183828165e7c47da9d43345b53018868e793a216dea93ce56ca88e"
+    },
+    {
+      "file": "execution-logs.json",
+      "sha256": "f667188ea11242b99b1cf68b8827c15b9e996962faef1b20bf898b0fc6673268"
+    },
+    {
+      "file": "capture_layout.json",
+      "sha256": "923a6e8dc2be59929145d3a48dad722a7694d65964150749d889ae2771d3f81d"
+    },
+    {
+      "file": "optimization_runs.json",
+      "sha256": "d81717e540f15d8458d1a269b32926c10d4e349abac29bac059826d146ee1d18"
+    },
+    {
+      "file": "receipt.json",
+      "sha256": "da631c96a31054a9ae70bf9cfa8dabc04483d3206ea9b9b1be832c99c0a9fe82"
+    },
+    {
+      "file": "model_reload_random_forest.json",
+      "sha256": "f1e44ecf4bef3e40eda00fbadc1b893fe45618847e420b75efc181a295622b19"
+    },
+    {
+      "file": "transactions.json",
+      "sha256": "e34707fff6bfca16409386ec9b004326c12b4529fd0764576e8e7bce40ba4ffa"
+    },
+    {
+      "file": "storage_files.json",
+      "sha256": "d49c0b451c177fb86bc3e4d5cb7a65cdd5dc04fd8d0b86cf7414da7f42223635"
+    },
+    {
+      "file": "archived_model_pins.json",
+      "sha256": "2d67cc2758a94bcf69ffcd8f66805a1ccbb31a1a35b58c63897fe997e4ea9a75"
+    },
+    {
+      "file": "sql_plan.json",
+      "sha256": "61ed6fdd7368f186b2f08e7585311371de6e01feadf04b9a99dee7728d9bac2c"
+    },
+    {
+      "file": "pandas_inputs.json",
+      "sha256": "ee18bc5c78ece509151540e0247f553de46ec35de400f570f5cda40fd3e12817"
+    }
+  ]
+}

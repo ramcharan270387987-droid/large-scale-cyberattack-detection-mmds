@@ -1,0 +1,294 @@
+[
+  {
+    "format": "parquet",
+    "actual_rows": 1000860,
+    "bytes": 116203334,
+    "files": 17,
+    "compression": "snappy",
+    "conversion_seconds": 6.57790931400001,
+    "metadata_encoding": "record_fingerprint losslesshex in both formats; identical numerical/label rows",
+    "schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "record_fingerprint",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "source_day",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "attack_family",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "binary_label",
+          "type": "byte",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_duration",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "tot_fwd_pkts",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "tot_bwd_pkts",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "totlen_fwd_pkts",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "totlen_bwd_pkts",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "pkt_len_mean",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "pkt_len_std",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_iat_mean",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_iat_std",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "fwd_iat_mean",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "bwd_iat_mean",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_pkts_s",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_byts_s",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "down_up_ratio",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "syn_flag_cnt",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "ack_flag_cnt",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "rst_flag_cnt",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "fin_flag_cnt",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  {
+    "format": "csv",
+    "actual_rows": 1000860,
+    "bytes": 217833168,
+    "files": 17,
+    "compression": "none",
+    "conversion_seconds": 3.3349535060000335,
+    "metadata_encoding": "record_fingerprint losslesshex in both formats; identical numerical/label rows",
+    "schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "record_fingerprint",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "source_day",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "attack_family",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "binary_label",
+          "type": "byte",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_duration",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "tot_fwd_pkts",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "tot_bwd_pkts",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "totlen_fwd_pkts",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "totlen_bwd_pkts",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "pkt_len_mean",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "pkt_len_std",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_iat_mean",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_iat_std",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "fwd_iat_mean",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "bwd_iat_mean",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_pkts_s",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "flow_byts_s",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "down_up_ratio",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "syn_flag_cnt",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "ack_flag_cnt",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "rst_flag_cnt",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "fin_flag_cnt",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        }
+      ]
+    }
+  }
+]

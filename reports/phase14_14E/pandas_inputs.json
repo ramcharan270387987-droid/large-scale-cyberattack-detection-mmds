@@ -1,0 +1,20 @@
+[
+  {
+    "requested": 100000,
+    "actual_rows": 100000,
+    "preparation_seconds": 4.398546802999988,
+    "bytes": 1838543
+  },
+  {
+    "requested": 500000,
+    "actual_rows": 500000,
+    "preparation_seconds": 5.402879915999961,
+    "bytes": 9187765
+  },
+  {
+    "requested": 1000000,
+    "actual_rows": 1000000,
+    "preparation_seconds": 4.159401231999993,
+    "bytes": 18377623
+  }
+]
