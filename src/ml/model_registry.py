@@ -2,15 +2,22 @@
 
 from hashlib import sha256
 from pathlib import Path
+from time import monotonic
 
 from pyspark.ml import PipelineModel
 from pyspark.ml.functions import vector_to_array
 
 
-def capture(model, name, output, probes, kmeans=False):
+def capture(model, name, output, probes, kmeans=False, timings=None):
     target = output / "models" / name
+    start = monotonic()
     model.write().save(str(target))
+    saved = monotonic() - start
+    start = monotonic()
     opened = PipelineModel.load(str(target))
+    reloaded = monotonic() - start
+    if timings is not None:
+        timings.update(serialization_seconds=saved, reload_seconds=reloaded)
 
     def score(pipeline):
         scored = pipeline.transform(probes)

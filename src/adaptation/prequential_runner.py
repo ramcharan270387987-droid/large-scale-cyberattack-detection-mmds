@@ -17,6 +17,7 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
     arrived=[]; used=set(); attempts=0; last=-999; pending=None; previous=None; previous_threshold=None
     promoted_metrics=evaluate(backend.hist(current,backend.calibration,1),threshold)
     natural_rollbacks=0; score_seconds=0; detector_seconds=0; registry_seconds=0
+    registered_metrics={current:promoted_metrics}
     detector=None
     if advanced:
         from river.drift import ADWIN
@@ -24,7 +25,7 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
     for index, day in enumerate(backend.forward):
         arrival=backend.clock(day)
         if pending and index>=pending['earliest'] and arrival>=pending['complete']:
-            previous,previous_threshold=current,threshold
+            previous,previous_threshold=(None,None) if pending.get('rollback') else (current,threshold)
             current,threshold=pending['model'],pending['threshold']
             promoted_metrics=pending['metrics']
             t=time.monotonic(); registry.activate(current); registry_seconds+=time.monotonic()-t
@@ -38,7 +39,8 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
         aggregate=merge(hists.values()); metric=evaluate(aggregate,threshold)
         row={'run':tag,'policy':policy,'delay':delay,'window':index,'day':str(day),'model':current,
              'threshold_bin':threshold,'arrival_time':arrival,'prediction_time':arrival,
-             'label_release_index':index+delay,**metric}
+             'label_release_index':index+delay,'fit_last_day':str(max(backend.meta[current]['training_days'])),
+             'staleness_seconds':arrival-backend.clock(max(backend.meta[current]['training_days'])),**metric}
         windows.append(row); predictions.append((aggregate,threshold))
         for name,hist in hists.items():
             family.append({'run':tag,'policy':policy,'delay':delay,'window':index,'day':str(day),
@@ -52,10 +54,13 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
         cal_days=(backend.calibration+fit_days)[-2:]
         new=[d for d in fit_days if d not in used]
         support=backend.support(new,0) if new else 0
-        alert=signal is not None and signal>.1
-        if detector:
-            detector.update(signal if signal is not None else 0)
+        signal_supported=signal is not None and backend.eval_support(day)>=100
+        alert=signal_supported and signal>.1
+        if detector and signal_supported:
+            detector.update(signal)
             alert=bool(detector.drift_detected)
+        elif detector:
+            alert=False
         requested=(policy in ('P1','P4','P5') and (index+1)%(1 if policy=='P5' else period)==0) or (policy in ('P2','P6') and alert)
         ok,reason=eligible(requested,support,minimum,index,last,cooldown,attempts,budget,index==len(backend.forward)-1)
         if pending: ok,reason=False,'candidate-not-yet-active'
@@ -63,7 +68,8 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
             'trigger_id':f'{tag}-{index}','detector':'ADWIN' if detector else 'fixed-reference-js',
             'detector_version':'phase11','signal':'input-flow-duration' if backend.kind=='historical' else 'input-x0',
             'granularity':'capture' if backend.kind=='historical' else 'synthetic-window','js':signal,'alert':alert,
-            'current_support':backend.eval_support(day),'required_support':100,'warmup_supported':index>=31 if detector else backend.eval_support(day)>=100,
+            'current_support':backend.eval_support(day),'required_support':100,'warmup_supported':signal_supported and (index>=31 if detector else True),
+            'input_supported':signal_supported,'cooldown_active':index-last<cooldown,'duplicate_trigger':False,
             'label_available_indices':available,'new_training_rows':support,'requested':bool(requested),
             'eligible':ok,'reason':reason,'time':arrival})
         # Rollback uses only previously issued, now released forward labels of the active model.
@@ -74,7 +80,7 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
             if min(positive,negative)>=100 and counts['tp']/positive<=promoted_metrics['recall']-.15 and counts['fp']/negative>=promoted_metrics['fpr']+.02:
                 backend.verify(previous)
                 pending={'model':previous,'threshold':previous_threshold,'complete':arrival,
-                         'earliest':index+1,'event':len(events),'metrics':promoted_metrics}
+                         'earliest':index+1,'event':len(events),'metrics':registered_metrics[previous],'rollback':True}
                 events.append({'run':tag,'policy':policy,'delay':delay,'window':index,'action':'rollback','model':previous,
                                'decision':'released-performance-degradation','activation_index':None,'activation_time':None})
                 natural_rollbacks+=1
@@ -121,6 +127,7 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
                           measured_action_seconds=elapsed,charged_fit_seconds=cost,
                           training_complete=arrival+max(elapsed,cost))
             registry.register(candidate,backend.meta[candidate])
+            registered_metrics[candidate]=candidate_metrics
             if accept:
                 pending={'model':candidate,'threshold':selected,'complete':record['training_complete'],
                          'earliest':index+1,'event':len(events),'metrics':candidate_metrics}
@@ -144,6 +151,8 @@ def run(backend, policy, delay, root, *, budget=3, period=2, sliding=2, cooldown
              'promotions':sum(e.get('accepted',False) for e in events),
              'rejections':sum(e.get('accepted') is False and e.get('action')=='fit' for e in events),
              'threshold_updates':len([t for t in thresholds if 'new_bin' in t]),'rollbacks':natural_rollbacks,
+             'activated_candidates':sum(e.get('action')=='fit' and e.get('activation_index') is not None for e in events),
+             'model_versions_served':len({r['model'] for r in windows}),'mean_staleness_seconds':sum(r['staleness_seconds'] for r in windows)/len(windows),
              'charged_fit_seconds':sum(e.get('charged_fit_seconds',0) for e in events),
              'score_seconds':score_seconds,'detector_seconds':detector_seconds,'registry_seconds':registry_seconds,
              'initial_model':initial,'initial_threshold_bin':initial_threshold,

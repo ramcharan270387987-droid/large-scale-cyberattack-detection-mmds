@@ -56,3 +56,47 @@ class Phase12Tests(unittest.TestCase):
                     self.assertLessEqual(latest,6+e['window']-3)
             for key in b.models: b.verify(key)
             self.assertEqual(sum(r['rows'] for r in result['windows']),result['summary']['rows'])
+    def test_controlled_faults_restore_saved_model(self):
+        from src.adaptation.fault_validation import validate
+        with tempfile.TemporaryDirectory() as root:
+            rows=validate(root)
+            self.assertEqual(len(rows),12)
+            self.assertTrue(all(r['pass'] for r in rows))
+    def test_receipt_and_feature_contract(self):
+        root=Path(__file__).resolve().parents[1]
+        baseline=json.loads((root/'reports/phase12_baseline_reconciliation.json').read_text())
+        self.assertEqual(list(baseline['reconciled_retained_counts'].values()),[13191622,1151256,980109])
+        names=json.loads((root/'configs/ml_experiments.yaml').read_text())['numerical_features']
+        self.assertEqual(len(names),18)
+        self.assertFalse(set(names)&{'binary_label','source_day','attack_family','predictor_key','record_fingerprint'})
+    def test_synthetic_definitions_and_roles(self):
+        from src.adaptation.synthetic_benchmark import generate
+        import numpy as np
+        stationary=generate('stationary',23013)
+        abrupt=generate('abrupt-conditional',23013)
+        recurring=generate('recurring',23013)
+        for w in range(48):
+            np.testing.assert_array_equal(stationary[w][0],abrupt[w][0])
+            np.testing.assert_array_equal(stationary[w][2],abrupt[w][2])
+            if w<22 or w>=36:np.testing.assert_array_equal(stationary[w][1],recurring[w][1])
+    def test_preprocessing_uses_training_only(self):
+        import numpy as np
+        from src.adaptation.synthetic_benchmark import SyntheticBackend
+        with tempfile.TemporaryDirectory() as root:
+            backend=SyntheticBackend('feature-shift',23013,root)
+            key=backend.fit(backend.initial)
+            x,_=backend.rows(backend.initial,0)
+            scaler=backend.models[key].steps[1][1]
+            np.testing.assert_allclose(scaler.mean_,x.mean(axis=0))
+            original=scaler.mean_.copy()
+            backend.hist(key,[40],2)
+            np.testing.assert_array_equal(scaler.mean_,original)
+    def test_missing_signal_and_final_arrival_suppression(self):
+        from src.adaptation.evaluation import js
+        self.assertIsNone(js([0,0],[1,1]))
+        self.assertEqual(eligible(True,1000,100,5,0,2,0,3,True),(False,'end-of-replay'))
+    def test_partition_role_normalization(self):
+        # Partition inference can be disabled by the inherited receipt reader.
+        rows=[('2018-02-20','0',800),('2018-02-21',0,900)]
+        lookup={(day,int(role)):count for day,role,count in rows}
+        self.assertEqual(sum(lookup.get((day,0),0) for day in ('2018-02-20','2018-02-21')),1700)
