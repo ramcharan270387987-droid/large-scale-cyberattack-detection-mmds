@@ -1,0 +1,15 @@
+{
+  "status": "REJECTED_ENGINEERING_DEFECT",
+  "kernel_version": "ramcharan2345/mmds-phase-12-adaptive-learning-model-refresh/1",
+  "summary_sha256": "4c493e8e3edbd790f37ad37954671dc196bbd55fdfe23ba60e7e161e144d601b",
+  "failure": "partitioned split_rank read as string, integer-key support lookup returned zero; adaptation requests incorrectly suppressed",
+  "retained_source_rows": 16232929,
+  "cross_role_groups": {
+    "record_fingerprint": 0,
+    "split_feature_key": 0,
+    "predictor_key": 0
+  },
+  "remediation_commit": "4529521",
+  "replacement_version": 2,
+  "scientific_results_eligible": false
+}

@@ -1,0 +1,13 @@
+fault,observed,pass,seconds
+invalid_serialization,ValueError,True,2.060100086964667e-05
+failed_independent_reload,UnpicklingError,True,1.8598002498038113e-05
+incompatible_feature_schema,ValueError,True,1.962995156645775e-06
+interrupted_registry_promotion,RuntimeError,True,0.0005165080074220896
+actual_saved_model_rollback,restored original scoring probes,True,0.0012579100002767518
+duplicate_request_after_recovery,suppressed persistent request,True,
+recovery_after_interrupted_promotion,single committed active pointer,True,
+insufficient_training_class_support,ValueError,True,0.0003119140019407496
+failed_serialization_write,OSError,True,0.013620799989439547
+failed_candidate_training,"two rejected actions, incumbent served every window",True,
+missing_validation_labels,"two rejected actions, incumbent served every window",True,
+invalid_prediction_scores,"two rejected actions, incumbent served every window",True,

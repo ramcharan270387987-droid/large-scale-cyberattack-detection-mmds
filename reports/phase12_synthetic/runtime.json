@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "sklearn": "1.8.0",
+  "actual_runs": 288,
+  "physical_models": 344,
+  "source_sha256": {
+    "src/adaptation/prequential_runner.py": "d299a250b703deec6d68696668b68ea895c8b69520da367952891c23ce1ed1c9",
+    "src/adaptation/evaluation.py": "d3c333f69eb2534e63b2436d6b62de7761e7114a56e97c71c6f0eb5a22fd47a9",
+    "src/adaptation/__init__.py": "606de5c2b17934779277c46c5815f6f956c85285b50c08cdcf9d5e45c7b9eb1f",
+    "src/adaptation/historical.py": "52beb2b94aa7d0d3559b42d0e7dde5acf575992fcbc2e2a55f8c663afc324ebe",
+    "src/adaptation/fault_validation.py": "52d86c5ed9ae102a11c9c963323ab367661ea9dec509191f4e4eec06ba2b35dc",
+    "src/adaptation/synthetic_benchmark.py": "427e7c7912780156bcb8954182c861c3da10bc56eefb2c89ebfb957721272fef",
+    "src/adaptation/lifecycle.py": "3a7da49bcb652e90568d166ba3c07bdf452205ad46550217bf7ef1badf28e7ed"
+  },
+  "raw_receipt_sha256": "bae8b1d2f5bf133cfdeb31d21e6acf303a44cdc0bd8c46098665965d6f6a7a87",
+  "clock_accounting_recheck": "all 288 TP/FP/TN/FN/retraining/promotion/rollback outcomes equal prior run; original model-build duration plus validation overhead charged on reuse"
+}

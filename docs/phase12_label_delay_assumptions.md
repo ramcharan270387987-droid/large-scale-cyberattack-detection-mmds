@@ -1,0 +1,7 @@
+# Simulated label availability
+
+Delay0,1,3 counts subsequent observed capture arrivals, preserving original calendar gaps. This is an analyst-controlled simulation. No original per-flow analyst response times exist. Capture-close is the logical timestamp. Initial fitting and initial calibration are available before the first forward arrival. At an arrival, the incumbent issues every evaluation prediction before labels for that capture can be released.
+
+There is no terminal flush. Last-delay windows remain unavailable for model decisions. Forward outcome tables also contain clearly retrospective all-issued-window metrics using eventual research labels, for identical policy coverage. Those labels never enter adaptation early. Released-only diagnostics must be distinguished from this all-issued evaluation. Policy training and promotion use only eligible fit and calibration roles, respectively. Final forward-evaluation labels are never used to fit or promote candidates. Performance rollback alone may consume released evaluation labels.
+
+Feature-ready artifacts support capture dates, not verified event ordering. Within-capture predictions form a simultaneous block. This does not simulate per-flow online learning or realistic human labeling delays. Candidate completion adds measured action time and charged fit time when a cached artifact is reused. The incumbent remains active until a subsequent arrival after completion.

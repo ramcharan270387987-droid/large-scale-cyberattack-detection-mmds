@@ -312,5 +312,33 @@
     "0": 13191622,
     "1": 1151256,
     "2": 980109
-  }
+  },
+  "archived_execution_receipt": {
+    "kernel_version": 1,
+    "worker_status": "COMPLETE",
+    "submitted_sources": [
+      "ramcharan2345/mmds-phase-2-spark-data-engineering/1",
+      "ramcharan2345/mmds-phase-8-baseline-model-mirror/1"
+    ],
+    "private_cpu": true,
+    "notebook_sha256": "4947e0fbb0fab09369200e99404b03ce740a9bc1797eca8471b59a4f007c7192",
+    "log_events": 407,
+    "log_sha256": "e87c1bac4b1d5de1e9b30fa651ecf96d45736a5cfc54d5f87eddc56f1c94d6ff",
+    "log_markers": [
+      "PHASE8 B reconciled validation logistic_regression 1151256",
+      "PHASE8 B reconciled validation random_forest 1151256",
+      "PHASE8 B reconciled validation gradient_boosted_trees 1151256",
+      "PHASE8 B reconciled validation majority 1151256",
+      "PHASE8 B reconciled validation duration_rule 1151256",
+      "PHASE8 B reconciled validation K-Means P99 1151256",
+      "PHASE8 B reconciled test logistic_regression 980109",
+      "PHASE8 B reconciled test random_forest 980109",
+      "PHASE8 B reconciled test gradient_boosted_trees 980109",
+      "PHASE8 B reconciled test majority 980109",
+      "PHASE8 B reconciled test duration_rule 980109",
+      "PHASE8 B reconciled test K-Means P99 980109",
+      "PHASE8 complete baseline B status validated"
+    ]
+  },
+  "all_source_fields_match_committed_phase8_receipt": true
 }

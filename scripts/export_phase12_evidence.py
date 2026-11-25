@@ -32,6 +32,21 @@ def validate(runs):
 
 def export(payload,dest):
     runs=payload['runs'];validate(runs)
+    model_rows=payload['models'];model_rows=list(model_rows.values()) if isinstance(model_rows,dict) else model_rows
+    for run in runs:
+        summary=run['summary']
+        for event in run['events']:
+            if event.get('action')!='fit':continue
+            matching=[m for m in model_rows if m['backend']==summary['backend'] and list(map(str,m['training_days']))==event['training_days']]
+            event['fit_succeeded']=bool(matching)
+            if matching:
+                event['model']=matching[0]['model']
+                event['charged_fit_seconds']=matching[0]['fit_seconds']
+        summary['charged_fit_seconds']=sum(e.get('charged_fit_seconds',0) for e in run['events'])
+        summary['successful_retrainings']=sum(e.get('fit_succeeded',False) for e in run['events'])
+        summary['failed_retrainings']=sum(e.get('action')=='fit' and not e.get('fit_succeeded',False) for e in run['events'])
+        summary['failed_actions']=sum(e.get('failed') is True for e in run['events'])
+        summary['activated_candidates']=sum(e.get('action')=='fit' and e.get('activation_index') is not None for e in run['events'])
     csv_write(dest/'policy_comparison.csv',[r['summary'] for r in runs])
     for key in ('windows','events','triggers','thresholds','family','retention'):
         csv_write(dest/(key+'.csv'),[row for r in runs for row in r[key]])
