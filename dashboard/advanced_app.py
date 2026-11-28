@@ -30,13 +30,19 @@ NOTES={
 def table(entry):return evidence.load(entry)
 def identify(data):return hashlib.sha256(data.to_csv(index=False).encode()).hexdigest()[:16]
 def overview():
-    st.header('Executive overview');st.write('Large-Scale Cyberattack Detection and Evolving Attack Pattern Mining')
-    st.write('Investigate chronological detection, novelty, emerging patterns, delayed-label adaptation and reproducible computational trade-offs.')
+    st.header('Executive overview')
+    research_style.hero()
     audit=json.loads((ROOT/'reports/phase14_14B/external_audit.json').read_text());d=json.loads((ROOT/'reports/phase14_14D/receipt.json').read_text());e=json.loads((ROOT/'reports/phase14_14E/receipt.json').read_text())
     cols=st.columns(3);cols[0].metric('Source flows',f"{d['source']['rows']:,}");cols[1].metric('External eligible flows',f"{audit['eligible_rows']:,}");cols[2].metric('Optimization measurements',e['measured_runs'])
-    st.success('Research phases1–14 completed with versioned evidence. This application integrates archived research and separately labeled new inference.')
+    st.subheader('Start exploring')
+    destinations=[('01 / PREDICT','Try a model','Enter flow features or upload a CSV to compute a prediction.','Interactive inference','Open inference'),('02 / EVALUATE','Compare the results','Review recall, false positives and the effect of evaluation design.','Supervised & hybrid','Explore models'),('03 / REPLAY','Follow historical traffic','Inspect archived capture batches and their detection evidence.','Historical replay','Open replay')]
+    for col,(number,title,description,destination,button) in zip(st.columns(3),destinations):
+        with col:
+            research_style.tile(number,title,description)
+            st.button(button,key='overview_'+destination,on_click=open_workspace,args=(destination,),width='stretch')
     st.warning('Historical source models generalize weakly across captures/datasets. Model scores do not guarantee maliciousness or safety.')
-    st.caption('Source population and benchmark counts come from the accepted Phase14receipts.')
+    st.subheader('External validation snapshot')
+    st.caption('First 12 archived comparison rows. Source population and benchmark counts come from accepted Phase 14 receipts. Use External validation & scalability for the full evidence.')
     st.dataframe(pd.read_csv(ROOT/'reports/phase14_external_model_comparison.csv')[['model','evaluation_protocol','sensitivity','operating','rows','recall','fpr']].head(12),hide_index=True,width='stretch')
 def research(group):
     st.header(group);st.info(NOTES.get(group,'Audit counts, original labels and capture populations retain their original evidence definitions.'))
@@ -75,7 +81,9 @@ def show_prediction(model,result,values):
     outside=[name for name,value in values.items() if value is not None and name in bounds and not bounds[name][0]<=value<=bounds[name][-1]]
     if outside:st.warning('Outside archived source-training min/max: '+', '.join(outside)+'. Reference ranges are descriptive and do not establish deployment validity.')
 def inference():
-    st.header('Interactive inference');registry=evidence.models();entry=st.selectbox('Executable model',registry,format_func=lambda x:x['kind']+' · '+x['id'])
+    st.header('Interactive inference')
+    research_style.guide('1. Choose a model   /   2. Enter manual features or select a CSV batch   /   3. Run inference and review the result')
+    registry=evidence.models();entry=st.selectbox('Executable model',registry,format_func=lambda x:x['kind']+' · '+x['id'])
     st.caption('Only archived LR,RF and K-Means are executable. Hybrid,multiclass/open-set and tree SHAP remain research-only.')
     try:model=portable.verify(ROOT/entry['artifact'],entry['sha256'])
     except (OSError,ValueError,KeyError):st.error('Model unavailable or checksum invalid. Inference is disabled; no fallback prediction.');return
@@ -138,11 +146,14 @@ def provenance():
     p=ROOT/entry['path']
     if hashlib.sha256(p.read_bytes()).hexdigest()!=entry['sha256']:st.error('Figure checksum mismatch');return
     st.image(str(p));st.download_button('Download figure',p.read_bytes(),p.name,'image/png',on_click='ignore')
+def open_workspace(destination):
+    st.session_state['workspace']=destination
+
 def main():
     st.set_page_config(page_title='MMDS Advanced Research',layout='wide')
     research_style.apply()
     research_style.sidebar_brand()
-    page=st.sidebar.radio('Workspace',DEMO_WORKSPACES)
+    page=st.sidebar.radio('Workspace',DEMO_WORKSPACES,key='workspace')
     st.sidebar.markdown('<div class="mmds-sidebar-note">Evidence before conclusions.<br>Historical research and verified model inference.</div>',unsafe_allow_html=True)
     research_style.page_context()
     try:
