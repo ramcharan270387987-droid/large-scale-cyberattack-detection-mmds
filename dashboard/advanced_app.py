@@ -6,6 +6,15 @@ import pandas as pd
 import streamlit as st
 from src.interactive import evidence,portable,inputs
 ROOT=Path(__file__).resolve().parents[1]
+DEMO_WORKSPACES = (
+    'Executive overview',
+    'Supervised & hybrid',
+    'Interactive inference',
+    'Clustering & novelty',
+    'Frequent & emerging patterns',
+    'Historical replay',
+    'External validation & scalability',
+)
 FILTERS=('dataset','protocol','evaluation_protocol','scenario','sensitivity','operating','source_day','day','family','attack_family','policy','model','detector','window','support','minimum_support','workers','workload','matrix','configuration')
 NOTES={
  'Supervised & hybrid':'Grouped-random, chronological and holdout protocols answer different questions. Validation budgets do not guarantee future FPR.',
@@ -130,12 +139,14 @@ def provenance():
     st.image(str(p));st.download_button('Download figure',p.read_bytes(),p.name,'image/png',on_click='ignore')
 def main():
     st.set_page_config(page_title='MMDS Advanced Research',layout='wide');st.title('MMDS · Advanced Cybersecurity Research')
-    pages=['Executive overview',*evidence.catalog()['groups'],'Interactive inference','Historical replay','Evidence & reproducibility'];page=st.sidebar.selectbox('Workspace',pages)
+    page=st.sidebar.selectbox('Workspace',DEMO_WORKSPACES)
     try:
         if page=='Executive overview':overview()
         elif page=='Interactive inference':inference()
         elif page=='Historical replay':replay()
-        elif page=='Evidence & reproducibility':provenance()
         else:research(page)
     except (OSError,ValueError,KeyError) as exc:st.error('Evidence unavailable: '+str(exc))
-if __name__=='__main__':main()
+if __name__=='__main__':
+    # Explicit navigation disables automatic discovery of the legacy pages/
+    # directory. The evaluator uses only the seven workspaces above.
+    st.navigation([st.Page(main,title='MMDS Advanced Research',default=True)],position='hidden').run()
