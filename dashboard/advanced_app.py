@@ -5,6 +5,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import pandas as pd
 import streamlit as st
 from src.interactive import evidence,portable,inputs
+from dashboard import research_style
 ROOT=Path(__file__).resolve().parents[1]
 DEMO_WORKSPACES = (
     'Executive overview',
@@ -138,8 +139,12 @@ def provenance():
     if hashlib.sha256(p.read_bytes()).hexdigest()!=entry['sha256']:st.error('Figure checksum mismatch');return
     st.image(str(p));st.download_button('Download figure',p.read_bytes(),p.name,'image/png',on_click='ignore')
 def main():
-    st.set_page_config(page_title='MMDS Advanced Research',layout='wide');st.title('MMDS · Advanced Cybersecurity Research')
-    page=st.sidebar.selectbox('Workspace',DEMO_WORKSPACES)
+    st.set_page_config(page_title='MMDS Advanced Research',layout='wide')
+    research_style.apply()
+    research_style.sidebar_brand()
+    page=st.sidebar.radio('Workspace',DEMO_WORKSPACES)
+    st.sidebar.markdown('<div class="mmds-sidebar-note">Evidence before conclusions.<br>Historical research and verified model inference.</div>',unsafe_allow_html=True)
+    research_style.page_context()
     try:
         if page=='Executive overview':overview()
         elif page=='Interactive inference':inference()
