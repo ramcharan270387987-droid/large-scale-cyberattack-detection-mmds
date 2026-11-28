@@ -16,15 +16,30 @@ p, label { line-height: 1.65; }
 [data-testid="stSidebar"] { background: #152f28; border-right: 1px solid #29473c; }
 [data-testid="stSidebar"] [data-testid="stSidebarContent"] { padding: 2rem 1.1rem; }
 [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] { color: #dbe6db; }
-[data-testid="stSidebar"] [data-testid="stRadio"] > label { color: #a8beb0; letter-spacing: .16em; text-transform: uppercase; font-size: .72rem; }
-[data-testid="stSidebar"] [data-testid="stRadio"] [role="radiogroup"] { gap: .35rem; }
-[data-testid="stSidebar"] [data-testid="stRadio"] [role="radiogroup"] > label {
-    border: 1px solid transparent; border-radius: 10px; padding: .65rem .8rem;
-    width: 100%; margin: 0; transition: background .15s; color: #dbe6db;
+/* Native buttons provide keyboard navigation without radio circles. */
+.mmds-nav-heading { color: #a8beb0; letter-spacing: .18em; font-size: .7rem; font-weight: 650; margin: .4rem .75rem .8rem; }
+[data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button {
+    display: flex; justify-content: flex-start; text-align: left;
+    min-height: 3.1rem; padding: .75rem .95rem; border-radius: 11px;
+    background: transparent; border: 1px solid transparent; color: #dbe6db;
+    box-shadow: none; transition: background .15s, border-color .15s;
 }
-[data-testid="stSidebar"] [data-testid="stRadio"] [role="radiogroup"] > label:hover { background: #25463a; }
-[data-testid="stSidebar"] [data-testid="stRadio"] [role="radiogroup"] > label:has(input:checked) { background: #305344; border-color: #416552; }
-[data-testid="stSidebar"] [data-testid="stRadio"] [role="radiogroup"] > label p { font-size: .95rem; line-height: 1.4; }
+[data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button p {
+    color: inherit; font-size: .92rem; font-weight: 500; line-height: 1.4;
+}
+[data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button:hover {
+    background: #24483a; border-color: #385b48; color: #f4f7ec;
+}
+[data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button[kind="primary"] {
+    background: #345943; border-color: #527154; color: #f4f7ec;
+    box-shadow: inset 3px 0 0 #bfd4a6;
+}
+[data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button:focus-visible {
+    outline: 2px solid #bdd2ac; outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+ [data-testid="stSidebar"] .st-key-workspace-menu button { transition: none !important; }
+}
 [data-testid="stMetric"] { background: #ffffff; border: 1px solid #dce4db; border-radius: 16px; padding: 1.2rem 1.35rem; }
 [data-testid="stMetricLabel"] { color: #64776b; }
 [data-testid="stMetricValue"] { color: #18372f; font-size: clamp(1.7rem, 2.6vw, 2.7rem); font-variant-numeric: tabular-nums; letter-spacing: -.04em; }
@@ -46,7 +61,6 @@ p, label { line-height: 1.65; }
 [data-testid="stFormSubmitButton"] button { background: #254e39; color: white; border-color: #254e39; padding: .6rem 1.5rem; }
 [data-testid="stFormSubmitButton"] button:hover { background: #183c2b; color: white; border-color: #183c2b; }
 button:focus-visible, input:focus-visible { outline: 3px solid #7d9868; outline-offset: 3px; }
-[data-testid="stSidebar"] [data-testid="stRadio"] [role="radiogroup"] > label:has(input:focus-visible) { outline: 2px solid #bdd2ac; outline-offset: 2px; }
 .mmds-brand { display: flex; gap: .85rem; align-items: center; margin: .5rem 0 2.6rem; }
 .mmds-emblem { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: #305344; border: 1px solid #4f6a54; color: #d5e3c9; font-size: 1.6rem; }
 .mmds-brand-name { font-size: 1.5rem; color: #edf2e8; font-weight: 650; letter-spacing: -.04em; }

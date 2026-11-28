@@ -149,11 +149,32 @@ def provenance():
 def open_workspace(destination):
     st.session_state['workspace']=destination
 
+def workspace_menu():
+    if st.session_state.get('workspace') not in DEMO_WORKSPACES:
+        st.session_state['workspace']=DEMO_WORKSPACES[0]
+    items=(
+        ('Executive overview','Overview',':material/dashboard:'),
+        ('Supervised & hybrid','Model evaluation',':material/analytics:'),
+        ('Interactive inference','Interactive inference',':material/bolt:'),
+        ('Clustering & novelty','Clustering & novelty',':material/hub:'),
+        ('Frequent & emerging patterns','Attack patterns',':material/account_tree:'),
+        ('Historical replay','Historical replay',':material/history:'),
+        ('External validation & scalability','Validation & scalability',':material/fact_check:'),
+    )
+    with st.sidebar.container(key='workspace-menu'):
+        st.markdown('<div class="mmds-nav-heading">WORKSPACE</div>',unsafe_allow_html=True)
+        for destination,label,icon in items:
+            st.button(label,icon=icon,key='nav_'+destination,
+                      type='primary' if st.session_state['workspace']==destination else 'secondary',
+                      width='stretch',help=destination,
+                      on_click=open_workspace,args=(destination,))
+    return st.session_state['workspace']
+
 def main():
     st.set_page_config(page_title='MMDS Advanced Research',layout='wide')
     research_style.apply()
     research_style.sidebar_brand()
-    page=st.sidebar.radio('Workspace',DEMO_WORKSPACES,key='workspace')
+    page=workspace_menu()
     st.sidebar.markdown('<div class="mmds-sidebar-note">Evidence before conclusions.<br>Historical research and verified model inference.</div>',unsafe_allow_html=True)
     research_style.page_context()
     try:
