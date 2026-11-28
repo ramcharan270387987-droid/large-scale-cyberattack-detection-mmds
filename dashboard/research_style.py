@@ -19,13 +19,19 @@ p, label { line-height: 1.65; }
 /* Native buttons provide keyboard navigation without radio circles. */
 .mmds-nav-heading { color: #a8beb0; letter-spacing: .18em; font-size: .7rem; font-weight: 650; margin: .4rem .75rem .8rem; }
 [data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button {
-    display: flex; justify-content: flex-start; text-align: left;
+    display: flex; justify-content: flex-start !important; text-align: left !important;
     min-height: 3.1rem; padding: .75rem .95rem; border-radius: 11px;
     background: transparent; border: 1px solid transparent; color: #dbe6db;
     box-shadow: none; transition: background .15s, border-color .15s;
 }
 [data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button p {
-    color: inherit; font-size: .92rem; font-weight: 500; line-height: 1.4;
+    color: inherit; font-size: .92rem; font-weight: 500; line-height: 1.4; text-align: left;
+}
+[data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button > div {
+    width: 100%; justify-content: flex-start !important; gap: .65rem;
+}
+[data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button [data-testid="stMarkdownContainer"] {
+    flex: 1; text-align: left !important;
 }
 [data-testid="stSidebar"] .st-key-workspace-menu [data-testid="stButton"] button:hover {
     background: #24483a; border-color: #385b48; color: #f4f7ec;
